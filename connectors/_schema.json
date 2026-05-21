@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "name", "category", "tutorials"],
+  "additionalProperties": false,
+  "properties": {
+    "id":          { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "name":        { "$ref": "#/$defs/i18nString" },
+    "description": { "$ref": "#/$defs/i18nString" },
+    "category":    { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "popular":     { "type": "boolean" },
+    "tutorials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "prompt"],
+        "additionalProperties": false,
+        "properties": {
+          "title":  { "$ref": "#/$defs/i18nString" },
+          "prompt": { "$ref": "#/$defs/i18nString" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "i18nString": {
+      "type": "object",
+      "required": ["vi", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "vi": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    }
+  }
+}
