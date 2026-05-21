@@ -16,6 +16,7 @@ instructions:
     - "Click Create new secret key, name the project."
     - "Copy the key (sk-proj-...) and paste it below."
 keyUrl: "https://platform.openai.com/api-keys"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

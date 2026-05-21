@@ -16,6 +16,7 @@ instructions:
     - "Open API Keys → Create new key."
     - "Copy the key (xai-...) and paste it below."
 keyUrl: "https://console.x.ai/"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

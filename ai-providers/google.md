@@ -16,6 +16,7 @@ instructions:
     - "Click Create API key inside a Google Cloud project."
     - "Copy the key (AIza...) and paste it below."
 keyUrl: "https://aistudio.google.com/app/apikey"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

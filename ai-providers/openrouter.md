@@ -16,6 +16,7 @@ instructions:
     - "Click Create key, set a spend limit if needed."
     - "Copy the key (sk-or-v1-...) and paste it below."
 keyUrl: "https://openrouter.ai/keys"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->
