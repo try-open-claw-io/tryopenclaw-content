@@ -16,6 +16,7 @@ instructions:
     - "Run the proxy: litellm --config config.yaml."
     - "Use the master key from the config as the API key here."
 keyUrl: "https://docs.openclaw.ai/providers/litellm"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

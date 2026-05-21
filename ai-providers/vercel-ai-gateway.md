@@ -16,6 +16,7 @@ instructions:
     - "Create a new gateway and pick the providers to proxy."
     - "Copy the gateway API key and paste it below."
 keyUrl: "https://vercel.com/ai-gateway"
+videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->
