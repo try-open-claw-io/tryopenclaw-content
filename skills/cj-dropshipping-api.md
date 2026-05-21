@@ -13,6 +13,16 @@ tags:
   - "dropshipping"
   - "supplier"
   - "api"
+tutorials:
+  - prompt:
+      vi: "Find me 10 best-selling kitchen gadgets under $5 with shipping under 14 days"
+      en: "Find me 10 best-selling kitchen gadgets under $5 with shipping under 14 days"
+  - prompt:
+      vi: "Place a CJ order for SKU 1530245-A to ship to my last buyer"
+      en: "Place a CJ order for SKU 1530245-A to ship to my last buyer"
+  - prompt:
+      vi: "Subscribe a webhook to fire on tracking-status changes"
+      en: "Subscribe a webhook to fire on tracking-status changes"
 status: "Ready"
 version: "2.0"
 ---
@@ -38,19 +48,3 @@ accio-mcp-cli call get_cj_access_token
 | Read stored access token | `accio-mcp-cli call get_cj_access_token` |
 | Search products via REST | `GET /product/list?pageNum=1&pageSize=20` |
 | Create dropshipping order | `POST /shopping/order/createOrder` |
-
-## Tutorials
-
-- Find me 10 best-selling kitchen gadgets under $5 with shipping under 14 days
-- Place a CJ order for SKU 1530245-A to ship to my last buyer
-- Subscribe a webhook to fire on tracking-status changes
-
-## Tags
-
-`dropshipping`, `supplier`, `api`
-
-## Author
-
-TryOpenClaw
-
-Version: 2.0

@@ -13,6 +13,13 @@ tags:
   - "proposal"
   - "deals"
   - "writing"
+tutorials:
+  - prompt:
+      vi: "Draft a proposal from these discovery notes — 3-month POC, 2 agents"
+      en: "Draft a proposal from these discovery notes — 3-month POC, 2 agents"
+  - prompt:
+      vi: "Add a Statement of Work section with milestones"
+      en: "Add a Statement of Work section with milestones"
 status: "Ready"
 version: "1.0"
 ---
@@ -20,18 +27,3 @@ version: "1.0"
 # Proposal Drafter
 
 Reads your discovery notes and emits a structured proposal: executive summary, scope, timeline, pricing, and next steps. Branded sections optional.
-
-## Tutorials
-
-- Draft a proposal from these discovery notes — 3-month POC, 2 agents
-- Add a Statement of Work section with milestones
-
-## Tags
-
-`proposal`, `deals`, `writing`
-
-## Author
-
-Deal Desk
-
-Version: 1.0

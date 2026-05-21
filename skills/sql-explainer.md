@@ -13,6 +13,13 @@ tags:
   - "sql"
   - "data"
   - "translate"
+tutorials:
+  - prompt:
+      vi: "Explain this CTE step by step in plain English"
+      en: "Explain this CTE step by step in plain English"
+  - prompt:
+      vi: "Write me a Postgres query that returns DAU by cohort"
+      en: "Write me a Postgres query that returns DAU by cohort"
 status: "Ready"
 version: "1.5"
 ---
@@ -20,18 +27,3 @@ version: "1.5"
 # SQL Explainer
 
 Reads gnarly SQL (CTEs, window functions, lateral joins) and walks through each clause in plain English. Reverse mode: translates a plain-English request into a working query for your dialect.
-
-## Tutorials
-
-- Explain this CTE step by step in plain English
-- Write me a Postgres query that returns DAU by cohort
-
-## Tags
-
-`sql`, `data`, `translate`
-
-## Author
-
-Tidy Pipelines
-
-Version: 1.5

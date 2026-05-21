@@ -13,6 +13,13 @@ tags:
   - "competitive"
   - "monitoring"
   - "weekly"
+tutorials:
+  - prompt:
+      vi: "What changed at Nova Co since last Friday?"
+      en: "What changed at Nova Co since last Friday?"
+  - prompt:
+      vi: "Summarize the top 3 launches in our category this week"
+      en: "Summarize the top 3 launches in our category this week"
 status: "Ready"
 version: "2.3"
 ---
@@ -37,18 +44,3 @@ run_weekly()
 | Seed competitors | `track(list)` |
 | Crawl signal sources | `press, careers, pricing` |
 | Draft diff brief | `report(format="md")` |
-
-## Tutorials
-
-- What changed at Nova Co since last Friday?
-- Summarize the top 3 launches in our category this week
-
-## Tags
-
-`competitive`, `monitoring`, `weekly`
-
-## Author
-
-Signal Studio
-
-Version: 2.3

@@ -13,6 +13,13 @@ tags:
   - "negotiation"
   - "b2b"
   - "playbook"
+tutorials:
+  - prompt:
+      vi: "Help me push the supplier from $4.20 to $3.60 with sample-cost concession"
+      en: "Help me push the supplier from $4.20 to $3.60 with sample-cost concession"
+  - prompt:
+      vi: "Draft a 3-round playbook for renewing the Acme MSA"
+      en: "Draft a 3-round playbook for renewing the Acme MSA"
 status: "Ready"
 version: "1.1"
 ---
@@ -32,18 +39,3 @@ Brief the deal: counterparty, baseline ask, your floor and ceiling. The skill em
 | Set BATNA | `set_batna(value, evidence)` |
 | Generate concession ladder | `ladder(rounds=3)` |
 | Suggest next message | `next_move(history)` |
-
-## Tutorials
-
-- Help me push the supplier from $4.20 to $3.60 with sample-cost concession
-- Draft a 3-round playbook for renewing the Acme MSA
-
-## Tags
-
-`negotiation`, `b2b`, `playbook`
-
-## Author
-
-Negotia Labs
-
-Version: 1.1

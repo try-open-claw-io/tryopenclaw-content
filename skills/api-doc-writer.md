@@ -13,6 +13,13 @@ tags:
   - "openapi"
   - "docs"
   - "engineering"
+tutorials:
+  - prompt:
+      vi: "Generate OpenAPI docs from this Next.js app/api directory"
+      en: "Generate OpenAPI docs from this Next.js app/api directory"
+  - prompt:
+      vi: "What endpoints changed shape between v2.3 and main?"
+      en: "What endpoints changed shape between v2.3 and main?"
 status: "Ready"
 version: "1.2"
 ---
@@ -20,18 +27,3 @@ version: "1.2"
 # API Doc Writer
 
 Parses your route files, infers schemas, and emits OpenAPI 3.1 + a human-readable reference. Diffs against the existing doc to highlight breaking changes.
-
-## Tutorials
-
-- Generate OpenAPI docs from this Next.js app/api directory
-- What endpoints changed shape between v2.3 and main?
-
-## Tags
-
-`openapi`, `docs`, `engineering`
-
-## Author
-
-Doc Tools
-
-Version: 1.2

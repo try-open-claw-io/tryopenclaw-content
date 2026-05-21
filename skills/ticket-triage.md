@@ -13,6 +13,13 @@ tags:
   - "support"
   - "triage"
   - "routing"
+tutorials:
+  - prompt:
+      vi: "Triage the last 50 tickets in our support queue"
+      en: "Triage the last 50 tickets in our support queue"
+  - prompt:
+      vi: "Set priority high if the customer is on enterprise plan"
+      en: "Set priority high if the customer is on enterprise plan"
 status: "Ready"
 version: "1.6"
 ---
@@ -32,18 +39,3 @@ Subscribe to your inbound queue. Skill classifies and tags each ticket; routing 
 | Connect inbound queue | `connect(zendesk\|intercom)` |
 | Classify ticket | `classify(text)` |
 | Route + tag | `route(queue, priority)` |
-
-## Tutorials
-
-- Triage the last 50 tickets in our support queue
-- Set priority high if the customer is on enterprise plan
-
-## Tags
-
-`support`, `triage`, `routing`
-
-## Author
-
-HelpKit
-
-Version: 1.6

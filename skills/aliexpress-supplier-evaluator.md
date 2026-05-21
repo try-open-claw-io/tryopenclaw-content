@@ -13,6 +13,13 @@ tags:
   - "aliexpress"
   - "supplier"
   - "scoring"
+tutorials:
+  - prompt:
+      vi: "Rate supplier 'GreatHome Store' on Aliexpress for kitchenware"
+      en: "Rate supplier 'GreatHome Store' on Aliexpress for kitchenware"
+  - prompt:
+      vi: "Compare 3 Aliexpress sellers of silicone molds and pick the safest"
+      en: "Compare 3 Aliexpress sellers of silicone molds and pick the safest"
 status: "Ready"
 version: "1.4"
 ---
@@ -36,18 +43,3 @@ evaluate(supplier_id="1101234567", window_days=90)
 | Resolve store identity | `GET store?store_id=…` |
 | Sample 200 latest reviews | `GET feedback?page=1..10` |
 | Score 5 dimensions | `compute_trust(profile, reviews)` |
-
-## Tutorials
-
-- Rate supplier 'GreatHome Store' on Aliexpress for kitchenware
-- Compare 3 Aliexpress sellers of silicone molds and pick the safest
-
-## Tags
-
-`aliexpress`, `supplier`, `scoring`
-
-## Author
-
-TryOpenClaw
-
-Version: 1.4

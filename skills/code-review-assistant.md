@@ -13,6 +13,13 @@ tags:
   - "code-review"
   - "diff"
   - "security"
+tutorials:
+  - prompt:
+      vi: "Review PR #142 and flag concurrency issues"
+      en: "Review PR #142 and flag concurrency issues"
+  - prompt:
+      vi: "Run the security rule pack on this branch"
+      en: "Run the security rule pack on this branch"
 status: "Ready"
 version: "3.0"
 ---
@@ -36,18 +43,3 @@ review_pr("https://github.com/org/repo/pull/123")
 | Fetch diff | `git fetch + parse` |
 | Run rule pack | `rules.run(diff)` |
 | Post comments | `review.post(comments)` |
-
-## Tutorials
-
-- Review PR #142 and flag concurrency issues
-- Run the security rule pack on this branch
-
-## Tags
-
-`code-review`, `diff`, `security`
-
-## Author
-
-Release Works
-
-Version: 3.0

@@ -13,6 +13,13 @@ tags:
   - "cold-email"
   - "outreach"
   - "personalization"
+tutorials:
+  - prompt:
+      vi: "Cold email to Mai Tran, Head of Ops at Tiki, for our supplier-risk tool"
+      en: "Cold email to Mai Tran, Head of Ops at Tiki, for our supplier-risk tool"
+  - prompt:
+      vi: "3 variants pitching our QA platform to a fintech CTO"
+      en: "3 variants pitching our QA platform to a fintech CTO"
 status: "Ready"
 version: "2.0"
 ---
@@ -32,18 +39,3 @@ Provide prospect info + your offer. The skill researches the prospect, picks an 
 | Research prospect | `lookup(name, company)` |
 | Pick angle | `select_hook(angles)` |
 | Draft variants | `compose(n=3)` |
-
-## Tutorials
-
-- Cold email to Mai Tran, Head of Ops at Tiki, for our supplier-risk tool
-- 3 variants pitching our QA platform to a fintech CTO
-
-## Tags
-
-`cold-email`, `outreach`, `personalization`
-
-## Author
-
-Outbound Labs
-
-Version: 2.0

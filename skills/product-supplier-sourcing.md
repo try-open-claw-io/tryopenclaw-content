@@ -13,6 +13,13 @@ tags:
   - "sourcing"
   - "marketplace"
   - "spec-sheet"
+tutorials:
+  - prompt:
+      vi: "Source ceramic pet bowls, MOQ under 50, lead time under 15 days"
+      en: "Source ceramic pet bowls, MOQ under 50, lead time under 15 days"
+  - prompt:
+      vi: "Find waterproof Bluetooth speakers IP67-rated below $4 FOB"
+      en: "Find waterproof Bluetooth speakers IP67-rated below $4 FOB"
 status: "Ready"
 version: "1.2"
 ---
@@ -36,18 +43,3 @@ search("ceramic pet bowl, MOQ<=50, lead<=15d", networks=["cj","1688","ali"])
 | Expand query | `translate + synonyms` |
 | Fan-out search | `parallel network calls` |
 | Normalize results | `to common spec schema` |
-
-## Tutorials
-
-- Source ceramic pet bowls, MOQ under 50, lead time under 15 days
-- Find waterproof Bluetooth speakers IP67-rated below $4 FOB
-
-## Tags
-
-`sourcing`, `marketplace`, `spec-sheet`
-
-## Author
-
-TryOpenClaw
-
-Version: 1.2

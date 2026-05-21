@@ -15,6 +15,17 @@
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
     },
+    "tutorials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["prompt"],
+        "additionalProperties": false,
+        "properties": {
+          "prompt": { "$ref": "#/$defs/i18nString" }
+        }
+      }
+    },
     "status":   { "type": "string", "enum": ["Ready", "Beta", "Preview"] },
     "version":  { "type": "string", "minLength": 1 }
   },

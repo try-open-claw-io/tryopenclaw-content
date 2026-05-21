@@ -13,6 +13,13 @@ tags:
   - "meetings"
   - "summary"
   - "actions"
+tutorials:
+  - prompt:
+      vi: "Summarize this 60-minute Zoom transcript into 5 decisions and 8 actions"
+      en: "Summarize this 60-minute Zoom transcript into 5 decisions and 8 actions"
+  - prompt:
+      vi: "Write tomorrow's agenda from yesterday's follow-ups"
+      en: "Write tomorrow's agenda from yesterday's follow-ups"
 status: "Ready"
 version: "2.4"
 ---
@@ -36,18 +43,3 @@ summarize(transcript, audience="exec")
 | Parse transcript | `diarize + clean` |
 | Extract decisions | `extract("decisions")` |
 | Action items | `extract("actions")` |
-
-## Tutorials
-
-- Summarize this 60-minute Zoom transcript into 5 decisions and 8 actions
-- Write tomorrow's agenda from yesterday's follow-ups
-
-## Tags
-
-`meetings`, `summary`, `actions`
-
-## Author
-
-Sync Labs
-
-Version: 2.4

@@ -13,6 +13,13 @@ tags:
   - "research"
   - "brief"
   - "company"
+tutorials:
+  - prompt:
+      vi: "Give me a one-page brief on Shopee Vietnam"
+      en: "Give me a one-page brief on Shopee Vietnam"
+  - prompt:
+      vi: "Who's on the leadership team at Tiki and what did they ship last quarter?"
+      en: "Who's on the leadership team at Tiki and what did they ship last quarter?"
 status: "Ready"
 version: "1.8"
 ---
@@ -20,18 +27,3 @@ version: "1.8"
 # Company Research
 
 Builds a one-page brief from public sources: corporate filings, funding history, executive team, product portfolio, and recent news. Ideal as a pre-meeting prep.
-
-## Tutorials
-
-- Give me a one-page brief on Shopee Vietnam
-- Who's on the leadership team at Tiki and what did they ship last quarter?
-
-## Tags
-
-`research`, `brief`, `company`
-
-## Author
-
-Brief Co
-
-Version: 1.8

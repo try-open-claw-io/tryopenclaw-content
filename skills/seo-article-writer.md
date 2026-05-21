@@ -13,6 +13,13 @@ tags:
   - "seo"
   - "longform"
   - "writing"
+tutorials:
+  - prompt:
+      vi: "Write a 1500-word guide ranking for 'AI agent platform' (B2B)"
+      en: "Write a 1500-word guide ranking for 'AI agent platform' (B2B)"
+  - prompt:
+      vi: "Draft a buying guide for 'best air purifier under 5 trieu'"
+      en: "Draft a buying guide for 'best air purifier under 5 trieu'"
 status: "Ready"
 version: "2.1"
 ---
@@ -32,18 +39,3 @@ Pass keyword + audience. Skill plans an outline, then drafts section-by-section 
 | SERP scrape | `fetch_top_10(keyword)` |
 | Outline by intent | `outline(intent)` |
 | Section drafts | `draft(section)` |
-
-## Tutorials
-
-- Write a 1500-word guide ranking for 'AI agent platform' (B2B)
-- Draft a buying guide for 'best air purifier under 5 trieu'
-
-## Tags
-
-`seo`, `longform`, `writing`
-
-## Author
-
-Rank Lab
-
-Version: 2.1

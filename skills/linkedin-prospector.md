@@ -13,6 +13,13 @@ tags:
   - "prospecting"
   - "icp"
   - "linkedin"
+tutorials:
+  - prompt:
+      vi: "Find 50 ops leaders at SEA e-commerce companies under 500 staff"
+      en: "Find 50 ops leaders at SEA e-commerce companies under 500 staff"
+  - prompt:
+      vi: "Qualify which of these 200 prospects fits our ICP"
+      en: "Qualify which of these 200 prospects fits our ICP"
 status: "Ready"
 version: "1.4"
 ---
@@ -20,18 +27,3 @@ version: "1.4"
 # LinkedIn Prospector
 
 Takes an ICP (industry, title, geo, headcount) and surfaces prospects with enriched contact data, a personalized hook, and a recommended outreach sequence.
-
-## Tutorials
-
-- Find 50 ops leaders at SEA e-commerce companies under 500 staff
-- Qualify which of these 200 prospects fits our ICP
-
-## Tags
-
-`prospecting`, `icp`, `linkedin`
-
-## Author
-
-Outbound Labs
-
-Version: 1.4

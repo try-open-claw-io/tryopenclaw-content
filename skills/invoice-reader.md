@@ -13,6 +13,13 @@ tags:
   - "ocr"
   - "invoice"
   - "extraction"
+tutorials:
+  - prompt:
+      vi: "Extract line items from these 5 supplier invoices"
+      en: "Extract line items from these 5 supplier invoices"
+  - prompt:
+      vi: "Flag any invoice where line totals don't match the grand total"
+      en: "Flag any invoice where line totals don't match the grand total"
 status: "Ready"
 version: "2.0"
 ---
@@ -32,18 +39,3 @@ Send a file or URL. Skill OCRs, parses, and validates the result, then emits str
 | OCR document | `ocr(file)` |
 | Extract fields | `extract(schema)` |
 | Validate totals | `verify(math)` |
-
-## Tutorials
-
-- Extract line items from these 5 supplier invoices
-- Flag any invoice where line totals don't match the grand total
-
-## Tags
-
-`ocr`, `invoice`, `extraction`
-
-## Author
-
-Ledger Lab
-
-Version: 2.0

@@ -13,6 +13,13 @@ tags:
   - "social"
   - "captions"
   - "hashtags"
+tutorials:
+  - prompt:
+      vi: "5 IG captions for our new matcha latte — playful tone"
+      en: "5 IG captions for our new matcha latte — playful tone"
+  - prompt:
+      vi: "LinkedIn caption for our Series A announcement"
+      en: "LinkedIn caption for our Series A announcement"
 status: "Ready"
 version: "1.5"
 ---
@@ -20,18 +27,3 @@ version: "1.5"
 # Social Caption Generator
 
 One brief → 5 caption variants per platform, with hooks and hashtag suggestions. Respects each platform's length limits and tone defaults.
-
-## Tutorials
-
-- 5 IG captions for our new matcha latte — playful tone
-- LinkedIn caption for our Series A announcement
-
-## Tags
-
-`social`, `captions`, `hashtags`
-
-## Author
-
-Caption Studio
-
-Version: 1.5

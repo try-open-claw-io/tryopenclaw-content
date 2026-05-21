@@ -13,6 +13,13 @@ tags:
   - "faq"
   - "knowledge"
   - "support"
+tutorials:
+  - prompt:
+      vi: "Find the top 10 unanswered questions from last month's tickets"
+      en: "Find the top 10 unanswered questions from last month's tickets"
+  - prompt:
+      vi: "Draft answers and propose 5 new FAQ entries"
+      en: "Draft answers and propose 5 new FAQ entries"
 status: "Ready"
 version: "1.0"
 ---
@@ -20,18 +27,3 @@ version: "1.0"
 # FAQ Builder
 
 Clusters tickets by question, drafts canonical FAQ answers, and proposes which to publish based on volume × ambiguity. Diffs additions vs your existing FAQ.
-
-## Tutorials
-
-- Find the top 10 unanswered questions from last month's tickets
-- Draft answers and propose 5 new FAQ entries
-
-## Tags
-
-`faq`, `knowledge`, `support`
-
-## Author
-
-HelpKit
-
-Version: 1.0

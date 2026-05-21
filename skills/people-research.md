@@ -13,6 +13,13 @@ tags:
   - "people"
   - "prospect"
   - "brief"
+tutorials:
+  - prompt:
+      vi: "Prep me for a meeting with Linh Nguyen, Head of Growth at Tiki"
+      en: "Prep me for a meeting with Linh Nguyen, Head of Growth at Tiki"
+  - prompt:
+      vi: "Summarize the recent talks given by the CTO of Sky Mavis"
+      en: "Summarize the recent talks given by the CTO of Sky Mavis"
 status: "Ready"
 version: "1.1"
 ---
@@ -20,18 +27,3 @@ version: "1.1"
 # People Research
 
 Builds a profile from public LinkedIn-style data, conference talks, GitHub activity, and recent press. Useful before partnerships, interviews, and sales calls.
-
-## Tutorials
-
-- Prep me for a meeting with Linh Nguyen, Head of Growth at Tiki
-- Summarize the recent talks given by the CTO of Sky Mavis
-
-## Tags
-
-`people`, `prospect`, `brief`
-
-## Author
-
-Brief Co
-
-Version: 1.1

@@ -13,6 +13,13 @@ tags:
   - "operations"
   - "scorecard"
   - "alerts"
+tutorials:
+  - prompt:
+      vi: "Show suppliers that breached 95% OTD this quarter"
+      en: "Show suppliers that breached 95% OTD this quarter"
+  - prompt:
+      vi: "Alert me if any supplier's defect rate spikes 2x WoW"
+      en: "Alert me if any supplier's defect rate spikes 2x WoW"
 status: "Beta"
 version: "0.9"
 ---
@@ -32,18 +39,3 @@ Connect your order log once, set SLA thresholds, then check the weekly scorecard
 | Connect data source | `connect(source="erp")` |
 | Set thresholds | `set_sla(otd>=95, defect<=2)` |
 | Run weekly job | `schedule("every monday 8am")` |
-
-## Tutorials
-
-- Show suppliers that breached 95% OTD this quarter
-- Alert me if any supplier's defect rate spikes 2x WoW
-
-## Tags
-
-`operations`, `scorecard`, `alerts`
-
-## Author
-
-OpsBridge
-
-Version: 0.9
