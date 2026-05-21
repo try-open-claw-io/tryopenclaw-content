@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "name", "summary", "category", "author", "version"],
+  "additionalProperties": false,
+  "properties": {
+    "id":       { "type": "string", "pattern": "^[a-z0-9_-]+$" },
+    "name":     { "$ref": "#/$defs/i18nString" },
+    "summary":  { "$ref": "#/$defs/i18nString" },
+    "category": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "icon":     { "type": "string" },
+    "author":   { "type": "string", "minLength": 1 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "status":   { "type": "string", "enum": ["Ready", "Beta", "Preview"] },
+    "version":  { "type": "string", "minLength": 1 }
+  },
+  "$defs": {
+    "i18nString": {
+      "type": "object",
+      "required": ["vi", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "vi": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

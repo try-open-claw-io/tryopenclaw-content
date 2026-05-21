@@ -10,4 +10,5 @@ icon: "Code"
 displayOrder: 4
 appliesTo:
   - connector
+  - skill
 ---

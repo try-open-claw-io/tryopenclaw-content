@@ -10,4 +10,5 @@ icon: "Zap"
 displayOrder: 2
 appliesTo:
   - connector
+  - skill
 ---
