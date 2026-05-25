@@ -22,4 +22,3 @@ evaluate(supplier_id="1101234567", window_days=90)
 
 - Rate supplier 'GreatHome Store' on Aliexpress for kitchenware
 - Compare 3 Aliexpress sellers of silicone molds and pick the safest
-- Test phatld - 123
