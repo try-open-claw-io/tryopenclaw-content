@@ -25,8 +25,8 @@ tutorials:
       vi: "Time tracking"
       en: "Start time tracking"
     prompt:
-      vi: "Bắt đầu time tracking cho task X trong ClickUp."
-      en: "Start time tracking for task X in ClickUp."
+      vi: "Bắt đầu time tracking cho task [tên task] trong ClickUp."
+      en: "Start time tracking for task [tên task] in ClickUp."
 ---
 
 <!-- Body for future rich docs -->

@@ -13,8 +13,8 @@ tutorials:
       vi: "Cập nhật deal"
       en: "Update a deal"
     prompt:
-      vi: "Cập nhật deal X sang giai đoạn đàm phán trong Pipedrive."
-      en: "Move deal X to the negotiation stage in Pipedrive."
+      vi: "Cập nhật deal [tên deal] sang giai đoạn đàm phán trong Pipedrive."
+      en: "Move deal [tên deal] to the negotiation stage in Pipedrive."
   - title:
       vi: "List pipeline"
       en: "List pipeline"
@@ -25,8 +25,8 @@ tutorials:
       vi: "Tạo deal mới"
       en: "Create a deal"
     prompt:
-      vi: "Tạo deal mới gắn với contact 'shop X', giá trị 50 triệu."
-      en: "Create a new deal linked to contact 'shop X' worth 50 million."
+      vi: "Tạo deal mới gắn với contact [tên contact], giá trị 50 triệu."
+      en: "Create a new deal linked to contact [contact name] worth 50 million."
 ---
 
 <!-- Body for future rich docs -->

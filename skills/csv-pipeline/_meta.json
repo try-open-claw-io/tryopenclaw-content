@@ -1,0 +1,15 @@
+{
+  "slug": "csv-pipeline",
+  "name": {
+    "vi": "Pipeline CSV / JSON",
+    "en": "CSV / JSON Pipeline"
+  },
+  "description": {
+    "vi": "Làm sạch và biến đổi file CSV/JSON. Dedupe, chuẩn hoá số điện thoại, gộp file, xuất báo cáo. Không cần API.",
+    "en": "Clean and transform CSV/JSON files. Dedupe, normalize phone numbers, merge files, emit reports. No API required."
+  },
+  "category": "productivity",
+  "icon": "FileSpreadsheet",
+  "status": "Ready",
+  "version": "1.0"
+}

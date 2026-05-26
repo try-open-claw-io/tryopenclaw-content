@@ -25,8 +25,8 @@ tutorials:
       vi: "Cập nhật database"
       en: "Update a database"
     prompt:
-      vi: "Cập nhật trạng thái task X sang 'Done' trong database 'Tasks'."
-      en: "Update task X to 'Done' in the 'Tasks' database."
+      vi: "Cập nhật trạng thái task [tên task] sang 'Done' trong database 'Tasks'."
+      en: "Update task [tên task] to 'Done' in the 'Tasks' database."
 ---
 
 <!-- Body for future rich docs -->

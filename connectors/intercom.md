@@ -25,8 +25,8 @@ tutorials:
       vi: "Áp macro"
       en: "Apply macro"
     prompt:
-      vi: "Áp macro 'Cảm ơn đã liên hệ' cho chat X trong Intercom."
-      en: "Apply the 'Thanks for reaching out' macro to chat X in Intercom."
+      vi: "Áp macro 'Cảm ơn đã liên hệ' cho chat [mã chat] trong Intercom."
+      en: "Apply the 'Thanks for reaching out' macro to chat [chat ID] in Intercom."
 ---
 
 <!-- Body for future rich docs -->

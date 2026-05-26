@@ -19,8 +19,8 @@ tutorials:
       vi: "List pull request"
       en: "List open PRs"
     prompt:
-      vi: "Liệt kê các pull request đang chờ review trong repo X."
-      en: "List open pull requests waiting for review in repo X."
+      vi: "Liệt kê các pull request đang chờ review trong repo [tên repo]."
+      en: "List open pull requests waiting for review in repo [tên repo]."
   - title:
       vi: "Tóm tắt commit"
       en: "Summarize commits"

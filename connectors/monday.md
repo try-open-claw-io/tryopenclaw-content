@@ -25,8 +25,8 @@ tutorials:
       vi: "Cập nhật status"
       en: "Update status"
     prompt:
-      vi: "Cập nhật status item X sang 'Working on it' trong Monday."
-      en: "Update item X status to 'Working on it' in Monday."
+      vi: "Cập nhật status item [tên item] sang 'Working on it' trong Monday."
+      en: "Update item [tên item] status to 'Working on it' in Monday."
 ---
 
 <!-- Body for future rich docs -->

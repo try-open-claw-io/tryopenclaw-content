@@ -25,8 +25,8 @@ tutorials:
       vi: "Cập nhật giá"
       en: "Update price"
     prompt:
-      vi: "Cập nhật giá sản phẩm X lên 500k trong Shopify."
-      en: "Update the price of product X to 500k in Shopify."
+      vi: "Cập nhật giá sản phẩm [tên sản phẩm] lên 500k trong Shopify."
+      en: "Update the price of product [tên product] to 500k in Shopify."
 ---
 
 <!-- Body for future rich docs -->

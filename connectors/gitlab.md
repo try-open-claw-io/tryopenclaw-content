@@ -25,8 +25,8 @@ tutorials:
       vi: "Trigger pipeline"
       en: "Trigger pipeline"
     prompt:
-      vi: "Chạy pipeline CI cho branch main repo X trên GitLab."
-      en: "Trigger the CI pipeline for the main branch of repo X on GitLab."
+      vi: "Chạy pipeline CI cho branch main repo [tên repo] trên GitLab."
+      en: "Trigger the CI pipeline for the main branch of repo [tên repo] on GitLab."
 ---
 
 <!-- Body for future rich docs -->
