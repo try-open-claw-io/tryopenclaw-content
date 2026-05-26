@@ -1,0 +1,15 @@
+{
+  "slug": "workcrm",
+  "name": {
+    "vi": "WorkCRM nhẹ",
+    "en": "WorkCRM Lightweight"
+  },
+  "description": {
+    "vi": "CRM nhẹ chạy local, không cloud. Cho freelancer hoặc shop SME giữ data khách hàng và pipeline riêng tư.",
+    "en": "A lightweight CRM that runs locally, no cloud. For freelancers or small shops who want a private customer pipeline."
+  },
+  "category": "sales-outreach",
+  "icon": "Users",
+  "status": "Ready",
+  "version": "1.0"
+}
