@@ -13,14 +13,14 @@ tutorials:
       vi: "Đăng tweet"
       en: "Post a tweet"
     prompt:
-      vi: "Đăng tweet ra mắt sản phẩm mới kèm link landing page."
-      en: "Post a tweet announcing the new product with the landing-page link."
+      vi: "Đăng tweet về sự kiện X kèm link landing page."
+      en: "Post a tweet about event X with the landing-page link."
   - title:
       vi: "DM follower"
       en: "Send DM"
     prompt:
-      vi: "Gửi DM cảm ơn follower vừa retweet sản phẩm mới."
-      en: "Send a DM thanking a follower for retweeting the new product."
+      vi: "Gửi DM cảm ơn follower vừa retweet bài X."
+      en: "Send a DM thanking a follower for retweeting post X."
   - title:
       vi: "Xem analytics tweet"
       en: "View analytics"

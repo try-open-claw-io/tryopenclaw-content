@@ -19,8 +19,8 @@ tutorials:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file hợp đồng quý 2 trong Dropbox."
-      en: "Find the Q2 contract file in Dropbox."
+      vi: "Tìm file hợp đồng X trong Dropbox."
+      en: "Find contract file X in Dropbox."
   - title:
       vi: "Upload file mới"
       en: "Upload a file"

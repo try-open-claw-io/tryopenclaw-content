@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo issue"
       en: "Create an issue"
     prompt:
-      vi: "Tạo issue mới repo Y: lỗi build pipeline."
-      en: "Create a new issue in repo Y: pipeline build failure."
+      vi: "Tạo issue mới repo Y mô tả lỗi X."
+      en: "Create a new issue in repo Y describing bug X."
   - title:
       vi: "Tóm tắt commit"
       en: "Summarize commits"

@@ -13,8 +13,8 @@ tutorials:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file hợp đồng quý 2 trong Box."
-      en: "Find the Q2 contract file in Box."
+      vi: "Tìm file hợp đồng X trong Box."
+      en: "Find contract file X in Box."
   - title:
       vi: "Share file có hạn"
       en: "Share with expiry"

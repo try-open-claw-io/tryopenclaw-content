@@ -13,8 +13,8 @@ tutorials:
       vi: "Gửi alert"
       en: "Send an alert"
     prompt:
-      vi: "Gửi cảnh báo vào nhóm ops trên Telegram: server xuống."
-      en: "Send an alert to the ops Telegram group: server is down."
+      vi: "Gửi cảnh báo vào nhóm ops trên Telegram về sự cố X."
+      en: "Send an alert to the ops Telegram group about incident X."
   - title:
       vi: "Tin nhắn nhóm"
       en: "Send to a group"

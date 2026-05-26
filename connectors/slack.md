@@ -19,8 +19,8 @@ tutorials:
       vi: "Tìm tin nhắn"
       en: "Search messages"
     prompt:
-      vi: "Tìm tin nhắn về dự án ra mắt Q3 trong tuần qua."
-      en: "Find messages from the past week about the Q3 launch."
+      vi: "Tìm tin nhắn về dự án X trong tuần qua."
+      en: "Find messages from the past week about project X."
   - title:
       vi: "Tóm tắt kênh"
       en: "Summarize a channel"

@@ -13,8 +13,8 @@ tutorials:
       vi: "Tìm ứng viên"
       en: "Search candidates"
     prompt:
-      vi: "Tìm 10 dev React 3 năm kinh nghiệm trên LinkedIn."
-      en: "Find 10 React developers with 3 years of experience on LinkedIn."
+      vi: "Tìm 10 ứng viên kỹ năng X có Y năm kinh nghiệm trên LinkedIn."
+      en: "Find 10 candidates with skill X and Y years of experience on LinkedIn."
   - title:
       vi: "Gửi message"
       en: "Send a message"
@@ -25,8 +25,8 @@ tutorials:
       vi: "Đăng bài tuyển dụng"
       en: "Post a job update"
     prompt:
-      vi: "Đăng bài LinkedIn tuyển dụng vị trí backend dev."
-      en: "Post a LinkedIn update hiring for a backend developer role."
+      vi: "Đăng bài LinkedIn tuyển dụng vị trí X."
+      en: "Post a LinkedIn update hiring for role X."
 ---
 
 <!-- Body for future rich docs -->

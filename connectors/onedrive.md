@@ -13,8 +13,8 @@ tutorials:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file báo cáo Q1 trong OneDrive."
-      en: "Find the Q1 report file in OneDrive."
+      vi: "Tìm file báo cáo X trong OneDrive."
+      en: "Find report file X in OneDrive."
   - title:
       vi: "Share link file"
       en: "Share a file"

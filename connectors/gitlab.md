@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo issue"
       en: "Create an issue"
     prompt:
-      vi: "Tạo issue mới priority cao: pipeline build fail."
-      en: "Create a new high-priority issue: pipeline build failure."
+      vi: "Tạo issue mới priority cao mô tả sự cố X."
+      en: "Create a new high-priority issue describing incident X."
   - title:
       vi: "Trigger pipeline"
       en: "Trigger pipeline"

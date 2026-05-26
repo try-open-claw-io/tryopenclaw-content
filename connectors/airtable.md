@@ -13,8 +13,8 @@ tutorials:
       vi: "Thêm sản phẩm"
       en: "Add a product"
     prompt:
-      vi: "Thêm sản phẩm mới vào Airtable catalog: tên, giá, ảnh, tồn kho."
-      en: "Add a new product to the Airtable catalog: name, price, photo, stock."
+      vi: "Thêm record mới vào table X trong Airtable kèm các field cần thiết."
+      en: "Add a new record to table X in Airtable with the required fields."
   - title:
       vi: "Tìm record"
       en: "Find records"

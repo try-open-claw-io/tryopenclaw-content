@@ -59,9 +59,18 @@ Prompt đầu tiên trong `tutorials[0].prompt.vi` **nên** phản ánh use-case
 - 2-5 từ. Mệnh lệnh hoặc danh động từ ("Tạo link đặt lịch", "Create booking link").
 - Không lặp tên connector trong title ("Tạo Gmail mail" ❌ — connector đã rõ trong context).
 
-### B4. Prompt context
-- Ưu tiên context cụ thể nhưng generic: tên sheet ("sheet 'Đơn hàng'"), kênh ("kênh #sales"), số lượng ("10 đơn"), khung giờ ("2-5 giờ chiều").
-- Đừng để prompt quá trống ("Show me my data") — mất tính minh hoạ.
+### B4. Prompt = mẫu guide, không phải workflow cụ thể
+- Prompt là pattern user xem rồi tự thay X bằng ngữ cảnh thật của họ. **Tránh hardcode topic cụ thể.**
+- **Giữ:** action verb (tạo/gửi/mở/list), team/department phổ biến (Sales, Marketing, Engineering, HR), số lượng generic (10/20/100), khung giờ (2-5h chiều).
+- **Thay X/Y:** tên chiến dịch, tên blog post, tên file/doc/slide, tên product, event (Tết/Q3 launch), industry/region cụ thể.
+- Ví dụ:
+  - ❌ "Đăng bài blog 'Mẹo dùng sản phẩm mùa hè' lên WordPress."
+  - ✅ "Đăng bài blog X lên WordPress kèm ảnh bìa."
+  - ❌ "Tạo banner Facebook khuyến mãi cuối tuần trên Canva."
+  - ✅ "Tạo banner Facebook cho chiến dịch X trên Canva."
+  - ❌ "Gửi mail khuyến mãi Tết cho danh sách 'Khách thân thiết'."
+  - ✅ "Gửi mail chiến dịch X cho danh sách 'Khách thân thiết'."
+- Đừng để prompt quá trống ("Show me my data") — vẫn cần đủ tham số (kênh/file/segment generic) để user thấy được cú pháp.
 
 ### B5. Length prompt
 - ≤ 25 từ / lang. Dài hơn → user khó hình dung gõ.

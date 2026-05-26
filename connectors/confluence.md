@@ -13,20 +13,20 @@ tutorials:
       vi: "Tìm trang"
       en: "Search pages"
     prompt:
-      vi: "Tìm trang quy trình onboarding nhân viên trong Confluence."
-      en: "Find the employee onboarding process page in Confluence."
+      vi: "Tìm trang Confluence về quy trình X."
+      en: "Find the Confluence page about process X."
   - title:
       vi: "Tạo trang mới"
       en: "Create a page"
     prompt:
-      vi: "Tạo trang Confluence mới 'Hướng dẫn xử lý hoàn tiền' trong space 'Sales'."
-      en: "Create a new Confluence page 'Refund handling guide' in the 'Sales' space."
+      vi: "Tạo trang Confluence mới X trong space 'Sales'."
+      en: "Create a new Confluence page X in the 'Sales' space."
   - title:
       vi: "Tóm tắt trang"
       en: "Summarize a page"
     prompt:
-      vi: "Tóm tắt nội dung trang 'Quy trình tuyển dụng' trong Confluence."
-      en: "Summarize the 'Hiring process' page in Confluence."
+      vi: "Tóm tắt nội dung trang X trong Confluence."
+      en: "Summarize page X in Confluence."
 ---
 
 <!-- Body for future rich docs -->

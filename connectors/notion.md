@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo trang mới"
       en: "Create a page"
     prompt:
-      vi: "Tạo trang Notion mới 'Onboarding khách hàng' trong workspace 'Sales'."
-      en: "Create a new Notion page 'Customer onboarding' in the Sales workspace."
+      vi: "Tạo trang Notion mới X trong workspace 'Sales'."
+      en: "Create a new Notion page X in the 'Sales' workspace."
   - title:
       vi: "Cập nhật database"
       en: "Update a database"

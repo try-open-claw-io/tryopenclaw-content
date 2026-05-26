@@ -13,8 +13,8 @@ tutorials:
       vi: "Gửi chiến dịch khuyến mãi"
       en: "Send a promo campaign"
     prompt:
-      vi: "Gửi mail khuyến mãi Tết cho danh sách 'Khách thân thiết' trong Mailchimp."
-      en: "Send a seasonal holiday promo email to the 'Loyal Customers' Mailchimp list."
+      vi: "Gửi mail chiến dịch X cho danh sách 'Khách thân thiết' trong Mailchimp."
+      en: "Send campaign X email to the 'Loyal Customers' Mailchimp list."
   - title:
       vi: "Thêm khách vào audience"
       en: "Add contacts to audience"
@@ -25,8 +25,8 @@ tutorials:
       vi: "Xem hiệu quả chiến dịch"
       en: "Check campaign results"
     prompt:
-      vi: "Mail khuyến mãi tuần trước có bao nhiêu người mở và bao nhiêu người click?"
-      en: "How many people opened and clicked the promo email I sent last week?"
+      vi: "Mail chiến dịch X tuần trước có bao nhiêu người mở và bao nhiêu người click?"
+      en: "How many people opened and clicked campaign X email last week?"
 ---
 
 <!-- Body for future rich docs -->

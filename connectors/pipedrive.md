@@ -19,14 +19,14 @@ tutorials:
       vi: "List pipeline"
       en: "List pipeline"
     prompt:
-      vi: "Liệt kê các deal trong pipeline 'Q3 Sales' của Pipedrive."
-      en: "List deals in the 'Q3 Sales' Pipedrive pipeline."
+      vi: "Liệt kê các deal trong pipeline X của Pipedrive."
+      en: "List deals in pipeline X on Pipedrive."
   - title:
       vi: "Tạo deal mới"
       en: "Create a deal"
     prompt:
-      vi: "Tạo deal mới gắn với contact 'shop X', giá trị 50 triệu."
-      en: "Create a new deal linked to contact 'shop X' worth 50 million."
+      vi: "Tạo deal mới gắn với contact X, giá trị 50 triệu."
+      en: "Create a new deal linked to contact X worth 50 million."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo task mới"
       en: "Create a task"
     prompt:
-      vi: "Tạo task mới 'Audit content connector' với deadline thứ 6."
-      en: "Create a new task 'Audit connector content' with a Friday deadline."
+      vi: "Tạo task mới X với deadline thứ 6."
+      en: "Create a new task X with a Friday deadline."
   - title:
       vi: "Time tracking"
       en: "Start time tracking"

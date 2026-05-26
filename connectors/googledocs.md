@@ -13,20 +13,20 @@ tutorials:
       vi: "Mở doc"
       en: "Open a doc"
     prompt:
-      vi: "Mở doc 'Báo cáo Q2' và tóm tắt nội dung chính."
-      en: "Open the 'Q2 Report' doc and summarize the main points."
+      vi: "Mở doc X và tóm tắt nội dung chính."
+      en: "Open doc X and summarize the main points."
   - title:
       vi: "Tạo doc mới"
       en: "Create a doc"
     prompt:
-      vi: "Tạo doc Google mới 'Đề xuất hợp tác' từ template chuẩn."
-      en: "Create a new Google Doc 'Partnership proposal' from the standard template."
+      vi: "Tạo doc Google mới X từ template chuẩn."
+      en: "Create a new Google Doc X from the standard template."
   - title:
       vi: "Tóm tắt doc"
       en: "Summarize doc"
     prompt:
-      vi: "Tóm tắt doc 'Họp team thứ 2' thành các điểm chính."
-      en: "Summarize the 'Monday team meeting' doc into key points."
+      vi: "Tóm tắt doc X thành các điểm chính."
+      en: "Summarize doc X into key points."
 ---
 
 <!-- Body for future rich docs -->

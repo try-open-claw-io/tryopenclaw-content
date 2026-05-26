@@ -13,8 +13,8 @@ tutorials:
       vi: "Giao task"
       en: "Assign a task"
     prompt:
-      vi: "Giao task 'Review báo cáo Q2' cho thành viên team, hạn thứ 6."
-      en: "Assign 'Review Q2 report' to a teammate with a Friday deadline."
+      vi: "Giao task X cho thành viên team, hạn thứ 6."
+      en: "Assign task X to a teammate with a Friday deadline."
   - title:
       vi: "List task chưa xong"
       en: "List open tasks"

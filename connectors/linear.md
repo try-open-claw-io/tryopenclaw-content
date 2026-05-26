@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo issue"
       en: "Create an issue"
     prompt:
-      vi: "Tạo issue mới priority cao: server chậm sau giờ peak."
-      en: "Create a high-priority issue: server slow after peak hours."
+      vi: "Tạo issue mới priority cao mô tả sự cố X."
+      en: "Create a high-priority issue describing incident X."
   - title:
       vi: "Cập nhật trạng thái"
       en: "Update status"

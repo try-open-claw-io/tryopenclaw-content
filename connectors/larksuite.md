@@ -19,8 +19,8 @@ tutorials:
       vi: "Tạo doc mới"
       en: "Create a doc"
     prompt:
-      vi: "Tạo doc Lark mới 'Quy trình onboarding' trong workspace 'HR'."
-      en: "Create a new Lark doc 'Onboarding process' in the 'HR' workspace."
+      vi: "Tạo doc Lark mới X trong workspace 'HR'."
+      en: "Create a new Lark doc X in the 'HR' workspace."
   - title:
       vi: "Đặt lịch meeting"
       en: "Schedule a meeting"

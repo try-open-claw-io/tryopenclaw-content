@@ -13,8 +13,8 @@ tutorials:
       vi: "Tạo issue"
       en: "Create an issue"
     prompt:
-      vi: "Tạo GitHub issue mới: lỗi đăng nhập trang chủ."
-      en: "Create a new GitHub issue: login broken on the home page."
+      vi: "Tạo GitHub issue mới mô tả lỗi X trong repo Y."
+      en: "Create a new GitHub issue describing bug X in repo Y."
   - title:
       vi: "List pull request"
       en: "List open PRs"
