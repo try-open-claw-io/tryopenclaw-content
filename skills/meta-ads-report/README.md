@@ -6,9 +6,10 @@ Lấy số liệu hiệu quả quảng cáo Facebook và Instagram trực tiếp
 
 ## Hướng dẫn
 
+- Hãy guide tôi config skills này cho chuẩn meta-ads-report
 - Quảng cáo tuần này tốn bao nhiêu, hiệu quả ra sao?
-- So sánh CTR 4 chiến dịch top tháng này với tháng trước
-- Chiến dịch nào CPA trên 100k, đề xuất dừng cái nào?
+- So sánh CTR top 5 chiến dịch tháng này với tháng trước
+- Liệt kê chiến dịch có CPA cao bất thường để xem xét dừng
 
 <!-- en -->
 
@@ -18,6 +19,7 @@ Pulls Facebook and Instagram ad metrics directly through chat. The skill reports
 
 ## Tutorials
 
+- Walk me through configuring this skill properly for meta-ads-report
 - How much did we spend on ads this week and how did they perform?
-- Compare the CTR of the top 4 campaigns this month vs. last month
-- Which campaigns have a CPA above 100k VND — recommend ones to pause
+- Compare the CTR of the top 5 campaigns this month vs. last month
+- List campaigns with unusually high CPA and suggest which to pause
