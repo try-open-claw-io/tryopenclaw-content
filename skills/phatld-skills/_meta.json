@@ -1,0 +1,15 @@
+{
+  "id": "phatld-skills",
+  "name": { 
+    "vi": "phatld skills",
+    "en": "phatld-skills"
+  },
+  "summary": {
+    "vi": "Evaluate overseas supplier reliability with rating, lead time, and complaint signals.",
+    "en": "Evaluate overseas supplier reliability with rating, lead time, and complaint signals."
+  },
+  "category": "sourcing",
+  "icon": "ShoppingBag",
+  "status": "Ready",
+  "version": "1.4"
+}
