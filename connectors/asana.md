@@ -19,14 +19,14 @@ tutorials:
       vi: "List task chưa xong"
       en: "List open tasks"
     prompt:
-      vi: "Liệt kê task chưa xong trong project X."
-      en: "List open tasks in project X."
+      vi: "Liệt kê task chưa xong trong project [tên project]."
+      en: "List open tasks in project [tên project]."
   - title:
       vi: "Cập nhật status"
       en: "Update task status"
     prompt:
-      vi: "Cập nhật task Y sang 'In Progress' trong Asana."
-      en: "Update task Y to 'In Progress' in Asana."
+      vi: "Cập nhật task [tên task] sang 'In Progress' trong Asana."
+      en: "Update task [tên task] to 'In Progress' in Asana."
 ---
 
 <!-- Body for future rich docs -->

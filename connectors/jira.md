@@ -19,14 +19,14 @@ tutorials:
       vi: "List sprint hiện tại"
       en: "List current sprint"
     prompt:
-      vi: "Liệt kê các ticket trong sprint hiện tại của project X."
-      en: "List tickets in the current sprint for project X."
+      vi: "Liệt kê các ticket trong sprint hiện tại của project [tên project]."
+      en: "List tickets in the current sprint for project [tên project]."
   - title:
       vi: "Cập nhật ticket"
       en: "Update a ticket"
     prompt:
-      vi: "Chuyển ticket Y sang trạng thái 'Done' trong Jira."
-      en: "Move ticket Y to 'Done' in Jira."
+      vi: "Chuyển ticket [mã ticket] sang trạng thái 'Done' trong Jira."
+      en: "Move ticket [mã ticket] to 'Done' in Jira."
 ---
 
 <!-- Body for future rich docs -->

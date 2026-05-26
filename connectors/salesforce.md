@@ -13,14 +13,14 @@ tutorials:
       vi: "Cập nhật opportunity"
       en: "Update opportunity"
     prompt:
-      vi: "Cập nhật opportunity X sang giai đoạn đàm phán."
-      en: "Move opportunity X to the negotiation stage."
+      vi: "Cập nhật opportunity [tên opportunity] sang giai đoạn đàm phán."
+      en: "Move opportunity [tên opportunity] to the negotiation stage."
   - title:
       vi: "Tạo contact"
       en: "Create a contact"
     prompt:
-      vi: "Tạo contact mới gắn với account 'shop X'."
-      en: "Create a new contact linked to the 'shop X' account."
+      vi: "Tạo contact mới gắn với account [tên account].
+      en: "Create a new contact linked to account [account name]."
   - title:
       vi: "Báo cáo doanh thu"
       en: "Sales report"

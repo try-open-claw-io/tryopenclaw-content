@@ -25,8 +25,8 @@ tutorials:
       vi: "Cập nhật field"
       en: "Update a field"
     prompt:
-      vi: "Cập nhật trạng thái record X sang 'Đã giao' trong Airtable."
-      en: "Update record X status to 'Delivered' in Airtable."
+      vi: "Cập nhật trạng thái record [tên record] sang 'Đã giao' trong Airtable."
+      en: "Update record [tên record] status to 'Delivered' in Airtable."
 ---
 
 <!-- Body for future rich docs -->

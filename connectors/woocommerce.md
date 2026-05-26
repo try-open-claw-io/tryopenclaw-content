@@ -19,8 +19,8 @@ tutorials:
       vi: "Cập nhật tồn kho"
       en: "Update stock"
     prompt:
-      vi: "Cập nhật tồn kho sản phẩm X xuống 5 cái trong WooCommerce."
-      en: "Update the stock of product X to 5 units in WooCommerce."
+      vi: "Cập nhật tồn kho sản phẩm [tên sản phẩm] xuống 5 cái trong WooCommerce."
+      en: "Update the stock of product [tên product] to 5 units in WooCommerce."
   - title:
       vi: "Tìm sản phẩm hết hàng"
       en: "Find out-of-stock"
