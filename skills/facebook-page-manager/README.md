@@ -6,9 +6,10 @@ Quản lý fanpage Facebook qua chat. Đăng bài (text, ảnh, video), lên l�
 
 ## Hướng dẫn
 
-- Bài đăng hôm qua có ai hỏi giá trong comment không?
-- Lên lịch đăng bài bán hàng vào 8h sáng mai
-- Ẩn comment spam trên bài tuần trước
+- Hãy guide tôi config skills này cho chuẩn facebook-page-manager
+- Liệt kê comment có dấu hiệu spam trên 5 bài đăng gần nhất
+- Lên lịch đăng bài mới vào 8h sáng mai
+- Trả lời inbox chưa đọc trong 24 giờ qua
 
 <!-- en -->
 
@@ -18,6 +19,7 @@ Manage a Facebook Page through chat. Publish posts (text, photos, videos), sched
 
 ## Tutorials
 
-- Did anyone ask about pricing in the comments on yesterday's post?
-- Schedule a promo post for 8am tomorrow
-- Hide spam comments on last week's post
+- Walk me through configuring this skill properly for facebook-page-manager
+- List comments flagged as spam across the last 5 posts
+- Schedule a new post for 8am tomorrow
+- Reply to inbox threads that arrived in the last 24 hours

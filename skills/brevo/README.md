@@ -6,8 +6,9 @@ Gửi email marketing và transactional qua Brevo (trước đây là Sendinblue
 
 ## Hướng dẫn
 
+- Hãy guide tôi config skills này cho chuẩn brevo
 - Gửi bản tin tuần này cho danh sách khách hàng "VIP"
-- Thêm 50 khách mới vào list "Pilot Shop P2" và gắn tag city = "HCM"
+- Thêm 50 contact mới vào một list và gắn tag theo thành phố
 - Báo cáo open rate và click rate của chiến dịch tháng trước
 
 <!-- en -->
@@ -18,6 +19,7 @@ Send marketing and transactional emails through Brevo (formerly Sendinblue). The
 
 ## Tutorials
 
+- Walk me through configuring this skill properly for brevo
 - Send this week's newsletter to the "VIP" customer list
-- Add 50 new customers to the "Pilot Shop P2" list with tag city = "HCM"
+- Add 50 new contacts to a list and tag them by city
 - Report the open and click rate for last month's campaign

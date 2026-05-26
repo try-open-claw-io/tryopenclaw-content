@@ -6,9 +6,9 @@ Xử lý file CSV và JSON tại chỗ trên máy. Skill làm sạch dữ liệu
 
 ## Hướng dẫn
 
-- Lọc trùng và chuẩn hoá số điện thoại trong file danh sách khách hàng
-- Gộp file đơn Shopee và TikTok Shop, join theo email, xuất Excel
-- Báo cáo tỷ lệ null trên từng cột của file lead.csv
+- Lọc trùng và chuẩn hoá số điện thoại trong một file CSV danh sách
+- Gộp hai file đơn hàng, join theo email, xuất ra Excel
+- Báo cáo tỷ lệ null trên từng cột của một file CSV lead
 
 <!-- en -->
 
@@ -18,6 +18,6 @@ Local-only CSV and JSON processing. The skill cleans data, dedupes rows, normali
 
 ## Tutorials
 
-- Dedupe and normalize phone numbers in a customer list
-- Merge Shopee and TikTok Shop orders by email and export to Excel
-- Report the null rate per column in `lead.csv`
+- Dedupe and normalize phone numbers in a customer CSV
+- Merge two order files by email and export to Excel
+- Report the null rate per column in a lead CSV

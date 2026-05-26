@@ -6,6 +6,7 @@ Kết nối Pancake (pages.fm) để hợp nhất inbox Facebook/Instagram và q
 
 ## Hướng dẫn
 
+- Hãy guide tôi config skills này cho chuẩn pancake-skills
 - Còn bao nhiêu tin nhắn fanpage chưa trả lời hôm nay?
 - Liệt kê 10 đơn Pancake mới nhất, lọc theo trạng thái "chờ xác nhận"
 - Cập nhật đơn #12345 sang "đã giao" và gửi tin nhắn cảm ơn cho khách
@@ -18,6 +19,7 @@ Connects to Pancake (pages.fm) to unify Facebook and Instagram inboxes and manag
 
 ## Tutorials
 
+- Walk me through configuring this skill properly for pancake-skills
 - How many fanpage messages are still unread today?
 - List the 10 most recent Pancake orders filtered by "pending confirmation"
 - Update order #12345 to "delivered" and send the customer a thank-you message
