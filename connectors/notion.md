@@ -4,29 +4,29 @@ name:
   vi: "Notion"
   en: "Notion"
 description:
-  vi: ""
-  en: ""
-category: productivity
+  vi: "Sổ tay và wiki online. Lưu quy trình, FAQ, playbook để cả team tra cứu nhanh — soạn doc cộng tác realtime."
+  en: "Online notebook and wiki. Capture processes, FAQs, and playbooks for fast team lookup — write docs with real-time collaboration."
+category: documents
 popular: true
 tutorials:
   - title:
-      vi: "Search pages"
-      en: "Search pages"
+      vi: "Tìm tài liệu"
+      en: "Search docs"
     prompt:
-      vi: "Find Notion pages mentioning OKRs for this quarter."
-      en: "Find Notion pages mentioning OKRs for this quarter."
+      vi: "Tìm tài liệu hướng dẫn xử lý hoàn tiền trong Notion."
+      en: "Find the refund handling guide in Notion."
   - title:
-      vi: "Create note"
-      en: "Create note"
+      vi: "Tạo trang mới"
+      en: "Create a page"
     prompt:
-      vi: "Create a Notion page with the action items from today's meeting."
-      en: "Create a Notion page with the action items from today's meeting."
+      vi: "Tạo trang Notion mới 'Onboarding khách hàng' trong workspace 'Sales'."
+      en: "Create a new Notion page 'Customer onboarding' in the Sales workspace."
   - title:
-      vi: "Update database"
-      en: "Update database"
+      vi: "Cập nhật database"
+      en: "Update a database"
     prompt:
-      vi: "Update the status of task X to 'Done' in my Notion tracker."
-      en: "Update the status of task X to 'Done' in my Notion tracker."
+      vi: "Cập nhật trạng thái task X sang 'Done' trong database 'Tasks'."
+      en: "Update task X to 'Done' in the 'Tasks' database."
 ---
 
 <!-- Body for future rich docs -->

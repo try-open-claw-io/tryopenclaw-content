@@ -1,32 +1,32 @@
 ---
 id: gitlab
 name:
-  vi: "Gitlab"
-  en: "Gitlab"
+  vi: "GitLab"
+  en: "GitLab"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản lý code Git kèm tự động build và deploy. Có thể cài lên server riêng thay vì dùng dịch vụ cloud — phù hợp team kỹ thuật cần kiểm soát hạ tầng."
+  en: "Git code hosting with automated build and deploy. Can run on your own server instead of a cloud service — fits engineering teams that need infrastructure control."
 category: engineering
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List MRs"
-      en: "List MRs"
+      vi: "List MR chờ review"
+      en: "List open MRs"
     prompt:
-      vi: "Show my open GitLab merge requests across all projects."
-      en: "Show my open GitLab merge requests across all projects."
+      vi: "Liệt kê merge request đang chờ review trong GitLab."
+      en: "List open merge requests waiting for review in GitLab."
   - title:
-      vi: "Create issue"
-      en: "Create issue"
+      vi: "Tạo issue"
+      en: "Create an issue"
     prompt:
-      vi: "Create a GitLab issue describing a deployment failure."
-      en: "Create a GitLab issue describing a deployment failure."
+      vi: "Tạo issue mới priority cao: pipeline build fail."
+      en: "Create a new high-priority issue: pipeline build failure."
   - title:
-      vi: "Search code"
-      en: "Search code"
+      vi: "Trigger pipeline"
+      en: "Trigger pipeline"
     prompt:
-      vi: "Search GitLab code for TODO comments tagged with my username."
-      en: "Search GitLab code for TODO comments tagged with my username."
+      vi: "Chạy pipeline CI cho branch main repo X trên GitLab."
+      en: "Trigger the CI pipeline for the main branch of repo X on GitLab."
 ---
 
 <!-- Body for future rich docs -->

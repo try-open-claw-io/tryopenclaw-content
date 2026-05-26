@@ -1,32 +1,32 @@
 ---
 id: larksuite
 name:
-  vi: "Larksuite"
-  en: "Larksuite"
+  vi: "Lark Suite"
+  en: "Lark Suite"
 description:
-  vi: ""
-  en: ""
+  vi: "Bộ công cụ làm việc all-in-one. Chat, tài liệu, lịch, form khảo sát — gộp nhiều công cụ thành một nền tảng cho cả team."
+  en: "An all-in-one workspace. Chat, docs, calendar, and forms — many tools unified into one platform for the whole team."
 category: productivity
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Send message"
-      en: "Send message"
+      vi: "Gửi tin nhóm"
+      en: "Send to a group"
     prompt:
-      vi: "Send a Lark message to the engineering chat."
-      en: "Send a Lark message to the engineering chat."
+      vi: "Gửi tin vào nhóm 'Sales' trên Lark."
+      en: "Send a message to the 'Sales' group on Lark."
   - title:
-      vi: "Read docs"
-      en: "Read docs"
+      vi: "Tạo doc mới"
+      en: "Create a doc"
     prompt:
-      vi: "Find Lark Docs from my team this week."
-      en: "Find Lark Docs from my team this week."
+      vi: "Tạo doc Lark mới 'Quy trình onboarding' trong workspace 'HR'."
+      en: "Create a new Lark doc 'Onboarding process' in the 'HR' workspace."
   - title:
-      vi: "List events"
-      en: "List events"
+      vi: "Đặt lịch meeting"
+      en: "Schedule a meeting"
     prompt:
-      vi: "Show my Lark Calendar events for tomorrow."
-      en: "Show my Lark Calendar events for tomorrow."
+      vi: "Đặt lịch họp Lark 30 phút với team Marketing thứ 3 tuần sau."
+      en: "Schedule a 30-minute Lark meeting with the Marketing team next Tuesday."
 ---
 
 <!-- Body for future rich docs -->

@@ -4,29 +4,29 @@ name:
   vi: "Zendesk"
   en: "Zendesk"
 description:
-  vi: ""
-  en: ""
+  vi: "Hộp ticket support enterprise. Macro câu trả lời, SLA, báo cáo — chuẩn helpdesk cho doanh nghiệp lớn."
+  en: "Enterprise support ticketing. Reply macros, SLAs, and reporting — the standard enterprise helpdesk."
 category: support
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List tickets"
-      en: "List tickets"
+      vi: "List ticket ưu tiên"
+      en: "List priority tickets"
     prompt:
-      vi: "Show open Zendesk tickets assigned to me."
-      en: "Show open Zendesk tickets assigned to me."
+      vi: "Liệt kê ticket priority cao chưa giải quyết trong Zendesk."
+      en: "List unresolved high-priority tickets in Zendesk."
   - title:
-      vi: "Reply ticket"
-      en: "Reply ticket"
+      vi: "Trả lời ticket"
+      en: "Reply to ticket"
     prompt:
-      vi: "Reply to Zendesk ticket #123 with the standard refund template."
-      en: "Reply to Zendesk ticket #123 with the standard refund template."
+      vi: "Trả lời ticket X bằng macro 'Đã xử lý' trong Zendesk."
+      en: "Reply to ticket X with the 'Resolved' macro in Zendesk."
   - title:
-      vi: "Find customer"
-      en: "Find customer"
+      vi: "Tóm tắt ticket"
+      en: "Summarize ticket"
     prompt:
-      vi: "Find Zendesk tickets from customer X."
-      en: "Find Zendesk tickets from customer X."
+      vi: "Tóm tắt ticket Y để bàn giao ca trong Zendesk."
+      en: "Summarize ticket Y for shift handover in Zendesk."
 ---
 
 <!-- Body for future rich docs -->

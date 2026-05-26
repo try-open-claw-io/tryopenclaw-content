@@ -4,29 +4,29 @@ name:
   vi: "Jira"
   en: "Jira"
 description:
-  vi: ""
-  en: ""
-category: productivity
+  vi: "Quản lý ticket cho enterprise. Sprint, epic, workflow phức tạp — phù hợp công ty lớn nhiều dự án song song."
+  en: "Enterprise issue tracking. Sprints, epics, and complex workflows — built for large organizations running many projects in parallel."
+category: engineering
 popular: true
 tutorials:
   - title:
-      vi: "List my tickets"
-      en: "List my tickets"
+      vi: "Mở ticket bug"
+      en: "Open a bug ticket"
     prompt:
-      vi: "Show Jira tickets assigned to me in the current sprint."
-      en: "Show Jira tickets assigned to me in the current sprint."
+      vi: "Mở ticket bug khách vừa báo cáo, gán team Frontend."
+      en: "Open a bug ticket from the customer's latest report, assigned to the Frontend team."
   - title:
-      vi: "Create ticket"
-      en: "Create ticket"
+      vi: "List sprint hiện tại"
+      en: "List current sprint"
     prompt:
-      vi: "Create a Jira ticket for the API timeout issue."
-      en: "Create a Jira ticket for the API timeout issue."
+      vi: "Liệt kê các ticket trong sprint hiện tại của project X."
+      en: "List tickets in the current sprint for project X."
   - title:
-      vi: "Transition issue"
-      en: "Transition issue"
+      vi: "Cập nhật ticket"
+      en: "Update a ticket"
     prompt:
-      vi: "Move PROJ-456 to 'Done' in Jira."
-      en: "Move PROJ-456 to 'Done' in Jira."
+      vi: "Chuyển ticket Y sang trạng thái 'Done' trong Jira."
+      en: "Move ticket Y to 'Done' in Jira."
 ---
 
 <!-- Body for future rich docs -->

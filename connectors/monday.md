@@ -1,32 +1,32 @@
 ---
 id: monday
 name:
-  vi: "Monday"
-  en: "Monday"
+  vi: "Monday.com"
+  en: "Monday.com"
 description:
-  vi: ""
-  en: ""
+  vi: "Bảng quản lý công việc đa dạng kiểu nhìn. Bảng kéo-thả, dòng thời gian, lịch — chọn cách xem phù hợp với từng dự án."
+  en: "Flexible work management with multiple views. Drag-and-drop boards, timelines, and calendars — pick what fits each project."
 category: productivity
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List items"
-      en: "List items"
+      vi: "List task tuần"
+      en: "List week's tasks"
     prompt:
-      vi: "Show Monday.com items in my main board."
-      en: "Show Monday.com items in my main board."
+      vi: "Liệt kê task tuần này trên board 'Marketing' trong Monday."
+      en: "List this week's tasks on the 'Marketing' board in Monday."
   - title:
-      vi: "Create item"
-      en: "Create item"
+      vi: "Tạo item follow-up"
+      en: "Create follow-up item"
     prompt:
-      vi: "Create a new Monday item for client X follow-up."
-      en: "Create a new Monday item for client X follow-up."
+      vi: "Tạo item mới follow-up khách trên board 'Sales' Monday."
+      en: "Create a new customer follow-up item on the 'Sales' Monday board."
   - title:
-      vi: "Change status"
-      en: "Change status"
+      vi: "Cập nhật status"
+      en: "Update status"
     prompt:
-      vi: "Change the status of item Y to 'Working on it'."
-      en: "Change the status of item Y to 'Working on it'."
+      vi: "Cập nhật status item X sang 'Working on it' trong Monday."
+      en: "Update item X status to 'Working on it' in Monday."
 ---
 
 <!-- Body for future rich docs -->

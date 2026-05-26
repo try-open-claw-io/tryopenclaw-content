@@ -1,32 +1,32 @@
 ---
 id: hubspot
 name:
-  vi: "Hubspot"
-  en: "Hubspot"
+  vi: "HubSpot"
+  en: "HubSpot"
 description:
-  vi: ""
-  en: ""
+  vi: "CRM quản lý khách hàng. Lưu lead, deal, contact, pipeline — theo dõi từng cơ hội bán hàng từ lúc tiếp xúc tới chốt."
+  en: "Customer CRM. Track leads, deals, contacts, and pipelines — follow each sales opportunity from first touch to close."
 category: crm-sales
 popular: true
 tutorials:
   - title:
-      vi: "List deals"
-      en: "List deals"
+      vi: "Thêm lead mới"
+      en: "Add a new lead"
     prompt:
-      vi: "Show HubSpot deals in the 'Negotiation' stage."
-      en: "Show HubSpot deals in the 'Negotiation' stage."
+      vi: "Thêm lead mới vào HubSpot: tên khách, SĐT, công ty, nguồn lead."
+      en: "Add a new HubSpot lead with name, phone, company, and source."
   - title:
-      vi: "Add contact"
-      en: "Add contact"
+      vi: "Cập nhật deal"
+      en: "Update a deal"
     prompt:
-      vi: "Add a new HubSpot contact for John Smith at Acme Corp."
-      en: "Add a new HubSpot contact for John Smith at Acme Corp."
+      vi: "Cập nhật deal X sang giai đoạn 'Đàm phán'."
+      en: "Move deal X to the 'Negotiation' stage."
   - title:
-      vi: "Update deal"
-      en: "Update deal"
+      vi: "List pipeline tháng"
+      en: "List pipeline"
     prompt:
-      vi: "Update deal X to 'Closed Won' in HubSpot."
-      en: "Update deal X to 'Closed Won' in HubSpot."
+      vi: "Liệt kê các deal trong pipeline tháng này."
+      en: "List the deals in this month's pipeline."
 ---
 
 <!-- Body for future rich docs -->

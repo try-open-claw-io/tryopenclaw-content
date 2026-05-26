@@ -1,32 +1,32 @@
 ---
 id: googledocs
 name:
-  vi: "Googledocs"
-  en: "Googledocs"
+  vi: "Google Docs"
+  en: "Google Docs"
 description:
-  vi: ""
-  en: ""
+  vi: "Tài liệu Google. Soạn doc cộng tác realtime, comment trực tiếp trong nội dung, share link cho team."
+  en: "Google Docs. Real-time collaborative writing with inline comments and easy team sharing."
 category: documents
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Find docs"
-      en: "Find docs"
+      vi: "Mở doc"
+      en: "Open a doc"
     prompt:
-      vi: "Find Google Docs created by me this month."
-      en: "Find Google Docs created by me this month."
+      vi: "Mở doc 'Báo cáo Q2' và tóm tắt nội dung chính."
+      en: "Open the 'Q2 Report' doc and summarize the main points."
   - title:
-      vi: "Create doc"
-      en: "Create doc"
+      vi: "Tạo doc mới"
+      en: "Create a doc"
     prompt:
-      vi: "Create a Google Doc with notes from today's planning."
-      en: "Create a Google Doc with notes from today's planning."
+      vi: "Tạo doc Google mới 'Đề xuất hợp tác' từ template chuẩn."
+      en: "Create a new Google Doc 'Partnership proposal' from the standard template."
   - title:
-      vi: "Append content"
-      en: "Append content"
+      vi: "Tóm tắt doc"
+      en: "Summarize doc"
     prompt:
-      vi: "Append today's standup notes to my running 'Daily Log' doc."
-      en: "Append today's standup notes to my running 'Daily Log' doc."
+      vi: "Tóm tắt doc 'Họp team thứ 2' thành các điểm chính."
+      en: "Summarize the 'Monday team meeting' doc into key points."
 ---
 
 <!-- Body for future rich docs -->

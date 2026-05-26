@@ -1,32 +1,32 @@
 ---
 id: googlecalendar
 name:
-  vi: "Googlecalendar"
-  en: "Googlecalendar"
+  vi: "Google Calendar"
+  en: "Google Calendar"
 description:
-  vi: ""
-  en: ""
-category: documents
+  vi: "Lịch online của Google. Đặt cuộc họp, hẹn khách và xem slot trống — đồng bộ thẳng với Gmail và Google Meet."
+  en: "Google's online calendar. Schedule meetings, book customers, and check free slots — syncs straight into Gmail and Google Meet."
+category: scheduling
 popular: true
 tutorials:
   - title:
-      vi: "List events"
-      en: "List events"
+      vi: "Xem lịch ngày mai"
+      en: "Check tomorrow's events"
     prompt:
-      vi: "Show my Google Calendar events for tomorrow."
-      en: "Show my Google Calendar events for tomorrow."
+      vi: "Ngày mai mình có những cuộc họp Google Calendar nào?"
+      en: "What meetings do I have on Google Calendar tomorrow?"
   - title:
-      vi: "Create event"
-      en: "Create event"
+      vi: "Đặt lịch họp khách"
+      en: "Create a customer meeting"
     prompt:
-      vi: "Schedule a 30-minute sync with Alice tomorrow at 3pm."
-      en: "Schedule a 30-minute sync with Alice tomorrow at 3pm."
+      vi: "Đặt lịch họp với khách lúc 10 giờ sáng thứ 2, kéo dài 1 tiếng."
+      en: "Schedule a 1-hour meeting with a customer on Monday at 10 AM."
   - title:
-      vi: "Free slots"
-      en: "Free slots"
+      vi: "Tìm slot trống tuần này"
+      en: "Find free slots this week"
     prompt:
-      vi: "Find my free slots between 2-5pm this week."
-      en: "Find my free slots between 2-5pm this week."
+      vi: "Tuần này mình còn trống khung giờ nào từ 2-5 giờ chiều?"
+      en: "Which 2-5 PM slots do I still have free this week?"
 ---
 
 <!-- Body for future rich docs -->

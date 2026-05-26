@@ -4,29 +4,29 @@ name:
   vi: "Confluence"
   en: "Confluence"
 description:
-  vi: ""
-  en: ""
+  vi: "Wiki tài liệu nội bộ Atlassian. Spec, runbook, knowledge base — gắn chéo với Jira ticket."
+  en: "Atlassian's internal wiki. Specs, runbooks, and knowledge bases — cross-linked with Jira tickets."
 category: documents
 popular: true
 tutorials:
   - title:
-      vi: "Search pages"
+      vi: "Tìm trang"
       en: "Search pages"
     prompt:
-      vi: "Search Confluence for runbooks mentioning incident response."
-      en: "Search Confluence for runbooks mentioning incident response."
+      vi: "Tìm trang quy trình onboarding nhân viên trong Confluence."
+      en: "Find the employee onboarding process page in Confluence."
   - title:
-      vi: "Create page"
-      en: "Create page"
+      vi: "Tạo trang mới"
+      en: "Create a page"
     prompt:
-      vi: "Create a Confluence page with our new onboarding checklist."
-      en: "Create a Confluence page with our new onboarding checklist."
+      vi: "Tạo trang Confluence mới 'Hướng dẫn xử lý hoàn tiền' trong space 'Sales'."
+      en: "Create a new Confluence page 'Refund handling guide' in the 'Sales' space."
   - title:
-      vi: "Find space"
-      en: "Find space"
+      vi: "Tóm tắt trang"
+      en: "Summarize a page"
     prompt:
-      vi: "List Confluence spaces I have access to."
-      en: "List Confluence spaces I have access to."
+      vi: "Tóm tắt nội dung trang 'Quy trình tuyển dụng' trong Confluence."
+      en: "Summarize the 'Hiring process' page in Confluence."
 ---
 
 <!-- Body for future rich docs -->

@@ -1,32 +1,32 @@
 ---
 id: larksuite-tenant
 name:
-  vi: "Larksuite Tenant"
-  en: "Larksuite Tenant"
+  vi: "Lark Suite (Tenant)"
+  en: "Lark Suite (Tenant)"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản trị tenant Lark. Thêm hoặc xoá user, gán role admin theo phòng ban — dành cho IT admin."
+  en: "Lark tenant administration. Add or remove users and assign admin roles by department — built for IT admins."
 category: productivity
 popular: false
 tutorials:
   - title:
-      vi: "List items"
-      en: "List items"
+      vi: "Thêm user mới"
+      en: "Add a user"
     prompt:
-      vi: "Show open items in Lark Suite (Self-managed) assigned to me."
-      en: "Show open items in Lark Suite (Self-managed) assigned to me."
+      vi: "Thêm user mới vào tenant Lark, gắn phòng IT."
+      en: "Add a new user to the Lark tenant, assigned to the IT department."
   - title:
-      vi: "Create item"
-      en: "Create item"
+      vi: "Remove user"
+      en: "Remove a user"
     prompt:
-      vi: "Create a new Lark Suite (Self-managed) item from today's meeting notes."
-      en: "Create a new Lark Suite (Self-managed) item from today's meeting notes."
+      vi: "Xoá user X khỏi tenant Lark."
+      en: "Remove user X from the Lark tenant."
   - title:
-      vi: "Update item"
-      en: "Update item"
+      vi: "Gán role admin"
+      en: "Assign admin role"
     prompt:
-      vi: "Mark a Lark Suite (Self-managed) item as done."
-      en: "Mark a Lark Suite (Self-managed) item as done."
+      vi: "Gán role admin cho user Y phòng HR trong tenant Lark."
+      en: "Assign the admin role to user Y in the HR department of the Lark tenant."
 ---
 
 <!-- Body for future rich docs -->

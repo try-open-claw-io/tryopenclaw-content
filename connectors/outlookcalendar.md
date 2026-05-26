@@ -1,32 +1,32 @@
 ---
 id: outlookcalendar
 name:
-  vi: "Outlookcalendar"
-  en: "Outlookcalendar"
+  vi: "Outlook Calendar"
+  en: "Outlook Calendar"
 description:
-  vi: ""
-  en: ""
-category: documents
-popular: false
+  vi: "Lịch của Microsoft. Đặt cuộc họp, hẹn khách, xem khung giờ trống — thay Google Calendar cho công ty đang dùng Microsoft 365."
+  en: "Microsoft's calendar. Schedule meetings, book customers, and check free slots — the Google Calendar alternative for companies on Microsoft 365."
+category: scheduling
+popular: true
 tutorials:
   - title:
-      vi: "List events"
-      en: "List events"
+      vi: "Đặt cuộc họp"
+      en: "Create a meeting"
     prompt:
-      vi: "Show my Outlook calendar this week."
-      en: "Show my Outlook calendar this week."
+      vi: "Đặt cuộc họp 10 giờ sáng thứ 2 trên Outlook Calendar, kéo dài 1 tiếng."
+      en: "Create a 1-hour Outlook Calendar meeting on Monday at 10 AM."
   - title:
-      vi: "Create event"
-      en: "Create event"
+      vi: "Tìm slot trống chung"
+      en: "Find common free slot"
     prompt:
-      vi: "Schedule a team standup on Outlook every weekday at 9am."
-      en: "Schedule a team standup on Outlook every weekday at 9am."
+      vi: "Tìm 1 tiếng trống chung của team trong tuần này trên Outlook Calendar."
+      en: "Find a 1-hour slot when the team is all free this week on Outlook Calendar."
   - title:
-      vi: "Find availability"
-      en: "Find availability"
+      vi: "List lịch ngày mai"
+      en: "List tomorrow's events"
     prompt:
-      vi: "Find a 1-hour slot when Alice and Bob are both free."
-      en: "Find a 1-hour slot when Alice and Bob are both free."
+      vi: "Ngày mai mình có những cuộc họp Outlook Calendar nào?"
+      en: "What Outlook Calendar meetings do I have tomorrow?"
 ---
 
 <!-- Body for future rich docs -->
