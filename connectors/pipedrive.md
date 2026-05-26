@@ -4,29 +4,29 @@ name:
   vi: "Pipedrive"
   en: "Pipedrive"
 description:
-  vi: ""
-  en: ""
+  vi: "CRM bán hàng đơn giản. Pipeline deal trực quan cho SME — không cần setup phức tạp."
+  en: "Simple sales CRM. Visual deal pipelines for SMEs — no complex setup needed."
 category: crm-sales
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List deals"
-      en: "List deals"
+      vi: "Cập nhật deal"
+      en: "Update a deal"
     prompt:
-      vi: "Show my Pipedrive deals in the 'Proposal' stage."
-      en: "Show my Pipedrive deals in the 'Proposal' stage."
+      vi: "Cập nhật deal X sang giai đoạn đàm phán trong Pipedrive."
+      en: "Move deal X to the negotiation stage in Pipedrive."
   - title:
-      vi: "Add lead"
-      en: "Add lead"
+      vi: "List pipeline"
+      en: "List pipeline"
     prompt:
-      vi: "Create a new Pipedrive lead from the inbound form."
-      en: "Create a new Pipedrive lead from the inbound form."
+      vi: "Liệt kê các deal trong pipeline 'Q3 Sales' của Pipedrive."
+      en: "List deals in the 'Q3 Sales' Pipedrive pipeline."
   - title:
-      vi: "Update activity"
-      en: "Update activity"
+      vi: "Tạo deal mới"
+      en: "Create a deal"
     prompt:
-      vi: "Log a call activity on deal X in Pipedrive."
-      en: "Log a call activity on deal X in Pipedrive."
+      vi: "Tạo deal mới gắn với contact 'shop X', giá trị 50 triệu."
+      en: "Create a new deal linked to contact 'shop X' worth 50 million."
 ---
 
 <!-- Body for future rich docs -->

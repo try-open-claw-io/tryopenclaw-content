@@ -1,32 +1,32 @@
 ---
 id: woocommerce
 name:
-  vi: "Woocommerce"
-  en: "Woocommerce"
+  vi: "WooCommerce"
+  en: "WooCommerce"
 description:
-  vi: ""
-  en: ""
+  vi: "Plugin bán hàng cho website WordPress. Quản lý sản phẩm, đơn hàng, vận chuyển — phù hợp shop chạy trên website WordPress của mình."
+  en: "An e-commerce plugin for WordPress. Manage products, orders, and shipping — great for shops running on their own WordPress website."
 category: commerce
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List orders"
-      en: "List orders"
+      vi: "List đơn hôm nay"
+      en: "List today's orders"
     prompt:
-      vi: "Show WooCommerce orders awaiting fulfillment."
-      en: "Show WooCommerce orders awaiting fulfillment."
+      vi: "Liệt kê đơn WooCommerce hôm nay."
+      en: "List today's WooCommerce orders."
   - title:
-      vi: "Update stock"
+      vi: "Cập nhật tồn kho"
       en: "Update stock"
     prompt:
-      vi: "Adjust stock for SKU X in WooCommerce."
-      en: "Adjust stock for SKU X in WooCommerce."
+      vi: "Cập nhật tồn kho sản phẩm X xuống 5 cái trong WooCommerce."
+      en: "Update the stock of product X to 5 units in WooCommerce."
   - title:
-      vi: "Search customers"
-      en: "Search customers"
+      vi: "Tìm sản phẩm hết hàng"
+      en: "Find out-of-stock"
     prompt:
-      vi: "Find WooCommerce customers who ordered in the last 7 days."
-      en: "Find WooCommerce customers who ordered in the last 7 days."
+      vi: "Tìm sản phẩm hết hàng trong WooCommerce."
+      en: "Find out-of-stock products in WooCommerce."
 ---
 
 <!-- Body for future rich docs -->

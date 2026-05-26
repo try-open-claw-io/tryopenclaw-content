@@ -4,29 +4,29 @@ name:
   vi: "Bitbucket"
   en: "Bitbucket"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản lý code Git của Atlassian. Repo, pull request, pipeline CI — phù hợp team enterprise dùng stack Atlassian."
+  en: "Atlassian's Git management. Repositories, pull requests, and CI pipelines — built for enterprise teams using the Atlassian stack."
 category: engineering
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List PRs"
-      en: "List PRs"
+      vi: "List PR chờ review"
+      en: "List open PRs"
     prompt:
-      vi: "Show open Bitbucket pull requests in my workspace."
-      en: "Show open Bitbucket pull requests in my workspace."
+      vi: "Liệt kê các pull request đang chờ review trong repo X trên Bitbucket."
+      en: "List open pull requests waiting for review in repo X on Bitbucket."
   - title:
-      vi: "Read commits"
-      en: "Read commits"
+      vi: "Tạo issue"
+      en: "Create an issue"
     prompt:
-      vi: "Show the last 5 commits on the main branch."
-      en: "Show the last 5 commits on the main branch."
+      vi: "Tạo issue mới repo Y: lỗi build pipeline."
+      en: "Create a new issue in repo Y: pipeline build failure."
   - title:
-      vi: "Find file"
-      en: "Find file"
+      vi: "Tóm tắt commit"
+      en: "Summarize commits"
     prompt:
-      vi: "Locate the `package.json` in the api repository."
-      en: "Locate the `package.json` in the api repository."
+      vi: "Tóm tắt các commit hôm nay trên branch main."
+      en: "Summarize today's commits on the main branch."
 ---
 
 <!-- Body for future rich docs -->

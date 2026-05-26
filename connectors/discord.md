@@ -4,29 +4,29 @@ name:
   vi: "Discord"
   en: "Discord"
 description:
-  vi: ""
-  en: ""
+  vi: "Chat cộng đồng theo kênh. Phù hợp game, edu, creator — voice chat ổn định và dễ tích hợp bot."
+  en: "Community chat organized by channels. Great for gaming, education, and creators — reliable voice and easy bot integration."
 category: communication
 popular: true
 tutorials:
   - title:
-      vi: "Search messages"
-      en: "Search messages"
+      vi: "Gửi thông báo kênh"
+      en: "Post announcement"
     prompt:
-      vi: "Search Discord messages across my servers for 'release notes'."
-      en: "Search Discord messages across my servers for 'release notes'."
+      vi: "Gửi thông báo sự kiện vào kênh #community trên Discord."
+      en: "Post the event announcement to the #community Discord channel."
   - title:
-      vi: "Post update"
-      en: "Post update"
+      vi: "Tóm tắt kênh"
+      en: "Summarize channel"
     prompt:
-      vi: "Post a release announcement to the #announcements channel."
-      en: "Post a release announcement to the #announcements channel."
+      vi: "Tóm tắt kênh #general từ hôm qua đến giờ."
+      en: "Summarize the #general channel since yesterday."
   - title:
-      vi: "List servers"
-      en: "List servers"
+      vi: "Tạo invite link"
+      en: "Create invite"
     prompt:
-      vi: "List the Discord servers I'm currently a member of."
-      en: "List the Discord servers I'm currently a member of."
+      vi: "Tạo invite link tạm 7 ngày cho kênh 'Hỗ trợ' trên Discord."
+      en: "Create a 7-day invite link to the 'Support' Discord channel."
 ---
 
 <!-- Body for future rich docs -->

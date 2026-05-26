@@ -4,29 +4,29 @@ name:
   vi: "Salesforce"
   en: "Salesforce"
 description:
-  vi: ""
-  en: ""
+  vi: "CRM cho doanh nghiệp lớn. Pipeline, báo cáo phức tạp, automation đa team — chuẩn enterprise."
+  en: "Enterprise CRM. Complex pipelines, advanced reporting, and multi-team automation — built for enterprises."
 category: crm-sales
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List opportunities"
-      en: "List opportunities"
+      vi: "Cập nhật opportunity"
+      en: "Update opportunity"
     prompt:
-      vi: "Show Salesforce opportunities closing this quarter."
-      en: "Show Salesforce opportunities closing this quarter."
+      vi: "Cập nhật opportunity X sang giai đoạn đàm phán."
+      en: "Move opportunity X to the negotiation stage."
   - title:
-      vi: "Update contact"
-      en: "Update contact"
+      vi: "Tạo contact"
+      en: "Create a contact"
     prompt:
-      vi: "Update the title for contact X in Salesforce."
-      en: "Update the title for contact X in Salesforce."
+      vi: "Tạo contact mới gắn với account 'shop X'."
+      en: "Create a new contact linked to the 'shop X' account."
   - title:
-      vi: "Search accounts"
-      en: "Search accounts"
+      vi: "Báo cáo doanh thu"
+      en: "Sales report"
     prompt:
-      vi: "Find Salesforce accounts with no activity in 30 days."
-      en: "Find Salesforce accounts with no activity in 30 days."
+      vi: "Xem báo cáo doanh thu quý này của team sales."
+      en: "Show this quarter's sales revenue report for the sales team."
 ---
 
 <!-- Body for future rich docs -->

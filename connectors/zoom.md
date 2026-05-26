@@ -4,29 +4,29 @@ name:
   vi: "Zoom"
   en: "Zoom"
 description:
-  vi: ""
-  en: ""
-category: communication
-popular: false
+  vi: "Họp video online. Tạo phòng họp, gửi link cho khách, ghi âm và chia sẻ replay."
+  en: "Online video meetings. Create rooms, send links to customers, record sessions, and share replays."
+category: scheduling
+popular: true
 tutorials:
   - title:
-      vi: "Schedule meeting"
-      en: "Schedule meeting"
+      vi: "Tạo phòng họp"
+      en: "Create a meeting"
     prompt:
-      vi: "Schedule a Zoom meeting with the design team tomorrow at 10am."
-      en: "Schedule a Zoom meeting with the design team tomorrow at 10am."
+      vi: "Tạo phòng Zoom 1 tiếng cho demo khách thứ 2 lúc 14h."
+      en: "Create a 1-hour Zoom meeting for the customer demo on Monday at 2 PM."
   - title:
-      vi: "List recordings"
-      en: "List recordings"
+      vi: "Đặt lịch định kỳ"
+      en: "Schedule recurring"
     prompt:
-      vi: "Show my recent Zoom cloud recordings."
-      en: "Show my recent Zoom cloud recordings."
+      vi: "Đặt meeting Zoom recurring thứ 5 hàng tuần lúc 10h sáng."
+      en: "Schedule a recurring Zoom meeting every Thursday at 10 AM."
   - title:
-      vi: "Get join info"
-      en: "Get join info"
+      vi: "List meeting tuần"
+      en: "List meetings"
     prompt:
-      vi: "Get the join URL for my next Zoom meeting."
-      en: "Get the join URL for my next Zoom meeting."
+      vi: "Tuần này mình có những phòng họp Zoom nào?"
+      en: "What Zoom meetings do I have this week?"
 ---
 
 <!-- Body for future rich docs -->

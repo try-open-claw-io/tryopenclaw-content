@@ -4,29 +4,29 @@ name:
   vi: "Stripe"
   en: "Stripe"
 description:
-  vi: ""
-  en: ""
+  vi: "Cổng thanh toán quốc tế. Tạo link pay one-time, subscription, hoàn tiền — checkout flow chuẩn global."
+  en: "International payment gateway. Create one-time payment links, subscriptions, and refunds — global standard checkout flow."
 category: commerce
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Recent payments"
-      en: "Recent payments"
+      vi: "Tạo link thanh toán"
+      en: "Create payment link"
     prompt:
-      vi: "Show successful Stripe payments today."
-      en: "Show successful Stripe payments today."
+      vi: "Tạo link Stripe thanh toán 500 USD cho khách nước ngoài."
+      en: "Create a Stripe payment link for 500 USD to send to an international customer."
   - title:
-      vi: "Refund charge"
-      en: "Refund charge"
+      vi: "List đơn hôm nay"
+      en: "List today's payments"
     prompt:
-      vi: "Refund Stripe charge ch_xxx."
-      en: "Refund Stripe charge ch_xxx."
+      vi: "Liệt kê các đơn thanh toán Stripe hôm nay."
+      en: "List today's Stripe payments."
   - title:
-      vi: "Find customer"
-      en: "Find customer"
+      vi: "Hoàn tiền"
+      en: "Refund payment"
     prompt:
-      vi: "Find Stripe customer by email."
-      en: "Find Stripe customer by email."
+      vi: "Hoàn tiền cho đơn X — khách yêu cầu hủy."
+      en: "Refund payment X — the customer requested a cancellation."
 ---
 
 <!-- Body for future rich docs -->

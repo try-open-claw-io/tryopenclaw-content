@@ -1,32 +1,32 @@
 ---
 id: github
 name:
-  vi: "Github"
-  en: "Github"
+  vi: "GitHub"
+  en: "GitHub"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản lý code và bug tracker cho team kỹ thuật. Push code, review pull request, theo dõi issue và CI build."
+  en: "Code management and bug tracking for engineering teams. Push code, review pull requests, and track issues and CI builds."
 category: engineering
 popular: true
 tutorials:
   - title:
-      vi: "Search code"
-      en: "Search code"
+      vi: "Tạo issue"
+      en: "Create an issue"
     prompt:
-      vi: "Search GitHub for usages of `authenticate()` in my org."
-      en: "Search GitHub for usages of `authenticate()` in my org."
+      vi: "Tạo GitHub issue mới: lỗi đăng nhập trang chủ."
+      en: "Create a new GitHub issue: login broken on the home page."
   - title:
-      vi: "Create issue"
-      en: "Create issue"
+      vi: "List pull request"
+      en: "List open PRs"
     prompt:
-      vi: "Create a GitHub issue titled 'Refactor login flow' in the api repo."
-      en: "Create a GitHub issue titled 'Refactor login flow' in the api repo."
+      vi: "Liệt kê các pull request đang chờ review trong repo X."
+      en: "List open pull requests waiting for review in repo X."
   - title:
-      vi: "Review PRs"
-      en: "Review PRs"
+      vi: "Tóm tắt commit"
+      en: "Summarize commits"
     prompt:
-      vi: "List open pull requests assigned to me."
-      en: "List open pull requests assigned to me."
+      vi: "Tóm tắt các commit hôm nay trên branch main."
+      en: "Summarize today's commits on the main branch."
 ---
 
 <!-- Body for future rich docs -->

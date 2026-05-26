@@ -1,32 +1,32 @@
 ---
 id: clickup
 name:
-  vi: "Clickup"
-  en: "Clickup"
+  vi: "ClickUp"
+  en: "ClickUp"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản lý dự án all-in-one. Task, doc, time tracking, goal — gộp nhiều công cụ thành một workspace."
+  en: "All-in-one project management. Tasks, docs, time tracking, and goals — many tools bundled into one workspace."
 category: productivity
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List tasks"
-      en: "List tasks"
+      vi: "List task chưa xong"
+      en: "List open tasks"
     prompt:
-      vi: "Show open ClickUp tasks in my Sprint folder."
-      en: "Show open ClickUp tasks in my Sprint folder."
+      vi: "Liệt kê task chưa xong của dự án A trong ClickUp."
+      en: "List open tasks in project A on ClickUp."
   - title:
-      vi: "Create task"
-      en: "Create task"
+      vi: "Tạo task mới"
+      en: "Create a task"
     prompt:
-      vi: "Create a ClickUp task for onboarding the new hire."
-      en: "Create a ClickUp task for onboarding the new hire."
+      vi: "Tạo task mới 'Audit content connector' với deadline thứ 6."
+      en: "Create a new task 'Audit connector content' with a Friday deadline."
   - title:
-      vi: "Update status"
-      en: "Update status"
+      vi: "Time tracking"
+      en: "Start time tracking"
     prompt:
-      vi: "Mark task X as 'In Progress' in ClickUp."
-      en: "Mark task X as 'In Progress' in ClickUp."
+      vi: "Bắt đầu time tracking cho task X trong ClickUp."
+      en: "Start time tracking for task X in ClickUp."
 ---
 
 <!-- Body for future rich docs -->

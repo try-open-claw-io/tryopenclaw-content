@@ -1,32 +1,32 @@
 ---
 id: googledrive
 name:
-  vi: "Googledrive"
-  en: "Googledrive"
+  vi: "Google Drive"
+  en: "Google Drive"
 description:
-  vi: ""
-  en: ""
+  vi: "Lưu trữ cloud của Google. Cất file hợp đồng, ảnh sản phẩm, tài liệu nội bộ — share 1 link cho khách hoặc team xem chung."
+  en: "Google's cloud storage. Store contracts, product photos, and internal documents — share one link with customers or your team."
 category: storage
 popular: true
 tutorials:
   - title:
-      vi: "Find files"
-      en: "Find files"
+      vi: "Tìm file"
+      en: "Find a file"
     prompt:
-      vi: "Find Google Drive files shared with me this week."
-      en: "Find Google Drive files shared with me this week."
+      vi: "Tìm file hợp đồng khách trong Google Drive."
+      en: "Find the customer contract file in Google Drive."
   - title:
-      vi: "Search docs"
-      en: "Search docs"
+      vi: "Share link folder"
+      en: "Share a folder"
     prompt:
-      vi: "Search Drive for documents mentioning 'roadmap'."
-      en: "Search Drive for documents mentioning 'roadmap'."
+      vi: "Tạo link share folder ảnh sản phẩm cho khách."
+      en: "Create a share link for the product photos folder."
   - title:
-      vi: "Share folder"
-      en: "Share folder"
+      vi: "Upload file"
+      en: "Upload a file"
     prompt:
-      vi: "Share the 'Q3 reports' folder with the leadership group."
-      en: "Share the 'Q3 reports' folder with the leadership group."
+      vi: "Upload file báo cáo tháng này lên Drive thư mục 'Tài chính'."
+      en: "Upload this month's report to the 'Finance' folder on Drive."
 ---
 
 <!-- Body for future rich docs -->

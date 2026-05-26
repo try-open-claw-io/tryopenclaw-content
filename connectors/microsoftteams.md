@@ -1,32 +1,32 @@
 ---
 id: microsoftteams
 name:
-  vi: "Microsoftteams"
-  en: "Microsoftteams"
+  vi: "Microsoft Teams"
+  en: "Microsoft Teams"
 description:
-  vi: ""
-  en: ""
+  vi: "Chat đội nhóm của Microsoft. Tin nhắn, gọi video, chia sẻ file — thay Slack cho công ty đang dùng Microsoft 365."
+  en: "Microsoft's team chat. Messages, video calls, and file sharing — the Slack alternative for companies on Microsoft 365."
 category: communication
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Send message"
-      en: "Send message"
+      vi: "Gửi tin nhóm"
+      en: "Send to a channel"
     prompt:
-      vi: "Post a message to the General channel in my Teams workspace."
-      en: "Post a message to the General channel in my Teams workspace."
+      vi: "Gửi tin nhắn nhóm IT về sự cố mạng đang diễn ra."
+      en: "Send a message to the IT channel about an ongoing network outage."
   - title:
-      vi: "List channels"
-      en: "List channels"
+      vi: "Tóm tắt kênh"
+      en: "Summarize channel"
     prompt:
-      vi: "List my Microsoft Teams channels."
-      en: "List my Microsoft Teams channels."
+      vi: "Tóm tắt kênh 'Engineering' trong Teams từ hôm qua đến giờ."
+      en: "Summarize the 'Engineering' Teams channel since yesterday."
   - title:
-      vi: "Schedule meeting"
-      en: "Schedule meeting"
+      vi: "Lên lịch meeting"
+      en: "Schedule a meeting"
     prompt:
-      vi: "Schedule a Teams meeting for the project sync."
-      en: "Schedule a Teams meeting for the project sync."
+      vi: "Lên lịch meeting Teams 30 phút với team Sales thứ 3 tuần sau."
+      en: "Schedule a 30-minute Teams meeting with the Sales team next Tuesday."
 ---
 
 <!-- Body for future rich docs -->

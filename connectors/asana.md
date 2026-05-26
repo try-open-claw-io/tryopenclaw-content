@@ -4,29 +4,29 @@ name:
   vi: "Asana"
   en: "Asana"
 description:
-  vi: ""
-  en: ""
+  vi: "Quản lý dự án và task chia theo team, deadline rõ ràng. Phù hợp công ty vừa và agency."
+  en: "Project and task management with team views and clear deadlines. Built for mid-sized companies and agencies."
 category: productivity
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "List tasks"
-      en: "List tasks"
+      vi: "Giao task"
+      en: "Assign a task"
     prompt:
-      vi: "Show my Asana tasks due this week."
-      en: "Show my Asana tasks due this week."
+      vi: "Giao task 'Review báo cáo Q2' cho thành viên team, hạn thứ 6."
+      en: "Assign 'Review Q2 report' to a teammate with a Friday deadline."
   - title:
-      vi: "Create task"
-      en: "Create task"
+      vi: "List task chưa xong"
+      en: "List open tasks"
     prompt:
-      vi: "Create an Asana task for finishing the Q3 report."
-      en: "Create an Asana task for finishing the Q3 report."
+      vi: "Liệt kê task chưa xong trong project X."
+      en: "List open tasks in project X."
   - title:
-      vi: "Complete task"
-      en: "Complete task"
+      vi: "Cập nhật status"
+      en: "Update task status"
     prompt:
-      vi: "Mark task X as complete in Asana."
-      en: "Mark task X as complete in Asana."
+      vi: "Cập nhật task Y sang 'In Progress' trong Asana."
+      en: "Update task Y to 'In Progress' in Asana."
 ---
 
 <!-- Body for future rich docs -->

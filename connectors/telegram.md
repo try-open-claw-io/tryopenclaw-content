@@ -4,29 +4,29 @@ name:
   vi: "Telegram"
   en: "Telegram"
 description:
-  vi: ""
-  en: ""
+  vi: "Bot Telegram và chat. Báo alert, nhận lệnh ops nhanh — phổ biến với team tech."
+  en: "Telegram bots and chat. Send alerts and run ops commands quickly — popular with engineering teams."
 category: communication
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Send message"
-      en: "Send message"
+      vi: "Gửi alert"
+      en: "Send an alert"
     prompt:
-      vi: "Send a Telegram message to my notifications channel."
-      en: "Send a Telegram message to my notifications channel."
+      vi: "Gửi cảnh báo vào nhóm ops trên Telegram: server xuống."
+      en: "Send an alert to the ops Telegram group: server is down."
   - title:
-      vi: "List chats"
-      en: "List chats"
+      vi: "Tin nhắn nhóm"
+      en: "Send to a group"
     prompt:
-      vi: "List my recent Telegram chats."
-      en: "List my recent Telegram chats."
+      vi: "Gửi tin nhóm 'Sales' cập nhật doanh số hôm nay."
+      en: "Send today's sales update to the 'Sales' Telegram group."
   - title:
-      vi: "Search messages"
-      en: "Search messages"
+      vi: "Tóm tắt chat"
+      en: "Summarize chat"
     prompt:
-      vi: "Find Telegram messages mentioning 'deployment'."
-      en: "Find Telegram messages mentioning 'deployment'."
+      vi: "Tóm tắt chat nhóm 'Engineering' từ hôm qua đến giờ."
+      en: "Summarize the 'Engineering' Telegram group chat since yesterday."
 ---
 
 <!-- Body for future rich docs -->

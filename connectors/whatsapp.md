@@ -1,32 +1,32 @@
 ---
 id: whatsapp
 name:
-  vi: "Whatsapp"
-  en: "Whatsapp"
+  vi: "WhatsApp"
+  en: "WhatsApp"
 description:
-  vi: ""
-  en: ""
+  vi: "Tin nhắn WhatsApp cá nhân hoặc nhóm. Phù hợp chăm sóc khách quốc tế và team xa."
+  en: "WhatsApp messaging — direct or group. Great for international customer care and remote teams."
 category: communication
-popular: false
+popular: true
 tutorials:
   - title:
-      vi: "Send message"
-      en: "Send message"
+      vi: "Gửi tin xác nhận"
+      en: "Send confirmation"
     prompt:
-      vi: "Send a WhatsApp message to my customer support group."
-      en: "Send a WhatsApp message to my customer support group."
+      vi: "Gửi tin xác nhận đơn cho khách qua WhatsApp."
+      en: "Send an order confirmation message to the customer on WhatsApp."
   - title:
-      vi: "List contacts"
-      en: "List contacts"
+      vi: "Gửi tin nhóm"
+      en: "Send to a group"
     prompt:
-      vi: "List WhatsApp contacts I've chatted with recently."
-      en: "List WhatsApp contacts I've chatted with recently."
+      vi: "Gửi tin nhóm 'Sales' cập nhật doanh số tuần qua WhatsApp."
+      en: "Send the weekly sales update to the 'Sales' WhatsApp group."
   - title:
-      vi: "Search messages"
-      en: "Search messages"
+      vi: "Tóm tắt chat khách"
+      en: "Summarize customer chat"
     prompt:
-      vi: "Find WhatsApp messages from customer X."
-      en: "Find WhatsApp messages from customer X."
+      vi: "Tóm tắt chat khách hôm nay trên WhatsApp."
+      en: "Summarize today's customer chats on WhatsApp."
 ---
 
 <!-- Body for future rich docs -->
