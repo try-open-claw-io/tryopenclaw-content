@@ -19,14 +19,14 @@ tutorials:
       vi: "Trả lời ticket"
       en: "Reply to ticket"
     prompt:
-      vi: "Trả lời ticket X bằng macro 'Đã xử lý' trong Zendesk."
-      en: "Reply to ticket X with the 'Resolved' macro in Zendesk."
+      vi: "Trả lời ticket [mã ticket] bằng macro 'Đã xử lý' trong Zendesk."
+      en: "Reply to ticket [mã ticket] with the 'Resolved' macro in Zendesk."
   - title:
       vi: "Tóm tắt ticket"
       en: "Summarize ticket"
     prompt:
-      vi: "Tóm tắt ticket Y để bàn giao ca trong Zendesk."
-      en: "Summarize ticket Y for shift handover in Zendesk."
+      vi: "Tóm tắt ticket [mã ticket] để bàn giao ca trong Zendesk."
+      en: "Summarize ticket [mã ticket] for shift handover in Zendesk."
 ---
 
 <!-- Body for future rich docs -->

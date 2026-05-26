@@ -13,14 +13,14 @@ tutorials:
       vi: "List PR chờ review"
       en: "List open PRs"
     prompt:
-      vi: "Liệt kê các pull request đang chờ review trong repo X trên Bitbucket."
-      en: "List open pull requests waiting for review in repo X on Bitbucket."
+      vi: "Liệt kê các pull request đang chờ review trong repo [tên repo] trên Bitbucket."
+      en: "List open pull requests waiting for review in repo [tên repo] on Bitbucket."
   - title:
       vi: "Tạo issue"
       en: "Create an issue"
     prompt:
-      vi: "Tạo issue mới repo Y: lỗi build pipeline."
-      en: "Create a new issue in repo Y: pipeline build failure."
+      vi: "Tạo issue mới repo [tên repo]: lỗi build pipeline."
+      en: "Create a new issue in repo [tên repo]: pipeline build failure."
   - title:
       vi: "Tóm tắt commit"
       en: "Summarize commits"

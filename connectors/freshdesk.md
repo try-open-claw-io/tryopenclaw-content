@@ -25,8 +25,8 @@ tutorials:
       vi: "Phân ticket"
       en: "Assign ticket"
     prompt:
-      vi: "Phân ticket X cho team Engineering trên Freshdesk."
-      en: "Assign ticket X to the Engineering team on Freshdesk."
+      vi: "Phân ticket [mã ticket] cho team Engineering trên Freshdesk."
+      en: "Assign ticket [mã ticket] to the Engineering team on Freshdesk."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,8 +19,8 @@ tutorials:
       vi: "Cập nhật deal"
       en: "Update a deal"
     prompt:
-      vi: "Cập nhật deal X sang giai đoạn 'Đàm phán'."
-      en: "Move deal X to the 'Negotiation' stage."
+      vi: "Cập nhật deal [tên deal] sang giai đoạn 'Đàm phán'."
+      en: "Move deal [tên deal] to the 'Negotiation' stage."
   - title:
       vi: "List pipeline tháng"
       en: "List pipeline"

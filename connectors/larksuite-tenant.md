@@ -19,14 +19,14 @@ tutorials:
       vi: "Remove user"
       en: "Remove a user"
     prompt:
-      vi: "Xoá user X khỏi tenant Lark."
-      en: "Remove user X from the Lark tenant."
+      vi: "Xoá user [tên user] khỏi tenant Lark."
+      en: "Remove user [tên user] from the Lark tenant."
   - title:
       vi: "Gán role admin"
       en: "Assign admin role"
     prompt:
-      vi: "Gán role admin cho user Y phòng HR trong tenant Lark."
-      en: "Assign the admin role to user Y in the HR department of the Lark tenant."
+      vi: "Gán role admin cho user [tên user] phòng HR trong tenant Lark."
+      en: "Assign the admin role to user [tên user] in the HR department of the Lark tenant."
 ---
 
 <!-- Body for future rich docs -->

@@ -59,9 +59,18 @@ Prompt đầu tiên trong `tutorials[0].prompt.vi` **nên** phản ánh use-case
 - 2-5 từ. Mệnh lệnh hoặc danh động từ ("Tạo link đặt lịch", "Create booking link").
 - Không lặp tên connector trong title ("Tạo Gmail mail" ❌ — connector đã rõ trong context).
 
-### B4. Prompt context
-- Ưu tiên context cụ thể nhưng generic: tên sheet ("sheet 'Đơn hàng'"), kênh ("kênh #sales"), số lượng ("10 đơn"), khung giờ ("2-5 giờ chiều").
-- Đừng để prompt quá trống ("Show me my data") — mất tính minh hoạ.
+### B4. Prompt = mẫu guide, không phải workflow cứng
+- Prompt là pattern user xem rồi tự thay tham số bằng ngữ cảnh thật. **Tránh hardcode topic cụ thể.**
+- **Format placeholder:** `[mô tả tham số]` — square bracket bọc danh từ tiếng Việt mô tả tham số (tên file, chủ đề, số lượng, khu vực…). Tránh `X`/`Y` trừu tượng — non-tech không hiểu nên thay gì.
+- **Giữ:** action verb (tạo/gửi/mở/list), team/department phổ biến (Sales, Marketing, Engineering, HR), số lượng generic (10/20/100), khung giờ (2-5h chiều), tên kênh/folder/template generic ('Inventory', '#sales', 'Sales workspace').
+- **Bọc `[noun]`:** tên chiến dịch, tên blog post, tên file/doc/slide, tên product, event (Tết/Q3 launch), industry/region cụ thể, mô tả lỗi.
+- Ví dụ:
+  - ❌ "Đăng bài blog 'Mẹo dùng sản phẩm mùa hè' lên WordPress." (hardcode)
+  - ❌ "Đăng bài blog X lên WordPress kèm ảnh bìa." (X mơ hồ)
+  - ✅ "Đăng bài blog với [tiêu đề] và [ảnh bìa] lên WordPress."
+  - ✅ "Tạo banner Facebook cho chiến dịch [tên chiến dịch] trên Canva."
+  - ✅ "Tạo link Stripe [số tiền USD] cho khách nước ngoài."
+- Đừng để prompt quá trống ("Show me my data") — vẫn cần đủ tham số có nhãn rõ để user thấy được cú pháp.
 
 ### B5. Length prompt
 - ≤ 25 từ / lang. Dài hơn → user khó hình dung gõ.

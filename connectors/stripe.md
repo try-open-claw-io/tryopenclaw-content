@@ -25,8 +25,8 @@ tutorials:
       vi: "Hoàn tiền"
       en: "Refund payment"
     prompt:
-      vi: "Hoàn tiền cho đơn X — khách yêu cầu hủy."
-      en: "Refund payment X — the customer requested a cancellation."
+      vi: "Hoàn tiền cho đơn [mã đơn] — khách yêu cầu hủy."
+      en: "Refund payment [mã giao dịch] — the customer requested a cancellation."
 ---
 
 <!-- Body for future rich docs -->

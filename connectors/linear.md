@@ -25,8 +25,8 @@ tutorials:
       vi: "Cập nhật trạng thái"
       en: "Update status"
     prompt:
-      vi: "Chuyển task X sang trạng thái 'In Review' trong Linear."
-      en: "Move task X to 'In Review' in Linear."
+      vi: "Chuyển task [tên task] sang trạng thái 'In Review' trong Linear."
+      en: "Move task [tên task] to 'In Review' in Linear."
 ---
 
 <!-- Body for future rich docs -->
