@@ -1,0 +1,15 @@
+{
+  "slug": "meta-ads-report",
+  "name": {
+    "vi": "Báo cáo Meta Ads",
+    "en": "Meta Ads Report"
+  },
+  "description": {
+    "vi": "Theo dõi hiệu quả quảng cáo Facebook/Instagram qua chat. Xem CTR, CPM, ROI mà không cần vào Ads Manager.",
+    "en": "Track Facebook and Instagram ad performance through chat. Check CTR, CPM, and ROI without opening Ads Manager."
+  },
+  "category": "research-analysis",
+  "icon": "BarChart3",
+  "status": "Ready",
+  "version": "1.0"
+}

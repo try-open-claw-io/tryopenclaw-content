@@ -1,0 +1,15 @@
+{
+  "slug": "pancake-skills",
+  "name": {
+    "vi": "Pancake Inbox + POS",
+    "en": "Pancake Inbox + POS"
+  },
+  "description": {
+    "vi": "Quản lý hộp inbox FB/IG hợp nhất và POS đa kênh. Cho chủ shop xử lý hàng trăm tin nhắn và đơn cùng lúc.",
+    "en": "Unified FB/IG inbox plus multi-channel POS. For shop owners handling hundreds of messages and orders at once."
+  },
+  "category": "customer-support",
+  "icon": "Inbox",
+  "status": "Ready",
+  "version": "1.0"
+}

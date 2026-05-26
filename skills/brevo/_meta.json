@@ -1,0 +1,15 @@
+{
+  "slug": "brevo",
+  "name": {
+    "vi": "Brevo Email Marketing",
+    "en": "Brevo Email Marketing"
+  },
+  "description": {
+    "vi": "Gửi email marketing hàng loạt qua Brevo. Bản tin, chiến dịch, segment khách hàng. Alt Mailchimp, free 300 email/ngày.",
+    "en": "Send bulk email marketing through Brevo. Newsletters, campaigns, and contact segmentation. A Mailchimp alternative with 300 free emails per day."
+  },
+  "category": "content-marketing",
+  "icon": "Mail",
+  "status": "Ready",
+  "version": "1.0"
+}
