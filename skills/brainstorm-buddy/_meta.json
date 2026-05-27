@@ -1,0 +1,15 @@
+{
+  "slug": "brainstorm-buddy",
+  "name": {
+    "vi": "Bạn brainstorm",
+    "en": "Brainstorm Buddy"
+  },
+  "description": {
+    "vi": "Đào và mở rộng ý tưởng cho một chủ đề, rồi gom thành nhóm chủ đề. Không cần cài đặt, không gửi data ra ngoài.",
+    "en": "Generate and expand ideas on a topic, then cluster them into themes. No setup, nothing leaves the chat."
+  },
+  "category": "productivity",
+  "icon": "Lightbulb",
+  "status": "Ready",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "daily-planner",
+  "name": {
+    "vi": "Lập kế hoạch ngày",
+    "en": "Daily Planner"
+  },
+  "description": {
+    "vi": "Biến mớ việc lộn xộn thành kế hoạch ngày có ưu tiên và khung giờ. Không cần cài đặt, không gửi data ra ngoài.",
+    "en": "Turn a messy task dump into a prioritized day plan with time blocks. No setup, nothing leaves the chat."
+  },
+  "category": "productivity",
+  "icon": "CalendarCheck",
+  "status": "Ready",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "email-drafter",
+  "name": {
+    "vi": "Soạn nháp email",
+    "en": "Email Drafter"
+  },
+  "description": {
+    "vi": "Soạn nháp email gọn gàng, đúng giọng văn từ vài gạch đầu dòng. Chỉ viết text, không gửi. Không cần cài đặt.",
+    "en": "Draft clean, well-toned emails from a few bullet points. Writes text only, never sends. No setup needed."
+  },
+  "category": "productivity",
+  "icon": "Mail",
+  "status": "Ready",
+  "version": "1.0"
+}

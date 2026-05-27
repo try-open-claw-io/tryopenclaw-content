@@ -1,0 +1,15 @@
+{
+  "slug": "doc-summarizer",
+  "name": {
+    "vi": "Tóm tắt tài liệu",
+    "en": "Doc Summarizer"
+  },
+  "description": {
+    "vi": "Tóm tắt tài liệu hoặc văn bản dài thành điểm chính, TL;DR hoặc dàn ý. Không cần cài đặt, không gửi data ra ngoài.",
+    "en": "Summarize long documents or text into key points, a TL;DR, or an outline. No setup, nothing leaves the chat."
+  },
+  "category": "productivity",
+  "icon": "FileText",
+  "status": "Ready",
+  "version": "1.0"
+}
