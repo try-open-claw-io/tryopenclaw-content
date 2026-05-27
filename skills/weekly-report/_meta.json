@@ -1,0 +1,15 @@
+{
+  "slug": "weekly-report",
+  "name": {
+    "vi": "Báo cáo tuần",
+    "en": "Weekly Report"
+  },
+  "description": {
+    "vi": "Tổng hợp ghi chú cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, bị chặn. Không cần cài đặt.",
+    "en": "Turn a week of scattered notes into a tidy status report: done, in progress, blocked. No setup needed."
+  },
+  "category": "productivity",
+  "icon": "FileBarChart",
+  "status": "Ready",
+  "version": "1.0"
+}

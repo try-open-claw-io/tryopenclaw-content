@@ -1,0 +1,15 @@
+{
+  "slug": "proofreader",
+  "name": {
+    "vi": "Soát lỗi văn bản",
+    "en": "Proofreader"
+  },
+  "description": {
+    "vi": "Soát lỗi chính tả, ngữ pháp và làm gọn văn bản tiếng Việt hoặc Anh, kèm danh sách thay đổi. Không cần cài đặt.",
+    "en": "Fix spelling, grammar, and clarity in Vietnamese or English text, with a list of changes. No setup needed."
+  },
+  "category": "productivity",
+  "icon": "SpellCheck",
+  "status": "Ready",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "decision-helper",
+  "name": {
+    "vi": "Trợ lý quyết định",
+    "en": "Decision Helper"
+  },
+  "description": {
+    "vi": "So sánh các lựa chọn bằng bảng ưu/nhược có trọng số để ra quyết định rõ ràng. Không cần cài đặt.",
+    "en": "Compare options with a weighted pros/cons table to reach a clear decision. No setup needed."
+  },
+  "category": "productivity",
+  "icon": "Scale",
+  "status": "Ready",
+  "version": "1.0"
+}
