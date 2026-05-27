@@ -5,8 +5,8 @@
     "en": "Decision Helper"
   },
   "description": {
-    "vi": "So sánh các lựa chọn bằng bảng ưu/nhược có trọng số để ra quyết định rõ ràng. Không cần cài đặt.",
-    "en": "Compare options with a weighted pros/cons table to reach a clear decision. No setup needed."
+    "vi": "So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.",
+    "en": "Compare options in a weighted pros-and-cons table to help you decide with confidence."
   },
   "category": "productivity",
   "icon": "Scale",

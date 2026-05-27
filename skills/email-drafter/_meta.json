@@ -5,8 +5,8 @@
     "en": "Email Drafter"
   },
   "description": {
-    "vi": "Soạn nháp email gọn gàng, đúng giọng văn từ vài gạch đầu dòng. Chỉ viết text, không gửi. Không cần cài đặt.",
-    "en": "Draft clean, well-toned emails from a few bullet points. Writes text only, never sends. No setup needed."
+    "vi": "Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.",
+    "en": "Write a complete email from a few key points, in the right tone with a subject line. Drafts only, never sends."
   },
   "category": "productivity",
   "icon": "Mail",

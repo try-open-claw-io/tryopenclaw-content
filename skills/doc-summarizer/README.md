@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Tóm tắt tài liệu hoặc đoạn văn dài thành điểm chính. Bạn dán nội dung, skill trả về một câu TL;DR cùng các gạch đầu dòng, điều chỉnh được độ chi tiết (3 ý, 10 ý hay dàn ý đầy đủ), rút ra số liệu và mốc thời gian quan trọng, và nêu rõ luận điểm chính kèm điều kiện đi kèm. Tóm tắt được cả tiếng Việt lẫn Anh. Không cần cài đặt, không gửi data ra ngoài.
+Rút gọn tài liệu hay đoạn văn dài thành các ý chính chỉ trong vài giây. Bạn dán nội dung, skill trả về một câu TL;DR cùng các gạch đầu dòng, điều chỉnh được độ chi tiết (3 ý, 10 ý hay dàn ý đầy đủ), rút ra số liệu và mốc thời gian quan trọng, và nêu rõ luận điểm chính kèm điều kiện đi kèm. Tóm tắt được cả tiếng Việt lẫn Anh.
 
 ## Hướng dẫn
 
@@ -15,7 +15,7 @@ Tóm tắt tài liệu hoặc đoạn văn dài thành điểm chính. Bạn dá
 
 ## How to use
 
-Summarize a long document or passage into key points. You paste the content and the skill returns a one-line TL;DR plus bullets, with adjustable depth (3 points, 10 points, or a full outline), pulls out important numbers and dates, and states the main argument with its caveats. Works in both Vietnamese and English. Nothing to install, no data leaves the chat.
+Boil a long document or passage down to its key points. You paste the content and the skill returns a one-line TL;DR plus bullets, with adjustable depth (3 points, 10 points, or a full outline), pulls out important numbers and dates, and states the main argument with its caveats. Works in both Vietnamese and English.
 
 ## Tutorials
 

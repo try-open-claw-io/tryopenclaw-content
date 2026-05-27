@@ -5,8 +5,8 @@
     "en": "Proofreader"
   },
   "description": {
-    "vi": "Soát lỗi chính tả, ngữ pháp và làm gọn văn bản tiếng Việt hoặc Anh, kèm danh sách thay đổi. Không cần cài đặt.",
-    "en": "Fix spelling, grammar, and clarity in Vietnamese or English text, with a list of changes. No setup needed."
+    "vi": "Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.",
+    "en": "Fix spelling, grammar, and clarity in Vietnamese or English, with a list of every change."
   },
   "category": "productivity",
   "icon": "SpellCheck",

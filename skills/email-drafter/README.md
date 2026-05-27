@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Soạn nháp email gọn gàng, đúng giọng văn từ vài gạch đầu dòng. Bạn nói ý chính, skill viết thành email hoàn chỉnh kèm tiêu đề, chỉnh tông (trang trọng, thân thiện, dứt khoát, xin lỗi) và viết được cả tiếng Việt lẫn tiếng Anh. Skill chỉ viết text, không gửi và không truy cập hộp thư nào. Không cần cài đặt.
+Từ vài ý chính, có ngay email hoàn chỉnh đúng giọng và có tiêu đề. Bạn nói ý chính, skill viết thành email hoàn chỉnh kèm tiêu đề, chỉnh tông (trang trọng, thân thiện, dứt khoát, xin lỗi) và viết được cả tiếng Việt lẫn tiếng Anh. Skill chỉ viết text, không gửi và không truy cập hộp thư nào.
 
 ## Hướng dẫn
 
@@ -15,7 +15,7 @@ Soạn nháp email gọn gàng, đúng giọng văn từ vài gạch đầu dòn
 
 ## How to use
 
-Draft clean, well-toned emails from a few bullet points. You give the gist, the skill writes a full email with a subject line, adjusts tone (formal, friendly, firm, apologetic), and works in both Vietnamese and English. It only writes text — it never sends and has no mailbox access. No setup needed.
+Turn a few bullet points into a complete, well-toned email. You give the gist, the skill writes a full email with a subject line, adjusts tone (formal, friendly, firm, apologetic), and works in both Vietnamese and English. It only writes text — it never sends and has no mailbox access.
 
 ## Tutorials
 

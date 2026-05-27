@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Giúp bạn cân nhắc giữa các lựa chọn để ra quyết định rõ ràng. Bạn mô tả các phương án và tiêu chí quan tâm, skill lập bảng so sánh ưu/nhược, chấm điểm theo trọng số, tóm gọn đánh đổi trong một câu và đưa gợi ý sơ bộ, rồi soi thử "có gì có thể sai" với phương án dẫn đầu. Quyết định cuối vẫn là của bạn. Không cần cài đặt, không gửi data ra ngoài.
+Giúp bạn cân nhắc giữa các lựa chọn để ra quyết định rõ ràng. Bạn mô tả các phương án và tiêu chí quan tâm, skill lập bảng so sánh ưu/nhược, chấm điểm theo trọng số, tóm gọn đánh đổi trong một câu và đưa gợi ý sơ bộ, rồi soi thử "có gì có thể sai" với phương án dẫn đầu. Quyết định cuối vẫn là của bạn.
 
 ## Hướng dẫn
 
@@ -15,7 +15,7 @@ Giúp bạn cân nhắc giữa các lựa chọn để ra quyết định rõ r�
 
 ## How to use
 
-Helps you think through a choice and reach a clear decision. You describe the options and what matters to you; the skill lays out a pros/cons table, scores each against your weighted criteria, sums up the trade-off in one sentence with a tentative pick, then stress-tests the front-runner with a "what could go wrong" check. The final call stays yours. Nothing to install, no data leaves the chat.
+Helps you think through a choice and reach a clear decision. You describe the options and what matters to you; the skill lays out a pros/cons table, scores each against your weighted criteria, sums up the trade-off in one sentence with a tentative pick, then stress-tests the front-runner with a "what could go wrong" check. The final call stays yours.
 
 ## Tutorials
 

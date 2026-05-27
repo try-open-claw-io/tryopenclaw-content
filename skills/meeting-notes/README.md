@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Biến ghi chú họp thô hoặc bản ghi âm đã gỡ băng thành biên bản gọn gàng. Skill tóm tắt nội dung chính, tách riêng các quyết định, liệt kê việc cần làm kèm người phụ trách và hạn, và đánh dấu câu hỏi còn bỏ ngỏ. Trả về định dạng copy-paste được ngay. Không cần cài đặt, không gửi data ra ngoài.
+Chuyển ghi chú họp thô hoặc bản ghi âm đã gỡ băng thành biên bản gọn gàng. Skill tóm tắt nội dung chính, tách riêng các quyết định, liệt kê việc cần làm kèm người phụ trách và hạn, và đánh dấu câu hỏi còn bỏ ngỏ. Trả về định dạng copy-paste được ngay.
 
 ## Hướng dẫn
 
@@ -15,7 +15,7 @@ Biến ghi chú họp thô hoặc bản ghi âm đã gỡ băng thành biên b�
 
 ## How to use
 
-Turn rough meeting notes or a transcript into a clean record. The skill summarizes the key points, pulls out decisions, lists action items with owners and due dates, and flags any open questions. Output is copy-paste ready. Nothing to install, no data leaves the chat.
+Turn rough meeting notes or a transcript into a clean record. The skill summarizes the key points, pulls out decisions, lists action items with owners and due dates, and flags any open questions. Output is copy-paste ready.
 
 ## Tutorials
 
