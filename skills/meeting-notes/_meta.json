@@ -5,8 +5,8 @@
     "en": "Meeting Notes"
   },
   "description": {
-    "vi": "Biến ghi chú họp thô thành biên bản gọn: tóm tắt, quyết định, việc cần làm kèm người phụ trách. Không cần cài đặt.",
-    "en": "Turn rough meeting notes into clean minutes: summary, decisions, and action items with owners. No setup needed."
+    "vi": "Chuyển ghi chú họp thô thành biên bản chỉn chu: tóm tắt, quyết định và việc cần làm kèm người phụ trách.",
+    "en": "Turn rough meeting notes into clean minutes: summary, decisions, and action items with owners."
   },
   "category": "productivity",
   "icon": "NotebookPen",

@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Biến mớ việc lộn xộn thành kế hoạch ngày rõ ràng. Bạn đọc hoặc dán danh sách việc cần làm, skill sẽ tách nhỏ, sắp ưu tiên theo khẩn cấp/quan trọng, ước lượng thời gian và xếp vào khung giờ thực tế. Nếu ngày bị quá tải, skill báo ngay và hỏi nên bỏ hoặc dời việc nào. Không cần cài đặt gì, không gửi data ra ngoài.
+Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng. Bạn đọc hoặc dán danh sách việc cần làm, skill sẽ tách nhỏ, sắp ưu tiên theo khẩn cấp/quan trọng, ước lượng thời gian và xếp vào khung giờ thực tế. Nếu ngày bị quá tải, skill báo ngay và hỏi nên bỏ hoặc dời việc nào.
 
 ## Hướng dẫn
 
@@ -15,7 +15,7 @@ Biến mớ việc lộn xộn thành kế hoạch ngày rõ ràng. Bạn đọc
 
 ## How to use
 
-Turn a messy pile of tasks into a clear day plan. You paste or dictate your to-dos and the skill splits them into atomic items, ranks them by urgency and importance, estimates effort, and lays them into realistic time blocks. If the day is overbooked it tells you and asks what to drop or move. Nothing to install, no data leaves the chat.
+Turn a messy pile of tasks into a clear day plan. You paste or dictate your to-dos and the skill splits them into atomic items, ranks them by urgency and importance, estimates effort, and lays them into realistic time blocks. If the day is overbooked it tells you and asks what to drop or move.
 
 ## Tutorials
 

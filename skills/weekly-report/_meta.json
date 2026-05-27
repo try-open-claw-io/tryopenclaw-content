@@ -5,8 +5,8 @@
     "en": "Weekly Report"
   },
   "description": {
-    "vi": "Tổng hợp ghi chú cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, bị chặn. Không cần cài đặt.",
-    "en": "Turn a week of scattered notes into a tidy status report: done, in progress, blocked. No setup needed."
+    "vi": "Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.",
+    "en": "Turn a week of scattered notes into a tidy status report: done, in progress, and blocked."
   },
   "category": "productivity",
   "icon": "FileBarChart",
