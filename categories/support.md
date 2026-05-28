@@ -7,7 +7,7 @@ description:
   vi: "Hệ thống ticket, helpdesk và chăm sóc khách hàng."
   en: "Ticketing, helpdesk, and customer support."
 icon: "LifeBuoy"
-displayOrder: 6
+displayOrder: 7
 appliesTo:
   - connector
 ---

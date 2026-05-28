@@ -7,7 +7,7 @@ description:
   vi: "Tài liệu, bảng tính, lịch và công cụ thiết kế."
   en: "Documents, spreadsheets, calendars, and design tools."
 icon: "FileText"
-displayOrder: 8
+displayOrder: 2
 appliesTo:
   - connector
 ---

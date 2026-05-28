@@ -7,7 +7,7 @@ description:
   vi: "Lưu trữ file đám mây và đồng bộ dữ liệu."
   en: "Cloud file storage and data sync."
 icon: "HardDrive"
-displayOrder: 7
+displayOrder: 8
 appliesTo:
   - connector
 ---
