@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập console.groq.com."
     - "Mở API Keys → Create API Key."
-    - "Copy key (gsk_...) và dán vào ô bên dưới."
+    - "Sao chép key (gsk_...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to console.groq.com."
+    - "Sign in at console.groq.com."
     - "Open API Keys → Create API Key."
     - "Copy the key (gsk_...) and paste it below."
 keyUrl: "https://console.groq.com/keys"

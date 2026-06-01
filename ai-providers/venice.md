@@ -8,11 +8,11 @@ description:
   en: "Privacy-first AI — never logs conversations."
 instructions:
   vi:
-    - "Đăng nhập venice.ai/settings/api."
+    - "Đăng nhập venice.ai/settings/api-keys."
     - "Bấm Create API Key."
-    - "Copy key và dán vào ô bên dưới."
+    - "Sao chép key rồi dán vào ô bên dưới."
   en:
-    - "Sign in to venice.ai/settings/api."
+    - "Sign in at venice.ai/settings/api-keys."
     - "Click Create API Key."
     - "Copy the key and paste it below."
 keyUrl: "https://venice.ai/settings/api-keys"

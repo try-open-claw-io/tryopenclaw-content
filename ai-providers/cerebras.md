@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập cloud.cerebras.ai."
     - "Mở API Keys → Generate key."
-    - "Copy key và dán vào ô bên dưới."
+    - "Sao chép key rồi dán vào ô bên dưới."
   en:
-    - "Sign in to cloud.cerebras.ai."
+    - "Sign in at cloud.cerebras.ai."
     - "Open API Keys → Generate key."
     - "Copy the key and paste it below."
 keyUrl: "https://cloud.cerebras.ai/"

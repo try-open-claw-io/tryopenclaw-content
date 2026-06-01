@@ -9,11 +9,11 @@ description:
 instructions:
   vi:
     - "Đăng nhập huggingface.co/settings/tokens."
-    - "Bấm New token, scope read hoặc fine-grained."
-    - "Copy token (hf_...) và dán vào ô bên dưới."
+    - "Bấm New token, chọn scope Read (hoặc Fine-grained)."
+    - "Sao chép token (hf_...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to huggingface.co/settings/tokens."
-    - "Click New token with read or fine-grained scope."
+    - "Sign in at huggingface.co/settings/tokens."
+    - "Click New token with Read (or Fine-grained) scope."
     - "Copy the token (hf_...) and paste it below."
 keyUrl: "https://huggingface.co/settings/tokens"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
