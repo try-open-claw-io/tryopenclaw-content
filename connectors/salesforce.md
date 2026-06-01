@@ -19,7 +19,7 @@ tutorials:
       vi: "Tạo contact"
       en: "Create a contact"
     prompt:
-      vi: "Tạo contact mới gắn với account [tên account].
+      vi: "Tạo contact mới gắn với account [tên account]."
       en: "Create a new contact linked to account [account name]."
   - title:
       vi: "Báo cáo doanh thu"
