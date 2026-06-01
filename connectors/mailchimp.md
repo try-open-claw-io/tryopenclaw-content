@@ -8,6 +8,15 @@ description:
   en: "Bulk email marketing. Build customer lists, design newsletters, and schedule drip campaigns to nurture leads on autopilot."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @mailchimp trong câu nhắn là agent vào thẳng danh sách khách và chiến dịch mail."
+    - "Tạo và gửi mail quảng cáo cho cả danh sách, thêm khách, xem ai mở và ai bấm."
+    - "Hợp khi muốn gửi cùng nội dung cho nhiều người một lúc."
+  en:
+    - "Type @mailchimp in your message and the agent goes straight to your customer lists and campaigns."
+    - "Create and send promo emails to a whole list, add contacts, and see who opened and clicked."
+    - "Great when you want to send the same content to many people at once."
 tutorials:
   - title:
       vi: "Gửi chiến dịch khuyến mãi"

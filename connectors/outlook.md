@@ -8,6 +8,15 @@ description:
   en: "Microsoft's email inbox. Read, send, and filter work mail — the Gmail alternative for Microsoft-stack and EDU organizations."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @outlook trong câu nhắn là agent mở thẳng hộp thư công việc."
+    - "Đọc, soạn, trả lời và lọc mail; đi chung với Outlook Calendar và Teams."
+    - "Hợp công ty đang dùng Microsoft 365."
+  en:
+    - "Type @outlook in your message and the agent opens your work inbox directly."
+    - "Read, write, reply to, and filter mail; works alongside Outlook Calendar and Teams."
+    - "Great for companies on Microsoft 365."
 tutorials:
   - title:
       vi: "Mở mail mới"

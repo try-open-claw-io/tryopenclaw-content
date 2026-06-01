@@ -8,6 +8,15 @@ description:
   en: "International e-commerce platform. Manage catalogs, orders, and shipping — the most popular ecom platform globally."
 category: commerce
 popular: true
+howToUse:
+  vi:
+    - "Gõ @shopify trong câu nhắn là agent mở thẳng cửa hàng online của bạn."
+    - "Xem đơn hàng, kiểm tồn kho, cập nhật giá và sản phẩm."
+    - "Hợp bán hàng quốc tế, quản lý cửa hàng tập trung một nơi."
+  en:
+    - "Type @shopify in your message and the agent opens your online store directly."
+    - "Check orders, review stock, and update prices and products."
+    - "Great for international selling with your store managed in one place."
 tutorials:
   - title:
       vi: "List đơn hôm nay"

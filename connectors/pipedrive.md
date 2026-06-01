@@ -8,6 +8,15 @@ description:
   en: "Simple sales CRM. Visual deal pipelines for SMEs — no complex setup needed."
 category: crm-sales
 popular: true
+howToUse:
+  vi:
+    - "Gõ @pipedrive trong câu nhắn là agent mở thẳng pipeline bán hàng."
+    - "Tạo và cập nhật deal, dời deal qua từng bước, xem pipeline."
+    - "Gọn nhẹ, hợp đội sales nhỏ và vừa."
+  en:
+    - "Type @pipedrive in your message and the agent opens your sales pipeline directly."
+    - "Create and update deals, move them through each stage, and view the pipeline."
+    - "Lightweight and great for small to mid-sized sales teams."
 tutorials:
   - title:
       vi: "Cập nhật deal"

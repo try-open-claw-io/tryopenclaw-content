@@ -10,13 +10,13 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "Tham chiếu @airtable trong prompt — agent tự pick base và table phù hợp theo ngữ cảnh."
-    - "Dùng để đọc/ghi record, filter theo điều kiện, hoặc batch-update field từ nguồn khác (Sheets, mail, chat)."
-    - "Mẹo: pin Airtable vào session khi làm việc liên tục với 1 base — đỡ phải gắn lại mỗi tin nhắn."
+    - "Gõ @airtable trong câu nhắn là agent mở thẳng cơ sở dữ liệu của bạn."
+    - "Xem và thêm dòng, lọc theo điều kiện, cập nhật dữ liệu từ nguồn khác (Sheets, mail, chat)."
+    - "Hợp quản lý danh mục sản phẩm, lịch nội dung hay quy trình công việc với các bảng liên kết nhau."
   en:
-    - "Reference @airtable in your prompt — the agent picks the right base and table based on context."
-    - "Use it to read/write records, filter by condition, or batch-update fields from other sources (Sheets, email, chat)."
-    - "Tip: pin Airtable to a session when working with one base continuously — no need to re-attach each message."
+    - "Type @airtable in your message and the agent opens your database directly."
+    - "View and add rows, filter by condition, and update data from other sources (Sheets, mail, chat)."
+    - "Great for managing product catalogs, content calendars, or pipelines with linked tables."
 tutorials:
   - title:
       vi: "Thêm sản phẩm"

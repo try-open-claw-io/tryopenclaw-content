@@ -8,6 +8,15 @@ description:
   en: "Cloud storage with fast share links. Great for sending heavy files to customers or partners."
 category: storage
 popular: true
+howToUse:
+  vi:
+    - "Gõ @dropbox trong câu nhắn là agent mở thẳng kho file của bạn."
+    - "Tạo link chia sẻ file hoặc thư mục, tìm file, tải lên."
+    - "Tiện gửi tài liệu nặng cho khách hay đối tác qua một link."
+  en:
+    - "Type @dropbox in your message and the agent opens your file storage directly."
+    - "Create share links for files or folders, find files, and upload."
+    - "Handy for sending heavy documents to customers or partners via a single link."
 tutorials:
   - title:
       vi: "Share link folder"

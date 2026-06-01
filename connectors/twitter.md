@@ -8,6 +8,15 @@ description:
   en: "X (Twitter) social network. Post updates, view analytics, and DM followers."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @twitter trong câu nhắn là agent đăng bài hoặc xem số liệu giúp bạn."
+    - "Đăng bài, xem lượt xem và lượt bấm, nhắn tin riêng cho người theo dõi."
+    - "Hợp quảng bá sản phẩm và thương hiệu ra công chúng."
+  en:
+    - "Type @twitter in your message and the agent posts or checks numbers for you."
+    - "Post updates, see views and clicks, and send direct messages to followers."
+    - "Great for promoting products and brands to the public."
 tutorials:
   - title:
       vi: "Đăng tweet"

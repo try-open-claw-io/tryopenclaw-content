@@ -8,6 +8,15 @@ description:
   en: "Customer support chat on your web or app. Reply to customers in real-time and use saved macros to respond faster."
 category: support
 popular: true
+howToUse:
+  vi:
+    - "Gõ @intercom trong câu nhắn là agent mở thẳng hộp chat hỗ trợ khách."
+    - "Liệt kê chat chưa trả lời, trả lời ngay, dùng câu trả lời mẫu có sẵn."
+    - "Hợp hỗ trợ khách ngay trên web hoặc app."
+  en:
+    - "Type @intercom in your message and the agent opens your customer support chat directly."
+    - "List unanswered chats, reply in real time, and use saved reply templates."
+    - "Great for supporting customers right on your web or app."
 tutorials:
   - title:
       vi: "List chat chưa trả lời"

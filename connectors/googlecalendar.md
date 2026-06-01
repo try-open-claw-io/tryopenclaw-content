@@ -8,6 +8,15 @@ description:
   en: "Google's online calendar. Schedule meetings, book customers, and check free slots — syncs straight into Gmail and Google Meet."
 category: scheduling
 popular: true
+howToUse:
+  vi:
+    - "Gõ @googlecalendar trong câu nhắn là agent mở thẳng lịch của bạn."
+    - "Xem lịch, đặt cuộc họp, tìm khung giờ còn trống."
+    - "Đi chung với Gmail và Google Meet."
+  en:
+    - "Type @googlecalendar in your message and the agent opens your calendar directly."
+    - "Check your schedule, book meetings, and find free time slots."
+    - "Works alongside Gmail and Google Meet."
 tutorials:
   - title:
       vi: "Xem lịch ngày mai"

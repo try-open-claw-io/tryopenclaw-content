@@ -8,6 +8,15 @@ description:
   en: "Microsoft's team chat. Messages, video calls, and file sharing — the Slack alternative for companies on Microsoft 365."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @microsoftteams trong câu nhắn là agent vào thẳng kênh chat của nhóm."
+    - "Gửi tin, tóm tắt kênh, đặt lịch họp."
+    - "Hợp công ty đang dùng Microsoft 365."
+  en:
+    - "Type @microsoftteams in your message and the agent goes straight to your team channels."
+    - "Send messages, summarize channels, and schedule meetings."
+    - "Great for companies on Microsoft 365."
 tutorials:
   - title:
       vi: "Gửi tin nhóm"

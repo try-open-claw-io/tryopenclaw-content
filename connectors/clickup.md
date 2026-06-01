@@ -8,6 +8,15 @@ description:
   en: "All-in-one project management. Tasks, docs, time tracking, and goals — many tools bundled into one workspace."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @clickup trong câu nhắn là agent mở thẳng bảng việc của nhóm."
+    - "Tạo việc, liệt kê việc chưa xong, bấm giờ làm việc."
+    - "Gói chung việc, tài liệu và mục tiêu vào một chỗ."
+  en:
+    - "Type @clickup in your message and the agent opens your team's task board directly."
+    - "Create tasks, list open work, and track time."
+    - "Bundles tasks, docs, and goals in one place."
 tutorials:
   - title:
       vi: "List task chưa xong"

@@ -8,6 +8,15 @@ description:
   en: "Online notebook and wiki. Capture processes, FAQs, and playbooks for fast team lookup — write docs with real-time collaboration."
 category: documents
 popular: true
+howToUse:
+  vi:
+    - "Gõ @notion trong câu nhắn là agent mở thẳng sổ tay và kho tài liệu."
+    - "Tìm tài liệu, tạo trang, cập nhật bảng dữ liệu."
+    - "Hợp lưu quy trình, câu hỏi thường gặp, cẩm nang cho cả nhóm tra cứu."
+  en:
+    - "Type @notion in your message and the agent opens your notes and docs directly."
+    - "Find documents, create pages, and update databases."
+    - "Great for storing processes, FAQs, and playbooks for the whole team to look up."
 tutorials:
   - title:
       vi: "Tìm tài liệu"

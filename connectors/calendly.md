@@ -8,6 +8,15 @@ description:
   en: "Online scheduling on autopilot. Share one link; customers pick an open slot and Calendly creates the meeting and confirmation email for you."
 category: scheduling
 popular: true
+howToUse:
+  vi:
+    - "Gõ @calendly trong câu nhắn là agent tạo link đặt lịch hoặc xem các cuộc hẹn."
+    - "Khách tự chọn giờ trống qua link; bạn xem, dời hoặc hủy hẹn."
+    - "Hợp khi muốn khách tự đặt giờ thay vì hẹn tới hẹn lui."
+  en:
+    - "Type @calendly in your message and the agent creates a booking link or checks your appointments."
+    - "Customers pick an open slot through the link; you view, reschedule, or cancel."
+    - "Great when you want customers to book their own time instead of going back and forth."
 tutorials:
   - title:
       vi: "Tạo link đặt lịch"

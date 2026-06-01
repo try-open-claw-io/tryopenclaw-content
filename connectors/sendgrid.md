@@ -8,6 +8,15 @@ description:
   en: "Send automated emails for each transaction. Order confirmations, OTPs, and password resets — delivered to the inbox, not spam."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @sendgrid trong câu nhắn là agent gửi mail tự động cho từng giao dịch."
+    - "Mail xác nhận đơn, mã OTP, đặt lại mật khẩu; xem được mail nào gửi thành công hay bị trả lại."
+    - "Hợp mail gửi riêng từng người; còn mail quảng cáo cả danh sách thì dùng Mailchimp."
+  en:
+    - "Type @sendgrid in your message and the agent sends automated emails for each transaction."
+    - "Order confirmations, OTP codes, password resets; see which emails landed and which bounced."
+    - "Best for one-to-one emails; for bulk promo emails to a whole list, use Mailchimp."
 tutorials:
   - title:
       vi: "Mail xác nhận đơn"

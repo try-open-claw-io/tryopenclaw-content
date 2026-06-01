@@ -8,6 +8,15 @@ description:
   en: "WhatsApp messaging — direct or group. Great for international customer care and remote teams."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @whatsapp trong câu nhắn là agent nhắn thẳng cho khách hoặc nhóm."
+    - "Gửi tin xác nhận, nhắn nhóm, tóm tắt tin nhắn khách."
+    - "Hợp chăm khách nước ngoài và nhóm làm việc từ xa."
+  en:
+    - "Type @whatsapp in your message and the agent messages a customer or group directly."
+    - "Send confirmations, message groups, and summarize customer chats."
+    - "Great for international customer care and remote teams."
 tutorials:
   - title:
       vi: "Gửi tin xác nhận"

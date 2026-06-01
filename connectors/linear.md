@@ -8,6 +8,15 @@ description:
   en: "Lightweight task and bug tracking for engineering teams. Sprints, projects, and cycles — work fast with keyboard shortcuts."
 category: engineering
 popular: true
+howToUse:
+  vi:
+    - "Gõ @linear trong câu nhắn là agent vào thẳng bảng việc của nhóm."
+    - "Tạo issue, xem việc theo tuần, đổi trạng thái."
+    - "Nhẹ và nhanh, hợp nhóm kỹ thuật gọn."
+  en:
+    - "Type @linear in your message and the agent goes straight to your team's task board."
+    - "Create issues, view tasks by week, and change status."
+    - "Lightweight and fast, great for lean engineering teams."
 tutorials:
   - title:
       vi: "List task"

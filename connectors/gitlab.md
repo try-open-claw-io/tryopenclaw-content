@@ -8,6 +8,15 @@ description:
   en: "Git code hosting with automated build and deploy. Can run on your own server instead of a cloud service — fits engineering teams that need infrastructure control."
 category: engineering
 popular: true
+howToUse:
+  vi:
+    - "Gõ @gitlab trong câu nhắn là agent vào thẳng repo của nhóm."
+    - "Xem merge request, tạo issue, chạy pipeline."
+    - "Hợp nhóm muốn tự dựng hạ tầng trên server riêng."
+  en:
+    - "Type @gitlab in your message and the agent goes straight to your team's repo."
+    - "Review merge requests, create issues, and run pipelines."
+    - "Great for teams that want to run their own infrastructure on a private server."
 tutorials:
   - title:
       vi: "List MR chờ review"

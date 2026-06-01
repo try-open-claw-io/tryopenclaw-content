@@ -8,6 +8,15 @@ description:
   en: "Project and task management with team views and clear deadlines. Built for mid-sized companies and agencies."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @asana trong câu nhắn là agent mở thẳng bảng dự án của nhóm."
+    - "Giao việc kèm hạn chót, liệt kê việc chưa xong, cập nhật trạng thái."
+    - "Hợp công ty vừa và công ty dịch vụ."
+  en:
+    - "Type @asana in your message and the agent opens your team's project board directly."
+    - "Assign tasks with deadlines, list open work, and update status."
+    - "Great for mid-sized companies and agencies."
 tutorials:
   - title:
       vi: "Giao task"

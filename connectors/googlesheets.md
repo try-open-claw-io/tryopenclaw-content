@@ -8,6 +8,15 @@ description:
   en: "Google's online spreadsheet. Keep customer lists, track orders, and build quick reports — share one link and the whole team can view and edit together."
 category: documents
 popular: true
+howToUse:
+  vi:
+    - "Gõ @googlesheets trong câu nhắn là agent mở thẳng bảng tính của bạn."
+    - "Xem và thêm dòng, lọc theo điều kiện, làm báo cáo nhanh."
+    - "Gom được số liệu từ mail, phần mềm quản lý khách hay form về một bảng."
+  en:
+    - "Type @googlesheets in your message and the agent opens your spreadsheet directly."
+    - "View and add rows, filter by condition, and build quick reports."
+    - "Pulls numbers from mail, CRM, or forms into one sheet."
 tutorials:
   - title:
       vi: "Xem 10 đơn mới nhất"

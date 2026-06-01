@@ -8,6 +8,15 @@ description:
   en: "Google's email inbox. Read, send, and filter customer mail — follow every consultation thread without leaving your inbox."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @gmail trong câu nhắn là agent mở thẳng hộp thư của bạn."
+    - "Đọc, soạn, trả lời và lọc mail; gom thêm thông tin từ Sheets hay Lịch để soạn nội dung."
+    - "Hợp khi muốn xử lý mail khách ngay trong lúc trò chuyện với agent."
+  en:
+    - "Type @gmail in your message and the agent opens your inbox directly."
+    - "Read, write, reply to, and filter mail; pull in details from Sheets or Calendar to draft content."
+    - "Great for handling customer mail right while chatting with the agent."
 tutorials:
   - title:
       vi: "Mở mail chưa đọc"

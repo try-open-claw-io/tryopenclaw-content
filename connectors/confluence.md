@@ -8,6 +8,15 @@ description:
   en: "Atlassian's internal wiki. Specs, runbooks, and knowledge bases — cross-linked with Jira tickets."
 category: documents
 popular: true
+howToUse:
+  vi:
+    - "Gõ @confluence trong câu nhắn là agent mở thẳng kho tài liệu nội bộ."
+    - "Tìm tài liệu, tạo trang mới, tóm tắt nội dung."
+    - "Đi chung với Jira, hợp lưu quy trình và tài liệu của nhóm."
+  en:
+    - "Type @confluence in your message and the agent opens your internal knowledge base directly."
+    - "Find documents, create new pages, and summarize content."
+    - "Works alongside Jira; great for storing team processes and documents."
 tutorials:
   - title:
       vi: "Tìm trang"

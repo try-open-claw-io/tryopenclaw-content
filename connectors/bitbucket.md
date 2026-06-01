@@ -8,6 +8,15 @@ description:
   en: "Atlassian's Git management. Repositories, pull requests, and CI pipelines — built for enterprise teams using the Atlassian stack."
 category: engineering
 popular: true
+howToUse:
+  vi:
+    - "Gõ @bitbucket trong câu nhắn là agent vào thẳng repo của nhóm."
+    - "Xem pull request đang chờ duyệt, tạo issue, tóm tắt commit."
+    - "Hợp nhóm dùng bộ công cụ Atlassian."
+  en:
+    - "Type @bitbucket in your message and the agent goes straight to your team's repo."
+    - "Review pull requests waiting for approval, create issues, and summarize commits."
+    - "Great for teams using the Atlassian toolset."
 tutorials:
   - title:
       vi: "List PR chờ review"
