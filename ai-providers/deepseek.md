@@ -10,11 +10,11 @@ instructions:
   vi:
     - "Đăng nhập platform.deepseek.com."
     - "Mở API Keys → Create new API key."
-    - "Copy key và dán vào ô bên dưới."
+    - "Sao chép key (sk-...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to platform.deepseek.com."
+    - "Sign in at platform.deepseek.com."
     - "Open API Keys → Create new API key."
-    - "Copy the key and paste it below."
+    - "Copy the key (sk-...) and paste it below."
 keyUrl: "https://platform.deepseek.com/api_keys"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---

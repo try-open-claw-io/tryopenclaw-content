@@ -8,14 +8,14 @@ description:
   en: "Unified gateway across many providers, with caching and observability."
 instructions:
   vi:
-    - "Mở vercel.com/ai-gateway và đăng nhập."
-    - "Tạo gateway mới, chọn provider muốn proxy."
-    - "Copy gateway API key và dán vào ô bên dưới."
+    - "Đăng nhập Vercel rồi mở Dashboard → AI Gateway → API Keys."
+    - "Bấm Create key, đặt tên cho key."
+    - "Sao chép key (vck_...) rồi dán vào ô bên dưới."
   en:
-    - "Open vercel.com/ai-gateway and sign in."
-    - "Create a new gateway and pick the providers to proxy."
-    - "Copy the gateway API key and paste it below."
-keyUrl: "https://vercel.com/ai-gateway"
+    - "Sign in to Vercel, then open Dashboard → AI Gateway → API Keys."
+    - "Click Create key and name it."
+    - "Copy the key (vck_...) and paste it below."
+keyUrl: "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 

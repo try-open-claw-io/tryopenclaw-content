@@ -8,13 +8,15 @@ description:
   en: "Kimi K2 — 1M context, strong on Chinese and code."
 instructions:
   vi:
-    - "Đăng nhập platform.moonshot.cn (cần SĐT Trung Quốc)."
+    - "Đăng nhập platform.moonshot.ai (bản quốc tế) hoặc platform.moonshot.cn."
     - "Mở API Keys → tạo key mới."
-    - "Copy key và dán vào ô bên dưới."
+    - "Sao chép key (sk-...) rồi dán vào ô bên dưới."
+    - "Lưu ý: bản .cn yêu cầu số điện thoại Trung Quốc; dùng platform.moonshot.ai nếu ở ngoài Trung Quốc."
   en:
-    - "Sign in to platform.moonshot.cn (requires a Chinese phone number)."
+    - "Sign in at platform.moonshot.ai (international) or platform.moonshot.cn."
     - "Open API Keys → create a new key."
-    - "Copy the key and paste it below."
+    - "Copy the key (sk-...) and paste it below."
+    - "Note: the .cn platform requires a Chinese phone number; use platform.moonshot.ai from outside China."
 keyUrl: "https://platform.moonshot.ai/console/api-keys"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---

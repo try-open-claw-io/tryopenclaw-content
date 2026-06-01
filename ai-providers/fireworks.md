@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập app.fireworks.ai."
     - "Mở API Keys → Create new key."
-    - "Copy key (fw_...) và dán vào ô bên dưới."
+    - "Sao chép key (fw_...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to app.fireworks.ai."
+    - "Sign in at app.fireworks.ai."
     - "Open API Keys → Create new key."
     - "Copy the key (fw_...) and paste it below."
 keyUrl: "https://fireworks.ai/account/api-keys"
