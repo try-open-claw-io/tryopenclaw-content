@@ -9,6 +9,7 @@
     "description": { "$ref": "#/$defs/i18nString" },
     "category":    { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "popular":     { "type": "boolean" },
+    "howToUse":    { "$ref": "#/$defs/i18nStringArray" },
     "tutorials": {
       "type": "array",
       "items": {
@@ -30,6 +31,15 @@
       "properties": {
         "vi": { "type": "string" },
         "en": { "type": "string" }
+      }
+    },
+    "i18nStringArray": {
+      "type": "object",
+      "required": ["vi", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "vi": { "type": "array", "items": { "type": "string" } },
+        "en": { "type": "array", "items": { "type": "string" } }
       }
     }
   }
