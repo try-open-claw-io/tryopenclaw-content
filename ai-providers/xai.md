@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập console.x.ai."
     - "Mở API Keys → Create new key."
-    - "Copy key (xai-...) và dán vào ô bên dưới."
+    - "Sao chép key (xai-...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to console.x.ai."
+    - "Sign in at console.x.ai."
     - "Open API Keys → Create new key."
     - "Copy the key (xai-...) and paste it below."
 keyUrl: "https://console.x.ai/"

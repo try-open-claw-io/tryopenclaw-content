@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập console.anthropic.com."
     - "Mở Settings → API Keys → Create Key."
-    - "Copy key (chỉ hiện 1 lần) và dán vào ô bên dưới."
+    - "Sao chép key (chỉ hiện một lần) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to console.anthropic.com."
+    - "Sign in at console.anthropic.com."
     - "Open Settings → API Keys → Create Key."
     - "Copy the key (shown only once) and paste it below."
 keyUrl: "https://console.anthropic.com/"

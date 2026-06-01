@@ -8,14 +8,16 @@ description:
   en: "GLM-4.6 — Zhipu AI's flagship."
 instructions:
   vi:
-    - "Đăng nhập open.bigmodel.cn."
-    - "Mở API Keys → Create API Key."
-    - "Copy key và dán vào ô bên dưới."
+    - "Đăng nhập z.ai (bản quốc tế) hoặc open.bigmodel.cn (Trung Quốc)."
+    - "Mở API Keys → tạo key mới."
+    - "Sao chép key (dạng id.secret) rồi dán vào ô bên dưới."
+    - "Lưu ý: key gồm hai phần ngăn bởi dấu chấm, không phải dạng sk-."
   en:
-    - "Sign in to open.bigmodel.cn."
-    - "Open API Keys → Create API Key."
-    - "Copy the key and paste it below."
-keyUrl: "https://console.zhipuai.cn/"
+    - "Sign in at z.ai (international) or open.bigmodel.cn (China)."
+    - "Open API Keys → create a new key."
+    - "Copy the key (in id.secret form) and paste it below."
+    - "Note: the key has two dot-separated parts, not the sk- format."
+keyUrl: "https://z.ai/manage-apikey/apikey-list"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 

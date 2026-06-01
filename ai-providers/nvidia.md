@@ -10,9 +10,9 @@ instructions:
   vi:
     - "Đăng nhập build.nvidia.com."
     - "Mở API Catalog → chọn model → Get API Key."
-    - "Copy key (nvapi-...) và dán vào ô bên dưới."
+    - "Sao chép key (nvapi-...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to build.nvidia.com."
+    - "Sign in at build.nvidia.com."
     - "Open API Catalog → pick a model → Get API Key."
     - "Copy the key (nvapi-...) and paste it below."
 keyUrl: "https://build.nvidia.com/settings/api-keys"

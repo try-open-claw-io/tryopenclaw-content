@@ -9,11 +9,11 @@ description:
 instructions:
   vi:
     - "Đăng nhập console.mistral.ai."
-    - "Mở API Keys → New key."
-    - "Copy key và dán vào ô bên dưới."
+    - "Mở API Keys → Create new key."
+    - "Sao chép key rồi dán vào ô bên dưới."
   en:
-    - "Sign in to console.mistral.ai."
-    - "Open API Keys → New key."
+    - "Sign in at console.mistral.ai."
+    - "Open API Keys → Create new key."
     - "Copy the key and paste it below."
 keyUrl: "https://console.mistral.ai/"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"

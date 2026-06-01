@@ -8,11 +8,11 @@ description:
   en: "Inference for 200+ open-source models."
 instructions:
   vi:
-    - "Đăng nhập api.together.xyz."
+    - "Đăng nhập api.together.ai."
     - "Mở Settings → API Keys."
-    - "Copy key và dán vào ô bên dưới."
+    - "Sao chép key rồi dán vào ô bên dưới."
   en:
-    - "Sign in to api.together.xyz."
+    - "Sign in at api.together.ai."
     - "Open Settings → API Keys."
     - "Copy the key and paste it below."
 keyUrl: "https://api.together.ai/settings/api-keys"

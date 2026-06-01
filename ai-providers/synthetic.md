@@ -8,14 +8,16 @@ description:
   en: "Synthetic — inference platform for open-source LLMs."
 instructions:
   vi:
-    - "Sign in to the provider's console."
-    - "Open API Keys → Create a new key."
-    - "Copy the key and paste it below."
+    - "Đăng nhập synthetic.new."
+    - "Mở User Settings → API."
+    - "Tạo key mới, sao chép rồi dán vào ô bên dưới."
+    - "Lưu ý: cần thêm phương thức thanh toán hoặc đăng ký gói trước khi key hoạt động."
   en:
-    - "Sign in to the provider's console."
-    - "Open API Keys → Create a new key."
-    - "Copy the key and paste it below."
-keyUrl: "https://synthetic.new/"
+    - "Sign in at synthetic.new."
+    - "Open User Settings → API."
+    - "Generate a new key, copy it, and paste it below."
+    - "Note: a payment method or subscription is required before the key works."
+keyUrl: "https://synthetic.new/user-settings/api"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 

@@ -9,11 +9,11 @@ description:
 instructions:
   vi:
     - "Mở aistudio.google.com/apikey và đăng nhập."
-    - "Bấm Create API key trong Google Cloud project."
-    - "Copy key (AIza...) và dán vào ô bên dưới."
+    - "Bấm Create API key, chọn một Google Cloud project."
+    - "Sao chép key (AIza...) rồi dán vào ô bên dưới."
   en:
     - "Open aistudio.google.com/apikey and sign in."
-    - "Click Create API key inside a Google Cloud project."
+    - "Click Create API key and pick a Google Cloud project."
     - "Copy the key (AIza...) and paste it below."
 keyUrl: "https://aistudio.google.com/app/apikey"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"

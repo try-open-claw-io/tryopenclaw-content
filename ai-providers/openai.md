@@ -9,11 +9,11 @@ description:
 instructions:
   vi:
     - "Đăng nhập platform.openai.com/api-keys."
-    - "Bấm Create new secret key, đặt tên project."
-    - "Copy key (sk-proj-...) và dán vào ô bên dưới."
+    - "Bấm Create new secret key, đặt tên cho key."
+    - "Sao chép key (sk-proj-...) rồi dán vào ô bên dưới."
   en:
-    - "Sign in to platform.openai.com/api-keys."
-    - "Click Create new secret key, name the project."
+    - "Sign in at platform.openai.com/api-keys."
+    - "Click Create new secret key and name it."
     - "Copy the key (sk-proj-...) and paste it below."
 keyUrl: "https://platform.openai.com/api-keys"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"

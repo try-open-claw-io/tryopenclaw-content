@@ -8,13 +8,15 @@ description:
   en: "Kilo Code — agentic coding assistant with hosted inference."
 instructions:
   vi:
-    - "Sign in to the provider's console."
-    - "Open API Keys → Create a new key."
-    - "Copy the key and paste it below."
+    - "Đăng nhập app.kilo.ai (tài khoản miễn phí)."
+    - "Mở Your Profile trên tài khoản cá nhân (không phải tài khoản tổ chức)."
+    - "Kéo xuống cuối trang, sao chép API key rồi dán vào ô bên dưới."
+    - "Lưu ý: tài khoản mới có sẵn tín dụng dùng thử; không có nút tạo key riêng — key nằm ở cuối trang hồ sơ."
   en:
-    - "Sign in to the provider's console."
-    - "Open API Keys → Create a new key."
-    - "Copy the key and paste it below."
+    - "Sign in at app.kilo.ai (free account)."
+    - "Open Your Profile on your personal account (not an organization)."
+    - "Scroll to the bottom of the page, copy the API key, and paste it below."
+    - "Note: new accounts include trial credit; there is no separate Create Key button — the key lives at the bottom of your profile."
 keyUrl: "https://app.kilo.ai/"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---

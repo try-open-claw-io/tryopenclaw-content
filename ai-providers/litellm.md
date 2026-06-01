@@ -8,13 +8,13 @@ description:
   en: "Self-hosted proxy that unifies many providers behind one endpoint."
 instructions:
   vi:
-    - "Cài đặt: pip install litellm[proxy]."
+    - "Cài đặt proxy: pip install 'litellm[proxy]'."
     - "Chạy proxy: litellm --config config.yaml."
-    - "Dùng master key trong config làm API key tại đây."
+    - "Dùng master_key khai báo trong config làm API key, rồi dán vào ô bên dưới."
   en:
-    - "Install: pip install litellm[proxy]."
+    - "Install the proxy: pip install 'litellm[proxy]'."
     - "Run the proxy: litellm --config config.yaml."
-    - "Use the master key from the config as the API key here."
+    - "Use the master_key from your config as the API key and paste it below."
 keyUrl: "https://docs.openclaw.ai/providers/litellm"
 videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
