@@ -8,6 +8,15 @@ description:
   en: "Code management and bug tracking for engineering teams. Push code, review pull requests, and track issues and CI builds."
 category: engineering
 popular: true
+howToUse:
+  vi:
+    - "Gõ @github trong câu nhắn là agent vào thẳng repo của nhóm."
+    - "Tạo issue, xem và duyệt pull request, tóm tắt commit, theo dõi build."
+    - "Hợp nhóm kỹ thuật quản lý code và theo dõi lỗi."
+  en:
+    - "Type @github in your message and the agent goes straight to your team's repo."
+    - "Create issues, review pull requests, summarize commits, and track builds."
+    - "Great for engineering teams managing code and tracking bugs."
 tutorials:
   - title:
       vi: "Tạo issue"

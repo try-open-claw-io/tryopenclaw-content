@@ -8,6 +8,15 @@ description:
   en: "Build beautiful conversational forms that ask one question at a time. Great for capturing leads, running NPS surveys, or collecting event signups."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @typeform trong câu nhắn là agent tạo form hoặc xem phản hồi cho bạn."
+    - "Tạo form khảo sát hay đăng ký, xem phản hồi mới, xuất kết quả sang Sheets."
+    - "Hợp thu thông tin khách và đo mức hài lòng."
+  en:
+    - "Type @typeform in your message and the agent creates a form or checks responses for you."
+    - "Build survey or signup forms, view new responses, and export results to Sheets."
+    - "Great for collecting customer info and measuring satisfaction."
 tutorials:
   - title:
       vi: "Tạo form đăng ký"

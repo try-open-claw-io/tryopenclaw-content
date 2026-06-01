@@ -8,6 +8,15 @@ description:
   en: "An e-commerce plugin for WordPress. Manage products, orders, and shipping — great for shops running on their own WordPress website."
 category: commerce
 popular: true
+howToUse:
+  vi:
+    - "Gõ @woocommerce trong câu nhắn là agent mở thẳng cửa hàng trên website WordPress."
+    - "Xem đơn, cập nhật tồn kho, tìm sản phẩm hết hàng."
+    - "Hợp shop bán ngay trên website WordPress của mình."
+  en:
+    - "Type @woocommerce in your message and the agent opens your store on your WordPress site directly."
+    - "Check orders, update stock, and find out-of-stock products."
+    - "Great for shops selling right on their own WordPress website."
 tutorials:
   - title:
       vi: "List đơn hôm nay"

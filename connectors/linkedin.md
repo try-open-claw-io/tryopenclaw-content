@@ -8,6 +8,15 @@ description:
   en: "Professional network. Source candidates, run B2B outreach, and post personal-brand and company content."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @linkedin trong câu nhắn là agent vào thẳng mạng nghề nghiệp."
+    - "Tìm ứng viên hoặc đối tác, nhắn tin kết nối, đăng bài giới thiệu thương hiệu."
+    - "Hợp tuyển dụng và tìm khách doanh nghiệp."
+  en:
+    - "Type @linkedin in your message and the agent goes straight to the professional network."
+    - "Find candidates or partners, send connection messages, and post brand updates."
+    - "Great for recruiting and finding business customers."
 tutorials:
   - title:
       vi: "Tìm ứng viên"

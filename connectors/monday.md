@@ -8,6 +8,15 @@ description:
   en: "Flexible work management with multiple views. Drag-and-drop boards, timelines, and calendars — pick what fits each project."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @monday trong câu nhắn là agent mở thẳng bảng việc của nhóm."
+    - "Liệt kê việc trong tuần, tạo đầu việc theo dõi khách, cập nhật trạng thái."
+    - "Xem được nhiều kiểu: bảng, dòng thời gian, lịch."
+  en:
+    - "Type @monday in your message and the agent opens your team's work board directly."
+    - "List the week's tasks, create customer follow-up items, and update status."
+    - "View it many ways: boards, timelines, and calendars."
 tutorials:
   - title:
       vi: "List task tuần"

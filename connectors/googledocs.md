@@ -8,6 +8,15 @@ description:
   en: "Google Docs. Real-time collaborative writing with inline comments and easy team sharing."
 category: documents
 popular: true
+howToUse:
+  vi:
+    - "Gõ @googledocs trong câu nhắn là agent mở thẳng tài liệu của bạn."
+    - "Soạn tài liệu mới, tóm tắt nội dung, rút ý chính."
+    - "Hợp viết chung và lưu các văn bản dài."
+  en:
+    - "Type @googledocs in your message and the agent opens your document directly."
+    - "Draft new docs, summarize content, and pull out key points."
+    - "Great for collaborative writing and storing long documents."
 tutorials:
   - title:
       vi: "Mở doc"

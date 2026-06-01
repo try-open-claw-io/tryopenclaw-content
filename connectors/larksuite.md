@@ -8,6 +8,15 @@ description:
   en: "An all-in-one workspace. Chat, docs, calendar, and forms — many tools unified into one platform for the whole team."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @larksuite trong câu nhắn là agent vào thẳng phần đang cần — chat, tài liệu hay lịch."
+    - "Gửi tin nhóm, tạo tài liệu, đặt lịch họp."
+    - "Gói nhiều công cụ làm việc cho cả nhóm."
+  en:
+    - "Type @larksuite in your message and the agent jumps to what you need — chat, docs, or calendar."
+    - "Send group messages, create docs, and schedule meetings."
+    - "Bundles many work tools for the whole team."
 tutorials:
   - title:
       vi: "Gửi tin nhóm"

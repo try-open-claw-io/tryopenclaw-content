@@ -8,6 +8,15 @@ description:
   en: "Microsoft's cloud storage. Save work files and share internal links — the Google Drive alternative for companies on Microsoft 365."
 category: storage
 popular: true
+howToUse:
+  vi:
+    - "Gõ @onedrive trong câu nhắn là agent mở thẳng kho file của bạn."
+    - "Tìm file, tạo link chia sẻ, tải file lên."
+    - "Hợp công ty đang dùng Microsoft 365."
+  en:
+    - "Type @onedrive in your message and the agent opens your file storage directly."
+    - "Find files, create share links, and upload files."
+    - "Great for companies on Microsoft 365."
 tutorials:
   - title:
       vi: "Tìm file"

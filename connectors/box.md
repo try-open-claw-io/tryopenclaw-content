@@ -8,6 +8,15 @@ description:
   en: "Enterprise cloud storage. Contracts and compliance documents — fine-grained permissions per department."
 category: storage
 popular: true
+howToUse:
+  vi:
+    - "Gõ @box trong câu nhắn là agent mở thẳng kho file của bạn."
+    - "Tìm hợp đồng hay tài liệu, tạo link chia sẻ có hạn dùng, xem file mới."
+    - "Hợp lưu trữ cho công ty lớn cần phân quyền chặt."
+  en:
+    - "Type @box in your message and the agent opens your file storage directly."
+    - "Find contracts or documents, create expiring share links, and check recent files."
+    - "Great for enterprise storage that needs tight permissions."
 tutorials:
   - title:
       vi: "Tìm file"

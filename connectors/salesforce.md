@@ -8,6 +8,15 @@ description:
   en: "Enterprise CRM. Complex pipelines, advanced reporting, and multi-team automation — built for enterprises."
 category: crm-sales
 popular: true
+howToUse:
+  vi:
+    - "Gõ @salesforce trong câu nhắn là agent mở thẳng dữ liệu khách hàng."
+    - "Cập nhật cơ hội bán hàng, thêm liên hệ, xem báo cáo doanh thu."
+    - "Hợp công ty lớn, nhiều nhóm bán hàng cùng làm."
+  en:
+    - "Type @salesforce in your message and the agent opens your customer data directly."
+    - "Update opportunities, add contacts, and view revenue reports."
+    - "Great for large companies with multiple sales teams working together."
 tutorials:
   - title:
       vi: "Cập nhật opportunity"

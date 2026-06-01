@@ -8,6 +8,15 @@ description:
   en: "Online video meetings. Create rooms, send links to customers, record sessions, and share replays."
 category: scheduling
 popular: true
+howToUse:
+  vi:
+    - "Gõ @zoom trong câu nhắn là agent tạo phòng họp và lấy link cho bạn."
+    - "Tạo phòng họp một lần hoặc lặp lại hằng tuần, lấy link gửi khách, xem lịch họp."
+    - "Hợp các buổi họp hoặc demo trực tuyến với khách."
+  en:
+    - "Type @zoom in your message and the agent creates a meeting room and grabs the link for you."
+    - "Create a one-time or weekly recurring meeting, get the link to send customers, and check your meeting schedule."
+    - "Great for online meetings or demos with customers."
 tutorials:
   - title:
       vi: "Tạo phòng họp"

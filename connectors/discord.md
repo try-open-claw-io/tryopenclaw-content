@@ -8,6 +8,15 @@ description:
   en: "Community chat organized by channels. Great for gaming, education, and creators — reliable voice and easy bot integration."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @discord trong câu nhắn là agent vào thẳng kênh trong server."
+    - "Đăng thông báo, tóm tắt kênh, tạo link mời người mới vào."
+    - "Hợp cộng đồng game, lớp học, nhà sáng tạo."
+  en:
+    - "Type @discord in your message and the agent goes straight to a channel in your server."
+    - "Post announcements, summarize channels, and create invite links for new members."
+    - "Great for gaming communities, classes, and creators."
 tutorials:
   - title:
       vi: "Gửi thông báo kênh"

@@ -8,6 +8,15 @@ description:
   en: "Real-time team chat. Share internal updates, alert teammates when a customer needs attention, and split discussion across per-project channels."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @slack trong câu nhắn là agent vào thẳng kênh chat của nhóm."
+    - "Gửi thông báo, đọc lại hay tóm tắt một kênh, tìm tin cũ."
+    - "Tiện để báo cả nhóm khi có việc cần để ý — đơn mới, khách cần hỗ trợ gấp."
+  en:
+    - "Type @slack in your message and the agent goes straight to your team channels."
+    - "Post announcements, recap or summarize a channel, and search old messages."
+    - "Handy for alerting the whole team when something needs attention — a new order, a customer needing urgent help."
 tutorials:
   - title:
       vi: "Gửi thông báo kênh"

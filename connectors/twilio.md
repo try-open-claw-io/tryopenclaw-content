@@ -8,6 +8,15 @@ description:
   en: "Send SMS and place automated voice calls. Great for booking confirmations, login OTPs, and incident alerts for your team."
 category: communication
 popular: true
+howToUse:
+  vi:
+    - "Gõ @twilio trong câu nhắn là agent thay bạn gửi SMS hoặc gọi điện tự động."
+    - "Gửi SMS xác nhận, mã OTP, hay cuộc gọi tự động báo tin."
+    - "Hợp việc cần nhắn tới số điện thoại khách, không qua app chat."
+  en:
+    - "Type @twilio in your message and the agent sends an SMS or places an automated call for you."
+    - "Send confirmation texts, OTP codes, or automated voice calls with updates."
+    - "Great when you need to reach a customer's phone number directly, not through a chat app."
 tutorials:
   - title:
       vi: "Gửi SMS xác nhận"

@@ -8,6 +8,15 @@ description:
   en: "A simple drag-and-drop work board. Each column is a status (To do — Doing — Done); move cards across columns. Great for small teams."
 category: productivity
 popular: true
+howToUse:
+  vi:
+    - "Gõ @trello trong câu nhắn là agent mở thẳng bảng việc của bạn."
+    - "Tạo thẻ việc, kéo thẻ qua từng cột trạng thái, liệt kê thẻ đang làm."
+    - "Trực quan và đơn giản, hợp nhóm nhỏ."
+  en:
+    - "Type @trello in your message and the agent opens your work board directly."
+    - "Create cards, move them across status columns, and list active cards."
+    - "Visual and simple, great for small teams."
 tutorials:
   - title:
       vi: "Tạo card mới"

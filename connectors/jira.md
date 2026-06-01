@@ -8,6 +8,15 @@ description:
   en: "Enterprise issue tracking. Sprints, epics, and complex workflows — built for large organizations running many projects in parallel."
 category: engineering
 popular: true
+howToUse:
+  vi:
+    - "Gõ @jira trong câu nhắn là agent vào thẳng bảng ticket của dự án."
+    - "Mở ticket báo lỗi, xem sprint đang chạy, đổi trạng thái ticket."
+    - "Hợp công ty lớn, nhiều dự án chạy song song."
+  en:
+    - "Type @jira in your message and the agent goes straight to your project's ticket board."
+    - "Open bug tickets, check the running sprint, and change ticket status."
+    - "Great for large companies running many projects in parallel."
 tutorials:
   - title:
       vi: "Mở ticket bug"

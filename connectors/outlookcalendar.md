@@ -8,6 +8,15 @@ description:
   en: "Microsoft's calendar. Schedule meetings, book customers, and check free slots — the Google Calendar alternative for companies on Microsoft 365."
 category: scheduling
 popular: true
+howToUse:
+  vi:
+    - "Gõ @outlookcalendar trong câu nhắn là agent mở thẳng lịch của bạn."
+    - "Đặt họp, tìm khung giờ cả nhóm cùng trống, xem lịch."
+    - "Hợp công ty đang dùng Microsoft 365."
+  en:
+    - "Type @outlookcalendar in your message and the agent opens your calendar directly."
+    - "Book meetings, find a slot when the whole team is free, and check your schedule."
+    - "Great for companies on Microsoft 365."
 tutorials:
   - title:
       vi: "Đặt cuộc họp"

@@ -8,6 +8,15 @@ description:
   en: "Lark tenant administration. Add or remove users and assign admin roles by department — built for IT admins."
 category: productivity
 popular: false
+howToUse:
+  vi:
+    - "Gõ @larksuite-tenant trong câu nhắn là agent vào phần quản trị hệ thống Lark (dành cho người làm IT)."
+    - "Thêm hoặc xóa người dùng, gán quyền quản trị theo phòng ban."
+    - "Là quyền quản trị toàn công ty, nên cân nhắc kỹ trước khi thao tác."
+  en:
+    - "Type @larksuite-tenant in your message and the agent enters Lark admin management (for IT staff)."
+    - "Add or remove users and assign admin rights by department."
+    - "This is company-wide admin access, so consider carefully before making changes."
 tutorials:
   - title:
       vi: "Thêm user mới"

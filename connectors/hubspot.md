@@ -8,6 +8,15 @@ description:
   en: "Customer CRM. Track leads, deals, contacts, and pipelines — follow each sales opportunity from first touch to close."
 category: crm-sales
 popular: true
+howToUse:
+  vi:
+    - "Gõ @hubspot trong câu nhắn là agent mở thẳng dữ liệu khách hàng."
+    - "Thêm lead, dời deal qua từng giai đoạn, xem pipeline bán hàng."
+    - "Theo dõi được từng cơ hội bán hàng từ lúc tiếp xúc tới khi chốt."
+  en:
+    - "Type @hubspot in your message and the agent opens your customer data directly."
+    - "Add leads, move deals through each stage, and view your sales pipeline."
+    - "Track every sales opportunity from first touch to close."
 tutorials:
   - title:
       vi: "Thêm lead mới"

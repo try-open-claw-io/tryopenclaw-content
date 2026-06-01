@@ -8,6 +8,15 @@ description:
   en: "Enterprise support ticketing. Reply macros, SLAs, and reporting — the standard enterprise helpdesk."
 category: support
 popular: true
+howToUse:
+  vi:
+    - "Gõ @zendesk trong câu nhắn là agent mở thẳng hộp ticket hỗ trợ."
+    - "Liệt kê ticket cần ưu tiên, trả lời bằng câu mẫu có sẵn, tóm tắt ticket để bàn giao ca."
+    - "Hợp bộ phận hỗ trợ của công ty lớn."
+  en:
+    - "Type @zendesk in your message and the agent opens your support ticket inbox directly."
+    - "List priority tickets, reply with saved templates, and summarize tickets for shift handover."
+    - "Great for support teams at large companies."
 tutorials:
   - title:
       vi: "List ticket ưu tiên"

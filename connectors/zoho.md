@@ -8,6 +8,15 @@ description:
   en: "The Zoho suite: CRM, Mail, Books, and Desk — the Microsoft or Google alternative for budget-conscious SMEs."
 category: crm-sales
 popular: true
+howToUse:
+  vi:
+    - "Gõ @zoho trong câu nhắn là agent vào thẳng phần đang cần — khách hàng, mail, sổ sách hay hỗ trợ."
+    - "Thêm lead, tạo deal, quản lý công việc."
+    - "Gói nhiều công cụ cho công ty nhỏ và vừa, tiết kiệm chi phí."
+  en:
+    - "Type @zoho in your message and the agent jumps to the part you need — customers, mail, books, or support."
+    - "Add leads, create deals, and manage tasks."
+    - "Bundles many tools for small and mid-sized companies at a low cost."
 tutorials:
   - title:
       vi: "Thêm lead"
