@@ -4,8 +4,8 @@ name:
   vi: "Microsoft Teams"
   en: "Microsoft Teams"
 description:
-  vi: "Chat đội nhóm của Microsoft. Tin nhắn, gọi video, chia sẻ file — thay Slack cho công ty đang dùng Microsoft 365."
-  en: "Microsoft's team chat. Messages, video calls, and file sharing — the Slack alternative for companies on Microsoft 365."
+  vi: "Ứng dụng chat đội nhóm của Microsoft. Nhắn tin, gọi video và chia sẻ file, tích hợp với Microsoft 365."
+  en: "Microsoft's team chat. Message, video-call, and share files, integrated with Microsoft 365."
 category: communication
 popular: true
 howToUse:

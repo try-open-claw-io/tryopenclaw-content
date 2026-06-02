@@ -4,8 +4,8 @@ name:
   vi: "OneDrive"
   en: "OneDrive"
 description:
-  vi: "Lưu trữ cloud của Microsoft. Cất file công việc, chia sẻ link nội bộ — thay Google Drive cho công ty đang dùng Microsoft 365."
-  en: "Microsoft's cloud storage. Save work files and share internal links — the Google Drive alternative for companies on Microsoft 365."
+  vi: "Dịch vụ lưu trữ đám mây của Microsoft. Cất file, đồng bộ thiết bị và chia sẻ bằng link, tích hợp Microsoft 365."
+  en: "Microsoft's cloud storage. Store files, sync devices, and share with a link, integrated with Microsoft 365."
 category: storage
 popular: true
 howToUse:

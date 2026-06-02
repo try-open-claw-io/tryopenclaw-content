@@ -4,8 +4,8 @@ name:
   vi: "GitHub"
   en: "GitHub"
 description:
-  vi: "Quản lý code và bug tracker cho team kỹ thuật. Push code, review pull request, theo dõi issue và CI build."
-  en: "Code management and bug tracking for engineering teams. Push code, review pull requests, and track issues and CI builds."
+  vi: "Nền tảng lưu trữ và quản lý mã nguồn. Lưu code, review pull request và theo dõi issue cho cả nhóm."
+  en: "A code hosting platform. Store code, review pull requests, and track issues for your team."
 category: engineering
 popular: true
 howToUse:

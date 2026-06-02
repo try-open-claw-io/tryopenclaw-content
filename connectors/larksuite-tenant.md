@@ -4,8 +4,8 @@ name:
   vi: "Lark Suite (Tenant)"
   en: "Lark Suite (Tenant)"
 description:
-  vi: "Quản trị tenant Lark. Thêm hoặc xoá user, gán role admin theo phòng ban — dành cho IT admin."
-  en: "Lark tenant administration. Add or remove users and assign admin roles by department — built for IT admins."
+  vi: "Công cụ quản trị tenant Lark. Thêm hoặc xoá user và gán role admin theo phòng ban."
+  en: "Lark tenant administration. Add or remove users and assign admin roles by department."
 category: productivity
 popular: false
 howToUse:

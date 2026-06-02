@@ -4,8 +4,8 @@ name:
   vi: "Trello"
   en: "Trello"
 description:
-  vi: "Bảng quản lý việc kéo-thả đơn giản. Mỗi cột là một trạng thái (Cần làm — Đang làm — Xong), kéo card qua từng cột. Phù hợp team nhỏ."
-  en: "A simple drag-and-drop work board. Each column is a status (To do — Doing — Done); move cards across columns. Great for small teams."
+  vi: "Bảng quản lý công việc kiểu kéo-thả. Sắp xếp việc thành các cột và di chuyển thẻ giữa chúng."
+  en: "A drag-and-drop task board. Organize work into columns and move cards between them."
 category: productivity
 popular: true
 howToUse:

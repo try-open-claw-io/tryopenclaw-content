@@ -4,8 +4,8 @@ name:
   vi: "Salesforce"
   en: "Salesforce"
 description:
-  vi: "CRM cho doanh nghiệp lớn. Pipeline, báo cáo phức tạp, automation đa team — chuẩn enterprise."
-  en: "Enterprise CRM. Complex pipelines, advanced reporting, and multi-team automation — built for enterprises."
+  vi: "Nền tảng CRM cho doanh nghiệp. Quản lý pipeline, báo cáo nâng cao và tự động hoá nhiều phòng ban."
+  en: "An enterprise CRM platform. Manage pipelines, advanced reporting, and multi-team automation."
 category: crm-sales
 popular: true
 howToUse:

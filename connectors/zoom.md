@@ -4,8 +4,8 @@ name:
   vi: "Zoom"
   en: "Zoom"
 description:
-  vi: "Họp video online. Tạo phòng họp, gửi link cho khách, ghi âm và chia sẻ replay."
-  en: "Online video meetings. Create rooms, send links to customers, record sessions, and share replays."
+  vi: "Ứng dụng họp video online. Tạo phòng họp, gửi link tham gia, ghi hình và chia sẻ lại."
+  en: "An online video meeting app. Create rooms, share join links, record sessions, and share replays."
 category: scheduling
 popular: true
 howToUse:

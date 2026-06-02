@@ -4,8 +4,8 @@ name:
   vi: "Linear"
   en: "Linear"
 description:
-  vi: "Quản lý task và bug gọn nhẹ cho team kỹ thuật. Sprint, project, cycle — thao tác cực nhanh bằng phím tắt."
-  en: "Lightweight task and bug tracking for engineering teams. Sprints, projects, and cycles — work fast with keyboard shortcuts."
+  vi: "Công cụ quản lý task và bug gọn nhẹ. Theo dõi qua sprint và project, thao tác nhanh bằng phím tắt."
+  en: "A lightweight task and bug tracker. Work across sprints and projects, fast with keyboard shortcuts."
 category: engineering
 popular: true
 howToUse:

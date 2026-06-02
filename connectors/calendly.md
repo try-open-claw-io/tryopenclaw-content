@@ -4,8 +4,8 @@ name:
   vi: "Calendly"
   en: "Calendly"
 description:
-  vi: "Đặt lịch online tự động. Bạn share 1 link, khách tự chọn giờ trống — Calendly tự tạo meeting và gửi mail xác nhận giúp."
-  en: "Online scheduling on autopilot. Share one link; customers pick an open slot and Calendly creates the meeting and confirmation email for you."
+  vi: "Công cụ đặt lịch hẹn online. Chia sẻ một link để người khác tự chọn giờ trống, lịch hẹn tạo tự động."
+  en: "An online scheduling tool. Share a link so others pick an open slot, and bookings are created automatically."
 category: scheduling
 popular: true
 howToUse:

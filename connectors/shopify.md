@@ -4,8 +4,8 @@ name:
   vi: "Shopify"
   en: "Shopify"
 description:
-  vi: "Bán hàng online quốc tế. Catalog, đơn hàng, vận chuyển — nền tảng ecom phổ biến nhất global."
-  en: "International e-commerce platform. Manage catalogs, orders, and shipping — the most popular ecom platform globally."
+  vi: "Nền tảng bán hàng online. Tạo cửa hàng, quản lý sản phẩm, đơn hàng và vận chuyển trong một nơi."
+  en: "An online store platform. Build a shop and manage products, orders, and shipping in one place."
 category: commerce
 popular: true
 howToUse:

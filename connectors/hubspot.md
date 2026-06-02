@@ -4,8 +4,8 @@ name:
   vi: "HubSpot"
   en: "HubSpot"
 description:
-  vi: "CRM quản lý khách hàng. Lưu lead, deal, contact, pipeline — theo dõi từng cơ hội bán hàng từ lúc tiếp xúc tới chốt."
-  en: "Customer CRM. Track leads, deals, contacts, and pipelines — follow each sales opportunity from first touch to close."
+  vi: "Nền tảng CRM cho marketing, bán hàng và chăm sóc khách. Quản lý lead, deal, contact và pipeline trong một nơi."
+  en: "A CRM platform for marketing, sales, and support. Manage leads, deals, contacts, and pipelines in one place."
 category: crm-sales
 popular: true
 howToUse:

@@ -4,8 +4,8 @@ name:
   vi: "SendGrid"
   en: "SendGrid"
 description:
-  vi: "Gửi mail tự động cho từng giao dịch. Xác nhận đơn, mã OTP, đặt lại mật khẩu — mail vào thẳng inbox không bị rớt vào spam."
-  en: "Send automated emails for each transaction. Order confirmations, OTPs, and password resets — delivered to the inbox, not spam."
+  vi: "Nền tảng gửi email tự động cho từng giao dịch. Mail xác nhận đơn, mã OTP và đặt lại mật khẩu."
+  en: "A platform for automated transactional email. Order confirmations, OTPs, and password resets."
 category: communication
 popular: true
 howToUse:

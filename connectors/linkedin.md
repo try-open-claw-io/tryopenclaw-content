@@ -4,8 +4,8 @@ name:
   vi: "LinkedIn"
   en: "LinkedIn"
 description:
-  vi: "Mạng nghề nghiệp. Tìm ứng viên, kết nối B2B, đăng bài thương hiệu cá nhân và công ty."
-  en: "Professional network. Source candidates, run B2B outreach, and post personal-brand and company content."
+  vi: "Mạng xã hội nghề nghiệp. Tìm và kết nối người, tuyển dụng và đăng bài cho cá nhân hoặc công ty."
+  en: "A professional social network. Find and connect with people, recruit, and post as a person or company."
 category: communication
 popular: true
 howToUse:

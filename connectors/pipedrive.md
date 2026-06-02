@@ -4,8 +4,8 @@ name:
   vi: "Pipedrive"
   en: "Pipedrive"
 description:
-  vi: "CRM bán hàng đơn giản. Pipeline deal trực quan cho SME — không cần setup phức tạp."
-  en: "Simple sales CRM. Visual deal pipelines for SMEs — no complex setup needed."
+  vi: "Phần mềm CRM bán hàng đơn giản. Quản lý deal trên pipeline trực quan, không cần cài đặt phức tạp."
+  en: "A simple sales CRM. Manage deals on a visual pipeline, with no complex setup."
 category: crm-sales
 popular: true
 howToUse:

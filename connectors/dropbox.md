@@ -4,8 +4,8 @@ name:
   vi: "Dropbox"
   en: "Dropbox"
 description:
-  vi: "Lưu trữ cloud kèm chia sẻ link nhanh. Phù hợp gửi tài liệu nặng cho khách hoặc đối tác."
-  en: "Cloud storage with fast share links. Great for sending heavy files to customers or partners."
+  vi: "Dịch vụ lưu trữ đám mây. Cất file, đồng bộ giữa các thiết bị và chia sẻ bằng link."
+  en: "A cloud storage service. Store files, sync across devices, and share with a link."
 category: storage
 popular: true
 howToUse:

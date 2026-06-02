@@ -4,8 +4,8 @@ name:
   vi: "Slack"
   en: "Slack"
 description:
-  vi: "Chat đội nhóm thời gian thực. Báo tin nội bộ, alert khi có khách cần xử lý, thảo luận theo kênh từng dự án."
-  en: "Real-time team chat. Share internal updates, alert teammates when a customer needs attention, and split discussion across per-project channels."
+  vi: "Ứng dụng chat cho đội nhóm. Trao đổi theo kênh, nhắn tin trực tiếp và chia sẻ file trong một nơi."
+  en: "A team chat app. Talk in channels, send direct messages, and share files in one place."
 category: communication
 popular: true
 howToUse:

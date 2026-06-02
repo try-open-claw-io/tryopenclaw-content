@@ -4,8 +4,8 @@ name:
   vi: "Zendesk"
   en: "Zendesk"
 description:
-  vi: "Hộp ticket support enterprise. Macro câu trả lời, SLA, báo cáo — chuẩn helpdesk cho doanh nghiệp lớn."
-  en: "Enterprise support ticketing. Reply macros, SLAs, and reporting — the standard enterprise helpdesk."
+  vi: "Phần mềm hỗ trợ khách hàng. Quản lý ticket từ nhiều kênh, trả lời và theo dõi trong một nơi."
+  en: "Customer support software. Manage tickets from many channels, reply, and track in one place."
 category: support
 popular: true
 howToUse:

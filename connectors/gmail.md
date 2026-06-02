@@ -4,8 +4,8 @@ name:
   vi: "Gmail"
   en: "Gmail"
 description:
-  vi: "Hộp thư điện tử Google. Đọc, gửi và lọc mail khách — theo dõi từng thread tư vấn ngay trong inbox mà không cần chuyển tab."
-  en: "Google's email inbox. Read, send, and filter customer mail — follow every consultation thread without leaving your inbox."
+  vi: "Dịch vụ email của Google. Đọc, soạn, gửi và sắp xếp thư trong hộp thư, kèm tìm kiếm và lọc mạnh mẽ."
+  en: "Google's email service. Read, compose, send, and organize messages in your inbox, with powerful search and filtering."
 category: communication
 popular: true
 howToUse:

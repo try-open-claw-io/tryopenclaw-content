@@ -4,8 +4,8 @@ name:
   vi: "Google Sheets"
   en: "Google Sheets"
 description:
-  vi: "Bảng tính online của Google. Lưu danh sách khách, theo dõi đơn hàng và làm báo cáo nhanh — share 1 link, cả team cùng xem và sửa."
-  en: "Google's online spreadsheet. Keep customer lists, track orders, and build quick reports — share one link and the whole team can view and edit together."
+  vi: "Bảng tính online của Google. Nhập và tính toán dữ liệu, lập báo cáo, cộng tác và chia sẻ bằng link."
+  en: "Google's online spreadsheet. Enter and calculate data, build reports, and collaborate via a shared link."
 category: documents
 popular: true
 howToUse:

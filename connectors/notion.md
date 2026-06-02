@@ -4,8 +4,8 @@ name:
   vi: "Notion"
   en: "Notion"
 description:
-  vi: "Sổ tay và wiki online. Lưu quy trình, FAQ, playbook để cả team tra cứu nhanh — soạn doc cộng tác realtime."
-  en: "Online notebook and wiki. Capture processes, FAQs, and playbooks for fast team lookup — write docs with real-time collaboration."
+  vi: "Không gian làm việc all-in-one cho ghi chú, tài liệu và wiki. Soạn thảo cộng tác thời gian thực, tổ chức kiến thức cho cả team."
+  en: "An all-in-one workspace for notes, docs, and wikis. Write together in real time and organize your team's knowledge."
 category: documents
 popular: true
 howToUse:

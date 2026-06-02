@@ -4,8 +4,8 @@ name:
   vi: "Outlook Calendar"
   en: "Outlook Calendar"
 description:
-  vi: "Lịch của Microsoft. Đặt cuộc họp, hẹn khách, xem khung giờ trống — thay Google Calendar cho công ty đang dùng Microsoft 365."
-  en: "Microsoft's calendar. Schedule meetings, book customers, and check free slots — the Google Calendar alternative for companies on Microsoft 365."
+  vi: "Lịch của Microsoft. Đặt cuộc họp, xem lịch và khung giờ trống, tích hợp với Outlook và Microsoft 365."
+  en: "Microsoft's calendar. Schedule meetings and check your agenda and free slots, integrated with Outlook and Microsoft 365."
 category: scheduling
 popular: true
 howToUse:

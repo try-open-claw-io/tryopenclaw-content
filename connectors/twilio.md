@@ -4,8 +4,8 @@ name:
   vi: "Twilio"
   en: "Twilio"
 description:
-  vi: "Gửi tin nhắn SMS và gọi điện tự động. Phù hợp xác nhận đặt lịch, gửi mã OTP đăng nhập, cảnh báo sự cố cho team."
-  en: "Send SMS and place automated voice calls. Great for booking confirmations, login OTPs, and incident alerts for your team."
+  vi: "Nền tảng gửi SMS và gọi điện tự động. Tích hợp tin nhắn và cuộc gọi vào ứng dụng của bạn."
+  en: "A platform for SMS and automated voice calls. Add messaging and calling to your own app."
 category: communication
 popular: true
 howToUse:

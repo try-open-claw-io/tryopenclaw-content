@@ -4,8 +4,8 @@ name:
   vi: "Monday.com"
   en: "Monday.com"
 description:
-  vi: "Bảng quản lý công việc đa dạng kiểu nhìn. Bảng kéo-thả, dòng thời gian, lịch — chọn cách xem phù hợp với từng dự án."
-  en: "Flexible work management with multiple views. Drag-and-drop boards, timelines, and calendars — pick what fits each project."
+  vi: "Nền tảng quản lý công việc nhiều kiểu xem. Bảng kéo-thả, dòng thời gian và lịch cho từng dự án."
+  en: "A work management platform with multiple views. Boards, timelines, and calendars for each project."
 category: productivity
 popular: true
 howToUse:

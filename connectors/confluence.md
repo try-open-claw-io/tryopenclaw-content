@@ -4,8 +4,8 @@ name:
   vi: "Confluence"
   en: "Confluence"
 description:
-  vi: "Wiki tài liệu nội bộ Atlassian. Spec, runbook, knowledge base — gắn chéo với Jira ticket."
-  en: "Atlassian's internal wiki. Specs, runbooks, and knowledge bases — cross-linked with Jira tickets."
+  vi: "Wiki tài liệu nội bộ của Atlassian. Soạn và lưu trữ spec, quy trình, tài liệu cho cả team tra cứu."
+  en: "Atlassian's team wiki. Write and store specs, processes, and docs for the whole team."
 category: documents
 popular: true
 howToUse:

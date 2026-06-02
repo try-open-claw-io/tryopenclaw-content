@@ -4,8 +4,8 @@ name:
   vi: "Google Drive"
   en: "Google Drive"
 description:
-  vi: "Lưu trữ cloud của Google. Cất file hợp đồng, ảnh sản phẩm, tài liệu nội bộ — share 1 link cho khách hoặc team xem chung."
-  en: "Google's cloud storage. Store contracts, product photos, and internal documents — share one link with customers or your team."
+  vi: "Dịch vụ lưu trữ đám mây của Google. Cất file, đồng bộ giữa các thiết bị và chia sẻ bằng link."
+  en: "Google's cloud storage. Store files, sync across devices, and share with a link."
 category: storage
 popular: true
 howToUse:

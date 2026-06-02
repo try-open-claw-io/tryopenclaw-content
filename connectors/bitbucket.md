@@ -4,8 +4,8 @@ name:
   vi: "Bitbucket"
   en: "Bitbucket"
 description:
-  vi: "Quản lý code Git của Atlassian. Repo, pull request, pipeline CI — phù hợp team enterprise dùng stack Atlassian."
-  en: "Atlassian's Git management. Repositories, pull requests, and CI pipelines — built for enterprise teams using the Atlassian stack."
+  vi: "Nền tảng quản lý mã nguồn Git của Atlassian. Lưu repo, review pull request và chạy pipeline CI/CD."
+  en: "Atlassian's Git code platform. Host repositories, review pull requests, and run CI/CD pipelines."
 category: engineering
 popular: true
 howToUse:

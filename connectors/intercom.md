@@ -4,8 +4,8 @@ name:
   vi: "Intercom"
   en: "Intercom"
 description:
-  vi: "Hộp chat hỗ trợ khách trên web hoặc app. Trả lời khách realtime, gắn macro câu trả lời sẵn để tăng tốc."
-  en: "Customer support chat on your web or app. Reply to customers in real-time and use saved macros to respond faster."
+  vi: "Nền tảng chat hỗ trợ khách trên web và app. Trả lời khách thời gian thực, dùng câu trả lời mẫu để nhanh hơn."
+  en: "A customer support chat for web and apps. Reply in real time and use saved replies to move faster."
 category: support
 popular: true
 howToUse:

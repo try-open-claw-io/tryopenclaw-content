@@ -4,8 +4,8 @@ name:
   vi: "Typeform"
   en: "Typeform"
 description:
-  vi: "Tạo form khảo sát đẹp mắt, hỏi từng câu một như đang trò chuyện. Hợp để thu lead, đo hài lòng (NPS) hay đăng ký sự kiện."
-  en: "Build beautiful conversational forms that ask one question at a time. Great for capturing leads, running NPS surveys, or collecting event signups."
+  vi: "Công cụ tạo form và khảo sát kiểu trò chuyện, hỏi từng câu một. Thu thập câu trả lời và xem kết quả."
+  en: "A tool for conversational forms and surveys that ask one question at a time. Collect answers and view results."
 category: productivity
 popular: true
 howToUse:

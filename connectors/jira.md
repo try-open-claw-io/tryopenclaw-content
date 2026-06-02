@@ -4,8 +4,8 @@ name:
   vi: "Jira"
   en: "Jira"
 description:
-  vi: "Quản lý ticket cho enterprise. Sprint, epic, workflow phức tạp — phù hợp công ty lớn nhiều dự án song song."
-  en: "Enterprise issue tracking. Sprints, epics, and complex workflows — built for large organizations running many projects in parallel."
+  vi: "Công cụ quản lý issue và dự án. Theo dõi task qua sprint, epic và quy trình tuỳ biến."
+  en: "An issue and project tracking tool. Manage tasks across sprints, epics, and custom workflows."
 category: engineering
 popular: true
 howToUse:

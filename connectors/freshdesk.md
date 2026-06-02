@@ -4,8 +4,8 @@ name:
   vi: "Freshdesk"
   en: "Freshdesk"
 description:
-  vi: "Hộp ticket support khách. Phù hợp helpdesk SME — gộp mail, chat, điện thoại về một inbox."
-  en: "Customer support ticketing. Built for SME helpdesks — consolidate email, chat, and phone into one inbox."
+  vi: "Phần mềm hỗ trợ khách hàng. Gộp mail, chat và điện thoại về một nơi để quản lý ticket."
+  en: "Customer support software. Bring email, chat, and phone into one place to manage tickets."
 category: support
 popular: true
 howToUse:

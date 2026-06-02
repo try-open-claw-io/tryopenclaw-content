@@ -4,8 +4,8 @@ name:
   vi: "Lark Suite"
   en: "Lark Suite"
 description:
-  vi: "Bộ công cụ làm việc all-in-one. Chat, tài liệu, lịch, form khảo sát — gộp nhiều công cụ thành một nền tảng cho cả team."
-  en: "An all-in-one workspace. Chat, docs, calendar, and forms — many tools unified into one platform for the whole team."
+  vi: "Bộ công cụ làm việc all-in-one. Gộp chat, tài liệu, lịch và form khảo sát trong một nền tảng."
+  en: "An all-in-one workspace. Chat, docs, calendar, and forms unified into one platform."
 category: productivity
 popular: true
 howToUse:

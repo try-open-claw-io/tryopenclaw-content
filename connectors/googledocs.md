@@ -4,8 +4,8 @@ name:
   vi: "Google Docs"
   en: "Google Docs"
 description:
-  vi: "Tài liệu Google. Soạn doc cộng tác realtime, comment trực tiếp trong nội dung, share link cho team."
-  en: "Google Docs. Real-time collaborative writing with inline comments and easy team sharing."
+  vi: "Trình soạn thảo tài liệu của Google. Viết, comment và cộng tác thời gian thực, chia sẻ bằng link."
+  en: "Google's document editor. Write, comment, and collaborate in real time, then share with a link."
 category: documents
 popular: true
 howToUse:

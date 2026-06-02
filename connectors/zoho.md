@@ -4,8 +4,8 @@ name:
   vi: "Zoho"
   en: "Zoho"
 description:
-  vi: "Bộ Zoho: CRM, Mail, Books, Desk — thay Microsoft hoặc Google cho SME muốn one-stop ngân sách thấp."
-  en: "The Zoho suite: CRM, Mail, Books, and Desk — the Microsoft or Google alternative for budget-conscious SMEs."
+  vi: "Bộ công cụ doanh nghiệp của Zoho. Gồm CRM, email, kế toán và hỗ trợ khách trong một hệ sinh thái."
+  en: "Zoho's business suite. CRM, email, accounting, and customer support in one ecosystem."
 category: crm-sales
 popular: true
 howToUse:

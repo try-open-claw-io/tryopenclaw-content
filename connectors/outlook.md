@@ -4,8 +4,8 @@ name:
   vi: "Outlook"
   en: "Outlook"
 description:
-  vi: "Hộp thư Microsoft. Đọc, gửi và lọc mail công việc — thay Gmail cho công ty MS hoặc EDU."
-  en: "Microsoft's email inbox. Read, send, and filter work mail — the Gmail alternative for Microsoft-stack and EDU organizations."
+  vi: "Dịch vụ email của Microsoft. Đọc, soạn, gửi và sắp xếp thư, kèm lịch và danh bạ tích hợp."
+  en: "Microsoft's email service. Read, compose, send, and organize mail, with built-in calendar and contacts."
 category: communication
 popular: true
 howToUse:

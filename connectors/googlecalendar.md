@@ -4,8 +4,8 @@ name:
   vi: "Google Calendar"
   en: "Google Calendar"
 description:
-  vi: "Lịch online của Google. Đặt cuộc họp, hẹn khách và xem slot trống — đồng bộ thẳng với Gmail và Google Meet."
-  en: "Google's online calendar. Schedule meetings, book customers, and check free slots — syncs straight into Gmail and Google Meet."
+  vi: "Lịch online của Google. Đặt cuộc họp, xem lịch và khung giờ trống — đồng bộ với Gmail và Google Meet."
+  en: "Google's online calendar. Schedule meetings and check your agenda and free slots — synced with Gmail and Google Meet."
 category: scheduling
 popular: true
 howToUse:

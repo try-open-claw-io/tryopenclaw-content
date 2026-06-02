@@ -4,8 +4,8 @@ name:
   vi: "Box"
   en: "Box"
 description:
-  vi: "Lưu trữ cloud cho enterprise. File hợp đồng, tài liệu compliance — quản lý quyền chi tiết theo từng phòng ban."
-  en: "Enterprise cloud storage. Contracts and compliance documents — fine-grained permissions per department."
+  vi: "Dịch vụ lưu trữ đám mây cho doanh nghiệp. Cất file, chia sẻ và phân quyền truy cập chi tiết."
+  en: "Cloud storage for businesses. Store files, share them, and control access with detailed permissions."
 category: storage
 popular: true
 howToUse:

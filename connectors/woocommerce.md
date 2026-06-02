@@ -4,8 +4,8 @@ name:
   vi: "WooCommerce"
   en: "WooCommerce"
 description:
-  vi: "Plugin bán hàng cho website WordPress. Quản lý sản phẩm, đơn hàng, vận chuyển — phù hợp shop chạy trên website WordPress của mình."
-  en: "An e-commerce plugin for WordPress. Manage products, orders, and shipping — great for shops running on their own WordPress website."
+  vi: "Plugin bán hàng cho website WordPress. Quản lý sản phẩm, đơn hàng và vận chuyển ngay trên web của bạn."
+  en: "An e-commerce plugin for WordPress. Manage products, orders, and shipping right on your own site."
 category: commerce
 popular: true
 howToUse:

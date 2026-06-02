@@ -4,8 +4,8 @@ name:
   vi: "ClickUp"
   en: "ClickUp"
 description:
-  vi: "Quản lý dự án all-in-one. Task, doc, time tracking, goal — gộp nhiều công cụ thành một workspace."
-  en: "All-in-one project management. Tasks, docs, time tracking, and goals — many tools bundled into one workspace."
+  vi: "Nền tảng quản lý dự án all-in-one. Gộp task, tài liệu, mục tiêu và theo dõi thời gian trong một nơi."
+  en: "An all-in-one project management platform. Tasks, docs, goals, and time tracking in one place."
 category: productivity
 popular: true
 howToUse:

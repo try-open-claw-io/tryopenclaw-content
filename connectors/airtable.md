@@ -4,8 +4,8 @@ name:
   vi: "Airtable"
   en: "Airtable"
 description:
-  vi: "Cơ sở dữ liệu dạng bảng đẹp mắt. Quản lý catalog sản phẩm, content calendar, pipeline — link bảng với bảng linh hoạt."
-  en: "A beautiful spreadsheet-database hybrid. Manage product catalogs, content calendars, and pipelines — flexibly link tables together."
+  vi: "Cơ sở dữ liệu kết hợp bảng tính. Tổ chức dữ liệu trong các bảng linh hoạt, liên kết với nhau — từ danh mục sản phẩm tới lịch nội dung."
+  en: "A database that works like a spreadsheet. Organize data in flexible, linked tables — from product catalogs to content calendars."
 category: documents
 popular: true
 howToUse:

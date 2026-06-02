@@ -4,8 +4,8 @@ name:
   vi: "Discord"
   en: "Discord"
 description:
-  vi: "Chat cộng đồng theo kênh. Phù hợp game, edu, creator — voice chat ổn định và dễ tích hợp bot."
-  en: "Community chat organized by channels. Great for gaming, education, and creators — reliable voice and easy bot integration."
+  vi: "Ứng dụng chat cộng đồng theo kênh. Nhắn tin, gọi thoại và lập máy chủ riêng cho nhóm của bạn."
+  en: "A community chat app organized by channels. Message, voice-call, and run your own server for a group."
 category: communication
 popular: true
 howToUse:

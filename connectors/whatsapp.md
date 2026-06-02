@@ -4,8 +4,8 @@ name:
   vi: "WhatsApp"
   en: "WhatsApp"
 description:
-  vi: "Tin nhắn WhatsApp cá nhân hoặc nhóm. Phù hợp chăm sóc khách quốc tế và team xa."
-  en: "WhatsApp messaging — direct or group. Great for international customer care and remote teams."
+  vi: "Ứng dụng nhắn tin WhatsApp. Gửi tin nhắn và gọi điện cho cá nhân hoặc nhóm."
+  en: "The WhatsApp messaging app. Send messages and make calls, one-to-one or in groups."
 category: communication
 popular: true
 howToUse:

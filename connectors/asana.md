@@ -4,8 +4,8 @@ name:
   vi: "Asana"
   en: "Asana"
 description:
-  vi: "Quản lý dự án và task chia theo team, deadline rõ ràng. Phù hợp công ty vừa và agency."
-  en: "Project and task management with team views and clear deadlines. Built for mid-sized companies and agencies."
+  vi: "Công cụ quản lý dự án và công việc. Giao task, đặt deadline và theo dõi tiến độ theo team."
+  en: "A project and task management tool. Assign tasks, set deadlines, and track progress by team."
 category: productivity
 popular: true
 howToUse:

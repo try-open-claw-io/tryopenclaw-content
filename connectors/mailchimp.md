@@ -4,8 +4,8 @@ name:
   vi: "Mailchimp"
   en: "Mailchimp"
 description:
-  vi: "Gửi email marketing hàng loạt. Tạo danh sách khách, soạn bản tin, lên lịch chuỗi mail tự động để chăm khách mỗi tuần."
-  en: "Bulk email marketing. Build customer lists, design newsletters, and schedule drip campaigns to nurture leads on autopilot."
+  vi: "Nền tảng email marketing. Tạo danh sách, thiết kế bản tin và gửi chiến dịch tự động."
+  en: "An email marketing platform. Build lists, design newsletters, and send automated campaigns."
 category: communication
 popular: true
 howToUse:

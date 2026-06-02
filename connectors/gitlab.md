@@ -4,8 +4,8 @@ name:
   vi: "GitLab"
   en: "GitLab"
 description:
-  vi: "Quản lý code Git kèm tự động build và deploy. Có thể cài lên server riêng thay vì dùng dịch vụ cloud — phù hợp team kỹ thuật cần kiểm soát hạ tầng."
-  en: "Git code hosting with automated build and deploy. Can run on your own server instead of a cloud service — fits engineering teams that need infrastructure control."
+  vi: "Nền tảng quản lý mã nguồn Git kèm CI/CD. Có thể cài trên server riêng để tự kiểm soát hạ tầng."
+  en: "A Git code platform with built-in CI/CD. Can run on your own server for full infrastructure control."
 category: engineering
 popular: true
 howToUse:

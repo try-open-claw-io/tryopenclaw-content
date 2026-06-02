@@ -4,8 +4,8 @@ name:
   vi: "Stripe"
   en: "Stripe"
 description:
-  vi: "Cổng thanh toán quốc tế. Tạo link pay one-time, subscription, hoàn tiền — checkout flow chuẩn global."
-  en: "International payment gateway. Create one-time payment links, subscriptions, and refunds — global standard checkout flow."
+  vi: "Nền tảng thanh toán trực tuyến. Nhận thanh toán một lần hoặc theo gói, tạo link thu tiền và xử lý hoàn tiền."
+  en: "An online payment platform. Accept one-time or subscription payments, create payment links, and process refunds."
 category: commerce
 popular: true
 howToUse:

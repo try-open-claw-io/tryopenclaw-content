@@ -4,8 +4,8 @@ name:
   vi: "Twitter / X"
   en: "Twitter / X"
 description:
-  vi: "Mạng xã hội X (Twitter). Đăng bài, xem analytics, gửi DM cho followers."
-  en: "X (Twitter) social network. Post updates, view analytics, and DM followers."
+  vi: "Mạng xã hội X (Twitter). Đăng bài, theo dõi tương tác và nhắn tin riêng cho người theo dõi."
+  en: "The X (Twitter) social network. Post updates, track engagement, and DM your followers."
 category: communication
 popular: true
 howToUse:
