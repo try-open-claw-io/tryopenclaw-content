@@ -10,32 +10,20 @@ category: support
 popular: true
 howToUse:
   vi:
-    - "Gõ @freshdesk trong câu nhắn là agent mở thẳng hộp ticket hỗ trợ."
-    - "Liệt kê ticket trong ngày, trả lời theo mẫu, giao ticket cho nhóm phụ trách."
-    - "Gộp mail, chat, điện thoại về cùng một chỗ."
+    - "Gõ @freshdesk trong khung chat để agent xử lý ticket cùng bạn."
+    - "Nói rõ bạn cần gì: xem ticket trong ngày, trả lời khách, hay tóm tắt hội thoại. Kèm mã ticket hoặc khoảng thời gian cho trúng."
+    - "Có link ticket thì gửi kèm để agent mở đúng ticket cần xử lý."
   en:
-    - "Type @freshdesk in your message and the agent opens your support ticket inbox directly."
-    - "List the day's tickets, reply with templates, and assign tickets to the right team."
-    - "Brings mail, chat, and phone into one place."
+    - "Type @freshdesk in the chat box so the agent can handle tickets with you."
+    - "Say what you need: list today's tickets, reply to a customer, or summarize a thread. Include the ticket ID or time range to get it right."
+    - "If you have a ticket link, include it so the agent opens the exact one that needs work."
 tutorials:
   - title:
       vi: "List ticket hôm nay"
       en: "List today's tickets"
     prompt:
-      vi: "Liệt kê ticket khách báo lỗi hôm nay trên Freshdesk."
-      en: "List today's customer-reported tickets on Freshdesk."
-  - title:
-      vi: "Trả lời ticket"
-      en: "Reply to ticket"
-    prompt:
-      vi: "Trả lời ticket Freshdesk mới nhất với template 'Cảm ơn đã liên hệ'."
-      en: "Reply to the latest Freshdesk ticket with the 'Thanks for reaching out' template."
-  - title:
-      vi: "Phân ticket"
-      en: "Assign ticket"
-    prompt:
-      vi: "Phân ticket [mã ticket] cho team Engineering trên Freshdesk."
-      en: "Assign ticket [mã ticket] to the Engineering team on Freshdesk."
+      vi: "@freshdesk liệt kê ticket khách báo lỗi hôm nay."
+      en: "@freshdesk list today's customer-reported tickets."
 ---
 
 <!-- Body for future rich docs -->

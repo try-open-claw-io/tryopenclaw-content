@@ -10,32 +10,20 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @typeform trong câu nhắn là agent tạo form hoặc xem phản hồi cho bạn."
-    - "Tạo form khảo sát hay đăng ký, xem phản hồi mới, xuất kết quả sang Sheets."
-    - "Hợp thu thông tin khách và đo mức hài lòng."
+    - "Gõ @typeform vào khung chat để agent tạo form và thu phản hồi giúp bạn."
+    - "Nói rõ bạn cần gì: tạo form đăng ký mấy câu hỏi, xem phản hồi, hay xuất kết quả. Kèm các câu hỏi cần hỏi cho trúng."
+    - "Có link form thì gửi kèm để agent mở đúng form, không nhầm."
   en:
-    - "Type @typeform in your message and the agent creates a form or checks responses for you."
-    - "Build survey or signup forms, view new responses, and export results to Sheets."
-    - "Great for collecting customer info and measuring satisfaction."
+    - "Type @typeform in the chat box so the agent can build forms and collect responses for you."
+    - "Say what you need: create a signup form with which questions, view responses, or export results. List the questions to ask to get it right."
+    - "If you have a form link, include it so the agent opens the right form."
 tutorials:
   - title:
       vi: "Tạo form đăng ký"
       en: "Create a signup form"
     prompt:
-      vi: "Tạo form Typeform đăng ký nhận tư vấn gồm 5 câu hỏi: tên, SĐT, email, nhu cầu, ngân sách."
-      en: "Create a Typeform signup form with 5 questions: name, phone, email, need, and budget."
-  - title:
-      vi: "Xem phản hồi mới"
-      en: "View new responses"
-    prompt:
-      vi: "Cho mình xem 10 phản hồi mới nhất từ form 'Đăng ký demo'."
-      en: "Show me the 10 most recent responses from the 'Demo Signup' form."
-  - title:
-      vi: "Xuất kết quả ra Sheets"
-      en: "Export results to Sheets"
-    prompt:
-      vi: "Xuất toàn bộ phản hồi form khảo sát tháng này sang Google Sheets giúp mình."
-      en: "Export all responses from this month's survey to Google Sheets."
+      vi: "@typeform tạo form đăng ký nhận tư vấn gồm 5 câu hỏi: tên, SĐT, email, nhu cầu, ngân sách."
+      en: "@typeform create a signup form with 5 questions: name, phone, email, need, and budget."
 ---
 
 <!-- Body for future rich docs -->

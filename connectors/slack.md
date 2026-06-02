@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @slack trong câu nhắn là agent vào thẳng kênh chat của nhóm."
-    - "Gửi thông báo, đọc lại hay tóm tắt một kênh, tìm tin cũ."
-    - "Tiện để báo cả nhóm khi có việc cần để ý — đơn mới, khách cần hỗ trợ gấp."
+    - "Bắt đầu bằng cách gõ @slack trong khung chat để kết nối kênh chat của nhóm."
+    - "Giao việc cho agent: đăng tin lên kênh nào, tìm tin nhắn gì, hay tóm tắt kênh nào. Càng cụ thể agent càng đỡ hỏi lại."
+    - "Kèm link tin nhắn hoặc tên kênh (#sales, #support) nếu có để agent định vị nhanh hơn hẳn."
   en:
-    - "Type @slack in your message and the agent goes straight to your team channels."
-    - "Post announcements, recap or summarize a channel, and search old messages."
-    - "Handy for alerting the whole team when something needs attention — a new order, a customer needing urgent help."
+    - "Start by typing @slack in the chat box to connect your workspace."
+    - "Hand the agent the task: which channel to post to, what messages to find, or which channel to summarize. Being specific saves a round-trip."
+    - "Add a message link or channel name (#sales, #support) when you have one so the agent locates it much faster."
 tutorials:
   - title:
       vi: "Gửi thông báo kênh"
       en: "Post to a channel"
     prompt:
-      vi: "Gửi thông báo vào kênh #sales: có đơn mới 500k."
-      en: "Post to the #sales channel: a new 500k order just came in."
-  - title:
-      vi: "Tìm tin nhắn"
-      en: "Search messages"
-    prompt:
-      vi: "Tìm tin nhắn về dự án ra mắt Q3 trong tuần qua."
-      en: "Find messages from the past week about the Q3 launch."
-  - title:
-      vi: "Tóm tắt kênh"
-      en: "Summarize a channel"
-    prompt:
-      vi: "Tóm tắt kênh #engineering từ hôm qua đến giờ."
-      en: "Summarize the #engineering channel since yesterday."
+      vi: "@slack gửi thông báo vào kênh #sales: có đơn mới 500k."
+      en: "@slack post to the #sales channel: a new 500k order just came in."
 ---
 
 <!-- Body for future rich docs -->

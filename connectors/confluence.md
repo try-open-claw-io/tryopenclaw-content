@@ -10,32 +10,20 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @confluence trong câu nhắn là agent mở thẳng kho tài liệu nội bộ."
-    - "Tìm tài liệu, tạo trang mới, tóm tắt nội dung."
-    - "Đi chung với Jira, hợp lưu quy trình và tài liệu của nhóm."
+    - "Gõ @confluence trong khung chat để agent tra cứu tài liệu nội bộ giúp bạn."
+    - "Nói rõ bạn cần gì: tìm trang theo chủ đề, tạo trang mới, hay cập nhật nội dung. Kèm tên space hoặc tiêu đề trang cho trúng."
+    - "Có link trang thì gửi kèm để agent mở đúng tài liệu, không phải dò."
   en:
-    - "Type @confluence in your message and the agent opens your internal knowledge base directly."
-    - "Find documents, create new pages, and summarize content."
-    - "Works alongside Jira; great for storing team processes and documents."
+    - "Type @confluence in the chat box so the agent can look up internal docs for you."
+    - "Say what you need: find a page by topic, create a new page, or update content. Include the space or page title to get it right."
+    - "If you have a page link, include it so the agent opens the right doc without digging."
 tutorials:
   - title:
       vi: "Tìm trang"
       en: "Search pages"
     prompt:
-      vi: "Tìm trang quy trình onboarding nhân viên trong Confluence."
-      en: "Find the employee onboarding process page in Confluence."
-  - title:
-      vi: "Tạo trang mới"
-      en: "Create a page"
-    prompt:
-      vi: "Tạo trang Confluence mới 'Hướng dẫn xử lý hoàn tiền' trong space 'Sales'."
-      en: "Create a new Confluence page 'Refund handling guide' in the 'Sales' space."
-  - title:
-      vi: "Tóm tắt trang"
-      en: "Summarize a page"
-    prompt:
-      vi: "Tóm tắt nội dung trang 'Quy trình tuyển dụng' trong Confluence."
-      en: "Summarize the 'Hiring process' page in Confluence."
+      vi: "@confluence tìm trang quy trình onboarding nhân viên."
+      en: "@confluence find the employee onboarding process page."
 ---
 
 <!-- Body for future rich docs -->

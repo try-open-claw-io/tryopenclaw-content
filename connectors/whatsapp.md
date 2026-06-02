@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @whatsapp trong câu nhắn là agent nhắn thẳng cho khách hoặc nhóm."
-    - "Gửi tin xác nhận, nhắn nhóm, tóm tắt tin nhắn khách."
-    - "Hợp chăm khách nước ngoài và nhóm làm việc từ xa."
+    - "Gõ @whatsapp trong khung chat để agent nhắn tin cho khách thay bạn."
+    - "Nói rõ bạn cần gì: gửi tin xác nhận, trả lời khách, hay nhắn vào nhóm. Kèm nội dung và người nhận cho trúng."
+    - "Có sẵn số điện thoại hay tên nhóm thì đưa kèm để agent gửi đúng người."
   en:
-    - "Type @whatsapp in your message and the agent messages a customer or group directly."
-    - "Send confirmations, message groups, and summarize customer chats."
-    - "Great for international customer care and remote teams."
+    - "Type @whatsapp in the chat box so the agent can message customers for you."
+    - "Say what you need: send a confirmation, reply to a customer, or message a group. Include the content and recipient to get it right."
+    - "If you have a phone number or group name, include it so the agent reaches the right person."
 tutorials:
   - title:
       vi: "Gửi tin xác nhận"
       en: "Send confirmation"
     prompt:
-      vi: "Gửi tin xác nhận đơn cho khách qua WhatsApp."
-      en: "Send an order confirmation message to the customer on WhatsApp."
-  - title:
-      vi: "Gửi tin nhóm"
-      en: "Send to a group"
-    prompt:
-      vi: "Gửi tin nhóm 'Sales' cập nhật doanh số tuần qua WhatsApp."
-      en: "Send the weekly sales update to the 'Sales' WhatsApp group."
-  - title:
-      vi: "Tóm tắt chat khách"
-      en: "Summarize customer chat"
-    prompt:
-      vi: "Tóm tắt chat khách hôm nay trên WhatsApp."
-      en: "Summarize today's customer chats on WhatsApp."
+      vi: "@whatsapp gửi tin xác nhận đơn cho khách."
+      en: "@whatsapp send an order confirmation message to the customer."
 ---
 
 <!-- Body for future rich docs -->

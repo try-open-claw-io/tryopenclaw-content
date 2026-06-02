@@ -10,32 +10,20 @@ category: engineering
 popular: true
 howToUse:
   vi:
-    - "Gõ @jira trong câu nhắn là agent vào thẳng bảng ticket của dự án."
-    - "Mở ticket báo lỗi, xem sprint đang chạy, đổi trạng thái ticket."
-    - "Hợp công ty lớn, nhiều dự án chạy song song."
+    - "Gõ @jira trong khung chat để agent làm việc trực tiếp trên dự án của bạn."
+    - "Cho biết bạn cần gì: mở ticket, gán sprint, hay cập nhật trạng thái issue nào. Kèm project và loại issue để khỏi lạc board."
+    - "Sẵn link issue hoặc mã ticket (PROJ-123) thì đưa vào, agent nhảy đúng việc không phải tìm."
   en:
-    - "Type @jira in your message and the agent goes straight to your project's ticket board."
-    - "Open bug tickets, check the running sprint, and change ticket status."
-    - "Great for large companies running many projects in parallel."
+    - "Type @jira in the chat box so the agent works directly on your project."
+    - "Say what you need: open a ticket, assign a sprint, or update an issue's status. Include the project and issue type so nothing lands on the wrong board."
+    - "Have an issue link or key (PROJ-123)? Drop it in so the agent jumps straight to the right work."
 tutorials:
   - title:
       vi: "Mở ticket bug"
       en: "Open a bug ticket"
     prompt:
-      vi: "Mở ticket bug khách vừa báo cáo, gán team Frontend."
-      en: "Open a bug ticket from the customer's latest report, assigned to the Frontend team."
-  - title:
-      vi: "List sprint hiện tại"
-      en: "List current sprint"
-    prompt:
-      vi: "Liệt kê các ticket trong sprint hiện tại của project [tên project]."
-      en: "List tickets in the current sprint for project [tên project]."
-  - title:
-      vi: "Cập nhật ticket"
-      en: "Update a ticket"
-    prompt:
-      vi: "Chuyển ticket [mã ticket] sang trạng thái 'Done' trong Jira."
-      en: "Move ticket [mã ticket] to 'Done' in Jira."
+      vi: "@jira mở ticket bug khách vừa báo cáo, gán team Frontend."
+      en: "@jira open a bug ticket from the customer's latest report, assigned to the Frontend team."
 ---
 
 <!-- Body for future rich docs -->

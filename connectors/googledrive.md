@@ -10,32 +10,20 @@ category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @googledrive trong câu nhắn là agent mở thẳng kho file của bạn."
-    - "Tìm file, tạo link chia sẻ, tải file lên, sắp xếp thư mục."
-    - "Gửi một link là khách hoặc cả nhóm cùng xem được."
+    - "Gõ @googledrive vào khung chat để agent tìm và chia sẻ file giúp bạn."
+    - "Nói rõ bạn cần gì: tìm file theo tên, chia sẻ link, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
+    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
   en:
-    - "Type @googledrive in your message and the agent opens your file storage directly."
-    - "Find files, create share links, upload files, and organize folders."
-    - "Share one link and customers or your whole team can view it."
+    - "Type @googledrive in the chat box so the agent can find and share files for you."
+    - "Say what you need: find a file by name, share a link, or upload a new file. Include the file name and folder to get it right."
+    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
 tutorials:
   - title:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file hợp đồng khách trong Google Drive."
-      en: "Find the customer contract file in Google Drive."
-  - title:
-      vi: "Share link folder"
-      en: "Share a folder"
-    prompt:
-      vi: "Tạo link share folder ảnh sản phẩm cho khách."
-      en: "Create a share link for the product photos folder."
-  - title:
-      vi: "Upload file"
-      en: "Upload a file"
-    prompt:
-      vi: "Upload file báo cáo tháng này lên Drive thư mục 'Tài chính'."
-      en: "Upload this month's report to the 'Finance' folder on Drive."
+      vi: "@googledrive tìm file hợp đồng khách."
+      en: "@googledrive find the customer contract file."
 ---
 
 <!-- Body for future rich docs -->

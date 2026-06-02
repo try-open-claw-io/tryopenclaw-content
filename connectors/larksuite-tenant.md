@@ -10,32 +10,20 @@ category: productivity
 popular: false
 howToUse:
   vi:
-    - "Gõ @larksuite-tenant trong câu nhắn là agent vào phần quản trị hệ thống Lark (dành cho người làm IT)."
-    - "Thêm hoặc xóa người dùng, gán quyền quản trị theo phòng ban."
-    - "Là quyền quản trị toàn công ty, nên cân nhắc kỹ trước khi thao tác."
+    - "Gõ @larksuite-tenant vào khung chat để agent quản trị tenant Lark giúp bạn."
+    - "Nói rõ bạn cần gì: thêm user mới, xoá user, hay gán role admin. Kèm tên user và phòng ban cho trúng."
+    - "Có sẵn email user hay tên phòng ban thì đưa kèm để agent gán đúng người, đúng quyền."
   en:
-    - "Type @larksuite-tenant in your message and the agent enters Lark admin management (for IT staff)."
-    - "Add or remove users and assign admin rights by department."
-    - "This is company-wide admin access, so consider carefully before making changes."
+    - "Type @larksuite-tenant in the chat box so the agent can administer your Lark tenant for you."
+    - "Say what you need: add a new user, remove a user, or assign an admin role. Include the username and department to get it right."
+    - "If you have the user's email or department name, include it so the agent assigns the right person to the right role."
 tutorials:
   - title:
       vi: "Thêm user mới"
       en: "Add a user"
     prompt:
-      vi: "Thêm user mới vào tenant Lark, gắn phòng IT."
-      en: "Add a new user to the Lark tenant, assigned to the IT department."
-  - title:
-      vi: "Remove user"
-      en: "Remove a user"
-    prompt:
-      vi: "Xoá user [tên user] khỏi tenant Lark."
-      en: "Remove user [tên user] from the Lark tenant."
-  - title:
-      vi: "Gán role admin"
-      en: "Assign admin role"
-    prompt:
-      vi: "Gán role admin cho user [tên user] phòng HR trong tenant Lark."
-      en: "Assign the admin role to user [tên user] in the HR department of the Lark tenant."
+      vi: "@larksuite-tenant thêm user mới vào tenant, gắn phòng IT."
+      en: "@larksuite-tenant add a new user to the tenant, assigned to the IT department."
 ---
 
 <!-- Body for future rich docs -->

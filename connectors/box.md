@@ -10,32 +10,20 @@ category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @box trong câu nhắn là agent mở thẳng kho file của bạn."
-    - "Tìm hợp đồng hay tài liệu, tạo link chia sẻ có hạn dùng, xem file mới."
-    - "Hợp lưu trữ cho công ty lớn cần phân quyền chặt."
+    - "Gõ @box trong khung chat để agent tìm và quản lý tài liệu giúp bạn."
+    - "Nói rõ bạn cần gì: tìm tài liệu theo tên, chia sẻ link file, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
+    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
   en:
-    - "Type @box in your message and the agent opens your file storage directly."
-    - "Find contracts or documents, create expiring share links, and check recent files."
-    - "Great for enterprise storage that needs tight permissions."
+    - "Type @box in the chat box so the agent can find and manage documents for you."
+    - "Say what you need: find a document by name, share a file link, or upload a new file. Include the file name and folder to get it right."
+    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
 tutorials:
   - title:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file hợp đồng quý 2 trong Box."
-      en: "Find the Q2 contract file in Box."
-  - title:
-      vi: "Share file có hạn"
-      en: "Share with expiry"
-    prompt:
-      vi: "Tạo link share file đề xuất cho đối tác qua Box, hết hạn sau 7 ngày."
-      en: "Create a Box share link to the proposal file for the partner, expiring in 7 days."
-  - title:
-      vi: "List file mới"
-      en: "List recent files"
-    prompt:
-      vi: "Liệt kê file mới upload tuần này trong folder 'Hợp đồng' trên Box."
-      en: "List files uploaded this week to the 'Contracts' Box folder."
+      vi: "@box tìm file hợp đồng quý 2."
+      en: "@box find the Q2 contract file."
 ---
 
 <!-- Body for future rich docs -->

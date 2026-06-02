@@ -10,32 +10,20 @@ category: commerce
 popular: true
 howToUse:
   vi:
-    - "Gõ @stripe trong câu nhắn là agent tạo link thu tiền hoặc tra cứu giao dịch."
-    - "Tạo link thu tiền một lần hoặc định kỳ, xem giao dịch, hoàn tiền cho khách."
-    - "Hợp thu tiền khách quốc tế qua thẻ."
+    - "Trong khung chat, gõ @stripe để bật thao tác thanh toán ngay trong hội thoại."
+    - "Nói rõ số tiền, loại tiền tệ và mục đích: tạo link thu tiền, tra giao dịch, hay hoàn tiền cho ai. Con số càng rõ càng tránh nhầm."
+    - "Có mã giao dịch hay link đơn thì dán kèm để agent hoàn tiền hoặc đối soát đúng khoản."
   en:
-    - "Type @stripe in your message and the agent creates a payment link or looks up transactions."
-    - "Create one-time or recurring payment links, view transactions, and refund customers."
-    - "Great for collecting card payments from international customers."
+    - "In the chat box, type @stripe to bring payment actions into the conversation."
+    - "State the amount, currency, and purpose: a payment link, a transaction lookup, or a refund for whom. Clear figures avoid mix-ups."
+    - "If you have a transaction ID or order link, paste it so the agent refunds or reconciles the right charge."
 tutorials:
   - title:
       vi: "Tạo link thanh toán"
       en: "Create payment link"
     prompt:
-      vi: "Tạo link Stripe thanh toán 500 USD cho khách nước ngoài."
-      en: "Create a Stripe payment link for 500 USD to send to an international customer."
-  - title:
-      vi: "List đơn hôm nay"
-      en: "List today's payments"
-    prompt:
-      vi: "Liệt kê các đơn thanh toán Stripe hôm nay."
-      en: "List today's Stripe payments."
-  - title:
-      vi: "Hoàn tiền"
-      en: "Refund payment"
-    prompt:
-      vi: "Hoàn tiền cho đơn [mã đơn] — khách yêu cầu hủy."
-      en: "Refund payment [mã giao dịch] — the customer requested a cancellation."
+      vi: "@stripe tạo link thanh toán 500 USD cho khách nước ngoài."
+      en: "@stripe create a payment link for 500 USD to send to an international customer."
 ---
 
 <!-- Body for future rich docs -->

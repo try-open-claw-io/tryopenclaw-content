@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @sendgrid trong câu nhắn là agent gửi mail tự động cho từng giao dịch."
-    - "Mail xác nhận đơn, mã OTP, đặt lại mật khẩu; xem được mail nào gửi thành công hay bị trả lại."
-    - "Hợp mail gửi riêng từng người; còn mail quảng cáo cả danh sách thì dùng Mailchimp."
+    - "Gõ @sendgrid trong khung chat để agent gửi mail tự động thay bạn."
+    - "Nêu rõ cần gửi gì cho ai: mail xác nhận đơn, mã OTP, hay đặt lại mật khẩu. Nội dung và người nhận càng rõ càng tốt."
+    - "Có sẵn mẫu mail hay email khách thì đưa kèm để agent gửi đúng người, đúng nội dung."
   en:
-    - "Type @sendgrid in your message and the agent sends automated emails for each transaction."
-    - "Order confirmations, OTP codes, password resets; see which emails landed and which bounced."
-    - "Best for one-to-one emails; for bulk promo emails to a whole list, use Mailchimp."
+    - "Type @sendgrid in the chat box so the agent can send automated emails for you."
+    - "Spell out what to send and to whom: an order confirmation, an OTP, or a password reset. The clearer the content and recipient, the better."
+    - "If you have an email template or the customer's address, include it so the agent reaches the right person with the right message."
 tutorials:
   - title:
       vi: "Mail xác nhận đơn"
       en: "Send order confirmation"
     prompt:
-      vi: "Gửi mail xác nhận đơn hàng kèm mã đơn cho khách qua SendGrid."
-      en: "Send an order confirmation email with the order code to the customer via SendGrid."
-  - title:
-      vi: "Mail OTP"
-      en: "Send OTP"
-    prompt:
-      vi: "Gửi mail OTP đăng nhập cho khách qua SendGrid."
-      en: "Send a login OTP email to the customer via SendGrid."
-  - title:
-      vi: "Thống kê delivery"
-      en: "Delivery stats"
-    prompt:
-      vi: "Mail xác nhận tuần này có bao nhiêu mail bounce trên SendGrid?"
-      en: "How many confirmation emails bounced on SendGrid this week?"
+      vi: "@sendgrid gửi mail xác nhận đơn hàng kèm mã đơn cho khách."
+      en: "@sendgrid send an order confirmation email with the order code to the customer."
 ---
 
 <!-- Body for future rich docs -->

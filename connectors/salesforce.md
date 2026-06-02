@@ -10,32 +10,20 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @salesforce trong câu nhắn là agent mở thẳng dữ liệu khách hàng."
-    - "Cập nhật cơ hội bán hàng, thêm liên hệ, xem báo cáo doanh thu."
-    - "Hợp công ty lớn, nhiều nhóm bán hàng cùng làm."
+    - "Gõ @salesforce vào khung chat để agent quản lý khách hàng cùng bạn."
+    - "Nói rõ bạn cần gì: cập nhật giai đoạn opportunity, thêm lead, hay xem báo cáo. Kèm tên opportunity và giai đoạn cho chắc."
+    - "Có link opportunity hay hồ sơ khách thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
   en:
-    - "Type @salesforce in your message and the agent opens your customer data directly."
-    - "Update opportunities, add contacts, and view revenue reports."
-    - "Great for large companies with multiple sales teams working together."
+    - "Type @salesforce in the chat box so the agent can manage customers with you."
+    - "Say what you need: move an opportunity's stage, add a lead, or view a report. Include the opportunity name and stage to be safe."
+    - "If you have an opportunity or contact link, include it so the agent opens the right one, not the wrong customer."
 tutorials:
   - title:
       vi: "Cập nhật opportunity"
       en: "Update opportunity"
     prompt:
-      vi: "Cập nhật opportunity [tên opportunity] sang giai đoạn đàm phán."
-      en: "Move opportunity [tên opportunity] to the negotiation stage."
-  - title:
-      vi: "Tạo contact"
-      en: "Create a contact"
-    prompt:
-      vi: "Tạo contact mới gắn với account [tên account]."
-      en: "Create a new contact linked to account [account name]."
-  - title:
-      vi: "Báo cáo doanh thu"
-      en: "Sales report"
-    prompt:
-      vi: "Xem báo cáo doanh thu quý này của team sales."
-      en: "Show this quarter's sales revenue report for the sales team."
+      vi: "@salesforce cập nhật opportunity [tên opportunity] sang giai đoạn đàm phán."
+      en: "@salesforce move opportunity [tên opportunity] to the negotiation stage."
 ---
 
 <!-- Body for future rich docs -->

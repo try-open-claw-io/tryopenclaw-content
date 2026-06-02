@@ -10,32 +10,20 @@ category: scheduling
 popular: true
 howToUse:
   vi:
-    - "Gõ @zoom trong câu nhắn là agent tạo phòng họp và lấy link cho bạn."
-    - "Tạo phòng họp một lần hoặc lặp lại hằng tuần, lấy link gửi khách, xem lịch họp."
-    - "Hợp các buổi họp hoặc demo trực tuyến với khách."
+    - "Gõ @zoom vào khung chat để agent tạo và quản lý phòng họp giúp bạn."
+    - "Mô tả việc cần làm: tạo phòng họp lúc nào kéo dài bao lâu, gửi link cho ai, hay lấy bản ghi. Nêu rõ ngày giờ cho chính xác."
+    - "Nếu đã có link phòng họp, gửi kèm để agent dời hoặc gửi lại đúng buổi."
   en:
-    - "Type @zoom in your message and the agent creates a meeting room and grabs the link for you."
-    - "Create a one-time or weekly recurring meeting, get the link to send customers, and check your meeting schedule."
-    - "Great for online meetings or demos with customers."
+    - "Type @zoom in the chat box so the agent can create and manage meetings for you."
+    - "Describe what you need: when to create a meeting and how long, whom to send the link to, or fetch a recording. Name the date and time to be precise."
+    - "If you already have a meeting link, include it so the agent reschedules or resends the right one."
 tutorials:
   - title:
       vi: "Tạo phòng họp"
       en: "Create a meeting"
     prompt:
-      vi: "Tạo phòng Zoom 1 tiếng cho demo khách thứ 2 lúc 14h."
-      en: "Create a 1-hour Zoom meeting for the customer demo on Monday at 2 PM."
-  - title:
-      vi: "Đặt lịch định kỳ"
-      en: "Schedule recurring"
-    prompt:
-      vi: "Đặt meeting Zoom recurring thứ 5 hàng tuần lúc 10h sáng."
-      en: "Schedule a recurring Zoom meeting every Thursday at 10 AM."
-  - title:
-      vi: "List meeting tuần"
-      en: "List meetings"
-    prompt:
-      vi: "Tuần này mình có những phòng họp Zoom nào?"
-      en: "What Zoom meetings do I have this week?"
+      vi: "@zoom tạo phòng 1 tiếng cho demo khách thứ 2 lúc 14h."
+      en: "@zoom create a 1-hour meeting for the customer demo on Monday at 2 PM."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,32 +10,20 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @googlesheets trong câu nhắn là agent mở thẳng bảng tính của bạn."
-    - "Xem và thêm dòng, lọc theo điều kiện, làm báo cáo nhanh."
-    - "Gom được số liệu từ mail, phần mềm quản lý khách hay form về một bảng."
+    - "Gõ @googlesheets trong khung chat để agent đọc và cập nhật bảng tính giúp bạn."
+    - "Nói rõ bạn cần gì: xem dòng dữ liệu mới nhất, thêm dòng, hay lọc theo điều kiện. Kèm tên sheet và cột cho trúng."
+    - "Có link sheet thì gửi kèm để agent mở đúng bảng, không nhầm file."
   en:
-    - "Type @googlesheets in your message and the agent opens your spreadsheet directly."
-    - "View and add rows, filter by condition, and build quick reports."
-    - "Pulls numbers from mail, CRM, or forms into one sheet."
+    - "Type @googlesheets in the chat box so the agent can read and update spreadsheets for you."
+    - "Say what you need: list the latest rows, add a row, or filter by condition. Include the sheet and column names to get it right."
+    - "If you have a sheet link, include it so the agent opens the right spreadsheet, not the wrong file."
 tutorials:
   - title:
       vi: "Xem 10 đơn mới nhất"
       en: "List recent orders"
     prompt:
-      vi: "Liệt kê 10 đơn mới nhất trong sheet 'Đơn hàng'."
-      en: "List the 10 most recent orders from the 'Orders' sheet."
-  - title:
-      vi: "Thêm dòng doanh thu"
-      en: "Append a revenue row"
-    prompt:
-      vi: "Thêm dòng doanh thu hôm nay vào sheet 'Tài chính' giúp mình."
-      en: "Append today's revenue as a new row in the 'Finance' sheet."
-  - title:
-      vi: "Lọc hàng tồn thấp"
-      en: "Filter low stock"
-    prompt:
-      vi: "Tìm các sản phẩm còn dưới 10 cái trong sheet 'Tồn kho'."
-      en: "Find products with stock below 10 in the 'Inventory' sheet."
+      vi: "@googlesheets liệt kê 10 đơn mới nhất trong sheet 'Đơn hàng'."
+      en: "@googlesheets list the 10 most recent orders from the 'Orders' sheet."
 ---
 
 <!-- Body for future rich docs -->

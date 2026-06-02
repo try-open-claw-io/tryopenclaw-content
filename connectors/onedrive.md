@@ -10,32 +10,20 @@ category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @onedrive trong câu nhắn là agent mở thẳng kho file của bạn."
-    - "Tìm file, tạo link chia sẻ, tải file lên."
-    - "Hợp công ty đang dùng Microsoft 365."
+    - "Gõ @onedrive trong khung chat để agent tìm và chia sẻ file giúp bạn."
+    - "Nói rõ bạn cần gì: tìm file theo tên, chia sẻ link, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
+    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
   en:
-    - "Type @onedrive in your message and the agent opens your file storage directly."
-    - "Find files, create share links, and upload files."
-    - "Great for companies on Microsoft 365."
+    - "Type @onedrive in the chat box so the agent can find and share files for you."
+    - "Say what you need: find a file by name, share a link, or upload a new file. Include the file name and folder to get it right."
+    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
 tutorials:
   - title:
       vi: "Tìm file"
       en: "Find a file"
     prompt:
-      vi: "Tìm file báo cáo Q1 trong OneDrive."
-      en: "Find the Q1 report file in OneDrive."
-  - title:
-      vi: "Share link file"
-      en: "Share a file"
-    prompt:
-      vi: "Tạo link share file đề xuất cho khách qua OneDrive."
-      en: "Create a OneDrive share link for the proposal file to send to the customer."
-  - title:
-      vi: "Upload file mới"
-      en: "Upload a file"
-    prompt:
-      vi: "Upload file hợp đồng mới vào thư mục 'Hợp đồng' trên OneDrive."
-      en: "Upload the new contract file to the 'Contracts' OneDrive folder."
+      vi: "@onedrive tìm file báo cáo Q1."
+      en: "@onedrive find the Q1 report file."
 ---
 
 <!-- Body for future rich docs -->

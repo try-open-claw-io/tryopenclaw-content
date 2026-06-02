@@ -10,32 +10,20 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @zoho trong câu nhắn là agent vào thẳng phần đang cần — khách hàng, mail, sổ sách hay hỗ trợ."
-    - "Thêm lead, tạo deal, quản lý công việc."
-    - "Gói nhiều công cụ cho công ty nhỏ và vừa, tiết kiệm chi phí."
+    - "Gõ @zoho trong khung chat để agent quản lý khách hàng cùng bạn."
+    - "Nói rõ bạn cần gì: thêm lead mới, cập nhật deal, hay xem báo cáo. Kèm tên khách và thông tin liên hệ cho chắc."
+    - "Có link hồ sơ khách thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
   en:
-    - "Type @zoho in your message and the agent jumps to the part you need — customers, mail, books, or support."
-    - "Add leads, create deals, and manage tasks."
-    - "Bundles many tools for small and mid-sized companies at a low cost."
+    - "Type @zoho in the chat box so the agent can manage customers with you."
+    - "Say what you need: add a new lead, update a deal, or view a report. Include the customer name and contact info to be safe."
+    - "If you have a contact link, include it so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
       vi: "Thêm lead"
       en: "Add a lead"
     prompt:
-      vi: "Thêm lead mới vào Zoho CRM: tên khách, SĐT, công ty."
-      en: "Add a new lead to Zoho CRM with name, phone, and company."
-  - title:
-      vi: "Tạo deal"
-      en: "Create a deal"
-    prompt:
-      vi: "Tạo deal Zoho mới cho khách doanh nghiệp, giá trị 100 triệu."
-      en: "Create a new Zoho deal for an enterprise customer worth 100 million."
-  - title:
-      vi: "List task team"
-      en: "List team tasks"
-    prompt:
-      vi: "Liệt kê task của team Sales trong Zoho tuần này."
-      en: "List this week's Sales team tasks in Zoho."
+      vi: "@zoho thêm lead mới: tên khách, SĐT, công ty."
+      en: "@zoho add a new lead with name, phone, and company."
 ---
 
 <!-- Body for future rich docs -->

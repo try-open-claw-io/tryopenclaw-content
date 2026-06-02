@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @microsoftteams trong câu nhắn là agent vào thẳng kênh chat của nhóm."
-    - "Gửi tin, tóm tắt kênh, đặt lịch họp."
-    - "Hợp công ty đang dùng Microsoft 365."
+    - "Gõ @microsoftteams trong khung chat để agent nhắn tin cho team giúp bạn."
+    - "Cho agent biết bạn cần gì: gửi tin vào kênh nào, tìm tin nhắn, hay tóm tắt hội thoại. Kèm tên kênh (IT, Sales) cho trúng."
+    - "Có link tin nhắn hay tên kênh thì gửi kèm để agent đăng đúng nơi."
   en:
-    - "Type @microsoftteams in your message and the agent goes straight to your team channels."
-    - "Send messages, summarize channels, and schedule meetings."
-    - "Great for companies on Microsoft 365."
+    - "Type @microsoftteams in the chat box so the agent can message your team for you."
+    - "Tell the agent what you need: post to which channel, find messages, or summarize a thread. Include the channel name (IT, Sales) to get it right."
+    - "If you have a message link or channel name, include it so the agent posts in the right place."
 tutorials:
   - title:
       vi: "Gửi tin nhóm"
       en: "Send to a channel"
     prompt:
-      vi: "Gửi tin nhắn nhóm IT về sự cố mạng đang diễn ra."
-      en: "Send a message to the IT channel about an ongoing network outage."
-  - title:
-      vi: "Tóm tắt kênh"
-      en: "Summarize channel"
-    prompt:
-      vi: "Tóm tắt kênh 'Engineering' trong Teams từ hôm qua đến giờ."
-      en: "Summarize the 'Engineering' Teams channel since yesterday."
-  - title:
-      vi: "Lên lịch meeting"
-      en: "Schedule a meeting"
-    prompt:
-      vi: "Lên lịch meeting Teams 30 phút với team Sales thứ 3 tuần sau."
-      en: "Schedule a 30-minute Teams meeting with the Sales team next Tuesday."
+      vi: "@microsoftteams gửi tin nhắn nhóm IT về sự cố mạng đang diễn ra."
+      en: "@microsoftteams send a message to the IT channel about an ongoing network outage."
 ---
 
 <!-- Body for future rich docs -->

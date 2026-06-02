@@ -10,32 +10,20 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @larksuite trong câu nhắn là agent vào thẳng phần đang cần — chat, tài liệu hay lịch."
-    - "Gửi tin nhóm, tạo tài liệu, đặt lịch họp."
-    - "Gói nhiều công cụ làm việc cho cả nhóm."
+    - "Gõ @larksuite trong khung chat để agent làm việc trên nền tảng Lark cùng bạn."
+    - "Nói rõ bạn cần gì: gửi tin vào nhóm nào, tạo tài liệu, hay đặt lịch họp. Kèm tên nhóm ('Sales') cho trúng."
+    - "Có link nhóm hay tài liệu thì gửi kèm để agent gửi đúng nơi."
   en:
-    - "Type @larksuite in your message and the agent jumps to what you need — chat, docs, or calendar."
-    - "Send group messages, create docs, and schedule meetings."
-    - "Bundles many work tools for the whole team."
+    - "Type @larksuite in the chat box so the agent can work across Lark with you."
+    - "Say what you need: send a message to which group, create a doc, or set up a meeting. Include the group name ('Sales') to get it right."
+    - "If you have a group or doc link, include it so the agent posts in the right place."
 tutorials:
   - title:
       vi: "Gửi tin nhóm"
       en: "Send to a group"
     prompt:
-      vi: "Gửi tin vào nhóm 'Sales' trên Lark."
-      en: "Send a message to the 'Sales' group on Lark."
-  - title:
-      vi: "Tạo doc mới"
-      en: "Create a doc"
-    prompt:
-      vi: "Tạo doc Lark mới 'Quy trình onboarding' trong workspace 'HR'."
-      en: "Create a new Lark doc 'Onboarding process' in the 'HR' workspace."
-  - title:
-      vi: "Đặt lịch meeting"
-      en: "Schedule a meeting"
-    prompt:
-      vi: "Đặt lịch họp Lark 30 phút với team Marketing thứ 3 tuần sau."
-      en: "Schedule a 30-minute Lark meeting with the Marketing team next Tuesday."
+      vi: "@larksuite gửi tin vào nhóm 'Sales'."
+      en: "@larksuite send a message to the 'Sales' group."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,32 +10,20 @@ category: support
 popular: true
 howToUse:
   vi:
-    - "Gõ @zendesk trong câu nhắn là agent mở thẳng hộp ticket hỗ trợ."
-    - "Liệt kê ticket cần ưu tiên, trả lời bằng câu mẫu có sẵn, tóm tắt ticket để bàn giao ca."
-    - "Hợp bộ phận hỗ trợ của công ty lớn."
+    - "Gõ @zendesk vào khung chat để agent xử lý ticket cùng bạn."
+    - "Nói rõ bạn cần gì: xem ticket ưu tiên, trả lời bằng câu mẫu, hay tóm tắt hội thoại. Kèm mã ticket hoặc mức ưu tiên cho trúng."
+    - "Có link ticket thì gửi kèm để agent mở đúng ticket cần xử lý."
   en:
-    - "Type @zendesk in your message and the agent opens your support ticket inbox directly."
-    - "List priority tickets, reply with saved templates, and summarize tickets for shift handover."
-    - "Great for support teams at large companies."
+    - "Type @zendesk in the chat box so the agent can handle tickets with you."
+    - "Say what you need: view priority tickets, reply with a macro, or summarize a thread. Include the ticket ID or priority to get it right."
+    - "If you have a ticket link, include it so the agent opens the exact one that needs work."
 tutorials:
   - title:
       vi: "List ticket ưu tiên"
       en: "List priority tickets"
     prompt:
-      vi: "Liệt kê ticket priority cao chưa giải quyết trong Zendesk."
-      en: "List unresolved high-priority tickets in Zendesk."
-  - title:
-      vi: "Trả lời ticket"
-      en: "Reply to ticket"
-    prompt:
-      vi: "Trả lời ticket [mã ticket] bằng macro 'Đã xử lý' trong Zendesk."
-      en: "Reply to ticket [mã ticket] with the 'Resolved' macro in Zendesk."
-  - title:
-      vi: "Tóm tắt ticket"
-      en: "Summarize ticket"
-    prompt:
-      vi: "Tóm tắt ticket [mã ticket] để bàn giao ca trong Zendesk."
-      en: "Summarize ticket [mã ticket] for shift handover in Zendesk."
+      vi: "@zendesk liệt kê ticket priority cao chưa giải quyết."
+      en: "@zendesk list unresolved high-priority tickets."
 ---
 
 <!-- Body for future rich docs -->

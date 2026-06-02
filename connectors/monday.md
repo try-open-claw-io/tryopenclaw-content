@@ -10,32 +10,20 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @monday trong câu nhắn là agent mở thẳng bảng việc của nhóm."
-    - "Liệt kê việc trong tuần, tạo đầu việc theo dõi khách, cập nhật trạng thái."
-    - "Xem được nhiều kiểu: bảng, dòng thời gian, lịch."
+    - "Gõ @monday vào khung chat để agent quản lý công việc cùng bạn."
+    - "Nói rõ bạn cần gì: xem task trong tuần, tạo item mới, hay cập nhật trạng thái. Kèm tên board ('Marketing') cho trúng."
+    - "Có link board hay item thì gửi kèm để agent mở đúng nơi cần xử lý."
   en:
-    - "Type @monday in your message and the agent opens your team's work board directly."
-    - "List the week's tasks, create customer follow-up items, and update status."
-    - "View it many ways: boards, timelines, and calendars."
+    - "Type @monday in the chat box so the agent can manage work with you."
+    - "Say what you need: list this week's tasks, create a new item, or update a status. Include the board name ('Marketing') to get it right."
+    - "If you have a board or item link, include it so the agent opens the right place."
 tutorials:
   - title:
       vi: "List task tuần"
       en: "List week's tasks"
     prompt:
-      vi: "Liệt kê task tuần này trên board 'Marketing' trong Monday."
-      en: "List this week's tasks on the 'Marketing' board in Monday."
-  - title:
-      vi: "Tạo item follow-up"
-      en: "Create follow-up item"
-    prompt:
-      vi: "Tạo item mới follow-up khách trên board 'Sales' Monday."
-      en: "Create a new customer follow-up item on the 'Sales' Monday board."
-  - title:
-      vi: "Cập nhật status"
-      en: "Update status"
-    prompt:
-      vi: "Cập nhật status item [tên item] sang 'Working on it' trong Monday."
-      en: "Update item [tên item] status to 'Working on it' in Monday."
+      vi: "@monday liệt kê task tuần này trên board 'Marketing'."
+      en: "@monday list this week's tasks on the 'Marketing' board."
 ---
 
 <!-- Body for future rich docs -->

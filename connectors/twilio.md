@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @twilio trong câu nhắn là agent thay bạn gửi SMS hoặc gọi điện tự động."
-    - "Gửi SMS xác nhận, mã OTP, hay cuộc gọi tự động báo tin."
-    - "Hợp việc cần nhắn tới số điện thoại khách, không qua app chat."
+    - "Gõ @twilio trong khung chat để agent gửi tin hoặc gọi thay bạn."
+    - "Nêu rõ cần gửi gì cho ai: SMS xác nhận, mã OTP, hay cuộc gọi tự động. Nội dung và số nhận càng rõ càng tốt."
+    - "Có sẵn mẫu tin nhắn hay số điện thoại thì đưa kèm để agent gửi đúng người, đúng nội dung."
   en:
-    - "Type @twilio in your message and the agent sends an SMS or places an automated call for you."
-    - "Send confirmation texts, OTP codes, or automated voice calls with updates."
-    - "Great when you need to reach a customer's phone number directly, not through a chat app."
+    - "Type @twilio in the chat box so the agent can send messages or place calls for you."
+    - "Spell out what to send and to whom: a confirmation SMS, an OTP, or an automated call. The clearer the content and recipient, the better."
+    - "If you have a message template or phone number ready, include it so the agent reaches the right person with the right message."
 tutorials:
   - title:
       vi: "Gửi SMS xác nhận"
       en: "Send confirmation SMS"
     prompt:
-      vi: "Gửi SMS xác nhận đặt lịch cho khách qua Twilio."
-      en: "Send a booking confirmation SMS to the customer via Twilio."
-  - title:
-      vi: "Gửi OTP"
-      en: "Send OTP"
-    prompt:
-      vi: "Gửi SMS OTP cho khách đang đăng nhập."
-      en: "Send a login OTP SMS to the customer."
-  - title:
-      vi: "Voice call tự động"
-      en: "Auto voice call"
-    prompt:
-      vi: "Gọi voice tự động báo khách đơn đã sẵn sàng nhận."
-      en: "Place an automated voice call to notify the customer that their order is ready for pickup."
+      vi: "@twilio gửi SMS xác nhận đặt lịch cho khách."
+      en: "@twilio send a booking confirmation SMS to the customer."
 ---
 
 <!-- Body for future rich docs -->

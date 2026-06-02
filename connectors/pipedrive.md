@@ -10,32 +10,20 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @pipedrive trong câu nhắn là agent mở thẳng pipeline bán hàng."
-    - "Tạo và cập nhật deal, dời deal qua từng bước, xem pipeline."
-    - "Gọn nhẹ, hợp đội sales nhỏ và vừa."
+    - "Gõ @pipedrive trong khung chat để agent quản lý pipeline bán hàng cùng bạn."
+    - "Nói rõ bạn cần gì: cập nhật giai đoạn deal, thêm deal mới, hay xem pipeline. Kèm tên deal và giai đoạn cho chắc."
+    - "Có link deal thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
   en:
-    - "Type @pipedrive in your message and the agent opens your sales pipeline directly."
-    - "Create and update deals, move them through each stage, and view the pipeline."
-    - "Lightweight and great for small to mid-sized sales teams."
+    - "Type @pipedrive in the chat box so the agent can manage your sales pipeline with you."
+    - "Say what you need: move a deal's stage, add a new deal, or view your pipeline. Include the deal name and stage to be safe."
+    - "If you have a deal link, include it so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
       vi: "Cập nhật deal"
       en: "Update a deal"
     prompt:
-      vi: "Cập nhật deal [tên deal] sang giai đoạn đàm phán trong Pipedrive."
-      en: "Move deal [tên deal] to the negotiation stage in Pipedrive."
-  - title:
-      vi: "List pipeline"
-      en: "List pipeline"
-    prompt:
-      vi: "Liệt kê các deal trong pipeline 'Q3 Sales' của Pipedrive."
-      en: "List deals in the 'Q3 Sales' Pipedrive pipeline."
-  - title:
-      vi: "Tạo deal mới"
-      en: "Create a deal"
-    prompt:
-      vi: "Tạo deal mới gắn với contact [tên contact], giá trị 50 triệu."
-      en: "Create a new deal linked to contact [contact name] worth 50 million."
+      vi: "@pipedrive cập nhật deal [tên deal] sang giai đoạn đàm phán."
+      en: "@pipedrive move deal [tên deal] to the negotiation stage."
 ---
 
 <!-- Body for future rich docs -->

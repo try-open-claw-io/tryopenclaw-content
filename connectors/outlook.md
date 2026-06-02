@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @outlook trong câu nhắn là agent mở thẳng hộp thư công việc."
-    - "Đọc, soạn, trả lời và lọc mail; đi chung với Outlook Calendar và Teams."
-    - "Hợp công ty đang dùng Microsoft 365."
+    - "Gõ @outlook vào khung chat để agent đọc và soạn mail thay bạn."
+    - "Cho agent biết bạn cần gì: mở mail chưa đọc, tìm theo người gửi, hay soạn thư trả lời. Nêu rõ người gửi hoặc khoảng thời gian cho trúng."
+    - "Có sẵn link mail hay thread thì gửi kèm để agent mở đúng hội thoại, khỏi lục lại hộp thư."
   en:
-    - "Type @outlook in your message and the agent opens your work inbox directly."
-    - "Read, write, reply to, and filter mail; works alongside Outlook Calendar and Teams."
-    - "Great for companies on Microsoft 365."
+    - "Type @outlook in the chat box so the agent can read and write email for you."
+    - "Tell the agent what you need: open unread mail, search by sender, or draft a reply. Name the sender or time range to get it right."
+    - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
 tutorials:
   - title:
       vi: "Mở mail mới"
       en: "Open recent mail"
     prompt:
-      vi: "Mở mail mới chưa đọc trong Outlook hôm nay."
-      en: "Open unread Outlook emails from today."
-  - title:
-      vi: "Soạn mail trả lời"
-      en: "Draft a reply"
-    prompt:
-      vi: "Soạn mail trả lời khách về báo giá đã gửi tuần trước."
-      en: "Draft a reply to the customer following up on the quote sent last week."
-  - title:
-      vi: "Tóm tắt inbox"
-      en: "Summarize inbox"
-    prompt:
-      vi: "Tóm tắt mail chưa đọc hôm nay theo chủ đề."
-      en: "Summarize today's unread emails grouped by topic."
+      vi: "@outlook mở mail mới chưa đọc hôm nay."
+      en: "@outlook open unread emails from today."
 ---
 
 <!-- Body for future rich docs -->

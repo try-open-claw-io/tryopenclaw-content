@@ -10,32 +10,20 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @asana trong câu nhắn là agent mở thẳng bảng dự án của nhóm."
-    - "Giao việc kèm hạn chót, liệt kê việc chưa xong, cập nhật trạng thái."
-    - "Hợp công ty vừa và công ty dịch vụ."
+    - "Gõ @asana trong khung chat để agent quản lý task của team cùng bạn."
+    - "Nói rõ bạn cần gì: giao task cho ai, đặt deadline, hay xem việc đang chạy. Kèm tên task, người nhận và hạn cho chắc."
+    - "Có link task hay tên dự án thì gửi kèm để agent giao đúng việc, đúng người."
   en:
-    - "Type @asana in your message and the agent opens your team's project board directly."
-    - "Assign tasks with deadlines, list open work, and update status."
-    - "Great for mid-sized companies and agencies."
+    - "Type @asana in the chat box so the agent can manage your team's tasks with you."
+    - "Say what you need: assign a task to someone, set a deadline, or check what's in progress. Include the task name, assignee, and due date to be safe."
+    - "If you have a task link or project name, include it so the agent assigns the right work to the right person."
 tutorials:
   - title:
       vi: "Giao task"
       en: "Assign a task"
     prompt:
-      vi: "Giao task 'Review báo cáo Q2' cho thành viên team, hạn thứ 6."
-      en: "Assign 'Review Q2 report' to a teammate with a Friday deadline."
-  - title:
-      vi: "List task chưa xong"
-      en: "List open tasks"
-    prompt:
-      vi: "Liệt kê task chưa xong trong project [tên project]."
-      en: "List open tasks in project [tên project]."
-  - title:
-      vi: "Cập nhật status"
-      en: "Update task status"
-    prompt:
-      vi: "Cập nhật task [tên task] sang 'In Progress' trong Asana."
-      en: "Update task [tên task] to 'In Progress' in Asana."
+      vi: "@asana giao task 'Review báo cáo Q2' cho thành viên team, hạn thứ 6."
+      en: "@asana assign 'Review Q2 report' to a teammate with a Friday deadline."
 ---
 
 <!-- Body for future rich docs -->

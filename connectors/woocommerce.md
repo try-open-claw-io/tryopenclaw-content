@@ -10,32 +10,20 @@ category: commerce
 popular: true
 howToUse:
   vi:
-    - "Gõ @woocommerce trong câu nhắn là agent mở thẳng cửa hàng trên website WordPress."
-    - "Xem đơn, cập nhật tồn kho, tìm sản phẩm hết hàng."
-    - "Hợp shop bán ngay trên website WordPress của mình."
+    - "Gõ @woocommerce vào khung chat để agent quản lý cửa hàng WordPress của bạn."
+    - "Cho agent biết bạn cần gì: xem đơn hôm nay, tra tồn kho, hay cập nhật sản phẩm. Số liệu càng rõ, kết quả càng đúng."
+    - "Dán kèm link sản phẩm hay đơn hàng nếu sẵn có để agent xử lý không sai sản phẩm."
   en:
-    - "Type @woocommerce in your message and the agent opens your store on your WordPress site directly."
-    - "Check orders, update stock, and find out-of-stock products."
-    - "Great for shops selling right on their own WordPress website."
+    - "Type @woocommerce in the chat box so the agent can manage your WordPress store."
+    - "Let the agent know what you need: today's orders, a stock check, or a product update. The clearer the numbers, the more accurate the result."
+    - "Paste a product or order link when you have one so the agent acts on the right item."
 tutorials:
   - title:
       vi: "List đơn hôm nay"
       en: "List today's orders"
     prompt:
-      vi: "Liệt kê đơn WooCommerce hôm nay."
-      en: "List today's WooCommerce orders."
-  - title:
-      vi: "Cập nhật tồn kho"
-      en: "Update stock"
-    prompt:
-      vi: "Cập nhật tồn kho sản phẩm [tên sản phẩm] xuống 5 cái trong WooCommerce."
-      en: "Update the stock of product [tên product] to 5 units in WooCommerce."
-  - title:
-      vi: "Tìm sản phẩm hết hàng"
-      en: "Find out-of-stock"
-    prompt:
-      vi: "Tìm sản phẩm hết hàng trong WooCommerce."
-      en: "Find out-of-stock products in WooCommerce."
+      vi: "@woocommerce liệt kê đơn hôm nay."
+      en: "@woocommerce list today's orders."
 ---
 
 <!-- Body for future rich docs -->

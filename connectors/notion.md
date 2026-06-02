@@ -10,32 +10,20 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @notion trong câu nhắn là agent mở thẳng sổ tay và kho tài liệu."
-    - "Tìm tài liệu, tạo trang, cập nhật bảng dữ liệu."
-    - "Hợp lưu quy trình, câu hỏi thường gặp, cẩm nang cho cả nhóm tra cứu."
+    - "Gõ @notion vào khung chat để mở quyền truy cập kho tài liệu của bạn."
+    - "Nói rõ bạn muốn tìm trang nào, tạo doc gì, hay cập nhật mục nào. Chi tiết tới đâu, agent trúng tới đó."
+    - "Có sẵn link trang hoặc database thì gửi kèm, agent vào đúng nơi ngay, không phải dò."
   en:
-    - "Type @notion in your message and the agent opens your notes and docs directly."
-    - "Find documents, create pages, and update databases."
-    - "Great for storing processes, FAQs, and playbooks for the whole team to look up."
+    - "Type @notion in the chat box to open up access to your workspace."
+    - "Tell the agent which page to find, what doc to create, or which entry to update. The more detail, the sharper the result."
+    - "If you have a link to the page or database, drop it in so the agent lands in the right spot right away."
 tutorials:
   - title:
       vi: "Tìm tài liệu"
       en: "Search docs"
     prompt:
-      vi: "Tìm tài liệu hướng dẫn xử lý hoàn tiền trong Notion."
-      en: "Find the refund handling guide in Notion."
-  - title:
-      vi: "Tạo trang mới"
-      en: "Create a page"
-    prompt:
-      vi: "Tạo trang Notion mới 'Onboarding khách hàng' trong workspace 'Sales'."
-      en: "Create a new Notion page 'Customer onboarding' in the Sales workspace."
-  - title:
-      vi: "Cập nhật database"
-      en: "Update a database"
-    prompt:
-      vi: "Cập nhật trạng thái task [tên task] sang 'Done' trong database 'Tasks'."
-      en: "Update task [tên task] to 'Done' in the 'Tasks' database."
+      vi: "@notion tìm tài liệu hướng dẫn xử lý hoàn tiền."
+      en: "@notion find the refund handling guide."
 ---
 
 <!-- Body for future rich docs -->

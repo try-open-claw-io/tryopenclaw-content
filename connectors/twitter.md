@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @twitter trong câu nhắn là agent đăng bài hoặc xem số liệu giúp bạn."
-    - "Đăng bài, xem lượt xem và lượt bấm, nhắn tin riêng cho người theo dõi."
-    - "Hợp quảng bá sản phẩm và thương hiệu ra công chúng."
+    - "Gõ @twitter trong khung chat để agent đăng bài và theo dõi tương tác giúp bạn."
+    - "Nói rõ bạn cần gì: đăng tweet kèm link, xem analytics, hay gửi DM. Kèm nội dung và link cho trúng."
+    - "Có sẵn link bài hay ảnh đính kèm thì gửi kèm để agent đăng đúng nội dung."
   en:
-    - "Type @twitter in your message and the agent posts or checks numbers for you."
-    - "Post updates, see views and clicks, and send direct messages to followers."
-    - "Great for promoting products and brands to the public."
+    - "Type @twitter in the chat box so the agent can post and track engagement for you."
+    - "Say what you need: post a tweet with a link, view analytics, or send a DM. Include the content and link to get it right."
+    - "If you have a post link or image to attach, include it so the agent publishes the right content."
 tutorials:
   - title:
       vi: "Đăng tweet"
       en: "Post a tweet"
     prompt:
-      vi: "Đăng tweet ra mắt sản phẩm mới kèm link landing page."
-      en: "Post a tweet announcing the new product with the landing-page link."
-  - title:
-      vi: "DM follower"
-      en: "Send DM"
-    prompt:
-      vi: "Gửi DM cảm ơn follower vừa retweet sản phẩm mới."
-      en: "Send a DM thanking a follower for retweeting the new product."
-  - title:
-      vi: "Xem analytics tweet"
-      en: "View analytics"
-    prompt:
-      vi: "Xem analytics tweet hôm qua: bao nhiêu impression và click."
-      en: "Show analytics for yesterday's tweet: impressions and clicks."
+      vi: "@twitter đăng tweet ra mắt sản phẩm mới kèm link landing page."
+      en: "@twitter post a tweet announcing the new product with the landing-page link."
 ---
 
 <!-- Body for future rich docs -->

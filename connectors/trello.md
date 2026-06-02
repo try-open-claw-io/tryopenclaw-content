@@ -10,32 +10,20 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @trello trong câu nhắn là agent mở thẳng bảng việc của bạn."
-    - "Tạo thẻ việc, kéo thẻ qua từng cột trạng thái, liệt kê thẻ đang làm."
-    - "Trực quan và đơn giản, hợp nhóm nhỏ."
+    - "Bắt đầu bằng cách gõ @trello trong khung chat để mở bảng việc của bạn."
+    - "Nói rõ bạn muốn gì: tạo card ở cột nào, chuyển card sang đâu, hay liệt kê card đang làm. Kèm tên board và cột cho chắc."
+    - "Có link card hay tên board ('Sales') thì đưa kèm để agent thao tác đúng chỗ."
   en:
-    - "Type @trello in your message and the agent opens your work board directly."
-    - "Create cards, move them across status columns, and list active cards."
-    - "Visual and simple, great for small teams."
+    - "Start by typing @trello in the chat box to open up your boards."
+    - "Tell the agent what you want: create a card in which column, move a card where, or list active cards. Include the board and column names to be safe."
+    - "Add a card link or board name ('Sales') so the agent acts on the right place."
 tutorials:
   - title:
       vi: "Tạo card mới"
       en: "Create a card"
     prompt:
-      vi: "Tạo card mới ở cột 'Đang làm': xử lý đơn hoàn."
-      en: "Create a new card in the 'Doing' column: handle refund order."
-  - title:
-      vi: "Move card"
-      en: "Move a card"
-    prompt:
-      vi: "Chuyển card 'Review báo cáo' sang cột 'Done'."
-      en: "Move the 'Review report' card to the 'Done' column."
-  - title:
-      vi: "List card đang làm"
-      en: "List active cards"
-    prompt:
-      vi: "Liệt kê các card đang ở cột 'Đang làm' của board 'Sales'."
-      en: "List cards in the 'Doing' column of the 'Sales' board."
+      vi: "@trello tạo card mới ở cột 'Đang làm': xử lý đơn hoàn."
+      en: "@trello create a new card in the 'Doing' column: handle refund order."
 ---
 
 <!-- Body for future rich docs -->

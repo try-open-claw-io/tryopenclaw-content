@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @gmail trong câu nhắn là agent mở thẳng hộp thư của bạn."
-    - "Đọc, soạn, trả lời và lọc mail; gom thêm thông tin từ Sheets hay Lịch để soạn nội dung."
-    - "Hợp khi muốn xử lý mail khách ngay trong lúc trò chuyện với agent."
+    - "Gõ @gmail trong khung chat để agent đọc và soạn mail thay bạn."
+    - "Cho agent biết bạn cần gì: mở mail chưa đọc, tìm theo người gửi, hay soạn thư trả lời. Nêu rõ người gửi hoặc khoảng thời gian cho trúng."
+    - "Có sẵn link mail hay thread thì gửi kèm để agent mở đúng hội thoại, khỏi lục lại hộp thư."
   en:
-    - "Type @gmail in your message and the agent opens your inbox directly."
-    - "Read, write, reply to, and filter mail; pull in details from Sheets or Calendar to draft content."
-    - "Great for handling customer mail right while chatting with the agent."
+    - "Type @gmail in the chat box so the agent can read and write email for you."
+    - "Tell the agent what you need: open unread mail, search by sender, or draft a reply. Name the sender or time range to get it right."
+    - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
 tutorials:
   - title:
       vi: "Mở mail chưa đọc"
       en: "Open unread mail"
     prompt:
-      vi: "Mở 5 mail mới chưa đọc từ khách hàng hôm nay."
-      en: "Show me 5 unread emails from customers today."
-  - title:
-      vi: "Soạn mail trả lời"
-      en: "Draft a reply"
-    prompt:
-      vi: "Soạn mail trả lời khách về báo giá đã gửi tuần trước."
-      en: "Draft a reply to the customer following up on the quote I sent last week."
-  - title:
-      vi: "Tóm tắt inbox hôm nay"
-      en: "Summarize today's inbox"
-    prompt:
-      vi: "Tóm tắt giúp mình các mail chưa đọc hôm nay, gom theo chủ đề."
-      en: "Summarize my unread emails from today, grouped by topic."
+      vi: "@gmail mở 5 mail mới chưa đọc từ khách hàng hôm nay."
+      en: "@gmail show me 5 unread emails from customers today."
 ---
 
 <!-- Body for future rich docs -->

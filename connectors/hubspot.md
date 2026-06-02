@@ -10,32 +10,20 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @hubspot trong câu nhắn là agent mở thẳng dữ liệu khách hàng."
-    - "Thêm lead, dời deal qua từng giai đoạn, xem pipeline bán hàng."
-    - "Theo dõi được từng cơ hội bán hàng từ lúc tiếp xúc tới khi chốt."
+    - "Gõ @hubspot vào khung chat để agent quản lý khách hàng cùng bạn."
+    - "Nói rõ bạn cần gì: thêm lead mới, cập nhật deal, hay xem pipeline. Kèm tên khách và giai đoạn cho chắc."
+    - "Có link hồ sơ khách hay deal thì đưa kèm để agent mở đúng cơ hội, không nhầm khách."
   en:
-    - "Type @hubspot in your message and the agent opens your customer data directly."
-    - "Add leads, move deals through each stage, and view your sales pipeline."
-    - "Track every sales opportunity from first touch to close."
+    - "Type @hubspot in the chat box so the agent can manage customers with you."
+    - "Say what you need: add a new lead, update a deal, or view your pipeline. Include the customer name and stage to be safe."
+    - "Have a contact or deal link? Drop it in so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
       vi: "Thêm lead mới"
       en: "Add a new lead"
     prompt:
-      vi: "Thêm lead mới vào HubSpot: tên khách, SĐT, công ty, nguồn lead."
-      en: "Add a new HubSpot lead with name, phone, company, and source."
-  - title:
-      vi: "Cập nhật deal"
-      en: "Update a deal"
-    prompt:
-      vi: "Cập nhật deal [tên deal] sang giai đoạn 'Đàm phán'."
-      en: "Move deal [tên deal] to the 'Negotiation' stage."
-  - title:
-      vi: "List pipeline tháng"
-      en: "List pipeline"
-    prompt:
-      vi: "Liệt kê các deal trong pipeline tháng này."
-      en: "List the deals in this month's pipeline."
+      vi: "@hubspot thêm lead mới: tên khách, SĐT, công ty, nguồn lead."
+      en: "@hubspot add a new lead with name, phone, company, and source."
 ---
 
 <!-- Body for future rich docs -->

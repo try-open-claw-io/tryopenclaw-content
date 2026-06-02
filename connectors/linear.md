@@ -10,32 +10,20 @@ category: engineering
 popular: true
 howToUse:
   vi:
-    - "Gõ @linear trong câu nhắn là agent vào thẳng bảng việc của nhóm."
-    - "Tạo issue, xem việc theo tuần, đổi trạng thái."
-    - "Nhẹ và nhanh, hợp nhóm kỹ thuật gọn."
+    - "Gõ @linear trong khung chat để agent quản lý task kỹ thuật cùng bạn."
+    - "Cho biết bạn cần gì: xem task trong tuần, tạo issue mới, hay cập nhật trạng thái. Kèm tên team hoặc project cho trúng."
+    - "Có link issue thì gửi kèm để agent mở đúng task, không phải tìm."
   en:
-    - "Type @linear in your message and the agent goes straight to your team's task board."
-    - "Create issues, view tasks by week, and change status."
-    - "Lightweight and fast, great for lean engineering teams."
+    - "Type @linear in the chat box so the agent can manage engineering tasks with you."
+    - "Say what you need: list this week's tasks, create a new issue, or update a status. Include the team or project name to get it right."
+    - "If you have an issue link, include it so the agent opens the right task without searching."
 tutorials:
   - title:
       vi: "List task"
       en: "List tasks"
     prompt:
-      vi: "Liệt kê task tuần này của team trong Linear."
-      en: "List this week's team tasks in Linear."
-  - title:
-      vi: "Tạo issue"
-      en: "Create an issue"
-    prompt:
-      vi: "Tạo issue mới priority cao: server chậm sau giờ peak."
-      en: "Create a high-priority issue: server slow after peak hours."
-  - title:
-      vi: "Cập nhật trạng thái"
-      en: "Update status"
-    prompt:
-      vi: "Chuyển task [tên task] sang trạng thái 'In Review' trong Linear."
-      en: "Move task [tên task] to 'In Review' in Linear."
+      vi: "@linear liệt kê task tuần này của team."
+      en: "@linear list this week's team tasks."
 ---
 
 <!-- Body for future rich docs -->

@@ -13,20 +13,8 @@ tutorials:
       vi: "Tạo link đặt lịch"
       en: "Create booking link"
     prompt:
-      vi: "Tạo link đặt tư vấn 30 phút, gửi khách qua mail."
-      en: "Create a 30-minute consultation link and email it to the customer."
-  - title:
-      vi: "List meeting sắp tới"
-      en: "List upcoming meetings"
-    prompt:
-      vi: "List meeting Calendly tuần này."
-      en: "List my Calendly meetings scheduled this week."
-  - title:
-      vi: "Dời lịch"
-      en: "Reschedule meeting"
-    prompt:
-      vi: "Dời meeting với khách X sang thứ 5 lúc 14h."
-      en: "Reschedule the meeting with customer X to Thursday at 2 PM."
+      vi: "@calendly tạo link đặt tư vấn 30 phút, gửi khách qua mail."
+      en: "@calendly create a 30-minute consultation link and email it to the customer."
 ---
 
 <!--
@@ -61,11 +49,11 @@ category      Slug 1 từ. Allowed enum (xem `_rules.md` §A6):
 popular       true nếu connector thuộc nhóm phổ biến cài đặt cao (Top tier).
               false hoặc bỏ qua nếu là long-tail / nice-to-have.
 
-tutorials     Tối thiểu 3 row.
+tutorials     Đúng 1 row — use-case phổ biến nhất của connector.
               - title.vi/en   2-4 từ, mệnh lệnh (vd: "Search emails" / "Tìm mail").
-              - prompt.vi/en  Câu user gõ tự nhiên, agent gọi connector ngay.
-                              Prompt #1 = use-case phổ biến nhất (xem `_rules.md` §B1).
-                              Prompt #2-3 = use-case phụ.
+              - prompt.vi/en  1 câu user gõ tự nhiên, BẮT ĐẦU bằng @<id> (vd "@gmail mở 5 mail...").
+                              @mention chính là cú "gọi" connector → không lặp lại tên brand
+                              trong câu. Use-case phổ biến nhất (xem `_rules.md` §B1).
 
 Body (sau dấu `---`)
 --------------------

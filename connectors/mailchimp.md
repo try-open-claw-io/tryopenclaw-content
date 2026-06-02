@@ -10,32 +10,20 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @mailchimp trong câu nhắn là agent vào thẳng danh sách khách và chiến dịch mail."
-    - "Tạo và gửi mail quảng cáo cho cả danh sách, thêm khách, xem ai mở và ai bấm."
-    - "Hợp khi muốn gửi cùng nội dung cho nhiều người một lúc."
+    - "Gõ @mailchimp vào khung chat để agent lo phần email marketing cho bạn."
+    - "Nêu rõ việc cần làm: gửi chiến dịch nào cho danh sách nào, thêm khách vào audience, hay xem số liệu mở/click. Càng chi tiết càng đúng đối tượng."
+    - "Sẵn link chiến dịch hay tên audience ('Khách thân thiết') thì gửi kèm để agent gửi đúng tệp khách."
   en:
-    - "Type @mailchimp in your message and the agent goes straight to your customer lists and campaigns."
-    - "Create and send promo emails to a whole list, add contacts, and see who opened and clicked."
-    - "Great when you want to send the same content to many people at once."
+    - "Type @mailchimp in the chat box so the agent handles your email marketing."
+    - "Spell out what you need: which campaign to which list, adding contacts to an audience, or open/click stats. The more detail, the more accurate the targeting."
+    - "Have a campaign link or audience name ('Loyal Customers')? Include it so the agent reaches the right list."
 tutorials:
   - title:
       vi: "Gửi chiến dịch khuyến mãi"
       en: "Send a promo campaign"
     prompt:
-      vi: "Gửi mail khuyến mãi Tết cho danh sách 'Khách thân thiết' trong Mailchimp."
-      en: "Send a seasonal holiday promo email to the 'Loyal Customers' Mailchimp list."
-  - title:
-      vi: "Thêm khách vào audience"
-      en: "Add contacts to audience"
-    prompt:
-      vi: "Thêm 50 khách mới từ Google Sheets vào audience 'Khách shop ABC' trên Mailchimp."
-      en: "Add 50 new contacts from Google Sheets to the 'Shop ABC Customers' Mailchimp audience."
-  - title:
-      vi: "Xem hiệu quả chiến dịch"
-      en: "Check campaign results"
-    prompt:
-      vi: "Mail khuyến mãi tuần trước có bao nhiêu người mở và bao nhiêu người click?"
-      en: "How many people opened and clicked the promo email I sent last week?"
+      vi: "@mailchimp gửi mail khuyến mãi cho danh sách 'Khách thân thiết'."
+      en: "@mailchimp send a promo email to the 'Loyal Customers' list."
 ---
 
 <!-- Body for future rich docs -->

@@ -48,8 +48,14 @@ Slug mới phải PR riêng để add vào enum + cập nhật file này.
 
 ## B. Soft rules (audit ⚠️ nếu lệch)
 
-### B1. Sample prompt #1 = use-case phổ biến nhất
-Prompt đầu tiên trong `tutorials[0].prompt.vi` **nên** phản ánh use-case phổ biến nhất của connector đó (action mà 80% end-user sẽ gọi đầu tiên sau khi cài). Prompt 2-3 bổ sung theo use-case phụ.
+### B1. Chỉ 1 tutorial = use-case phổ biến nhất
+Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh use-case phổ biến nhất (action mà 80% end-user sẽ gọi đầu tiên sau khi cài). Không liệt kê use-case phụ.
+
+### B1b. Prompt bắt đầu bằng @mention
+`prompt.vi` và `prompt.en` **phải bắt đầu** bằng `@<id>` của connector (vd `@gmail`, `@googlecalendar`, `@larksuite-tenant`) — đây là cú "gọi" connector trong khung chat.
+- Sau `@<id>` viết thường, là 1 câu mệnh lệnh tự nhiên (vd `@gmail mở 5 mail chưa đọc hôm nay.`).
+- **Không lặp lại tên brand** trong câu vì @mention đã chỉ rõ connector (❌ `@gmail mở mail Gmail...`).
+- Chỉ 1 câu duy nhất / lang.
 
 ### B2. Tone & xưng hô
 - **VN:** xưng "mình" hoặc lược chủ ngữ. Tránh "tôi/bạn" formal. Đuôi "giúp mình", "cho mình" được khuyến khích → giống user gõ thật.
@@ -86,7 +92,7 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C3.** `name.vi` + `name.en` giữ đúng brand casing (vd "Google Calendar" không phải "Googlecalendar").
 - [ ] **C4.** `description.vi` + `description.en` đều ≥ 1 câu, không rỗng, không quá 200 ký tự.
 - [ ] **C5.** `category` ∈ enum §A6.
-- [ ] **C6.** `tutorials` có ≥ 3 row, mỗi row đủ `title` + `prompt` cả vi + en.
+- [ ] **C6.** `tutorials` có đúng 1 row, đủ `title` + `prompt` cả vi + en; `prompt.vi`/`prompt.en` bắt đầu bằng `@<id>` (xem §B1b).
 - [ ] **C7.** Grep `[A-Z][a-zà-ỹ]+` trong tất cả `prompt.vi` và `prompt.en` → không có first name người (Mai/An/Lan/John/Alice/Sarah/Bob/Carol/David/Emma...).
 - [ ] **C8.** Grep "chị |anh |em |ông |bà |Mr\\.|Ms\\.|Mrs\\." → không có xưng hô gắn cá nhân.
 - [ ] **C9.** Grep email/SĐT pattern (`\\S+@\\S+`, `\\d{4,}`) → không có dữ liệu thật.

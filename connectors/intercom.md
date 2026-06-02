@@ -10,32 +10,20 @@ category: support
 popular: true
 howToUse:
   vi:
-    - "Gõ @intercom trong câu nhắn là agent mở thẳng hộp chat hỗ trợ khách."
-    - "Liệt kê chat chưa trả lời, trả lời ngay, dùng câu trả lời mẫu có sẵn."
-    - "Hợp hỗ trợ khách ngay trên web hoặc app."
+    - "Gõ @intercom vào khung chat để agent hỗ trợ khách cùng bạn."
+    - "Nói rõ bạn cần gì: xem chat chưa trả lời, trả lời khách, hay gắn câu mẫu. Kèm tên khách hoặc trạng thái chat cho trúng."
+    - "Có link hội thoại thì gửi kèm để agent mở đúng chat cần xử lý."
   en:
-    - "Type @intercom in your message and the agent opens your customer support chat directly."
-    - "List unanswered chats, reply in real time, and use saved reply templates."
-    - "Great for supporting customers right on your web or app."
+    - "Type @intercom in the chat box so the agent can support customers with you."
+    - "Say what you need: list unread chats, reply to a customer, or apply a macro. Include the customer name or chat status to get it right."
+    - "If you have a conversation link, include it so the agent opens the exact chat that needs work."
 tutorials:
   - title:
       vi: "List chat chưa trả lời"
       en: "List unread chats"
     prompt:
-      vi: "Liệt kê chat khách chưa được trả lời trong Intercom."
-      en: "List unread customer conversations in Intercom."
-  - title:
-      vi: "Trả lời chat mới"
-      en: "Reply to chat"
-    prompt:
-      vi: "Trả lời chat khách mới nhất bằng macro 'Tư vấn giá'."
-      en: "Reply to the latest customer chat with the 'Pricing intro' macro."
-  - title:
-      vi: "Áp macro"
-      en: "Apply macro"
-    prompt:
-      vi: "Áp macro 'Cảm ơn đã liên hệ' cho chat [mã chat] trong Intercom."
-      en: "Apply the 'Thanks for reaching out' macro to chat [chat ID] in Intercom."
+      vi: "@intercom liệt kê chat khách chưa được trả lời."
+      en: "@intercom list unread customer conversations."
 ---
 
 <!-- Body for future rich docs -->
