@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Cân nhắc giữa các lựa chọn để quyết định rõ ràng. Bạn nêu các phương án và tiêu chí quan tâm, skill lập bảng ưu nhược, chấm điểm theo trọng số, tóm gọn đánh đổi trong một câu kèm gợi ý sơ bộ, rồi kiểm lại rủi ro của phương án dẫn đầu. Quyết định cuối vẫn là của bạn.
+Cân nhắc giữa các lựa chọn để đi đến quyết định rõ ràng. Bạn nêu các phương án và tiêu chí quan trọng với mình, skill lập bảng ưu nhược, chấm điểm theo mức ưu tiên bạn đặt, gói gọn đánh đổi trong một câu kèm gợi ý chọn, rồi kiểm lại rủi ro của phương án dẫn đầu. Quyết định cuối vẫn là của bạn.
 
 ## Hướng dẫn
 

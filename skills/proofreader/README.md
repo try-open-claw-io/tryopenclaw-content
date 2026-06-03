@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Sửa lỗi và làm gọn văn bản tiếng Việt hoặc tiếng Anh mà vẫn giữ nguyên ý. Bạn dán đoạn cần sửa, skill sửa chính tả, ngữ pháp, dấu câu, rút gọn câu lủng củng, rồi trả về bản sạch kèm danh sách đã đổi gì và vì sao. Chỉnh được mức trang trọng, và đánh dấu câu mơ hồ thay vì tự ý viết lại.
+Sửa lỗi và làm gọn văn bản tiếng Việt hay tiếng Anh mà vẫn giữ nguyên ý. Bạn dán đoạn cần sửa, skill chỉnh chính tả, ngữ pháp, dấu câu, viết lại câu lủng củng cho gọn, rồi trả về bản hoàn chỉnh kèm danh sách đã sửa gì và vì sao. Điều chỉnh được mức trang trọng, và đánh dấu câu mơ hồ thay vì tự ý viết lại.
 
 ## Hướng dẫn
 

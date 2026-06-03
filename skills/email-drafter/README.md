@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Từ vài ý chính, có ngay email hoàn chỉnh đúng giọng và có tiêu đề. Bạn nêu nội dung muốn nói, skill viết thành email kèm tiêu đề, chỉnh giọng (trang trọng, thân thiện, dứt khoát, xin lỗi) bằng cả tiếng Việt lẫn tiếng Anh. Skill chỉ soạn text, không gửi và không truy cập hộp thư.
+Từ vài ý chính, bạn có ngay một email hoàn chỉnh — đúng giọng, có sẵn tiêu đề. Bạn nói nội dung muốn truyền đạt, skill viết trọn lá thư, chỉnh giọng (trang trọng, thân thiện, dứt khoát, xin lỗi) và viết được cả tiếng Việt lẫn tiếng Anh. Skill chỉ soạn bản nháp, không gửi và không truy cập hộp thư.
 
 ## Hướng dẫn
 

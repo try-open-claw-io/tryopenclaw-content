@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Chuyển ghi chú họp hoặc bản chép lại thành biên bản gọn gàng. Bạn dán nội dung thô, skill tóm tắt nội dung chính, liệt kê các quyết định và việc cần làm kèm người phụ trách, hạn chót, rồi đánh dấu những câu hỏi còn bỏ ngỏ. Kết quả định dạng sẵn, copy là dùng được.
+Chuyển ghi chú họp lộn xộn thành biên bản chỉn chu. Bạn dán ghi chú thô hoặc bản chép lại, skill tóm tắt ý chính, liệt kê các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản kết quả gọn gàng, copy ra dùng được ngay.
 
 ## Hướng dẫn
 
