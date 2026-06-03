@@ -19,11 +19,11 @@ howToUse:
     - "If you have a board or item link, include it so the agent opens the right place."
 tutorials:
   - title:
-      vi: "List task tuần"
-      en: "List week's tasks"
+      vi: "Task của mình"
+      en: "My tasks"
     prompt:
-      vi: "@monday liệt kê task tuần này trên board 'Marketing'."
-      en: "@monday list this week's tasks on the 'Marketing' board."
+      vi: "@monday xem các task giao cho mình."
+      en: "@monday show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

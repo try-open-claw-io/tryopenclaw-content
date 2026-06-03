@@ -19,11 +19,11 @@ howToUse:
     - "If you already have an event link, include it so the agent reschedules or adds guests to the right one."
 tutorials:
   - title:
-      vi: "Xem lịch ngày mai"
-      en: "Check tomorrow's events"
+      vi: "Xem lịch sắp tới"
+      en: "Check upcoming events"
     prompt:
-      vi: "@googlecalendar ngày mai mình có những cuộc họp nào?"
-      en: "@googlecalendar what meetings do I have tomorrow?"
+      vi: "@googlecalendar xem lịch sắp tới của mình."
+      en: "@googlecalendar show my upcoming events."
 ---
 
 <!-- Body for future rich docs -->

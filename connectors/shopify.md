@@ -19,11 +19,11 @@ howToUse:
     - "Paste a product or order link when you have one so the agent acts on the right item."
 tutorials:
   - title:
-      vi: "List đơn hôm nay"
-      en: "List today's orders"
+      vi: "Đơn gần đây"
+      en: "Recent orders"
     prompt:
-      vi: "@shopify liệt kê đơn hàng hôm nay."
-      en: "@shopify list today's orders."
+      vi: "@shopify xem các đơn hàng gần đây."
+      en: "@shopify show my recent orders."
 ---
 
 <!-- Body for future rich docs -->

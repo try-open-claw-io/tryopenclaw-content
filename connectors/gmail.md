@@ -19,11 +19,11 @@ howToUse:
     - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
 tutorials:
   - title:
-      vi: "Mở mail chưa đọc"
-      en: "Open unread mail"
+      vi: "Kiểm tra mail"
+      en: "Check email"
     prompt:
-      vi: "@gmail mở 5 mail mới chưa đọc từ khách hàng hôm nay."
-      en: "@gmail show me 5 unread emails from customers today."
+      vi: "@gmail kiểm tra mail chưa đọc của mình."
+      en: "@gmail check my unread emails."
 ---
 
 <!-- Body for future rich docs -->

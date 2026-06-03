@@ -19,11 +19,11 @@ howToUse:
     - "If you have a contact link, include it so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
-      vi: "Thêm lead"
-      en: "Add a lead"
+      vi: "Xem lead mới"
+      en: "Check leads"
     prompt:
-      vi: "@zoho thêm lead mới: tên khách, SĐT, công ty."
-      en: "@zoho add a new lead with name, phone, and company."
+      vi: "@zoho xem các lead mới gần đây."
+      en: "@zoho show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

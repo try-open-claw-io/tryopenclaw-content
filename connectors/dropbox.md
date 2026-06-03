@@ -19,11 +19,11 @@ howToUse:
     - "If you have a file or folder link, include it so the agent lands in the right folder, not the wrong one."
 tutorials:
   - title:
-      vi: "Share link folder"
-      en: "Share a folder"
+      vi: "File gần đây"
+      en: "Recent files"
     prompt:
-      vi: "@dropbox chia sẻ link folder ảnh sản phẩm cho khách."
-      en: "@dropbox share a link to the product photos folder with the customer."
+      vi: "@dropbox liệt kê file gần đây của mình."
+      en: "@dropbox list my recent files."
 ---
 
 <!-- Body for future rich docs -->

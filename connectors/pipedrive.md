@@ -19,11 +19,11 @@ howToUse:
     - "If you have a deal link, include it so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
-      vi: "Cập nhật deal"
-      en: "Update a deal"
+      vi: "Xem deal"
+      en: "Check deals"
     prompt:
-      vi: "@pipedrive cập nhật deal [tên deal] sang giai đoạn đàm phán."
-      en: "@pipedrive move deal [tên deal] to the negotiation stage."
+      vi: "@pipedrive xem các deal trong pipeline của mình."
+      en: "@pipedrive show the deals in my pipeline."
 ---
 
 <!-- Body for future rich docs -->

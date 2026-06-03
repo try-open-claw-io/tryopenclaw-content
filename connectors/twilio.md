@@ -19,11 +19,11 @@ howToUse:
     - "If you have a message template or phone number ready, include it so the agent reaches the right person with the right message."
 tutorials:
   - title:
-      vi: "Gửi SMS xác nhận"
-      en: "Send confirmation SMS"
+      vi: "Gửi SMS"
+      en: "Send an SMS"
     prompt:
-      vi: "@twilio gửi SMS xác nhận đặt lịch cho khách."
-      en: "@twilio send a booking confirmation SMS to the customer."
+      vi: "@twilio gửi SMS cho [số điện thoại]."
+      en: "@twilio send an SMS to [phone number]."
 ---
 
 <!-- Body for future rich docs -->

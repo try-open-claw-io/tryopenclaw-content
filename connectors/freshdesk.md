@@ -19,11 +19,11 @@ howToUse:
     - "If you have a ticket link, include it so the agent opens the exact one that needs work."
 tutorials:
   - title:
-      vi: "List ticket hôm nay"
-      en: "List today's tickets"
+      vi: "Ticket chưa xử lý"
+      en: "Open tickets"
     prompt:
-      vi: "@freshdesk liệt kê ticket khách báo lỗi hôm nay."
-      en: "@freshdesk list today's customer-reported tickets."
+      vi: "@freshdesk xem các ticket chưa giải quyết."
+      en: "@freshdesk show unresolved tickets."
 ---
 
 <!-- Body for future rich docs -->

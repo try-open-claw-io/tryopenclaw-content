@@ -19,11 +19,11 @@ howToUse:
     - "If you already have a meeting link, include it so the agent reschedules or resends the right one."
 tutorials:
   - title:
-      vi: "Tạo phòng họp"
-      en: "Create a meeting"
+      vi: "Xem cuộc họp"
+      en: "Check meetings"
     prompt:
-      vi: "@zoom tạo phòng 1 tiếng cho demo khách thứ 2 lúc 14h."
-      en: "@zoom create a 1-hour meeting for the customer demo on Monday at 2 PM."
+      vi: "@zoom xem các cuộc họp sắp tới của mình."
+      en: "@zoom show my upcoming meetings."
 ---
 
 <!-- Body for future rich docs -->

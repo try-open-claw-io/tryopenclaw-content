@@ -19,11 +19,11 @@ howToUse:
     - "If you have a sheet link, include it so the agent opens the right spreadsheet, not the wrong file."
 tutorials:
   - title:
-      vi: "Xem 10 đơn mới nhất"
-      en: "List recent orders"
+      vi: "Xem bảng tính"
+      en: "List spreadsheets"
     prompt:
-      vi: "@googlesheets liệt kê 10 đơn mới nhất trong sheet 'Đơn hàng'."
-      en: "@googlesheets list the 10 most recent orders from the 'Orders' sheet."
+      vi: "@googlesheets liệt kê bảng tính gần đây của mình."
+      en: "@googlesheets list my recent spreadsheets."
 ---
 
 <!-- Body for future rich docs -->

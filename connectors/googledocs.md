@@ -19,11 +19,11 @@ howToUse:
     - "If you have a doc link, include it so the agent opens the right document without searching."
 tutorials:
   - title:
-      vi: "Mở doc"
-      en: "Open a doc"
+      vi: "Tài liệu gần đây"
+      en: "Recent docs"
     prompt:
-      vi: "@googledocs mở doc 'Báo cáo Q2' và tóm tắt nội dung chính."
-      en: "@googledocs open the 'Q2 Report' doc and summarize the main points."
+      vi: "@googledocs liệt kê tài liệu gần đây của mình."
+      en: "@googledocs list my recent documents."
 ---
 
 <!-- Body for future rich docs -->

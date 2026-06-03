@@ -19,11 +19,11 @@ howToUse:
     - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
 tutorials:
   - title:
-      vi: "Tìm file"
-      en: "Find a file"
+      vi: "File gần đây"
+      en: "Recent files"
     prompt:
-      vi: "@googledrive tìm file hợp đồng khách."
-      en: "@googledrive find the customer contract file."
+      vi: "@googledrive liệt kê file gần đây của mình."
+      en: "@googledrive list my recent files."
 ---
 
 <!-- Body for future rich docs -->

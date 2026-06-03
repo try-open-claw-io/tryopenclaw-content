@@ -19,11 +19,11 @@ howToUse:
     - "Have a campaign link or audience name ('Loyal Customers')? Include it so the agent reaches the right list."
 tutorials:
   - title:
-      vi: "Gửi chiến dịch khuyến mãi"
-      en: "Send a promo campaign"
+      vi: "Xem chiến dịch"
+      en: "Check campaigns"
     prompt:
-      vi: "@mailchimp gửi mail khuyến mãi cho danh sách 'Khách thân thiết'."
-      en: "@mailchimp send a promo email to the 'Loyal Customers' list."
+      vi: "@mailchimp xem hiệu quả chiến dịch gần đây."
+      en: "@mailchimp check my recent campaign performance."
 ---
 
 <!-- Body for future rich docs -->

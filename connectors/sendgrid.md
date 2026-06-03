@@ -19,11 +19,11 @@ howToUse:
     - "If you have an email template or the customer's address, include it so the agent reaches the right person with the right message."
 tutorials:
   - title:
-      vi: "Mail xác nhận đơn"
-      en: "Send order confirmation"
+      vi: "Xem thống kê mail"
+      en: "Check email stats"
     prompt:
-      vi: "@sendgrid gửi mail xác nhận đơn hàng kèm mã đơn cho khách."
-      en: "@sendgrid send an order confirmation email with the order code to the customer."
+      vi: "@sendgrid xem thống kê mail đã gửi gần đây."
+      en: "@sendgrid check my recent email stats."
 ---
 
 <!-- Body for future rich docs -->

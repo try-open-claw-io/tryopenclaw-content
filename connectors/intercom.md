@@ -19,11 +19,11 @@ howToUse:
     - "If you have a conversation link, include it so the agent opens the exact chat that needs work."
 tutorials:
   - title:
-      vi: "List chat chưa trả lời"
-      en: "List unread chats"
+      vi: "Xem chat chưa trả lời"
+      en: "Check open chats"
     prompt:
-      vi: "@intercom liệt kê chat khách chưa được trả lời."
-      en: "@intercom list unread customer conversations."
+      vi: "@intercom xem các cuộc trò chuyện chưa trả lời."
+      en: "@intercom show unanswered conversations."
 ---
 
 <!-- Body for future rich docs -->

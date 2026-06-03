@@ -19,11 +19,11 @@ howToUse:
     - "If you have a page link, include it so the agent opens the right doc without digging."
 tutorials:
   - title:
-      vi: "Tìm trang"
-      en: "Search pages"
+      vi: "Trang gần đây"
+      en: "Recent pages"
     prompt:
-      vi: "@confluence tìm trang quy trình onboarding nhân viên."
-      en: "@confluence find the employee onboarding process page."
+      vi: "@confluence liệt kê các trang gần đây trong wiki của mình."
+      en: "@confluence list recent pages in my wiki."
 ---
 
 <!-- Body for future rich docs -->

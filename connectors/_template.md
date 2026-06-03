@@ -10,11 +10,11 @@ category: scheduling
 popular: true
 tutorials:
   - title:
-      vi: "Tạo link đặt lịch"
-      en: "Create booking link"
+      vi: "Xem lịch hẹn"
+      en: "Check bookings"
     prompt:
-      vi: "@calendly tạo link đặt tư vấn 30 phút, gửi khách qua mail."
-      en: "@calendly create a 30-minute consultation link and email it to the customer."
+      vi: "@calendly xem các lịch hẹn sắp tới của mình."
+      en: "@calendly show my upcoming bookings."
 ---
 
 <!--
@@ -49,11 +49,13 @@ category      Slug 1 từ. Allowed enum (xem `_rules.md` §A6):
 popular       true nếu connector thuộc nhóm phổ biến cài đặt cao (Top tier).
               false hoặc bỏ qua nếu là long-tail / nice-to-have.
 
-tutorials     Đúng 1 row — use-case phổ biến nhất của connector.
-              - title.vi/en   2-4 từ, mệnh lệnh (vd: "Search emails" / "Tìm mail").
-              - prompt.vi/en  1 câu user gõ tự nhiên, BẮT ĐẦU bằng @<id> (vd "@gmail mở 5 mail...").
-                              @mention chính là cú "gọi" connector → không lặp lại tên brand
-                              trong câu. Use-case phổ biến nhất (xem `_rules.md` §B1).
+tutorials     Đúng 1 row — hành động đơn giản & phổ quát nhất (thường là đọc/kiểm tra/liệt kê).
+              - title.vi/en   2-4 từ, mệnh lệnh (vd: "Check email" / "Kiểm tra mail").
+              - prompt.vi/en  1 câu user gõ tự nhiên, BẮT ĐẦU bằng @<id>.
+                              @mention chính là cú "gọi" connector → không lặp lại tên brand trong câu.
+                              ƯU TIÊN zero-input: copy-paste chạy ngay, tự khoanh phạm vi bằng
+                              "của mình"/"gần đây"/"giao cho mình" (vd "@gmail kiểm tra mail chưa đọc của mình.").
+                              Chỉ dùng đúng 1 [noun] khi connector thuần gửi/tạo (xem `_rules.md` §B1, §B4).
 
 Body (sau dấu `---`)
 --------------------

@@ -19,11 +19,11 @@ howToUse:
     - "If you have a message link or channel name, include it so the agent posts in the right place."
 tutorials:
   - title:
-      vi: "Gửi tin nhóm"
-      en: "Send to a channel"
+      vi: "Tóm tắt tin nhắn"
+      en: "Summarize messages"
     prompt:
-      vi: "@microsoftteams gửi tin nhắn nhóm IT về sự cố mạng đang diễn ra."
-      en: "@microsoftteams send a message to the IT channel about an ongoing network outage."
+      vi: "@microsoftteams tóm tắt tin nhắn mới của mình."
+      en: "@microsoftteams summarize my recent messages."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,11 +19,11 @@ howToUse:
     - "Paste a product or order link when you have one so the agent acts on the right item."
 tutorials:
   - title:
-      vi: "List đơn hôm nay"
-      en: "List today's orders"
+      vi: "Đơn gần đây"
+      en: "Recent orders"
     prompt:
-      vi: "@woocommerce liệt kê đơn hôm nay."
-      en: "@woocommerce list today's orders."
+      vi: "@woocommerce xem các đơn hàng gần đây."
+      en: "@woocommerce show my recent orders."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,11 +19,11 @@ howToUse:
     - "Add a message link or channel name (#sales, #support) when you have one so the agent locates it much faster."
 tutorials:
   - title:
-      vi: "Gửi thông báo kênh"
-      en: "Post to a channel"
+      vi: "Tóm tắt tin nhắn"
+      en: "Summarize messages"
     prompt:
-      vi: "@slack gửi thông báo vào kênh #sales: có đơn mới 500k."
-      en: "@slack post to the #sales channel: a new 500k order just came in."
+      vi: "@slack tóm tắt tin nhắn mới của mình."
+      en: "@slack summarize my recent messages."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,11 +19,11 @@ howToUse:
     - "If you have an issue link, include it so the agent opens the right task without searching."
 tutorials:
   - title:
-      vi: "List task"
-      en: "List tasks"
+      vi: "Task của mình"
+      en: "My tasks"
     prompt:
-      vi: "@linear liệt kê task tuần này của team."
-      en: "@linear list this week's team tasks."
+      vi: "@linear xem các task đang giao cho mình."
+      en: "@linear show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

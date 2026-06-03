@@ -19,11 +19,11 @@ howToUse:
     - "Have a repo or PR link? Drop it in so the agent jumps straight to the right spot."
 tutorials:
   - title:
-      vi: "List PR chờ review"
-      en: "List open PRs"
+      vi: "PR chờ review"
+      en: "PRs to review"
     prompt:
-      vi: "@bitbucket liệt kê các pull request đang chờ review trong repo [tên repo]."
-      en: "@bitbucket list open pull requests waiting for review in repo [tên repo]."
+      vi: "@bitbucket xem các pull request đang chờ mình review."
+      en: "@bitbucket show pull requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->

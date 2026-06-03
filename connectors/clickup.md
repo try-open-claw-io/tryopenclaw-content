@@ -19,11 +19,11 @@ howToUse:
     - "If you have a task link or project name, include it so the agent opens the right work."
 tutorials:
   - title:
-      vi: "List task chưa xong"
-      en: "List open tasks"
+      vi: "Task của mình"
+      en: "My tasks"
     prompt:
-      vi: "@clickup liệt kê task chưa xong của dự án A."
-      en: "@clickup list open tasks in project A."
+      vi: "@clickup xem các task giao cho mình."
+      en: "@clickup show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

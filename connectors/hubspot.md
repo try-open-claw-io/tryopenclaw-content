@@ -19,11 +19,11 @@ howToUse:
     - "Have a contact or deal link? Drop it in so the agent opens the right opportunity, not the wrong customer."
 tutorials:
   - title:
-      vi: "Thêm lead mới"
-      en: "Add a new lead"
+      vi: "Xem lead mới"
+      en: "Check recent leads"
     prompt:
-      vi: "@hubspot thêm lead mới: tên khách, SĐT, công ty, nguồn lead."
-      en: "@hubspot add a new lead with name, phone, company, and source."
+      vi: "@hubspot xem các lead mới gần đây."
+      en: "@hubspot show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

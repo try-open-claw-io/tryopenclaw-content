@@ -19,11 +19,11 @@ howToUse:
     - "If you already have an event link, include it so the agent reschedules or adds guests to the right one."
 tutorials:
   - title:
-      vi: "Đặt cuộc họp"
-      en: "Create a meeting"
+      vi: "Xem lịch sắp tới"
+      en: "Check upcoming events"
     prompt:
-      vi: "@outlookcalendar đặt cuộc họp 10 giờ sáng thứ 2, kéo dài 1 tiếng."
-      en: "@outlookcalendar create a 1-hour meeting on Monday at 10 AM."
+      vi: "@outlookcalendar xem lịch sắp tới của mình."
+      en: "@outlookcalendar show my upcoming events."
 ---
 
 <!-- Body for future rich docs -->

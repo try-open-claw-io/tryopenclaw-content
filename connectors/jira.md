@@ -19,11 +19,11 @@ howToUse:
     - "Have an issue link or key (PROJ-123)? Drop it in so the agent jumps straight to the right work."
 tutorials:
   - title:
-      vi: "Mở ticket bug"
-      en: "Open a bug ticket"
+      vi: "Task của mình"
+      en: "My tasks"
     prompt:
-      vi: "@jira mở ticket bug khách vừa báo cáo, gán team Frontend."
-      en: "@jira open a bug ticket from the customer's latest report, assigned to the Frontend team."
+      vi: "@jira xem các task đang giao cho mình."
+      en: "@jira show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

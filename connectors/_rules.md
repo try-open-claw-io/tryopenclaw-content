@@ -48,8 +48,8 @@ Slug mới phải PR riêng để add vào enum + cập nhật file này.
 
 ## B. Soft rules (audit ⚠️ nếu lệch)
 
-### B1. Chỉ 1 tutorial = use-case phổ biến nhất
-Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh use-case phổ biến nhất (action mà 80% end-user sẽ gọi đầu tiên sau khi cài). Không liệt kê use-case phụ.
+### B1. Chỉ 1 tutorial = hành động đơn giản & phổ quát nhất
+Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh **hành động đơn giản & phổ quát nhất** của connector (thường là đọc/kiểm tra/liệt kê) mà **mọi end-user copy-paste là chạy được ngay, không cần điền gì, không phụ thuộc bối cảnh riêng**. Không liệt kê use-case phụ.
 
 ### B1b. Prompt bắt đầu bằng @mention
 `prompt.vi` và `prompt.en` **phải bắt đầu** bằng `@<id>` của connector (vd `@gmail`, `@googlecalendar`, `@larksuite-tenant`) — đây là cú "gọi" connector trong khung chat.
@@ -65,18 +65,19 @@ Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh u
 - 2-5 từ. Mệnh lệnh hoặc danh động từ ("Tạo link đặt lịch", "Create booking link").
 - Không lặp tên connector trong title ("Tạo Gmail mail" ❌ — connector đã rõ trong context).
 
-### B4. Prompt = mẫu guide, không phải workflow cứng
-- Prompt là pattern user xem rồi tự thay tham số bằng ngữ cảnh thật. **Tránh hardcode topic cụ thể.**
-- **Format placeholder:** `[mô tả tham số]` — square bracket bọc danh từ tiếng Việt mô tả tham số (tên file, chủ đề, số lượng, khu vực…). Tránh `X`/`Y` trừu tượng — non-tech không hiểu nên thay gì.
-- **Giữ:** action verb (tạo/gửi/mở/list), team/department phổ biến (Sales, Marketing, Engineering, HR), số lượng generic (10/20/100), khung giờ (2-5h chiều), tên kênh/folder/template generic ('Inventory', '#sales', 'Sales workspace').
-- **Bọc `[noun]`:** tên chiến dịch, tên blog post, tên file/doc/slide, tên product, event (Tết/Q3 launch), industry/region cụ thể, mô tả lỗi.
-- Ví dụ:
-  - ❌ "Đăng bài blog 'Mẹo dùng sản phẩm mùa hè' lên WordPress." (hardcode)
-  - ❌ "Đăng bài blog X lên WordPress kèm ảnh bìa." (X mơ hồ)
-  - ✅ "Đăng bài blog với [tiêu đề] và [ảnh bìa] lên WordPress."
-  - ✅ "Tạo banner Facebook cho chiến dịch [tên chiến dịch] trên Canva."
-  - ✅ "Tạo link Stripe [số tiền USD] cho khách nước ngoài."
-- Đừng để prompt quá trống ("Show me my data") — vẫn cần đủ tham số có nhãn rõ để user thấy được cú pháp.
+### B4. Prompt = lệnh đơn giản nhất, ưu tiên zero-input
+- Prompt phải **chạy được ngay khi copy-paste** cho mọi tài khoản — **không hardcode ngữ cảnh cụ thể** (số liệu, ngày "hôm nay", tên doc/board/kênh thật, scenario riêng).
+- **Mặc định: zero-input.** Chọn 1 hành động đọc/kiểm tra/liệt kê tự khoanh phạm vi bằng "của mình" / "gần đây" / "giao cho mình" / "đang chờ" — không cần user điền gì.
+  - ✅ "@gmail kiểm tra mail chưa đọc của mình."
+  - ✅ "@shopify xem các đơn hàng gần đây."
+  - ✅ "@jira xem các task đang giao cho mình."
+- **Placeholder chỉ là ngoại lệ.** Chỉ khi connector **thuần gửi/tạo** và không có hành động đọc có nghĩa → dùng **đúng 1** `[noun]` cho phần bắt buộc nhập. Format `[mô tả tham số]` (danh từ tiếng Việt, không `X`/`Y`).
+  - ✅ "@twilio gửi SMS cho [số điện thoại]." (Twilio không có inbox để đọc)
+  - ✅ "@linkedin tìm ứng viên cho [vị trí cần tuyển]."
+- **Tránh:**
+  - ❌ "@gmail mở 5 mail chưa đọc từ khách hàng hôm nay." (hardcode số/nguồn/ngày)
+  - ❌ "@slack gửi thông báo vào #sales: có đơn mới 500k." (scenario cứng)
+  - ❌ nhồi nhiều `[noun]` vào 1 prompt — chỉ tối đa 1, và chỉ khi bắt buộc.
 
 ### B5. Length prompt
 - ≤ 25 từ / lang. Dài hơn → user khó hình dung gõ.
@@ -96,7 +97,7 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C7.** Grep `[A-Z][a-zà-ỹ]+` trong tất cả `prompt.vi` và `prompt.en` → không có first name người (Mai/An/Lan/John/Alice/Sarah/Bob/Carol/David/Emma...).
 - [ ] **C8.** Grep "chị |anh |em |ông |bà |Mr\\.|Ms\\.|Mrs\\." → không có xưng hô gắn cá nhân.
 - [ ] **C9.** Grep email/SĐT pattern (`\\S+@\\S+`, `\\d{4,}`) → không có dữ liệu thật.
-- [ ] **C10.** Sample prompt #1 phản ánh use-case phổ biến nhất của connector (xem §B1).
+- [ ] **C10.** Prompt là hành động phổ quát zero-input — copy-paste chạy được mọi tài khoản, không hardcode ngữ cảnh; chỉ dùng `[noun]` khi connector thuần gửi/tạo (xem §B1, §B4).
 - [ ] **C11.** Đọc lại description: end-user (không phải dev) có hiểu app này làm gì không?
 - [ ] **C12.** Đọc lại prompt: nếu copy-paste vào agent chat, agent có gọi đúng connector ko?
 

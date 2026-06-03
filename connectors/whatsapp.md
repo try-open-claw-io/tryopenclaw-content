@@ -19,11 +19,11 @@ howToUse:
     - "If you have a phone number or group name, include it so the agent reaches the right person."
 tutorials:
   - title:
-      vi: "Gửi tin xác nhận"
-      en: "Send confirmation"
+      vi: "Xem tin nhắn"
+      en: "Check messages"
     prompt:
-      vi: "@whatsapp gửi tin xác nhận đơn cho khách."
-      en: "@whatsapp send an order confirmation message to the customer."
+      vi: "@whatsapp xem tin nhắn khách gần đây."
+      en: "@whatsapp check recent customer messages."
 ---
 
 <!-- Body for future rich docs -->

@@ -19,11 +19,11 @@ howToUse:
     - "If you already have a meeting link, include it so the agent reschedules or cancels the right one."
 tutorials:
   - title:
-      vi: "Tạo link đặt lịch"
-      en: "Create a booking link"
+      vi: "Xem lịch hẹn"
+      en: "Check bookings"
     prompt:
-      vi: "@calendly tạo link đặt tư vấn 30 phút, gửi khách qua mail giúp mình."
-      en: "@calendly create a 30-minute booking link and email it to the customer for me."
+      vi: "@calendly xem các lịch hẹn sắp tới của mình."
+      en: "@calendly show my upcoming bookings."
 ---
 
 <!-- Body for future rich docs -->

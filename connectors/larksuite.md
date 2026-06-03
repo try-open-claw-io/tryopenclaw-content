@@ -19,11 +19,11 @@ howToUse:
     - "If you have a group or doc link, include it so the agent posts in the right place."
 tutorials:
   - title:
-      vi: "Gửi tin nhóm"
-      en: "Send to a group"
+      vi: "Xem tin nhắn"
+      en: "Check messages"
     prompt:
-      vi: "@larksuite gửi tin vào nhóm 'Sales'."
-      en: "@larksuite send a message to the 'Sales' group."
+      vi: "@larksuite xem tin nhắn mới của mình."
+      en: "@larksuite check my recent messages."
 ---
 
 <!-- Body for future rich docs -->

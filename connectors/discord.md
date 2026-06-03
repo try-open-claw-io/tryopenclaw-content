@@ -19,11 +19,11 @@ howToUse:
     - "If you have a message link or channel name, include it so the agent posts in the right place."
 tutorials:
   - title:
-      vi: "Gửi thông báo kênh"
-      en: "Post announcement"
+      vi: "Xem tin mới"
+      en: "Check messages"
     prompt:
-      vi: "@discord gửi thông báo sự kiện vào kênh #community."
-      en: "@discord post the event announcement to the #community channel."
+      vi: "@discord xem tin nhắn mới trong server của mình."
+      en: "@discord check recent messages in my server."
 ---
 
 <!-- Body for future rich docs -->

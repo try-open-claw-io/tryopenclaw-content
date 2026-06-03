@@ -19,11 +19,11 @@ howToUse:
     - "If you have an opportunity or contact link, include it so the agent opens the right one, not the wrong customer."
 tutorials:
   - title:
-      vi: "Cập nhật opportunity"
-      en: "Update opportunity"
+      vi: "Xem cơ hội"
+      en: "Check opportunities"
     prompt:
-      vi: "@salesforce cập nhật opportunity [tên opportunity] sang giai đoạn đàm phán."
-      en: "@salesforce move opportunity [tên opportunity] to the negotiation stage."
+      vi: "@salesforce xem các cơ hội bán hàng gần đây."
+      en: "@salesforce show my recent opportunities."
 ---
 
 <!-- Body for future rich docs -->

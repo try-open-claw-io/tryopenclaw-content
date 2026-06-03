@@ -19,11 +19,11 @@ howToUse:
     - "If you have a ticket link, include it so the agent opens the exact one that needs work."
 tutorials:
   - title:
-      vi: "List ticket ưu tiên"
-      en: "List priority tickets"
+      vi: "Ticket chưa xử lý"
+      en: "Open tickets"
     prompt:
-      vi: "@zendesk liệt kê ticket priority cao chưa giải quyết."
-      en: "@zendesk list unresolved high-priority tickets."
+      vi: "@zendesk xem các ticket chưa giải quyết."
+      en: "@zendesk show unresolved tickets."
 ---
 
 <!-- Body for future rich docs -->

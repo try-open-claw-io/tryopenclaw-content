@@ -19,11 +19,11 @@ howToUse:
     - "If you have the user's email or department name, include it so the agent assigns the right person to the right role."
 tutorials:
   - title:
-      vi: "Thêm user mới"
-      en: "Add a user"
+      vi: "Xem người dùng"
+      en: "List users"
     prompt:
-      vi: "@larksuite-tenant thêm user mới vào tenant, gắn phòng IT."
-      en: "@larksuite-tenant add a new user to the tenant, assigned to the IT department."
+      vi: "@larksuite-tenant liệt kê người dùng trong tenant."
+      en: "@larksuite-tenant list users in the tenant."
 ---
 
 <!-- Body for future rich docs -->

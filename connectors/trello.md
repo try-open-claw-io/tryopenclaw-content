@@ -19,11 +19,11 @@ howToUse:
     - "Add a card link or board name ('Sales') so the agent acts on the right place."
 tutorials:
   - title:
-      vi: "Tạo card mới"
-      en: "Create a card"
+      vi: "Thẻ của mình"
+      en: "My cards"
     prompt:
-      vi: "@trello tạo card mới ở cột 'Đang làm': xử lý đơn hoàn."
-      en: "@trello create a new card in the 'Doing' column: handle refund order."
+      vi: "@trello xem các thẻ giao cho mình."
+      en: "@trello show cards assigned to me."
 ---
 
 <!-- Body for future rich docs -->

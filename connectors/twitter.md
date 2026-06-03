@@ -19,11 +19,11 @@ howToUse:
     - "If you have a post link or image to attach, include it so the agent publishes the right content."
 tutorials:
   - title:
-      vi: "Đăng tweet"
-      en: "Post a tweet"
+      vi: "Xem tương tác"
+      en: "Check engagement"
     prompt:
-      vi: "@twitter đăng tweet ra mắt sản phẩm mới kèm link landing page."
-      en: "@twitter post a tweet announcing the new product with the landing-page link."
+      vi: "@twitter xem tương tác bài đăng gần đây của mình."
+      en: "@twitter check engagement on my recent posts."
 ---
 
 <!-- Body for future rich docs -->

@@ -20,10 +20,10 @@ howToUse:
 tutorials:
   - title:
       vi: "Tìm ứng viên"
-      en: "Search candidates"
+      en: "Find candidates"
     prompt:
-      vi: "@linkedin tìm 10 dev React 3 năm kinh nghiệm."
-      en: "@linkedin find 10 React developers with 3 years of experience."
+      vi: "@linkedin tìm ứng viên cho [vị trí cần tuyển]."
+      en: "@linkedin find candidates for [role]."
 ---
 
 <!-- Body for future rich docs -->

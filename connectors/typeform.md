@@ -19,11 +19,11 @@ howToUse:
     - "If you have a form link, include it so the agent opens the right form."
 tutorials:
   - title:
-      vi: "Tạo form đăng ký"
-      en: "Create a signup form"
+      vi: "Xem phản hồi"
+      en: "Check responses"
     prompt:
-      vi: "@typeform tạo form đăng ký nhận tư vấn gồm 5 câu hỏi: tên, SĐT, email, nhu cầu, ngân sách."
-      en: "@typeform create a signup form with 5 questions: name, phone, email, need, and budget."
+      vi: "@typeform xem phản hồi mới từ form của mình."
+      en: "@typeform check recent form responses."
 ---
 
 <!-- Body for future rich docs -->

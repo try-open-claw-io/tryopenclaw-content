@@ -19,11 +19,11 @@ howToUse:
     - "If you have a task link or project name, include it so the agent assigns the right work to the right person."
 tutorials:
   - title:
-      vi: "Giao task"
-      en: "Assign a task"
+      vi: "Task của mình"
+      en: "My tasks"
     prompt:
-      vi: "@asana giao task 'Review báo cáo Q2' cho thành viên team, hạn thứ 6."
-      en: "@asana assign 'Review Q2 report' to a teammate with a Friday deadline."
+      vi: "@asana xem các task giao cho mình."
+      en: "@asana show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

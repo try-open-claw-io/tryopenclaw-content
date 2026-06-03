@@ -19,11 +19,11 @@ howToUse:
     - "If you have a base or table link, include it so the agent opens the right table, not the wrong data."
 tutorials:
   - title:
-      vi: "Thêm sản phẩm"
-      en: "Add a product"
+      vi: "Xem base"
+      en: "List bases"
     prompt:
-      vi: "@airtable thêm sản phẩm mới vào catalog: tên, giá, ảnh, tồn kho."
-      en: "@airtable add a new product to the catalog: name, price, photo, stock."
+      vi: "@airtable liệt kê các base gần đây của mình."
+      en: "@airtable list my recent bases."
 ---
 
 <!-- Body for future rich docs -->

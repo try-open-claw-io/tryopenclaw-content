@@ -19,11 +19,11 @@ howToUse:
     - "If you have a link to the page or database, drop it in so the agent lands in the right spot right away."
 tutorials:
   - title:
-      vi: "Tìm tài liệu"
-      en: "Search docs"
+      vi: "Trang gần đây"
+      en: "Recent pages"
     prompt:
-      vi: "@notion tìm tài liệu hướng dẫn xử lý hoàn tiền."
-      en: "@notion find the refund handling guide."
+      vi: "@notion liệt kê các trang gần đây của mình."
+      en: "@notion list my recent pages."
 ---
 
 <!-- Body for future rich docs -->

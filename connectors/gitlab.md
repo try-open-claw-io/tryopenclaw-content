@@ -19,11 +19,11 @@ howToUse:
     - "Have a repo, MR, or pipeline link? Drop it in so the agent jumps straight to the right spot."
 tutorials:
   - title:
-      vi: "List MR chờ review"
-      en: "List open MRs"
+      vi: "MR chờ review"
+      en: "MRs to review"
     prompt:
-      vi: "@gitlab liệt kê merge request đang chờ review."
-      en: "@gitlab list open merge requests waiting for review."
+      vi: "@gitlab xem các merge request đang chờ mình review."
+      en: "@gitlab show merge requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->

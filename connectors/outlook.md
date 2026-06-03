@@ -19,11 +19,11 @@ howToUse:
     - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
 tutorials:
   - title:
-      vi: "Mở mail mới"
-      en: "Open recent mail"
+      vi: "Kiểm tra mail"
+      en: "Check email"
     prompt:
-      vi: "@outlook mở mail mới chưa đọc hôm nay."
-      en: "@outlook open unread emails from today."
+      vi: "@outlook kiểm tra mail chưa đọc của mình."
+      en: "@outlook check my unread emails."
 ---
 
 <!-- Body for future rich docs -->

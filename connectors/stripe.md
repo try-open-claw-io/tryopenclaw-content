@@ -19,11 +19,11 @@ howToUse:
     - "If you have a transaction ID or order link, paste it so the agent refunds or reconciles the right charge."
 tutorials:
   - title:
-      vi: "Tạo link thanh toán"
-      en: "Create payment link"
+      vi: "Xem thanh toán"
+      en: "Check payments"
     prompt:
-      vi: "@stripe tạo link thanh toán 500 USD cho khách nước ngoài."
-      en: "@stripe create a payment link for 500 USD to send to an international customer."
+      vi: "@stripe xem các khoản thanh toán gần đây."
+      en: "@stripe show my recent payments."
 ---
 
 <!-- Body for future rich docs -->

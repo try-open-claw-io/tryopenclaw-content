@@ -19,11 +19,11 @@ howToUse:
     - "Have a repo, issue, or PR link? Drop it in so the agent jumps straight to the right spot."
 tutorials:
   - title:
-      vi: "Tạo issue"
-      en: "Create an issue"
+      vi: "PR chờ review"
+      en: "PRs to review"
     prompt:
-      vi: "@github tạo issue mới: lỗi đăng nhập trang chủ."
-      en: "@github create a new issue: login broken on the home page."
+      vi: "@github xem các pull request đang chờ mình review."
+      en: "@github show pull requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->
