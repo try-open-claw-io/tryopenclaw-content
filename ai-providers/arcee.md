@@ -18,7 +18,7 @@ instructions:
     - "Name it, copy the key (shown only once), and paste it below."
     - "Note: new accounts get $20 in free trial credit."
 keyUrl: "https://conductor.arcee.ai/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

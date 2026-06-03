@@ -18,7 +18,7 @@ instructions:
     - "Copy the key (cpk_...) and paste it below."
     - "Note: some models have a free tier; paid models need a topped-up balance."
 keyUrl: "https://chutes.ai/app/api"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

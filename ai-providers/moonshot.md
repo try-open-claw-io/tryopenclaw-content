@@ -18,7 +18,7 @@ instructions:
     - "Copy the key (sk-...) and paste it below."
     - "Note: the .cn platform requires a Chinese phone number; use platform.moonshot.ai from outside China."
 keyUrl: "https://platform.moonshot.ai/console/api-keys"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

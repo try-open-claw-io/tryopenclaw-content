@@ -16,7 +16,7 @@ instructions:
     - "Open API Keys → Create new key."
     - "Copy the key and paste it below."
 keyUrl: "https://console.mistral.ai/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

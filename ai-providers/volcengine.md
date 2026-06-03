@@ -20,7 +20,7 @@ instructions:
     - "Click View, copy the key, and paste it below."
     - "Note: you must activate the model before calling it; signup needs a Chinese phone number and real-name verification."
 keyUrl: "https://console.volcengine.com/ark"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

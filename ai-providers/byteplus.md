@@ -20,7 +20,7 @@ instructions:
     - "Copy the key and paste it below."
     - "Note: a key only works in the region/project where it was created."
 keyUrl: "https://console.byteplus.com/ark/region:ark+ap-southeast-1/apiKey"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

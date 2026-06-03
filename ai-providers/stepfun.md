@@ -18,7 +18,7 @@ instructions:
     - "Create a new key, copy it, and paste it below."
     - "Note: the .com platform requires a +86 phone number; use platform.stepfun.ai from outside China."
 keyUrl: "https://platform.stepfun.ai/interface-key"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

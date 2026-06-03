@@ -18,7 +18,7 @@ instructions:
     - "Generate a new key, copy it, and paste it below."
     - "Note: a payment method or subscription is required before the key works."
 keyUrl: "https://synthetic.new/user-settings/api"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

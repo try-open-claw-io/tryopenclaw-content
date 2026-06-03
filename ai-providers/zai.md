@@ -18,7 +18,7 @@ instructions:
     - "Copy the key (in id.secret form) and paste it below."
     - "Note: the key has two dot-separated parts, not the sk- format."
 keyUrl: "https://z.ai/manage-apikey/apikey-list"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

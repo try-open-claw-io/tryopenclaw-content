@@ -20,7 +20,7 @@ instructions:
     - "Copy the key (shown only once) and paste it below."
     - "Note: many SDKs require both the Group ID and the API key."
 keyUrl: "https://platform.minimax.io/user-center/basic-information/interface-key"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

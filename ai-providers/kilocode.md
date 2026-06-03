@@ -18,7 +18,7 @@ instructions:
     - "Scroll to the bottom of the page, copy the API key, and paste it below."
     - "Note: new accounts include trial credit; there is no separate Create Key button — the key lives at the bottom of your profile."
 keyUrl: "https://app.kilo.ai/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

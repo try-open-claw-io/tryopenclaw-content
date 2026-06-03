@@ -16,7 +16,7 @@ instructions:
     - "Click New token with Read (or Fine-grained) scope."
     - "Copy the token (hf_...) and paste it below."
 keyUrl: "https://huggingface.co/settings/tokens"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

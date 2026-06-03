@@ -18,7 +18,7 @@ instructions:
     - "Copy the key (sk-... for pay-as-you-go) and paste it below."
     - "Note: Token Plan keys use the tp- prefix and come from the Subscription page; the two types can't be mixed."
 keyUrl: "https://platform.xiaomimimo.com/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

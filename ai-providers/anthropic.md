@@ -16,7 +16,7 @@ instructions:
     - "Open Settings → API Keys → Create Key."
     - "Copy the key (shown only once) and paste it below."
 keyUrl: "https://console.anthropic.com/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

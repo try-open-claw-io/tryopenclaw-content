@@ -20,7 +20,7 @@ instructions:
     - "Copy the key (bce-v3/ALTAK-...) and paste it below."
     - "Note: API access requires real-name verification; signup typically needs a Chinese phone number."
 keyUrl: "https://console.bce.baidu.com/iam/#/iam/apikey/list"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->

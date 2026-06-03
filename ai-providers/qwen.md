@@ -18,7 +18,7 @@ instructions:
     - "Copy the key (sk-...) and paste it below."
     - "Note: keys are region-bound; the base URL you call must match the key's region."
 keyUrl: "https://modelstudio.console.alibabacloud.com/"
-videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+# videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---
 
 <!-- Body for Phase 2 rich docs. Frontmatter only is rendered now. -->
