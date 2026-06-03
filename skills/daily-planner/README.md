@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng. Bạn đưa danh sách việc, skill tách nhỏ đầu việc, xếp ưu tiên theo khẩn cấp và quan trọng, rồi chia vào khung giờ thực tế. Ngày quá tải sẽ được báo để bạn dời hoặc bỏ bớt.
+Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng. Bạn đưa danh sách việc, skill tách nhỏ từng đầu việc, xếp ưu tiên theo mức khẩn cấp và quan trọng, rồi chia vào khung giờ thực tế. Nếu ngày quá tải, skill báo ngay để bạn dời hoặc bỏ bớt.
 
 ## Hướng dẫn
 

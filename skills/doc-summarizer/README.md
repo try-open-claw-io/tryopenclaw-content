@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Rút gọn tài liệu hay văn bản dài thành các ý chính trong vài giây. Bạn dán nội dung, skill trả về một câu TL;DR cùng các ý chính, điều chỉnh được độ chi tiết (3 ý, 10 ý hay dàn ý đầy đủ), và rút ra số liệu, mốc thời gian quan trọng. Tóm tắt được cả tiếng Việt lẫn tiếng Anh.
+Rút gọn tài liệu hay văn bản dài chỉ trong vài giây. Bạn dán nội dung, skill trả về một câu TL;DR kèm các ý chính, điều chỉnh được độ chi tiết (3 ý, 10 ý hay dàn ý đầy đủ), và rút ra số liệu, mốc thời gian quan trọng. Tóm tắt được cả tiếng Việt lẫn tiếng Anh.
 
 ## Hướng dẫn
 

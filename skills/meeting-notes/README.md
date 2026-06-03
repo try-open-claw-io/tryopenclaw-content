@@ -2,11 +2,11 @@
 
 ## Cách sử dụng
 
-Chuyển ghi chú họp thô hoặc bản gỡ băng thành biên bản chỉn chu. Skill tóm tắt nội dung chính, tách riêng các quyết định, liệt kê việc cần làm kèm người phụ trách và hạn, và đánh dấu câu hỏi còn bỏ ngỏ. Trả về định dạng copy được ngay.
+Chuyển ghi chú họp thành bản tóm tắt rõ ràng. Bạn dán ghi chú thô hoặc bản chép lại, skill rút ra ý chính, các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản tóm tắt trả về copy ra dùng được ngay.
 
 ## Hướng dẫn
 
-- /meeting-notes tóm tắt ghi chú cuộc họp này thành biên bản và việc cần làm.
+- /meeting-notes tóm tắt cuộc họp này, nêu rõ quyết định và việc cần làm.
 
 <!-- en -->
 

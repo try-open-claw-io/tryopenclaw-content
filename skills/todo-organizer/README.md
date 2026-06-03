@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Sắp xếp danh sách việc lộn xộn thành checklist gọn gàng. Bạn dán cả danh sách, skill nhóm theo dự án hoặc chủ đề, xếp theo ưu tiên hoặc việc làm nhanh trước, gắn nhãn công sức, gộp việc trùng và đề xuất viết rõ hơn cho việc mơ hồ. Trả về checklist copy được ngay.
+Sắp xếp danh sách việc thành checklist gọn gàng. Bạn dán cả danh sách, skill chia theo dự án hay chủ đề, xếp theo mức ưu tiên, ước tính việc nào nhanh việc nào lâu, lọc bớt việc trùng và gợi ý viết rõ hơn cho việc còn mơ hồ. Checklist trả về copy là dùng được ngay.
 
 ## Hướng dẫn
 

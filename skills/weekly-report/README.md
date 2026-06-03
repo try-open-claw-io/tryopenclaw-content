@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Tổng hợp việc cả tuần thành báo cáo gọn cho sếp hoặc team. Bạn đưa ghi chú hoặc danh sách việc, skill nhóm thành Đã xong / Đang làm / Đang vướng / Tuần tới, viết lại cho dễ đọc và nêu rõ chỗ cần hỗ trợ. Chọn được bản 5 dòng hay báo cáo đầy đủ.
+Tổng hợp việc cả tuần thành báo cáo gọn cho sếp hoặc team. Bạn đưa ghi chú hay danh sách việc trong tuần, skill chia thành Đã xong / Đang làm / Đang vướng / Tuần tới, viết lại cho dễ đọc và chỉ rõ chỗ đang cần hỗ trợ. Chọn được bản 5 dòng hay báo cáo đầy đủ.
 
 ## Hướng dẫn
 
