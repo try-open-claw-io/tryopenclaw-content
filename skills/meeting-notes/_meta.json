@@ -1,11 +1,11 @@
 {
   "slug": "meeting-notes",
   "name": {
-    "vi": "Ghi biên bản họp",
+    "vi": "Tóm tắt cuộc họp",
     "en": "Meeting Notes"
   },
   "description": {
-    "vi": "Chuyển ghi chú họp thô thành biên bản chỉn chu: tóm tắt, quyết định và việc cần làm kèm người phụ trách.",
+    "vi": "Chuyển ghi chú họp thô thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.",
     "en": "Turn rough meeting notes into clean minutes: summary, decisions, and action items with owners."
   },
   "category": "productivity",

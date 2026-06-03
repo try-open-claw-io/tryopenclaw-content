@@ -2,11 +2,11 @@
 
 ## Cách sử dụng
 
-Chuyển ghi chú họp lộn xộn thành biên bản chỉn chu. Bạn dán ghi chú thô hoặc bản chép lại, skill tóm tắt ý chính, liệt kê các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản kết quả gọn gàng, copy ra dùng được ngay.
+Chuyển ghi chú họp rời rạc thành bản tóm tắt rõ ràng. Bạn dán ghi chú thô hoặc bản chép lại, skill rút ra ý chính, các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản tóm tắt trả về copy ra dùng được ngay.
 
 ## Hướng dẫn
 
-- /meeting-notes tóm tắt ghi chú cuộc họp này thành biên bản và việc cần làm.
+- /meeting-notes tóm tắt cuộc họp này, nêu rõ quyết định và việc cần làm.
 
 <!-- en -->
 
