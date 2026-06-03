@@ -27,14 +27,14 @@ Mỗi skill = 1 folder `skills/<slug>/` chứa đúng 3 file:
 - **Skill CẦN env** = có ít nhất 1 biến **bắt buộc**: API key, token, secret, account id (vd `BREVO_API_KEY`, `PAGE_ACCESS_TOKEN`, `FB_PAGE_ID`, `META_ACCESS_TOKEN`, `USER_ACCESS_TOKEN`, `CONFIRM_WRITE`).
 - **Skill KHÔNG cần env** = chạy local, không API key, env chỉ **optional** (vd `csv-pipeline` chỉ cần runtime Python; `workcrm` chỉ có `WORKCRM_DB_PATH` optional; skill scrape public profile).
 
-Quy tắc:
+Quy tắc (mỗi skill chỉ có **đúng 1** item — xem §B1):
 
-- **Skill CẦN env →** item ĐẦU TIÊN của `## Hướng dẫn` và `## Tutorials` **bắt buộc** là prompt guide config:
-  - vi: `Hãy guide tôi config skills này cho chuẩn <slug>`
-  - en: `Walk me through configuring this skill properly for <slug>`
-- **Skill KHÔNG cần env →** **cấm** thêm dòng config-guide. Item đầu tiên = use-case phổ biến nhất (xem §B1).
+- **Skill CẦN env →** item duy nhất của `## Hướng dẫn` / `## Tutorials` **bắt buộc** là prompt guide config (chưa set key thì skill chưa chạy được):
+  - vi: `/<slug> hãy guide tôi config skill này cho chuẩn`
+  - en: `/<slug> walk me through configuring this skill properly`
+- **Skill KHÔNG cần env →** **cấm** dòng config-guide. Item duy nhất = use-case phổ quát nhất, zero-input (xem §B1, §B3).
 
-> Lý do: skill cần env không chạy được nếu user chưa set key → prompt đầu phải dẫn user đi setup. Skill local chạy ngay → đừng bắt user setup thừa.
+> Lý do: skill cần env không chạy được nếu user chưa set key → prompt duy nhất phải dẫn user đi setup. Skill local chạy ngay → item duy nhất là hành động phổ quát nhất.
 
 ### A2. Không tên người
 - **Cấm:** mọi first name người (Mai, An, Lan, Huy, John, Alice, Sarah, Bob...) — VN lẫn EN — trong `description`, `prompt`, `Hướng dẫn`.
@@ -77,23 +77,30 @@ Bắt buộc: `slug`, `name.vi`, `name.en`, `description.vi`, `description.en`, 
 
 ## B. Soft rules (audit ⚠️ nếu lệch)
 
-### B1. Sample prompt = use-case phổ biến nhất
-- Với skill CẦN env: item config-guide là #1 (bắt buộc, §A1), thì item **#2** nên là use-case phổ biến nhất.
-- Với skill KHÔNG cần env: item #1 là use-case phổ biến nhất (action mà 80% user gọi đầu tiên).
+### B1. Chỉ 1 tutorial = hành động đơn giản & phổ quát nhất
+Mỗi skill chỉ giữ **đúng 1 dòng** trong `## Hướng dẫn` / `## Tutorials` — phản ánh **hành động phổ quát nhất** của skill mà **mọi end-user copy-paste là chạy được ngay, không cần điền gì**. Không liệt kê use-case phụ.
+- Skill KHÔNG cần env: dòng duy nhất = use-case phổ quát nhất, zero-input (xem §B3).
+- Skill CẦN env: dòng duy nhất = prompt config-guide (§A1).
+
+### B1b. Prompt bắt đầu bằng `/<slug>`
+`## Hướng dẫn` (vi) và `## Tutorials` (en) **phải bắt đầu** bằng `/<slug>` của skill — đây là cú "gọi" skill trong khung chat (song song connector dùng `@<id>`).
+- Sau `/<slug>` viết thường, là 1 câu mệnh lệnh tự nhiên (vd `/daily-planner sắp xếp các việc hôm nay thành kế hoạch theo khung giờ.`).
+- **Không lặp lại tên skill** trong câu vì `/<slug>` đã chỉ rõ.
+- Cả vi và en đều mang prefix để giữ song song.
 
 ### B2. Tone & xưng hô
 - **VN:** xưng "mình" hoặc lược chủ ngữ. Tránh "tôi/bạn" formal. Đuôi "giúp mình", "cho mình" khuyến khích.
 - **EN:** imperative ("Send...", "List...", "Report..."). Tránh "Please".
 
-### B3. Hướng dẫn = mẫu guide, không phải workflow cứng
-- Prompt là pattern user xem rồi tự thay tham số bằng ngữ cảnh thật. **Tránh hardcode topic cụ thể.**
-- **Format placeholder:** `[mô tả tham số]` — square bracket bọc danh từ tiếng Việt mô tả tham số. Tránh `X`/`Y` trừu tượng.
-- **Giữ:** action verb, số lượng generic (10/50/100), khung giờ, tên list/status generic ('VIP', 'pending', '#sales').
-- **Bọc `[noun]`:** tên chiến dịch, tên file, tên product, tên store, mô tả lỗi.
-- Ví dụ:
-  - ❌ "Gửi bản tin 'Sale hè 2026' cho khách." (hardcode)
-  - ✅ "Gửi bản tin tuần này cho danh sách khách hàng [tên list]."
-  - ✅ "Cập nhật đơn [mã đơn] sang 'đã giao' và gửi tin cảm ơn."
+### B3. Prompt = lệnh đơn giản nhất, ưu tiên zero-input
+- Prompt phải **chạy được ngay khi copy-paste** cho mọi user — **không hardcode ngữ cảnh cụ thể** (số liệu, ngày "hôm nay", tên doc/board thật, scenario riêng).
+- **Mặc định: zero-input.** Chọn 1 hành động tự khoanh phạm vi bằng "của mình" / "gần đây", hoặc tham chiếu tương đối "này" / "sau" cho nội dung user dán vào — không bắt user điền gì.
+  - ✅ "/todo-organizer sắp xếp danh sách việc của mình theo ưu tiên."
+  - ✅ "/doc-summarizer tóm tắt tài liệu này thành các ý chính."
+- **Placeholder chỉ là ngoại lệ.** Chỉ khi skill bắt buộc 1 tham số mà không thể tham chiếu tương đối → dùng **đúng 1** `[noun]` (danh từ tiếng Việt, không `X`/`Y`).
+- **Tránh:**
+  - ❌ "Tóm tắt [tài liệu] này thành 5 ý chính." (placeholder thừa — đã có "này")
+  - ❌ nhồi nhiều `[noun]` vào 1 prompt.
 
 ### B4. Length prompt
 ≤ 25 từ / lang.
@@ -114,10 +121,10 @@ Trước khi merge skill mới, đi từ trên xuống:
 - [ ] **C5.** `category` ∈ enum §A6.
 - [ ] **C6.** SKILL.md có section required env + (nếu có write) Guardrails.
 - [ ] **C7.** **Rule env (§A1):** xác định skill CẦN env hay KHÔNG.
-  - CẦN env → `## Hướng dẫn`[0] === "Hãy guide tôi config skills này cho chuẩn `<slug>`", `## Tutorials`[0] === "Walk me through configuring this skill properly for `<slug>`".
-  - KHÔNG env → KHÔNG có dòng config-guide.
+  - CẦN env → dòng duy nhất = prompt config-guide (`/<slug> hãy guide tôi config skill này cho chuẩn`).
+  - KHÔNG env → KHÔNG có dòng config-guide; dòng duy nhất = use-case zero-input.
 - [ ] **C8.** README có đủ 4 heading: `## Cách sử dụng`, `## Hướng dẫn`, `## How to use`, `## Tutorials`.
-- [ ] **C9.** Số item `## Hướng dẫn` === số item `## Tutorials` (vi/en song song).
+- [ ] **C9.** `## Hướng dẫn` và `## Tutorials` mỗi bên **đúng 1 item**, vi/en song song; cả 2 bắt đầu bằng `/<slug>` (§B1, §B1b).
 - [ ] **C10.** Grep first name người / xưng hô cá nhân → trống (§A2).
 - [ ] **C11.** Grep email/SĐT thật → trống (§A4).
 - [ ] **C12.** Đọc lại: end-user (không phải dev) có hiểu skill làm gì + biết phải config gì không?
@@ -179,6 +186,20 @@ grep -rnE "([a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}|\b0[0-9]{9}\b)" \
 # D7. Category ngoài enum
 grep -h "\"category\":" "$SKILLS"/*/_meta.json \
   | grep -vE "(commerce|communication|content-marketing|crm-sales|customer-support|customs|documents|engineering|finance|other|productivity|research-analysis|sales-outreach|sourcing|storage|support)"
+
+# D8. Mỗi skill phải có ĐÚNG 1 bullet ở Hướng dẫn và 1 ở Tutorials, đều mở đầu bằng /<slug> (§B1, §B1b).
+for d in "$SKILLS"/*/; do
+  s=$(basename "$d")
+  [ "$s" = "_rules-skills.md" ] && continue
+  vi=$(awk '/## Hướng dẫn/{f=1;next} /^## /{f=0} f&&/^- /{c++} END{print c+0}' "$d/README.md")
+  en=$(awk '/## Tutorials/{f=1;next} /^## /{f=0} f&&/^- /{c++} END{print c+0}' "$d/README.md")
+  [ "$vi" = "1" ] || echo "FAIL §B1: $s có $vi bullet ở Hướng dẫn (cần 1)"
+  [ "$en" = "1" ] || echo "FAIL §B1: $s có $en bullet ở Tutorials (cần 1)"
+  grep -qE "^- /$s " "$d/README.md" || echo "FAIL §B1b: $s thiếu prompt mở đầu bằng /$s"
+done
+
+# D9. Placeholder ngữ cảnh thừa trong README (mặc định zero-input, §B3).
+grep -rn "\[" "$SKILLS"/*/README.md
 ```
 
 Mọi grep output `FAIL` = audit fail → sửa rồi PR. `WARN` = review thủ công.
