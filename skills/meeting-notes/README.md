@@ -2,7 +2,7 @@
 
 ## Cách sử dụng
 
-Chuyển ghi chú họp rời rạc thành bản tóm tắt rõ ràng. Bạn dán ghi chú thô hoặc bản chép lại, skill rút ra ý chính, các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản tóm tắt trả về copy ra dùng được ngay.
+Chuyển ghi chú họp thành bản tóm tắt rõ ràng. Bạn dán ghi chú thô hoặc bản chép lại, skill rút ra ý chính, các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản tóm tắt trả về copy ra dùng được ngay.
 
 ## Hướng dẫn
 
