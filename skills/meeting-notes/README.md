@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Chuyển ghi chú họp thành bản tóm tắt rõ ràng. Bạn dán ghi chú thô hoặc bản chép lại, skill rút ra ý chính, các quyết định và đầu việc kèm người phụ trách và hạn chót, đồng thời đánh dấu những câu hỏi còn bỏ ngỏ. Bản tóm tắt trả về copy ra dùng được ngay.
+**Cách kích hoạt:** Gõ /meeting-notes ở đầu khung chat, rồi dán ghi chú họp.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có bản tóm tắt gồm ý chính, quyết định, việc cần làm (kèm người phụ trách, hạn chót) và điểm cần làm rõ.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Chuyển ghi chú họp thành bản tóm tắt rõ ràng. Bạn dán ghi chú t
 
 ## How to use
 
-Turn rough meeting notes or a transcript into a clean record. The skill summarizes the key points, separates out decisions, lists action items with owners and due dates, and flags any open questions. Output is copy-paste ready.
+**How to trigger:** Type /meeting-notes at the start of the chat, then paste your meeting notes.
+
+**What you get:** Once the Agent finishes, you'll have a summary with the key points, decisions, action items (with owners and due dates), and points to clarify.
 
 ## Tutorials
 

@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Rút gọn tài liệu hay văn bản dài chỉ trong vài giây. Bạn dán nội dung, skill trả về một câu TL;DR kèm các ý chính, điều chỉnh được độ chi tiết (3 ý, 10 ý hay dàn ý đầy đủ), và rút ra số liệu, mốc thời gian quan trọng. Tóm tắt được cả tiếng Việt lẫn tiếng Anh.
+**Cách kích hoạt:** Gõ /doc-summarizer ở đầu khung chat, rồi dán tài liệu hoặc văn bản dài.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có một câu TL;DR kèm các ý chính, chỉnh được độ chi tiết, và những số liệu, mốc thời gian quan trọng.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Rút gọn tài liệu hay văn bản dài chỉ trong vài giây. Bạn dán n�
 
 ## How to use
 
-Condense a long document or passage into its key points in seconds. You paste the content; the skill returns a one-line TL;DR plus key points, adjusts the depth (3 points, 10 points, or a full outline), and pulls out important numbers and dates. Works in both Vietnamese and English.
+**How to trigger:** Type /doc-summarizer at the start of the chat, then paste the document or long text.
+
+**What you get:** Once the Agent finishes, you'll have a one-line TL;DR with key points, adjustable depth, and the important numbers and dates pulled out.
 
 ## Tutorials
 

@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Từ vài ý chính, bạn có ngay một email hoàn chỉnh — đúng giọng, có sẵn tiêu đề. Bạn nói nội dung muốn truyền đạt, skill viết trọn lá thư, chỉnh giọng (trang trọng, thân thiện, dứt khoát, xin lỗi) và viết được cả tiếng Việt lẫn tiếng Anh. Skill chỉ soạn bản nháp, không gửi và không truy cập hộp thư.
+**Cách kích hoạt:** Gõ /email-drafter ở đầu khung chat, rồi nêu vài ý chính muốn truyền đạt.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có một email hoàn chỉnh kèm tiêu đề, đúng giọng bạn chọn (Việt hoặc Anh) — chỉ là bản nháp, không tự gửi.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Từ vài ý chính, bạn có ngay một email hoàn chỉnh — đúng giọng
 
 ## How to use
 
-Turn a few key points into a complete, well-toned email. You give the gist; the skill writes a full email with a subject line, adjusts the tone (formal, friendly, firm, apologetic), and works in both Vietnamese and English. It only drafts text — it never sends and has no mailbox access.
+**How to trigger:** Type /email-drafter at the start of the chat, then give the key points you want to convey.
+
+**What you get:** Once the Agent finishes, you'll have a complete email with a subject line in the tone you choose (Vietnamese or English) — a draft only, never sent.
 
 ## Tutorials
 

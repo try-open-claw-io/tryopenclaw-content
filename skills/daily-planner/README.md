@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng. Bạn đưa danh sách việc, skill tách nhỏ từng đầu việc, xếp ưu tiên theo mức khẩn cấp và quan trọng, rồi chia vào khung giờ thực tế. Nếu ngày quá tải, skill báo ngay để bạn dời hoặc bỏ bớt.
+**Cách kích hoạt:** Gõ /daily-planner ở đầu khung chat, rồi đưa danh sách việc cần làm.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có kế hoạch ngày chia theo khung giờ, xếp ưu tiên rõ ràng và báo trước nếu ngày bị quá tải.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng. Bạn đưa d
 
 ## How to use
 
-Sort your tasks into a clear day plan. You share your to-dos and the skill breaks them into atomic items, prioritizes by urgency and importance, and lays them into realistic time blocks. If the day is overbooked, it flags what to move or drop.
+**How to trigger:** Type /daily-planner at the start of the chat, then share your to-do list.
+
+**What you get:** Once the Agent finishes, you'll have a time-blocked day plan with clear priorities and a heads-up if the day is overbooked.
 
 ## Tutorials
 

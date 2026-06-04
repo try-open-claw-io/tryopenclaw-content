@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Sắp xếp danh sách việc thành checklist gọn gàng. Bạn dán cả danh sách, skill chia theo dự án hay chủ đề, xếp theo mức ưu tiên, ước tính việc nào nhanh việc nào lâu, lọc bớt việc trùng và gợi ý viết rõ hơn cho việc còn mơ hồ. Checklist trả về copy là dùng được ngay.
+**Cách kích hoạt:** Gõ /todo-organizer ở đầu khung chat, rồi dán danh sách việc cần làm.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có checklist chia theo dự án, xếp ưu tiên, lọc việc trùng và gợi ý viết rõ hơn cho việc còn mơ hồ.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Sắp xếp danh sách việc thành checklist gọn gàng. Bạn dán cả danh
 
 ## How to use
 
-Turn a chaotic to-do list into clean checklists. You paste the whole list; the skill groups it by project or theme, sorts by priority or quick wins first, tags each item by effort, merges duplicates, and suggests clearer wording for vague items. Output is ready to copy.
+**How to trigger:** Type /todo-organizer at the start of the chat, then paste your to-do list.
+
+**What you get:** Once the Agent finishes, you'll have checklists grouped by project, sorted by priority, with duplicates merged and clearer wording for vague items.
 
 ## Tutorials
 
