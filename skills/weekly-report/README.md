@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Tổng hợp việc cả tuần thành báo cáo gọn cho sếp hoặc team. Bạn đưa ghi chú hay danh sách việc trong tuần, skill chia thành Đã xong / Đang làm / Đang vướng / Tuần tới, viết lại cho dễ đọc và chỉ rõ chỗ đang cần hỗ trợ. Chọn được bản 5 dòng hay báo cáo đầy đủ.
+**Cách kích hoạt:** Gõ /weekly-report ở đầu khung chat, rồi đưa ghi chú hoặc danh sách việc trong tuần.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có báo cáo chia Đã xong / Đang làm / Đang vướng / Tuần tới, viết lại cho dễ đọc — chọn bản 5 dòng hay đầy đủ.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Tổng hợp việc cả tuần thành báo cáo gọn cho sếp hoặc team. B�
 
 ## How to use
 
-Compile a week of work into a tidy report for your manager or team. You share notes or a task list; the skill groups it into Done / In progress / Blocked / Next week, rewrites it to read well, and spells out what you need to get unblocked. Pick a 5-line update or a fuller report.
+**How to trigger:** Type /weekly-report at the start of the chat, then share your notes or task list for the week.
+
+**What you get:** Once the Agent finishes, you'll have a report grouped into Done / In progress / Blocked / Next week, rewritten to read well — pick a 5-line update or a fuller one.
 
 ## Tutorials
 

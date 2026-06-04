@@ -105,8 +105,26 @@ Mỗi skill chỉ giữ **đúng 1 dòng** trong `## Hướng dẫn` / `## Tutor
 ### B4. Length prompt
 ≤ 25 từ / lang.
 
-### B5. README ↔ SKILL ↔ _meta nhất quán
-`## Cách sử dụng` (README) là bản end-user của `description` (_meta) — cùng thông điệp, README dài hơn được. Nếu SKILL.md nêu giới hạn quan trọng (free-tier cap, messaging window, rate limit) thì `## Cách sử dụng` nên nhắc lại 1 dòng.
+### B5. Format `## Cách sử dụng` / `## How to use` = Cách kích hoạt + Kết quả
+`## Cách sử dụng` **không** phải đoạn mô tả lại `description` (_meta), mà là **hướng dẫn dùng** gồm đúng 2 dòng có nhãn in đậm:
+
+- **Cách kích hoạt:** dẫn bằng lệnh `/<slug>` gõ **đầu tiên** ở khung chat, rồi mới tới đầu vào. Mẫu: `Gõ /<slug> ở đầu khung chat, rồi [dán/nêu/đưa đầu vào].`
+- **Kết quả:** viết theo góc người dùng. Mẫu: `Sau khi Agent làm xong, bạn sẽ có [kết quả cụ thể].`
+
+EN song song: **How to trigger:** `Type /<slug> at the start of the chat, then [paste/share/describe …].` — **What you get:** `Once the Agent finishes, you'll have [outcome].`
+
+Nếu SKILL.md nêu giới hạn quan trọng (free-tier cap, messaging window, rate limit) thì nhắc lại 1 dòng ở phần Kết quả.
+
+### B6. Từ ngữ nên tránh
+Copy phải tự nhiên, thuần Việt — tránh từ nghe lạ/sến/cứng/hành chính. Bảng mở, bổ sung dần khi audit:
+
+| Tránh | Vì sao | Thay bằng |
+|------|--------|-----------|
+| câu hỏi còn bỏ ngỏ / bỏ ngỏ | lủng củng, lãng xẹt | điểm cần làm rõ |
+| ghi chú thô | cứng | ghi chú / ghi chú họp |
+| rời rạc | sách vở | (bỏ) hoặc "lẻ tẻ" |
+| lộn xộn | nặng nề | (bỏ) |
+| biên bản | hành chính | bản tóm tắt |
 
 ---
 
@@ -123,7 +141,7 @@ Trước khi merge skill mới, đi từ trên xuống:
 - [ ] **C7.** **Rule env (§A1):** xác định skill CẦN env hay KHÔNG.
   - CẦN env → dòng duy nhất = prompt config-guide (`/<slug> hãy guide tôi config skill này cho chuẩn`).
   - KHÔNG env → KHÔNG có dòng config-guide; dòng duy nhất = use-case zero-input.
-- [ ] **C8.** README có đủ 4 heading: `## Cách sử dụng`, `## Hướng dẫn`, `## How to use`, `## Tutorials`.
+- [ ] **C8.** README có đủ 4 heading: `## Cách sử dụng`, `## Hướng dẫn`, `## How to use`, `## Tutorials`. `## Cách sử dụng` / `## How to use` theo đúng format 2 nhãn Cách kích hoạt + Kết quả (§B5).
 - [ ] **C9.** `## Hướng dẫn` và `## Tutorials` mỗi bên **đúng 1 item**, vi/en song song; cả 2 bắt đầu bằng `/<slug>` (§B1, §B1b).
 - [ ] **C10.** Grep first name người / xưng hô cá nhân → trống (§A2).
 - [ ] **C11.** Grep email/SĐT thật → trống (§A4).

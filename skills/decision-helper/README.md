@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Cân nhắc giữa các lựa chọn để đi đến quyết định rõ ràng. Bạn nêu các phương án và tiêu chí quan trọng với mình, skill lập bảng ưu nhược, chấm điểm theo mức ưu tiên bạn đặt, gói gọn đánh đổi trong một câu kèm gợi ý chọn, rồi kiểm lại rủi ro của phương án dẫn đầu. Quyết định cuối vẫn là của bạn.
+**Cách kích hoạt:** Gõ /decision-helper ở đầu khung chat, rồi nêu các phương án và tiêu chí quan trọng với bạn.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có bảng ưu nhược có chấm điểm, một câu tóm tắt đánh đổi kèm gợi ý chọn, và phần soát rủi ro cho phương án dẫn đầu.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Cân nhắc giữa các lựa chọn để đi đến quyết định rõ ràng.
 
 ## How to use
 
-Think through a choice and reach a clear decision. You describe the options and what matters to you; the skill lays out a weighted pros-and-cons table, sums up the trade-off in one sentence with a tentative pick, then checks the front-runner for risks. The final call stays yours.
+**How to trigger:** Type /decision-helper at the start of the chat, then describe your options and what matters to you.
+
+**What you get:** Once the Agent finishes, you'll have a weighted pros-and-cons table, a one-line trade-off with a suggested pick, and a risk check on the front-runner.
 
 ## Tutorials
 

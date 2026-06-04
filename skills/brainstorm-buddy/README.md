@@ -2,7 +2,9 @@
 
 ## Cách sử dụng
 
-Cùng bạn phát triển ý tưởng cho một chủ đề hay vấn đề. Skill đưa ra thật nhiều ý, ưu tiên số lượng trước, mở rộng một ý thành các bước cụ thể, sắp các ý rời rạc thành từng nhóm, và nhìn lại từ nhiều góc (rẻ hơn, nhanh hơn, ít rủi ro hơn). Khi cần, skill chọn ra vài ý sáng giá nhất kèm lý do ngắn.
+**Cách kích hoạt:** Gõ /brainstorm-buddy ở đầu khung chat, rồi nêu chủ đề hoặc vấn đề bạn đang nghĩ.
+
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có thật nhiều ý tưởng gom thành nhóm, vài góc nhìn mới và một ít ý sáng giá nhất để chọn hướng.
 
 ## Hướng dẫn
 
@@ -12,7 +14,9 @@ Cùng bạn phát triển ý tưởng cho một chủ đề hay vấn đề. Ski
 
 ## How to use
 
-A thinking partner for exploring ideas on a topic or problem. The skill generates many ideas quantity-first, expands any one into concrete steps, clusters loose ideas into named themes, and reframes through lenses (cheaper, faster, lower-risk). On request it picks a shortlist with a one-line rationale each.
+**How to trigger:** Type /brainstorm-buddy at the start of the chat, then describe the topic or problem.
+
+**What you get:** Once the Agent finishes, you'll have plenty of ideas grouped into themes, a few fresh angles, and a shortlist of the strongest picks.
 
 ## Tutorials
 
