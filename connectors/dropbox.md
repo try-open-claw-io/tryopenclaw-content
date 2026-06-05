@@ -4,19 +4,15 @@ name:
   vi: "Dropbox"
   en: "Dropbox"
 description:
-  vi: "Dịch vụ lưu trữ đám mây. Cất file, đồng bộ giữa các thiết bị và chia sẻ bằng link."
-  en: "A cloud storage service. Store files, sync across devices, and share with a link."
+  vi: "Dropbox là dịch vụ lưu trữ đám mây. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạn."
+  en: "Dropbox is a cloud storage service. With this connection, the Agent can find documents by name, share file links, upload files, and organize your folders."
 category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @dropbox trong khung chat để agent tìm và chia sẻ file giúp bạn."
-    - "Nói rõ bạn cần gì: chia sẻ link file/folder, tìm tài liệu theo tên, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
-    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng thư mục, khỏi mở nhầm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @dropbox\" trong câu chat để Agent biết và mở đúng kho lưu trữ file của bạn. Ví dụ: \"dùng tryopenclaw connector @dropbox để liệt kê file gần đây giúp tôi\"."
   en:
-    - "Type @dropbox in the chat box so the agent can find and share files for you."
-    - "Say what you need: share a file or folder link, find a document by name, or upload a new file. Include the file name and folder to get it right."
-    - "If you have a file or folder link, include it so the agent lands in the right folder, not the wrong one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @dropbox\" in your chat so the Agent knows to open your file storage. Example: \"use the tryopenclaw connector @dropbox to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"

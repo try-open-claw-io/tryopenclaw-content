@@ -4,19 +4,15 @@ name:
   vi: "Microsoft Teams"
   en: "Microsoft Teams"
 description:
-  vi: "Ứng dụng chat đội nhóm của Microsoft. Nhắn tin, gọi video và chia sẻ file, tích hợp với Microsoft 365."
-  en: "Microsoft's team chat. Message, video-call, and share files, integrated with Microsoft 365."
+  vi: "Microsoft Teams là ứng dụng chat đội nhóm của Microsoft. Với kết nối này, Agent có thể gửi tin vào kênh, tìm tin nhắn và tóm tắt hội thoại."
+  en: "Microsoft Teams is Microsoft's team chat. With this connection, the Agent can post to channels, find messages, and summarize threads."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @microsoftteams trong khung chat để agent nhắn tin cho team giúp bạn."
-    - "Cho agent biết bạn cần gì: gửi tin vào kênh nào, tìm tin nhắn, hay tóm tắt hội thoại. Kèm tên kênh (IT, Sales) cho trúng."
-    - "Có link tin nhắn hay tên kênh thì gửi kèm để agent đăng đúng nơi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @microsoftteams\" trong câu chat để Agent biết và mở đúng công cụ xem tin nhắn của team bạn. Ví dụ: \"dùng tryopenclaw connector @microsoftteams để tóm tắt tin nhắn mới giúp tôi\"."
   en:
-    - "Type @microsoftteams in the chat box so the agent can message your team for you."
-    - "Tell the agent what you need: post to which channel, find messages, or summarize a thread. Include the channel name (IT, Sales) to get it right."
-    - "If you have a message link or channel name, include it so the agent posts in the right place."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @microsoftteams\" in your chat so the Agent knows to view your team's messages. Example: \"use the tryopenclaw connector @microsoftteams to summarize my recent messages\"."
 tutorials:
   - title:
       vi: "Tóm tắt tin nhắn"

@@ -4,19 +4,15 @@ name:
   vi: "Twitter / X"
   en: "Twitter / X"
 description:
-  vi: "Mạng xã hội X (Twitter). Đăng bài, theo dõi tương tác và nhắn tin riêng cho người theo dõi."
-  en: "The X (Twitter) social network. Post updates, track engagement, and DM your followers."
+  vi: "X (Twitter) là mạng xã hội đăng tin ngắn. Với kết nối này, Agent có thể đăng bài, theo dõi tương tác, nhắn tin riêng cho người theo dõi và xem chỉ số bài viết."
+  en: "X (Twitter) is a short-post social network. With this connection, the Agent can post updates, track engagement, DM your followers, and view post analytics."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @twitter trong khung chat để agent đăng bài và theo dõi tương tác giúp bạn."
-    - "Nói rõ bạn cần gì: đăng tweet kèm link, xem analytics, hay gửi DM. Kèm nội dung và link cho trúng."
-    - "Có sẵn link bài hay ảnh đính kèm thì gửi kèm để agent đăng đúng nội dung."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @twitter\" trong câu chat để Agent biết và mở đúng công cụ theo dõi tương tác bài đăng của bạn. Ví dụ: \"dùng tryopenclaw connector @twitter để xem tương tác các bài đăng gần đây giúp tôi\"."
   en:
-    - "Type @twitter in the chat box so the agent can post and track engagement for you."
-    - "Say what you need: post a tweet with a link, view analytics, or send a DM. Include the content and link to get it right."
-    - "If you have a post link or image to attach, include it so the agent publishes the right content."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @twitter\" in your chat so the Agent knows to track engagement on your posts. Example: \"use the tryopenclaw connector @twitter to check engagement on my recent posts\"."
 tutorials:
   - title:
       vi: "Xem tương tác"

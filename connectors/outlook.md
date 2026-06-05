@@ -4,19 +4,15 @@ name:
   vi: "Outlook"
   en: "Outlook"
 description:
-  vi: "Dịch vụ email của Microsoft. Đọc, soạn, gửi và sắp xếp thư, kèm lịch và danh bạ tích hợp."
-  en: "Microsoft's email service. Read, compose, send, and organize mail, with built-in calendar and contacts."
+  vi: "Outlook là dịch vụ email của Microsoft. Với kết nối này, Agent có thể đọc, soạn, gửi và sắp xếp thư trong hộp thư của bạn."
+  en: "Outlook is Microsoft's email service. With this connection, the Agent can read, compose, send, and organize mail in your inbox."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @outlook vào khung chat để agent đọc và soạn mail thay bạn."
-    - "Cho agent biết bạn cần gì: mở mail chưa đọc, tìm theo người gửi, hay soạn thư trả lời. Nêu rõ người gửi hoặc khoảng thời gian cho trúng."
-    - "Có sẵn link mail hay thread thì gửi kèm để agent mở đúng hội thoại, khỏi lục lại hộp thư."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @outlook\" trong câu chat để Agent biết và mở đúng công cụ xử lý hộp thư của bạn. Ví dụ: \"dùng tryopenclaw connector @outlook để kiểm tra thư chưa đọc giúp tôi\"."
   en:
-    - "Type @outlook in the chat box so the agent can read and write email for you."
-    - "Tell the agent what you need: open unread mail, search by sender, or draft a reply. Name the sender or time range to get it right."
-    - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @outlook\" in your chat so the Agent knows to work with your inbox. Example: \"use the tryopenclaw connector @outlook to check my unread emails\"."
 tutorials:
   - title:
       vi: "Kiểm tra mail"

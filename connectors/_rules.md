@@ -24,9 +24,14 @@
 - **Cấm:** event chỉ 1 vùng hiểu được (vd "lễ Quốc Khánh 2/9" trừ khi connector phục vụ riêng VN).
 - **OK:** thời điểm generic ("cuối tuần", "tháng này", "tuần trước", "Q2"). Lễ phổ biến toàn cầu (Tết, Black Friday, Christmas) OK nếu phục vụ context shopping/marketing — nhưng ưu tiên generic.
 
-### A5. Description đúng định dạng
-- 1-2 câu. Không > 200 ký tự / lang.
-- Câu chủ động, lợi ích end-user trước.
+### A5. Description đúng định dạng — flow "Agent có thể…"
+Đúng **2 câu**, theo flow:
+- **Câu 1 — connector là gì:** `{Brand} là {dịch vụ gì}.` (vd "Gmail là dịch vụ email của Google.").
+- **Câu 2 — Agent làm được gì:** mở đầu bằng `Với kết nối này, Agent có thể` (en: `With this connection, the Agent can`) + liệt kê 3-4 động từ năng lực + đối tượng, kết bằng dấu chấm. **Không** thêm đuôi "v.v." / "and more".
+  - vd vi: "Với kết nối này, Agent có thể đọc, gửi, sắp xếp và tìm kiếm thư trong hộp thư của bạn."
+
+Ràng buộc giữ nguyên:
+- Không > 200 ký tự / lang. Câu chủ động, lợi ích end-user trước.
 - Không jargon API ("OAuth", "webhook", "rate-limit").
 - Cả `vi` + `en` đều **bắt buộc filled**, không để rỗng.
 
@@ -82,6 +87,18 @@ Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh *
 ### B5. Length prompt
 - ≤ 25 từ / lang. Dài hơn → user khó hình dung gõ.
 
+### B6. Format `howToUse` — đúng 1 dòng "Kích hoạt kết nối"
+`howToUse.vi` và `howToUse.en` mỗi bên là array **đúng 1 phần tử**, mở đầu bằng nhãn in đậm:
+
+- **vi:** `**Kích hoạt kết nối:** viết rõ cụm "dùng tryopenclaw connector @<id>" trong câu chat để Agent biết và {làm gì với connector}. Ví dụ: "dùng tryopenclaw connector @<id> để {hành động} giúp tôi".`
+- **en:** `**Activate the connection:** write the exact phrase "use the tryopenclaw connector @<id>" in your chat so the Agent knows to {do what}. Example: "use the tryopenclaw connector @<id> to {action}".`
+
+Yêu cầu:
+- Phải chứa cụm trigger chuẩn `dùng tryopenclaw connector @<id>` (en: `use the tryopenclaw connector @<id>`) — chỉ 1 cụm, không dùng "dùng kết nối @<id>".
+- Phải có 1 `Ví dụ:` (en: `Example:`), câu lệnh bắt đầu bằng `dùng tryopenclaw connector @<id>`, đuôi vi "giúp tôi".
+- Xưng hô: dùng "bạn" + "Agent" (viết hoa) — đây là copy hướng dẫn end-user, **khác** tone prompt ở §B2.
+- **Chỉ read-only:** cả mục đích lẫn `Ví dụ:` chỉ được mô tả hành động **xem / kiểm tra / liệt kê / tóm tắt / tìm / theo dõi** — **cấm** gửi, đăng, nhắn, tạo, cập nhật, xoá hay bất kỳ thao tác tương tác/ghi nào. Kể cả connector thuần gửi (sendgrid, twilio…) cũng lấy ví dụ xem (vd "xem hoạt động gửi mail gần đây", "xem lịch sử tin nhắn"). Đây là copy demo an toàn để user không vô tình kích hoạt thao tác gửi đi.
+
 ---
 
 ## C. Audit checklist (1 file = 1 lần check)
@@ -100,6 +117,9 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C10.** Prompt là hành động phổ quát zero-input — copy-paste chạy được mọi tài khoản, không hardcode ngữ cảnh; chỉ dùng `[noun]` khi connector thuần gửi/tạo (xem §B1, §B4).
 - [ ] **C11.** Đọc lại description: end-user (không phải dev) có hiểu app này làm gì không?
 - [ ] **C12.** Đọc lại prompt: nếu copy-paste vào agent chat, agent có gọi đúng connector ko?
+- [ ] **C13.** Description đúng flow §A5: câu 1 `{Brand} là …`, câu 2 mở đầu `Với kết nối này, Agent có thể …, v.v.`.
+- [ ] **C14.** `howToUse.vi`/`.en` đúng 1 phần tử, mở đầu `**Kích hoạt kết nối:**`, có cụm `dùng tryopenclaw connector @<id>` + 1 `Ví dụ:` (§B6).
+- [ ] **C15.** `howToUse` read-only: mục đích + `Ví dụ:` chỉ xem/kiểm tra/liệt kê/tóm tắt/tìm/theo dõi — không gửi/đăng/nhắn/tạo/cập nhật/xoá (§B6).
 
 ---
 
@@ -131,6 +151,37 @@ grep "^category:" /Users/admin/tryopenclaw-content/connectors/*.md \
 # D6. Name brand sai casing (vd "Googlecalendar" thay vì "Google Calendar")
 grep -nE "^  (vi|en): \"[A-Z][a-z]+[a-z]{4,}\"" \
   /Users/admin/tryopenclaw-content/connectors/*.md | grep -v _rules.md
+
+# D7. Description.vi thiếu flow "Với kết nối này, Agent có thể" (§A5)
+for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
+  case "$f" in */_*.md) continue;; esac
+  grep -q "Với kết nối này, Agent có thể" "$f" || echo "FAIL §A5: $f thiếu flow 'Với kết nối này, Agent có thể'"
+done
+
+# D8. howToUse thiếu nhãn Kích hoạt kết nối / sai cụm trigger (§B6)
+for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
+  case "$f" in */_*.md) continue;; esac
+  grep -q '\*\*Kích hoạt kết nối:\*\*' "$f" || echo "FAIL §B6: $f thiếu nhãn '**Kích hoạt kết nối:**'"
+  grep -q 'dùng tryopenclaw connector @' "$f" || echo "FAIL §B6: $f thiếu cụm trigger 'dùng tryopenclaw connector @<id>'"
+  grep -q 'dùng kết nối @' "$f" && echo "FAIL §B6: $f còn sót cụm cũ 'dùng kết nối @<id>'"
+done
+
+# D9. howToUse phải đúng 1 bullet mỗi lang (§B6)
+for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
+  case "$f" in */_*.md) continue;; esac
+  vi=$(awk '/^  vi:/{f=1;next} /^  en:/{f=0} /^tutorials:/{f=0} f&&/^    - /{c++} END{print c+0}' "$f")
+  en=$(awk '/^  en:/{f=1;next} /^tutorials:/{f=0} f&&/^    - /{c++} END{print c+0}' "$f")
+  [ "$vi" = "1" ] && [ "$en" = "1" ] || echo "FAIL §B6: $f howToUse vi=$vi en=$en (cần 1/1)"
+done
+
+# D10. howToUse Ví dụ phải read-only — cấm động từ ghi ngay sau "để"/"to" (§B6, C15)
+for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
+  case "$f" in */_*.md) continue;; esac
+  grep -nE 'Ví dụ:.*để (gửi|đăng|nhắn|tạo|cập nhật|xoá|xóa|thêm|trả lời)' "$f" \
+    && echo "FAIL §B6: $f Ví dụ.vi có thao tác ghi (cần read-only)"
+  grep -nE 'Example:.*to (send|post|message|create|update|delete|add|reply|write)' "$f" \
+    && echo "FAIL §B6: $f Example.en có thao tác ghi (cần read-only)"
+done
 ```
 
 Mọi grep output **non-empty** = audit fail → sửa rồi PR.

@@ -4,19 +4,15 @@ name:
   vi: "Slack"
   en: "Slack"
 description:
-  vi: "Ứng dụng chat cho đội nhóm. Trao đổi theo kênh, nhắn tin trực tiếp và chia sẻ file trong một nơi."
-  en: "A team chat app. Talk in channels, send direct messages, and share files in one place."
+  vi: "Slack là ứng dụng chat cho đội nhóm. Với kết nối này, Agent có thể đăng tin lên kênh, tìm tin nhắn, tóm tắt kênh và chia sẻ file cho bạn."
+  en: "Slack is a team chat app. With this connection, the Agent can post to channels, find messages, summarize channels, and share files for you."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Bắt đầu bằng cách gõ @slack trong khung chat để kết nối kênh chat của nhóm."
-    - "Giao việc cho agent: đăng tin lên kênh nào, tìm tin nhắn gì, hay tóm tắt kênh nào. Càng cụ thể agent càng đỡ hỏi lại."
-    - "Kèm link tin nhắn hoặc tên kênh (#sales, #support) nếu có để agent định vị nhanh hơn hẳn."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @slack\" trong câu chat để Agent biết và mở đúng công cụ làm việc với kênh chat của nhóm bạn. Ví dụ: \"dùng tryopenclaw connector @slack để tóm tắt tin nhắn mới giúp tôi\"."
   en:
-    - "Start by typing @slack in the chat box to connect your workspace."
-    - "Hand the agent the task: which channel to post to, what messages to find, or which channel to summarize. Being specific saves a round-trip."
-    - "Add a message link or channel name (#sales, #support) when you have one so the agent locates it much faster."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @slack\" in your chat so the Agent knows to work with your team channels. Example: \"use the tryopenclaw connector @slack to summarize my recent messages\"."
 tutorials:
   - title:
       vi: "Tóm tắt tin nhắn"

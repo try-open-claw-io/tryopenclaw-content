@@ -4,19 +4,15 @@ name:
   vi: "GitLab"
   en: "GitLab"
 description:
-  vi: "Nền tảng quản lý mã nguồn Git kèm CI/CD. Có thể cài trên server riêng để tự kiểm soát hạ tầng."
-  en: "A Git code platform with built-in CI/CD. Can run on your own server for full infrastructure control."
+  vi: "GitLab là nền tảng quản lý mã nguồn Git kèm CI/CD. Với kết nối này, Agent có thể xem merge request, mở MR mới, theo dõi review và tra pipeline cho bạn."
+  en: "GitLab is a Git code platform with built-in CI/CD. With this connection, the Agent can view merge requests, open new MRs, track reviews, and check pipelines for you."
 category: engineering
 popular: true
 howToUse:
   vi:
-    - "Gõ @gitlab vào khung chat để agent làm việc trực tiếp trên repo của bạn."
-    - "Cho biết bạn cần gì: xem merge request chờ review, mở MR mới, hay tra pipeline. Kèm tên repo và nhánh để khỏi nhầm dự án."
-    - "Sẵn link repo, MR hay pipeline thì đưa vào, agent nhảy đúng chỗ ngay từ đầu."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @gitlab\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên repo của bạn. Ví dụ: \"dùng tryopenclaw connector @gitlab để xem các merge request đang chờ review giúp tôi\"."
   en:
-    - "Type @gitlab in the chat box so the agent works directly on your repo."
-    - "Say what you need: list merge requests waiting for review, open a new MR, or check a pipeline. Include the repo and branch so it lands on the right project."
-    - "Have a repo, MR, or pipeline link? Drop it in so the agent jumps straight to the right spot."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @gitlab\" in your chat so the Agent knows to work on your repository. Example: \"use the tryopenclaw connector @gitlab to show merge requests waiting for my review\"."
 tutorials:
   - title:
       vi: "MR chờ review"

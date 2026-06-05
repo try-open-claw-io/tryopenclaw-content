@@ -4,19 +4,15 @@ name:
   vi: "Salesforce"
   en: "Salesforce"
 description:
-  vi: "Nền tảng CRM cho doanh nghiệp. Quản lý pipeline, báo cáo nâng cao và tự động hoá nhiều phòng ban."
-  en: "An enterprise CRM platform. Manage pipelines, advanced reporting, and multi-team automation."
+  vi: "Salesforce là nền tảng CRM cho doanh nghiệp. Với kết nối này, Agent có thể xem, thêm, cập nhật opportunity và lead cùng xem báo cáo cho bạn."
+  en: "Salesforce is an enterprise CRM platform. With this connection, the Agent can view, add, and update opportunities and leads, and pull up reports for you."
 category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @salesforce vào khung chat để agent quản lý khách hàng cùng bạn."
-    - "Nói rõ bạn cần gì: cập nhật giai đoạn opportunity, thêm lead, hay xem báo cáo. Kèm tên opportunity và giai đoạn cho chắc."
-    - "Có link opportunity hay hồ sơ khách thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @salesforce\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @salesforce để xem các cơ hội bán hàng gần đây giúp tôi\"."
   en:
-    - "Type @salesforce in the chat box so the agent can manage customers with you."
-    - "Say what you need: move an opportunity's stage, add a lead, or view a report. Include the opportunity name and stage to be safe."
-    - "If you have an opportunity or contact link, include it so the agent opens the right one, not the wrong customer."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @salesforce\" in your chat so the Agent knows to work with your customer records. Example: \"use the tryopenclaw connector @salesforce to show my recent opportunities\"."
 tutorials:
   - title:
       vi: "Xem cơ hội"

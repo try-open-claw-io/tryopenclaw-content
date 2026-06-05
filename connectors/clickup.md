@@ -4,19 +4,15 @@ name:
   vi: "ClickUp"
   en: "ClickUp"
 description:
-  vi: "Nền tảng quản lý dự án all-in-one. Gộp task, tài liệu, mục tiêu và theo dõi thời gian trong một nơi."
-  en: "An all-in-one project management platform. Tasks, docs, goals, and time tracking in one place."
+  vi: "ClickUp là nền tảng quản lý dự án all-in-one. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, cập nhật trạng thái và theo dõi dự án của bạn."
+  en: "ClickUp is an all-in-one project management platform. With this connection, the Agent can view assigned tasks, create new work, update statuses, and track your projects."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @clickup vào khung chat để agent quản lý công việc cùng bạn."
-    - "Nói rõ bạn cần gì: xem task chưa xong, tạo task mới, hay cập nhật trạng thái. Kèm tên dự án và người phụ trách cho chắc."
-    - "Có link task hay tên dự án thì gửi kèm để agent mở đúng việc cần xử lý."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @clickup\" trong câu chat để Agent biết và mở đúng công cụ quản lý công việc của bạn. Ví dụ: \"dùng tryopenclaw connector @clickup để liệt kê các task được giao giúp tôi\"."
   en:
-    - "Type @clickup in the chat box so the agent can manage work with you."
-    - "Say what you need: list open tasks, create a new task, or update a status. Include the project name and assignee to be safe."
-    - "If you have a task link or project name, include it so the agent opens the right work."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @clickup\" in your chat so the Agent knows to open your work tool. Example: \"use the tryopenclaw connector @clickup to show tasks assigned to me\"."
 tutorials:
   - title:
       vi: "Task của mình"

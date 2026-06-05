@@ -4,19 +4,15 @@ name:
   vi: "Calendly"
   en: "Calendly"
 description:
-  vi: "Công cụ đặt lịch hẹn online. Chia sẻ một link để người khác tự chọn giờ trống, lịch hẹn tạo tự động."
-  en: "An online scheduling tool. Share a link so others pick an open slot, and bookings are created automatically."
+  vi: "Calendly là công cụ đặt lịch hẹn online. Với kết nối này, Agent có thể xem lịch hẹn sắp tới, tạo link đặt hẹn, dời và huỷ cuộc hẹn của bạn."
+  en: "Calendly is an online scheduling tool. With this connection, the Agent can view upcoming bookings, create booking links, reschedule and cancel your meetings."
 category: scheduling
 popular: true
 howToUse:
   vi:
-    - "Mở khung chat và gõ @calendly để gắn lịch đặt hẹn vào hội thoại."
-    - "Mô tả việc cần làm: tạo link hẹn bao lâu, xem lịch khoảng nào, hay dời cuộc hẹn nào. Thời gian càng rõ càng dễ chốt."
-    - "Nếu đã có link cuộc hẹn, gửi kèm để agent dời hoặc huỷ đúng buổi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @calendly\" trong câu chat để Agent biết và mở đúng lịch đặt hẹn của bạn. Ví dụ: \"dùng tryopenclaw connector @calendly để xem các lịch hẹn sắp tới giúp tôi\"."
   en:
-    - "Open the chat box and type @calendly to bring your scheduling into the conversation."
-    - "Describe what you need: a booking link of what length, which dates to check, or which meeting to move. Clear timing makes it easy to lock in."
-    - "If you already have a meeting link, include it so the agent reschedules or cancels the right one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @calendly\" in your chat so the Agent knows to open your scheduling. Example: \"use the tryopenclaw connector @calendly to show my upcoming bookings\"."
 tutorials:
   - title:
       vi: "Xem lịch hẹn"

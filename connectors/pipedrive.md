@@ -4,19 +4,15 @@ name:
   vi: "Pipedrive"
   en: "Pipedrive"
 description:
-  vi: "Phần mềm CRM bán hàng đơn giản. Quản lý deal trên pipeline trực quan, không cần cài đặt phức tạp."
-  en: "A simple sales CRM. Manage deals on a visual pipeline, with no complex setup."
+  vi: "Pipedrive là phần mềm CRM bán hàng đơn giản. Với kết nối này, Agent có thể xem, thêm, cập nhật và theo dõi deal trên pipeline của bạn."
+  en: "Pipedrive is a simple sales CRM. With this connection, the Agent can view, add, update, and track deals on your pipeline."
 category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @pipedrive trong khung chat để agent quản lý pipeline bán hàng cùng bạn."
-    - "Nói rõ bạn cần gì: cập nhật giai đoạn deal, thêm deal mới, hay xem pipeline. Kèm tên deal và giai đoạn cho chắc."
-    - "Có link deal thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @pipedrive\" trong câu chat để Agent biết và mở đúng công cụ quản lý pipeline bán hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @pipedrive để xem các deal trong pipeline giúp tôi\"."
   en:
-    - "Type @pipedrive in the chat box so the agent can manage your sales pipeline with you."
-    - "Say what you need: move a deal's stage, add a new deal, or view your pipeline. Include the deal name and stage to be safe."
-    - "If you have a deal link, include it so the agent opens the right opportunity, not the wrong customer."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @pipedrive\" in your chat so the Agent knows to work with your sales pipeline. Example: \"use the tryopenclaw connector @pipedrive to show the deals in my pipeline\"."
 tutorials:
   - title:
       vi: "Xem deal"

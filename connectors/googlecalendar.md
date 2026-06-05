@@ -4,19 +4,15 @@ name:
   vi: "Google Calendar"
   en: "Google Calendar"
 description:
-  vi: "Lịch online của Google. Đặt cuộc họp, xem lịch và khung giờ trống — đồng bộ với Gmail và Google Meet."
-  en: "Google's online calendar. Schedule meetings and check your agenda and free slots — synced with Gmail and Google Meet."
+  vi: "Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn."
+  en: "Google Calendar is Google's online calendar. With this connection, the Agent can check your schedule, set meetings, find free slots, and invite guests for you."
 category: scheduling
 popular: true
 howToUse:
   vi:
-    - "Mở khung chat, gõ @googlecalendar để agent xem và sắp lịch giúp bạn."
-    - "Mô tả việc cần làm: xem lịch ngày nào, đặt cuộc họp lúc nào, hay kiểm tra slot trống. Nêu rõ ngày giờ cho chính xác."
-    - "Nếu đã có link sự kiện, gửi kèm để agent dời hoặc thêm người đúng buổi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googlecalendar\" trong câu chat để Agent biết và mở đúng công cụ xem và sắp lịch của bạn. Ví dụ: \"dùng tryopenclaw connector @googlecalendar để xem lịch sắp tới giúp tôi\"."
   en:
-    - "Open the chat box and type @googlecalendar so the agent can view and arrange your schedule."
-    - "Describe what you need: which day's schedule to check, when to set a meeting, or which free slots to find. Name the date and time to be precise."
-    - "If you already have an event link, include it so the agent reschedules or adds guests to the right one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googlecalendar\" in your chat so the Agent knows to view and arrange your schedule. Example: \"use the tryopenclaw connector @googlecalendar to show my upcoming events\"."
 tutorials:
   - title:
       vi: "Xem lịch sắp tới"

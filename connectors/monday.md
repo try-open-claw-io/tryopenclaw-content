@@ -4,19 +4,15 @@ name:
   vi: "Monday.com"
   en: "Monday.com"
 description:
-  vi: "Nền tảng quản lý công việc nhiều kiểu xem. Bảng kéo-thả, dòng thời gian và lịch cho từng dự án."
-  en: "A work management platform with multiple views. Boards, timelines, and calendars for each project."
+  vi: "Monday.com là nền tảng quản lý công việc nhiều kiểu xem. Với kết nối này, Agent có thể xem task, tạo item mới và cập nhật trạng thái trên từng board."
+  en: "Monday.com is a work management platform with multiple views. With this connection, the Agent can view tasks, create new items, and update statuses on each board."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @monday vào khung chat để agent quản lý công việc cùng bạn."
-    - "Nói rõ bạn cần gì: xem task trong tuần, tạo item mới, hay cập nhật trạng thái. Kèm tên board ('Marketing') cho trúng."
-    - "Có link board hay item thì gửi kèm để agent mở đúng nơi cần xử lý."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @monday\" trong câu chat để Agent biết và mở đúng công cụ quản lý công việc trên board của bạn. Ví dụ: \"dùng tryopenclaw connector @monday để xem các task được giao giúp tôi\"."
   en:
-    - "Type @monday in the chat box so the agent can manage work with you."
-    - "Say what you need: list this week's tasks, create a new item, or update a status. Include the board name ('Marketing') to get it right."
-    - "If you have a board or item link, include it so the agent opens the right place."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @monday\" in your chat so the Agent knows to manage work on your boards. Example: \"use the tryopenclaw connector @monday to show tasks assigned to me\"."
 tutorials:
   - title:
       vi: "Task của mình"

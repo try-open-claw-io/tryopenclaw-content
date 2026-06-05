@@ -4,19 +4,15 @@ name:
   vi: "Mailchimp"
   en: "Mailchimp"
 description:
-  vi: "Nền tảng email marketing. Tạo danh sách, thiết kế bản tin và gửi chiến dịch tự động."
-  en: "An email marketing platform. Build lists, design newsletters, and send automated campaigns."
+  vi: "Mailchimp là nền tảng email marketing. Với kết nối này, Agent có thể tạo danh sách, thêm khách vào audience, gửi chiến dịch và xem số liệu mở/click."
+  en: "Mailchimp is an email marketing platform. With this connection, the Agent can build lists, add contacts to audiences, send campaigns, and check open/click stats."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @mailchimp vào khung chat để agent lo phần email marketing cho bạn."
-    - "Nêu rõ việc cần làm: gửi chiến dịch nào cho danh sách nào, thêm khách vào audience, hay xem số liệu mở/click. Càng chi tiết càng đúng đối tượng."
-    - "Sẵn link chiến dịch hay tên audience ('Khách thân thiết') thì gửi kèm để agent gửi đúng tệp khách."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @mailchimp\" trong câu chat để Agent biết và mở đúng công cụ lo phần email marketing cho bạn. Ví dụ: \"dùng tryopenclaw connector @mailchimp để xem hiệu quả chiến dịch gần đây giúp tôi\"."
   en:
-    - "Type @mailchimp in the chat box so the agent handles your email marketing."
-    - "Spell out what you need: which campaign to which list, adding contacts to an audience, or open/click stats. The more detail, the more accurate the targeting."
-    - "Have a campaign link or audience name ('Loyal Customers')? Include it so the agent reaches the right list."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @mailchimp\" in your chat so the Agent knows to handle your email marketing. Example: \"use the tryopenclaw connector @mailchimp to check my recent campaign performance\"."
 tutorials:
   - title:
       vi: "Xem chiến dịch"

@@ -4,19 +4,15 @@ name:
   vi: "Linear"
   en: "Linear"
 description:
-  vi: "Công cụ quản lý task và bug gọn nhẹ. Theo dõi qua sprint và project, thao tác nhanh bằng phím tắt."
-  en: "A lightweight task and bug tracker. Work across sprints and projects, fast with keyboard shortcuts."
+  vi: "Linear là công cụ quản lý task và bug gọn nhẹ. Với kết nối này, Agent có thể xem, tạo và cập nhật issue qua sprint và project."
+  en: "Linear is a lightweight task and bug tracker. With this connection, the Agent can view, create, and update issues across sprints and projects."
 category: engineering
 popular: true
 howToUse:
   vi:
-    - "Gõ @linear trong khung chat để agent quản lý task kỹ thuật cùng bạn."
-    - "Cho biết bạn cần gì: xem task trong tuần, tạo issue mới, hay cập nhật trạng thái. Kèm tên team hoặc project cho trúng."
-    - "Có link issue thì gửi kèm để agent mở đúng task, không phải tìm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @linear\" trong câu chat để Agent biết và mở đúng công cụ quản lý task kỹ thuật của bạn. Ví dụ: \"dùng tryopenclaw connector @linear để xem các task được giao giúp tôi\"."
   en:
-    - "Type @linear in the chat box so the agent can manage engineering tasks with you."
-    - "Say what you need: list this week's tasks, create a new issue, or update a status. Include the team or project name to get it right."
-    - "If you have an issue link, include it so the agent opens the right task without searching."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @linear\" in your chat so the Agent knows to manage your engineering tasks. Example: \"use the tryopenclaw connector @linear to show tasks assigned to me\"."
 tutorials:
   - title:
       vi: "Task của mình"

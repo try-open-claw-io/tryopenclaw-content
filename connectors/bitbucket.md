@@ -4,19 +4,15 @@ name:
   vi: "Bitbucket"
   en: "Bitbucket"
 description:
-  vi: "Nền tảng quản lý mã nguồn Git của Atlassian. Lưu repo, review pull request và chạy pipeline CI/CD."
-  en: "Atlassian's Git code platform. Host repositories, review pull requests, and run CI/CD pipelines."
+  vi: "Bitbucket là nền tảng quản lý mã nguồn Git của Atlassian. Với kết nối này, Agent có thể xem pull request chờ review, mở PR mới, tra commit và theo dõi repo của bạn."
+  en: "Bitbucket is Atlassian's Git code platform. With this connection, the Agent can list pull requests to review, open new PRs, check commits, and keep track of your repos."
 category: engineering
 popular: true
 howToUse:
   vi:
-    - "Gõ @bitbucket vào khung chat để agent làm việc trực tiếp trên repo của bạn."
-    - "Cho biết bạn cần gì: xem pull request chờ review, mở PR mới, hay tra commit. Kèm tên repo và nhánh để khỏi nhầm dự án."
-    - "Sẵn link repo hay PR thì đưa vào, agent nhảy đúng chỗ ngay từ đầu."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @bitbucket\" trong câu chat để Agent biết và mở đúng repo của bạn. Ví dụ: \"dùng tryopenclaw connector @bitbucket để xem các pull request đang chờ review giúp tôi\"."
   en:
-    - "Type @bitbucket in the chat box so the agent works directly on your repo."
-    - "Say what you need: list pull requests waiting for review, open a new PR, or check commits. Include the repo and branch so it lands on the right project."
-    - "Have a repo or PR link? Drop it in so the agent jumps straight to the right spot."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @bitbucket\" in your chat so the Agent knows to open your repo. Example: \"use the tryopenclaw connector @bitbucket to show pull requests waiting for my review\"."
 tutorials:
   - title:
       vi: "PR chờ review"

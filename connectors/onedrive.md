@@ -4,19 +4,15 @@ name:
   vi: "OneDrive"
   en: "OneDrive"
 description:
-  vi: "Dịch vụ lưu trữ đám mây của Microsoft. Cất file, đồng bộ thiết bị và chia sẻ bằng link, tích hợp Microsoft 365."
-  en: "Microsoft's cloud storage. Store files, sync devices, and share with a link, integrated with Microsoft 365."
+  vi: "OneDrive là dịch vụ lưu trữ đám mây của Microsoft. Với kết nối này, Agent có thể tìm, tải lên, sắp xếp và chia sẻ file trong kho lưu trữ của bạn."
+  en: "OneDrive is Microsoft's cloud storage. With this connection, the Agent can find, upload, organize, and share files in your storage."
 category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @onedrive trong khung chat để agent tìm và chia sẻ file giúp bạn."
-    - "Nói rõ bạn cần gì: tìm file theo tên, chia sẻ link, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
-    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @onedrive\" trong câu chat để Agent biết và mở đúng công cụ xử lý kho file của bạn. Ví dụ: \"dùng tryopenclaw connector @onedrive để liệt kê file gần đây giúp tôi\"."
   en:
-    - "Type @onedrive in the chat box so the agent can find and share files for you."
-    - "Say what you need: find a file by name, share a link, or upload a new file. Include the file name and folder to get it right."
-    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @onedrive\" in your chat so the Agent knows to work with your files. Example: \"use the tryopenclaw connector @onedrive to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"

@@ -4,19 +4,15 @@ name:
   vi: "Lark Suite"
   en: "Lark Suite"
 description:
-  vi: "Bộ công cụ làm việc all-in-one. Gộp chat, tài liệu, lịch và form khảo sát trong một nền tảng."
-  en: "An all-in-one workspace. Chat, docs, calendar, and forms unified into one platform."
+  vi: "Lark Suite là bộ công cụ làm việc all-in-one. Với kết nối này, Agent có thể xem tin nhắn, gửi tin vào nhóm, tạo tài liệu và đặt lịch họp."
+  en: "Lark Suite is an all-in-one workspace. With this connection, the Agent can check messages, post to groups, create docs, and set up meetings."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @larksuite trong khung chat để agent làm việc trên nền tảng Lark cùng bạn."
-    - "Nói rõ bạn cần gì: gửi tin vào nhóm nào, tạo tài liệu, hay đặt lịch họp. Kèm tên nhóm ('Sales') cho trúng."
-    - "Có link nhóm hay tài liệu thì gửi kèm để agent gửi đúng nơi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @larksuite\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên nền tảng Lark của bạn. Ví dụ: \"dùng tryopenclaw connector @larksuite để xem tin nhắn mới giúp tôi\"."
   en:
-    - "Type @larksuite in the chat box so the agent can work across Lark with you."
-    - "Say what you need: send a message to which group, create a doc, or set up a meeting. Include the group name ('Sales') to get it right."
-    - "If you have a group or doc link, include it so the agent posts in the right place."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @larksuite\" in your chat so the Agent knows to work across your Lark workspace. Example: \"use the tryopenclaw connector @larksuite to check my recent messages\"."
 tutorials:
   - title:
       vi: "Xem tin nhắn"

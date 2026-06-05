@@ -4,19 +4,15 @@ name:
   vi: "Zendesk"
   en: "Zendesk"
 description:
-  vi: "Phần mềm hỗ trợ khách hàng. Quản lý ticket từ nhiều kênh, trả lời và theo dõi trong một nơi."
-  en: "Customer support software. Manage tickets from many channels, reply, and track in one place."
+  vi: "Zendesk là phần mềm hỗ trợ khách hàng. Với kết nối này, Agent có thể xem ticket ưu tiên, trả lời bằng câu mẫu, tóm tắt hội thoại và theo dõi ticket chưa xử lý."
+  en: "Zendesk is customer support software. With this connection, the Agent can view priority tickets, reply with macros, summarize threads, and track open tickets."
 category: support
 popular: true
 howToUse:
   vi:
-    - "Gõ @zendesk vào khung chat để agent xử lý ticket cùng bạn."
-    - "Nói rõ bạn cần gì: xem ticket ưu tiên, trả lời bằng câu mẫu, hay tóm tắt hội thoại. Kèm mã ticket hoặc mức ưu tiên cho trúng."
-    - "Có link ticket thì gửi kèm để agent mở đúng ticket cần xử lý."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @zendesk\" trong câu chat để Agent biết và mở đúng công cụ xử lý ticket hỗ trợ của bạn. Ví dụ: \"dùng tryopenclaw connector @zendesk để xem các ticket chưa giải quyết giúp tôi\"."
   en:
-    - "Type @zendesk in the chat box so the agent can handle tickets with you."
-    - "Say what you need: view priority tickets, reply with a macro, or summarize a thread. Include the ticket ID or priority to get it right."
-    - "If you have a ticket link, include it so the agent opens the exact one that needs work."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @zendesk\" in your chat so the Agent knows to handle your support tickets. Example: \"use the tryopenclaw connector @zendesk to show unresolved tickets\"."
 tutorials:
   - title:
       vi: "Ticket chưa xử lý"

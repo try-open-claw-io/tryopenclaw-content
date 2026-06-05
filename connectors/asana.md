@@ -4,19 +4,15 @@ name:
   vi: "Asana"
   en: "Asana"
 description:
-  vi: "Công cụ quản lý dự án và công việc. Giao task, đặt deadline và theo dõi tiến độ theo team."
-  en: "A project and task management tool. Assign tasks, set deadlines, and track progress by team."
+  vi: "Asana là công cụ quản lý dự án và công việc. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, đặt deadline và theo dõi tiến độ của team."
+  en: "Asana is a project and task management tool. With this connection, the Agent can view assigned tasks, create new work, set deadlines, and track your team's progress."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @asana trong khung chat để agent quản lý task của team cùng bạn."
-    - "Nói rõ bạn cần gì: giao task cho ai, đặt deadline, hay xem việc đang chạy. Kèm tên task, người nhận và hạn cho chắc."
-    - "Có link task hay tên dự án thì gửi kèm để agent giao đúng việc, đúng người."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @asana\" trong câu chat để Agent biết và mở đúng công cụ quản lý task của bạn. Ví dụ: \"dùng tryopenclaw connector @asana để liệt kê các task được giao giúp tôi\"."
   en:
-    - "Type @asana in the chat box so the agent can manage your team's tasks with you."
-    - "Say what you need: assign a task to someone, set a deadline, or check what's in progress. Include the task name, assignee, and due date to be safe."
-    - "If you have a task link or project name, include it so the agent assigns the right work to the right person."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @asana\" in your chat so the Agent knows to open your task tool. Example: \"use the tryopenclaw connector @asana to show tasks assigned to me\"."
 tutorials:
   - title:
       vi: "Task của mình"

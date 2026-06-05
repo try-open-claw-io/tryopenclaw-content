@@ -4,19 +4,15 @@ name:
   vi: "Typeform"
   en: "Typeform"
 description:
-  vi: "Công cụ tạo form và khảo sát kiểu trò chuyện, hỏi từng câu một. Thu thập câu trả lời và xem kết quả."
-  en: "A tool for conversational forms and surveys that ask one question at a time. Collect answers and view results."
+  vi: "Typeform là công cụ tạo form và khảo sát kiểu trò chuyện, hỏi từng câu một. Với kết nối này, Agent có thể tạo form, thu thập câu trả lời, xem phản hồi và xuất kết quả."
+  en: "Typeform is a tool for conversational forms and surveys that ask one question at a time. With this connection, the Agent can build forms, collect answers, view responses, and export results."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Gõ @typeform vào khung chat để agent tạo form và thu phản hồi giúp bạn."
-    - "Nói rõ bạn cần gì: tạo form đăng ký mấy câu hỏi, xem phản hồi, hay xuất kết quả. Kèm các câu hỏi cần hỏi cho trúng."
-    - "Có link form thì gửi kèm để agent mở đúng form, không nhầm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @typeform\" trong câu chat để Agent biết và mở đúng công cụ tạo form và thu phản hồi của bạn. Ví dụ: \"dùng tryopenclaw connector @typeform để xem phản hồi mới từ form giúp tôi\"."
   en:
-    - "Type @typeform in the chat box so the agent can build forms and collect responses for you."
-    - "Say what you need: create a signup form with which questions, view responses, or export results. List the questions to ask to get it right."
-    - "If you have a form link, include it so the agent opens the right form."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @typeform\" in your chat so the Agent knows to build forms and collect responses. Example: \"use the tryopenclaw connector @typeform to check recent form responses\"."
 tutorials:
   - title:
       vi: "Xem phản hồi"
