@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem bảng tính"
       en: "List spreadsheets"
     prompt:
-      vi: "dùng tryopenclaw connectors @googlesheets liệt kê bảng tính gần đây của mình."
-      en: "use the tryopenclaw connectors @googlesheets to list my recent spreadsheets."
+      vi: "Dùng tryopenclaw connectors @googlesheets liệt kê bảng tính gần đây của mình."
+      en: "Use the tryopenclaw connectors @googlesheets to list my recent spreadsheets."
 ---
 
 <!-- Body for future rich docs -->

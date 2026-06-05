@@ -18,8 +18,8 @@ tutorials:
       vi: "Tìm ứng viên"
       en: "Find candidates"
     prompt:
-      vi: "dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
-      en: "use the tryopenclaw connectors @linkedin to find candidates for [role]."
+      vi: "Dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
+      en: "Use the tryopenclaw connectors @linkedin to find candidates for [role]."
 ---
 
 <!-- Body for future rich docs -->

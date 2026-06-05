@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem tin nhắn"
       en: "Check messages"
     prompt:
-      vi: "dùng tryopenclaw connectors @larksuite xem tin nhắn mới của mình."
-      en: "use the tryopenclaw connectors @larksuite to check my recent messages."
+      vi: "Dùng tryopenclaw connectors @larksuite xem tin nhắn mới của mình."
+      en: "Use the tryopenclaw connectors @larksuite to check my recent messages."
 ---
 
 <!-- Body for future rich docs -->

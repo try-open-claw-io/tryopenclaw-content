@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem lịch hẹn"
       en: "Check bookings"
     prompt:
-      vi: "dùng tryopenclaw connectors @calendly xem các lịch hẹn sắp tới của mình."
-      en: "use the tryopenclaw connectors @calendly to show my upcoming bookings."
+      vi: "Dùng tryopenclaw connectors @calendly xem các lịch hẹn sắp tới của mình."
+      en: "Use the tryopenclaw connectors @calendly to show my upcoming bookings."
 ---
 
 <!--
@@ -66,12 +66,12 @@ howToUse      Array ĐÚNG 1 phần tử / lang, mở đầu nhãn Kích hoạt 
 
 tutorials     Đúng 1 row — hành động đơn giản & phổ quát nhất (thường là đọc/kiểm tra/liệt kê).
               - title.vi/en   2-4 từ, mệnh lệnh (vd: "Check email" / "Kiểm tra mail").
-              - prompt.vi      BẮT ĐẦU "dùng tryopenclaw connectors @<id> {hành động}." (số nhiều "connectors").
-              - prompt.en      BẮT ĐẦU "use the tryopenclaw connectors @<id> to {action}.".
+              - prompt.vi      BẮT ĐẦU "Dùng tryopenclaw connectors @<id> {hành động}." (viết hoa, số nhiều "connectors").
+              - prompt.en      BẮT ĐẦU "Use the tryopenclaw connectors @<id> to {action}." (viết hoa).
                               Không lặp lại tên brand trong câu (@mention đã rõ connector).
                               ƯU TIÊN zero-input: copy-paste chạy ngay, tự khoanh phạm vi bằng
                               "của mình"/"gần đây"/"giao cho mình"
-                              (vd "dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình.").
+                              (vd "Dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình.").
                               Chỉ dùng đúng 1 [noun] khi connector thuần gửi/tạo (xem `_rules.md` §B1, §B4).
 
 Body (sau dấu `---`)

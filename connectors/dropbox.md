@@ -18,8 +18,8 @@ tutorials:
       vi: "File gần đây"
       en: "Recent files"
     prompt:
-      vi: "dùng tryopenclaw connectors @dropbox liệt kê file gần đây của mình."
-      en: "use the tryopenclaw connectors @dropbox to list my recent files."
+      vi: "Dùng tryopenclaw connectors @dropbox liệt kê file gần đây của mình."
+      en: "Use the tryopenclaw connectors @dropbox to list my recent files."
 ---
 
 <!-- Body for future rich docs -->

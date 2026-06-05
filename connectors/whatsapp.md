@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem tin nhắn"
       en: "Check messages"
     prompt:
-      vi: "dùng tryopenclaw connectors @whatsapp xem tin nhắn khách gần đây."
-      en: "use the tryopenclaw connectors @whatsapp to check recent customer messages."
+      vi: "Dùng tryopenclaw connectors @whatsapp xem tin nhắn khách gần đây."
+      en: "Use the tryopenclaw connectors @whatsapp to check recent customer messages."
 ---
 
 <!-- Body for future rich docs -->

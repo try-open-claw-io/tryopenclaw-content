@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem người dùng"
       en: "List users"
     prompt:
-      vi: "dùng tryopenclaw connectors @larksuite-tenant liệt kê người dùng trong tenant."
-      en: "use the tryopenclaw connectors @larksuite-tenant to list users in the tenant."
+      vi: "Dùng tryopenclaw connectors @larksuite-tenant liệt kê người dùng trong tenant."
+      en: "Use the tryopenclaw connectors @larksuite-tenant to list users in the tenant."
 ---
 
 <!-- Body for future rich docs -->

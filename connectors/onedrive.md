@@ -18,8 +18,8 @@ tutorials:
       vi: "File gần đây"
       en: "Recent files"
     prompt:
-      vi: "dùng tryopenclaw connectors @onedrive liệt kê file gần đây của mình."
-      en: "use the tryopenclaw connectors @onedrive to list my recent files."
+      vi: "Dùng tryopenclaw connectors @onedrive liệt kê file gần đây của mình."
+      en: "Use the tryopenclaw connectors @onedrive to list my recent files."
 ---
 
 <!-- Body for future rich docs -->

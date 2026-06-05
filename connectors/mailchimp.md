@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem chiến dịch"
       en: "Check campaigns"
     prompt:
-      vi: "dùng tryopenclaw connectors @mailchimp xem hiệu quả chiến dịch gần đây."
-      en: "use the tryopenclaw connectors @mailchimp to check my recent campaign performance."
+      vi: "Dùng tryopenclaw connectors @mailchimp xem hiệu quả chiến dịch gần đây."
+      en: "Use the tryopenclaw connectors @mailchimp to check my recent campaign performance."
 ---
 
 <!-- Body for future rich docs -->

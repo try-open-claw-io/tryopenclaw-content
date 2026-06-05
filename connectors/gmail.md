@@ -18,8 +18,8 @@ tutorials:
       vi: "Kiểm tra mail"
       en: "Check email"
     prompt:
-      vi: "dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
-      en: "use the tryopenclaw connectors @gmail to check my unread emails."
+      vi: "Dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
+      en: "Use the tryopenclaw connectors @gmail to check my unread emails."
 ---
 
 <!-- Body for future rich docs -->

@@ -58,10 +58,11 @@ Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh *
 
 ### B1b. Prompt bắt đầu bằng cụm trigger chuẩn
 `prompt.vi` và `prompt.en` **phải bắt đầu** bằng cụm gọi connector đầy đủ:
-- **vi:** `dùng tryopenclaw connectors @<id> {hành động}.`
-- **en:** `use the tryopenclaw connectors @<id> to {action}.`
+- **vi:** `Dùng tryopenclaw connectors @<id> {hành động}.`
+- **en:** `Use the tryopenclaw connectors @<id> to {action}.`
 
-(vd vi `dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình.`, en `use the tryopenclaw connectors @gmail to check my unread emails.`)
+(vd vi `Dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình.`, en `Use the tryopenclaw connectors @gmail to check my unread emails.`)
+- **Viết hoa chữ cái đầu** câu ("Dùng" / "Use") — đây là 1 câu hoàn chỉnh user gõ.
 - `@<id>` viết thường, đúng slug connector (vd `@gmail`, `@googlecalendar`, `@larksuite-tenant`).
 - **Không lặp lại tên brand** trong câu vì @mention đã chỉ rõ connector (❌ `…@gmail mở mail Gmail…`).
 - Chỉ 1 câu duy nhất / lang. Phải dùng số nhiều **"connectors"** (không phải "connector").
@@ -77,12 +78,12 @@ Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh *
 ### B4. Prompt = lệnh đơn giản nhất, ưu tiên zero-input
 - Prompt phải **chạy được ngay khi copy-paste** cho mọi tài khoản — **không hardcode ngữ cảnh cụ thể** (số liệu, ngày "hôm nay", tên doc/board/kênh thật, scenario riêng).
 - **Mặc định: zero-input.** Chọn 1 hành động đọc/kiểm tra/liệt kê tự khoanh phạm vi bằng "của mình" / "gần đây" / "giao cho mình" / "đang chờ" — không cần user điền gì.
-  - ✅ "dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
-  - ✅ "dùng tryopenclaw connectors @shopify xem các đơn hàng gần đây."
-  - ✅ "dùng tryopenclaw connectors @jira xem các task đang giao cho mình."
+  - ✅ "Dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
+  - ✅ "Dùng tryopenclaw connectors @shopify xem các đơn hàng gần đây."
+  - ✅ "Dùng tryopenclaw connectors @jira xem các task đang giao cho mình."
 - **Placeholder chỉ là ngoại lệ.** Chỉ khi connector **thuần gửi/tạo** và không có hành động đọc có nghĩa → dùng **đúng 1** `[noun]` cho phần bắt buộc nhập. Format `[mô tả tham số]` (danh từ tiếng Việt, không `X`/`Y`).
-  - ✅ "dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]." (Twilio không có inbox để đọc)
-  - ✅ "dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
+  - ✅ "Dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]." (Twilio không có inbox để đọc)
+  - ✅ "Dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
 - **Tránh:**
   - ❌ "…@gmail mở 5 mail chưa đọc từ khách hàng hôm nay." (hardcode số/nguồn/ngày)
   - ❌ "…@slack gửi thông báo vào #sales: có đơn mới 500k." (scenario cứng)
@@ -116,7 +117,7 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C3.** `name.vi` + `name.en` giữ đúng brand casing (vd "Google Calendar" không phải "Googlecalendar").
 - [ ] **C4.** `description.vi` + `description.en` đều ≥ 1 câu, không rỗng, không quá 200 ký tự.
 - [ ] **C5.** `category` ∈ enum §A6.
-- [ ] **C6.** `tutorials` có đúng 1 row, đủ `title` + `prompt` cả vi + en; `prompt.vi` bắt đầu `dùng tryopenclaw connectors @<id>`, `prompt.en` bắt đầu `use the tryopenclaw connectors @<id> to` (xem §B1b).
+- [ ] **C6.** `tutorials` có đúng 1 row, đủ `title` + `prompt` cả vi + en; `prompt.vi` bắt đầu `Dùng tryopenclaw connectors @<id>`, `prompt.en` bắt đầu `Use the tryopenclaw connectors @<id> to` (viết hoa chữ đầu — xem §B1b).
 - [ ] **C7.** Grep `[A-Z][a-zà-ỹ]+` trong tất cả `prompt.vi` và `prompt.en` → không có first name người (Mai/An/Lan/John/Alice/Sarah/Bob/Carol/David/Emma...).
 - [ ] **C8.** Grep "chị |anh |em |ông |bà |Mr\\.|Ms\\.|Mrs\\." → không có xưng hô gắn cá nhân.
 - [ ] **C9.** Grep email/SĐT pattern (`\\S+@\\S+`, `\\d{4,}`) → không có dữ liệu thật.
@@ -178,8 +179,8 @@ done
 # D8b. tutorials prompt phải bắt đầu cụm trigger đầy đủ (§B1b)
 for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
   case "$f" in */_*.md) continue;; esac
-  grep -qE '^      vi: "dùng tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.vi không bắt đầu 'dùng tryopenclaw connectors @<id>'"
-  grep -qE '^      en: "use the tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.en không bắt đầu 'use the tryopenclaw connectors @<id>'"
+  grep -qE '^      vi: "Dùng tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.vi không bắt đầu 'Dùng tryopenclaw connectors @<id>' (viết hoa)"
+  grep -qE '^      en: "Use the tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.en không bắt đầu 'Use the tryopenclaw connectors @<id>' (viết hoa)"
 done
 
 # D9. howToUse phải đúng 1 bullet mỗi lang (§B6)

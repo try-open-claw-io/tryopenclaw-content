@@ -18,8 +18,8 @@ tutorials:
       vi: "Thẻ của mình"
       en: "My cards"
     prompt:
-      vi: "dùng tryopenclaw connectors @trello xem các thẻ giao cho mình."
-      en: "use the tryopenclaw connectors @trello to show cards assigned to me."
+      vi: "Dùng tryopenclaw connectors @trello xem các thẻ giao cho mình."
+      en: "Use the tryopenclaw connectors @trello to show cards assigned to me."
 ---
 
 <!-- Body for future rich docs -->

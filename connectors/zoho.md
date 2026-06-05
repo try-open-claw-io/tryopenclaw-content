@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem lead mới"
       en: "Check leads"
     prompt:
-      vi: "dùng tryopenclaw connectors @zoho xem các lead mới gần đây."
-      en: "use the tryopenclaw connectors @zoho to show my recent leads."
+      vi: "Dùng tryopenclaw connectors @zoho xem các lead mới gần đây."
+      en: "Use the tryopenclaw connectors @zoho to show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

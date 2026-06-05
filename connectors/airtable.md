@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem base"
       en: "List bases"
     prompt:
-      vi: "dùng tryopenclaw connectors @airtable liệt kê các base gần đây của mình."
-      en: "use the tryopenclaw connectors @airtable to list my recent bases."
+      vi: "Dùng tryopenclaw connectors @airtable liệt kê các base gần đây của mình."
+      en: "Use the tryopenclaw connectors @airtable to list my recent bases."
 ---
 
 <!-- Body for future rich docs -->

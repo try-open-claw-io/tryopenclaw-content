@@ -18,8 +18,8 @@ tutorials:
       vi: "Tài liệu gần đây"
       en: "Recent docs"
     prompt:
-      vi: "dùng tryopenclaw connectors @googledocs liệt kê tài liệu gần đây của mình."
-      en: "use the tryopenclaw connectors @googledocs to list my recent documents."
+      vi: "Dùng tryopenclaw connectors @googledocs liệt kê tài liệu gần đây của mình."
+      en: "Use the tryopenclaw connectors @googledocs to list my recent documents."
 ---
 
 <!-- Body for future rich docs -->

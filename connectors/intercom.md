@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem chat chưa trả lời"
       en: "Check open chats"
     prompt:
-      vi: "dùng tryopenclaw connectors @intercom xem các cuộc trò chuyện chưa trả lời."
-      en: "use the tryopenclaw connectors @intercom to show unanswered conversations."
+      vi: "Dùng tryopenclaw connectors @intercom xem các cuộc trò chuyện chưa trả lời."
+      en: "Use the tryopenclaw connectors @intercom to show unanswered conversations."
 ---
 
 <!-- Body for future rich docs -->

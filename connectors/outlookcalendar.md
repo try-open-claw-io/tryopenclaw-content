@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem lịch sắp tới"
       en: "Check upcoming events"
     prompt:
-      vi: "dùng tryopenclaw connectors @outlookcalendar xem lịch sắp tới của mình."
-      en: "use the tryopenclaw connectors @outlookcalendar to show my upcoming events."
+      vi: "Dùng tryopenclaw connectors @outlookcalendar xem lịch sắp tới của mình."
+      en: "Use the tryopenclaw connectors @outlookcalendar to show my upcoming events."
 ---
 
 <!-- Body for future rich docs -->
