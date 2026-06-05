@@ -10,16 +10,16 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @salesforce\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @salesforce để xem các cơ hội bán hàng gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @salesforce\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn.\nVí dụ: \"dùng tryopenclaw connectors @salesforce để xem các cơ hội bán hàng gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @salesforce\" in your chat so the Agent knows to work with your customer records. Example: \"use the tryopenclaw connector @salesforce to show my recent opportunities\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @salesforce\" in your chat so the Agent knows to work with your customer records.\nExample: \"use the tryopenclaw connectors @salesforce to show my recent opportunities\"."
 tutorials:
   - title:
       vi: "Xem cơ hội"
       en: "Check opportunities"
     prompt:
-      vi: "@salesforce xem các cơ hội bán hàng gần đây."
-      en: "@salesforce show my recent opportunities."
+      vi: "dùng tryopenclaw connectors @salesforce xem các cơ hội bán hàng gần đây."
+      en: "use the tryopenclaw connectors @salesforce to show my recent opportunities."
 ---
 
 <!-- Body for future rich docs -->

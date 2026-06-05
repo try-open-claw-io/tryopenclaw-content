@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @twilio\" trong câu chat để Agent biết và mở đúng công cụ theo dõi tin nhắn và cuộc gọi của bạn. Ví dụ: \"dùng tryopenclaw connector @twilio để xem lịch sử tin nhắn gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @twilio\" trong câu chat để Agent biết và mở đúng công cụ theo dõi tin nhắn và cuộc gọi của bạn.\nVí dụ: \"dùng tryopenclaw connectors @twilio để xem lịch sử tin nhắn gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @twilio\" in your chat so the Agent knows to track your messages and calls. Example: \"use the tryopenclaw connector @twilio to check recent message logs\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @twilio\" in your chat so the Agent knows to track your messages and calls.\nExample: \"use the tryopenclaw connectors @twilio to check recent message logs\"."
 tutorials:
   - title:
       vi: "Gửi SMS"
       en: "Send an SMS"
     prompt:
-      vi: "@twilio gửi SMS cho [số điện thoại]."
-      en: "@twilio send an SMS to [phone number]."
+      vi: "dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]."
+      en: "use the tryopenclaw connectors @twilio to send an SMS to [phone number]."
 ---
 
 <!-- Body for future rich docs -->

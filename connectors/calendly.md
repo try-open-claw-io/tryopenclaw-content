@@ -10,16 +10,16 @@ category: scheduling
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @calendly\" trong câu chat để Agent biết và mở đúng lịch đặt hẹn của bạn. Ví dụ: \"dùng tryopenclaw connector @calendly để xem các lịch hẹn sắp tới giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @calendly\" trong câu chat để Agent biết và mở đúng lịch đặt hẹn của bạn.\nVí dụ: \"dùng tryopenclaw connectors @calendly để xem các lịch hẹn sắp tới giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @calendly\" in your chat so the Agent knows to open your scheduling. Example: \"use the tryopenclaw connector @calendly to show my upcoming bookings\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @calendly\" in your chat so the Agent knows to open your scheduling.\nExample: \"use the tryopenclaw connectors @calendly to show my upcoming bookings\"."
 tutorials:
   - title:
       vi: "Xem lịch hẹn"
       en: "Check bookings"
     prompt:
-      vi: "@calendly xem các lịch hẹn sắp tới của mình."
-      en: "@calendly show my upcoming bookings."
+      vi: "dùng tryopenclaw connectors @calendly xem các lịch hẹn sắp tới của mình."
+      en: "use the tryopenclaw connectors @calendly to show my upcoming bookings."
 ---
 
 <!-- Body for future rich docs -->

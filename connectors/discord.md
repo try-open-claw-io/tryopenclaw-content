@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @discord\" trong câu chat để Agent biết và mở đúng server cộng đồng của bạn. Ví dụ: \"dùng tryopenclaw connector @discord để xem tin nhắn mới trong server giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @discord\" trong câu chat để Agent biết và mở đúng server cộng đồng của bạn.\nVí dụ: \"dùng tryopenclaw connectors @discord để xem tin nhắn mới trong server giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @discord\" in your chat so the Agent knows to open your community server. Example: \"use the tryopenclaw connector @discord to check recent messages in my server\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @discord\" in your chat so the Agent knows to open your community server.\nExample: \"use the tryopenclaw connectors @discord to check recent messages in my server\"."
 tutorials:
   - title:
       vi: "Xem tin mới"
       en: "Check messages"
     prompt:
-      vi: "@discord xem tin nhắn mới trong server của mình."
-      en: "@discord check recent messages in my server."
+      vi: "dùng tryopenclaw connectors @discord xem tin nhắn mới trong server của mình."
+      en: "use the tryopenclaw connectors @discord to check recent messages in my server."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,16 +10,16 @@ category: support
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @intercom\" trong câu chat để Agent biết và mở đúng công cụ hỗ trợ khách của bạn. Ví dụ: \"dùng tryopenclaw connector @intercom để xem các cuộc trò chuyện chưa trả lời giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @intercom\" trong câu chat để Agent biết và mở đúng công cụ hỗ trợ khách của bạn.\nVí dụ: \"dùng tryopenclaw connectors @intercom để xem các cuộc trò chuyện chưa trả lời giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @intercom\" in your chat so the Agent knows to support your customers. Example: \"use the tryopenclaw connector @intercom to show unanswered conversations\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @intercom\" in your chat so the Agent knows to support your customers.\nExample: \"use the tryopenclaw connectors @intercom to show unanswered conversations\"."
 tutorials:
   - title:
       vi: "Xem chat chưa trả lời"
       en: "Check open chats"
     prompt:
-      vi: "@intercom xem các cuộc trò chuyện chưa trả lời."
-      en: "@intercom show unanswered conversations."
+      vi: "dùng tryopenclaw connectors @intercom xem các cuộc trò chuyện chưa trả lời."
+      en: "use the tryopenclaw connectors @intercom to show unanswered conversations."
 ---
 
 <!-- Body for future rich docs -->

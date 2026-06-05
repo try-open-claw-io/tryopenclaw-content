@@ -10,16 +10,16 @@ category: storage
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @onedrive\" trong câu chat để Agent biết và mở đúng công cụ xử lý kho file của bạn. Ví dụ: \"dùng tryopenclaw connector @onedrive để liệt kê file gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @onedrive\" trong câu chat để Agent biết và mở đúng công cụ xử lý kho file của bạn.\nVí dụ: \"dùng tryopenclaw connectors @onedrive để liệt kê file gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @onedrive\" in your chat so the Agent knows to work with your files. Example: \"use the tryopenclaw connector @onedrive to list my recent files\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @onedrive\" in your chat so the Agent knows to work with your files.\nExample: \"use the tryopenclaw connectors @onedrive to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"
       en: "Recent files"
     prompt:
-      vi: "@onedrive liệt kê file gần đây của mình."
-      en: "@onedrive list my recent files."
+      vi: "dùng tryopenclaw connectors @onedrive liệt kê file gần đây của mình."
+      en: "use the tryopenclaw connectors @onedrive to list my recent files."
 ---
 
 <!-- Body for future rich docs -->

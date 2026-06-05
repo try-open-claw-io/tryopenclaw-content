@@ -10,16 +10,16 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @confluence\" trong câu chat để Agent biết và mở đúng wiki tài liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @confluence để liệt kê các trang gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @confluence\" trong câu chat để Agent biết và mở đúng wiki tài liệu của bạn.\nVí dụ: \"dùng tryopenclaw connectors @confluence để liệt kê các trang gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @confluence\" in your chat so the Agent knows to open your wiki. Example: \"use the tryopenclaw connector @confluence to list recent pages\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @confluence\" in your chat so the Agent knows to open your wiki.\nExample: \"use the tryopenclaw connectors @confluence to list recent pages\"."
 tutorials:
   - title:
       vi: "Trang gần đây"
       en: "Recent pages"
     prompt:
-      vi: "@confluence liệt kê các trang gần đây trong wiki của mình."
-      en: "@confluence list recent pages in my wiki."
+      vi: "dùng tryopenclaw connectors @confluence liệt kê các trang gần đây trong wiki của mình."
+      en: "use the tryopenclaw connectors @confluence to list recent pages in my wiki."
 ---
 
 <!-- Body for future rich docs -->

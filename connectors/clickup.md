@@ -10,16 +10,16 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @clickup\" trong câu chat để Agent biết và mở đúng công cụ quản lý công việc của bạn. Ví dụ: \"dùng tryopenclaw connector @clickup để liệt kê các task được giao giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @clickup\" trong câu chat để Agent biết và mở đúng công cụ quản lý công việc của bạn.\nVí dụ: \"dùng tryopenclaw connectors @clickup để liệt kê các task được giao giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @clickup\" in your chat so the Agent knows to open your work tool. Example: \"use the tryopenclaw connector @clickup to show tasks assigned to me\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @clickup\" in your chat so the Agent knows to open your work tool.\nExample: \"use the tryopenclaw connectors @clickup to show tasks assigned to me\"."
 tutorials:
   - title:
       vi: "Task của mình"
       en: "My tasks"
     prompt:
-      vi: "@clickup xem các task giao cho mình."
-      en: "@clickup show tasks assigned to me."
+      vi: "dùng tryopenclaw connectors @clickup xem các task giao cho mình."
+      en: "use the tryopenclaw connectors @clickup to show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

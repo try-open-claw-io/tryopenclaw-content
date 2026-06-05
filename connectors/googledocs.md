@@ -10,16 +10,16 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googledocs\" trong câu chat để Agent biết và mở đúng công cụ soạn và đọc tài liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @googledocs để liệt kê tài liệu gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @googledocs\" trong câu chat để Agent biết và mở đúng công cụ soạn và đọc tài liệu của bạn.\nVí dụ: \"dùng tryopenclaw connectors @googledocs để liệt kê tài liệu gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googledocs\" in your chat so the Agent knows to write and read your documents. Example: \"use the tryopenclaw connector @googledocs to list my recent documents\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @googledocs\" in your chat so the Agent knows to write and read your documents.\nExample: \"use the tryopenclaw connectors @googledocs to list my recent documents\"."
 tutorials:
   - title:
       vi: "Tài liệu gần đây"
       en: "Recent docs"
     prompt:
-      vi: "@googledocs liệt kê tài liệu gần đây của mình."
-      en: "@googledocs list my recent documents."
+      vi: "dùng tryopenclaw connectors @googledocs liệt kê tài liệu gần đây của mình."
+      en: "use the tryopenclaw connectors @googledocs to list my recent documents."
 ---
 
 <!-- Body for future rich docs -->
