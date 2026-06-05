@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem tin mới"
       en: "Check messages"
     prompt:
-      vi: "dùng tryopenclaw connectors @discord xem tin nhắn mới trong server của mình."
-      en: "use the tryopenclaw connectors @discord to check recent messages in my server."
+      vi: "Dùng tryopenclaw connectors @discord xem tin nhắn mới trong server của mình."
+      en: "Use the tryopenclaw connectors @discord to check recent messages in my server."
 ---
 
 <!-- Body for future rich docs -->

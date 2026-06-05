@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem lịch hẹn"
       en: "Check bookings"
     prompt:
-      vi: "dùng tryopenclaw connectors @calendly xem các lịch hẹn sắp tới của mình."
-      en: "use the tryopenclaw connectors @calendly to show my upcoming bookings."
+      vi: "Dùng tryopenclaw connectors @calendly xem các lịch hẹn sắp tới của mình."
+      en: "Use the tryopenclaw connectors @calendly to show my upcoming bookings."
 ---
 
 <!-- Body for future rich docs -->

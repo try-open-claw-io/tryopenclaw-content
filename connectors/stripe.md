@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem thanh toán"
       en: "Check payments"
     prompt:
-      vi: "dùng tryopenclaw connectors @stripe xem các khoản thanh toán gần đây."
-      en: "use the tryopenclaw connectors @stripe to show my recent payments."
+      vi: "Dùng tryopenclaw connectors @stripe xem các khoản thanh toán gần đây."
+      en: "Use the tryopenclaw connectors @stripe to show my recent payments."
 ---
 
 <!-- Body for future rich docs -->

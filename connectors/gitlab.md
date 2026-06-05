@@ -18,8 +18,8 @@ tutorials:
       vi: "MR chờ review"
       en: "MRs to review"
     prompt:
-      vi: "dùng tryopenclaw connectors @gitlab xem các merge request đang chờ mình review."
-      en: "use the tryopenclaw connectors @gitlab to show merge requests waiting for my review."
+      vi: "Dùng tryopenclaw connectors @gitlab xem các merge request đang chờ mình review."
+      en: "Use the tryopenclaw connectors @gitlab to show merge requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->

@@ -18,8 +18,8 @@ tutorials:
       vi: "Tóm tắt tin nhắn"
       en: "Summarize messages"
     prompt:
-      vi: "dùng tryopenclaw connectors @microsoftteams tóm tắt tin nhắn mới của mình."
-      en: "use the tryopenclaw connectors @microsoftteams to summarize my recent messages."
+      vi: "Dùng tryopenclaw connectors @microsoftteams tóm tắt tin nhắn mới của mình."
+      en: "Use the tryopenclaw connectors @microsoftteams to summarize my recent messages."
 ---
 
 <!-- Body for future rich docs -->

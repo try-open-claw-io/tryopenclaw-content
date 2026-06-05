@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem cuộc họp"
       en: "Check meetings"
     prompt:
-      vi: "dùng tryopenclaw connectors @zoom xem các cuộc họp sắp tới của mình."
-      en: "use the tryopenclaw connectors @zoom to show my upcoming meetings."
+      vi: "Dùng tryopenclaw connectors @zoom xem các cuộc họp sắp tới của mình."
+      en: "Use the tryopenclaw connectors @zoom to show my upcoming meetings."
 ---
 
 <!-- Body for future rich docs -->

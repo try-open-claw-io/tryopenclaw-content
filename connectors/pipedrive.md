@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem deal"
       en: "Check deals"
     prompt:
-      vi: "dùng tryopenclaw connectors @pipedrive xem các deal trong pipeline của mình."
-      en: "use the tryopenclaw connectors @pipedrive to show the deals in my pipeline."
+      vi: "Dùng tryopenclaw connectors @pipedrive xem các deal trong pipeline của mình."
+      en: "Use the tryopenclaw connectors @pipedrive to show the deals in my pipeline."
 ---
 
 <!-- Body for future rich docs -->

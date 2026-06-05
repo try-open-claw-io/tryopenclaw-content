@@ -18,8 +18,8 @@ tutorials:
       vi: "Ticket chưa xử lý"
       en: "Open tickets"
     prompt:
-      vi: "dùng tryopenclaw connectors @freshdesk xem các ticket chưa giải quyết."
-      en: "use the tryopenclaw connectors @freshdesk to show unresolved tickets."
+      vi: "Dùng tryopenclaw connectors @freshdesk xem các ticket chưa giải quyết."
+      en: "Use the tryopenclaw connectors @freshdesk to show unresolved tickets."
 ---
 
 <!-- Body for future rich docs -->

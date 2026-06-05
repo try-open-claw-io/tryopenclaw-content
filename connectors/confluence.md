@@ -18,8 +18,8 @@ tutorials:
       vi: "Trang gần đây"
       en: "Recent pages"
     prompt:
-      vi: "dùng tryopenclaw connectors @confluence liệt kê các trang gần đây trong wiki của mình."
-      en: "use the tryopenclaw connectors @confluence to list recent pages in my wiki."
+      vi: "Dùng tryopenclaw connectors @confluence liệt kê các trang gần đây trong wiki của mình."
+      en: "Use the tryopenclaw connectors @confluence to list recent pages in my wiki."
 ---
 
 <!-- Body for future rich docs -->

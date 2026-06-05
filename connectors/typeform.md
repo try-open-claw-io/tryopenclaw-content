@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem phản hồi"
       en: "Check responses"
     prompt:
-      vi: "dùng tryopenclaw connectors @typeform xem phản hồi mới từ form của mình."
-      en: "use the tryopenclaw connectors @typeform to check recent form responses."
+      vi: "Dùng tryopenclaw connectors @typeform xem phản hồi mới từ form của mình."
+      en: "Use the tryopenclaw connectors @typeform to check recent form responses."
 ---
 
 <!-- Body for future rich docs -->

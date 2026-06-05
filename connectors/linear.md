@@ -18,8 +18,8 @@ tutorials:
       vi: "Task của mình"
       en: "My tasks"
     prompt:
-      vi: "dùng tryopenclaw connectors @linear xem các task đang giao cho mình."
-      en: "use the tryopenclaw connectors @linear to show tasks assigned to me."
+      vi: "Dùng tryopenclaw connectors @linear xem các task đang giao cho mình."
+      en: "Use the tryopenclaw connectors @linear to show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

@@ -18,8 +18,8 @@ tutorials:
       vi: "Task của mình"
       en: "My tasks"
     prompt:
-      vi: "dùng tryopenclaw connectors @asana xem các task giao cho mình."
-      en: "use the tryopenclaw connectors @asana to show tasks assigned to me."
+      vi: "Dùng tryopenclaw connectors @asana xem các task giao cho mình."
+      en: "Use the tryopenclaw connectors @asana to show tasks assigned to me."
 ---
 
 <!-- Body for future rich docs -->

@@ -18,8 +18,8 @@ tutorials:
       vi: "Tóm tắt tin nhắn"
       en: "Summarize messages"
     prompt:
-      vi: "dùng tryopenclaw connectors @slack tóm tắt tin nhắn mới của mình."
-      en: "use the tryopenclaw connectors @slack to summarize my recent messages."
+      vi: "Dùng tryopenclaw connectors @slack tóm tắt tin nhắn mới của mình."
+      en: "Use the tryopenclaw connectors @slack to summarize my recent messages."
 ---
 
 <!-- Body for future rich docs -->

@@ -18,8 +18,8 @@ tutorials:
       vi: "Trang gần đây"
       en: "Recent pages"
     prompt:
-      vi: "dùng tryopenclaw connectors @notion liệt kê các trang gần đây của mình."
-      en: "use the tryopenclaw connectors @notion to list my recent pages."
+      vi: "Dùng tryopenclaw connectors @notion liệt kê các trang gần đây của mình."
+      en: "Use the tryopenclaw connectors @notion to list my recent pages."
 ---
 
 <!-- Body for future rich docs -->

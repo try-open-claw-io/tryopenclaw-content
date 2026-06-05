@@ -18,8 +18,8 @@ tutorials:
       vi: "PR chờ review"
       en: "PRs to review"
     prompt:
-      vi: "dùng tryopenclaw connectors @bitbucket xem các pull request đang chờ mình review."
-      en: "use the tryopenclaw connectors @bitbucket to show pull requests waiting for my review."
+      vi: "Dùng tryopenclaw connectors @bitbucket xem các pull request đang chờ mình review."
+      en: "Use the tryopenclaw connectors @bitbucket to show pull requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->

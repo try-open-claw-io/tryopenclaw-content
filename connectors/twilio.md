@@ -18,8 +18,8 @@ tutorials:
       vi: "Gửi SMS"
       en: "Send an SMS"
     prompt:
-      vi: "dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]."
-      en: "use the tryopenclaw connectors @twilio to send an SMS to [phone number]."
+      vi: "Dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]."
+      en: "Use the tryopenclaw connectors @twilio to send an SMS to [phone number]."
 ---
 
 <!-- Body for future rich docs -->

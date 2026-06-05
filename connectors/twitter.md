@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem tương tác"
       en: "Check engagement"
     prompt:
-      vi: "dùng tryopenclaw connectors @twitter xem tương tác bài đăng gần đây của mình."
-      en: "use the tryopenclaw connectors @twitter to check engagement on my recent posts."
+      vi: "Dùng tryopenclaw connectors @twitter xem tương tác bài đăng gần đây của mình."
+      en: "Use the tryopenclaw connectors @twitter to check engagement on my recent posts."
 ---
 
 <!-- Body for future rich docs -->

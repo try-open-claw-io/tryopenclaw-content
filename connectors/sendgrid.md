@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem thống kê mail"
       en: "Check email stats"
     prompt:
-      vi: "dùng tryopenclaw connectors @sendgrid xem thống kê mail đã gửi gần đây."
-      en: "use the tryopenclaw connectors @sendgrid to check my recent email stats."
+      vi: "Dùng tryopenclaw connectors @sendgrid xem thống kê mail đã gửi gần đây."
+      en: "Use the tryopenclaw connectors @sendgrid to check my recent email stats."
 ---
 
 <!-- Body for future rich docs -->

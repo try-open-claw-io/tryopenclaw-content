@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem lead mới"
       en: "Check recent leads"
     prompt:
-      vi: "dùng tryopenclaw connectors @hubspot xem các lead mới gần đây."
-      en: "use the tryopenclaw connectors @hubspot to show my recent leads."
+      vi: "Dùng tryopenclaw connectors @hubspot xem các lead mới gần đây."
+      en: "Use the tryopenclaw connectors @hubspot to show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

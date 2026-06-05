@@ -18,8 +18,8 @@ tutorials:
       vi: "Xem cơ hội"
       en: "Check opportunities"
     prompt:
-      vi: "dùng tryopenclaw connectors @salesforce xem các cơ hội bán hàng gần đây."
-      en: "use the tryopenclaw connectors @salesforce to show my recent opportunities."
+      vi: "Dùng tryopenclaw connectors @salesforce xem các cơ hội bán hàng gần đây."
+      en: "Use the tryopenclaw connectors @salesforce to show my recent opportunities."
 ---
 
 <!-- Body for future rich docs -->

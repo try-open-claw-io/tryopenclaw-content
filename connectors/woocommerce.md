@@ -18,8 +18,8 @@ tutorials:
       vi: "Đơn gần đây"
       en: "Recent orders"
     prompt:
-      vi: "dùng tryopenclaw connectors @woocommerce xem các đơn hàng gần đây."
-      en: "use the tryopenclaw connectors @woocommerce to show my recent orders."
+      vi: "Dùng tryopenclaw connectors @woocommerce xem các đơn hàng gần đây."
+      en: "Use the tryopenclaw connectors @woocommerce to show my recent orders."
 ---
 
 <!-- Body for future rich docs -->
