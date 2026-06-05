@@ -4,19 +4,15 @@ name:
   vi: "Google Docs"
   en: "Google Docs"
 description:
-  vi: "Trình soạn thảo tài liệu của Google. Viết, comment và cộng tác thời gian thực, chia sẻ bằng link."
-  en: "Google's document editor. Write, comment, and collaborate in real time, then share with a link."
+  vi: "Google Docs là trình soạn thảo tài liệu của Google. Với kết nối này, Agent có thể mở, đọc, soạn nội dung mới và thêm comment vào tài liệu cho bạn."
+  en: "Google Docs is Google's document editor. With this connection, the Agent can open, read, draft new content, and add comments to documents for you."
 category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @googledocs trong khung chat để agent soạn và đọc tài liệu giúp bạn."
-    - "Nói rõ bạn cần gì: mở doc và tóm tắt, soạn nội dung mới, hay thêm comment. Kèm tên doc cho trúng."
-    - "Có link doc thì gửi kèm để agent mở đúng tài liệu, không phải tìm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googledocs\" trong câu chat để Agent biết và mở đúng công cụ soạn và đọc tài liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @googledocs để liệt kê tài liệu gần đây giúp tôi\"."
   en:
-    - "Type @googledocs in the chat box so the agent can write and read documents for you."
-    - "Say what you need: open a doc and summarize it, draft new content, or add comments. Include the doc name to get it right."
-    - "If you have a doc link, include it so the agent opens the right document without searching."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googledocs\" in your chat so the Agent knows to write and read your documents. Example: \"use the tryopenclaw connector @googledocs to list my recent documents\"."
 tutorials:
   - title:
       vi: "Tài liệu gần đây"

@@ -4,19 +4,15 @@ name:
   vi: "Discord"
   en: "Discord"
 description:
-  vi: "Ứng dụng chat cộng đồng theo kênh. Nhắn tin, gọi thoại và lập máy chủ riêng cho nhóm của bạn."
-  en: "A community chat app organized by channels. Message, voice-call, and run your own server for a group."
+  vi: "Discord là ứng dụng chat cộng đồng theo kênh. Với kết nối này, Agent có thể xem tin nhắn mới, đăng thông báo lên kênh, tìm tin và tóm tắt kênh trong server của bạn."
+  en: "Discord is a community chat app organized by channels. With this connection, the Agent can check messages, post announcements, find messages, and summarize channels in your server."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @discord vào khung chat để agent đăng tin lên cộng đồng giúp bạn."
-    - "Cho agent biết bạn cần gì: đăng thông báo lên kênh nào, tìm tin nhắn, hay tóm tắt kênh. Kèm tên kênh (#community) cho trúng."
-    - "Có link tin nhắn hay tên kênh thì gửi kèm để agent đăng đúng nơi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @discord\" trong câu chat để Agent biết và mở đúng server cộng đồng của bạn. Ví dụ: \"dùng tryopenclaw connector @discord để xem tin nhắn mới trong server giúp tôi\"."
   en:
-    - "Type @discord in the chat box so the agent can post to your community for you."
-    - "Tell the agent what you need: post an announcement to which channel, find messages, or summarize a channel. Include the channel name (#community) to get it right."
-    - "If you have a message link or channel name, include it so the agent posts in the right place."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @discord\" in your chat so the Agent knows to open your community server. Example: \"use the tryopenclaw connector @discord to check recent messages in my server\"."
 tutorials:
   - title:
       vi: "Xem tin mới"

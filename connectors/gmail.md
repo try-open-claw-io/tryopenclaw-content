@@ -4,19 +4,15 @@ name:
   vi: "Gmail"
   en: "Gmail"
 description:
-  vi: "Dịch vụ email của Google. Đọc, soạn, gửi và sắp xếp thư trong hộp thư, kèm tìm kiếm và lọc mạnh mẽ."
-  en: "Google's email service. Read, compose, send, and organize messages in your inbox, with powerful search and filtering."
+  vi: "Gmail là dịch vụ email của Google. Với kết nối này, Agent có thể đọc, gửi, sắp xếp và tìm kiếm thư trong hộp thư của bạn."
+  en: "Gmail is Google's email service. With this connection, the Agent can read, send, organize, and search messages in your inbox."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @gmail trong khung chat để agent đọc và soạn mail thay bạn."
-    - "Cho agent biết bạn cần gì: mở mail chưa đọc, tìm theo người gửi, hay soạn thư trả lời. Nêu rõ người gửi hoặc khoảng thời gian cho trúng."
-    - "Có sẵn link mail hay thread thì gửi kèm để agent mở đúng hội thoại, khỏi lục lại hộp thư."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @gmail\" trong câu chat để Agent biết và mở đúng công cụ xử lý hộp thư của bạn. Ví dụ: \"dùng tryopenclaw connector @gmail để kiểm tra thư chưa đọc giúp tôi\"."
   en:
-    - "Type @gmail in the chat box so the agent can read and write email for you."
-    - "Tell the agent what you need: open unread mail, search by sender, or draft a reply. Name the sender or time range to get it right."
-    - "If you have an email or thread link, include it so the agent opens the right conversation without digging through the inbox."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @gmail\" in your chat so the Agent knows to open the right inbox tool. Example: \"use the tryopenclaw connector @gmail to check my unread mail\"."
 tutorials:
   - title:
       vi: "Kiểm tra mail"

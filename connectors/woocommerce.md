@@ -4,19 +4,15 @@ name:
   vi: "WooCommerce"
   en: "WooCommerce"
 description:
-  vi: "Plugin bán hàng cho website WordPress. Quản lý sản phẩm, đơn hàng và vận chuyển ngay trên web của bạn."
-  en: "An e-commerce plugin for WordPress. Manage products, orders, and shipping right on your own site."
+  vi: "WooCommerce là plugin bán hàng cho website WordPress. Với kết nối này, Agent có thể xem đơn hàng, tra tồn kho, cập nhật sản phẩm và theo dõi vận chuyển."
+  en: "WooCommerce is an e-commerce plugin for WordPress. With this connection, the Agent can view orders, check stock, update products, and track shipping."
 category: commerce
 popular: true
 howToUse:
   vi:
-    - "Gõ @woocommerce vào khung chat để agent quản lý cửa hàng WordPress của bạn."
-    - "Cho agent biết bạn cần gì: xem đơn hôm nay, tra tồn kho, hay cập nhật sản phẩm. Số liệu càng rõ, kết quả càng đúng."
-    - "Dán kèm link sản phẩm hay đơn hàng nếu sẵn có để agent xử lý không sai sản phẩm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @woocommerce\" trong câu chat để Agent biết và mở đúng công cụ quản lý cửa hàng WordPress của bạn. Ví dụ: \"dùng tryopenclaw connector @woocommerce để xem các đơn hàng gần đây giúp tôi\"."
   en:
-    - "Type @woocommerce in the chat box so the agent can manage your WordPress store."
-    - "Let the agent know what you need: today's orders, a stock check, or a product update. The clearer the numbers, the more accurate the result."
-    - "Paste a product or order link when you have one so the agent acts on the right item."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @woocommerce\" in your chat so the Agent knows to manage your WordPress store. Example: \"use the tryopenclaw connector @woocommerce to show my recent orders\"."
 tutorials:
   - title:
       vi: "Đơn gần đây"

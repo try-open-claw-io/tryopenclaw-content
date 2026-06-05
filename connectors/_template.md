@@ -4,10 +4,15 @@ name:
   vi: "Calendly"
   en: "Calendly"
 description:
-  vi: "Đặt lịch tự động self-serve. Khách chọn giờ trống → tạo meeting + gửi mail xác nhận."
-  en: "Self-serve scheduling. Customers pick an open slot and the meeting is auto-created with a confirmation email."
+  vi: "Calendly là công cụ đặt lịch tự động self-serve. Với kết nối này, Agent có thể xem lịch hẹn, tạo link đặt lịch và gửi mail xác nhận giúp bạn."
+  en: "Calendly is a self-serve scheduling tool. With this connection, the Agent can check bookings, create scheduling links, and send confirmation emails for you."
 category: scheduling
 popular: true
+howToUse:
+  vi:
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @calendly\" trong câu chat để Agent biết và mở đúng công cụ đặt lịch của bạn. Ví dụ: \"dùng tryopenclaw connector @calendly để xem các lịch hẹn sắp tới giúp tôi\"."
+  en:
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @calendly\" in your chat so the Agent knows to open your scheduling tool. Example: \"use the tryopenclaw connector @calendly to check my upcoming bookings\"."
 tutorials:
   - title:
       vi: "Xem lịch hẹn"
@@ -48,6 +53,15 @@ category      Slug 1 từ. Allowed enum (xem `_rules.md` §A6):
 
 popular       true nếu connector thuộc nhóm phổ biến cài đặt cao (Top tier).
               false hoặc bỏ qua nếu là long-tail / nice-to-have.
+
+description flow (xem `_rules.md` §A5)
+              Câu 1: "{Brand} là {dịch vụ gì}."
+              Câu 2: "Với kết nối này, Agent có thể {3-4 động từ} {đối tượng}." (KHÔNG đuôi "v.v.")
+
+howToUse      Array ĐÚNG 1 phần tử / lang, mở đầu nhãn **Kích hoạt kết nối:** (xem `_rules.md` §B6).
+              - Phải chứa cụm trigger chuẩn: "dùng tryopenclaw connector @<id>" (không dùng "dùng kết nối @<id>").
+              - Kèm 1 "Ví dụ:" — câu bắt đầu bằng "dùng tryopenclaw connector @<id>", đuôi "giúp tôi".
+              - Xưng "bạn" + "Agent" (viết hoa) — copy hướng dẫn end-user, khác tone prompt.
 
 tutorials     Đúng 1 row — hành động đơn giản & phổ quát nhất (thường là đọc/kiểm tra/liệt kê).
               - title.vi/en   2-4 từ, mệnh lệnh (vd: "Check email" / "Kiểm tra mail").

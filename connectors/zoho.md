@@ -4,19 +4,15 @@ name:
   vi: "Zoho"
   en: "Zoho"
 description:
-  vi: "Bộ công cụ doanh nghiệp của Zoho. Gồm CRM, email, kế toán và hỗ trợ khách trong một hệ sinh thái."
-  en: "Zoho's business suite. CRM, email, accounting, and customer support in one ecosystem."
+  vi: "Zoho là bộ công cụ CRM và văn phòng cho doanh nghiệp. Với kết nối này, Agent có thể thêm lead mới, cập nhật deal, xem báo cáo và quản lý hồ sơ khách hàng."
+  en: "Zoho is a CRM and office suite for businesses. With this connection, the Agent can add new leads, update deals, view reports, and manage customer records."
 category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "Gõ @zoho trong khung chat để agent quản lý khách hàng cùng bạn."
-    - "Nói rõ bạn cần gì: thêm lead mới, cập nhật deal, hay xem báo cáo. Kèm tên khách và thông tin liên hệ cho chắc."
-    - "Có link hồ sơ khách thì gửi kèm để agent mở đúng cơ hội, không nhầm khách."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @zoho\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @zoho để xem các lead mới gần đây giúp tôi\"."
   en:
-    - "Type @zoho in the chat box so the agent can manage customers with you."
-    - "Say what you need: add a new lead, update a deal, or view a report. Include the customer name and contact info to be safe."
-    - "If you have a contact link, include it so the agent opens the right opportunity, not the wrong customer."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @zoho\" in your chat so the Agent knows to manage your customers. Example: \"use the tryopenclaw connector @zoho to show my recent leads\"."
 tutorials:
   - title:
       vi: "Xem lead mới"

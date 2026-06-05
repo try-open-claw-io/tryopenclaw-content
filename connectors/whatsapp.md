@@ -4,19 +4,15 @@ name:
   vi: "WhatsApp"
   en: "WhatsApp"
 description:
-  vi: "Ứng dụng nhắn tin WhatsApp. Gửi tin nhắn và gọi điện cho cá nhân hoặc nhóm."
-  en: "The WhatsApp messaging app. Send messages and make calls, one-to-one or in groups."
+  vi: "WhatsApp là ứng dụng nhắn tin phổ biến. Với kết nối này, Agent có thể gửi và trả lời tin nhắn cho khách, gửi tin xác nhận và nhắn vào nhóm."
+  en: "WhatsApp is a widely used messaging app. With this connection, the Agent can send and reply to customer messages, send confirmations, and message groups."
 category: communication
 popular: true
 howToUse:
   vi:
-    - "Gõ @whatsapp trong khung chat để agent nhắn tin cho khách thay bạn."
-    - "Nói rõ bạn cần gì: gửi tin xác nhận, trả lời khách, hay nhắn vào nhóm. Kèm nội dung và người nhận cho trúng."
-    - "Có sẵn số điện thoại hay tên nhóm thì đưa kèm để agent gửi đúng người."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @whatsapp\" trong câu chat để Agent biết và mở đúng công cụ xem tin nhắn của khách. Ví dụ: \"dùng tryopenclaw connector @whatsapp để xem tin nhắn khách gần đây giúp tôi\"."
   en:
-    - "Type @whatsapp in the chat box so the agent can message customers for you."
-    - "Say what you need: send a confirmation, reply to a customer, or message a group. Include the content and recipient to get it right."
-    - "If you have a phone number or group name, include it so the agent reaches the right person."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @whatsapp\" in your chat so the Agent knows to view your customer messages. Example: \"use the tryopenclaw connector @whatsapp to check recent customer messages\"."
 tutorials:
   - title:
       vi: "Xem tin nhắn"

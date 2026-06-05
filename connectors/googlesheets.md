@@ -4,19 +4,15 @@ name:
   vi: "Google Sheets"
   en: "Google Sheets"
 description:
-  vi: "Bảng tính online của Google. Nhập và tính toán dữ liệu, lập báo cáo, cộng tác và chia sẻ bằng link."
-  en: "Google's online spreadsheet. Enter and calculate data, build reports, and collaborate via a shared link."
+  vi: "Google Sheets là bảng tính online của Google. Với kết nối này, Agent có thể đọc dữ liệu, thêm dòng, cập nhật ô và lọc theo điều kiện cho bạn."
+  en: "Google Sheets is Google's online spreadsheet. With this connection, the Agent can read data, add rows, update cells, and filter by condition for you."
 category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @googlesheets trong khung chat để agent đọc và cập nhật bảng tính giúp bạn."
-    - "Nói rõ bạn cần gì: xem dòng dữ liệu mới nhất, thêm dòng, hay lọc theo điều kiện. Kèm tên sheet và cột cho trúng."
-    - "Có link sheet thì gửi kèm để agent mở đúng bảng, không nhầm file."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googlesheets\" trong câu chat để Agent biết và mở đúng công cụ đọc và cập nhật bảng tính của bạn. Ví dụ: \"dùng tryopenclaw connector @googlesheets để liệt kê bảng tính gần đây giúp tôi\"."
   en:
-    - "Type @googlesheets in the chat box so the agent can read and update spreadsheets for you."
-    - "Say what you need: list the latest rows, add a row, or filter by condition. Include the sheet and column names to get it right."
-    - "If you have a sheet link, include it so the agent opens the right spreadsheet, not the wrong file."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googlesheets\" in your chat so the Agent knows to read and update your spreadsheets. Example: \"use the tryopenclaw connector @googlesheets to list my recent spreadsheets\"."
 tutorials:
   - title:
       vi: "Xem bảng tính"

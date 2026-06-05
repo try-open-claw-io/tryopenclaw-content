@@ -4,19 +4,15 @@ name:
   vi: "Google Drive"
   en: "Google Drive"
 description:
-  vi: "Dịch vụ lưu trữ đám mây của Google. Cất file, đồng bộ giữa các thiết bị và chia sẻ bằng link."
-  en: "Google's cloud storage. Store files, sync across devices, and share with a link."
+  vi: "Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn."
+  en: "Google Drive is Google's cloud storage. With this connection, the Agent can find files, share links, upload files, and organize folders for you."
 category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @googledrive vào khung chat để agent tìm và chia sẻ file giúp bạn."
-    - "Nói rõ bạn cần gì: tìm file theo tên, chia sẻ link, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
-    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googledrive\" trong câu chat để Agent biết và mở đúng công cụ tìm và chia sẻ file của bạn. Ví dụ: \"dùng tryopenclaw connector @googledrive để liệt kê file gần đây giúp tôi\"."
   en:
-    - "Type @googledrive in the chat box so the agent can find and share files for you."
-    - "Say what you need: find a file by name, share a link, or upload a new file. Include the file name and folder to get it right."
-    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googledrive\" in your chat so the Agent knows to find and share your files. Example: \"use the tryopenclaw connector @googledrive to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"

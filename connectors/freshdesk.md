@@ -4,19 +4,15 @@ name:
   vi: "Freshdesk"
   en: "Freshdesk"
 description:
-  vi: "Phần mềm hỗ trợ khách hàng. Gộp mail, chat và điện thoại về một nơi để quản lý ticket."
-  en: "Customer support software. Bring email, chat, and phone into one place to manage tickets."
+  vi: "Freshdesk là phần mềm hỗ trợ khách hàng gộp mail, chat và điện thoại về một nơi. Với kết nối này, Agent có thể xem, trả lời, tóm tắt và sắp xếp ticket cho bạn."
+  en: "Freshdesk is customer support software that brings email, chat, and phone into one place. With this connection, the Agent can view, reply to, summarize, and organize tickets for you."
 category: support
 popular: true
 howToUse:
   vi:
-    - "Gõ @freshdesk trong khung chat để agent xử lý ticket cùng bạn."
-    - "Nói rõ bạn cần gì: xem ticket trong ngày, trả lời khách, hay tóm tắt hội thoại. Kèm mã ticket hoặc khoảng thời gian cho trúng."
-    - "Có link ticket thì gửi kèm để agent mở đúng ticket cần xử lý."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @freshdesk\" trong câu chat để Agent biết và mở đúng công cụ xử lý ticket hỗ trợ khách của bạn. Ví dụ: \"dùng tryopenclaw connector @freshdesk để xem các ticket chưa giải quyết giúp tôi\"."
   en:
-    - "Type @freshdesk in the chat box so the agent can handle tickets with you."
-    - "Say what you need: list today's tickets, reply to a customer, or summarize a thread. Include the ticket ID or time range to get it right."
-    - "If you have a ticket link, include it so the agent opens the exact one that needs work."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @freshdesk\" in your chat so the Agent knows to work on your support tickets. Example: \"use the tryopenclaw connector @freshdesk to show unresolved tickets\"."
 tutorials:
   - title:
       vi: "Ticket chưa xử lý"

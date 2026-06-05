@@ -4,19 +4,15 @@ name:
   vi: "Trello"
   en: "Trello"
 description:
-  vi: "Bảng quản lý công việc kiểu kéo-thả. Sắp xếp việc thành các cột và di chuyển thẻ giữa chúng."
-  en: "A drag-and-drop task board. Organize work into columns and move cards between them."
+  vi: "Trello là bảng quản lý công việc kiểu kéo-thả. Với kết nối này, Agent có thể tạo thẻ, di chuyển thẻ giữa các cột, liệt kê và xem thẻ được giao cho bạn."
+  en: "Trello is a drag-and-drop task board. With this connection, the Agent can create cards, move cards between columns, list and view cards assigned to you."
 category: productivity
 popular: true
 howToUse:
   vi:
-    - "Bắt đầu bằng cách gõ @trello trong khung chat để mở bảng việc của bạn."
-    - "Nói rõ bạn muốn gì: tạo card ở cột nào, chuyển card sang đâu, hay liệt kê card đang làm. Kèm tên board và cột cho chắc."
-    - "Có link card hay tên board ('Sales') thì đưa kèm để agent thao tác đúng chỗ."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @trello\" trong câu chat để Agent biết và mở đúng công cụ quản lý bảng việc của bạn. Ví dụ: \"dùng tryopenclaw connector @trello để xem các thẻ được giao giúp tôi\"."
   en:
-    - "Start by typing @trello in the chat box to open up your boards."
-    - "Tell the agent what you want: create a card in which column, move a card where, or list active cards. Include the board and column names to be safe."
-    - "Add a card link or board name ('Sales') so the agent acts on the right place."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @trello\" in your chat so the Agent knows to work with your task boards. Example: \"use the tryopenclaw connector @trello to show cards assigned to me\"."
 tutorials:
   - title:
       vi: "Thẻ của mình"

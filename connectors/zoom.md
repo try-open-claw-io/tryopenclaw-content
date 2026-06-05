@@ -4,19 +4,15 @@ name:
   vi: "Zoom"
   en: "Zoom"
 description:
-  vi: "Ứng dụng họp video online. Tạo phòng họp, gửi link tham gia, ghi hình và chia sẻ lại."
-  en: "An online video meeting app. Create rooms, share join links, record sessions, and share replays."
+  vi: "Zoom là ứng dụng họp video online. Với kết nối này, Agent có thể tạo phòng họp, gửi link tham gia, lấy bản ghi và xem các cuộc họp sắp tới."
+  en: "Zoom is an online video meeting app. With this connection, the Agent can create rooms, share join links, fetch recordings, and view upcoming meetings."
 category: scheduling
 popular: true
 howToUse:
   vi:
-    - "Gõ @zoom vào khung chat để agent tạo và quản lý phòng họp giúp bạn."
-    - "Mô tả việc cần làm: tạo phòng họp lúc nào kéo dài bao lâu, gửi link cho ai, hay lấy bản ghi. Nêu rõ ngày giờ cho chính xác."
-    - "Nếu đã có link phòng họp, gửi kèm để agent dời hoặc gửi lại đúng buổi."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @zoom\" trong câu chat để Agent biết và mở đúng công cụ tạo và quản lý phòng họp của bạn. Ví dụ: \"dùng tryopenclaw connector @zoom để xem các cuộc họp sắp tới giúp tôi\"."
   en:
-    - "Type @zoom in the chat box so the agent can create and manage meetings for you."
-    - "Describe what you need: when to create a meeting and how long, whom to send the link to, or fetch a recording. Name the date and time to be precise."
-    - "If you already have a meeting link, include it so the agent reschedules or resends the right one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @zoom\" in your chat so the Agent knows to create and manage your meetings. Example: \"use the tryopenclaw connector @zoom to show my upcoming meetings\"."
 tutorials:
   - title:
       vi: "Xem cuộc họp"

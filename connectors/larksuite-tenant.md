@@ -4,19 +4,15 @@ name:
   vi: "Lark Suite (Tenant)"
   en: "Lark Suite (Tenant)"
 description:
-  vi: "Công cụ quản trị tenant Lark. Thêm hoặc xoá user và gán role admin theo phòng ban."
-  en: "Lark tenant administration. Add or remove users and assign admin roles by department."
+  vi: "Lark Suite (Tenant) là công cụ quản trị tenant Lark. Với kết nối này, Agent có thể liệt kê, thêm, xoá user và gán role admin theo phòng ban."
+  en: "Lark Suite (Tenant) is Lark tenant administration. With this connection, the Agent can list, add, and remove users and assign admin roles by department."
 category: productivity
 popular: false
 howToUse:
   vi:
-    - "Gõ @larksuite-tenant vào khung chat để agent quản trị tenant Lark giúp bạn."
-    - "Nói rõ bạn cần gì: thêm user mới, xoá user, hay gán role admin. Kèm tên user và phòng ban cho trúng."
-    - "Có sẵn email user hay tên phòng ban thì đưa kèm để agent gán đúng người, đúng quyền."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @larksuite-tenant\" trong câu chat để Agent biết và mở đúng công cụ quản trị user trong tenant Lark của bạn. Ví dụ: \"dùng tryopenclaw connector @larksuite-tenant để liệt kê người dùng trong tenant giúp tôi\"."
   en:
-    - "Type @larksuite-tenant in the chat box so the agent can administer your Lark tenant for you."
-    - "Say what you need: add a new user, remove a user, or assign an admin role. Include the username and department to get it right."
-    - "If you have the user's email or department name, include it so the agent assigns the right person to the right role."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @larksuite-tenant\" in your chat so the Agent knows to manage users in your Lark tenant. Example: \"use the tryopenclaw connector @larksuite-tenant to list users in the tenant\"."
 tutorials:
   - title:
       vi: "Xem người dùng"

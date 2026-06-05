@@ -4,19 +4,15 @@ name:
   vi: "Confluence"
   en: "Confluence"
 description:
-  vi: "Wiki tài liệu nội bộ của Atlassian. Soạn và lưu trữ spec, quy trình, tài liệu cho cả team tra cứu."
-  en: "Atlassian's team wiki. Write and store specs, processes, and docs for the whole team."
+  vi: "Confluence là wiki tài liệu nội bộ của Atlassian. Với kết nối này, Agent có thể tìm trang theo chủ đề, tạo trang mới, cập nhật nội dung và tra cứu tài liệu của bạn."
+  en: "Confluence is Atlassian's team wiki. With this connection, the Agent can find pages by topic, create new pages, update content, and look up your docs."
 category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @confluence trong khung chat để agent tra cứu tài liệu nội bộ giúp bạn."
-    - "Nói rõ bạn cần gì: tìm trang theo chủ đề, tạo trang mới, hay cập nhật nội dung. Kèm tên space hoặc tiêu đề trang cho trúng."
-    - "Có link trang thì gửi kèm để agent mở đúng tài liệu, không phải dò."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @confluence\" trong câu chat để Agent biết và mở đúng wiki tài liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @confluence để liệt kê các trang gần đây giúp tôi\"."
   en:
-    - "Type @confluence in the chat box so the agent can look up internal docs for you."
-    - "Say what you need: find a page by topic, create a new page, or update content. Include the space or page title to get it right."
-    - "If you have a page link, include it so the agent opens the right doc without digging."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @confluence\" in your chat so the Agent knows to open your wiki. Example: \"use the tryopenclaw connector @confluence to list recent pages\"."
 tutorials:
   - title:
       vi: "Trang gần đây"

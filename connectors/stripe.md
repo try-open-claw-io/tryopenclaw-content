@@ -4,19 +4,15 @@ name:
   vi: "Stripe"
   en: "Stripe"
 description:
-  vi: "Nền tảng thanh toán trực tuyến. Nhận thanh toán một lần hoặc theo gói, tạo link thu tiền và xử lý hoàn tiền."
-  en: "An online payment platform. Accept one-time or subscription payments, create payment links, and process refunds."
+  vi: "Stripe là nền tảng thanh toán trực tuyến. Với kết nối này, Agent có thể tạo link thu tiền, tra giao dịch, hoàn tiền và đối soát các khoản cho bạn."
+  en: "Stripe is an online payment platform. With this connection, the Agent can create payment links, look up transactions, process refunds, and reconcile charges for you."
 category: commerce
 popular: true
 howToUse:
   vi:
-    - "Trong khung chat, gõ @stripe để bật thao tác thanh toán ngay trong hội thoại."
-    - "Nói rõ số tiền, loại tiền tệ và mục đích: tạo link thu tiền, tra giao dịch, hay hoàn tiền cho ai. Con số càng rõ càng tránh nhầm."
-    - "Có mã giao dịch hay link đơn thì dán kèm để agent hoàn tiền hoặc đối soát đúng khoản."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @stripe\" trong câu chat để Agent biết và mở đúng công cụ xử lý thanh toán của bạn. Ví dụ: \"dùng tryopenclaw connector @stripe để xem các khoản thanh toán gần đây giúp tôi\"."
   en:
-    - "In the chat box, type @stripe to bring payment actions into the conversation."
-    - "State the amount, currency, and purpose: a payment link, a transaction lookup, or a refund for whom. Clear figures avoid mix-ups."
-    - "If you have a transaction ID or order link, paste it so the agent refunds or reconciles the right charge."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @stripe\" in your chat so the Agent knows to work with your payments. Example: \"use the tryopenclaw connector @stripe to show my recent payments\"."
 tutorials:
   - title:
       vi: "Xem thanh toán"

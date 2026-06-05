@@ -4,19 +4,15 @@ name:
   vi: "Airtable"
   en: "Airtable"
 description:
-  vi: "Cơ sở dữ liệu kết hợp bảng tính. Tổ chức dữ liệu trong các bảng linh hoạt, liên kết với nhau — từ danh mục sản phẩm tới lịch nội dung."
-  en: "A database that works like a spreadsheet. Organize data in flexible, linked tables — from product catalogs to content calendars."
+  vi: "Airtable là cơ sở dữ liệu kết hợp bảng tính. Với kết nối này, Agent có thể xem base, tìm record theo điều kiện, thêm và cập nhật dữ liệu trong bảng của bạn."
+  en: "Airtable is a database that works like a spreadsheet. With this connection, the Agent can list bases, find records by condition, add and update data in your tables."
 category: documents
 popular: true
 howToUse:
   vi:
-    - "Gõ @airtable trong khung chat để agent đọc và cập nhật cơ sở dữ liệu giúp bạn."
-    - "Nói rõ bạn cần gì: thêm record mới, tìm theo điều kiện, hay cập nhật field. Kèm tên base và table cho trúng."
-    - "Có link base hay table thì gửi kèm để agent mở đúng bảng, không nhầm dữ liệu."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @airtable\" trong câu chat để Agent biết và mở đúng cơ sở dữ liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @airtable để liệt kê các base gần đây giúp tôi\"."
   en:
-    - "Type @airtable in the chat box so the agent can read and update your database for you."
-    - "Say what you need: add a new record, find by condition, or update a field. Include the base and table name to get it right."
-    - "If you have a base or table link, include it so the agent opens the right table, not the wrong data."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @airtable\" in your chat so the Agent knows to open your database. Example: \"use the tryopenclaw connector @airtable to list my recent bases\"."
 tutorials:
   - title:
       vi: "Xem base"

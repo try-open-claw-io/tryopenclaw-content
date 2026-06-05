@@ -4,19 +4,15 @@ name:
   vi: "Box"
   en: "Box"
 description:
-  vi: "Dịch vụ lưu trữ đám mây cho doanh nghiệp. Cất file, chia sẻ và phân quyền truy cập chi tiết."
-  en: "Cloud storage for businesses. Store files, share them, and control access with detailed permissions."
+  vi: "Box là dịch vụ lưu trữ đám mây cho doanh nghiệp. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạn."
+  en: "Box is cloud storage for businesses. With this connection, the Agent can find documents by name, share file links, upload files, and organize your folders."
 category: storage
 popular: true
 howToUse:
   vi:
-    - "Gõ @box trong khung chat để agent tìm và quản lý tài liệu giúp bạn."
-    - "Nói rõ bạn cần gì: tìm tài liệu theo tên, chia sẻ link file, hay tải file mới lên. Kèm tên file và thư mục cho trúng."
-    - "Có sẵn link file hay folder thì gửi kèm để agent vào đúng nơi, khỏi mở nhầm."
+    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @box\" trong câu chat để Agent biết và mở đúng kho tài liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @box để liệt kê file gần đây giúp tôi\"."
   en:
-    - "Type @box in the chat box so the agent can find and manage documents for you."
-    - "Say what you need: find a document by name, share a file link, or upload a new file. Include the file name and folder to get it right."
-    - "If you have a file or folder link, include it so the agent lands in the right place, not the wrong one."
+    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @box\" in your chat so the Agent knows to open your file storage. Example: \"use the tryopenclaw connector @box to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"
