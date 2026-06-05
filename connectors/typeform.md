@@ -10,16 +10,16 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @typeform\" trong câu chat để Agent biết và mở đúng công cụ tạo form và thu phản hồi của bạn. Ví dụ: \"dùng tryopenclaw connector @typeform để xem phản hồi mới từ form giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @typeform\" trong câu chat để Agent biết và mở đúng công cụ tạo form và thu phản hồi của bạn.\nVí dụ: \"dùng tryopenclaw connectors @typeform để xem phản hồi mới từ form giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @typeform\" in your chat so the Agent knows to build forms and collect responses. Example: \"use the tryopenclaw connector @typeform to check recent form responses\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @typeform\" in your chat so the Agent knows to build forms and collect responses.\nExample: \"use the tryopenclaw connectors @typeform to check recent form responses\"."
 tutorials:
   - title:
       vi: "Xem phản hồi"
       en: "Check responses"
     prompt:
-      vi: "@typeform xem phản hồi mới từ form của mình."
-      en: "@typeform check recent form responses."
+      vi: "dùng tryopenclaw connectors @typeform xem phản hồi mới từ form của mình."
+      en: "use the tryopenclaw connectors @typeform to check recent form responses."
 ---
 
 <!-- Body for future rich docs -->

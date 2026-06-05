@@ -10,16 +10,16 @@ category: storage
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @dropbox\" trong câu chat để Agent biết và mở đúng kho lưu trữ file của bạn. Ví dụ: \"dùng tryopenclaw connector @dropbox để liệt kê file gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @dropbox\" trong câu chat để Agent biết và mở đúng kho lưu trữ file của bạn.\nVí dụ: \"dùng tryopenclaw connectors @dropbox để liệt kê file gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @dropbox\" in your chat so the Agent knows to open your file storage. Example: \"use the tryopenclaw connector @dropbox to list my recent files\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @dropbox\" in your chat so the Agent knows to open your file storage.\nExample: \"use the tryopenclaw connectors @dropbox to list my recent files\"."
 tutorials:
   - title:
       vi: "File gần đây"
       en: "Recent files"
     prompt:
-      vi: "@dropbox liệt kê file gần đây của mình."
-      en: "@dropbox list my recent files."
+      vi: "dùng tryopenclaw connectors @dropbox liệt kê file gần đây của mình."
+      en: "use the tryopenclaw connectors @dropbox to list my recent files."
 ---
 
 <!-- Body for future rich docs -->

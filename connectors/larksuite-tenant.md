@@ -10,16 +10,16 @@ category: productivity
 popular: false
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @larksuite-tenant\" trong câu chat để Agent biết và mở đúng công cụ quản trị user trong tenant Lark của bạn. Ví dụ: \"dùng tryopenclaw connector @larksuite-tenant để liệt kê người dùng trong tenant giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @larksuite-tenant\" trong câu chat để Agent biết và mở đúng công cụ quản trị user trong tenant Lark của bạn.\nVí dụ: \"dùng tryopenclaw connectors @larksuite-tenant để liệt kê người dùng trong tenant giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @larksuite-tenant\" in your chat so the Agent knows to manage users in your Lark tenant. Example: \"use the tryopenclaw connector @larksuite-tenant to list users in the tenant\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @larksuite-tenant\" in your chat so the Agent knows to manage users in your Lark tenant.\nExample: \"use the tryopenclaw connectors @larksuite-tenant to list users in the tenant\"."
 tutorials:
   - title:
       vi: "Xem người dùng"
       en: "List users"
     prompt:
-      vi: "@larksuite-tenant liệt kê người dùng trong tenant."
-      en: "@larksuite-tenant list users in the tenant."
+      vi: "dùng tryopenclaw connectors @larksuite-tenant liệt kê người dùng trong tenant."
+      en: "use the tryopenclaw connectors @larksuite-tenant to list users in the tenant."
 ---
 
 <!-- Body for future rich docs -->

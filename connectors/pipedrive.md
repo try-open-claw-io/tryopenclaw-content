@@ -10,16 +10,16 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @pipedrive\" trong câu chat để Agent biết và mở đúng công cụ quản lý pipeline bán hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @pipedrive để xem các deal trong pipeline giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @pipedrive\" trong câu chat để Agent biết và mở đúng công cụ quản lý pipeline bán hàng của bạn.\nVí dụ: \"dùng tryopenclaw connectors @pipedrive để xem các deal trong pipeline giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @pipedrive\" in your chat so the Agent knows to work with your sales pipeline. Example: \"use the tryopenclaw connector @pipedrive to show the deals in my pipeline\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @pipedrive\" in your chat so the Agent knows to work with your sales pipeline.\nExample: \"use the tryopenclaw connectors @pipedrive to show the deals in my pipeline\"."
 tutorials:
   - title:
       vi: "Xem deal"
       en: "Check deals"
     prompt:
-      vi: "@pipedrive xem các deal trong pipeline của mình."
-      en: "@pipedrive show the deals in my pipeline."
+      vi: "dùng tryopenclaw connectors @pipedrive xem các deal trong pipeline của mình."
+      en: "use the tryopenclaw connectors @pipedrive to show the deals in my pipeline."
 ---
 
 <!-- Body for future rich docs -->

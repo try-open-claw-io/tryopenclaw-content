@@ -10,16 +10,16 @@ category: commerce
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @stripe\" trong câu chat để Agent biết và mở đúng công cụ xử lý thanh toán của bạn. Ví dụ: \"dùng tryopenclaw connector @stripe để xem các khoản thanh toán gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @stripe\" trong câu chat để Agent biết và mở đúng công cụ xử lý thanh toán của bạn.\nVí dụ: \"dùng tryopenclaw connectors @stripe để xem các khoản thanh toán gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @stripe\" in your chat so the Agent knows to work with your payments. Example: \"use the tryopenclaw connector @stripe to show my recent payments\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @stripe\" in your chat so the Agent knows to work with your payments.\nExample: \"use the tryopenclaw connectors @stripe to show my recent payments\"."
 tutorials:
   - title:
       vi: "Xem thanh toán"
       en: "Check payments"
     prompt:
-      vi: "@stripe xem các khoản thanh toán gần đây."
-      en: "@stripe show my recent payments."
+      vi: "dùng tryopenclaw connectors @stripe xem các khoản thanh toán gần đây."
+      en: "use the tryopenclaw connectors @stripe to show my recent payments."
 ---
 
 <!-- Body for future rich docs -->

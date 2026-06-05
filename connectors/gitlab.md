@@ -10,16 +10,16 @@ category: engineering
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @gitlab\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên repo của bạn. Ví dụ: \"dùng tryopenclaw connector @gitlab để xem các merge request đang chờ review giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @gitlab\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên repo của bạn.\nVí dụ: \"dùng tryopenclaw connectors @gitlab để xem các merge request đang chờ review giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @gitlab\" in your chat so the Agent knows to work on your repository. Example: \"use the tryopenclaw connector @gitlab to show merge requests waiting for my review\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @gitlab\" in your chat so the Agent knows to work on your repository.\nExample: \"use the tryopenclaw connectors @gitlab to show merge requests waiting for my review\"."
 tutorials:
   - title:
       vi: "MR chờ review"
       en: "MRs to review"
     prompt:
-      vi: "@gitlab xem các merge request đang chờ mình review."
-      en: "@gitlab show merge requests waiting for my review."
+      vi: "dùng tryopenclaw connectors @gitlab xem các merge request đang chờ mình review."
+      en: "use the tryopenclaw connectors @gitlab to show merge requests waiting for my review."
 ---
 
 <!-- Body for future rich docs -->

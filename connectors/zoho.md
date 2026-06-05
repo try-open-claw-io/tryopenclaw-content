@@ -10,16 +10,16 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @zoho\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @zoho để xem các lead mới gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @zoho\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn.\nVí dụ: \"dùng tryopenclaw connectors @zoho để xem các lead mới gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @zoho\" in your chat so the Agent knows to manage your customers. Example: \"use the tryopenclaw connector @zoho to show my recent leads\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @zoho\" in your chat so the Agent knows to manage your customers.\nExample: \"use the tryopenclaw connectors @zoho to show my recent leads\"."
 tutorials:
   - title:
       vi: "Xem lead mới"
       en: "Check leads"
     prompt:
-      vi: "@zoho xem các lead mới gần đây."
-      en: "@zoho show my recent leads."
+      vi: "dùng tryopenclaw connectors @zoho xem các lead mới gần đây."
+      en: "use the tryopenclaw connectors @zoho to show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

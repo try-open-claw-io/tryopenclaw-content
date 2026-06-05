@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @mailchimp\" trong câu chat để Agent biết và mở đúng công cụ lo phần email marketing cho bạn. Ví dụ: \"dùng tryopenclaw connector @mailchimp để xem hiệu quả chiến dịch gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @mailchimp\" trong câu chat để Agent biết và mở đúng công cụ lo phần email marketing cho bạn.\nVí dụ: \"dùng tryopenclaw connectors @mailchimp để xem hiệu quả chiến dịch gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @mailchimp\" in your chat so the Agent knows to handle your email marketing. Example: \"use the tryopenclaw connector @mailchimp to check my recent campaign performance\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @mailchimp\" in your chat so the Agent knows to handle your email marketing.\nExample: \"use the tryopenclaw connectors @mailchimp to check my recent campaign performance\"."
 tutorials:
   - title:
       vi: "Xem chiến dịch"
       en: "Check campaigns"
     prompt:
-      vi: "@mailchimp xem hiệu quả chiến dịch gần đây."
-      en: "@mailchimp check my recent campaign performance."
+      vi: "dùng tryopenclaw connectors @mailchimp xem hiệu quả chiến dịch gần đây."
+      en: "use the tryopenclaw connectors @mailchimp to check my recent campaign performance."
 ---
 
 <!-- Body for future rich docs -->

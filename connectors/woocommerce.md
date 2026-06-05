@@ -10,16 +10,16 @@ category: commerce
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @woocommerce\" trong câu chat để Agent biết và mở đúng công cụ quản lý cửa hàng WordPress của bạn. Ví dụ: \"dùng tryopenclaw connector @woocommerce để xem các đơn hàng gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @woocommerce\" trong câu chat để Agent biết và mở đúng công cụ quản lý cửa hàng WordPress của bạn.\nVí dụ: \"dùng tryopenclaw connectors @woocommerce để xem các đơn hàng gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @woocommerce\" in your chat so the Agent knows to manage your WordPress store. Example: \"use the tryopenclaw connector @woocommerce to show my recent orders\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @woocommerce\" in your chat so the Agent knows to manage your WordPress store.\nExample: \"use the tryopenclaw connectors @woocommerce to show my recent orders\"."
 tutorials:
   - title:
       vi: "Đơn gần đây"
       en: "Recent orders"
     prompt:
-      vi: "@woocommerce xem các đơn hàng gần đây."
-      en: "@woocommerce show my recent orders."
+      vi: "dùng tryopenclaw connectors @woocommerce xem các đơn hàng gần đây."
+      en: "use the tryopenclaw connectors @woocommerce to show my recent orders."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,16 +10,16 @@ category: support
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @freshdesk\" trong câu chat để Agent biết và mở đúng công cụ xử lý ticket hỗ trợ khách của bạn. Ví dụ: \"dùng tryopenclaw connector @freshdesk để xem các ticket chưa giải quyết giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @freshdesk\" trong câu chat để Agent biết và mở đúng công cụ xử lý ticket hỗ trợ khách của bạn.\nVí dụ: \"dùng tryopenclaw connectors @freshdesk để xem các ticket chưa giải quyết giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @freshdesk\" in your chat so the Agent knows to work on your support tickets. Example: \"use the tryopenclaw connector @freshdesk to show unresolved tickets\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @freshdesk\" in your chat so the Agent knows to work on your support tickets.\nExample: \"use the tryopenclaw connectors @freshdesk to show unresolved tickets\"."
 tutorials:
   - title:
       vi: "Ticket chưa xử lý"
       en: "Open tickets"
     prompt:
-      vi: "@freshdesk xem các ticket chưa giải quyết."
-      en: "@freshdesk show unresolved tickets."
+      vi: "dùng tryopenclaw connectors @freshdesk xem các ticket chưa giải quyết."
+      en: "use the tryopenclaw connectors @freshdesk to show unresolved tickets."
 ---
 
 <!-- Body for future rich docs -->

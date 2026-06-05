@@ -10,16 +10,16 @@ category: crm-sales
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @hubspot\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn. Ví dụ: \"dùng tryopenclaw connector @hubspot để xem các lead mới gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @hubspot\" trong câu chat để Agent biết và mở đúng công cụ quản lý khách hàng của bạn.\nVí dụ: \"dùng tryopenclaw connectors @hubspot để xem các lead mới gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @hubspot\" in your chat so the Agent knows to manage your customers. Example: \"use the tryopenclaw connector @hubspot to show my recent leads\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @hubspot\" in your chat so the Agent knows to manage your customers.\nExample: \"use the tryopenclaw connectors @hubspot to show my recent leads\"."
 tutorials:
   - title:
       vi: "Xem lead mới"
       en: "Check recent leads"
     prompt:
-      vi: "@hubspot xem các lead mới gần đây."
-      en: "@hubspot show my recent leads."
+      vi: "dùng tryopenclaw connectors @hubspot xem các lead mới gần đây."
+      en: "use the tryopenclaw connectors @hubspot to show my recent leads."
 ---
 
 <!-- Body for future rich docs -->

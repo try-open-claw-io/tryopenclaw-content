@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @sendgrid\" trong câu chat để Agent biết và mở đúng công cụ theo dõi email đã gửi của bạn. Ví dụ: \"dùng tryopenclaw connector @sendgrid để xem hoạt động gửi mail gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @sendgrid\" trong câu chat để Agent biết và mở đúng công cụ theo dõi email đã gửi của bạn.\nVí dụ: \"dùng tryopenclaw connectors @sendgrid để xem hoạt động gửi mail gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @sendgrid\" in your chat so the Agent knows to track your sent email activity. Example: \"use the tryopenclaw connector @sendgrid to check recent email activity\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @sendgrid\" in your chat so the Agent knows to track your sent email activity.\nExample: \"use the tryopenclaw connectors @sendgrid to check recent email activity\"."
 tutorials:
   - title:
       vi: "Xem thống kê mail"
       en: "Check email stats"
     prompt:
-      vi: "@sendgrid xem thống kê mail đã gửi gần đây."
-      en: "@sendgrid check my recent email stats."
+      vi: "dùng tryopenclaw connectors @sendgrid xem thống kê mail đã gửi gần đây."
+      en: "use the tryopenclaw connectors @sendgrid to check my recent email stats."
 ---
 
 <!-- Body for future rich docs -->

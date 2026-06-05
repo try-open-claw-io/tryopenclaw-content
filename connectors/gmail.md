@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @gmail\" trong câu chat để Agent biết và mở đúng công cụ xử lý hộp thư của bạn. Ví dụ: \"dùng tryopenclaw connector @gmail để kiểm tra thư chưa đọc giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @gmail\" trong câu chat để Agent biết và mở đúng công cụ xử lý hộp thư của bạn.\nVí dụ: \"dùng tryopenclaw connectors @gmail để kiểm tra thư chưa đọc giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @gmail\" in your chat so the Agent knows to open the right inbox tool. Example: \"use the tryopenclaw connector @gmail to check my unread mail\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @gmail\" in your chat so the Agent knows to open the right inbox tool.\nExample: \"use the tryopenclaw connectors @gmail to check my unread mail\"."
 tutorials:
   - title:
       vi: "Kiểm tra mail"
       en: "Check email"
     prompt:
-      vi: "@gmail kiểm tra mail chưa đọc của mình."
-      en: "@gmail check my unread emails."
+      vi: "dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
+      en: "use the tryopenclaw connectors @gmail to check my unread emails."
 ---
 
 <!-- Body for future rich docs -->

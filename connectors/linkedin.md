@@ -10,16 +10,16 @@ category: communication
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @linkedin\" trong câu chat để Agent biết và mở đúng công cụ tìm và xem hồ sơ người dùng cho bạn. Ví dụ: \"dùng tryopenclaw connector @linkedin để tìm ứng viên cho vị trí cần tuyển giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @linkedin\" trong câu chat để Agent biết và mở đúng công cụ tìm và xem hồ sơ người dùng cho bạn.\nVí dụ: \"dùng tryopenclaw connectors @linkedin để tìm ứng viên cho vị trí cần tuyển giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @linkedin\" in your chat so the Agent knows to find and view people for you. Example: \"use the tryopenclaw connector @linkedin to find candidates for a role\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @linkedin\" in your chat so the Agent knows to find and view people for you.\nExample: \"use the tryopenclaw connectors @linkedin to find candidates for a role\"."
 tutorials:
   - title:
       vi: "Tìm ứng viên"
       en: "Find candidates"
     prompt:
-      vi: "@linkedin tìm ứng viên cho [vị trí cần tuyển]."
-      en: "@linkedin find candidates for [role]."
+      vi: "dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
+      en: "use the tryopenclaw connectors @linkedin to find candidates for [role]."
 ---
 
 <!-- Body for future rich docs -->

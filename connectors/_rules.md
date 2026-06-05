@@ -56,11 +56,15 @@ Slug mới phải PR riêng để add vào enum + cập nhật file này.
 ### B1. Chỉ 1 tutorial = hành động đơn giản & phổ quát nhất
 Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh **hành động đơn giản & phổ quát nhất** của connector (thường là đọc/kiểm tra/liệt kê) mà **mọi end-user copy-paste là chạy được ngay, không cần điền gì, không phụ thuộc bối cảnh riêng**. Không liệt kê use-case phụ.
 
-### B1b. Prompt bắt đầu bằng @mention
-`prompt.vi` và `prompt.en` **phải bắt đầu** bằng `@<id>` của connector (vd `@gmail`, `@googlecalendar`, `@larksuite-tenant`) — đây là cú "gọi" connector trong khung chat.
-- Sau `@<id>` viết thường, là 1 câu mệnh lệnh tự nhiên (vd `@gmail mở 5 mail chưa đọc hôm nay.`).
-- **Không lặp lại tên brand** trong câu vì @mention đã chỉ rõ connector (❌ `@gmail mở mail Gmail...`).
-- Chỉ 1 câu duy nhất / lang.
+### B1b. Prompt bắt đầu bằng cụm trigger chuẩn
+`prompt.vi` và `prompt.en` **phải bắt đầu** bằng cụm gọi connector đầy đủ:
+- **vi:** `dùng tryopenclaw connectors @<id> {hành động}.`
+- **en:** `use the tryopenclaw connectors @<id> to {action}.`
+
+(vd vi `dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình.`, en `use the tryopenclaw connectors @gmail to check my unread emails.`)
+- `@<id>` viết thường, đúng slug connector (vd `@gmail`, `@googlecalendar`, `@larksuite-tenant`).
+- **Không lặp lại tên brand** trong câu vì @mention đã chỉ rõ connector (❌ `…@gmail mở mail Gmail…`).
+- Chỉ 1 câu duy nhất / lang. Phải dùng số nhiều **"connectors"** (không phải "connector").
 
 ### B2. Tone & xưng hô
 - **VN:** xưng "mình" hoặc lược chủ ngữ. Tránh "tôi/bạn" formal. Đuôi "giúp mình", "cho mình" được khuyến khích → giống user gõ thật.
@@ -73,29 +77,31 @@ Mỗi connector chỉ giữ **đúng 1 row** trong `tutorials` — phản ánh *
 ### B4. Prompt = lệnh đơn giản nhất, ưu tiên zero-input
 - Prompt phải **chạy được ngay khi copy-paste** cho mọi tài khoản — **không hardcode ngữ cảnh cụ thể** (số liệu, ngày "hôm nay", tên doc/board/kênh thật, scenario riêng).
 - **Mặc định: zero-input.** Chọn 1 hành động đọc/kiểm tra/liệt kê tự khoanh phạm vi bằng "của mình" / "gần đây" / "giao cho mình" / "đang chờ" — không cần user điền gì.
-  - ✅ "@gmail kiểm tra mail chưa đọc của mình."
-  - ✅ "@shopify xem các đơn hàng gần đây."
-  - ✅ "@jira xem các task đang giao cho mình."
+  - ✅ "dùng tryopenclaw connectors @gmail kiểm tra mail chưa đọc của mình."
+  - ✅ "dùng tryopenclaw connectors @shopify xem các đơn hàng gần đây."
+  - ✅ "dùng tryopenclaw connectors @jira xem các task đang giao cho mình."
 - **Placeholder chỉ là ngoại lệ.** Chỉ khi connector **thuần gửi/tạo** và không có hành động đọc có nghĩa → dùng **đúng 1** `[noun]` cho phần bắt buộc nhập. Format `[mô tả tham số]` (danh từ tiếng Việt, không `X`/`Y`).
-  - ✅ "@twilio gửi SMS cho [số điện thoại]." (Twilio không có inbox để đọc)
-  - ✅ "@linkedin tìm ứng viên cho [vị trí cần tuyển]."
+  - ✅ "dùng tryopenclaw connectors @twilio gửi SMS cho [số điện thoại]." (Twilio không có inbox để đọc)
+  - ✅ "dùng tryopenclaw connectors @linkedin tìm ứng viên cho [vị trí cần tuyển]."
 - **Tránh:**
-  - ❌ "@gmail mở 5 mail chưa đọc từ khách hàng hôm nay." (hardcode số/nguồn/ngày)
-  - ❌ "@slack gửi thông báo vào #sales: có đơn mới 500k." (scenario cứng)
+  - ❌ "…@gmail mở 5 mail chưa đọc từ khách hàng hôm nay." (hardcode số/nguồn/ngày)
+  - ❌ "…@slack gửi thông báo vào #sales: có đơn mới 500k." (scenario cứng)
   - ❌ nhồi nhiều `[noun]` vào 1 prompt — chỉ tối đa 1, và chỉ khi bắt buộc.
 
 ### B5. Length prompt
-- ≤ 25 từ / lang. Dài hơn → user khó hình dung gõ.
+- ≤ 25 từ / lang phần **hành động** (không tính cụm trigger `dùng tryopenclaw connectors @<id>`). Dài hơn → user khó hình dung gõ.
 
-### B6. Format `howToUse` — đúng 1 dòng "Kích hoạt kết nối"
-`howToUse.vi` và `howToUse.en` mỗi bên là array **đúng 1 phần tử**, mở đầu bằng nhãn in đậm:
+### B6. Format `howToUse` — đúng 1 phần tử "Kích hoạt kết nối"
+`howToUse.vi` và `howToUse.en` mỗi bên là array **đúng 1 phần tử**, mở đầu bằng nhãn `Kích hoạt kết nối:` (en `Activate the connection:`). **Không markdown** (không `**bold**`, không `<br>`) vì field render plain text trên production — ký tự `*` sẽ hiện nguyên.
 
-- **vi:** `**Kích hoạt kết nối:** viết rõ cụm "dùng tryopenclaw connector @<id>" trong câu chat để Agent biết và {làm gì với connector}. Ví dụ: "dùng tryopenclaw connector @<id> để {hành động} giúp tôi".`
-- **en:** `**Activate the connection:** write the exact phrase "use the tryopenclaw connector @<id>" in your chat so the Agent knows to {do what}. Example: "use the tryopenclaw connector @<id> to {action}".`
+Câu `Ví dụ:` phải **xuống hàng** bằng newline thật `\n` (YAML double-quoted), KHÔNG dùng tag `<br>`:
+
+- **vi:** `Kích hoạt kết nối: viết rõ cụm "dùng tryopenclaw connectors @<id>" trong câu chat để Agent biết và {làm gì với connector}.\nVí dụ: "dùng tryopenclaw connectors @<id> để {hành động} giúp tôi".`
+- **en:** `Activate the connection: write the exact phrase "use the tryopenclaw connectors @<id>" in your chat so the Agent knows to {do what}.\nExample: "use the tryopenclaw connectors @<id> to {action}".`
 
 Yêu cầu:
-- Phải chứa cụm trigger chuẩn `dùng tryopenclaw connector @<id>` (en: `use the tryopenclaw connector @<id>`) — chỉ 1 cụm, không dùng "dùng kết nối @<id>".
-- Phải có 1 `Ví dụ:` (en: `Example:`), câu lệnh bắt đầu bằng `dùng tryopenclaw connector @<id>`, đuôi vi "giúp tôi".
+- Phải chứa cụm trigger chuẩn `dùng tryopenclaw connectors @<id>` (en: `use the tryopenclaw connectors @<id>`) — số nhiều "connectors", chỉ 1 cụm, không dùng "dùng kết nối @<id>" / "connector" số ít.
+- Phải có 1 `Ví dụ:` (en: `Example:`), **đứng sau `\n`**, câu lệnh bắt đầu bằng `dùng tryopenclaw connectors @<id>`, đuôi vi "giúp tôi".
 - Xưng hô: dùng "bạn" + "Agent" (viết hoa) — đây là copy hướng dẫn end-user, **khác** tone prompt ở §B2.
 - **Chỉ read-only:** cả mục đích lẫn `Ví dụ:` chỉ được mô tả hành động **xem / kiểm tra / liệt kê / tóm tắt / tìm / theo dõi** — **cấm** gửi, đăng, nhắn, tạo, cập nhật, xoá hay bất kỳ thao tác tương tác/ghi nào. Kể cả connector thuần gửi (sendgrid, twilio…) cũng lấy ví dụ xem (vd "xem hoạt động gửi mail gần đây", "xem lịch sử tin nhắn"). Đây là copy demo an toàn để user không vô tình kích hoạt thao tác gửi đi.
 
@@ -110,7 +116,7 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C3.** `name.vi` + `name.en` giữ đúng brand casing (vd "Google Calendar" không phải "Googlecalendar").
 - [ ] **C4.** `description.vi` + `description.en` đều ≥ 1 câu, không rỗng, không quá 200 ký tự.
 - [ ] **C5.** `category` ∈ enum §A6.
-- [ ] **C6.** `tutorials` có đúng 1 row, đủ `title` + `prompt` cả vi + en; `prompt.vi`/`prompt.en` bắt đầu bằng `@<id>` (xem §B1b).
+- [ ] **C6.** `tutorials` có đúng 1 row, đủ `title` + `prompt` cả vi + en; `prompt.vi` bắt đầu `dùng tryopenclaw connectors @<id>`, `prompt.en` bắt đầu `use the tryopenclaw connectors @<id> to` (xem §B1b).
 - [ ] **C7.** Grep `[A-Z][a-zà-ỹ]+` trong tất cả `prompt.vi` và `prompt.en` → không có first name người (Mai/An/Lan/John/Alice/Sarah/Bob/Carol/David/Emma...).
 - [ ] **C8.** Grep "chị |anh |em |ông |bà |Mr\\.|Ms\\.|Mrs\\." → không có xưng hô gắn cá nhân.
 - [ ] **C9.** Grep email/SĐT pattern (`\\S+@\\S+`, `\\d{4,}`) → không có dữ liệu thật.
@@ -118,7 +124,7 @@ Trước khi merge file connector mới, đi từ trên xuống:
 - [ ] **C11.** Đọc lại description: end-user (không phải dev) có hiểu app này làm gì không?
 - [ ] **C12.** Đọc lại prompt: nếu copy-paste vào agent chat, agent có gọi đúng connector ko?
 - [ ] **C13.** Description đúng flow §A5: câu 1 `{Brand} là …`, câu 2 mở đầu `Với kết nối này, Agent có thể …, v.v.`.
-- [ ] **C14.** `howToUse.vi`/`.en` đúng 1 phần tử, mở đầu `**Kích hoạt kết nối:**`, có cụm `dùng tryopenclaw connector @<id>` + 1 `Ví dụ:` (§B6).
+- [ ] **C14.** `howToUse.vi`/`.en` đúng 1 phần tử, mở đầu `Kích hoạt kết nối:` (KHÔNG `**bold**`), có cụm `dùng tryopenclaw connectors @<id>` + 1 `Ví dụ:` đứng sau newline `\n` (§B6).
 - [ ] **C15.** `howToUse` read-only: mục đích + `Ví dụ:` chỉ xem/kiểm tra/liệt kê/tóm tắt/tìm/theo dõi — không gửi/đăng/nhắn/tạo/cập nhật/xoá (§B6).
 
 ---
@@ -158,12 +164,22 @@ for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
   grep -q "Với kết nối này, Agent có thể" "$f" || echo "FAIL §A5: $f thiếu flow 'Với kết nối này, Agent có thể'"
 done
 
-# D8. howToUse thiếu nhãn Kích hoạt kết nối / sai cụm trigger (§B6)
+# D8. howToUse: nhãn / cụm trigger / no-bold / newline trước Ví dụ (§B6)
 for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
   case "$f" in */_*.md) continue;; esac
-  grep -q '\*\*Kích hoạt kết nối:\*\*' "$f" || echo "FAIL §B6: $f thiếu nhãn '**Kích hoạt kết nối:**'"
-  grep -q 'dùng tryopenclaw connector @' "$f" || echo "FAIL §B6: $f thiếu cụm trigger 'dùng tryopenclaw connector @<id>'"
+  grep -q 'Kích hoạt kết nối:' "$f" || echo "FAIL §B6: $f thiếu nhãn 'Kích hoạt kết nối:'"
+  grep -q '\*\*Kích hoạt' "$f" && echo "FAIL §B6: $f còn '**bold**' trong nhãn (cấm markdown)"
+  grep -q 'dùng tryopenclaw connectors @' "$f" || echo "FAIL §B6: $f thiếu cụm trigger 'dùng tryopenclaw connectors @<id>'"
   grep -q 'dùng kết nối @' "$f" && echo "FAIL §B6: $f còn sót cụm cũ 'dùng kết nối @<id>'"
+  grep -q '\\nVí dụ:' "$f" || echo "FAIL §B6: $f thiếu newline '\\nVí dụ:' (cấm <br>)"
+  grep -qi '<br' "$f" && echo "FAIL §B6: $f dùng tag <br> (phải newline thật)"
+done
+
+# D8b. tutorials prompt phải bắt đầu cụm trigger đầy đủ (§B1b)
+for f in /Users/admin/tryopenclaw-content/connectors/*.md; do
+  case "$f" in */_*.md) continue;; esac
+  grep -qE '^      vi: "dùng tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.vi không bắt đầu 'dùng tryopenclaw connectors @<id>'"
+  grep -qE '^      en: "use the tryopenclaw connectors @' "$f" || echo "FAIL §B1b: $f prompt.en không bắt đầu 'use the tryopenclaw connectors @<id>'"
 done
 
 # D9. howToUse phải đúng 1 bullet mỗi lang (§B6)

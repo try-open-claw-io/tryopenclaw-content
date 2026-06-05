@@ -10,16 +10,16 @@ category: documents
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @airtable\" trong câu chat để Agent biết và mở đúng cơ sở dữ liệu của bạn. Ví dụ: \"dùng tryopenclaw connector @airtable để liệt kê các base gần đây giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @airtable\" trong câu chat để Agent biết và mở đúng cơ sở dữ liệu của bạn.\nVí dụ: \"dùng tryopenclaw connectors @airtable để liệt kê các base gần đây giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @airtable\" in your chat so the Agent knows to open your database. Example: \"use the tryopenclaw connector @airtable to list my recent bases\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @airtable\" in your chat so the Agent knows to open your database.\nExample: \"use the tryopenclaw connectors @airtable to list my recent bases\"."
 tutorials:
   - title:
       vi: "Xem base"
       en: "List bases"
     prompt:
-      vi: "@airtable liệt kê các base gần đây của mình."
-      en: "@airtable list my recent bases."
+      vi: "dùng tryopenclaw connectors @airtable liệt kê các base gần đây của mình."
+      en: "use the tryopenclaw connectors @airtable to list my recent bases."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,16 +10,16 @@ category: productivity
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @larksuite\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên nền tảng Lark của bạn. Ví dụ: \"dùng tryopenclaw connector @larksuite để xem tin nhắn mới giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @larksuite\" trong câu chat để Agent biết và mở đúng công cụ làm việc trên nền tảng Lark của bạn.\nVí dụ: \"dùng tryopenclaw connectors @larksuite để xem tin nhắn mới giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @larksuite\" in your chat so the Agent knows to work across your Lark workspace. Example: \"use the tryopenclaw connector @larksuite to check my recent messages\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @larksuite\" in your chat so the Agent knows to work across your Lark workspace.\nExample: \"use the tryopenclaw connectors @larksuite to check my recent messages\"."
 tutorials:
   - title:
       vi: "Xem tin nhắn"
       en: "Check messages"
     prompt:
-      vi: "@larksuite xem tin nhắn mới của mình."
-      en: "@larksuite check my recent messages."
+      vi: "dùng tryopenclaw connectors @larksuite xem tin nhắn mới của mình."
+      en: "use the tryopenclaw connectors @larksuite to check my recent messages."
 ---
 
 <!-- Body for future rich docs -->

@@ -10,16 +10,16 @@ category: scheduling
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @zoom\" trong câu chat để Agent biết và mở đúng công cụ tạo và quản lý phòng họp của bạn. Ví dụ: \"dùng tryopenclaw connector @zoom để xem các cuộc họp sắp tới giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @zoom\" trong câu chat để Agent biết và mở đúng công cụ tạo và quản lý phòng họp của bạn.\nVí dụ: \"dùng tryopenclaw connectors @zoom để xem các cuộc họp sắp tới giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @zoom\" in your chat so the Agent knows to create and manage your meetings. Example: \"use the tryopenclaw connector @zoom to show my upcoming meetings\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @zoom\" in your chat so the Agent knows to create and manage your meetings.\nExample: \"use the tryopenclaw connectors @zoom to show my upcoming meetings\"."
 tutorials:
   - title:
       vi: "Xem cuộc họp"
       en: "Check meetings"
     prompt:
-      vi: "@zoom xem các cuộc họp sắp tới của mình."
-      en: "@zoom show my upcoming meetings."
+      vi: "dùng tryopenclaw connectors @zoom xem các cuộc họp sắp tới của mình."
+      en: "use the tryopenclaw connectors @zoom to show my upcoming meetings."
 ---
 
 <!-- Body for future rich docs -->

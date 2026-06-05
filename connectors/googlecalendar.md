@@ -10,16 +10,16 @@ category: scheduling
 popular: true
 howToUse:
   vi:
-    - "**Kích hoạt kết nối:** viết rõ cụm \"dùng tryopenclaw connector @googlecalendar\" trong câu chat để Agent biết và mở đúng công cụ xem và sắp lịch của bạn. Ví dụ: \"dùng tryopenclaw connector @googlecalendar để xem lịch sắp tới giúp tôi\"."
+    - "Kích hoạt kết nối: viết rõ cụm \"dùng tryopenclaw connectors @googlecalendar\" trong câu chat để Agent biết và mở đúng công cụ xem và sắp lịch của bạn.\nVí dụ: \"dùng tryopenclaw connectors @googlecalendar để xem lịch sắp tới giúp tôi\"."
   en:
-    - "**Activate the connection:** write the exact phrase \"use the tryopenclaw connector @googlecalendar\" in your chat so the Agent knows to view and arrange your schedule. Example: \"use the tryopenclaw connector @googlecalendar to show my upcoming events\"."
+    - "Activate the connection: write the exact phrase \"use the tryopenclaw connectors @googlecalendar\" in your chat so the Agent knows to view and arrange your schedule.\nExample: \"use the tryopenclaw connectors @googlecalendar to show my upcoming events\"."
 tutorials:
   - title:
       vi: "Xem lịch sắp tới"
       en: "Check upcoming events"
     prompt:
-      vi: "@googlecalendar xem lịch sắp tới của mình."
-      en: "@googlecalendar show my upcoming events."
+      vi: "dùng tryopenclaw connectors @googlecalendar xem lịch sắp tới của mình."
+      en: "use the tryopenclaw connectors @googlecalendar to show my upcoming events."
 ---
 
 <!-- Body for future rich docs -->
