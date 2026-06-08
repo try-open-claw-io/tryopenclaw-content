@@ -6,7 +6,7 @@ name:
 description:
   vi: "YouTube là nền tảng chia sẻ và xem video. Với kết nối này, Agent có thể xem video trên kênh, theo dõi lượt xem, đọc bình luận và tổng hợp chỉ số kênh cho bạn."
   en: "YouTube is a platform for sharing and watching videos. With this connection, the Agent can list channel videos, track views, read comments, and summarize channel stats for you."
-category: communication
+category: productivity
 popular: true
 howToUse:
   vi:
