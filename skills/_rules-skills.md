@@ -12,7 +12,7 @@ Mỗi skill = 1 folder `skills/<slug>/` chứa đúng 3 file:
 |------|---------|-----------|
 | `SKILL.md` | Frontmatter (`name`, `description`) + `# Instructions` cho agent: required env, capabilities, guardrails. | Agent (LLM runtime). |
 | `README.md` | Bilingual vi/en: `## Cách sử dụng` + `## Hướng dẫn`, `## How to use` + `## Tutorials`. | End-user trong store. |
-| `_meta.json` | Metadata render store: `slug`, `name{vi,en}`, `description{vi,en}`, `category`, `icon`, `status`, `version`. | UI store. |
+| `_meta.json` | Metadata render store: `slug`, `name{vi,en}`, `description{vi,en}`, `category`, `icon`, `status`, `is_preinstalled?`, `is_published?`, `version`. | UI store. |
 
 `<slug>` === folder name === `name` (frontmatter SKILL.md) === `slug` (_meta.json). Pattern: `^[a-z0-9_-]+$`.
 
@@ -72,6 +72,13 @@ Slug mới phải PR riêng để add file vào `categories/` + cập nhật fil
 
 ### A8. _meta.json đủ field
 Bắt buộc: `slug`, `name.vi`, `name.en`, `description.vi`, `description.en`, `category`, `icon`, `status`, `version`. `slug` khớp folder name. `name` giữ đúng brand casing (vd "Brevo Email Marketing", không "brevo email marketing").
+
+Hai field **tùy chọn** (boolean, độc lập nhau — chỉ áp dụng cho skill github, custom upload luôn = mặc định):
+
+- **`is_preinstalled`** — `true` ⇒ skill được **cài sẵn + bật global** trên MỌI instance mới (BE seed từ S3 lúc provision). Thiếu ⇒ `false`. Đây là "skill nền tảng", khác `instance_agents.is_default` (agent chính) — đừng nhầm.
+- **`is_published`** — `false` ⇒ **ẩn** skill khỏi kho duyệt (browse catalog) VÀ khỏi danh sách "đã cài" trên instance. Thiếu ⇒ `true` (mặc định hiện). Skill github ẩn vẫn cài được (đường template resolve theo slug), chỉ không trưng bày.
+
+Cặp điển hình cho **skill hệ thống chạy ngầm**: `"is_preinstalled": true` + `"is_published": false`. Đổi 2 cờ này ở content repo + re-sync là đủ, **KHÔNG cần deploy BE**. Schema BE (`skill-parser.service.ts` → `META_SCHEMA`) đặt `additionalProperties: false` nên chỉ được dùng đúng các key liệt kê ở đây.
 
 ---
 

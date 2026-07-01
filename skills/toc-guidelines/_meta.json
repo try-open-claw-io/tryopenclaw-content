@@ -1,0 +1,17 @@
+{
+  "slug": "toc-guidelines",
+  "name": {
+    "vi": "Khám phá năng lực OpenClaw",
+    "en": "OpenClaw Capabilities Guide"
+  },
+  "description": {
+    "vi": "Giúp bạn biết OpenClaw làm được gì: các skill và tích hợp app ngoài (Gmail, Slack, Notion...) đang có, cái nào đã sẵn sàng, và cách cài/kết nối thêm.",
+    "en": "See what OpenClaw can do: the skills and app integrations (Gmail, Slack, Notion...) available, what's ready to use, and how to set up more."
+  },
+  "category": "other",
+  "icon": "Compass",
+  "status": "Ready",
+  "is_preinstalled": true,
+  "is_published": false,
+  "version": "1.0"
+}
