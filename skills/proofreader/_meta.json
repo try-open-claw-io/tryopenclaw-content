@@ -11,5 +11,7 @@
   "category": "productivity",
   "icon": "SpellCheck",
   "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": true,
   "version": "1.0"
 }
