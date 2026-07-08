@@ -1,16 +1,16 @@
-# Nền tảng OpenClaw hoạt động thế nào (mô hình cơ bản)
+# Nền tảng ClawExpert hoạt động thế nào (mô hình cơ bản)
 
-> File này giúp agent giải thích cách OpenClaw vận hành và **vì sao đôi khi một tính năng "chưa dùng được"**.
+> File này giúp agent giải thích cách ClawExpert vận hành và **vì sao đôi khi một tính năng "chưa dùng được"**.
 > Đọc file này trước khi hướng dẫn các tính năng cần "instance đang chạy".
 
 ## Mô hình 3 tầng
 
 ```
-Workspace  →  Instance (OpenClaw đang chạy)  →  Agent (trợ lý trò chuyện)
+Workspace  →  Instance (ClawExpert đang chạy)  →  Agent (trợ lý trò chuyện)
 ```
 
 - **Workspace**: không gian làm việc của bạn (hoặc của team). Chứa gói cước, số dư credit, các app đã kết nối.
-- **Instance**: một "máy" OpenClaw đang chạy trong workspace. Đây là nơi agent thực sự hoạt động. **Rất nhiều tính năng chỉ dùng được khi instance đang chạy.**
+- **Instance**: một "máy" ClawExpert đang chạy trong workspace. Đây là nơi agent thực sự hoạt động. **Rất nhiều tính năng chỉ dùng được khi instance đang chạy.**
 - **Agent**: trợ lý bạn trò chuyện cùng. Một instance có thể có nhiều agent; mỗi agent có tên, tính cách, model AI và bộ kỹ năng riêng.
 
 ## Điều kiện chung hay gặp

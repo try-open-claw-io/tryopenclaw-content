@@ -1,12 +1,12 @@
 {
   "slug": "toc-guidelines",
   "name": {
-    "vi": "Khám phá năng lực OpenClaw",
-    "en": "OpenClaw Capabilities Guide"
+    "vi": "Khám phá năng lực ClawExpert",
+    "en": "ClawExpert Capabilities Guide"
   },
   "description": {
-    "vi": "Giúp bạn biết OpenClaw làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập từng bước.",
-    "en": "See what OpenClaw can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks and AI models — with step-by-step setup."
+    "vi": "Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập từng bước.",
+    "en": "See what ClawExpert can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks and AI models — with step-by-step setup."
   },
   "category": "other",
   "icon": "Compass",

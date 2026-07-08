@@ -164,9 +164,9 @@ function renderConnectorsCatalog() {
   const out = [
     '# Danh mục Connectors được hỗ trợ',
     '',
-    `> Danh mục connectors mà OpenClaw hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${items.length} connector.`,
+    `> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${items.length} connector.`,
     '> Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).',
-    '> Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện OpenClaw (mục Connectors).',
+    '> Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).',
     '',
   ];
   for (const cat of Object.keys(groups).sort(byCategory(cats))) {
@@ -177,7 +177,7 @@ function renderConnectorsCatalog() {
       out.push(`- **Dùng để làm gì**: ${descVi(c)}`);
       out.push(`- **Ví dụ người dùng nói**: "${oneLine(c.tutorials?.[0]?.prompt?.vi || '')}"`);
       out.push(`- **Gọi nhanh**: gõ \`@${c.id}\` trong câu nhắn.`);
-      out.push(`- **Kết nối**: mở OpenClaw → mục Connectors → chọn ${nameVi(c)} → đăng nhập/cấp quyền.`, '');
+      out.push(`- **Kết nối**: mở ClawExpert → mục Connectors → chọn ${nameVi(c)} → đăng nhập/cấp quyền.`, '');
     }
   }
   return out.join('\n');
@@ -191,8 +191,8 @@ function renderSkillsCatalog() {
   const out = [
     '# Danh mục Skills được hỗ trợ',
     '',
-    `> Danh mục skills mà OpenClaw hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${skills.length} skill.`,
-    '> Skill được cài qua giao diện OpenClaw (mục Skills). Agent không gọi backend để lấy danh sách.',
+    `> Danh mục skills mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${skills.length} skill.`,
+    '> Skill được cài qua giao diện ClawExpert (mục Skills). Agent không gọi backend để lấy danh sách.',
     '',
   ];
   for (const cat of Object.keys(groups).sort(byCategory(cats))) {
@@ -201,7 +201,7 @@ function renderSkillsCatalog() {
       out.push(`### ${nameVi(meta)}  (\`${slug}\`)`, '');
       out.push(`- **Dùng để làm gì**: ${descVi(meta)}`);
       out.push(`- **Ví dụ người dùng nói**: "${skillExample(slug, meta)}"`);
-      out.push(`- **Cài đặt**: mở OpenClaw → mục Skills → tìm "${nameVi(meta)}" → Cài.`, '');
+      out.push(`- **Cài đặt**: mở ClawExpert → mục Skills → tìm "${nameVi(meta)}" → Cài.`, '');
     }
   }
   return out.join('\n');

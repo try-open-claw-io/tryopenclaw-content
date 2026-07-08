@@ -4,7 +4,7 @@
 
 ## Hai cách cấp nguồn AI
 
-- **TryOpenClaw (trả theo lượt bằng credit)** — platform tự chọn và chạy model giúp bạn, không cần API key. Mặc định là **Auto (tối ưu chi phí)** (hiện là chip **Toc**): tự chọn model phù hợp cho từng yêu cầu.
+- **ClawExpert (trả theo lượt bằng credit)** — platform tự chọn và chạy model giúp bạn, không cần API key. Mặc định là **Auto (tối ưu chi phí)** (hiện là chip **Toc**): tự chọn model phù hợp cho từng yêu cầu.
 - **API Key riêng (BYOK)** — kết nối tài khoản của bạn ở một nhà cung cấp AI và dùng model đó trực tiếp; bạn trả tiền thẳng cho nhà cung cấp (không trừ credit platform).
 
 ## Nhà cung cấp hỗ trợ
@@ -22,7 +22,7 @@ Model ví dụ: Claude Opus / Sonnet / Haiku; GPT-5 / Mini / Nano; Gemini Pro / 
 ## Cần gì trước
 
 - Một **instance đã tạo** để kết nối provider (chưa có sẽ thấy "Tạo instance để kết nối AI provider"). Tạo instance cần gói trả phí.
-- Đường **TryOpenClaw** cần có **credit** (hết credit thì AI không chạy cho tới khi nạp thêm).
+- Đường **ClawExpert** cần có **credit** (hết credit thì AI không chạy cho tới khi nạp thêm).
 
 ## Cách 1 — Kết nối tài khoản AI của bạn (Cài đặt → AI Models)
 
@@ -40,7 +40,7 @@ Model ví dụ: Claude Opus / Sonnet / Haiku; GPT-5 / Mini / Nano; Gemini Pro / 
 
 ## Lúc tạo instance (deploy)
 
-- Ở bước "Bạn muốn trả phí AI bằng cách nào?", chọn **TryOpenClaw** (Auto, dùng credit) hoặc **API Key riêng** (chọn Provider + Model + nhập key).
+- Ở bước "Bạn muốn trả phí AI bằng cách nào?", chọn **ClawExpert** (Auto, dùng credit) hoặc **API Key riêng** (chọn Provider + Model + nhập key).
 
 ## Lưu ý cần thiết
 

@@ -1,6 +1,6 @@
 # Channels — Trò chuyện với agent qua app quen thuộc
 
-> **Channel** = kênh nhắn tin để **bạn chat với và điều khiển agent ngay trong một app quen** (Telegram, Zalo, Discord, Slack, WhatsApp), thay vì chỉ dùng web OpenClaw.
+> **Channel** = kênh nhắn tin để **bạn chat với và điều khiển agent ngay trong một app quen** (Telegram, Zalo, Discord, Slack, WhatsApp), thay vì chỉ dùng web ClawExpert.
 > Kết nối xong, mọi tin bạn nhắn trong app đó sẽ được agent tự trả lời.
 
 ## ⚠️ Đừng nhầm Channel với Connector
@@ -34,7 +34,7 @@ Telegram, Zalo, Discord, Slack, WhatsApp. (Messenger đang "sắp ra mắt".)
 ### Telegram (~2 phút)
 1. Mở **@BotFather** trên Telegram.
 2. Gửi lệnh **/newbot**, đặt tên bot → BotFather trả về **token**.
-3. Dán token vào OpenClaw → **Connect Telegram**.
+3. Dán token vào ClawExpert → **Connect Telegram**.
 
 ### Zalo (~5 phút)
 1. Vào trang quản trị Zalo Bot / Official Account, lấy **Access Token** (cần OA đã được duyệt).

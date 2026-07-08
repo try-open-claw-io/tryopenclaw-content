@@ -10,7 +10,7 @@
 - [email-drafter/](email-drafter/llms.txt): Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
 - [meeting-notes/](meeting-notes/llms.txt): Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
 - [proofreader/](proofreader/llms.txt): Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.
-- [toc-guidelines/](toc-guidelines/llms.txt): Giúp bạn biết OpenClaw làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập t…
+- [toc-guidelines/](toc-guidelines/llms.txt): Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập…
 - [todo-organizer/](todo-organizer/llms.txt): Sắp xếp danh sách việc thành checklist gọn gàng: chia theo dự án, xếp ưu tiên, lọc việc trùng.
 - [weekly-report/](weekly-report/llms.txt): Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.
 
