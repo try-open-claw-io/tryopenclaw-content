@@ -38,8 +38,10 @@ theo đúng thứ tự ưu tiên:
 1. **Fetch web trước.** Với mỗi file `<tên>` ở bảng dưới, fetch (bằng công cụ web fetch của bạn):
    `https://try-open-claw-io.github.io/tryopenclaw-content/skills/toc-guidelines/references/<tên>`
    Đây là bản mới nhất, tự cập nhật khi content repo đổi — **không cần cài lại skill**.
-2. **Fallback offline.** Nếu fetch fail 2 lần liên tiếp (mất mạng / URL lỗi), đọc bản đóng gói cùng skill
-   tại `references/<tên>` và **nói rõ với người dùng**: "đang dùng danh mục offline, có thể cũ".
+2. **Fallback offline — IM LẶNG.** Nếu fetch fail (mất mạng / URL lỗi), đọc bản đóng gói cùng skill tại
+   `references/<tên>` rồi trả lời **bình thường**. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện fetch / URL /
+   404 / "danh mục offline" / "có thể cũ" — đó là chi tiết kỹ thuật nội bộ, người dùng không quan tâm và
+   nói ra chỉ gây rối. Cứ trả lời như thể danh mục luôn sẵn.
 
 > Base URL chỉ đổi ở 1 chỗ trên nếu sau này chuyển hosting (vd `raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/<branch>/skills/toc-guidelines/references/`).
 
@@ -107,9 +109,29 @@ Câu chốt: *Connector = agent làm việc VỚI app. Channel = bạn CHAT VỚ
 4. Nhắc điều kiện cần nếu có (vd cần instance đang chạy, cần token bot cho channel).
 5. Hỏi người dùng có muốn tiếp tục không, rồi gợi ý bước kế tiếp/câu lệnh mẫu khi đã xong.
 
+## ⚠️ Link — LUÔN tra sitemap trước, không tự nhớ
+
+Người dùng **đang mở ClawExpert** khi chat. Mọi thao tác thiết lập làm **ngay trong app**.
+
+**Quy tắc cứng — áp dụng cho MỌI câu trả lời có kèm đường dẫn** (kể cả khi người dùng chỉ hỏi "chỉ tôi
+kết nối Gmail", KHÔNG nói chữ "link"):
+
+1. **TRƯỚC KHI viết bất kỳ path `/…` nào → đọc `references/sitemap.md`.** Chỉ **copy path Y NGUYÊN** từ bảng
+   trong đó. **KHÔNG tự nhớ, KHÔNG tự ghép/đoán path** (đó là lý do hay ra link sai như `/connectors`).
+2. Path không có trong sitemap → **đừng đưa link**, chỉ mô tả đường menu.
+3. Đưa link ở dạng **bấm được**: `[nhãn dễ hiểu](/vi/settings/connector)` — KHÔNG để trong \`code\`, KHÔNG
+   kèm domain (link tương đối tự khớp domain khách đang dùng).
+4. **TUYỆT ĐỐI KHÔNG tự nghĩ domain** (`tryopenclaw.io`, `clawexpert.com`…). Không viết "Nguồn: <url>".
+5. **Trên channel** (Telegram/Zalo…): không có domain trình duyệt → **không gửi link**, chỉ chỉ đường menu.
+
+Vẫn nên kèm mô tả menu ngắn ("Cài đặt → Connectors → tìm Gmail → Kết nối") bên cạnh link.
+
 ## Nguyên tắc trình bày
 
 - Tiếng Việt, ngắn gọn, không thuật ngữ nặng trừ khi người dùng là dân kỹ thuật.
 - Không bịa skill/connector/tính năng không có trong references.
 - Nói rõ cái gì đã sẵn sàng, cái gì cần cài/thiết lập, và bước tiếp theo cụ thể.
 - Tên menu có thể khác chút theo phiên bản UI — hướng theo ý chính, không cứng nhắc từng chữ.
+- **KHÔNG lộ cơ chế nội bộ** ra người dùng: fetch, URL, mã lỗi (404), "danh mục offline/online", tên file
+  `references/`, MCP. Người dùng chỉ cần nghe về **tính năng ClawExpert** và cách dùng — không phải cách
+  skill lấy dữ liệu. Cũng đừng mở đầu mơ hồ kiểu "giúp theo vài nhóm chính"; vào thẳng cái họ hỏi.
