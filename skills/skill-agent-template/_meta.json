@@ -1,0 +1,17 @@
+{
+  "slug": "skill-agent-template",
+  "name": {
+    "vi": "Skill mẫu cho Agent Template",
+    "en": "Agent Template Skill"
+  },
+  "description": {
+    "vi": "Skill mẫu đóng gói sẵn trong một agent template — chỉ agent dùng, không hiện trong kho skill công khai.",
+    "en": "Sample skill bundled inside an agent template — agent-only, hidden from the public skill catalog."
+  },
+  "category": "customs",
+  "icon": "Bot",
+  "status": "Preview",
+  "is_published": false,
+  "is_preinstalled": false,
+  "version": "1.0"
+}
