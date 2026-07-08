@@ -1,0 +1,25 @@
+# OpenClaw — full context for LLMs
+
+> Bản dồn 1 file của các tài nguyên chính. Sinh tự động từ `llms.txt` + docs nguồn;
+> đừng sửa tay — chỉnh ở source rồi build lại.
+
+## OpenClaw là gì
+Nền tảng multi-tenant provision cloud container chạy AI agent. Thành phần:
+- **Instance**: container do nền tảng tạo cho user, có terminal access.
+- **ClawHub**: registry skill pre-built — crawl, cache vào DB, cài lên instance qua gateway.
+- **Use Case bundle**: zip gói (plugins + agents + skills + install.sh) cài lên 1 instance qua REST.
+- **Agent Template**: blueprint tĩnh (agent.json + core_files/AGENTS.md) để clone ra agent mới.
+
+## Cách một skill tới được agent
+ClawHub Registry → crawl & sync vào DB → user browse trong catalog → install lên
+instance qua `gateway.skills.install(name, version)` → config push vào container.
+Agent KHÔNG tự git-clone; mọi thứ đi qua gateway.
+
+## Cách dùng plugin (Claude Code)
+Marketplace là 1 git repo. User chạy: add github:try-open-claw-io/llm rồi install plugin.
+
+## Liên kết
+- Product: https://tryopenclaw.io/docs/product.md
+- API: https://tryopenclaw.io/docs/api.md
+- Skills: https://tryopenclaw.io/docs/skills.md
+- Repo source: https://github.com/try-open-claw-io/llm
