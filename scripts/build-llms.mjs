@@ -117,16 +117,94 @@ function renderSkillIndex(dir, slug, meta) {
   const skillDir = join(ROOT, dir, slug);
   const lines = [`# ${slug} — skill`, '', `> ${descVi(meta)}`, '', '## Files'];
   for (const f of readdirSync(skillDir).sort()) {
+    if (f === 'llms.txt') continue;
+    if (statSync(join(skillDir, f)).isDirectory()) continue; // bỏ references/ (thư mục)
     let d = SKILL_FILE_DESC[f];
     if (f === 'SKILL.md') {
       // description trong frontmatter SKILL.md = tín hiệu trigger cho agent
       d = `Instructions agent chạy — ${clip(oneLine(matter.read(join(skillDir, f)).data?.description || ''), 120)}`;
     }
-    if (f === 'llms.txt') continue;
     lines.push(`- [${f}](${f}): ${d || 'File của skill.'}`);
   }
   lines.push('');
   return lines.join('\n');
+}
+
+// ---- render catalog references cho skill toc-guidelines (sinh từ frontmatter) ----
+// Nguồn sự thật = connectors/*.md + skills/*/_meta.json + categories/*.md.
+// Thay 2 file catalog chép tay (đã drift 46↔49) bằng bản sinh — hết drift.
+function loadCategories() {
+  const map = {};
+  for (const { fm } of readMdDir('categories')) {
+    map[fm.id] = { vi: nameVi(fm), order: typeof fm.displayOrder === 'number' ? fm.displayOrder : 999 };
+  }
+  return map;
+}
+function byCategory(order) {
+  return (a, b) => (order[a]?.order ?? 999) - (order[b]?.order ?? 999) || a.localeCompare(b);
+}
+// ví dụ end-user cho skill: giữ nguyên bullet "/slug ..." trong phần vi của README
+// (giữ cả lệnh /slug — đó là cách kích hoạt, model nhỏ cần thấy để biết gõ gì).
+function skillExample(slug, meta) {
+  try {
+    const vi = readFileSync(join(ROOT, 'skills', slug, 'README.md'), 'utf8').split('<!-- en')[0];
+    const m = vi.match(/^- (\/\S+\s+.+?)\s*$/m);
+    if (m) return oneLine(m[1]);
+  } catch {
+    /* không có README */
+  }
+  return descVi(meta);
+}
+
+function renderConnectorsCatalog() {
+  const cats = loadCategories();
+  const items = readMdDir('connectors').map(({ fm }) => fm);
+  const groups = {};
+  for (const c of items) (groups[c.category] ||= []).push(c);
+  const out = [
+    '# Danh mục Connectors được hỗ trợ',
+    '',
+    `> Danh mục connectors mà OpenClaw hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${items.length} connector.`,
+    '> Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).',
+    '> Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện OpenClaw (mục Connectors).',
+    '',
+  ];
+  for (const cat of Object.keys(groups).sort(byCategory(cats))) {
+    out.push(`## ${cats[cat]?.vi || cat}`, '');
+    const list = groups[cat].sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0) || a.id.localeCompare(b.id));
+    for (const c of list) {
+      out.push(`### ${nameVi(c)}${c.popular ? ' ⭐' : ''}  (\`${c.id}\`)`, '');
+      out.push(`- **Dùng để làm gì**: ${descVi(c)}`);
+      out.push(`- **Ví dụ người dùng nói**: "${oneLine(c.tutorials?.[0]?.prompt?.vi || '')}"`);
+      out.push(`- **Gọi nhanh**: gõ \`@${c.id}\` trong câu nhắn.`);
+      out.push(`- **Kết nối**: mở OpenClaw → mục Connectors → chọn ${nameVi(c)} → đăng nhập/cấp quyền.`, '');
+    }
+  }
+  return out.join('\n');
+}
+
+function renderSkillsCatalog() {
+  const cats = loadCategories();
+  const skills = readSkillDirs('skills').filter(({ meta }) => meta.is_published === true);
+  const groups = {};
+  for (const s of skills) (groups[s.meta.category] ||= []).push(s);
+  const out = [
+    '# Danh mục Skills được hỗ trợ',
+    '',
+    `> Danh mục skills mà OpenClaw hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${skills.length} skill.`,
+    '> Skill được cài qua giao diện OpenClaw (mục Skills). Agent không gọi backend để lấy danh sách.',
+    '',
+  ];
+  for (const cat of Object.keys(groups).sort(byCategory(cats))) {
+    out.push(`## ${cats[cat]?.vi || cat}`, '');
+    for (const { slug, meta } of groups[cat].sort((a, b) => a.slug.localeCompare(b.slug))) {
+      out.push(`### ${nameVi(meta)}  (\`${slug}\`)`, '');
+      out.push(`- **Dùng để làm gì**: ${descVi(meta)}`);
+      out.push(`- **Ví dụ người dùng nói**: "${skillExample(slug, meta)}"`);
+      out.push(`- **Cài đặt**: mở OpenClaw → mục Skills → tìm "${nameVi(meta)}" → Cài.`, '');
+    }
+  }
+  return out.join('\n');
 }
 
 // ---- render root llms.txt ----
@@ -213,6 +291,9 @@ const targets = [
     join('skills', slug, 'llms.txt'),
     renderSkillIndex('skills', slug, meta),
   ]),
+  // catalog references cho skill toc-guidelines (sinh từ frontmatter, hết drift)
+  ['skills/toc-guidelines/references/connectors-catalog.md', renderConnectorsCatalog()],
+  ['skills/toc-guidelines/references/skills-catalog.md', renderSkillsCatalog()],
 ];
 
 let drift = 0;

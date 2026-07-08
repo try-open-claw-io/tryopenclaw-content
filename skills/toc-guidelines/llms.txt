@@ -6,4 +6,3 @@
 - [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
 - [SKILL.md](SKILL.md): Instructions agent chạy — Mục lục năng lực OpenClaw/tryopenclaw: giải thích và HƯỚNG DẪN CÁCH DÙNG mọi tính năng chính — Skills, Connectors (tích…
 - [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
-- [references](references): File của skill.
