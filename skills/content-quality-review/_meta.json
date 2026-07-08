@@ -1,0 +1,17 @@
+{
+  "slug": "content-quality-review",
+  "name": {
+    "vi": "Review chất lượng nội dung",
+    "en": "Content Quality Review"
+  },
+  "description": {
+    "vi": "Review chất lượng nội dung, theo dõi performance sau khi đăng và gửi bản review ngắn qua Slack.",
+    "en": "Review content quality, track post-publish performance, and send a short review over Slack."
+  },
+  "category": "content-marketing",
+  "icon": "BadgeCheck",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

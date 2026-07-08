@@ -1,0 +1,17 @@
+{
+  "slug": "newsletter-writer",
+  "name": {
+    "vi": "Viết newsletter",
+    "en": "Newsletter Writer"
+  },
+  "description": {
+    "vi": "Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.",
+    "en": "Write short, scannable newsletter/email content with subject line, preview text, and a clear CTA."
+  },
+  "category": "content-marketing",
+  "icon": "Mail",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

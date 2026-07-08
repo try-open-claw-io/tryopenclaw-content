@@ -1,0 +1,17 @@
+{
+  "slug": "brand-voice-editor",
+  "name": {
+    "vi": "Chỉnh theo brand voice",
+    "en": "Brand Voice Editor"
+  },
+  "description": {
+    "vi": "Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.",
+    "en": "Edit existing content to match a defined brand voice across tone, length, phrasing, claims, and CTA."
+  },
+  "category": "content-marketing",
+  "icon": "Palette",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

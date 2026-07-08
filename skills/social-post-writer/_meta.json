@@ -1,0 +1,17 @@
+{
+  "slug": "social-post-writer",
+  "name": {
+    "vi": "Viết post social",
+    "en": "Social Post Writer"
+  },
+  "description": {
+    "vi": "Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.",
+    "en": "Write channel-specific captions for Facebook, LinkedIn, and Instagram with hashtags, CTA, and a visual brief."
+  },
+  "category": "content-marketing",
+  "icon": "Share2",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}
