@@ -1,14 +1,22 @@
-name: Validate AI provider frontmatter
+name: Validate content frontmatter
 
 on:
   pull_request:
     paths:
       - 'ai-providers/**'
+      - 'connectors/**'
+      - 'categories/**'
+      - 'scripts/validate-content.mjs'
+      - 'package.json'
       - '.github/workflows/validate.yml'
   push:
     branches: [main]
     paths:
       - 'ai-providers/**'
+      - 'connectors/**'
+      - 'categories/**'
+      - 'scripts/validate-content.mjs'
+      - 'package.json'
       - '.github/workflows/validate.yml'
 
 jobs:
@@ -16,68 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Install validators
-        run: npm install --no-save ajv@8 ajv-formats@3 gray-matter@4
-
-      - name: Validate frontmatter against schema
-        run: |
-          set -e
-          ERRORS=0
-          for f in ai-providers/*.md; do
-            FILENAME=$(basename "$f" .md)
-
-            # Extract frontmatter → JSON
-            node -e "
-              const m = require('gray-matter');
-              const fs = require('fs');
-              try {
-                const parsed = m.read('$f');
-                fs.writeFileSync('/tmp/fm.json', JSON.stringify(parsed.data));
-              } catch (err) {
-                console.error('Failed to parse $f:', err.message);
-                process.exit(1);
-              }
-            "
-
-            # Validate id matches filename (sanity check)
-            FM_ID=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/fm.json', 'utf8')).id || '')")
-            if [ "$FM_ID" != "$FILENAME" ]; then
-              echo "❌ $f: frontmatter id '$FM_ID' does not match filename '$FILENAME'"
-              ERRORS=$((ERRORS + 1))
-              continue
-            fi
-
-            # Validate against schema
-            if node -e "
-              const Ajv = require('ajv/dist/2020');
-              const addFormats = require('ajv-formats');
-              const schema = JSON.parse(require('fs').readFileSync('ai-providers/_schema.json', 'utf8'));
-              const data = JSON.parse(require('fs').readFileSync('/tmp/fm.json', 'utf8'));
-              const ajv = new Ajv({ allErrors: true });
-              addFormats(ajv);
-              const validate = ajv.compile(schema);
-              if (!validate(data)) {
-                console.error(JSON.stringify(validate.errors, null, 2));
-                process.exit(1);
-              }
-            "; then
-              echo "✓ $f"
-            else
-              echo "❌ $f: schema validation failed (see errors above)"
-              ERRORS=$((ERRORS + 1))
-            fi
-          done
-
-          if [ "$ERRORS" -gt 0 ]; then
-            echo ""
-            echo "$ERRORS provider(s) failed validation"
-            exit 1
-          fi
-
-          echo ""
-          echo "All providers validated."
+      - run: npm install
+      - run: make validate

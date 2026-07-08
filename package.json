@@ -4,9 +4,12 @@
   "type": "module",
   "scripts": {
     "build:llms": "node scripts/build-llms.mjs",
-    "check:llms": "node scripts/build-llms.mjs --check"
+    "check:llms": "node scripts/build-llms.mjs --check",
+    "validate": "node scripts/validate-content.mjs"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "gray-matter": "^4.0.3"
   }
 }
