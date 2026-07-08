@@ -1,0 +1,8 @@
+# weekly-report — skill
+
+> Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Turn a week of scattered notes into a tidy status report for a manager or team. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

@@ -1,0 +1,25 @@
+# categories — index
+
+> Nhóm phân loại cho connector và skill (icon + displayOrder + appliesTo). Mỗi file = 1 category; frontmatter khớp `_schema.json`.
+
+## Categories
+- [commerce.md](commerce.md): Bán hàng online, thanh toán và đơn hàng.
+- [communication.md](communication.md): Email, chat, họp video và mạng xã hội.
+- [content-marketing.md](content-marketing.md): Sản xuất nội dung, SEO, social, email marketing.
+- [crm-sales.md](crm-sales.md): Quản lý khách hàng, deal và quy trình bán hàng.
+- [customer-support.md](customer-support.md): Trả lời câu hỏi, phân loại ticket, chăm sóc người dùng.
+- [customs.md](customs.md): Các skill do workspace tải lên — chỉ thấy trong workspace của bạn.
+- [documents.md](documents.md): Tài liệu, bảng tính, lịch và công cụ thiết kế.
+- [engineering.md](engineering.md): Mã nguồn, CI/CD, hạ tầng và giám sát.
+- [finance.md](finance.md): Kế toán, hoá đơn, ngân sách, báo cáo tài chính.
+- [other.md](other.md): Các ứng dụng chưa phân loại cụ thể.
+- [productivity.md](productivity.md): Công cụ ghi chú, quản lý task và dự án.
+- [research-analysis.md](research-analysis.md): Phân tích dữ liệu, nghiên cứu thị trường, báo cáo chuyên sâu.
+- [sales-outreach.md](sales-outreach.md): Cold email, prospecting, theo dõi deal và đàm phán.
+- [scheduling.md](scheduling.md): Lịch online, đặt cuộc họp và cuộc gọi video — Calendar, Calendly, Zoom.
+- [sourcing.md](sourcing.md): Tìm nhà cung cấp, đánh giá supplier, dropshipping.
+- [storage.md](storage.md): Lưu trữ file đám mây và đồng bộ dữ liệu.
+- [support.md](support.md): Hệ thống ticket, helpdesk và chăm sóc khách hàng.
+
+## Schema & rules
+- [_schema.json](_schema.json): JSON Schema validate frontmatter (chạy trong CI).

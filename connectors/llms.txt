@@ -1,0 +1,59 @@
+# connectors — index
+
+> Danh mục connector (tích hợp dịch vụ ngoài) hiển thị trong catalog. Mỗi file = 1 connector; frontmatter khớp `_schema.json`.
+
+## Connectors
+- [airtable.md](airtable.md): Airtable là cơ sở dữ liệu kết hợp bảng tính. Với kết nối này, Agent có thể xem base, tìm record theo điều kiện, thêm và cập nhật dữ liệu trong bảng của bạn. *(popular)*
+- [asana.md](asana.md): Asana là công cụ quản lý dự án và công việc. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, đặt deadline và theo dõi tiến độ của team. *(popular)*
+- [bitbucket.md](bitbucket.md): Bitbucket là nền tảng quản lý mã nguồn Git của Atlassian. Với kết nối này, Agent có thể xem pull request chờ review, mở PR mới, tra commit và theo dõi repo của… *(popular)*
+- [box.md](box.md): Box là dịch vụ lưu trữ đám mây cho doanh nghiệp. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạ… *(popular)*
+- [calendly.md](calendly.md): Calendly là công cụ đặt lịch hẹn online. Với kết nối này, Agent có thể xem lịch hẹn sắp tới, tạo link đặt hẹn, dời và huỷ cuộc hẹn của bạn. *(popular)*
+- [clickup.md](clickup.md): ClickUp là nền tảng quản lý dự án all-in-one. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, cập nhật trạng thái và theo dõi dự án của bạn. *(popular)*
+- [confluence.md](confluence.md): Confluence là wiki tài liệu nội bộ của Atlassian. Với kết nối này, Agent có thể tìm trang theo chủ đề, tạo trang mới, cập nhật nội dung và tra cứu tài liệu của… *(popular)*
+- [discord.md](discord.md): Discord là ứng dụng chat cộng đồng theo kênh. Với kết nối này, Agent có thể xem tin nhắn mới, đăng thông báo lên kênh, tìm tin và tóm tắt kênh trong server của… *(popular)*
+- [dropbox.md](dropbox.md): Dropbox là dịch vụ lưu trữ đám mây. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạn. *(popular)*
+- [facebook.md](facebook.md): Facebook là mạng xã hội kết nối và chia sẻ nội dung. Với kết nối này, Agent có thể đăng bài, theo dõi tương tác, đọc bình luận và xem chỉ số trang của bạn. *(popular)*
+- [freshdesk.md](freshdesk.md): Freshdesk là phần mềm hỗ trợ khách hàng gộp mail, chat và điện thoại về một nơi. Với kết nối này, Agent có thể xem, trả lời, tóm tắt và sắp xếp ticket cho bạn. *(popular)*
+- [github.md](github.md): GitHub là nền tảng lưu trữ và quản lý mã nguồn cho cả nhóm. Với kết nối này, Agent có thể tạo issue, mở pull request, theo dõi review và tra commit cho bạn. *(popular)*
+- [gitlab.md](gitlab.md): GitLab là nền tảng quản lý mã nguồn Git kèm CI/CD. Với kết nối này, Agent có thể xem merge request, mở MR mới, theo dõi review và tra pipeline cho bạn. *(popular)*
+- [gmail.md](gmail.md): Gmail là dịch vụ email của Google. Với kết nối này, Agent có thể đọc, gửi, sắp xếp và tìm kiếm thư trong hộp thư của bạn. *(popular)*
+- [google_analytics.md](google_analytics.md): Google Analytics là công cụ đo lường lưu lượng truy cập website. Với kết nối này, Agent có thể xem lượt truy cập, theo dõi nguồn traffic, tra số liệu chuyển đổ… *(popular)*
+- [googlecalendar.md](googlecalendar.md): Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn. *(popular)*
+- [googledocs.md](googledocs.md): Google Docs là trình soạn thảo tài liệu của Google. Với kết nối này, Agent có thể mở, đọc, soạn nội dung mới và thêm comment vào tài liệu cho bạn. *(popular)*
+- [googledrive.md](googledrive.md): Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn. *(popular)*
+- [googlesheets.md](googlesheets.md): Google Sheets là bảng tính online của Google. Với kết nối này, Agent có thể đọc dữ liệu, thêm dòng, cập nhật ô và lọc theo điều kiện cho bạn. *(popular)*
+- [hubspot.md](hubspot.md): HubSpot là nền tảng CRM cho marketing, bán hàng và chăm sóc khách. Với kết nối này, Agent có thể thêm lead, cập nhật deal, xem pipeline và tra hồ sơ contact ch… *(popular)*
+- [intercom.md](intercom.md): Intercom là nền tảng chat hỗ trợ khách trên web và app. Với kết nối này, Agent có thể xem chat chưa trả lời, trả lời khách, gắn câu mẫu và mở đúng hội thoại ch… *(popular)*
+- [jira.md](jira.md): Jira là công cụ quản lý issue và dự án. Với kết nối này, Agent có thể xem, tạo, gán và cập nhật issue qua sprint và epic. *(popular)*
+- [larksuite-tenant.md](larksuite-tenant.md): Lark Suite (Tenant) là công cụ quản trị tenant Lark. Với kết nối này, Agent có thể liệt kê, thêm, xoá user và gán role admin theo phòng ban.
+- [larksuite.md](larksuite.md): Lark Suite là bộ công cụ làm việc all-in-one. Với kết nối này, Agent có thể xem tin nhắn, gửi tin vào nhóm, tạo tài liệu và đặt lịch họp. *(popular)*
+- [linear.md](linear.md): Linear là công cụ quản lý task và bug gọn nhẹ. Với kết nối này, Agent có thể xem, tạo và cập nhật issue qua sprint và project. *(popular)*
+- [linkedin.md](linkedin.md): LinkedIn là mạng xã hội nghề nghiệp. Với kết nối này, Agent có thể tìm người, kết nối, tìm ứng viên và đăng bài cho cá nhân hoặc công ty. *(popular)*
+- [mailchimp.md](mailchimp.md): Mailchimp là nền tảng email marketing. Với kết nối này, Agent có thể tạo danh sách, thêm khách vào audience, gửi chiến dịch và xem số liệu mở/click. *(popular)*
+- [microsoftteams.md](microsoftteams.md): Microsoft Teams là ứng dụng chat đội nhóm của Microsoft. Với kết nối này, Agent có thể gửi tin vào kênh, tìm tin nhắn và tóm tắt hội thoại. *(popular)*
+- [monday.md](monday.md): Monday.com là nền tảng quản lý công việc nhiều kiểu xem. Với kết nối này, Agent có thể xem task, tạo item mới và cập nhật trạng thái trên từng board. *(popular)*
+- [notion.md](notion.md): Notion là không gian làm việc all-in-one cho ghi chú, tài liệu và wiki. Với kết nối này, Agent có thể tìm trang, tạo doc và cập nhật mục trong workspace. *(popular)*
+- [onedrive.md](onedrive.md): OneDrive là dịch vụ lưu trữ đám mây của Microsoft. Với kết nối này, Agent có thể tìm, tải lên, sắp xếp và chia sẻ file trong kho lưu trữ của bạn. *(popular)*
+- [outlook.md](outlook.md): Outlook là dịch vụ email của Microsoft. Với kết nối này, Agent có thể đọc, soạn, gửi và sắp xếp thư trong hộp thư của bạn. *(popular)*
+- [outlookcalendar.md](outlookcalendar.md): Outlook Calendar là lịch của Microsoft. Với kết nối này, Agent có thể đặt cuộc họp, xem lịch, kiểm tra khung giờ trống và mời người tham dự cho bạn. *(popular)*
+- [pipedrive.md](pipedrive.md): Pipedrive là phần mềm CRM bán hàng đơn giản. Với kết nối này, Agent có thể xem, thêm, cập nhật và theo dõi deal trên pipeline của bạn. *(popular)*
+- [salesforce.md](salesforce.md): Salesforce là nền tảng CRM cho doanh nghiệp. Với kết nối này, Agent có thể xem, thêm, cập nhật opportunity và lead cùng xem báo cáo cho bạn. *(popular)*
+- [sendgrid.md](sendgrid.md): SendGrid là nền tảng gửi email tự động cho từng giao dịch. Với kết nối này, Agent có thể gửi mail xác nhận đơn, mã OTP và đặt lại mật khẩu cho khách của bạn. *(popular)*
+- [shopify.md](shopify.md): Shopify là nền tảng bán hàng online. Với kết nối này, Agent có thể xem đơn hàng, quản lý sản phẩm, tra tồn kho và cập nhật giá cho cửa hàng của bạn. *(popular)*
+- [slack.md](slack.md): Slack là ứng dụng chat cho đội nhóm. Với kết nối này, Agent có thể đăng tin lên kênh, tìm tin nhắn, tóm tắt kênh và chia sẻ file cho bạn. *(popular)*
+- [stripe.md](stripe.md): Stripe là nền tảng thanh toán trực tuyến. Với kết nối này, Agent có thể tạo link thu tiền, tra giao dịch, hoàn tiền và đối soát các khoản cho bạn. *(popular)*
+- [trello.md](trello.md): Trello là bảng quản lý công việc kiểu kéo-thả. Với kết nối này, Agent có thể tạo thẻ, di chuyển thẻ giữa các cột, liệt kê và xem thẻ được giao cho bạn. *(popular)*
+- [twilio.md](twilio.md): Twilio là nền tảng gửi SMS và gọi điện tự động. Với kết nối này, Agent có thể gửi SMS, mã OTP, tin xác nhận và thực hiện cuộc gọi tự động đến người nhận. *(popular)*
+- [twitter.md](twitter.md): X (Twitter) là mạng xã hội đăng tin ngắn. Với kết nối này, Agent có thể đăng bài, theo dõi tương tác, nhắn tin riêng cho người theo dõi và xem chỉ số bài viết. *(popular)*
+- [typeform.md](typeform.md): Typeform là công cụ tạo form và khảo sát kiểu trò chuyện, hỏi từng câu một. Với kết nối này, Agent có thể tạo form, thu thập câu trả lời, xem phản hồi và xuất… *(popular)*
+- [whatsapp.md](whatsapp.md): WhatsApp là ứng dụng nhắn tin phổ biến. Với kết nối này, Agent có thể gửi và trả lời tin nhắn cho khách, gửi tin xác nhận và nhắn vào nhóm. *(popular)*
+- [woocommerce.md](woocommerce.md): WooCommerce là plugin bán hàng cho website WordPress. Với kết nối này, Agent có thể xem đơn hàng, tra tồn kho, cập nhật sản phẩm và theo dõi vận chuyển. *(popular)*
+- [youtube.md](youtube.md): YouTube là nền tảng chia sẻ và xem video. Với kết nối này, Agent có thể xem video trên kênh, theo dõi lượt xem, đọc bình luận và tổng hợp chỉ số kênh cho bạn. *(popular)*
+- [zendesk.md](zendesk.md): Zendesk là phần mềm hỗ trợ khách hàng. Với kết nối này, Agent có thể xem ticket ưu tiên, trả lời bằng câu mẫu, tóm tắt hội thoại và theo dõi ticket chưa xử lý. *(popular)*
+- [zoho.md](zoho.md): Zoho là bộ công cụ CRM và văn phòng cho doanh nghiệp. Với kết nối này, Agent có thể thêm lead mới, cập nhật deal, xem báo cáo và quản lý hồ sơ khách hàng. *(popular)*
+- [zoom.md](zoom.md): Zoom là ứng dụng họp video online. Với kết nối này, Agent có thể tạo phòng họp, gửi link tham gia, lấy bản ghi và xem các cuộc họp sắp tới. *(popular)*
+
+## Schema & rules
+- [_rules.md](_rules.md): Quy ước biên tập cho thư mục này — đọc trước khi thêm/sửa file.
+- [_schema.json](_schema.json): JSON Schema validate frontmatter (chạy trong CI).
+- [_template.md](_template.md): Khung mẫu để tạo file mới trong thư mục này.

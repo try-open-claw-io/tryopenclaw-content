@@ -1,0 +1,8 @@
+# doc-summarizer — skill
+
+> Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Summarize long text or documents into key points, TL;DR, or an outline. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

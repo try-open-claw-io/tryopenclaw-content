@@ -1,0 +1,18 @@
+# skills — index
+
+> Skill dựng sẵn (ClawHub). Mỗi thư mục = 1 skill gồm `_meta.json` (catalog) + `SKILL.md` (instructions) + `README.md` (hướng dẫn dùng).
+
+## Skills
+- [brainstorm-buddy/](brainstorm-buddy/llms.txt): Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
+- [daily-planner/](daily-planner/llms.txt): Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
+- [decision-helper/](decision-helper/llms.txt): So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
+- [doc-summarizer/](doc-summarizer/llms.txt): Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
+- [email-drafter/](email-drafter/llms.txt): Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
+- [meeting-notes/](meeting-notes/llms.txt): Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
+- [proofreader/](proofreader/llms.txt): Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.
+- [toc-guidelines/](toc-guidelines/llms.txt): Giúp bạn biết OpenClaw làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập t…
+- [todo-organizer/](todo-organizer/llms.txt): Sắp xếp danh sách việc thành checklist gọn gàng: chia theo dự án, xếp ưu tiên, lọc việc trùng.
+- [weekly-report/](weekly-report/llms.txt): Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.
+
+## Schema & rules
+- [_rules-skills.md](_rules-skills.md): Quy ước biên tập skill — đọc trước khi thêm/sửa skill.

@@ -1,18 +1,22 @@
-# OpenClaw
+# tryopenclaw-content — catalog index
 
-> OpenClaw là nền tảng multi-tenant để provision cloud container chạy AI agent, kèm
-> skills registry (ClawHub), agent templates và use-case bundles. File này giúp LLM /
-> AI agent khám phá các tài nguyên machine-readable của OpenClaw.
+> Content CMS của nền tảng tryopenclaw: AI providers, connectors, categories, skills.
+> Nhóm biên tập sửa file Markdown; BE poll repo mỗi ~10 phút rồi merge vào catalog.
+> File này giúp LLM / AI agent khám phá nội dung machine-readable của repo.
 
-## Docs
-- [Product overview](https://tryopenclaw.io/docs/product.md): OpenClaw là gì và dành cho ai
-- [API reference](https://tryopenclaw.io/docs/api.md): REST + gateway endpoints
-- [Skills (ClawHub)](https://tryopenclaw.io/docs/skills.md): Cách browse và cài skill lên instance
+## Catalog
+- [ai-providers/](ai-providers/llms.txt): 29 AI model provider (Config Builder).
+- [connectors/](connectors/llms.txt): 49 tích hợp dịch vụ ngoài.
+- [categories/](categories/llms.txt): 17 nhóm phân loại cho connector + skill.
+- [skills/](skills/llms.txt): 10 skill dựng sẵn (ClawHub).
 
-## Agents & Skills (source trên GitHub)
-- [Plugin marketplace](https://github.com/try-open-claw-io/llm/tree/main/plugins): Claude Code plugins, add bằng URL
-- [Skill catalog](https://github.com/try-open-claw-io/llm/tree/main/skills): ClawHub skill sources
-- [Agent templates](https://github.com/try-open-claw-io/llm/tree/main/agents): AGENTS.md blueprints
+## How agents use this repo
+1. Fetch `llms.txt` này để biết 4 nhóm nội dung.
+2. Mở `<dir>/llms.txt` để chọn đúng file, rồi fetch file đó.
+3. Cần toàn bộ trong 1 lần: [llms-full.txt](llms-full.txt).
 
-## Optional
-- [Full dump](https://tryopenclaw.io/llms-full.txt): Toàn bộ nội dung trong 1 file
+## Conventions
+- Mỗi thư mục có `llms.txt` riêng liệt kê từng file + mô tả 1 dòng.
+- Markdown cho nội dung, JSON Schema (`_schema.json`) cho ràng buộc frontmatter.
+- Đường dẫn ổn định — thay nội dung bằng cách sửa file, không đổi tên file.
+- KHÔNG sửa tay `llms.txt` / `llms-full.txt`: chạy `npm run build:llms` để sinh lại.

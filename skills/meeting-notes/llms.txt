@@ -1,0 +1,8 @@
+# meeting-notes — skill
+
+> Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Turn raw meeting notes into a clean summary with decisions and action items. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

@@ -1,0 +1,37 @@
+# ai-providers — index
+
+> Danh mục AI model provider hiển thị ở Config Builder. Mỗi file = 1 provider; frontmatter khớp `_schema.json`. BE poll repo mỗi ~10 phút.
+
+## Providers
+- [anthropic.md](anthropic.md): Claude Opus / Sonnet / Haiku — frontier reasoning.
+- [arcee.md](arcee.md): Arcee AI — small-language-model platform for tailored deployment.
+- [byteplus.md](byteplus.md): BytePlus (ByteDance) — Doubao / Skylark inference outside China.
+- [cerebras.md](cerebras.md): Wafer-scale inference, high throughput for Llama 3.1.
+- [chutes.md](chutes.md): Chutes — decentralised inference on the Bittensor network.
+- [deepseek.md](deepseek.md): DeepSeek V3 / R1 reasoning — cheapest in its tier.
+- [fireworks.md](fireworks.md): Serverless inference for open-source models.
+- [google.md](google.md): Gemini 2.5 Pro / Flash with 1M-token long context.
+- [groq.md](groq.md): Ultra-fast LPU inference for Llama / Mixtral / Gemma.
+- [huggingface.md](huggingface.md): Inference Endpoints for any open-source model.
+- [kilocode.md](kilocode.md): Kilo Code — agentic coding assistant with hosted inference.
+- [litellm.md](litellm.md): Self-hosted proxy that unifies many providers behind one endpoint.
+- [minimax.md](minimax.md): MiniMax abab/Hailuo — multimodal models out of China.
+- [mistral.md](mistral.md): Mistral Large 3 — tool use and function calling.
+- [moonshot.md](moonshot.md): Kimi K2 — 1M context, strong on Chinese and code.
+- [nvidia.md](nvidia.md): NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
+- [openai.md](openai.md): GPT-5 / GPT-5 mini / o3 reasoning models.
+- [openrouter.md](openrouter.md): One key for hundreds of models via an OpenAI-compatible API.
+- [qianfan.md](qianfan.md): Baidu Qianfan — ERNIE family of Chinese-first LLMs.
+- [qwen.md](qwen.md): Qwen 3 Max / Coder — Alibaba's flagship line.
+- [stepfun.md](stepfun.md): StepFun Step-2 — Chinese multimodal foundation models.
+- [synthetic.md](synthetic.md): Synthetic — inference platform for open-source LLMs.
+- [together.md](together.md): Inference for 200+ open-source models.
+- [venice.md](venice.md): Privacy-first AI — never logs conversations.
+- [vercel-ai-gateway.md](vercel-ai-gateway.md): Unified gateway across many providers, with caching and observability.
+- [volcengine.md](volcengine.md): Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
+- [xai.md](xai.md): Grok 4 — reasoning plus real-time X data.
+- [xiaomi.md](xiaomi.md): Xiaomi MiMo — Xiaomi's in-house large language models.
+- [zai.md](zai.md): GLM-4.6 — Zhipu AI's flagship.
+
+## Schema & rules
+- [_schema.json](_schema.json): JSON Schema validate frontmatter (chạy trong CI).

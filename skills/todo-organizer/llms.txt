@@ -1,0 +1,8 @@
+# todo-organizer — skill
+
+> Sắp xếp danh sách việc thành checklist gọn gàng: chia theo dự án, xếp ưu tiên, lọc việc trùng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Sort and group a chaotic to-do list by project, priority, or effort. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

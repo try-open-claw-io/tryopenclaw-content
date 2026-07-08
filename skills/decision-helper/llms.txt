@@ -1,0 +1,8 @@
+# decision-helper — skill
+
+> So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Compare options with a weighted pros/cons table to reach a clear decision. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

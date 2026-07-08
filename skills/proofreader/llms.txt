@@ -1,0 +1,8 @@
+# proofreader — skill
+
+> Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Fix spelling, grammar, and clarity in Vietnamese or English text, with tracked changes. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

@@ -1,0 +1,8 @@
+# daily-planner — skill
+
+> Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Turn a messy task dump into a prioritized day plan with time blocks. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

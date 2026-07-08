@@ -1,25 +1,547 @@
-# OpenClaw — full context for LLMs
+# tryopenclaw-content — full context for LLMs
 
-> Bản dồn 1 file của các tài nguyên chính. Sinh tự động từ `llms.txt` + docs nguồn;
-> đừng sửa tay — chỉnh ở source rồi build lại.
+> Bản dồn 1 file toàn bộ catalog. Sinh tự động từ nội dung nguồn bằng
+> `npm run build:llms` — đừng sửa tay, chỉnh ở file nguồn rồi build lại.
 
-## OpenClaw là gì
-Nền tảng multi-tenant provision cloud container chạy AI agent. Thành phần:
-- **Instance**: container do nền tảng tạo cho user, có terminal access.
-- **ClawHub**: registry skill pre-built — crawl, cache vào DB, cài lên instance qua gateway.
-- **Use Case bundle**: zip gói (plugins + agents + skills + install.sh) cài lên 1 instance qua REST.
-- **Agent Template**: blueprint tĩnh (agent.json + core_files/AGENTS.md) để clone ra agent mới.
+## ai-providers
 
-## Cách một skill tới được agent
-ClawHub Registry → crawl & sync vào DB → user browse trong catalog → install lên
-instance qua `gateway.skills.install(name, version)` → config push vào container.
-Agent KHÔNG tự git-clone; mọi thứ đi qua gateway.
+### anthropic — Anthropic
+- vi: Claude Opus / Sonnet / Haiku — frontier reasoning.
+- en: Claude Opus / Sonnet / Haiku — frontier reasoning.
+- keyUrl: https://console.anthropic.com/
 
-## Cách dùng plugin (Claude Code)
-Marketplace là 1 git repo. User chạy: add github:try-open-claw-io/llm rồi install plugin.
+### arcee — Arcee
+- vi: Arcee AI — small-language-model platform for tailored deployment.
+- en: Arcee AI — small-language-model platform for tailored deployment.
+- keyUrl: https://conductor.arcee.ai/
 
-## Liên kết
-- Product: https://tryopenclaw.io/docs/product.md
-- API: https://tryopenclaw.io/docs/api.md
-- Skills: https://tryopenclaw.io/docs/skills.md
-- Repo source: https://github.com/try-open-claw-io/llm
+### byteplus — BytePlus
+- vi: BytePlus (ByteDance) — Doubao / Skylark inference outside China.
+- en: BytePlus (ByteDance) — Doubao / Skylark inference outside China.
+- keyUrl: https://console.byteplus.com/ark/region:ark+ap-southeast-1/apiKey
+
+### cerebras — Cerebras
+- vi: Wafer-scale inference, high throughput for Llama 3.1.
+- en: Wafer-scale inference, high throughput for Llama 3.1.
+- keyUrl: https://cloud.cerebras.ai/
+
+### chutes — Chutes
+- vi: Chutes — decentralised inference on the Bittensor network.
+- en: Chutes — decentralised inference on the Bittensor network.
+- keyUrl: https://chutes.ai/app/api
+
+### deepseek — DeepSeek
+- vi: DeepSeek V3 / R1 reasoning — cheapest in its tier.
+- en: DeepSeek V3 / R1 reasoning — cheapest in its tier.
+- keyUrl: https://platform.deepseek.com/api_keys
+
+### fireworks — Fireworks
+- vi: Serverless inference for open-source models.
+- en: Serverless inference for open-source models.
+- keyUrl: https://fireworks.ai/account/api-keys
+
+### google — Google
+- vi: Gemini 2.5 Pro / Flash with 1M-token long context.
+- en: Gemini 2.5 Pro / Flash with 1M-token long context.
+- keyUrl: https://aistudio.google.com/app/apikey
+
+### groq — Groq
+- vi: Ultra-fast LPU inference for Llama / Mixtral / Gemma.
+- en: Ultra-fast LPU inference for Llama / Mixtral / Gemma.
+- keyUrl: https://console.groq.com/keys
+
+### huggingface — Hugging Face
+- vi: Inference Endpoints for any open-source model.
+- en: Inference Endpoints for any open-source model.
+- keyUrl: https://huggingface.co/settings/tokens
+
+### kilocode — Kilocode
+- vi: Kilo Code — agentic coding assistant with hosted inference.
+- en: Kilo Code — agentic coding assistant with hosted inference.
+- keyUrl: https://app.kilo.ai/
+
+### litellm — LiteLLM
+- vi: Self-hosted proxy that unifies many providers behind one endpoint.
+- en: Self-hosted proxy that unifies many providers behind one endpoint.
+- keyUrl: https://docs.openclaw.ai/providers/litellm
+
+### minimax — MiniMax
+- vi: MiniMax abab/Hailuo — multimodal models out of China.
+- en: MiniMax abab/Hailuo — multimodal models out of China.
+- keyUrl: https://platform.minimax.io/user-center/basic-information/interface-key
+
+### mistral — Mistral
+- vi: Mistral Large 3 — tool use and function calling.
+- en: Mistral Large 3 — tool use and function calling.
+- keyUrl: https://console.mistral.ai/
+
+### moonshot — Moonshot (Kimi)
+- vi: Kimi K2 — 1M context, strong on Chinese and code.
+- en: Kimi K2 — 1M context, strong on Chinese and code.
+- keyUrl: https://platform.moonshot.ai/console/api-keys
+
+### nvidia — NVIDIA
+- vi: NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
+- en: NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
+- keyUrl: https://build.nvidia.com/settings/api-keys
+
+### openai — OpenAI
+- vi: GPT-5 / GPT-5 mini / o3 reasoning models.
+- en: GPT-5 / GPT-5 mini / o3 reasoning models.
+- keyUrl: https://platform.openai.com/api-keys
+
+### openrouter — OpenRouter
+- vi: One key for hundreds of models via an OpenAI-compatible API.
+- en: One key for hundreds of models via an OpenAI-compatible API.
+- keyUrl: https://openrouter.ai/keys
+
+### qianfan — Qianfan (Baidu)
+- vi: Baidu Qianfan — ERNIE family of Chinese-first LLMs.
+- en: Baidu Qianfan — ERNIE family of Chinese-first LLMs.
+- keyUrl: https://console.bce.baidu.com/iam/#/iam/apikey/list
+
+### qwen — Qwen
+- vi: Qwen 3 Max / Coder — Alibaba's flagship line.
+- en: Qwen 3 Max / Coder — Alibaba's flagship line.
+- keyUrl: https://modelstudio.console.alibabacloud.com/
+
+### stepfun — StepFun
+- vi: StepFun Step-2 — Chinese multimodal foundation models.
+- en: StepFun Step-2 — Chinese multimodal foundation models.
+- keyUrl: https://platform.stepfun.ai/interface-key
+
+### synthetic — Synthetic
+- vi: Synthetic — inference platform for open-source LLMs.
+- en: Synthetic — inference platform for open-source LLMs.
+- keyUrl: https://synthetic.new/user-settings/api
+
+### together — Together
+- vi: Inference for 200+ open-source models.
+- en: Inference for 200+ open-source models.
+- keyUrl: https://api.together.ai/settings/api-keys
+
+### venice — Venice
+- vi: Privacy-first AI — never logs conversations.
+- en: Privacy-first AI — never logs conversations.
+- keyUrl: https://venice.ai/settings/api-keys
+
+### vercel-ai-gateway — Vercel AI Gateway
+- vi: Unified gateway across many providers, with caching and observability.
+- en: Unified gateway across many providers, with caching and observability.
+- keyUrl: https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys
+
+### volcengine — Volcengine (Doubao)
+- vi: Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
+- en: Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
+- keyUrl: https://console.volcengine.com/ark
+
+### xai — xAI (Grok)
+- vi: Grok 4 — reasoning plus real-time X data.
+- en: Grok 4 — reasoning plus real-time X data.
+- keyUrl: https://console.x.ai/
+
+### xiaomi — Xiaomi MiMo
+- vi: Xiaomi MiMo — Xiaomi's in-house large language models.
+- en: Xiaomi MiMo — Xiaomi's in-house large language models.
+- keyUrl: https://platform.xiaomimimo.com/
+
+### zai — Z.AI (GLM)
+- vi: GLM-4.6 — Zhipu AI's flagship.
+- en: GLM-4.6 — Zhipu AI's flagship.
+- keyUrl: https://z.ai/manage-apikey/apikey-list
+
+## connectors
+
+### airtable — Airtable
+- vi: Airtable là cơ sở dữ liệu kết hợp bảng tính. Với kết nối này, Agent có thể xem base, tìm record theo điều kiện, thêm và cập nhật dữ liệu trong bảng của bạn.
+- en: Airtable is a database that works like a spreadsheet. With this connection, the Agent can list bases, find records by condition, add and update data in your tables.
+- category: documents
+
+### asana — Asana
+- vi: Asana là công cụ quản lý dự án và công việc. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, đặt deadline và theo dõi tiến độ của team.
+- en: Asana is a project and task management tool. With this connection, the Agent can view assigned tasks, create new work, set deadlines, and track your team's progress.
+- category: productivity
+
+### bitbucket — Bitbucket
+- vi: Bitbucket là nền tảng quản lý mã nguồn Git của Atlassian. Với kết nối này, Agent có thể xem pull request chờ review, mở PR mới, tra commit và theo dõi repo của bạn.
+- en: Bitbucket is Atlassian's Git code platform. With this connection, the Agent can list pull requests to review, open new PRs, check commits, and keep track of your repos.
+- category: engineering
+
+### box — Box
+- vi: Box là dịch vụ lưu trữ đám mây cho doanh nghiệp. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạn.
+- en: Box is cloud storage for businesses. With this connection, the Agent can find documents by name, share file links, upload files, and organize your folders.
+- category: storage
+
+### calendly — Calendly
+- vi: Calendly là công cụ đặt lịch hẹn online. Với kết nối này, Agent có thể xem lịch hẹn sắp tới, tạo link đặt hẹn, dời và huỷ cuộc hẹn của bạn.
+- en: Calendly is an online scheduling tool. With this connection, the Agent can view upcoming bookings, create booking links, reschedule and cancel your meetings.
+- category: scheduling
+
+### clickup — ClickUp
+- vi: ClickUp là nền tảng quản lý dự án all-in-one. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, cập nhật trạng thái và theo dõi dự án của bạn.
+- en: ClickUp is an all-in-one project management platform. With this connection, the Agent can view assigned tasks, create new work, update statuses, and track your projects.
+- category: productivity
+
+### confluence — Confluence
+- vi: Confluence là wiki tài liệu nội bộ của Atlassian. Với kết nối này, Agent có thể tìm trang theo chủ đề, tạo trang mới, cập nhật nội dung và tra cứu tài liệu của bạn.
+- en: Confluence is Atlassian's team wiki. With this connection, the Agent can find pages by topic, create new pages, update content, and look up your docs.
+- category: documents
+
+### discord — Discord
+- vi: Discord là ứng dụng chat cộng đồng theo kênh. Với kết nối này, Agent có thể xem tin nhắn mới, đăng thông báo lên kênh, tìm tin và tóm tắt kênh trong server của bạn.
+- en: Discord is a community chat app organized by channels. With this connection, the Agent can check messages, post announcements, find messages, and summarize channels in your server.
+- category: communication
+
+### dropbox — Dropbox
+- vi: Dropbox là dịch vụ lưu trữ đám mây. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạn.
+- en: Dropbox is a cloud storage service. With this connection, the Agent can find documents by name, share file links, upload files, and organize your folders.
+- category: storage
+
+### facebook — Facebook
+- vi: Facebook là mạng xã hội kết nối và chia sẻ nội dung. Với kết nối này, Agent có thể đăng bài, theo dõi tương tác, đọc bình luận và xem chỉ số trang của bạn.
+- en: Facebook is a social network for connecting and sharing content. With this connection, the Agent can post updates, track engagement, read comments, and view page insights.
+- category: communication
+
+### freshdesk — Freshdesk
+- vi: Freshdesk là phần mềm hỗ trợ khách hàng gộp mail, chat và điện thoại về một nơi. Với kết nối này, Agent có thể xem, trả lời, tóm tắt và sắp xếp ticket cho bạn.
+- en: Freshdesk is customer support software that brings email, chat, and phone into one place. With this connection, the Agent can view, reply to, summarize, and organize tickets for you.
+- category: support
+
+### github — GitHub
+- vi: GitHub là nền tảng lưu trữ và quản lý mã nguồn cho cả nhóm. Với kết nối này, Agent có thể tạo issue, mở pull request, theo dõi review và tra commit cho bạn.
+- en: GitHub is a code hosting and management platform for your team. With this connection, the Agent can create issues, open pull requests, track reviews, and check commits for you.
+- category: engineering
+
+### gitlab — GitLab
+- vi: GitLab là nền tảng quản lý mã nguồn Git kèm CI/CD. Với kết nối này, Agent có thể xem merge request, mở MR mới, theo dõi review và tra pipeline cho bạn.
+- en: GitLab is a Git code platform with built-in CI/CD. With this connection, the Agent can view merge requests, open new MRs, track reviews, and check pipelines for you.
+- category: engineering
+
+### gmail — Gmail
+- vi: Gmail là dịch vụ email của Google. Với kết nối này, Agent có thể đọc, gửi, sắp xếp và tìm kiếm thư trong hộp thư của bạn.
+- en: Gmail is Google's email service. With this connection, the Agent can read, send, organize, and search messages in your inbox.
+- category: communication
+
+### google_analytics — Google Analytics
+- vi: Google Analytics là công cụ đo lường lưu lượng truy cập website. Với kết nối này, Agent có thể xem lượt truy cập, theo dõi nguồn traffic, tra số liệu chuyển đổi và tổng hợp báo cáo cho bạn.
+- en: Google Analytics measures website traffic and user behavior. With this connection, the Agent can view visits, track traffic sources, look up conversions, and summarize reports for you.
+- category: crm-sales
+
+### googlecalendar — Google Calendar
+- vi: Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn.
+- en: Google Calendar is Google's online calendar. With this connection, the Agent can check your schedule, set meetings, find free slots, and invite guests for you.
+- category: scheduling
+
+### googledocs — Google Docs
+- vi: Google Docs là trình soạn thảo tài liệu của Google. Với kết nối này, Agent có thể mở, đọc, soạn nội dung mới và thêm comment vào tài liệu cho bạn.
+- en: Google Docs is Google's document editor. With this connection, the Agent can open, read, draft new content, and add comments to documents for you.
+- category: documents
+
+### googledrive — Google Drive
+- vi: Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn.
+- en: Google Drive is Google's cloud storage. With this connection, the Agent can find files, share links, upload files, and organize folders for you.
+- category: storage
+
+### googlesheets — Google Sheets
+- vi: Google Sheets là bảng tính online của Google. Với kết nối này, Agent có thể đọc dữ liệu, thêm dòng, cập nhật ô và lọc theo điều kiện cho bạn.
+- en: Google Sheets is Google's online spreadsheet. With this connection, the Agent can read data, add rows, update cells, and filter by condition for you.
+- category: documents
+
+### hubspot — HubSpot
+- vi: HubSpot là nền tảng CRM cho marketing, bán hàng và chăm sóc khách. Với kết nối này, Agent có thể thêm lead, cập nhật deal, xem pipeline và tra hồ sơ contact cho bạn.
+- en: HubSpot is a CRM platform for marketing, sales, and support. With this connection, the Agent can add leads, update deals, view pipelines, and look up contacts for you.
+- category: crm-sales
+
+### intercom — Intercom
+- vi: Intercom là nền tảng chat hỗ trợ khách trên web và app. Với kết nối này, Agent có thể xem chat chưa trả lời, trả lời khách, gắn câu mẫu và mở đúng hội thoại cho bạn.
+- en: Intercom is a customer support chat for web and apps. With this connection, the Agent can view unread chats, reply to customers, apply saved replies, and open the right conversation for you.
+- category: support
+
+### jira — Jira
+- vi: Jira là công cụ quản lý issue và dự án. Với kết nối này, Agent có thể xem, tạo, gán và cập nhật issue qua sprint và epic.
+- en: Jira is an issue and project tracking tool. With this connection, the Agent can view, create, assign, and update issues across sprints and epics.
+- category: engineering
+
+### larksuite-tenant — Lark Suite (Tenant)
+- vi: Lark Suite (Tenant) là công cụ quản trị tenant Lark. Với kết nối này, Agent có thể liệt kê, thêm, xoá user và gán role admin theo phòng ban.
+- en: Lark Suite (Tenant) is Lark tenant administration. With this connection, the Agent can list, add, and remove users and assign admin roles by department.
+- category: productivity
+
+### larksuite — Lark Suite
+- vi: Lark Suite là bộ công cụ làm việc all-in-one. Với kết nối này, Agent có thể xem tin nhắn, gửi tin vào nhóm, tạo tài liệu và đặt lịch họp.
+- en: Lark Suite is an all-in-one workspace. With this connection, the Agent can check messages, post to groups, create docs, and set up meetings.
+- category: productivity
+
+### linear — Linear
+- vi: Linear là công cụ quản lý task và bug gọn nhẹ. Với kết nối này, Agent có thể xem, tạo và cập nhật issue qua sprint và project.
+- en: Linear is a lightweight task and bug tracker. With this connection, the Agent can view, create, and update issues across sprints and projects.
+- category: engineering
+
+### linkedin — LinkedIn
+- vi: LinkedIn là mạng xã hội nghề nghiệp. Với kết nối này, Agent có thể tìm người, kết nối, tìm ứng viên và đăng bài cho cá nhân hoặc công ty.
+- en: LinkedIn is a professional social network. With this connection, the Agent can find people, connect, source candidates, and post as a person or company.
+- category: communication
+
+### mailchimp — Mailchimp
+- vi: Mailchimp là nền tảng email marketing. Với kết nối này, Agent có thể tạo danh sách, thêm khách vào audience, gửi chiến dịch và xem số liệu mở/click.
+- en: Mailchimp is an email marketing platform. With this connection, the Agent can build lists, add contacts to audiences, send campaigns, and check open/click stats.
+- category: communication
+
+### microsoftteams — Microsoft Teams
+- vi: Microsoft Teams là ứng dụng chat đội nhóm của Microsoft. Với kết nối này, Agent có thể gửi tin vào kênh, tìm tin nhắn và tóm tắt hội thoại.
+- en: Microsoft Teams is Microsoft's team chat. With this connection, the Agent can post to channels, find messages, and summarize threads.
+- category: communication
+
+### monday — Monday.com
+- vi: Monday.com là nền tảng quản lý công việc nhiều kiểu xem. Với kết nối này, Agent có thể xem task, tạo item mới và cập nhật trạng thái trên từng board.
+- en: Monday.com is a work management platform with multiple views. With this connection, the Agent can view tasks, create new items, and update statuses on each board.
+- category: productivity
+
+### notion — Notion
+- vi: Notion là không gian làm việc all-in-one cho ghi chú, tài liệu và wiki. Với kết nối này, Agent có thể tìm trang, tạo doc và cập nhật mục trong workspace.
+- en: Notion is an all-in-one workspace for notes, docs, and wikis. With this connection, the Agent can find pages, create docs, and update entries in your workspace.
+- category: documents
+
+### onedrive — OneDrive
+- vi: OneDrive là dịch vụ lưu trữ đám mây của Microsoft. Với kết nối này, Agent có thể tìm, tải lên, sắp xếp và chia sẻ file trong kho lưu trữ của bạn.
+- en: OneDrive is Microsoft's cloud storage. With this connection, the Agent can find, upload, organize, and share files in your storage.
+- category: storage
+
+### outlook — Outlook
+- vi: Outlook là dịch vụ email của Microsoft. Với kết nối này, Agent có thể đọc, soạn, gửi và sắp xếp thư trong hộp thư của bạn.
+- en: Outlook is Microsoft's email service. With this connection, the Agent can read, compose, send, and organize mail in your inbox.
+- category: communication
+
+### outlookcalendar — Outlook Calendar
+- vi: Outlook Calendar là lịch của Microsoft. Với kết nối này, Agent có thể đặt cuộc họp, xem lịch, kiểm tra khung giờ trống và mời người tham dự cho bạn.
+- en: Outlook Calendar is Microsoft's calendar. With this connection, the Agent can schedule meetings, view your agenda, check free slots, and invite guests for you.
+- category: scheduling
+
+### pipedrive — Pipedrive
+- vi: Pipedrive là phần mềm CRM bán hàng đơn giản. Với kết nối này, Agent có thể xem, thêm, cập nhật và theo dõi deal trên pipeline của bạn.
+- en: Pipedrive is a simple sales CRM. With this connection, the Agent can view, add, update, and track deals on your pipeline.
+- category: crm-sales
+
+### salesforce — Salesforce
+- vi: Salesforce là nền tảng CRM cho doanh nghiệp. Với kết nối này, Agent có thể xem, thêm, cập nhật opportunity và lead cùng xem báo cáo cho bạn.
+- en: Salesforce is an enterprise CRM platform. With this connection, the Agent can view, add, and update opportunities and leads, and pull up reports for you.
+- category: crm-sales
+
+### sendgrid — SendGrid
+- vi: SendGrid là nền tảng gửi email tự động cho từng giao dịch. Với kết nối này, Agent có thể gửi mail xác nhận đơn, mã OTP và đặt lại mật khẩu cho khách của bạn.
+- en: SendGrid is a platform for automated transactional email. With this connection, the Agent can send order confirmations, OTPs, and password resets to your customers.
+- category: communication
+
+### shopify — Shopify
+- vi: Shopify là nền tảng bán hàng online. Với kết nối này, Agent có thể xem đơn hàng, quản lý sản phẩm, tra tồn kho và cập nhật giá cho cửa hàng của bạn.
+- en: Shopify is an online store platform. With this connection, the Agent can view orders, manage products, check stock, and update prices for your store.
+- category: commerce
+
+### slack — Slack
+- vi: Slack là ứng dụng chat cho đội nhóm. Với kết nối này, Agent có thể đăng tin lên kênh, tìm tin nhắn, tóm tắt kênh và chia sẻ file cho bạn.
+- en: Slack is a team chat app. With this connection, the Agent can post to channels, find messages, summarize channels, and share files for you.
+- category: communication
+
+### stripe — Stripe
+- vi: Stripe là nền tảng thanh toán trực tuyến. Với kết nối này, Agent có thể tạo link thu tiền, tra giao dịch, hoàn tiền và đối soát các khoản cho bạn.
+- en: Stripe is an online payment platform. With this connection, the Agent can create payment links, look up transactions, process refunds, and reconcile charges for you.
+- category: commerce
+
+### trello — Trello
+- vi: Trello là bảng quản lý công việc kiểu kéo-thả. Với kết nối này, Agent có thể tạo thẻ, di chuyển thẻ giữa các cột, liệt kê và xem thẻ được giao cho bạn.
+- en: Trello is a drag-and-drop task board. With this connection, the Agent can create cards, move cards between columns, list and view cards assigned to you.
+- category: productivity
+
+### twilio — Twilio
+- vi: Twilio là nền tảng gửi SMS và gọi điện tự động. Với kết nối này, Agent có thể gửi SMS, mã OTP, tin xác nhận và thực hiện cuộc gọi tự động đến người nhận.
+- en: Twilio is a platform for SMS and automated voice calls. With this connection, the Agent can send SMS, OTP codes, confirmation texts, and place automated calls to recipients.
+- category: communication
+
+### twitter — Twitter / X
+- vi: X (Twitter) là mạng xã hội đăng tin ngắn. Với kết nối này, Agent có thể đăng bài, theo dõi tương tác, nhắn tin riêng cho người theo dõi và xem chỉ số bài viết.
+- en: X (Twitter) is a short-post social network. With this connection, the Agent can post updates, track engagement, DM your followers, and view post analytics.
+- category: communication
+
+### typeform — Typeform
+- vi: Typeform là công cụ tạo form và khảo sát kiểu trò chuyện, hỏi từng câu một. Với kết nối này, Agent có thể tạo form, thu thập câu trả lời, xem phản hồi và xuất kết quả.
+- en: Typeform is a tool for conversational forms and surveys that ask one question at a time. With this connection, the Agent can build forms, collect answers, view responses, and export results.
+- category: productivity
+
+### whatsapp — WhatsApp
+- vi: WhatsApp là ứng dụng nhắn tin phổ biến. Với kết nối này, Agent có thể gửi và trả lời tin nhắn cho khách, gửi tin xác nhận và nhắn vào nhóm.
+- en: WhatsApp is a widely used messaging app. With this connection, the Agent can send and reply to customer messages, send confirmations, and message groups.
+- category: communication
+
+### woocommerce — WooCommerce
+- vi: WooCommerce là plugin bán hàng cho website WordPress. Với kết nối này, Agent có thể xem đơn hàng, tra tồn kho, cập nhật sản phẩm và theo dõi vận chuyển.
+- en: WooCommerce is an e-commerce plugin for WordPress. With this connection, the Agent can view orders, check stock, update products, and track shipping.
+- category: commerce
+
+### youtube — YouTube
+- vi: YouTube là nền tảng chia sẻ và xem video. Với kết nối này, Agent có thể xem video trên kênh, theo dõi lượt xem, đọc bình luận và tổng hợp chỉ số kênh cho bạn.
+- en: YouTube is a platform for sharing and watching videos. With this connection, the Agent can list channel videos, track views, read comments, and summarize channel stats for you.
+- category: productivity
+
+### zendesk — Zendesk
+- vi: Zendesk là phần mềm hỗ trợ khách hàng. Với kết nối này, Agent có thể xem ticket ưu tiên, trả lời bằng câu mẫu, tóm tắt hội thoại và theo dõi ticket chưa xử lý.
+- en: Zendesk is customer support software. With this connection, the Agent can view priority tickets, reply with macros, summarize threads, and track open tickets.
+- category: support
+
+### zoho — Zoho
+- vi: Zoho là bộ công cụ CRM và văn phòng cho doanh nghiệp. Với kết nối này, Agent có thể thêm lead mới, cập nhật deal, xem báo cáo và quản lý hồ sơ khách hàng.
+- en: Zoho is a CRM and office suite for businesses. With this connection, the Agent can add new leads, update deals, view reports, and manage customer records.
+- category: crm-sales
+
+### zoom — Zoom
+- vi: Zoom là ứng dụng họp video online. Với kết nối này, Agent có thể tạo phòng họp, gửi link tham gia, lấy bản ghi và xem các cuộc họp sắp tới.
+- en: Zoom is an online video meeting app. With this connection, the Agent can create rooms, share join links, fetch recordings, and view upcoming meetings.
+- category: scheduling
+
+## categories
+
+### commerce — Thương mại
+- vi: Bán hàng online, thanh toán và đơn hàng.
+- en: Online stores, payments, and order management.
+- appliesTo: connector
+
+### communication — Giao tiếp
+- vi: Email, chat, họp video và mạng xã hội.
+- en: Email, chat, video meetings, and social channels.
+- appliesTo: connector
+
+### content-marketing — Nội dung & Marketing
+- vi: Sản xuất nội dung, SEO, social, email marketing.
+- en: Content creation, SEO, social, and email marketing.
+- appliesTo: skill
+
+### crm-sales — CRM & Bán hàng
+- vi: Quản lý khách hàng, deal và quy trình bán hàng.
+- en: Customer relationships, deals, and sales pipelines.
+- appliesTo: connector
+
+### customer-support — Hỗ trợ khách hàng
+- vi: Trả lời câu hỏi, phân loại ticket, chăm sóc người dùng.
+- en: Ticket triage, replies, and customer care workflows.
+- appliesTo: skill
+
+### customs — Tùy chỉnh
+- vi: Các skill do workspace tải lên — chỉ thấy trong workspace của bạn.
+- en: Skills uploaded by your workspace — visible only inside this workspace.
+- appliesTo: skill
+
+### documents — Tài liệu
+- vi: Tài liệu, bảng tính, lịch và công cụ thiết kế.
+- en: Documents, spreadsheets, calendars, and design tools.
+- appliesTo: connector
+
+### engineering — Kỹ thuật
+- vi: Mã nguồn, CI/CD, hạ tầng và giám sát.
+- en: Source code, CI/CD, infrastructure, and monitoring.
+- appliesTo: connector, skill
+
+### finance — Tài chính
+- vi: Kế toán, hoá đơn, ngân sách, báo cáo tài chính.
+- en: Accounting, invoicing, budgeting, and financial reporting.
+- appliesTo: skill
+
+### other — Khác
+- vi: Các ứng dụng chưa phân loại cụ thể.
+- en: Apps that don't fit other categories yet.
+- appliesTo: connector
+
+### productivity — Năng suất
+- vi: Công cụ ghi chú, quản lý task và dự án.
+- en: Notes, task management, and project tooling.
+- appliesTo: connector, skill
+
+### research-analysis — Nghiên cứu & Phân tích
+- vi: Phân tích dữ liệu, nghiên cứu thị trường, báo cáo chuyên sâu.
+- en: Data analysis, market research, and in-depth reporting.
+- appliesTo: skill
+
+### sales-outreach — Bán hàng & Tiếp cận
+- vi: Cold email, prospecting, theo dõi deal và đàm phán.
+- en: Cold outreach, prospecting, deal tracking, and negotiation.
+- appliesTo: skill
+
+### scheduling — Lịch & họp
+- vi: Lịch online, đặt cuộc họp và cuộc gọi video — Calendar, Calendly, Zoom.
+- en: Online calendars, meeting booking, and video calls — Calendar, Calendly, Zoom.
+- appliesTo: connector
+
+### sourcing — Tìm nguồn hàng
+- vi: Tìm nhà cung cấp, đánh giá supplier, dropshipping.
+- en: Supplier discovery, vendor evaluation, and dropshipping.
+- appliesTo: skill
+
+### storage — Lưu trữ
+- vi: Lưu trữ file đám mây và đồng bộ dữ liệu.
+- en: Cloud file storage and data sync.
+- appliesTo: connector
+
+### support — Hỗ trợ
+- vi: Hệ thống ticket, helpdesk và chăm sóc khách hàng.
+- en: Ticketing, helpdesk, and customer support.
+- appliesTo: connector
+
+## skills
+
+### brainstorm-buddy — Phát triển ý tưởng
+- vi: Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
+- en: Generate plenty of ideas on a topic, group them into themes, and surface fresh angles.
+- category: productivity
+- status: Ready
+
+### daily-planner — Lập kế hoạch ngày
+- vi: Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
+- en: Organize your tasks into a clear day plan with priorities and realistic time blocks.
+- category: productivity
+- status: Ready
+
+### decision-helper — Cân nhắc lựa chọn
+- vi: So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
+- en: Compare options in a weighted pros-and-cons table to help you decide with confidence.
+- category: productivity
+- status: Ready
+
+### doc-summarizer — Tóm tắt tài liệu
+- vi: Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
+- en: Condense long documents into key points, a one-line TL;DR, or a full outline.
+- category: productivity
+- status: Ready
+
+### email-drafter — Soạn email
+- vi: Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
+- en: Write a complete email from a few key points, in the right tone with a subject line. Drafts only, never sends.
+- category: productivity
+- status: Ready
+
+### meeting-notes — Tóm tắt cuộc họp
+- vi: Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
+- en: Turn rough meeting notes into clean minutes: summary, decisions, and action items with owners.
+- category: productivity
+- status: Ready
+
+### proofreader — Soát lỗi văn bản
+- vi: Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.
+- en: Fix spelling, grammar, and clarity in Vietnamese or English, with a list of every change.
+- category: productivity
+- status: Ready
+
+### toc-guidelines — Khám phá năng lực OpenClaw
+- vi: Giúp bạn biết OpenClaw làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập từng bước.
+- en: See what OpenClaw can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks and AI models — with step-by-step setup.
+- category: other
+- status: Ready
+
+### todo-organizer — Sắp xếp việc cần làm
+- vi: Sắp xếp danh sách việc thành checklist gọn gàng: chia theo dự án, xếp ưu tiên, lọc việc trùng.
+- en: Organize a chaotic to-do list into clean checklists, grouped by project and sorted by priority.
+- category: productivity
+- status: Ready
+
+### weekly-report — Tổng hợp báo cáo tuần
+- vi: Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.
+- en: Turn a week of scattered notes into a tidy status report: done, in progress, and blocked.
+- category: productivity
+- status: Ready

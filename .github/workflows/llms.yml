@@ -1,0 +1,32 @@
+name: Check llms.txt in sync
+
+on:
+  pull_request:
+    paths:
+      - 'ai-providers/**'
+      - 'connectors/**'
+      - 'categories/**'
+      - 'skills/**'
+      - 'scripts/build-llms.mjs'
+      - '.github/workflows/llms.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ai-providers/**'
+      - 'connectors/**'
+      - 'categories/**'
+      - 'skills/**'
+      - 'scripts/build-llms.mjs'
+      - '.github/workflows/llms.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-save gray-matter@4
+      # WHY --check: fail nếu llms.txt/llms-full.txt lệch nội dung nguồn (quên build lại)
+      - run: node scripts/build-llms.mjs --check

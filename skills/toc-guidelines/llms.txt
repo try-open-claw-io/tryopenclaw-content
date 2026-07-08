@@ -1,0 +1,9 @@
+# toc-guidelines — skill
+
+> Giúp bạn biết OpenClaw làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập từng bước.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Mục lục năng lực OpenClaw/tryopenclaw: giải thích và HƯỚNG DẪN CÁCH DÙNG mọi tính năng chính — Skills, Connectors (tích…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
+- [references](references): File của skill.

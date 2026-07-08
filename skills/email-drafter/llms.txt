@@ -1,0 +1,8 @@
+# email-drafter — skill
+
+> Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Draft clear, well-toned emails from a few bullet points. Writes text only — never sends.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

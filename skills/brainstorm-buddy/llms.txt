@@ -1,0 +1,8 @@
+# brainstorm-buddy — skill
+
+> Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Generate and expand ideas on a topic, then cluster them into themes. Text-only, no external service.
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

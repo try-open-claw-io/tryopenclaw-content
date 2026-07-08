@@ -59,6 +59,20 @@ Both PRs need to merge for the provider to appear in the UI.
 
 See [`ai-providers/_schema.json`](ai-providers/_schema.json). Validated in CI on every PR + push to main.
 
+## llms.txt (machine-readable index)
+
+Every content dir ships its own `llms.txt` (per-directory index: one line per file), the root [`llms.txt`](llms.txt) links them, and [`llms-full.txt`](llms-full.txt) is a single-file dump — following the [skills.tryopenclaw.io](https://github.com/try-open-claw-io/skills.tryopenclaw.io) convention so any AI agent can discover the catalog.
+
+**Generated — do not hand-edit.** Built from the source frontmatter:
+
+```bash
+npm install          # once, pulls gray-matter
+npm run build:llms   # regenerate root + per-dir llms.txt + llms-full.txt
+npm run check:llms   # CI drift-guard: exit 1 if any index is stale
+```
+
+CI (`.github/workflows/llms.yml`) runs `check:llms` on every PR touching content — after adding/editing a provider/connector/category/skill, run `npm run build:llms` and commit the regenerated indexes.
+
 ## Editor tooling
 
 For local validation before committing:
