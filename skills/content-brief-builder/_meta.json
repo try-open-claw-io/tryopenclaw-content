@@ -1,0 +1,17 @@
+{
+  "slug": "content-brief-builder",
+  "name": {
+    "vi": "Dựng content brief",
+    "en": "Content Brief Builder"
+  },
+  "description": {
+    "vi": "Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.",
+    "en": "Turn a chosen idea into a complete content brief with objective, audience, angle, key message, and CTA."
+  },
+  "category": "content-marketing",
+  "icon": "ClipboardList",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

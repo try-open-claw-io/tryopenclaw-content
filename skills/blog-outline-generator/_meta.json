@@ -1,0 +1,17 @@
+{
+  "slug": "blog-outline-generator",
+  "name": {
+    "vi": "Tạo outline blog",
+    "en": "Blog Outline Generator"
+  },
+  "description": {
+    "vi": "Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.",
+    "en": "Expand a content brief into a detailed blog outline with title, hook, heading structure, and CTA placements."
+  },
+  "category": "content-marketing",
+  "icon": "ListTree",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

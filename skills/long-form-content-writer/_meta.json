@@ -1,0 +1,17 @@
+{
+  "slug": "long-form-content-writer",
+  "name": {
+    "vi": "Viết bài dài",
+    "en": "Long-Form Content Writer"
+  },
+  "description": {
+    "vi": "Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.",
+    "en": "Write long-form drafts such as blogs, articles, guides, or thought leadership from an existing brief/outline."
+  },
+  "category": "content-marketing",
+  "icon": "PenLine",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

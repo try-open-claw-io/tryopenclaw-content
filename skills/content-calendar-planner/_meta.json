@@ -1,0 +1,17 @@
+{
+  "slug": "content-calendar-planner",
+  "name": {
+    "vi": "Lịch nội dung",
+    "en": "Content Calendar Planner"
+  },
+  "description": {
+    "vi": "Xem, lập và cập nhật lịch xuất bản nội dung theo tuần/tháng từ Google Sheets hoặc Notion.",
+    "en": "View, plan, and update your weekly/monthly content publishing schedule from Google Sheets or Notion."
+  },
+  "category": "content-marketing",
+  "icon": "CalendarClock",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

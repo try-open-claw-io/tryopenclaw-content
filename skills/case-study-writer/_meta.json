@@ -1,0 +1,17 @@
+{
+  "slug": "case-study-writer",
+  "name": {
+    "vi": "Viết case study",
+    "en": "Case Study Writer"
+  },
+  "description": {
+    "vi": "Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.",
+    "en": "Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure."
+  },
+  "category": "content-marketing",
+  "icon": "BookOpen",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

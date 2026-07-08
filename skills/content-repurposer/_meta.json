@@ -1,0 +1,17 @@
+{
+  "slug": "content-repurposer",
+  "name": {
+    "vi": "Tái sử dụng nội dung",
+    "en": "Content Repurposer"
+  },
+  "description": {
+    "vi": "Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.",
+    "en": "Turn one source piece into multiple derivative formats like LinkedIn posts, emails, video scripts, and carousels."
+  },
+  "category": "content-marketing",
+  "icon": "Recycle",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}
