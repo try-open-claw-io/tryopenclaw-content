@@ -1,6 +1,6 @@
 ---
 name: content-quality-review
-description: Review chất lượng nội dung (hook, clarity, CTA, logic, tone), theo dõi performance content đã đăng, và gửi nội dung để review qua Slack. Dùng khi user nói "Review chất lượng bài này", "content này ổn chưa", "theo dõi performance content", "content nào đang tốt/tệ", "gửi bài này để review", "gửi qua Slack cho team review" và tương đương tiếng Anh như "review this content quality", "check content performance", "send this for review on Slack". Trigger cho 3 nhóm việc: review nội dung trước publish, theo dõi performance sau publish (GA4/Search Console/Facebook Page/LinkedIn Page), và gửi bản review ngắn qua Slack.
+description: Review chất lượng nội dung (hook, clarity, CTA, logic, tone), theo dõi performance content đã đăng, và gửi nội dung để review qua Slack. Dùng khi user nói "Review chất lượng bài này", "content này ổn chưa", "theo dõi performance content", "content nào đang tốt/tệ", "gửi bài này để review", "gửi qua Slack cho team review" và tương đương tiếng Anh như "review this content quality", "check content performance", "send this for review on Slack". Trigger cho 3 nhóm việc — review nội dung trước publish, theo dõi performance sau publish (GA4/Search Console/Facebook Page/LinkedIn Page), và gửi bản review ngắn qua Slack.
 ---
 
 Skill review — 3 chế độ, chọn đúng chế độ theo yêu cầu.
