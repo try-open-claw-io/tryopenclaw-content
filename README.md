@@ -55,26 +55,19 @@ A provider needs entries in **two places** because some fields are code-tied (ic
 
 Both PRs need to merge for the provider to appear in the UI.
 
-## Tooling (`make`)
-
-One entrypoint for every check + generator. Run `make` (or `make help`) to list targets:
-
-| Target | What it does |
-|---|---|
-| `make install` | Install tooling deps (`gray-matter`, `ajv`) — run once |
-| `make build-llms` (alias `make llms`) | Regenerate root + per-dir + per-skill `llms.txt` + `llms-full.txt` |
-| `make check-llms` | Drift-guard: fail if any `llms.txt` is stale vs source |
-| `make validate` | Validate frontmatter (ai-providers + connectors + categories) against each `_schema.json` |
-| `make check` | Run everything CI runs (`check-llms` + `validate`) |
-
-Underneath these are the `npm run` scripts + [`scripts/`](scripts/) — `make` is just the shortcut.
-
 ## llms.txt (machine-readable index)
 
 Every content dir ships its own `llms.txt` (per-directory index: one line per file), the root [`llms.txt`](llms.txt) links them, and [`llms-full.txt`](llms-full.txt) is a single-file dump — following the [skills.tryopenclaw.io](https://github.com/try-open-claw-io/skills.tryopenclaw.io) convention so any AI agent can discover the catalog.
 
-**Generated — do not hand-edit.** After adding/editing a provider/connector/category/skill, run `make build-llms` and commit the regenerated indexes. CI (`.github/workflows/llms.yml`) runs `make check-llms` and fails the PR if you forgot.
+**Generated — do not hand-edit.** Built from the source frontmatter:
+
+```bash
+make install   # once, pulls gray-matter
+make llms      # regenerate root + per-dir + per-skill llms.txt + llms-full.txt
+```
+
+After adding/editing a provider/connector/category/skill, run `make llms` and commit the regenerated indexes. CI (`.github/workflows/llms.yml`) drift-guards this and fails the PR if you forgot.
 
 ## Schema
 
-Each content dir carries a `_schema.json` (JSON Schema draft 2020-12): [`ai-providers/_schema.json`](ai-providers/_schema.json), [`connectors/_schema.json`](connectors/_schema.json), [`categories/_schema.json`](categories/_schema.json). Run `make validate` locally before committing; CI (`.github/workflows/validate.yml`) runs the same check on every PR + push to main.
+See [`ai-providers/_schema.json`](ai-providers/_schema.json). Validated in CI on every PR + push to main.

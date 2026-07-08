@@ -8,7 +8,6 @@ on:
       - 'categories/**'
       - 'skills/**'
       - 'scripts/build-llms.mjs'
-      - 'package.json'
       - '.github/workflows/llms.yml'
   push:
     branches: [main]
@@ -18,7 +17,6 @@ on:
       - 'categories/**'
       - 'skills/**'
       - 'scripts/build-llms.mjs'
-      - 'package.json'
       - '.github/workflows/llms.yml'
 
 jobs:
@@ -29,6 +27,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install
+      - run: npm install --no-save gray-matter@4
       # WHY --check: fail nếu llms.txt/llms-full.txt lệch nội dung nguồn (quên build lại)
-      - run: make check-llms
+      - run: node scripts/build-llms.mjs --check
