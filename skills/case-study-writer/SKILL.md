@@ -39,3 +39,7 @@ Case study sống hay chết ở độ tin cậy số liệu và quote. Trước
 - TUYỆT ĐỐI không bịa số liệu, tên khách hàng, quote. Đây là rule cứng nhất — vi phạm làm mất uy tín case study và có rủi ro pháp lý.
 - Nếu user chỉ đưa idea/mô tả chung không có số liệu thật, không tự "làm tròn" số liệu ước lượng thành số liệu case study.
 - Ẩn danh khách hàng nếu user yêu cầu, không tự công khai thông tin khách hàng chưa được cho phép.
+
+## Kể theo Before–After–Bridge (community-distilled)
+
+Sau khi có đủ số liệu + quote thật, kể theo mạch BAB cho có lực: **Before** (thực trạng đau trước khi dùng) → **After** (kết quả sau, bằng số thật) → **Bridge** (sản phẩm/cách triển khai là cầu nối). Không thêm số/claim mới ngoài dữ liệu đã xác nhận.

@@ -30,3 +30,7 @@ Skill sinh idea nội dung có căn cứ — không bốc từ không khí.
 - Không tự khẳng định "trend" nếu không có nguồn (Search Console, GA4, hoặc user cung cấp) — nói rõ đây là gợi ý dựa trên suy luận, không phải data xác nhận.
 - Không lặp lại idea đã có sẵn trong content calendar (kiểm tra nếu user có Sheets/Notion calendar) trừ khi là góc nhìn mới rõ rệt.
 - Idea đề xuất phải có format cụ thể, không để chung "viết content về X".
+
+## Sinh idea theo tầng nhận biết (community-distilled)
+
+Khi brainstorm từ persona, trải idea qua 5 mức awareness thay vì dồn 1 chỗ: Unaware/Problem-aware → idea giáo dục, gọi tên pain bằng chữ của khách; Solution-aware → so sánh cách tiếp cận, phá lầm tưởng; Product-aware/Most-aware → idea gần chuyển đổi (demo/so sánh/case). Lấy chữ từ Voice-of-Customer (review/forum/support) làm hook idea, không dùng chữ marketing sáo.

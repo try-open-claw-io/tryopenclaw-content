@@ -33,3 +33,7 @@ Outline gồm:
 - Không viết outline nếu chưa có brief — brief thiếu thì brief trước, không đoán mục tiêu/audience.
 - Không tự thêm data/số liệu/case study cụ thể vào outline — chỉ đánh dấu "cần xác minh".
 - Outline phải bám sát 1 angle duy nhất từ brief, không lan man nhiều góc nhìn trong 1 bài.
+
+## Chọn khung cho outline (community-distilled)
+
+Trước khi dựng heading, chọn khung khớp mục tiêu: PAS (giải pain), AIDA (dẫn hành động), BAB (transformation), PASTOR (bài dài/sales). Dẫn đúng awareness level người đọc. Heading mở bài phải là hook, không phải "Giới thiệu".

@@ -41,3 +41,16 @@ Input: nội dung cần gửi review + channel/người nhận trên Slack (hỏ
 - Không tự publish/sửa content trong skill này — chỉ review và báo cáo, sửa thật do skill viết nội dung tương ứng xử lý.
 - Không bịa số liệu performance khi connector (GA4/Search Console/Facebook Page/LinkedIn Page) chưa kết nối hoặc không trả data.
 - Bản gửi Slack luôn ngắn gọn — mục đích là dễ feedback nhanh, không phải copy nguyên văn bản.
+
+## Copy Health Check — chấm nhanh Chế độ 1 (community-distilled)
+
+Ngoài 5 tiêu chí trên, chấm draft qua 8 câu yes/no, mỗi "no" là 1 điểm phải sửa:
+1. Headline qua test "so what?" (người đọc thấy lợi ích ngay)?
+2. Đã xử lý nỗi nghi ngại/objection số 1 chưa?
+3. Trẻ 12 tuổi đọc có hiểu (không jargon)?
+4. Mỗi section chỉ 1 CTA rõ?
+5. Dẫn bằng lợi ích, không liệt kê tính năng?
+6. Có đáng dừng lướt để đọc không?
+7. Mọi câu đều kiếm được chỗ đứng (không câu thừa)?
+8. Đọc ra giọng người, không phải máy?
+Điểm < 6/8 → viết lại trước khi publish.
