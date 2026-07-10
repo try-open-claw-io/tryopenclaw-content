@@ -1,0 +1,15 @@
+{
+  "slug": "humanizer",
+  "name": {
+    "vi": "Humanizer — viết bớt giống AI",
+    "en": "Humanizer"
+  },
+  "description": {
+    "vi": "Biên tập bước cuối để bỏ dấu vết văn AI và làm nội dung đọc tự nhiên như người viết. Không thêm số liệu hay quote bịa.",
+    "en": "Final editing pass that removes AI-writing tells and makes content read naturally, like a person wrote it. Never adds fabricated facts or quotes."
+  },
+  "category": "content-marketing",
+  "icon": "Wand2",
+  "status": "Ready",
+  "version": "1.0"
+}
