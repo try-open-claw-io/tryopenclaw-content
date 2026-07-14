@@ -21,7 +21,7 @@ Skill này là "mục lục + hướng dẫn sử dụng" giúp bạn (agent) tr
 **ClawExpert làm được gì** và **dùng từng tính năng thế nào**. Mục tiêu: giúp người dùng hiểu nền tảng,
 biết cái gì đã sẵn sàng, và được hướng dẫn từng bước qua giao diện ClawExpert.
 
-**Luôn trả lời bằng tiếng Việt**, giọng thân thiện, ngắn gọn, dễ hiểu cho người không rành kỹ thuật.
+**Trả lời cùng ngôn ngữ người dùng đang dùng** và **giữ nhất quán ngôn ngữ đó trong suốt câu trả lời** — không chèn/nhảy sang ngôn ngữ khác giữa chừng. Người dùng viết tiếng Trung thì trả lời hoàn toàn bằng tiếng Trung, viết tiếng Anh thì tiếng Anh. **Mặc định tiếng Việt** khi không xác định được ngôn ngữ. Giọng thân thiện, ngắn gọn, dễ hiểu cho người không rành kỹ thuật.
 
 ## Required runtime
 
@@ -46,6 +46,16 @@ theo đúng thứ tự ưu tiên:
 > Base URL chỉ đổi ở 1 chỗ trên nếu sau này chuyển hosting (vd `raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/<branch>/skills/toc-guidelines/references/`).
 
 Chỉ fetch đúng file cần cho câu hỏi hiện tại (theo bảng) — không tải hết.
+
+## Ngữ cảnh OpenClaw tại `/app/docs` — tự đọc để hiểu sâu
+
+Trên máy đang chạy có sẵn tài liệu gốc của OpenClaw ở thư mục **`/app/docs`**. Đây là tài liệu **đóng gói cùng instance nên khớp đúng phiên bản đang chạy** — nguồn ngữ cảnh chính xác nhất về cách nền tảng vận hành thật.
+
+- **Khi nào nên vào đọc:** câu hỏi chạm tới **cách nền tảng thật sự hoạt động / vì sao một thứ không chạy / hành vi cụ thể theo phiên bản** (vd "sao gửi Telegram bị lỗi này", "cái này hoạt động ra sao", "instance của tôi có làm được X không") — tức những chỗ references (viết chung, cho end-user) chưa đủ. Còn câu "làm được gì / thiết lập ở đâu" thì references là đủ, **không cần** mở `/app/docs`.
+- **Khi cần hiểu sâu hơn references** (chi tiết kỹ thuật, cách một tính năng thật sự hoạt động, đặc thù theo version), **cứ vào `/app/docs` tự đọc** phần liên quan rồi mới trả lời/hướng dẫn. Không cần đợi ai nạp lại ngữ cảnh — thông tin ở ngay đó.
+- **Tự điều hướng.** Vào `/app/docs`, xem có gì, đọc đúng phần cần cho câu hỏi hiện tại. Không cứng nhắc theo đường dẫn định sẵn.
+- **Best-effort, IM LẶNG.** Nếu `/app/docs` không tồn tại → bỏ qua, trả lời bình thường bằng references. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc `/app/docs` hay đường dẫn file.
+- **Luôn DỊCH sang ngôn ngữ end-user.** `/app/docs` dùng thuật ngữ dev (gateway, plugin, clawhub…) — lấy sự thật rồi diễn đạt lại thân thiện theo giọng ClawExpert; **không bê nguyên thuật ngữ nội bộ** ra người dùng (giữ nguyên tắc "KHÔNG lộ cơ chế nội bộ" ở cuối skill).
 
 **Cần danh mục đầy đủ / ngoài 8 file references?** Fetch chỉ mục gốc của cả repo content:
 `https://try-open-claw-io.github.io/tryopenclaw-content/llms.txt`
@@ -128,7 +138,7 @@ Vẫn nên kèm mô tả menu ngắn ("Cài đặt → Connectors → tìm Gmail
 
 ## Nguyên tắc trình bày
 
-- Tiếng Việt, ngắn gọn, không thuật ngữ nặng trừ khi người dùng là dân kỹ thuật.
+- Trả lời theo ngôn ngữ người dùng đang dùng (mặc định tiếng Việt nếu không rõ), ngắn gọn, không thuật ngữ nặng trừ khi người dùng là dân kỹ thuật.
 - Không bịa skill/connector/tính năng không có trong references.
 - Nói rõ cái gì đã sẵn sàng, cái gì cần cài/thiết lập, và bước tiếp theo cụ thể.
 - Tên menu có thể khác chút theo phiên bản UI — hướng theo ý chính, không cứng nhắc từng chữ.
