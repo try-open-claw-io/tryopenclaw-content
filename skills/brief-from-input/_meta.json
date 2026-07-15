@@ -1,0 +1,17 @@
+{
+  "slug": "brief-from-input",
+  "name": {
+    "vi": "Brief nhanh từ input thô",
+    "en": "Brief From Input"
+  },
+  "description": {
+    "vi": "Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.",
+    "en": "Turn a link, rough idea, or a few words into a working content brief: infer fast from what you have, flag assumptions clearly, ask only the high-value gaps."
+  },
+  "category": "content-marketing",
+  "icon": "Sparkles",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

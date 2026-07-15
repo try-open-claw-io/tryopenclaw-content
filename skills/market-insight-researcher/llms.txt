@@ -1,0 +1,8 @@
+# market-insight-researcher — skill
+
+> Tìm insight thị trường có nguồn (đối thủ, xu hướng, keyword) để viết content có căn cứ, kèm angle đề xuất. Mọi claim đều dẫn URL, không bịa số liệu.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Dùng tool web-search + web-fetch tìm insight thị trường có nguồn (đối thủ, xu hướng, keyword/search-intent quanh sản ph…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

@@ -1,0 +1,17 @@
+{
+  "slug": "product-description-writer",
+  "name": {
+    "vi": "Viết mô tả sản phẩm",
+    "en": "Product Description Writer"
+  },
+  "description": {
+    "vi": "Viết mô tả sản phẩm e-commerce bán được: hook mở đầu, tính năng thành lợi ích, dễ lướt, chèn keyword tự nhiên và CTA rõ ràng.",
+    "en": "Write sales-ready e-commerce product descriptions: strong hook, feature-to-benefit copy, scannable layout, natural keywords, and a clear CTA."
+  },
+  "category": "content-marketing",
+  "icon": "Tag",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

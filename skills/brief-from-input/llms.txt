@@ -1,0 +1,8 @@
+# brief-from-input — skill
+
+> Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Biến input tối giản/lộn xộn của merchant (một link, một ý tưởng thô, vài chữ) thành content brief làm việc để bắt đầu n…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

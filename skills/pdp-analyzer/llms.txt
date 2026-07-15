@@ -1,0 +1,8 @@
+# pdp-analyzer — skill
+
+> Đọc 1 link trang sản phẩm và trích ra bảng facts sạch (tên, giá, tính năng, USP, khách, tone) làm nguyên liệu cho các skill viết. Chỉ lấy thứ có thật trên trang, không đoán.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Đọc 1 link trang sản phẩm (PDP) và trích ra bảng facts sạch — tên sản phẩm, giá, tính năng/thành phần, USP, đối tượng k…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

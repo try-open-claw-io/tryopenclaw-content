@@ -1,0 +1,17 @@
+{
+  "slug": "content-batch-generator",
+  "name": {
+    "vi": "Sinh loạt content theo lịch",
+    "en": "Content Batch Generator"
+  },
+  "description": {
+    "vi": "Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.",
+    "en": "Plan then generate a whole batch of varied posts for a campaign or calendar — each with a different angle and structure, tied to your goal, never repetitive."
+  },
+  "category": "content-marketing",
+  "icon": "LayoutGrid",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

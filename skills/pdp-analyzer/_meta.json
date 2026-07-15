@@ -1,0 +1,17 @@
+{
+  "slug": "pdp-analyzer",
+  "name": {
+    "vi": "PDP Analyzer — bóc facts trang sản phẩm",
+    "en": "PDP Analyzer"
+  },
+  "description": {
+    "vi": "Đọc 1 link trang sản phẩm và trích ra bảng facts sạch (tên, giá, tính năng, USP, khách, tone) làm nguyên liệu cho các skill viết. Chỉ lấy thứ có thật trên trang, không đoán.",
+    "en": "Reads one product page URL and extracts a clean facts table (name, price, features, USP, audience, tone) as raw material for the writing skills. Only pulls what the page actually says, never guesses."
+  },
+  "category": "content-marketing",
+  "icon": "ScanSearch",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

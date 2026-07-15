@@ -1,0 +1,8 @@
+# product-description-writer — skill
+
+> Viết mô tả sản phẩm e-commerce bán được: hook mở đầu, tính năng thành lợi ích, dễ lướt, chèn keyword tự nhiên và CTA rõ ràng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết mô tả sản phẩm cho trang bán hàng e-commerce (PDP / trang collection). Dùng khi user nói "viết mô tả sản phẩm cho…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

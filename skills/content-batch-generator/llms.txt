@@ -1,0 +1,8 @@
+# content-batch-generator — skill
+
+> Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Lập kế hoạch rồi sinh MỘT LOẠT bài content đa dạng cho cả đợt/lịch — mỗi bài một angle + framework khác nhau, không na…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
