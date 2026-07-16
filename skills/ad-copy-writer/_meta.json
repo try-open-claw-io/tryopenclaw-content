@@ -1,0 +1,17 @@
+{
+  "slug": "ad-copy-writer",
+  "name": {
+    "vi": "Viết ad copy",
+    "en": "Ad Copy Writer"
+  },
+  "description": {
+    "vi": "Viết text quảng cáo Facebook/Instagram/Google tối ưu chuyển đổi: 3-5 variant theo angle khác nhau, block hook A/B test, headline, primary text và CTA. Không bịa số liệu.",
+    "en": "Write conversion-optimized Facebook/Instagram/Google ad copy: 3-5 angle variants, an A/B-testable hook block, headline, primary text, and CTA. No fabricated numbers."
+  },
+  "category": "content-marketing",
+  "icon": "Megaphone",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

@@ -35,8 +35,3 @@ Brief gồm đúng các phần sau, theo thứ tự:
 - Không bỏ qua phần nào trong 6 phần bắt buộc (Mục tiêu, Audience, Angle, Key message, CTA, Format).
 - Không tự chọn campaign nếu có nhiều campaign đang chạy — hỏi user gắn vào campaign nào.
 - Brief phải đủ cụ thể để người khác viết draft mà không cần hỏi lại — nếu thiếu thông tin, hỏi user trước khi hoàn thiện brief.
-
-## Nâng chất brief — Voice-of-Customer + Awareness (community-distilled)
-
-- **Voice-of-Customer:** ghi current state → desired state, frustration số 1 *bằng đúng chữ khách dùng* (từ review/forum/support ticket/sales call), top 3 objection, và "từ khách hay dùng / từ cần tránh". Đưa các cụm này vào brief để draft nói đúng giọng thị trường, không sáo.
-- **Awareness level** — người đọc ở 1 trong 5 mức, brief ghi rõ để draft dẫn đúng: (1) Unaware → story/pattern interrupt; (2) Problem-aware → đồng cảm + "có cách tốt hơn"; (3) Solution-aware → khác biệt + proof; (4) Product-aware → vì sao mua NGAY + risk reversal; (5) Most-aware → giá + CTA. Sai awareness level là lý do phổ biến nhất khiến content trượt.

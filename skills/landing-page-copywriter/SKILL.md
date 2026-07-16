@@ -35,8 +35,5 @@ Skill viết copy landing page — tối ưu cho conversion, không phải để
 - Không đưa nhiều CTA cạnh tranh nhau trên cùng 1 trang — 1 mục tiêu conversion chính.
 - Không publish trực tiếp lên WordPress mà không qua bước user approve draft trước.
 
-## Cấu trúc landing chuẩn conversion (community-distilled)
-
-Trên xuống: (1) Hero: headline + subhead + CTA + visual — màn hình đầu chỉ nhiêu đó; (2) Problem: 3 pain đồng cảm; (3) Solution: cách hoạt động, tối đa 3 bước; (4) Benefits: 3-5 mục theo Feature → Benefit → Proof; (5) Social proof gần mỗi CTA; (6) Objection/FAQ: xử 3 nghi ngại lớn; (7) Final CTA: nhắc value + risk reversal.
-- 1 trang = 1 mục tiêu = 1 CTA (lặp 3+ lần). Headline dùng 4U: Urgent, Unique, Ultra-specific, Useful.
-- Đủ mục tiêu + offer + audience thì **viết luôn bản đầy đủ**, để `[[NEEDS SOURCE]]` cho số/testimonial chưa có — đừng dừng chỉ để hỏi khi đã đủ để nháp.
+## Homepage sections
+Khi merchant cần copy trang chủ (hero / category / trust strip / product cards / brand promise), đọc `references/homepage.md` (pattern + example + guardrail). Hero chỉ một message chính; trust strip chỉ hiển thị chính sách đã xác minh.

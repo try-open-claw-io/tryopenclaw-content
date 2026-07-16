@@ -47,3 +47,10 @@ No API key required. Pure text writing, runs locally. Skill đọc facts sản p
 - **Anti-AI cứng:** không em-dash; không sáo ngữ rỗng nghĩa ("giải pháp toàn diện hàng đầu", "tối ưu hóa", "đột phá", "tiên tiến nhất"); không liệt kê đều đều máy móc; viết câu người, nhịp thay đổi; bước cuối luôn humanize.
 - **Không tự đăng** lên bất kỳ store/kênh nào — chỉ giao draft + biến thể; việc đăng do user.
 - **Phân ranh:** đây là MÔ TẢ SẢN PHẨM (PDP/collection). Caption social → `social-post-writer`. Landing page dài → `landing-page-copywriter`. Bài dài/blog → `long-form-content-writer`.
+
+## Tài liệu tham khảo (đọc trước khi viết)
+
+Trước khi viết PD, đọc file trong `references/`:
+
+- `references/examples.md` — bộ ví dụ chuẩn PD-FINAL + GOLD-PD (thời trang, xe điện, skincare, gia dụng, đồ thiết kế). Học **pattern**, không copy câu chữ brand nguồn. **Nhớ: PD = 2 phần — (a) kể chuyện/lợi ích + (b) bullet feature/spec; đủ độ sâu dùng ngay trên web, không phải 3 câu cụt; mỗi option giao ra là 1 PD hoàn chỉnh.**
+- `references/rules.md` — rule set PD (PD-RULE-01..08) + global rules + nguồn xây rule. Kiểm từng rule trước khi giao.

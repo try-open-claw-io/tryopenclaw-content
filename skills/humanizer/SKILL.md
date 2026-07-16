@@ -1,81 +1,54 @@
 ---
 name: humanizer
-description: Edit text to remove the tells of AI-generated writing and make it read like a real person wrote it. Run as a final pass on any draft (blog, caption, email, landing copy, case study, newsletter) before handing it to the user. Based on Wikipedia's "Signs of AI writing". Use when finishing a piece of content, or when the user says the copy "sounds like AI / máy viết / cứng / sáo". Not a content generator — it rewrites text that already exists.
+description: 'Bước cuối bắt buộc, làm sạch dấu vết AI trên mọi text Agent tạo ra trước khi giao cho merchant, viết lại cho đọc như người viết thật. Chạy tự động sau mọi draft content (mô tả sản phẩm, caption, blog, email, landing, ad copy). Cũng dùng khi user nói "làm tự nhiên hơn", "bớt giọng AI", "nghe giống người thật", "humanize", "đọc đang giống máy quá" và tương đương tiếng Anh như "make it sound human", "less AI", "humanize this", "de-AI". Chỉ viết lại STYLE, KHÔNG thêm hay đổi fact.'
 ---
 
-Final-pass editor that strips AI-writing patterns and injects real human voice. Based on Wikipedia's "Signs of AI writing" (WikiProject AI Cleanup). Run it on a draft, not on a blank page.
+Skill làm sạch dấu vết AI. Đây là pass CUỐI CÙNG trên mọi text Agent giao cho merchant. Không phải bước tuỳ chọn, không phải bước bỏ qua khi vội. Nó viết lại và mài giũa văn phong; nó KHÔNG bịa, không thêm, không đổi bất kỳ fact nào.
+
+> Bản này là humanizer do chính merchant sở hữu, tự author cho Merchant Content Agent. Bản catalog chuẩn (canonical) chưa có lúc build; đây là bản thay thế đầy đủ, chạy độc lập.
 
 ## Required environment
 
-No API key required. Pure text editing, runs locally.
+No API key. Pure text rewriting, chạy local. Skill nhận text draft (từ skill viết content khác hoặc user dán vào) và trả lại bản đã viết lại.
 
-## Task
+## Khi nào chạy (bắt buộc)
 
-Given a draft:
+- **Sau mọi draft** — là step cuối trước khi giao, luôn luôn. Skill viết content khác (`product-description-writer`, `social-post-writer`, `long-form-content-writer`, `landing-page-copywriter`, `newsletter-writer`, ...) gọi humanizer ở bước cuối trước khi trả kết quả.
+- Khi user yêu cầu trực tiếp ("làm tự nhiên hơn", "bớt giọng AI", "humanize").
 
-1. Scan for the patterns below.
-2. Rewrite each problematic section into a natural alternative.
-3. Preserve meaning and the intended tone.
-4. Add actual personality — clean-but-voiceless is still slop.
-5. Return the rewritten text (and, only if useful, a one-line note on what changed).
+## Nguyên tắc gốc (không thoả hiệp)
 
-## Personality and soul
+**Chỉ sửa STYLE, không đụng SUBSTANCE.** Humanizer viết lại cách diễn đạt, nhịp câu, từ ngữ. Nó KHÔNG được:
 
-Removing bad patterns is half the job. Sterile, voiceless text is just as obvious as slop. Signs of soulless writing even when "clean": every sentence the same length, no opinions, no acknowledgment of mixed feelings, no first person where it fits, no edge, reads like a press release.
+- Thêm fact, số liệu, tính năng, claim mới nào không có trong bản gốc.
+- Đổi con số, thông số, giá, tên sản phẩm, cam kết, mức độ chắc chắn của claim (không đổi "có thể hỗ trợ" thành "đảm bảo").
+- Thêm khuyến mãi, deadline, scarcity, social proof, review, testimonial giả.
+- Đổi ý định gốc hay thông điệp của merchant, hay áp một brand voice lên.
 
-How to add voice:
+Nếu bản gốc có placeholder `[cần số liệu thật]` / `[[NEEDS SOURCE]]` → giữ nguyên, KHÔNG tự điền.
 
-- Have opinions. React to facts, don't just report them.
-- Vary rhythm. Short punchy sentence. Then a longer one that takes its time.
-- Acknowledge complexity — real people have mixed feelings.
-- Use "I/you" when it fits; first person is honest, not unprofessional.
-- Be specific about feelings: not "this is concerning" but the concrete thing that bothers you.
+## Strip — dấu vết AI phải loại
 
-## Content patterns to remove
+1. **Em-dash (—)**: bỏ hết. Thay bằng dấu phẩy, dấu chấm, dấu hai chấm, hoặc tách thành câu ngắn. Không để một em-dash nào sót lại.
+2. **Cụm sáo AI rỗng nghĩa**: "Trong thế giới ... ngày nay", "Không thể phủ nhận rằng", "Điều quan trọng cần lưu ý", "khai phá/mở khóa tiềm năng", "nâng tầm", "bứt phá", "giải pháp toàn diện hàng đầu", "tối ưu hóa", "đột phá", "tiên tiến nhất" khi không có nội dung thật đỡ lưng. Viết lại thành câu cụ thể, hoặc cắt bỏ.
+3. **Mở bài kiểu định nghĩa từ điển**: "X là ...". Thay bằng hook chạm nhu cầu hoặc vào thẳng.
+4. **Kết bài "tóm lại" chung chung**: đoạn tổng kết rỗng cuối bài. Cắt, hoặc thay bằng câu kết cụ thể / CTA thật.
+5. **Liệt kê đều đều máy móc**: kiểu "chất lượng, uy tín, tận tâm" hay bullet ba tính từ song song không thông tin. Thay bằng nội dung cụ thể hoặc gộp lại thành câu có ý.
+6. **Bôi đậm / emoji rải rác vô nghĩa**: bỏ, trừ khi brand voice của merchant thật sự dùng.
+7. **Nhịp câu robot đều tăm tắp**: câu nào cũng cùng độ dài, cùng cấu trúc. Phá vỡ: trộn câu ngắn với câu dài, đổi cách mở câu.
 
-1. **Inflated significance / legacy / broader trends** — "stands as / is a testament / plays a pivotal role / marks a turning point / evolving landscape / setting the stage for / reflects a broader". Cut the puffery, state the fact.
-2. **Undue notability / media coverage** — listing outlets and follower counts. Replace with one concrete, sourced fact.
-3. **Superficial "-ing" analyses** — "highlighting…, ensuring…, reflecting…, showcasing…" tacked on for fake depth. Delete or make concrete.
-4. **Promotional language** — "boasts, vibrant, rich, nestled, in the heart of, breathtaking, must-visit, renowned, stunning". Neutral, specific description instead.
-5. **Vague attributions / weasel words** — "Experts argue, Observers have cited, Industry reports". Name the actual source or drop the claim.
-6. **Formulaic "Challenges and Future Prospects" sections** — "Despite its… faces several challenges… Despite these challenges…". Replace with specifics.
-7. **AI vocabulary** — Additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight, interplay, intricate, key (adj.), landscape (abstract), pivotal, showcase, tapestry, testament, underscore, valuable, vibrant, seamless, leverage, elevate, unlock. In Vietnamese content, the same reflex shows as "giải pháp toàn diện hàng đầu, tối ưu hóa, tiên tiến nhất, đột phá" — cut it too.
-8. **Copula avoidance** — "serves as / stands as / represents / boasts / features". Use is / are / has.
-9. **Negative parallelism** — "Not only… but…", "It's not just X, it's Y". Say the thing plainly.
-10. **Rule of three** — forced groups of three ("innovation, inspiration, and insights"). Break the pattern.
-11. **Elegant variation** — cycling synonyms for the same noun (protagonist → main character → central figure → hero). Just repeat the word.
-12. **False ranges** — "from X to Y" where X and Y aren't on a scale. List the actual items.
+## Cách hoạt động
 
-## Style patterns to remove
+1. Đọc toàn bộ text gốc. Ghi nhận fact, số, claim, ý định, brand voice hiện có (đây là phần BẤT KHẢ XÂM PHẠM).
+2. Quét từng mục Strip ở trên, sửa tại chỗ. Đặc biệt: search hết em-dash `—`, không sót.
+3. Viết lại cho có nhịp người: câu ngắn xen câu dài, mở câu đa dạng, giọng tự nhiên, bỏ filler và hedging thừa.
+4. **Đối chiếu lại**: bản viết lại phải mang đúng mọi fact/số/claim của bản gốc, không thừa không thiếu. Nếu lỡ đổi một fact → sửa về đúng bản gốc.
+5. Trả về text đã viết lại. Không kèm giải thích dài; nếu có chỗ đáng lưu ý (vd đã bỏ một câu vì rỗng nghĩa) thì note một dòng ngắn.
 
-13. **Em-dash overuse** — LLMs overuse "—". Prefer commas or periods; keep an em dash only where it truly earns it.
-14. **Boldface spam** — emphasizing phrases mechanically. Remove most bold.
-15. **Inline-header vertical lists** — "- **Thing:** explanation" repeated. This is the loudest AI tell. Convert to prose, or a plain list only when the content genuinely is a list.
-16. **Title Case In Headings** — use sentence case.
-17. **Emoji-decorated headings/bullets** — remove.
-18. **Curly quotes** — use straight quotes " ' not " ' ' '.
+## Quy tắc cứng
 
-## Communication patterns to remove
-
-19. **Chatbot artifacts** — "Here is…, I hope this helps, Certainly!, Would you like me to…, let me know". Delete.
-20. **Knowledge-cutoff disclaimers** — "as of my last update, while specific details are limited…". Delete or replace with the actual fact.
-21. **Sycophantic tone** — "Great question! You're absolutely right!". Delete.
-22. **Filler phrases** — "in order to" → "to", "due to the fact that" → "because", "at this point in time" → "now", "has the ability to" → "can".
-23. **Excessive hedging** — "it could potentially possibly be argued that…" → "…".
-24. **Generic upbeat conclusions** — "The future looks bright… exciting times ahead". Replace with a concrete next fact or cut.
-
-## Full example
-
-Before: *"The new update serves as a testament to our commitment to innovation. Moreover, it provides a seamless, intuitive, and powerful experience—ensuring users hit their goals. It's not just an update, it's a revolution. Industry experts believe it will have a lasting impact, highlighting our pivotal role in the evolving landscape."*
-
-After: *"The update adds batch processing, keyboard shortcuts, and offline mode. Beta testers say tasks finish faster."*
-
-## Guardrails
-
-- Editing only. Do not add facts, stats, quotes, or claims that were not in the source — humanizing must never introduce fabrication. If the source lacks a needed fact, leave a `[[NEEDS SOURCE: ...]]` marker rather than inventing one.
-- Preserve the author's meaning and any confirmed brand voice. Do not flatten a deliberate style into generic neutral.
-- Output the rewritten text as the deliverable — do not wrap it in a labelled analysis template.
-
-## Reference
-
-Based on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). Key insight: LLMs pick the most statistically likely next token, which trends toward the blandest phrasing that fits the widest range of cases. Humanizing is the deliberate move away from that average.
+- **KHÔNG bịa, KHÔNG thêm fact.** Humanizer chỉ đổi cách nói. Nghi ngờ một câu là claim mới → không thêm.
+- **KHÔNG đổi mức độ chắc chắn** của claim gốc.
+- **Không em-dash sót lại.** Đây là lỗi thường gặp nhất; check kỹ.
+- **Giữ brand voice của merchant**, không áp giọng riêng lên.
+- **Không tự đăng.** Trả draft đã làm sạch; đăng do merchant quyết.
