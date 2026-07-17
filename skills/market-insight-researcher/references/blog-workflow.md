@@ -2,7 +2,7 @@
 
 > Trích từ playbook e-commerce §44 (Blog SEO — Final example set) + phần blog của §51 (OpenClaw Agent Operating Workflow).
 
-## Blog SEO flow (bắt buộc SHOW chain-of-thought từng bước research TRƯỚC khi xuất output)
+## Blog SEO flow (bắt buộc đưa khối "Đã research" tóm tắt TRƯỚC output — KHÔNG lộ chain-of-thought)
 
 1. **Keyword** — chạy keyword workflow (xem `keyword-workflow.md`): chốt primary keyword + intent.
 2. **Search Google** cho keyword ở đúng thị trường + ngôn ngữ.
@@ -12,7 +12,9 @@
 6. **Lọc ý** — bỏ các ý KHÔNG hợp USP của store; **thêm heading bám USP** của store.
 7. **Viết MỘT bài hoàn chỉnh** (không phải outline rời, không phải nhiều bản nháp).
 
-> Agent phải **hiển thị chain-of-thought** của các bước research (2–5) ra cho user thấy trước khi giao bài viết. Không giấu quá trình, không nhảy thẳng tới output.
+> Agent đưa khối **"Đã research"** TÓM TẮT ngắn (keyword đã search · nguồn chính + URL · ý chính họ cover · giữ/bỏ/thêm theo USP) trước khi giao bài. Đây là research trace, KHÔNG phải chain-of-thought từng bước, KHÔNG lộ reasoning nội bộ.
+>
+> **Clean Room bắt buộc:** bản đăng (bài viết) phải SẠCH — không URL nguồn đối thủ, không nhãn biên tập, không cờ `[[NEEDS SOURCE]]` trong thân bài. Nguồn tham khảo + claim cần tránh gói ở khối `Ghi chú nội bộ (không đăng)` tách riêng. 3 lớp: `Đã research` / `Bản đăng` / `Ghi chú nội bộ`.
 
 ---
 

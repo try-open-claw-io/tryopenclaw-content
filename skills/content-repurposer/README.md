@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /content-repurposer ở đầu khung chat, rồi đưa nội dung gốc và các format muốn tạo.
+**Cách kích hoạt:** Gõ /content-repurposer ở đầu khung chat, rồi dán nội dung gốc và các format muốn tạo.
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có nhiều nội dung phái sinh, mỗi cái khai thác một góc riêng nhưng giữ đúng key message gốc.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có nhiều bản phái sinh từ nội dung gốc: LinkedIn post, email, video script, carousel....
 
 ## Hướng dẫn
 
-- /content-repurposer biến 1 bài gốc thành nhiều format social/email/video.
+- /content-repurposer biến bài blog này thành các post social.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /content-repurposer at the start of the chat, then provide the source content and the formats you want.
+**How to trigger:** Type /content-repurposer at the start of the chat, then paste the source content and the formats you want.
 
-**What you get:** Once the Agent finishes, you'll have several derivative pieces, each drawing on a distinct angle while keeping the original key message.
+**What you get:** Once the Agent finishes, you'll have multiple derivative pieces from the source: LinkedIn post, email, video script, carousel....
 
 ## Tutorials
 
-- /content-repurposer turn one source piece into multiple social/email/video formats.
+- /content-repurposer turn this blog post into social posts.

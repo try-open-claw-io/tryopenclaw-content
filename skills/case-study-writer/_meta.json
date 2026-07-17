@@ -9,7 +9,7 @@
     "en": "Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure."
   },
   "category": "content-marketing",
-  "icon": "BookOpen",
+  "icon": "Trophy",
   "status": "Ready",
   "is_preinstalled": false,
   "is_published": false,

@@ -1,12 +1,12 @@
 {
   "slug": "content-idea-generator",
   "name": {
-    "vi": "Tạo ý tưởng nội dung",
+    "vi": "Sinh ý tưởng nội dung",
     "en": "Content Idea Generator"
   },
   "description": {
-    "vi": "Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign, keyword và dữ liệu thật từ GA4/Search Console.",
-    "en": "Generate grounded new content ideas based on personas, campaigns, keywords, and real data from GA4/Search Console."
+    "vi": "Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.",
+    "en": "Generate grounded new content ideas based on personas, campaigns, and keywords."
   },
   "category": "content-marketing",
   "icon": "Lightbulb",

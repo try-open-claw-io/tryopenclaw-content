@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /social-post-writer ở đầu khung chat, rồi cho biết chủ đề và kênh đích.
+**Cách kích hoạt:** Gõ /social-post-writer ở đầu khung chat, rồi cho biết sản phẩm/thông điệp và kênh (Facebook/Instagram/LinkedIn).
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có caption riêng cho mỗi kênh, đúng văn phong, kèm hashtag, CTA và mô tả visual.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có caption theo kênh kèm hook options để chọn, hashtag, CTA và gợi ý visual.
 
 ## Hướng dẫn
 
-- /social-post-writer viết caption social riêng cho từng kênh.
+- /social-post-writer viết caption Facebook bán sản phẩm này.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /social-post-writer at the start of the chat, then say the topic and target channels.
+**How to trigger:** Type /social-post-writer at the start of the chat, then share the product/message and the channel (Facebook/Instagram/LinkedIn).
 
-**What you get:** Once the Agent finishes, you'll have a channel-tailored caption for each platform, with hashtags, CTA, and a visual brief.
+**What you get:** Once the Agent finishes, you'll have channel-specific captions with hook options to choose from, hashtags, CTA, and a visual brief.
 
 ## Tutorials
 
-- /social-post-writer write channel-specific social captions per platform.
+- /social-post-writer write a Facebook caption to sell this product.

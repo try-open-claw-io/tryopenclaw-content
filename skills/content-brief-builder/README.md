@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /content-brief-builder ở đầu khung chat, rồi đưa idea/chủ đề cần dựng brief.
+**Cách kích hoạt:** Gõ /content-brief-builder ở đầu khung chat, rồi cho biết ý tưởng đã chọn để dựng brief.
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có brief đủ 6 phần bắt buộc, đủ cụ thể để bắt tay viết draft ngay.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có content brief đầy đủ: mục tiêu, audience, angle, key message và CTA.
 
 ## Hướng dẫn
 
-- /content-brief-builder dựng brief đầy đủ từ idea đã chọn trước khi viết.
+- /content-brief-builder lên content brief cho idea này.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /content-brief-builder at the start of the chat, then share the idea/topic to build a brief for.
+**How to trigger:** Type /content-brief-builder at the start of the chat, then share the chosen idea to build a brief for.
 
-**What you get:** Once the Agent finishes, you'll have a brief with all 6 required sections, concrete enough to start drafting right away.
+**What you get:** Once the Agent finishes, you'll have a complete content brief: objective, audience, angle, key message, and CTA.
 
 ## Tutorials
 
-- /content-brief-builder build a full brief from a chosen idea before writing.
+- /content-brief-builder build a content brief for this idea.

@@ -40,4 +40,4 @@ No API key required. Dùng tool `web-search` và `web-fetch` có sẵn trong run
 ## Tài liệu tham khảo (đọc trước khi research)
 
 - `references/keyword-workflow.md` — workflow keyword research định tính (không dùng volume API): input cần, quy trình, format báo cáo. **Nhớ: chỉ dùng tín hiệu định tính; TUYỆT ĐỐI không claim search volume khi không có dữ liệu đo volume.**
-- `references/blog-workflow.md` — flow blog SEO: keyword → search Google → fetch top organic + AI Overview → extract outline → synthesize → lọc ý không hợp USP + thêm heading USP → viết 1 bài hoàn chỉnh. **Phải SHOW chain-of-thought các bước research trước khi xuất bài.** Kèm bộ ví dụ GOLD-SEO.
+- `references/blog-workflow.md` — flow blog SEO: keyword → search Google → fetch top organic + AI Overview → extract outline → synthesize → lọc ý không hợp USP + thêm heading USP → viết 1 bài hoàn chỉnh. **Phải đưa khối "Đã research" (tóm tắt trace ngắn, KHÔNG lộ chain-of-thought) trước khi xuất bài, và tách bản đăng SẠCH khỏi ghi chú nguồn (Clean Room, AGENTS.md).** Kèm bộ ví dụ GOLD-SEO.

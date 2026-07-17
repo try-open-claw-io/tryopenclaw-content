@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /blog-outline-generator ở đầu khung chat, rồi đưa brief và độ dài bài mong muốn.
+**Cách kích hoạt:** Gõ /blog-outline-generator ở đầu khung chat, rồi cho biết brief hoặc chủ đề bài blog cần lên outline.
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có outline chi tiết với heading theo logic, điểm chèn CTA và các chỗ cần data thật.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có outline blog chi tiết: tiêu đề, hook mở bài, cấu trúc heading H2/H3 và điểm chèn CTA.
 
 ## Hướng dẫn
 
-- /blog-outline-generator tạo outline blog chi tiết từ brief đã có.
+- /blog-outline-generator lên outline cho bài blog theo brief này.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /blog-outline-generator at the start of the chat, then share the brief and desired article length.
+**How to trigger:** Type /blog-outline-generator at the start of the chat, then share the brief or the blog topic to outline.
 
-**What you get:** Once the Agent finishes, you'll have a detailed outline with logically ordered headings, CTA placements, and marked spots needing real data.
+**What you get:** Once the Agent finishes, you'll have a detailed blog outline: title, opening hook, H2/H3 heading structure, and CTA placements.
 
 ## Tutorials
 
-- /blog-outline-generator create a detailed blog outline from an existing brief.
+- /blog-outline-generator outline a blog post from this brief.
