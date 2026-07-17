@@ -1,0 +1,8 @@
+# style-memory-manager — skill
+
+> Học và lưu giọng viết của chủ shop từ feedback và từ bản bạn tự sửa, để các bài sau viết ngày càng giống chất riêng của bạn.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Học và lưu "style memory" của chủ shop để giọng viết ngày càng giống họ — ghi lại preference từ feedback và rút prefere…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

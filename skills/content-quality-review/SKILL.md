@@ -1,43 +1,29 @@
 ---
 name: content-quality-review
-description: Review chất lượng nội dung (hook, clarity, CTA, logic, tone), theo dõi performance content đã đăng, và gửi nội dung để review qua Slack. Dùng khi user nói "Review chất lượng bài này", "content này ổn chưa", "theo dõi performance content", "content nào đang tốt/tệ", "gửi bài này để review", "gửi qua Slack cho team review" và tương đương tiếng Anh như "review this content quality", "check content performance", "send this for review on Slack". Trigger cho 3 nhóm việc — review nội dung trước publish, theo dõi performance sau publish (GA4/Search Console/Facebook Page/LinkedIn Page), và gửi bản review ngắn qua Slack.
+description: Review chất lượng draft nội dung trước khi xuất bản (hook, clarity, CTA, logic, tone). Dùng khi user nói "Review chất lượng bài này", "content này ổn chưa", "check giúp bài này", "góp ý draft này" và tương đương tiếng Anh như "review this content", "is this draft good", "give feedback on this". CHỈ review draft — không theo dõi performance, không gửi qua kênh ngoài (agent này viết-focused, không có connector data/social/Slack).
 ---
 
-Skill review — 3 chế độ, chọn đúng chế độ theo yêu cầu.
+Skill review chất lượng draft nội dung — bản viết-focused (chỉ 1 chế độ: review trước publish).
 
-## Chế độ 1: Review chất lượng nội dung (trước publish)
+## Input cần
 
-Input: draft/nội dung cần review.
+- Draft/nội dung cần review (paste text hoặc link Google Docs).
+- Nếu brand voice đã xác định (xem SOUL.md/MEMORY.md), review tone theo đúng brand voice; nếu chưa, chỉ nhận xét tone chung.
+
+## Cách hoạt động
 
 Đánh giá theo 5 tiêu chí, mỗi tiêu chí có nhận xét ngắn + điểm cần sửa (nếu có):
 
 1. **Hook** — câu/đoạn mở có giữ được người đọc không.
-2. **Clarity** — nội dung có rõ ràng, dễ hiểu, tránh jargon không cần thiết.
-3. **CTA** — CTA có rõ ràng, đúng vị trí, khớp mục tiêu content.
-4. **Logic** — mạch lập luận có nhất quán, không mâu thuẫn, không thiếu bước.
-5. **Tone** — có khớp brand voice không (nếu brand voice đã xác định; nếu chưa, chỉ nhận xét tone chung, không áp chuẩn brand).
+2. **Clarity** — nội dung rõ ràng, dễ hiểu, tránh jargon không cần thiết.
+3. **CTA** — CTA rõ ràng, đúng vị trí, khớp mục tiêu content.
+4. **Logic** — mạch lập luận nhất quán, không mâu thuẫn, không thiếu bước.
+5. **Tone** — khớp brand voice không (nếu đã xác định; chưa thì nhận xét tone chung).
 
 Kết luận: liệt kê điểm cần sửa theo mức độ ưu tiên (must-fix / nice-to-have).
 
-## Chế độ 2: Theo dõi performance content (sau publish)
-
-Input: content đã đăng, khung thời gian cần xem.
-
-- Blog/article → kéo data GA4 (traffic, time on page, bounce rate, conversion nếu có goal setup) và Google Search Console (impression, CTR, ranking keyword).
-- Social post → kéo data Facebook Page và LinkedIn Page (reach, engagement, click, comment).
-- Trả bảng tóm tắt: content nào đang tốt (traffic/engagement cao), content nào đang kém, gợi ý hành động (ví dụ: bài có impression cao CTR thấp → cần sửa title/meta description).
-- KHÔNG tự bịa số liệu nếu connector chưa kết nối — báo user cần kết nối GA4/Search Console/Facebook Page/LinkedIn Page trước.
-
-## Chế độ 3: Gửi nội dung để review qua Slack
-
-Input: nội dung cần gửi review + channel/người nhận trên Slack (hỏi nếu chưa rõ).
-
-- Đóng gói bản review NGẮN: tóm tắt content (1-2 câu), link/đoạn trích chính, điểm cần feedback cụ thể (không gửi nguyên bài dài vào Slack).
-- Gửi qua Slack đúng channel/người được chỉ định.
-- Xác nhận với user nội dung tóm tắt trước khi gửi, tránh gửi nhầm channel.
-
 ## Quy tắc cứng
 
-- Không tự publish/sửa content trong skill này — chỉ review và báo cáo, sửa thật do skill viết nội dung tương ứng xử lý.
-- Không bịa số liệu performance khi connector (GA4/Search Console/Facebook Page/LinkedIn Page) chưa kết nối hoặc không trả data.
-- Bản gửi Slack luôn ngắn gọn — mục đích là dễ feedback nhanh, không phải copy nguyên văn bản.
+- Chỉ review và báo cáo — KHÔNG tự sửa content (sửa thật do skill viết tương ứng xử lý).
+- KHÔNG bịa nhận xét về số liệu/nguồn nếu draft không có; chỉ đánh giá chất lượng viết.
+- Ngoài phạm vi agent này: xem performance sau publish (cần data GA4/GSC) và gửi review qua Slack — nếu user cần, nói rõ ngoài phạm vi agent viết.

@@ -34,3 +34,6 @@ Skill viết copy landing page — tối ưu cho conversion, không phải để
 - Không bịa số liệu/testimonial/social proof không có nguồn thật.
 - Không đưa nhiều CTA cạnh tranh nhau trên cùng 1 trang — 1 mục tiêu conversion chính.
 - Không publish trực tiếp lên WordPress mà không qua bước user approve draft trước.
+
+## Homepage sections
+Khi merchant cần copy trang chủ (hero / category / trust strip / product cards / brand promise), đọc `references/homepage.md` (pattern + example + guardrail). Hero chỉ một message chính; trust strip chỉ hiển thị chính sách đã xác minh.

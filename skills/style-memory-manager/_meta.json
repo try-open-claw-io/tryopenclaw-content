@@ -1,0 +1,17 @@
+{
+  "slug": "style-memory-manager",
+  "name": {
+    "vi": "Học giọng viết của bạn",
+    "en": "Style Memory Manager"
+  },
+  "description": {
+    "vi": "Học và lưu giọng viết của chủ shop từ feedback và từ bản bạn tự sửa, để các bài sau viết ngày càng giống chất riêng của bạn.",
+    "en": "Learns and saves your writing voice from feedback and from your own edits, so later drafts sound more like you over time."
+  },
+  "category": "content-marketing",
+  "icon": "BrainCircuit",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

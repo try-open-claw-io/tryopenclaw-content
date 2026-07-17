@@ -1,15 +1,17 @@
 {
   "slug": "humanizer",
   "name": {
-    "vi": "Humanizer — viết bớt giống AI",
+    "vi": "Làm sạch dấu vết AI",
     "en": "Humanizer"
   },
   "description": {
-    "vi": "Biên tập bước cuối để bỏ dấu vết văn AI và làm nội dung đọc tự nhiên như người viết. Không thêm số liệu hay quote bịa.",
-    "en": "Final editing pass that removes AI-writing tells and makes content read naturally, like a person wrote it. Never adds fabricated facts or quotes."
+    "vi": "Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.",
+    "en": "Mandatory final pass that rewrites every piece of content to read like a real human wrote it: strips em-dashes, cuts AI clichés, breaks robotic rhythm. Style only, never changes facts."
   },
   "category": "content-marketing",
-  "icon": "Wand2",
+  "icon": "Sparkles",
   "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
   "version": "1.0"
 }

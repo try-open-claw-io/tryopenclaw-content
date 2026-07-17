@@ -1,0 +1,11 @@
+# ad-copy-writer — skill
+
+> Viết text quảng cáo Facebook/Instagram/Google tối ưu chuyển đổi: 3-5 variant theo angle khác nhau, block hook A/B test, headline, primary text và CTA. Không bịa số liệu.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết text quảng cáo (ad copy) cho Facebook/Instagram/Google Ads để tối ưu chuyển đổi khi creative/hình ảnh đã có sẵn. Dùng khi user nói "viết ad copy", "text quảng cáo"…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
+- [references/patterns.md](references/patterns.md): 5 ad pattern + gold example mẫu, map angle sang pattern.
+- [references/hooks.md](references/hooks.md): 20 hook pattern production-ready + hook selection rule.
+- [references/rules.md](references/rules.md): AD-RULE + global fact/modality rule + QA checklist + nguồn best-practice Google/Meta.

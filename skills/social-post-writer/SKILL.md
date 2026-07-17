@@ -30,3 +30,8 @@ Skill viết post social theo kênh — mỗi kênh có văn phong/độ dài/fo
 - Không viết CTA yêu cầu hành động mà brand chưa có (ví dụ CTA "mua ngay" khi chưa có link/sản phẩm cụ thể) — hỏi user nếu thiếu thông tin CTA.
 - Không tự đăng bài lên Facebook Page/LinkedIn Page/Instagram — skill này chỉ soạn nội dung, việc đăng do user hoặc quy trình publish riêng xử lý.
 - Hashtag phải liên quan trực tiếp nội dung, không nhồi hashtag không liên quan để tăng reach.
+
+## Tài liệu tham khảo (đọc trước khi viết)
+
+- `references/hooks.md` — Hook Library 20 pattern production-ready + `required_facts` từng hook + guardrail hook. **Hook là phần quan trọng nhất của post — luôn đề xuất NHIỀU option hook cho user test.** Chỉ dùng hook khi có đủ `required_facts` trong brief.
+- `references/examples.md` — bộ caption chuẩn theo kênh (Facebook / Instagram / Zalo). Học pattern, không copy brand voice nguồn.

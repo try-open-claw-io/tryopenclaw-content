@@ -18,6 +18,7 @@
 - [gitlab.md](gitlab.md): GitLab là nền tảng quản lý mã nguồn Git kèm CI/CD. Với kết nối này, Agent có thể xem merge request, mở MR mới, theo dõi review và tra pipeline cho bạn. *(popular)*
 - [gmail.md](gmail.md): Gmail là dịch vụ email của Google. Với kết nối này, Agent có thể đọc, gửi, sắp xếp và tìm kiếm thư trong hộp thư của bạn. *(popular)*
 - [google_analytics.md](google_analytics.md): Google Analytics là công cụ đo lường lưu lượng truy cập website. Với kết nối này, Agent có thể xem lượt truy cập, theo dõi nguồn traffic, tra số liệu chuyển đổ… *(popular)*
+- [google_chat.md](google_chat.md): Google Chat là ứng dụng chat nhóm trong Google Workspace. Với kết nối này, Agent có thể gửi tin nhắn lên không gian, tìm tin nhắn, tóm tắt hội thoại và trả lời…
 - [googlecalendar.md](googlecalendar.md): Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn. *(popular)*
 - [googledocs.md](googledocs.md): Google Docs là trình soạn thảo tài liệu của Google. Với kết nối này, Agent có thể mở, đọc, soạn nội dung mới và thêm comment vào tài liệu cho bạn. *(popular)*
 - [googledrive.md](googledrive.md): Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn. *(popular)*

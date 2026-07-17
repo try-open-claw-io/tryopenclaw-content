@@ -5,11 +5,11 @@
     "en": "Content Quality Review"
   },
   "description": {
-    "vi": "Review chất lượng nội dung, theo dõi performance sau khi đăng và gửi bản review ngắn qua Slack.",
-    "en": "Review content quality, track post-publish performance, and send a short review over Slack."
+    "vi": "Review chất lượng nội dung - soi hook, clarity, CTA, logic, tone trước khi đăng.",
+    "en": "Review content quality - hook, clarity, CTA, logic, and tone before publishing."
   },
   "category": "content-marketing",
-  "icon": "BadgeCheck",
+  "icon": "CircleCheck",
   "status": "Ready",
   "is_preinstalled": false,
   "is_published": false,

@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /long-form-content-writer ở đầu khung chat, rồi đưa brief/outline để viết full bài.
+**Cách kích hoạt:** Gõ /long-form-content-writer ở đầu khung chat, rồi cung cấp brief/outline của bài.
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có draft đầy đủ theo cấu trúc 7 phần, kèm phương án tiêu đề và ghi chú cần xác minh.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có bài dài hoàn chỉnh sẵn đăng (bản sạch, ghi chú nội bộ tách riêng).
 
 ## Hướng dẫn
 
-- /long-form-content-writer viết full draft bài dài theo outline đã có.
+- /long-form-content-writer viết full bài blog theo outline này.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /long-form-content-writer at the start of the chat, then provide the brief/outline to write the full piece.
+**How to trigger:** Type /long-form-content-writer at the start of the chat, then provide the brief/outline for the piece.
 
-**What you get:** Once the Agent finishes, you'll have a complete draft in the 7-part structure, with title variations and notes to verify.
+**What you get:** Once the Agent finishes, you'll have a complete, ready-to-post long-form draft (clean copy, internal notes kept separate).
 
 ## Tutorials
 
-- /long-form-content-writer write a full long-form draft from an existing outline.
+- /long-form-content-writer write the full blog post from this outline.

@@ -2,22 +2,22 @@
 
 ## Cách sử dụng
 
-**Cách kích hoạt:** Gõ /case-study-writer ở đầu khung chat, rồi cung cấp thông tin khách hàng, số liệu và quote thật.
+**Cách kích hoạt:** Gõ /case-study-writer ở đầu khung chat, rồi cung cấp số liệu và quote thật của khách hàng.
 
-**Kết quả:** Sau khi Agent làm xong, bạn sẽ có case study đủ 6 phần dựa hoàn toàn trên thông tin thật, kèm danh sách phần cần xác nhận trước khi publish.
+**Kết quả:** Sau khi Agent làm xong, bạn sẽ có case study theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả; số liệu/quote thiếu được đánh dấu, không bịa.
 
 ## Hướng dẫn
 
-- /case-study-writer viết case study khách hàng từ số liệu và quote thật.
+- /case-study-writer viết case study từ dữ liệu khách hàng này.
 
 <!-- en -->
 
 ## How to use
 
-**How to trigger:** Type /case-study-writer at the start of the chat, then provide the customer details, real numbers, and quotes.
+**How to trigger:** Type /case-study-writer at the start of the chat, then provide the customer's real data and quotes.
 
-**What you get:** Once the Agent finishes, you'll have a 6-part case study built entirely on real information, plus a list of items to confirm before publishing.
+**What you get:** Once the Agent finishes, you'll have a case study in a context-problem-solution-results structure; missing data/quotes are flagged, never made up.
 
 ## Tutorials
 
-- /case-study-writer write a customer case study from real data and quotes.
+- /case-study-writer write a case study from this customer data.

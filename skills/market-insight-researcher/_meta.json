@@ -1,0 +1,17 @@
+{
+  "slug": "market-insight-researcher",
+  "name": {
+    "vi": "Market Insight Researcher — research thị trường có nguồn",
+    "en": "Market Insight Researcher"
+  },
+  "description": {
+    "vi": "Tìm insight thị trường có nguồn (đối thủ, xu hướng, keyword) để viết content có căn cứ, kèm angle đề xuất. Mọi claim đều dẫn URL, không bịa số liệu.",
+    "en": "Finds sourced market insight (competitors, trends, keywords) so content is grounded, plus suggested angles. Every claim links a source URL, no fabricated stats."
+  },
+  "category": "content-marketing",
+  "icon": "TrendingUp",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}

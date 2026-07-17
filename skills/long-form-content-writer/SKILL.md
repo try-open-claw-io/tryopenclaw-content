@@ -3,7 +3,7 @@ name: long-form-content-writer
 description: Viết draft nội dung dài — blog post, article, guide, case study, thought leadership — dựa trên brief/outline đã có. Dùng khi user nói "Viết draft", "viết bài blog này", "viết full bài theo outline", "viết thought leadership về X" và tương đương tiếng Anh như "write the draft", "write this blog post", "draft the article", "write a thought leadership piece". Trigger khi cần viết nội dung dài hoàn chỉnh, không trigger cho social post ngắn (`social-post-writer`), email/newsletter (`newsletter-writer`), hay landing page (`landing-page-copywriter`).
 ---
 
-Skill viết draft dài — output BẮT BUỘC theo 7-part output contract của agent, không phải văn bản tự do.
+Skill viết draft dài. 7-part contract dưới đây là **khung nội bộ để tự soát**, KHÔNG phải định dạng dán thẳng cho merchant. Bản GIAO cuối cùng phải theo Clean Room của agent (AGENTS.md): bài đăng SẠCH (không nhãn biên tập, không URL nguồn, không cờ) + khối "Ghi chú nội bộ (không đăng)" tách riêng ở cuối.
 
 ## Input cần
 
@@ -11,17 +11,19 @@ Skill viết draft dài — output BẮT BUỘC theo 7-part output contract củ
 - Outline (nếu có, từ `blog-outline-generator`) — dùng làm khung, không bắt buộc nhưng khuyến nghị cho bài dài.
 - Data/số liệu/quote thật nếu bài cần trích dẫn — hỏi user cung cấp, không tự bịa.
 
-## Output — 7-part contract (BẮT BUỘC đúng thứ tự, đúng đủ 7 phần)
+## 7-part contract — KHUNG NỘI BỘ để tự soát (KHÔNG dán nhãn ra bản đăng)
 
-1. **Content objective** — mục tiêu bài viết đạt được.
-2. **Target audience** — persona/đối tượng đọc.
-3. **Main angle** — góc nhìn chính của bài.
-4. **Draft content** — nội dung đầy đủ, viết theo outline (nếu có), đúng heading structure, đủ độ dài yêu cầu.
-5. **CTA** — call-to-action cụ thể ở cuối bài (và giữa bài nếu outline có chỉ định).
-6. **Suggested variations** — 1-2 phương án khác cho tiêu đề hoặc hook mở bài, để user chọn.
-7. **Review notes** — điểm cần user xác minh trước khi publish (số liệu chưa verify, claim cần nguồn, đoạn cần feedback từ chuyên gia).
+Chạy đủ 7 mục trong đầu để không sót, nhưng **chỉ mục 4+5 là copy sẵn đăng**; các mục còn lại là ghi chú:
 
-Đây là contract cố định của agent — không bỏ phần nào, không đổi thứ tự, không gộp phần.
+1. **Content objective** *(nội bộ)* — mục tiêu bài viết đạt được.
+2. **Target audience** *(nội bộ)* — persona/đối tượng đọc.
+3. **Main angle** *(nội bộ)* — góc nhìn chính của bài.
+4. **Draft content** *(→ BẢN ĐĂNG)* — bài đầy đủ theo outline, đúng heading structure, đủ độ dài. CTA dệt tự nhiên vào bài, KHÔNG in chữ "CTA" làm nhãn.
+5. **CTA** *(→ nằm trong bản đăng)* — câu kêu gọi ở cuối bài (và giữa bài nếu outline chỉ định), viết như câu văn, không như nhãn.
+6. **Suggested variations** *(→ Ghi chú nội bộ)* — 1-2 phương án tiêu đề/hook để user chọn.
+7. **Review notes** *(→ Ghi chú nội bộ)* — điểm cần user xác minh trước khi publish (số liệu chưa verify, claim cần nguồn).
+
+**Cách GIAO cho merchant:** bản đăng (mục 4+5, sạch, bưng lên web được ngay) đứng trước; khối `Ghi chú nội bộ (không đăng):` gói mục 1/2/3/6/7 đứng sau. Không trộn nhãn nội bộ vào giữa copy. Không có bằng chứng thì KHÔNG viết claim tuyệt đối vào bản đăng — xem Claim validator (AGENTS.md).
 
 ## Cách hoạt động
 

@@ -1,6 +1,6 @@
 # Danh mục Connectors được hỗ trợ
 
-> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 49 connector.
+> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 50 connector.
 > Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).
 > Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).
 
@@ -89,6 +89,13 @@
 - **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @whatsapp xem tin nhắn khách gần đây."
 - **Gọi nhanh**: gõ `@whatsapp` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn WhatsApp → đăng nhập/cấp quyền.
+
+### Google Chat  (`google_chat`)
+
+- **Dùng để làm gì**: Google Chat là ứng dụng chat nhóm trong Google Workspace. Với kết nối này, Agent có thể gửi tin nhắn lên không gian, tìm tin nhắn, tóm tắt hội thoại và trả lời chủ đề cho bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @google_chat tóm tắt tin nhắn mới của mình."
+- **Gọi nhanh**: gõ `@google_chat` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Google Chat → đăng nhập/cấp quyền.
 
 ## Tài liệu
 
