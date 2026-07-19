@@ -1,0 +1,15 @@
+{
+  "$schema": "OpenClaw plugin manifest for the sample-chat-agent template.",
+  "id": "chat-tools",
+  "name": "Chat Tools",
+  "description": "Sample in-instance plugin for sample-chat-agent: a chat_ping agent tool + a /ping HTTP route returning static data, to prove the compile→build→install→restart pipeline.",
+  "version": "0.1.0",
+  "extensions": ["./index.ts"],
+  "install": {
+    "localPath": "extensions/chat-tools",
+    "defaultChoice": "local",
+    "minHostVersion": ">=2026.3.23"
+  },
+  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} },
+  "activation": { "onStartup": true }
+}

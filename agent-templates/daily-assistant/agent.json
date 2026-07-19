@@ -1,0 +1,106 @@
+{
+  "agentId": "daily-assistant",
+  "version": "1.0.0",
+  "name": "Daily Assistant",
+  "is_suggested": true,
+  "show_marketplace": false,
+  "description": "Trợ lý năng suất cá nhân — lập kế hoạch ngày, gom đầu việc, nhắc deadline, tổng kết ngày",
+  "icon_path": "images/daily-assistant.svg",
+  "priority": 1,
+  "core_files": [
+    "AGENTS.md",
+    "SOUL.md",
+    "USER.md"
+  ],
+  "tones": {
+    "selected": "friendly",
+    "list": [
+      "friendly",
+      "direct",
+      "professional"
+    ]
+  },
+  "models": {
+    "selected": "toc/auto",
+    "list": [
+      "toc/auto",
+      "claude-opus-4-7",
+      "claude-sonnet-4-6",
+      "claude-haiku-4-5"
+    ]
+  },
+  "skills": [
+    {
+      "id": "daily-planner",
+      "enabled": true
+    },
+    {
+      "id": "todo-organizer",
+      "enabled": true
+    },
+    {
+      "id": "meeting-notes",
+      "enabled": true
+    },
+    {
+      "id": "weekly-report",
+      "enabled": true
+    },
+    {
+      "id": "email-drafter",
+      "enabled": true
+    },
+    {
+      "id": "doc-summarizer",
+      "enabled": true
+    },
+    {
+      "id": "decision-helper",
+      "enabled": true
+    },
+    {
+      "id": "brainstorm-buddy",
+      "enabled": true
+    },
+    {
+      "id": "proofreader",
+      "enabled": true
+    }
+  ],
+  "tools": [],
+  "connectors": [
+    "gmail",
+    "googlecalendar",
+    "googlesheets"
+  ],
+  "cronJobs": [
+    {
+      "name": "daily-morning-plan",
+      "description": "Daily 08:00 (VN) — đề xuất kế hoạch ngày từ việc đang đọng + việc đến hạn",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Ho_Chi_Minh"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Sáng rồi. Đọc SOUL.md, gom việc đang đọng + việc đến hạn hôm nay, đề xuất kế hoạch ngày có ưu tiên + khung giờ. Sau đó dừng, chờ chủ phản hồi hoặc bỏ qua."
+      },
+      "enabled": true
+    },
+    {
+      "name": "daily-evening-recap",
+      "description": "Daily 18:00 (VN) — tổng kết ngày, đề xuất dời việc chưa xong",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * *",
+        "tz": "Asia/Ho_Chi_Minh"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Cuối ngày rồi. Đọc SOUL.md, liệt kê việc đã xong / còn đọng, đề xuất dời sang mai cho việc chưa làm. Sau đó dừng, chờ chủ xác nhận."
+      },
+      "enabled": true
+    }
+  ]
+}

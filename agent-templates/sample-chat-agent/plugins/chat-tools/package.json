@@ -1,0 +1,13 @@
+{
+  "name": "@tryopenclaw/chat-tools",
+  "version": "0.1.0",
+  "description": "Sample in-instance plugin for sample-chat-agent.",
+  "type": "module",
+  "private": true,
+  "peerDependencies": { "openclaw": ">=2026.3.23" },
+  "peerDependenciesMeta": { "openclaw": { "optional": true } },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "install": { "localPath": "extensions/chat-tools", "defaultChoice": "local", "minHostVersion": ">=2026.3.23" }
+  }
+}
