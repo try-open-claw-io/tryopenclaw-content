@@ -1,0 +1,16 @@
+{
+  "$schema": "OpenClaw plugin manifest for the bsv-onboarding template.",
+  "id": "chamcong-check",
+  "name": "Chấm công · Kiểm tra",
+  "description": "In-instance plugin for bsv-onboarding: chamcong_validate_rows — deterministic completeness/format/duplicate checks over worker-onboarding rows read from Google Sheets.",
+  "version": "0.1.0",
+  "extensions": ["./index.ts"],
+  "install": {
+    "localPath": "extensions/chamcong-check",
+    "defaultChoice": "local",
+    "minHostVersion": ">=2026.3.23"
+  },
+  "contracts": { "tools": ["chamcong_status", "chamcong_set_sheet", "chamcong_scan_new", "chamcong_check_range", "chamcong_check_cccd", "chamcong_check_phieu", "chamcong_list_places", "chamcong_list_departments", "chamcong_set_hanet_targets", "chamcong_register_faceid"] },
+  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} },
+  "activation": { "onStartup": true }
+}

@@ -1,0 +1,137 @@
+{
+  "agentId": "sample-agent",
+  "version": "1.0.0",
+  "name": "Sample Agent",
+  "is_suggested": false,
+  "show_marketplace": false,
+  "description": "Agent mẫu minh hoạ cấu trúc agent template — dùng skill riêng skill-agent-template (agent-only, không hiện ở kho skill công khai).",
+  "icon_path": "images/sample-agent.svg",
+  "priority": 1,
+  "core_files": [
+    "AGENTS.md",
+    "SOUL.md",
+    "USER.md"
+  ],
+  "tones": {
+    "selected": "friendly",
+    "list": [
+      "friendly",
+      "direct",
+      "professional"
+    ]
+  },
+  "models": {
+    "selected": "toc/auto",
+    "list": [
+      "toc/auto",
+      "claude-opus-4-7",
+      "claude-sonnet-4-6",
+      "claude-haiku-4-5"
+    ]
+  },
+  "skills": [
+    {
+      "id": "skill-agent-template",
+      "enabled": true,
+      "description_vi": "Mô tả của skill",
+      "description_en": "Description of skill"
+    }
+  ],
+  "connectors": [
+    "googledocs",
+    "googledrive",
+    "googlesheets",
+    "googlecalendar",
+    "notion",
+    "google_analytics",
+    "facebook",
+    "linkedin",
+    "slack"
+  ],
+  "tools": [],
+  "cronJobs": [],
+  "marketplace": {
+    "category": "REQUIRED enum: Revenue|Operations|Research|Marketing|Engineering|Finance|People|Productivity|Data|Legal|Design|Knowledge|Other",
+    "locales": {
+      "vi": {
+        "displayName": "REQUIRED: tên hiển thị (vi)",
+        "description": "REQUIRED: mô tả ngắn (vi)",
+        "maker": {
+          "name": "REQUIRED: tên nhà phát triển (vi)",
+          "field": "Optional: lĩnh vực",
+          "color": "#fd5e64",
+          "quote": "Optional: trích dẫn của maker",
+          "creds": [
+            "Optional: chứng chỉ / kinh nghiệm"
+          ],
+          "socials": [
+            {
+              "type": "linkedin",
+              "url": "https://..."
+            }
+          ]
+        },
+        "features": [
+          [
+            "pencil",
+            "Optional [iconToken, text]. iconToken must be a CWI name (see field-reference.md Icons) or an emoji — an unknown name renders blank."
+          ]
+        ],
+        "examples": [
+          "Đoạn text mà người dùng có thể input vào agent"
+        ],
+        "reviews": [
+          {
+            "stars": 5,
+            "text": "Optional review",
+            "by": "Tên — vai trò"
+          }
+        ]
+      },
+      "en": {
+        "displayName": "REQUIRED: display name (en)",
+        "description": "REQUIRED: short description (en)",
+        "maker": {
+          "name": "REQUIRED: maker name (en)",
+          "field": "Optional: field",
+          "color": "#fd5e64",
+          "quote": "Optional: maker quote",
+          "creds": [
+            "Optional: credential / experience"
+          ],
+          "socials": [
+            {
+              "type": "linkedin",
+              "url": "https://..."
+            }
+          ]
+        },
+        "features": [
+          [
+            "pencil",
+            "Optional: [icon, feature text]"
+          ]
+        ],
+        "examples": [
+          "Đoạn text mà người dùng có thể input vào agent"
+        ],
+        "reviews": [
+          {
+            "stars": 5,
+            "text": "Optional review",
+            "by": "Name — role"
+          }
+        ]
+      }
+    },
+    "assets": {
+      "_comment": "Paths are bundle-relative; ext png/jpg/jpeg/webp. Filename is cosmetic (stager re-encodes to webp + renames). Encoding dimensions is an authoring aid. Sizes: avatar→76x76 ≤500KB, icon native ≤500KB, thumb→w400 ≤1MB, screenshots ≤1MB each (≤5), heroBg not size-checked.",
+      "avatar": "Optional path, square: images/avatar-76x76.png",
+      "heroBg": "REQUIRED path, wide banner: images/hero-bg-1600x480.png",
+      "thumb": "REQUIRED path, landscape: images/thumb-400x240.png",
+      "screenshots": [
+        "REQUIRED ≥1: images/screenshot-1-1067x800.png"
+      ]
+    }
+  }
+}

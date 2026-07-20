@@ -1,0 +1,20 @@
+{
+  "agentId": "sample-chat-agent",
+  "version": "1.0.0",
+  "name": "Sample Chat Agent",
+  "is_suggested": false,
+  "show_marketplace": false,
+  "description": "Agent chat mẫu đầy đủ — minh hoạ template có plugin (chat-tools) cài qua đường SSH-dev lên container staging.",
+  "icon_path": null,
+  "core_files": ["AGENTS.md", "SOUL.md", "USER.md"],
+  "tones": { "selected": "friendly", "list": ["friendly"] },
+  "models": { "selected": "toc/auto", "list": ["toc/auto"] },
+  "skills": [],
+  "connectors": [],
+  "tools": [],
+  "cronJobs": [],
+  "plugins": [
+    { "id": "chat-tools", "path": "plugins/chat-tools", "enabled": true, "config": {} }
+  ],
+  "openclawOverrides": {}
+}

@@ -1,0 +1,36 @@
+{
+  "agentId": "bsv-onboarding",
+  "version": "1.0.0",
+  "name": "BSV · Kiểm tra tiếp nhận công nhân",
+  "is_suggested": false,
+  "show_marketplace": false,
+  "description": "Agent kiểm tra chất lượng dữ liệu tiếp nhận công nhân mới (Bông Sen Vàng): quét Google Sheet, validate (đủ/đúng/trùng) + đối chiếu ảnh CCCD, ghi kết quả vào cột riêng, và báo cáo tóm tắt (qua Zalo).",
+  "icon_path": null,
+  "emoji": "📋",
+  "core_files": ["AGENTS.md", "SOUL.md", "USER.md", "BOOTSTRAP.md"],
+  "tones": { "selected": "professional", "list": ["professional"] },
+  "models": { "selected": "custom-merido/merido/fast", "list": ["custom-merido/merido/fast"] },
+  "skills": [],
+  "connectors": [
+    { "id": "googlesheets", "enabled": true },
+    { "id": "googledrive", "enabled": true }
+  ],
+  "tools": [],
+  "cronJobs": [
+    {
+      "name": "daily-scan-new",
+      "description": "Mỗi sáng: quét công nhân chưa xác nhận, ghi kết quả + báo cáo tóm tắt.",
+      "schedule": { "kind": "cron", "expr": "5 8 * * *", "tz": "Asia/Ho_Chi_Minh" },
+      "payload": { "kind": "agentTurn", "message": "Chạy chamcong_scan_new để kiểm tra các công nhân chưa xác nhận, ghi kết quả và trả về báo cáo tóm tắt." },
+      "enabled": true
+    }
+  ],
+  "plugins": [
+    { "id": "chamcong-check", "path": "plugins/chamcong-check", "enabled": true, "config": {} }
+  ],
+  "openclawOverrides": {
+    "bindings": [
+      { "type": "route", "agentId": "bsv-onboarding", "match": { "channel": "zalo" } }
+    ]
+  }
+}

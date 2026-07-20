@@ -1,0 +1,29 @@
+{
+  "name": "@tryopenclaw/chamcong-check",
+  "version": "0.1.0",
+  "description": "In-instance validation plugin for the bsv-onboarding agent.",
+  "type": "module",
+  "private": true,
+  "peerDependencies": {
+    "openclaw": ">=2026.3.23"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "install": {
+      "localPath": "extensions/chamcong-check",
+      "defaultChoice": "local",
+      "minHostVersion": ">=2026.3.23"
+    }
+  },
+  "dependencies": {
+    "mupdf": "^1.28.0"
+  },
+  "devDependencies": {
+    "jimp": "^1.6.1"
+  }
+}

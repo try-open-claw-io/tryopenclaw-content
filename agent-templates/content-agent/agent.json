@@ -1,0 +1,223 @@
+{
+  "agentId": "content-agent",
+  "version": "2.0.0",
+  "name": "Content Agent",
+  "is_suggested": false,
+  "show_marketplace": false,
+  "description": "Người viết content cho marketing của bạn — blog, social, email, landing page, case study, newsletter. Nói ý tưởng là có bài: viết đúng giọng thương hiệu, đọc tự nhiên như người thật, không ai nhận ra là AI.",
+  "icon_path": "images/icon.png",
+  "priority": 10,
+  "core_files": [
+    "AGENTS.md",
+    "SOUL.md",
+    "USER.md",
+    "MEMORY.md",
+    "BOOTSTRAP.md"
+  ],
+  "tones": {
+    "selected": "professional",
+    "list": [
+      "friendly",
+      "professional",
+      "casual",
+      "concise",
+      "creative",
+      "expert"
+    ]
+  },
+  "models": {
+    "selected": "toc/auto",
+    "list": [
+      "toc/auto",
+      "openai/gpt-5.5",
+      "claude-opus-4-7",
+      "claude-sonnet-4-6",
+      "claude-haiku-4-5"
+    ]
+  },
+  "skills": [
+    {
+      "id": "content-idea-generator",
+      "enabled": true,
+      "description_vi": "Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.",
+      "description_en": "Generate grounded new content ideas based on personas, campaigns, and keywords."
+    },
+    {
+      "id": "content-brief-builder",
+      "enabled": true,
+      "description_vi": "Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.",
+      "description_en": "Turn a chosen idea into a complete content brief with objective, audience, angle, key message, and CTA."
+    },
+    {
+      "id": "blog-outline-generator",
+      "enabled": true,
+      "description_vi": "Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.",
+      "description_en": "Expand a content brief into a detailed blog outline with title, hook, heading structure, and CTA placements."
+    },
+    {
+      "id": "long-form-content-writer",
+      "enabled": true,
+      "description_vi": "Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.",
+      "description_en": "Write long-form drafts such as blogs, articles, guides, or thought leadership from an existing brief/outline."
+    },
+    {
+      "id": "social-post-writer",
+      "enabled": true,
+      "description_vi": "Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.",
+      "description_en": "Write channel-specific captions for Facebook, LinkedIn, and Instagram with hashtags, CTA, and a visual brief."
+    },
+    {
+      "id": "content-repurposer",
+      "enabled": true,
+      "description_vi": "Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.",
+      "description_en": "Turn one source piece into multiple derivative formats like LinkedIn posts, emails, video scripts, and carousels."
+    },
+    {
+      "id": "brand-voice-editor",
+      "enabled": true,
+      "description_vi": "Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.",
+      "description_en": "Edit existing content to match a defined brand voice across tone, length, phrasing, claims, and CTA."
+    },
+    {
+      "id": "content-quality-review",
+      "enabled": true,
+      "description_vi": "Review chất lượng nội dung — soi hook, clarity, CTA, logic, tone trước khi đăng.",
+      "description_en": "Review content quality — hook, clarity, CTA, logic, and tone before publishing."
+    },
+    {
+      "id": "case-study-writer",
+      "enabled": true,
+      "description_vi": "Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.",
+      "description_en": "Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure."
+    },
+    {
+      "id": "landing-page-copywriter",
+      "enabled": true,
+      "description_vi": "Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.",
+      "description_en": "Write conversion-focused landing page copy with headline, benefit bullets, social proof, and a clear CTA."
+    },
+    {
+      "id": "newsletter-writer",
+      "enabled": true,
+      "description_vi": "Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.",
+      "description_en": "Write short, scannable newsletter/email content with subject line, preview text, and a clear CTA."
+    },
+    {
+      "id": "humanizer",
+      "enabled": true,
+      "description_vi": "Biên tập bước cuối để bỏ dấu vết văn AI và làm nội dung đọc tự nhiên như người viết. Không thêm số liệu hay quote bịa.",
+      "description_en": "Final editing pass that removes AI-writing tells and makes content read naturally, like a person wrote it. Never adds fabricated facts or quotes."
+    }
+  ],
+  "connectors": [
+    "googledocs",
+    "googledrive"
+  ],
+  "starters": [
+    {
+      "label": "Viết thử ngay một bài",
+      "message": "Viết giúp tôi một bài [blog / caption / email / landing] về chủ đề: "
+    },
+    {
+      "label": "Giới thiệu sản phẩm/dịch vụ",
+      "message": "Sản phẩm/dịch vụ chính của tôi là: "
+    },
+    {
+      "label": "Mô tả khách hàng mục tiêu",
+      "message": "Khách hàng mục tiêu của tôi (họ là ai, đang gặp khó khăn gì): "
+    },
+    {
+      "label": "Thiết lập giọng thương hiệu",
+      "message": "Giọng thương hiệu tôi muốn (chuyên nghiệp / thân thiện / cao cấp / trực diện) — kèm link brand guideline hoặc ví dụ bài cũ nếu có: "
+    }
+  ],
+  "tools": [],
+  "cronJobs": [],
+  "marketplace": {
+    "category": "Marketing",
+    "locales": {
+      "vi": {
+        "displayName": "Content Agent — viết nội dung như người",
+        "description": "Trợ lý viết mọi thứ nội dung cho marketing của bạn — bài blog, post mạng xã hội, email, landing page, case study, newsletter. Giữ đúng giọng thương hiệu, đọc tự nhiên như chính bạn viết, và chỉ dùng thông tin bạn đưa — không tự bịa số liệu hay lời khen."
+      },
+      "features": [
+        [
+          "pencil",
+          "Viết mọi loại nội dung bạn cần: blog, post, email, landing page, case study, newsletter"
+        ],
+        [
+          "sparkle",
+          "Bài đọc tự nhiên như bạn tự viết — không sượng, không ai nhận ra là AI"
+        ],
+        [
+          "share",
+          "Mỗi kênh một kiểu: post Facebook, LinkedIn, Instagram viết riêng cho hợp"
+        ],
+        [
+          "refresh",
+          "Một bài viết ra thành nhiều kiểu đăng khác nhau, khỏi viết lại từ đầu"
+        ],
+        [
+          "shield",
+          "Chỉ nói điều có thật — không tự bịa số liệu hay trích dẫn, tránh rủi ro cho bạn"
+        ],
+        [
+          "doc",
+          "Làm việc thẳng trên Google Docs / Drive — nội dung nằm sẵn nơi bạn cần"
+        ]
+      ],
+      "examples": [
+        "Viết 3 caption Facebook giới thiệu combo dưỡng da mùa hè, giọng thân thiện",
+        "Viết bài blog 1000 từ về lợi ích của [sản phẩm], chuẩn SEO",
+        "Biến bài blog này thành 5 post LinkedIn và 1 email",
+        "Viết lại đoạn này cho bớt giống AI, giữ nguyên ý",
+        "Viết copy landing page cho chương trình ra mắt [sản phẩm]"
+      ],
+      "reviews": []
+    },
+    "en": {
+      "displayName": "Content Agent — writes like a human",
+      "description": "A writer for everything your marketing needs — blog posts, social posts, emails, landing pages, case studies, newsletters. It keeps your brand voice, reads like you wrote it yourself, and only uses what you give it — it never makes up numbers or quotes.",
+      "features": [
+        [
+          "pencil",
+          "Writes every kind of content you need: blogs, posts, emails, landing pages, case studies, newsletters"
+        ],
+        [
+          "sparkle",
+          "Reads like you wrote it yourself — natural, not stiff, and no one can tell it's AI"
+        ],
+        [
+          "share",
+          "Each channel done right: Facebook, LinkedIn, and Instagram posts written to fit"
+        ],
+        [
+          "refresh",
+          "Turn one piece into many posts — no rewriting from scratch"
+        ],
+        [
+          "shield",
+          "Only says what's true — never invents numbers or quotes, so you stay safe"
+        ],
+        [
+          "doc",
+          "Works right in Google Docs / Drive — your content lands where you need it"
+        ]
+      ],
+      "examples": [
+        "Write 3 Facebook captions for a summer skincare bundle, friendly tone",
+        "Write a 1000-word blog post on the benefits of [product], SEO-ready",
+        "Turn this blog post into 5 LinkedIn posts and 1 email",
+        "Rewrite this so it sounds less like AI, keep the meaning",
+        "Write landing page copy for our [product] launch"
+      ],
+      "reviews": []
+    }
+  },
+  "assets": {
+    "avatar": "images/avatar.png",
+    "heroBg": "images/heroimage.png",
+    "thumb": "images/thubnail.png",
+    "screenshots": []
+  }
+}

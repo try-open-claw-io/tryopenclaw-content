@@ -1,0 +1,155 @@
+{
+  "agentId": "merchant-content-agent",
+  "version": "3.1.0",
+  "is_suggested": true,
+  "show_marketplace": true,
+  "name": "Merchant Content Agent",
+  "description": "Content creator riêng cho shop của bạn. Đưa một link sản phẩm hoặc một ý tưởng, nó tự tìm hiểu rồi viết bài đúng giọng thương hiệu, sẵn đăng: mô tả sản phẩm, social, blog, email, landing. Càng dùng càng nhớ giọng của bạn.",
+  "icon_path": "images/icon.png",
+  "priority": 1,
+  "core_files": [
+    "AGENTS.md",
+    "SOUL.md",
+    "USER.md",
+    "MEMORY.md",
+    "BOOTSTRAP.md"
+  ],
+  "tones": {
+    "selected": "friendly",
+    "list": ["friendly", "professional", "casual", "concise", "creative", "expert"]
+  },
+  "models": {
+    "selected": "toc/auto",
+    "list": ["toc/auto", "claude-opus-4-7", "claude-sonnet-4-6", "claude-haiku-4-5"]
+  },
+  "skills": [
+    { "id": "content-idea-generator", "enabled": true, "description_vi": "Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.", "description_en": "Generate grounded new content ideas based on personas, campaigns, and keywords." },
+    { "id": "content-brief-builder", "enabled": true, "description_vi": "Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.", "description_en": "Turn a chosen idea into a complete content brief with objective, audience, angle, key message, and CTA." },
+    { "id": "blog-outline-generator", "enabled": true, "description_vi": "Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.", "description_en": "Expand a content brief into a detailed blog outline with title, hook, heading structure, and CTA placements." },
+    { "id": "long-form-content-writer", "enabled": true, "description_vi": "Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.", "description_en": "Write long-form drafts such as blogs, articles, guides, or thought leadership from an existing brief/outline." },
+    { "id": "social-post-writer", "enabled": true, "description_vi": "Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.", "description_en": "Write channel-specific captions for Facebook, LinkedIn, and Instagram with hashtags, CTA, and a visual brief." },
+    { "id": "content-repurposer", "enabled": true, "description_vi": "Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.", "description_en": "Turn one source piece into multiple derivative formats like LinkedIn posts, emails, video scripts, and carousels." },
+    { "id": "brand-voice-editor", "enabled": true, "description_vi": "Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.", "description_en": "Edit existing content to match a defined brand voice across tone, length, phrasing, claims, and CTA." },
+    { "id": "content-quality-review", "enabled": true, "description_vi": "Review chất lượng nội dung - soi hook, clarity, CTA, logic, tone trước khi đăng.", "description_en": "Review content quality - hook, clarity, CTA, logic, and tone before publishing." },
+    { "id": "case-study-writer", "enabled": true, "description_vi": "Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.", "description_en": "Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure." },
+    { "id": "landing-page-copywriter", "enabled": true, "description_vi": "Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.", "description_en": "Write conversion-focused landing page copy with headline, benefit bullets, social proof, and a clear CTA." },
+    { "id": "newsletter-writer", "enabled": true, "description_vi": "Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.", "description_en": "Write short, scannable newsletter/email content with subject line, preview text, and a clear CTA." },
+    { "id": "humanizer", "enabled": true, "description_vi": "Biên tập bước cuối để bỏ dấu vết văn AI và làm nội dung đọc tự nhiên như người viết. Không thêm số liệu hay quote bịa.", "description_en": "Final editing pass that removes AI-writing tells and makes content read naturally, like a person wrote it. Never adds fabricated facts or quotes." },
+    { "id": "pdp-analyzer", "enabled": true, "description_vi": "Đọc link trang sản phẩm (PDP) và trích facts, USP, đối tượng để làm nguyên liệu viết. Thiếu thì hỏi, không bịa.", "description_en": "Read a product page (PDP) link and extract facts, USP, and audience as writing material. Asks when missing, never fabricates." },
+    { "id": "market-insight-researcher", "enabled": true, "description_vi": "Tra web tìm đối thủ, xu hướng, keyword để tìm angle và gap nội dung, luôn kèm nguồn. Không bịa số liệu.", "description_en": "Search the web for competitors, trends, and keywords to find content angles and gaps, always with sources. Never fabricates numbers." },
+    { "id": "brief-from-input", "enabled": true, "description_vi": "Biến input tối giản (một link hoặc ý tưởng thô) thành content brief làm việc, suy từ dữ liệu có và chỉ hỏi phần thiếu.", "description_en": "Turn minimal input (a link or a rough idea) into a working content brief, inferring from what's given and asking only what's missing." },
+    { "id": "product-description-writer", "enabled": true, "description_vi": "Viết mô tả sản phẩm e-commerce bán được (feature to benefit, scannable, SEO-aware, CTA), đúng giọng, không bịa thông số.", "description_en": "Write conversion-focused e-commerce product descriptions (feature to benefit, scannable, SEO-aware, CTA), on brand, no fabricated specs." },
+    { "id": "content-batch-generator", "enabled": true, "description_vi": "Sinh loạt bài/content calendar đa dạng: phân tích mục tiêu cả calendar rồi phân bổ angle/framework/hook khác nhau cho từng bài.", "description_en": "Generate a diverse content calendar/batch: analyze the whole-calendar goal, then assign varied angle/framework/hook per piece." },
+    { "id": "style-memory-manager", "enabled": true, "description_vi": "Học giọng chủ shop: diff bản merchant tự sửa với bản agent, rút preference và lưu vào memory để bài sau gần giọng hơn.", "description_en": "Learn the shop owner's voice: diff the merchant's edited version against the agent draft, extract preferences, and save them to memory." },
+    { "id": "ad-copy-writer", "enabled": true, "description_vi": "Viết ad copy chạy quảng cáo (Facebook/Instagram/Google): 3-5 bản theo angle khác nhau + block hook options để A/B test, headline + primary text + CTA, không bịa số/proof.", "description_en": "Write conversion-focused paid ad copy (Facebook/Instagram/Google): 3-5 angle variants + an A/B hook-options block, headline + primary text + CTA, no fabricated numbers/proof." }
+  ],
+  "connectors": ["googledocs", "googledrive", "googlesheets"],
+  "tools": [],
+  "marketplace": {
+    "category": "Marketing",
+    "locales": {
+      "vi": {
+        "displayName": "Content Agent - đội content riêng cho shop",
+        "description": "Như có một bạn content chuyên nghiệp riêng cho shop. Nó không viết đại như chatbot, mà làm đúng cách dân content nhà nghề vẫn làm: đưa một link sản phẩm hay vài dòng ý tưởng, agent tự lên mạng tìm hiểu sản phẩm, đối thủ và điều khách đang tìm, chọn góc tiếp cận và khung bài hợp mục tiêu, rồi mới viết để bán, gồm mô tả sản phẩm, bài social, blog, email, quảng cáo. Khác với chatbot thường, nó nhớ giọng và sản phẩm của shop nên bạn không phải nhập lại từ đầu mỗi lần, và không bịa số liệu hay review, thứ dễ làm khách khiếu nại hay bay tài khoản quảng cáo. Đỡ khoản tiền thuê người viết mà vẫn ra bài đều tay.",
+        "maker": {
+          "name": "Claw Expert",
+          "color": "#fd5e64",
+          "socials": [
+            {
+              "type": "linkedin",
+              "url": "https://www.linkedin.com/company/clawexperts/posts/?feedView=all"
+            }
+          ]
+        },
+        "features": [
+          [
+            "search",
+            "Tự lên mạng tìm hiểu sản phẩm, đối thủ và từ khoá khách đang tìm trước khi viết"
+          ],
+          [
+            "campaign",
+            "Viết để bán, không chỉ viết cho hay: mô tả sản phẩm, social, blog, email, quảng cáo"
+          ],
+          [
+            "refresh",
+            "Nhớ giọng và sản phẩm của shop, không bắt bạn nhập lại ngữ cảnh mỗi lần như chatbot thường"
+          ],
+          [
+            "shield",
+            "Không bịa số liệu, chứng nhận hay review, tránh khiếu nại và bay tài khoản quảng cáo"
+          ],
+          [
+            "calendar",
+            "Lên cả lịch nội dung nhiều bài để đăng đều tay, không bài nào na ná nhau"
+          ],
+          [
+            "card",
+            "Như có đội content riêng, đỡ khoản thuê freelancer hay agency mỗi tháng"
+          ]
+        ],
+        "examples": [
+          "Viết mô tả bán hàng cho sản phẩm từ link này: ...",
+          "Nghiên cứu đối thủ top Google rồi viết blog kéo khách cho mình",
+          "Lên lịch 6 bài social tuần này để đẩy sản phẩm ...",
+          "Bắt đầu onboarding, hỏi mình về shop rồi nhớ giọng cho các bài sau",
+          "Viết 3 mẫu quảng cáo Facebook cho sản phẩm ... để mình test"
+        ],
+        "reviews": []
+      },
+      "en": {
+        "displayName": "Content Agent - your shop's own content team",
+        "description": "Like having your own professional content writer for your shop. It doesn't just spit out text like a chatbot, it works the way a seasoned content pro does: give it a product link or a few lines of an idea, and it researches your product, competitors, and what buyers are searching for online, picks the right angle and structure for the goal, and only then writes to sell, including product descriptions, social posts, blogs, emails, ads. Unlike a regular chatbot, it remembers your voice and products so you never re-explain everything each time, and it never fabricates numbers or reviews, the kind of thing that triggers customer complaints or gets your ad account banned. You get a steady stream of content without paying a writer every month.",
+        "maker": {
+          "name": "Claw Expert",
+          "color": "#fd5e64",
+          "socials": [
+            {
+              "type": "linkedin",
+              "url": "https://www.linkedin.com/company/clawexperts/posts/?feedView=all"
+            }
+          ]
+        },
+        "features": [
+          [
+            "search",
+            "Researches your product, competitors, and what buyers search for online before writing"
+          ],
+          [
+            "campaign",
+            "Writes to sell, not just to sound nice: product descriptions, social, blogs, emails, ads"
+          ],
+          [
+            "refresh",
+            "Remembers your voice and products, so you never re-explain context like with a regular chatbot"
+          ],
+          [
+            "shield",
+            "Never fabricates numbers, certifications, or reviews, avoiding complaints and ad-account bans"
+          ],
+          [
+            "calendar",
+            "Plans whole content calendars so you post consistently, with no lookalike pieces"
+          ],
+          [
+            "card",
+            "Like having your own content team, without paying a freelancer or agency every month"
+          ]
+        ],
+        "examples": [
+          "Write a sales-ready description for the product at this link: ...",
+          "Research the top Google competitors and write a blog that pulls in customers",
+          "Plan 6 social posts this week to push product ...",
+          "Start onboarding, ask me about my shop, then remember my voice for later",
+          "Write 3 Facebook ad variants for product ... so I can test"
+        ],
+        "reviews": []
+      }
+    },
+    "assets": {
+      "avatar": "images/avatar.png",
+      "heroBg": "images/heroimage.png",
+      "thumb": "images/thubnail.png",
+      "screenshots": []
+    }
+  }
+}
