@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "Daily Assistant",
   "is_suggested": true,
-  "show_marketplace": true,
+  "show_marketplace": false,
   "description": "Trợ lý năng suất cá nhân — lập kế hoạch ngày, gom đầu việc, nhắc deadline, tổng kết ngày",
   "icon_path": "images/daily-assistant.svg",
   "priority": 1,
