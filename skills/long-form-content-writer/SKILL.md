@@ -5,6 +5,13 @@ description: Viết draft nội dung dài — blog post, article, guide, case st
 
 Skill viết draft dài. 7-part contract dưới đây là **khung nội bộ để tự soát**, KHÔNG phải định dạng dán thẳng cho merchant. Bản GIAO cuối cùng phải theo Clean Room của agent (AGENTS.md): bài đăng SẠCH (không nhãn biên tập, không URL nguồn, không cờ) + khối "Ghi chú nội bộ (không đăng)" tách riêng ở cuối.
 
+## Gate research — BẮT BUỘC (blog / bài website / SEO / bài từ link sản phẩm)
+Skill này CHỈ được viết bài full khi đã có **research package** (từ `market-insight-researcher`, theo HARD GATE blog trong AGENTS.md):
+- 1 nguồn chính chủ (PDP/merchant) + **2-3 nguồn organic ngoài (có URL thật)**
+- 1 outline tổng hợp từ các nguồn đó
+
+Nếu input CHƯA có research package → **DỪNG, KHÔNG draft full article.** Chuyển về `market-insight-researcher` chạy research trước, không tự viết từ trí nhớ training. Ngoại lệ DUY NHẤT: merchant nói rõ "viết không cần research" → khi đó viết nháp + disclaimer "chưa kiểm chứng" + placeholder `[cần số liệu/nguồn thật]` cho chỗ cần verify. Bài giao PHẢI kèm khối "Đã research" liệt kê việc đã làm (keyword đã search · nguồn + URL · ý top nguồn cover · giữ/bỏ/thêm theo USP).
+
 ## Input cần
 
 - Brief (mục tiêu, audience, angle, key message, CTA, format) — bắt buộc, đề xuất chạy `content-brief-builder` nếu chưa có.
@@ -35,6 +42,7 @@ Chạy đủ 7 mục trong đầu để không sót, nhưng **chỉ mục 4+5 l�
 
 ## Quy tắc cứng
 
+- **KHÔNG draft blog/SEO/web long-form khi thiếu research package** (xem "Gate research" trên) — thiếu nguồn ngoài + outline tổng hợp thì chuyển về `market-insight-researcher`, không tự viết từ trí nhớ. Thiếu khối "Đã research" = chưa được xuất bài full.
 - KHÔNG bịa số liệu, quote, tên khách hàng, kết quả case study. Nếu thiếu, để placeholder rõ ràng (ví dụ "[cần số liệu thật từ khách hàng]") và nêu trong Review notes.
 - KHÔNG publish trực tiếp lên WordPress — chỉ lưu draft, publish là hành động của user hoặc do skill/quy trình khác xử lý riêng.
 - KHÔNG bỏ qua phần nào trong 7-part contract dù bài ngắn hay dài.
