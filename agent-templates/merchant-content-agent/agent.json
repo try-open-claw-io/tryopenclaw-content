@@ -52,7 +52,7 @@
         "displayName": "Content Agent - đội content riêng cho shop",
         "description": "Như có một bạn content chuyên nghiệp riêng cho shop. Nó không viết đại như chatbot, mà làm đúng cách dân content nhà nghề vẫn làm: đưa một link sản phẩm hay vài dòng ý tưởng, agent tự lên mạng tìm hiểu sản phẩm, đối thủ và điều khách đang tìm, chọn góc tiếp cận và khung bài hợp mục tiêu, rồi mới viết để bán, gồm mô tả sản phẩm, bài social, blog, email, quảng cáo. Khác với chatbot thường, nó nhớ giọng và sản phẩm của shop nên bạn không phải nhập lại từ đầu mỗi lần, và không bịa số liệu hay review, thứ dễ làm khách khiếu nại hay bay tài khoản quảng cáo. Đỡ khoản tiền thuê người viết mà vẫn ra bài đều tay.",
         "maker": {
-          "name": "Claw Expert",
+          "name": "ClawExperts",
           "color": "#fd5e64",
           "socials": [
             {
@@ -100,7 +100,7 @@
         "displayName": "Content Agent - your shop's own content team",
         "description": "Like having your own professional content writer for your shop. It doesn't just spit out text like a chatbot, it works the way a seasoned content pro does: give it a product link or a few lines of an idea, and it researches your product, competitors, and what buyers are searching for online, picks the right angle and structure for the goal, and only then writes to sell, including product descriptions, social posts, blogs, emails, ads. Unlike a regular chatbot, it remembers your voice and products so you never re-explain everything each time, and it never fabricates numbers or reviews, the kind of thing that triggers customer complaints or gets your ad account banned. You get a steady stream of content without paying a writer every month.",
         "maker": {
-          "name": "Claw Expert",
+          "name": "ClawExperts",
           "color": "#fd5e64",
           "socials": [
             {
