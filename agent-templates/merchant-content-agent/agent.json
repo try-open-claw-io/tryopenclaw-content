@@ -1,6 +1,6 @@
 {
   "agentId": "merchant-content-agent",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "is_suggested": true,
   "show_marketplace": true,
   "name": "Merchant Content Agent",
@@ -43,7 +43,7 @@
     { "id": "style-memory-manager", "enabled": true, "description_vi": "Học giọng chủ shop: diff bản merchant tự sửa với bản agent, rút preference và lưu vào memory để bài sau gần giọng hơn.", "description_en": "Learn the shop owner's voice: diff the merchant's edited version against the agent draft, extract preferences, and save them to memory." },
     { "id": "ad-copy-writer", "enabled": true, "description_vi": "Viết ad copy chạy quảng cáo (Facebook/Instagram/Google): 3-5 bản theo angle khác nhau + block hook options để A/B test, headline + primary text + CTA, không bịa số/proof.", "description_en": "Write conversion-focused paid ad copy (Facebook/Instagram/Google): 3-5 angle variants + an A/B hook-options block, headline + primary text + CTA, no fabricated numbers/proof." }
   ],
-  "connectors": ["googledocs", "googledrive", "googlesheets"],
+  "connectors": ["googledocs", "googledrive", "googlesheets", "notion"],
   "tools": [],
   "suggested_prompts": [
     {
@@ -70,6 +70,11 @@
       "label": { "vi": "Onboarding — dạy agent giọng của shop", "en": "Onboard — teach the agent your shop's voice" },
       "message": { "vi": "Bắt đầu onboarding: hỏi mình về shop rồi nhớ giọng thương hiệu cho các bài sau nhé.", "en": "Start onboarding: ask me about my shop, then remember my brand voice for later posts." },
       "requires": { "skills": ["style-memory-manager"] }
+    },
+    {
+      "order": 5,
+      "label": { "vi": "🆕 Chip mới của v3.2 — xuất hiện sau khi Upgrade", "en": "🆕 New chip in v3.2 — appears after Upgrade" },
+      "message": { "vi": "Chip này chỉ có từ template v3.2.0 — thấy nó nghĩa là resync đã chạy đúng.", "en": "This chip only exists since template v3.2.0 — seeing it means resync worked." }
     },
     {
       "enabled": false,
