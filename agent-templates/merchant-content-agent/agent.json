@@ -79,13 +79,13 @@
     },
     {
       "placement": "followup",
-      "label": { "vi": "Chip follow-up thử nghiệm (v1 không render)", "en": "Follow-up test chip (not rendered in v1)" }
+      "label": { "vi": "Chip mang key placement cũ — key bị strip, chip vẫn hiện", "en": "Chip with retired placement key — stripped, still renders" }
     },
     {
-      "message": "Item lỗi: chỉ có message, không có label — normalize phải drop"
+      "message": "Chip chỉ có message (bare string) — hiện nguyên message này trên chip"
     },
     {
-      "message": { "vi": "Item lỗi: message đủ vi/en nhưng vẫn không có label — vẫn phải drop", "en": "Broken item: full vi/en message but still no label — must still be dropped" }
+      "message": { "vi": "Chip chỉ có message đủ vi/en — vẫn hiện, không cần label", "en": "Message-only chip with vi/en — renders fine without a label" }
     },
     {
       "icon": "sparkles",
