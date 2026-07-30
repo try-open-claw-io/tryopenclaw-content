@@ -1,6 +1,6 @@
 {
   "agentId": "merchant-content-agent",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "is_suggested": true,
   "show_marketplace": true,
   "name": "Merchant Content Agent",
@@ -75,6 +75,12 @@
       "order": 5,
       "label": { "vi": "🆕 Chip mới của v3.2 — xuất hiện sau khi Upgrade", "en": "🆕 New chip in v3.2 — appears after Upgrade" },
       "message": { "vi": "Chip này chỉ có từ template v3.2.0 — thấy nó nghĩa là resync đã chạy đúng.", "en": "This chip only exists since template v3.2.0 — seeing it means resync worked." }
+    },
+    {
+      "order": 6,
+      "label": { "vi": "⚡ Test force-kích skill: thời tiết (/weather)", "en": "⚡ Force-invoke test: weather (/weather)" },
+      "message": { "vi": "Thời tiết Hà Nội hôm nay thế nào?", "en": "What's the weather in Hanoi today?" },
+      "requires": { "skills": ["weather"] }
     },
     {
       "enabled": false,
