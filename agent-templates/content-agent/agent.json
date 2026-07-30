@@ -113,7 +113,7 @@
     "googledocs",
     "googledrive"
   ],
-  "starters": [
+  "suggested_prompts": [
     {
       "label": "Viết thử ngay một bài",
       "message": "Viết giúp tôi một bài [blog / caption / email / landing] về chủ đề: "

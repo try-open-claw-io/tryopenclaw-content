@@ -45,6 +45,33 @@
   ],
   "connectors": ["googledocs", "googledrive", "googlesheets"],
   "tools": [],
+  "suggested_prompts": [
+    {
+      "label": { "vi": "Viết mô tả bán hàng từ link sản phẩm", "en": "Write a sales-ready product description from a link" },
+      "message": { "vi": "Viết mô tả bán hàng cho sản phẩm từ link này: ", "en": "Write a sales-ready description for the product at this link: " },
+      "requires": { "skills": ["pdp-analyzer", "product-description-writer"] }
+    },
+    {
+      "label": { "vi": "Nghiên cứu đối thủ rồi viết blog kéo khách", "en": "Research competitors, then write a blog that pulls in customers" },
+      "message": { "vi": "Nghiên cứu đối thủ top Google về chủ đề này rồi viết blog kéo khách cho mình: ", "en": "Research the top Google competitors on this topic and write a blog that pulls in customers: " },
+      "requires": { "skills": ["market-insight-researcher", "long-form-content-writer"] }
+    },
+    {
+      "label": { "vi": "Lên lịch 6 bài social tuần này", "en": "Plan 6 social posts for this week" },
+      "message": { "vi": "Lên lịch 6 bài social tuần này để đẩy sản phẩm: ", "en": "Plan 6 social posts this week to push product: " },
+      "requires": { "skills": ["content-batch-generator", "social-post-writer"] }
+    },
+    {
+      "label": { "vi": "Onboarding — dạy agent giọng của shop", "en": "Onboard — teach the agent your shop's voice" },
+      "message": { "vi": "Bắt đầu onboarding: hỏi mình về shop rồi nhớ giọng thương hiệu cho các bài sau nhé.", "en": "Start onboarding: ask me about my shop, then remember my brand voice for later posts." },
+      "requires": { "skills": ["style-memory-manager"] }
+    },
+    {
+      "label": { "vi": "Viết 3 mẫu quảng cáo Facebook để A/B test", "en": "Write 3 Facebook ad variants to A/B test" },
+      "message": { "vi": "Viết 3 mẫu quảng cáo Facebook cho sản phẩm này để mình test: ", "en": "Write 3 Facebook ad variants for this product so I can test: " },
+      "requires": { "skills": ["ad-copy-writer"] }
+    }
+  ],
   "marketplace": {
     "category": "Marketing",
     "locales": {
