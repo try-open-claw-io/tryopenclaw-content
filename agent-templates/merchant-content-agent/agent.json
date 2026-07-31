@@ -1,6 +1,6 @@
 {
   "agentId": "merchant-content-agent",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "is_suggested": true,
   "show_marketplace": true,
   "name": "Merchant Content Agent",
@@ -73,8 +73,8 @@
     },
     {
       "order": 5,
-      "label": { "vi": "🆕 Chip mới của v3.2 — xuất hiện sau khi Upgrade", "en": "🆕 New chip in v3.2 — appears after Upgrade" },
-      "message": { "vi": "Chip này chỉ có từ template v3.2.0 — thấy nó nghĩa là resync đã chạy đúng.", "en": "This chip only exists since template v3.2.0 — seeing it means resync worked." }
+      "label": { "vi": "🎉 Chip của v3.3.0 — bạn vừa Upgrade thành công", "en": "🎉 v3.3.0 chip — your upgrade worked" },
+      "message": { "vi": "Chip này chỉ có từ template v3.3.0 — thấy nó nghĩa là đợt phát hành v3.3.0 đã lan tới agent của bạn.", "en": "This chip ships with template v3.3.0 — seeing it means the v3.3.0 release reached your agent." }
     },
     {
       "order": 6,
