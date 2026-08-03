@@ -47,60 +47,56 @@
   "tools": [],
   "suggested_prompts": [
     {
-      "id": "mo-ta-san-pham-tu-link",
+      "label": { "vi": "Agent này giúp được gì cho shop?", "en": "What can this agent do for my shop?" },
+      "message": { "vi": "Agent content này giúp được gì cho shop của mình? Kể vài việc cụ thể bạn làm tốt nhất.", "en": "What can this content agent do for my shop? Give me a few concrete things you do best." },
+      "send_behavior": "send",
       "order": 1,
-      "icon": "link",
-      "label": { "vi": "Viết mô tả bán hàng từ link sản phẩm", "en": "Write a sales-ready product description from a link" },
-      "message": { "vi": "Viết mô tả bán hàng cho sản phẩm từ link này: ", "en": "Write a sales-ready description for the product at this link: " },
-      "requires": { "skills": [{ "id": "pdp-analyzer" }, "product-description-writer"] }
+      "enabled": true,
+      "id": "agent-lam-duoc-gi"
     },
     {
+      "label": { "vi": "Mình làm việc với bạn thế nào?", "en": "How do we work together?" },
+      "message": { "vi": "Mình với bạn phối hợp thế nào để ra một bài? Mình cần đưa gì và bạn tự làm phần nào?", "en": "How do we work together to produce a piece? What do I provide and what do you handle?" },
+      "send_behavior": "send",
       "order": 2,
-      "label": { "vi": "Nghiên cứu đối thủ rồi viết blog kéo khách", "en": "Research competitors, then write a blog that pulls in customers" },
-      "message": { "vi": "Nghiên cứu đối thủ top Google về chủ đề này rồi viết blog kéo khách cho mình: ", "en": "Research the top Google competitors on this topic and write a blog that pulls in customers: " },
-      "requires": { "skills": ["market-insight-researcher", "long-form-content-writer"] }
+      "enabled": true,
+      "id": "cach-lam-viec"
     },
     {
+      "label": { "vi": "Viết mô tả bán hàng từ link SP", "en": "Write a selling description from a product link" },
+      "message": { "vi": "Viết mô tả bán hàng cho sản phẩm, đây là link: ", "en": "Write a sales-ready product description, here's the link: " },
+      "requires": { "skills": ["pdp-analyzer", "product-description-writer"] },
+      "send_behavior": "paste",
       "order": 3,
-      "label": "Lên lịch 6 bài social tuần này",
-      "message": "Lên lịch 6 bài social tuần này để đẩy sản phẩm: "
+      "enabled": true,
+      "id": "mo-ta-tu-link"
     },
     {
+      "label": { "vi": "Research đối thủ → viết blog", "en": "Research competitors, then write a blog" },
+      "message": { "vi": "Nghiên cứu đối thủ top Google rồi viết blog kéo khách cho mình, chủ đề: ", "en": "Research the top Google competitors then write a customer-pulling blog, topic: " },
+      "requires": { "skills": ["market-insight-researcher", "long-form-content-writer"] },
+      "send_behavior": "paste",
       "order": 4,
-      "label": { "vi": "Onboarding — dạy agent giọng của shop", "en": "Onboard — teach the agent your shop's voice" },
-      "message": { "vi": "Bắt đầu onboarding: hỏi mình về shop rồi nhớ giọng thương hiệu cho các bài sau nhé.", "en": "Start onboarding: ask me about my shop, then remember my brand voice for later posts." },
-      "requires": { "skills": ["style-memory-manager"] }
+      "enabled": true,
+      "id": "research-doi-thu-blog"
     },
     {
+      "label": { "vi": "3 mẫu quảng cáo Facebook để test", "en": "3 Facebook ad variants to test" },
+      "message": { "vi": "Viết 3 mẫu quảng cáo Facebook để mình A/B test, sản phẩm (link hoặc mô tả): ", "en": "Write 3 Facebook ad variants for me to A/B test, product (link or description): " },
+      "requires": { "skills": ["ad-copy-writer"] },
+      "send_behavior": "paste",
       "order": 5,
-      "label": { "vi": "🎉 Chip của v3.3.0 — bạn vừa Upgrade thành công", "en": "🎉 v3.3.0 chip — your upgrade worked" },
-      "message": { "vi": "Chip này chỉ có từ template v3.3.0 — thấy nó nghĩa là đợt phát hành v3.3.0 đã lan tới agent của bạn.", "en": "This chip ships with template v3.3.0 — seeing it means the v3.3.0 release reached your agent." }
+      "enabled": true,
+      "id": "ad-facebook-test"
     },
     {
+      "label": { "vi": "Lên lịch 6 bài social tuần này", "en": "Plan 6 social posts this week" },
+      "message": { "vi": "Lên lịch 6 bài social tuần này, mỗi bài một góc khác nhau, sản phẩm/chiến dịch: ", "en": "Plan 6 social posts this week, each a different angle, product/campaign: " },
+      "requires": { "skills": ["content-batch-generator", "social-post-writer"] },
+      "send_behavior": "paste",
       "order": 6,
-      "label": { "vi": "⚡ Test force-kích skill: thời tiết (/weather)", "en": "⚡ Force-invoke test: weather (/weather)" },
-      "message": { "vi": "Thời tiết Hà Nội hôm nay thế nào?", "en": "What's the weather in Hanoi today?" },
-      "requires": { "skills": ["weather"] }
-    },
-    {
-      "enabled": false,
-      "label": { "vi": "Viết 3 mẫu quảng cáo Facebook để A/B test", "en": "Write 3 Facebook ad variants to A/B test" },
-      "message": { "vi": "Viết 3 mẫu quảng cáo Facebook cho sản phẩm này để mình test: ", "en": "Write 3 Facebook ad variants for this product so I can test: " },
-      "requires": { "skills": ["ad-copy-writer"] }
-    },
-    {
-      "placement": "followup",
-      "label": { "vi": "Chip mang key placement cũ — key bị strip, chip vẫn hiện", "en": "Chip with retired placement key — stripped, still renders" }
-    },
-    {
-      "message": "Chip chỉ có message (bare string) — hiện nguyên message này trên chip"
-    },
-    {
-      "message": { "vi": "Chip chỉ có message đủ vi/en — vẫn hiện, không cần label", "en": "Message-only chip with vi/en — renders fine without a label" }
-    },
-    {
-      "icon": "sparkles",
-      "requires": { "skills": ["seo-audit"] }
+      "enabled": true,
+      "id": "lich-social-tuan"
     }
   ],
   "marketplace": {
