@@ -92,7 +92,7 @@
     {
       "label": { "vi": "Lên lịch 6 bài social tuần này", "en": "Plan 6 social posts this week" },
       "message": { "vi": "Lên lịch 6 bài social tuần này, mỗi bài một góc khác nhau, sản phẩm/chiến dịch: ", "en": "Plan 6 social posts this week, each a different angle, product/campaign: " },
-      "requires": { "skills": ["content-batch-generator", "social-post-writer"] },
+      "requires": { "skills": ["canvas", "social-post-writer"] },
       "send_behavior": "paste",
       "order": 6,
       "enabled": true,
