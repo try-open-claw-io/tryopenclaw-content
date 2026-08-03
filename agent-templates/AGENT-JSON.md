@@ -73,11 +73,12 @@ a failure. Unknown top-level fields are ignored; unknown keys INSIDE a
 
   // ═══ SUGGESTED PROMPTS — chips on the chat empty state ══════════════════
   "suggested_prompts": [
-    // Style 1 — minimal: message only (the chip shows this exact sentence;
-    // a bare string is treated as Vietnamese)
+    // Style 1 — minimal: message only (the chip shows this exact sentence and
+    // sends it on click; a bare string is treated as Vietnamese)
     { "message": "Tóm tắt phiên làm việc gần đây của tôi" },
     // Style 2 — full: message is the long starter prompt, label is the short
-    // text shown on the chip
+    // text shown on the chip. A fill-in prompt ("…: ") pairs with
+    // send_behavior "paste" so the user completes it before sending.
     {
       "label": {
         "vi": "Viết mô tả bán hàng từ link sản phẩm",
@@ -88,6 +89,8 @@ a failure. Unknown top-level fields are ignored; unknown keys INSIDE a
         "en": "Write a sales-ready description for the product at this link: ",
       },
       "requires": { "skills": ["pdp-analyzer"] },
+      "send_behavior": "paste", // optional — "send" (default) fires on click;
+      // "paste" drops the message into the composer instead
       "order": 1,
       "enabled": true,
       "id": "mo-ta-tu-link", // optional — auto-derived from label/message when omitted
@@ -167,9 +170,11 @@ a failure. Unknown top-level fields are ignored; unknown keys INSIDE a
 
 ### suggested_prompts (per-key detail of one chip)
 
-Shown on the **chat empty state** of an installed agent (max 6 chips). Clicking
-a chip = send `message` + force-invoke `requires.skills` (when the skill exists
-on the agent).
+Shown on the **chat empty state** of an installed agent (max 6 chips). Click
+behavior follows `send_behavior`: **`"send"`** (default) sends `message`
+immediately + force-invokes `requires.skills` (when the skill exists on the
+agent); **`"paste"`** drops `message` into the composer for the user to finish
+typing, with `requires.skills` pre-selected as pills the user can still untick.
 
 | Key               | Required        | Default         | What it does                                                                                                                                                                                                                                                     |
 | ----------------- | --------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -178,7 +183,8 @@ on the agent).
 | `id`              | —               | auto slugify    | Derived from `label ?? message` (vi first) + auto de-duplicated with `-2/-3`. Declare explicitly when you need a stable id                                                                                                                                          |
 | `enabled`         | —               | true            | `false` = kept in data but fully hidden (not rendered, its skills not installed)                                                                                                                                                                                    |
 | `order`           | —               | array order     | Ascending sort in the UI                                                                                                                                                                                                                                            |
-| `requires.skills` | —               | —               | `tryoc_skills` slugs. (1) At install: the skill is installed + enabled with the chip (unless the user unticked it in the wizard). (2) On click: FE prefixes `/slug` when the skill exists on the agent — missing skills are silently skipped. Accepts shorthand `["slug"]` and `[{"id": "slug"}]` |
+| `requires.skills` | —               | —               | `tryoc_skills` slugs. (1) At install: the skill is installed + enabled with the chip (unless the user unticked it in the wizard). (2) On click: FE prefixes `/slug` (send) or pre-selects the skill pills (paste) when the skill exists on the agent — missing skills are silently skipped. Accepts shorthand `["slug"]` and `[{"id": "slug"}]` |
+| `send_behavior`   | —               | `"send"`        | `"send"` = clicking the chip sends the message right away. `"paste"` = the message lands in the composer instead — for fill-in prompts ending "…: " the user completes before sending. Any other value is stripped at sync                                                                          |
 
 **Removed (stripped even if authored):** `icon`, `placement` (2026-07-30) ·
 `requires.tools`, `requires.connectors` (2026-07-31) · `starters` (legacy
