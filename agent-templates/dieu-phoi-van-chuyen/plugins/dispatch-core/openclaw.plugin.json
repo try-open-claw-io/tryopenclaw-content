@@ -1,0 +1,27 @@
+{
+  "$schema": "OpenClaw plugin manifest for the dieu-phoi-van-chuyen agent template.",
+  "id": "dispatch-core",
+  "name": "Điều phối · Lõi",
+  "description": "In-instance plugin for dieu-phoi-van-chuyen: deterministic driver scoring (5 weighted factors read from the customer's Cấu hình Agent tab), hard-constraint filtering, area widening, and read/write of the orders + drivers Google Sheet via the platform connector MCP. The LLM never computes scores and never marshals sheet matrices.",
+  "version": "0.1.0",
+  "extensions": ["./index.ts"],
+  "install": {
+    "localPath": "extensions/dispatch-core",
+    "defaultChoice": "local",
+    "minHostVersion": ">=2026.3.23"
+  },
+  "contracts": {
+    "tools": [
+      "dp_status",
+      "dp_set_sheet",
+      "dp_quet_don",
+      "dp_phan_cong",
+      "dp_ghi_nhan",
+      "dp_kiem_qua_han",
+      "dp_bao_cao_ngay",
+      "dp_ngoai_le"
+    ]
+  },
+  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} },
+  "activation": { "onStartup": true }
+}

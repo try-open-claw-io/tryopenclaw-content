@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Điều phối vận chuyển">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f2532"/>
+      <stop offset="1" stop-color="#12151c"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fd5e64"/>
+      <stop offset="1" stop-color="#ff9a5c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- tuyến đường: kho → điểm giao -->
+  <path d="M108 372 C 168 372, 176 268, 250 268 S 344 168, 404 168"
+        fill="none" stroke="url(#route)" stroke-width="18" stroke-linecap="round"
+        stroke-dasharray="4 34"/>
+
+  <!-- điểm kho -->
+  <circle cx="108" cy="372" r="30" fill="#1b202b" stroke="#fd5e64" stroke-width="14"/>
+
+  <!-- điểm giao: ghim -->
+  <path d="M404 108 c30 0 54 24 54 54 0 38-54 90-54 90s-54-52-54-90c0-30 24-54 54-54z"
+        fill="#fd5e64"/>
+  <circle cx="404" cy="162" r="19" fill="#12151c"/>
+
+  <!-- gói hàng đang di chuyển -->
+  <g transform="translate(250 268)">
+    <rect x="-46" y="-46" width="92" height="92" rx="16" fill="#e8eaed"/>
+    <path d="M-46 -8 H46" stroke="#12151c" stroke-width="12"/>
+    <path d="M0 -46 V46" stroke="#12151c" stroke-width="12"/>
+  </g>
+</svg>

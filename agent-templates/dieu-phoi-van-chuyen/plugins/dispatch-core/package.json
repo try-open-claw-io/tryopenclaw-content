@@ -1,0 +1,26 @@
+{
+  "name": "@tryopenclaw/dispatch-core",
+  "version": "0.1.0",
+  "description": "In-instance dispatch/scoring plugin for the dieu-phoi-van-chuyen agent.",
+  "type": "module",
+  "private": true,
+  "peerDependencies": {
+    "openclaw": ">=2026.3.23"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "install": {
+      "localPath": "extensions/dispatch-core",
+      "defaultChoice": "local",
+      "minHostVersion": ">=2026.3.23"
+    }
+  },
+  "scripts": {
+    "test": "bun test"
+  }
+}

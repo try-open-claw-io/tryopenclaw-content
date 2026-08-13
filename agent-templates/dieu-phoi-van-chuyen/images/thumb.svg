@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Điều phối vận chuyển">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#202634"/>
+      <stop offset="1" stop-color="#11141b"/>
+    </linearGradient>
+    <linearGradient id="tline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fd5e64"/>
+      <stop offset="1" stop-color="#ff9a5c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#tbg)"/>
+
+  <!-- lưới nhạt gợi bản đồ -->
+  <g stroke="#2b3242" stroke-width="1.5">
+    <path d="M0 120 H800 M0 240 H800 M0 360 H800"/>
+    <path d="M160 0 V480 M320 0 V480 M480 0 V480 M640 0 V480"/>
+  </g>
+
+  <!-- tuyến giao -->
+  <path d="M96 372 C 190 372, 210 264, 320 264 S 470 152, 600 140"
+        fill="none" stroke="url(#tline)" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <circle cx="96" cy="372" r="15" fill="#11141b" stroke="#fd5e64" stroke-width="7"/>
+  <path d="M600 100 c17 0 30 13 30 30 0 21-30 50-30 50s-30-29-30-50c0-17 13-30 30-30z" fill="#fd5e64"/>
+  <circle cx="600" cy="130" r="10" fill="#11141b"/>
+
+  <!-- thẻ tài xế được chọn -->
+  <g transform="translate(300 232)">
+    <rect x="0" y="0" width="264" height="64" rx="14" fill="#1b202b" stroke="#333c4d" stroke-width="1.5"/>
+    <circle cx="34" cy="32" r="16" fill="#fd5e64"/>
+    <rect x="60" y="17" width="120" height="10" rx="5" fill="#e8eaed"/>
+    <rect x="60" y="36" width="80" height="8" rx="4" fill="#79839a"/>
+    <rect x="204" y="22" width="44" height="20" rx="10" fill="#34d399" opacity="0.18"/>
+    <rect x="212" y="29" width="28" height="6" rx="3" fill="#34d399"/>
+  </g>
+
+  <text x="56" y="86" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#e8eaed">Điều phối vận chuyển</text>
+  <text x="56" y="126" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#8b93a7">Chọn tài xế theo quy tắc của bạn</text>
+</svg>

@@ -1,0 +1,213 @@
+{
+  "agentId": "dieu-phoi-van-chuyen",
+  "version": "0.1.0",
+  "name": "Điều phối vận chuyển",
+  "description": "Trợ lý điều phối giao hàng xe máy nội thành TP.HCM: đọc đơn và tài xế từ Google Sheet, chọn tài xế theo quy tắc của bạn, nổ đơn vào group Telegram, ghi nhận ảnh POD.",
+  "icon_path": "images/icon.svg",
+  "emoji": "🛵",
+  "is_suggested": true,
+  "show_marketplace": true,
+  "priority": 2,
+
+  "core_files": ["AGENTS.md", "SOUL.md", "USER.md", "BOOTSTRAP.md"],
+  "tones": { "selected": "professional", "list": ["professional"] },
+  "models": {
+    "selected": "toc/auto",
+    "list": ["toc/auto", "claude-sonnet-4-6", "claude-opus-4-7", "openai/gpt-5.6-sol"]
+  },
+  "skills": [],
+  "tools": [],
+  "connectors": ["googlesheets", "googledrive"],
+
+  "cronJobs": [
+    {
+      "name": "quet-don-moi",
+      "description": "Mỗi 5 phút trong giờ hành chính: quét đơn Chờ phân công, đề xuất tài xế, nổ đơn vào group tài xế.",
+      "schedule": { "kind": "cron", "expr": "*/5 7-17 * * *", "tz": "Asia/Ho_Chi_Minh" },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Gọi dp_quet_don để quét đơn Chờ phân công và đề xuất tài xế. Nếu không có đơn nào thì im lặng, KHÔNG gửi tin. Nếu có đơn, gửi bản tin phân công đã gom theo tài xế vào group tài xế bằng tool message."
+      },
+      "enabled": true
+    },
+    {
+      "name": "nhac-don-qua-han",
+      "description": "12:00 và 17:00: nhắc đơn sắp/đã quá hạn giao.",
+      "schedule": { "kind": "cron", "expr": "0 12,17 * * *", "tz": "Asia/Ho_Chi_Minh" },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Gọi dp_kiem_qua_han. Nếu có đơn quá hạn hoặc sắp quá hạn, gửi danh sách vào group điều phối (chỉ dùng Mã đơn, KHÔNG gửi số điện thoại khách — QT13). Không có gì thì im lặng."
+      },
+      "enabled": true
+    },
+    {
+      "name": "bao-cao-cuoi-ngay",
+      "description": "18:30: báo cáo cuối ngày + danh sách đơn còn thiếu ảnh POD / chứng từ tiền.",
+      "schedule": { "kind": "cron", "expr": "30 18 * * *", "tz": "Asia/Ho_Chi_Minh" },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Gọi dp_bao_cao_ngay rồi gửi nguyên báo cáo vào group điều phối bằng tool message."
+      },
+      "enabled": true
+    }
+  ],
+
+  "suggested_prompts": [
+    {
+      "id": "cau-hinh-sheet",
+      "label": {
+        "vi": "Kết nối Google Sheet điều phối",
+        "en": "Connect the dispatch Google Sheet"
+      },
+      "message": {
+        "vi": "Đây là link Google Sheet điều phối của tôi: ",
+        "en": "Here is the link to my dispatch Google Sheet: "
+      },
+      "send_behavior": "paste",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "quet-don",
+      "label": { "vi": "Quét đơn chờ phân công", "en": "Scan orders awaiting a driver" },
+      "message": {
+        "vi": "Quét các đơn đang Chờ phân công và đề xuất tài xế cho từng đơn.",
+        "en": "Scan the orders awaiting assignment and propose a driver for each one."
+      },
+      "send_behavior": "send",
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "id": "don-qua-han",
+      "label": { "vi": "Đơn nào sắp quá hạn?", "en": "Which orders are running late?" },
+      "message": {
+        "vi": "Liệt kê đơn đã quá hạn và sắp quá hạn giao, kèm tài xế đang giữ.",
+        "en": "List the overdue and soon-to-be-overdue orders with the driver holding each one."
+      },
+      "send_behavior": "send",
+      "order": 3,
+      "enabled": true
+    },
+    {
+      "id": "phan-cong-tay",
+      "label": { "vi": "Phân công một đơn cho tài xế", "en": "Assign one order to a driver" },
+      "message": {
+        "vi": "Phân công đơn này cho tài xế: ",
+        "en": "Assign this order to the following driver: "
+      },
+      "send_behavior": "paste",
+      "order": 4,
+      "enabled": true
+    },
+    {
+      "id": "bao-cao-ngay",
+      "label": { "vi": "Báo cáo cuối ngày", "en": "End-of-day report" },
+      "message": {
+        "vi": "Làm báo cáo điều phối cuối ngày: số đơn theo trạng thái, đơn thiếu ảnh POD, đơn COD thiếu chứng từ tiền.",
+        "en": "Produce the end-of-day dispatch report: orders by status, orders missing proof of delivery, COD orders missing cash proof."
+      },
+      "send_behavior": "send",
+      "order": 5,
+      "enabled": true
+    }
+  ],
+
+  "marketplace": {
+    "category": "Operations",
+    "locales": {
+      "vi": {
+        "displayName": "Điều phối vận chuyển — trợ lý cho tổ điều phối",
+        "tagline": "Chọn tài xế theo quy tắc của bạn, không theo cảm tính.",
+        "description": "Agent làm đúng một khâu: ĐIỀU PHỐI. Nó đọc đơn hàng và danh sách tài xế trong Google Sheet của bạn, lọc theo điều kiện cứng (đang trong ca, xe bình thường, còn chỗ, còn tải), chấm điểm chọn tài xế bằng 5 trọng số mà bạn tự đặt trong Sheet, rồi nổ đơn vào group Telegram của tổ. Tài xế nhắn lại kèm mã đơn để xác nhận và gửi ảnh giao hàng; agent ghi nhận vào Sheet.\n\nĐiểm khác biệt: mọi ngưỡng và trọng số nằm trong tab Cấu hình Agent của chính bạn — sửa một ô là đổi hành vi, không cần sửa prompt, không cần lập trình. Agent chỉ ĐỌC tab đó, không bao giờ tự nới trần tải trọng hay trần số đơn. Việc nào vượt quy tắc, agent dừng lại và chuyển cho điều phối viên kèm đề xuất.\n\nPhù hợp cho doanh nghiệp giao hàng nội thành bằng xe máy, chưa có ERP/TMS, đang điều phối bằng Google Sheet và Telegram.",
+        "maker": {
+          "name": "ClawExperts",
+          "field": "Vận hành & logistics",
+          "color": "#fd5e64",
+          "quote": "Điều phối viên giỏi không phải người nhớ hết, mà là người có quy tắc rõ ràng.",
+          "creds": ["Xây theo nghiệp vụ điều phối thực tế 24 quận/huyện TP.HCM"]
+        },
+        "features": [
+          ["sparkles", "Chấm điểm tài xế bằng công thức, không để AI đoán"],
+          ["settings", "Mọi ngưỡng nằm trong Google Sheet của bạn — sửa ô là đổi hành vi"],
+          ["shield", "Không tự nới quy tắc: vượt trần tải, quá số lần giao, ngoài phạm vi đều chuyển người"],
+          ["send", "Nổ đơn vào group Telegram, gom theo tài xế trong một tin"],
+          ["camera", "Chưa có ảnh giao hàng thì đơn không được tính là Đã giao"],
+          ["clock", "Tự nhắc đơn sắp quá hạn và báo cáo cuối ngày"]
+        ],
+        "best_for": [
+          ["truck", "Doanh nghiệp giao hàng nội thành bằng xe máy"],
+          ["users", "Tổ điều phối 1–3 người, 40–60 tài xế"],
+          ["sheet", "Đang chạy trên Google Sheet + Telegram, chưa có ERP/TMS"]
+        ],
+        "what_you_get": [
+          ["list", "Đề xuất tài xế cho từng đơn kèm lý do bằng tiếng Việt"],
+          ["message", "Bản tin phân công gửi thẳng group tài xế"],
+          ["alert", "Danh sách ngoại lệ cần người xử lý, kèm đề xuất"],
+          ["chart", "Báo cáo cuối ngày và danh sách đơn còn thiếu chứng từ"]
+        ],
+        "examples": [
+          "Quét các đơn đang Chờ phân công và đề xuất tài xế cho từng đơn.",
+          "Đơn nào sắp quá hạn giao? Ai đang giữ?",
+          "Phân công đơn DH-20260812-014 cho tài xế TX-021.",
+          "Làm báo cáo điều phối cuối ngày."
+        ],
+        "reviews": []
+      },
+      "en": {
+        "displayName": "Delivery Dispatch — an assistant for your dispatch desk",
+        "tagline": "Picks drivers by your rules, not by guesswork.",
+        "description": "This agent does exactly one job: DISPATCH. It reads your orders and driver roster from your own Google Sheet, filters on hard constraints (on shift, vehicle healthy, capacity and payload left), scores candidates using five weights that you set in the Sheet, then posts the assignment into your team's Telegram group. Drivers reply with the order code to confirm and send a delivery photo; the agent records it back into the Sheet.\n\nWhat makes it different: every threshold and weight lives in your own Cấu hình Agent tab — change one cell and the behaviour changes, with no prompt editing and no code. The agent only READS that tab; it can never raise its own payload or order-count ceiling. Anything that breaks a rule stops and goes to a human, with a proposal attached.\n\nBuilt for city delivery fleets on motorbikes that run on Google Sheets and Telegram rather than an ERP or TMS.",
+        "maker": {
+          "name": "ClawExperts",
+          "field": "Operations & logistics",
+          "color": "#fd5e64",
+          "quote": "A good dispatcher isn't the one who remembers everything — it's the one with clear rules.",
+          "creds": ["Modelled on real dispatch operations across 24 districts of Ho Chi Minh City"]
+        },
+        "features": [
+          ["sparkles", "Driver scoring by formula — the model never invents the numbers"],
+          ["settings", "Every threshold lives in your Google Sheet; edit a cell to change behaviour"],
+          ["shield", "Never bends its own rules: overweight, too many attempts, out of area all escalate"],
+          ["send", "Posts assignments to Telegram, grouped per driver in a single message"],
+          ["camera", "No delivery photo means the order is not marked delivered"],
+          ["clock", "Reminds you about orders running late and reports at end of day"]
+        ],
+        "best_for": [
+          ["truck", "City delivery businesses running motorbikes"],
+          ["users", "A dispatch desk of 1–3 people and 40–60 drivers"],
+          ["sheet", "Teams on Google Sheets and Telegram, with no ERP or TMS"]
+        ],
+        "what_you_get": [
+          ["list", "A driver recommendation per order with a plain-language reason"],
+          ["message", "An assignment bulletin posted straight to the driver group"],
+          ["alert", "A list of exceptions needing a human, each with a proposal"],
+          ["chart", "An end-of-day report plus the orders still missing paperwork"]
+        ],
+        "examples": [
+          "Scan the orders awaiting assignment and propose a driver for each one.",
+          "Which orders are about to miss their deadline, and who is holding them?",
+          "Assign order DH-20260812-014 to driver TX-021.",
+          "Produce the end-of-day dispatch report."
+        ],
+        "reviews": []
+      }
+    }
+  },
+
+  "assets": {
+    "avatar": "images/avatar.svg",
+    "heroBg": "images/hero-bg.svg",
+    "thumb": "images/thumb.svg",
+    "screenshots": ["images/screenshot-1.svg"]
+  },
+
+  "plugins": [
+    { "id": "dispatch-core", "path": "plugins/dispatch-core", "enabled": true, "config": {} }
+  ],
+  "openclawOverrides": {
+    "bindings": [
+      { "type": "route", "agentId": "dieu-phoi-van-chuyen", "match": { "channel": "telegram" } }
+    ]
+  }
+}

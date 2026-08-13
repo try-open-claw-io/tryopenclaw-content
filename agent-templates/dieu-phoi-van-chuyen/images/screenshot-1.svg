@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1067 800" width="1067" height="800" role="img" aria-label="Bản tin phân công trong group Telegram">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171b24"/>
+      <stop offset="1" stop-color="#0f1218"/>
+    </linearGradient>
+  </defs>
+  <rect width="1067" height="800" fill="url(#sbg)"/>
+
+  <!-- thanh tiêu đề group -->
+  <rect x="0" y="0" width="1067" height="72" fill="#1b202b"/>
+  <circle cx="44" cy="36" r="20" fill="#fd5e64"/>
+  <text x="76" y="32" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#e8eaed">Điều phối · Tài xế</text>
+  <text x="76" y="54" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#79839a">47 thành viên · bot đang hoạt động</text>
+
+  <!-- bong bóng tin của bot -->
+  <g transform="translate(40 108)">
+    <rect width="700" height="452" rx="18" fill="#1e2530" stroke="#2f3848"/>
+    <g font-family="Menlo, Consolas, monospace" font-size="17" fill="#e8eaed">
+      <text x="28" y="46" font-weight="700">📦 Phân công 5 đơn — 2026-08-12 08:15</text>
+
+      <text x="28" y="96" fill="#ffb3b6" font-weight="700">🛵 Cao Tuấn Bình (TX-001) — 2 đơn · 21,3 kg</text>
+      <text x="44" y="126" fill="#c9d0dc">• DH-20260812-004 · Quận 1 · hạn 11:00 · COD 1.617.000đ</text>
+      <text x="60" y="150" fill="#8b93a7">đúng địa bàn Quận 1 · còn 8/10 chỗ · cách 2,4 km</text>
+      <text x="44" y="180" fill="#c9d0dc">• DH-20260812-009 · Quận 3 · hạn 12:30</text>
+      <text x="60" y="204" fill="#8b93a7">địa bàn phụ Quận 3 · còn 8/10 chỗ · cách 3,1 km</text>
+
+      <text x="28" y="252" fill="#ffb3b6" font-weight="700">🛵 Trần Thanh Khoa (TX-002) — 3 đơn · 27,8 kg</text>
+      <text x="44" y="282" fill="#c9d0dc">• DH-20260812-011 · Phú Nhuận · còn 45 phút (10:30)</text>
+      <text x="60" y="306" fill="#8b93a7">gấp theo hạn giao · còn 9/12 chỗ · cách 1,8 km</text>
+      <text x="44" y="336" fill="#c9d0dc">• DH-20260812-013 · Quận 10 · hạn 13:00 · COD 549.000đ</text>
+      <text x="44" y="366" fill="#c9d0dc">• DH-20260812-018 · Quận 10 · hạn 14:00</text>
+
+      <text x="28" y="416" fill="#9aa3b6">👉 Tài xế xác nhận: reply vào tin này, nhắn kèm MÃ ĐƠN</text>
+    </g>
+  </g>
+
+  <!-- tin tài xế trả lời -->
+  <g transform="translate(470 584)">
+    <rect width="550" height="60" rx="18" fill="#2b3a2f" stroke="#3c5943"/>
+    <text x="26" y="26" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8fd6a6" font-weight="700">Cao Tuấn Bình</text>
+    <text x="26" y="48" font-family="Menlo, Consolas, monospace" font-size="15" fill="#dff3e6">OK DH-20260812-004, đang lấy hàng</text>
+  </g>
+
+  <!-- phản hồi của bot -->
+  <g transform="translate(40 668)">
+    <rect width="620" height="60" rx="18" fill="#1e2530" stroke="#2f3848"/>
+    <text x="26" y="38" font-family="Menlo, Consolas, monospace" font-size="16" fill="#c9d0dc">✅ Đơn DH-20260812-004: &quot;Đã phân công&quot; → &quot;Tài xế xác nhận&quot;.</text>
+  </g>
+
+  <!-- chú thích dưới -->
+  <text x="40" y="770" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#5f6878">Điểm chọn tài xế tính bằng công thức trong tab Cấu hình Agent của bạn — không phải AI đoán.</text>
+</svg>

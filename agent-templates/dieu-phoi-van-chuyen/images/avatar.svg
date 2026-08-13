@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 152" width="152" height="152" role="img" aria-label="ClawExperts">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fd5e64"/>
+      <stop offset="1" stop-color="#c9414a"/>
+    </linearGradient>
+  </defs>
+  <rect width="152" height="152" fill="url(#a)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round">
+    <path d="M48 104 C 48 74, 62 58, 76 58 S 104 74, 104 104"/>
+    <path d="M60 104 V 116"/>
+    <path d="M92 104 V 116"/>
+  </g>
+  <circle cx="76" cy="44" r="11" fill="#ffffff"/>
+</svg>
