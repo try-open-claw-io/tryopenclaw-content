@@ -1,6 +1,6 @@
 {
   "agentId": "dieu-phoi-van-chuyen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Điều phối vận chuyển",
   "description": "Trợ lý điều phối giao hàng xe máy nội thành TP.HCM: đọc đơn và tài xế từ Google Sheet, chọn tài xế theo quy tắc của bạn, nổ đơn vào group Telegram, ghi nhận ảnh POD.",
   "icon_path": "images/icon.svg",
@@ -9,7 +9,7 @@
   "show_marketplace": true,
   "priority": 2,
 
-  "core_files": ["AGENTS.md", "SOUL.md", "USER.md", "BOOTSTRAP.md"],
+  "core_files": ["AGENTS.md", "SOUL.md", "USER.md", "BOOTSTRAP.md", "MEMORY.md"],
   "tones": { "selected": "professional", "list": ["professional"] },
   "models": {
     "selected": "toc/auto",

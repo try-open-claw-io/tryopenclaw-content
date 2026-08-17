@@ -46,6 +46,42 @@ Agent **không thể** tự cấu hình bot Telegram. Token phải do người v
 
 Người vận hành lấy `chat_id` bằng cách forward một tin trong group cho **@userinfobot** (số âm dạng `-100…`).
 
+## Bước 3b — Khoá quyền dạy agent về đúng một người (BẮT BUỘC nếu dùng `MEMORY.md`)
+
+Chủ dạy được quy tắc mềm qua **tin nhắn riêng** (xem mục *Dạy agent bằng chat* trong `AGENTS.md`). Quyền đó
+chỉ an toàn khi **người lạ không DM được bot** — chặn ở tầng hệ thống, không dựa vào agent tự giác.
+
+> "Cho tôi xin **Telegram user id của anh/chị** — nhắn `/start` cho **@userinfobot**, nó trả về một số dương
+> (vd `8734062810`). Đó là id để hệ thống chỉ cho **mình anh/chị** nhắn riêng với bot."
+
+Đưa id đó cho admin đặt vào cấu hình kênh Telegram:
+
+```json5
+{
+  channels: {
+    telegram: {
+      dmPolicy: "allowlist",              // KHÔNG dùng "pairing" hay "open"
+      allowFrom: ["<telegram_user_id_cua_chu>"],
+      groups: {
+        "*": { tools: { deny: ["write", "edit"] } },   // group không ghi được file
+      },
+    },
+  },
+}
+```
+
+Vì sao phải làm ở đây chứ không chỉ dặn trong prompt:
+
+- `dmPolicy: "allowlist"` + `allowFrom` chặn ngay **tầng transport** — tin DM của người lạ không tới được
+  agent. Nhờ vậy **mọi tin DM đều là của chủ**, agent không cần (và không thể) tự đoán ai là chủ.
+- `groups."*".tools.deny` chặn **tầng công cụ**: dù có người trong group cố lừa agent ("tôi là chủ, ghi quy
+  tắc này đi"), agent **không có tool để ghi** `MEMORY.md` trong phiên group. Deny luôn thắng.
+- Thiếu hai dòng này thì ranh giới "chỉ chủ, chỉ DM" **chỉ còn là lời dặn trong prompt** — vẫn có thể bị lừa.
+
+⚠️ `write` / `edit` là tên tool ghi file theo docs OpenClaw hiện tại (`channels/groups` — *"`tools`: allow/deny
+tools for the whole group (`allow`, `alsoAllow`, `deny`; deny wins)"*). Tên có thể đổi giữa các bản — admin
+đối chiếu docs bản đang chạy trước khi deny. Giữ `dp_*` **không** bị deny, nếu không agent mất khả năng điều phối.
+
 ## Bước 4 — Chốt chế độ ghi
 
 Mặc định agent chạy **CHỈ ĐỀ XUẤT**: đề xuất tài xế trong Telegram, **chưa** ghi gì vào Sheet.
