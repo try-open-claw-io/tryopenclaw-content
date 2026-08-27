@@ -38,6 +38,14 @@ nối tài khoản), **không có** hướng dẫn cài đặt trong trang. Nế
 
 Nếu **chủ workspace** đã cài và kết nối extension, agent có thể **tự mở tab mới khi cần** (ví dụ để tra thông tin trên một trang web) mà không cần bạn tự tay chọn chia sẻ trước — chỉ khi chưa có tab nào được chia sẻ mới cần bước 3 ở trên.
 
+## Tool kỹ thuật — agent gọi gì để dùng tab đã chia sẻ
+
+Phần này dành cho **chính agent** (không phải nội dung giải thích cho user):
+
+- Dùng đúng bộ tool: `BROWSER_LIST_TABS` (liệt kê tab đã chia sẻ, lấy `tabId`) → `BROWSER_OPEN_TAB` (agent tự mở tab mới) / `BROWSER_NAVIGATE` / `BROWSER_CLICK` / `BROWSER_FILL` / `BROWSER_READ` / `BROWSER_SCREENSHOT` (thao tác theo `tabId`). Luôn gọi `BROWSER_LIST_TABS` trước để lấy `tabId` hợp lệ.
+- **KHÔNG** dùng tool `browser` chung (built-in của OpenClaw) với `profile="user"` để truy cập tab người dùng đã chia sẻ — tool đó cố gắn vào một Chrome desktop chạy cục bộ trên máy chủ backend, **không hề** kết nối với extension trình duyệt của ClawExpert, và sẽ luôn thất bại trên nền tảng này. Tool `browser` (không truyền `profile`, hoặc `profile="openclaw"`) chỉ là trình duyệt cô lập dùng để tra cứu vãng lai — không có đăng nhập, không có cookie, không liên quan gì tới tab người dùng.
+- `BROWSER_LIST_TABS` trả về rỗng nghĩa là user chưa chia sẻ tab nào — đừng âm thầm chuyển sang tool `browser` cô lập rồi báo như đã đọc được trang thật; hướng dẫn user theo phần "Chia sẻ một tab cho agent" ở trên rồi thử lại.
+
 ## Lưu ý cần thiết
 
 - Chỉ tab bạn **chủ động chọn workspace** mới lộ cho agent — extension không tự chia sẻ mọi tab đang mở.
