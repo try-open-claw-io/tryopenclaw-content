@@ -1,6 +1,6 @@
 # toc-guidelines — skill
 
-> Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy và chọn model AI — kèm cách thiết lập từng bước.
+> Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, chọn model AI — kèm cách thiết lập từng bước.
 
 ## Files
 - [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).

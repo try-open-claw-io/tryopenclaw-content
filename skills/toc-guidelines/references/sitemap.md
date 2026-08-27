@@ -13,7 +13,7 @@
 - **Trên channel** (Telegram/Zalo/Discord…): không có domain trình duyệt → **đừng gửi link**, chỉ chỉ
   đường trong app (mô tả menu).
 
-## Các trang (khớp 6 tính năng toc-guide)
+## Các trang (khớp 7 tính năng toc-guide)
 
 Connectors / Skills / AI Models nằm trong **Cài đặt** → dùng path `/{locale}/settings/<tab>` (tab id **số ít**).
 Channels / Scheduled Tasks / Use-cases / Agents là trang riêng.
@@ -23,6 +23,7 @@ Channels / Scheduled Tasks / Use-cases / Agents là trang riêng.
 | Kết nối app ngoài (Gmail/Slack/Notion…) | `/{locale}/settings/connector` |
 | Cài / quản lý Skills | `/{locale}/settings/skill` |
 | Chọn / đổi model AI | `/{locale}/settings/aimodel` |
+| Kết nối extension trình duyệt | `/{locale}/settings/extension` |
 | AI Credits (nạp/xem credit) | `/{locale}/settings/credits` |
 | Kênh chat (Telegram/Zalo/Discord…) | `/{locale}/channels` |
 | Lịch tự chạy (Scheduled Tasks) | `/{locale}/scheduled-tasks` |
@@ -31,6 +32,6 @@ Channels / Scheduled Tasks / Use-cases / Agents là trang riêng.
 | Danh sách / quản lý agent | `/{locale}/agents` |
 | Cài đặt chung | `/{locale}/settings` |
 
-> Tab id số ít: `connector`, `skill`, `aimodel`, `channel`, `credits`, `account`, `backup`.
+> Tab id số ít: `connector`, `skill`, `aimodel`, `extension`, `channel`, `credits`, `account`, `backup`.
 > ⚠ Đừng dùng số nhiều `/connectors` hay bỏ `settings/` — `/vi/connector` là **404**. Đường đúng là
 > `/{locale}/settings/connector`.
