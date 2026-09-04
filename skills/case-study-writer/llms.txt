@@ -1,0 +1,8 @@
+# case-study-writer — skill
+
+> Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết case study từ thông tin khách hàng thật. Dùng khi user nói "Viết case study cho khách hàng X", "làm case study từ…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

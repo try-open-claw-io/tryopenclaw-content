@@ -1,0 +1,8 @@
+# content-idea-generator — skill
+
+> Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Tạo ý tưởng nội dung mới dựa trên persona, campaign và keyword. Dùng khi user nói "Tạo idea mới", "gợi ý idea content",…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

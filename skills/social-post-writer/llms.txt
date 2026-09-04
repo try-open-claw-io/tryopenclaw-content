@@ -1,0 +1,8 @@
+# social-post-writer — skill
+
+> Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết nội dung đăng social — Facebook, LinkedIn, Instagram. Dùng khi user nói "Chuẩn bị nội dung đăng social", "viết cap…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

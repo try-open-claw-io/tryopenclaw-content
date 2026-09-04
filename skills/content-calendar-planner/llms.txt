@@ -1,0 +1,8 @@
+# content-calendar-planner — skill
+
+> Xem, lập và cập nhật lịch xuất bản nội dung theo tuần/tháng từ Google Sheets hoặc Notion.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Lập và kiểm tra lịch nội dung theo tuần/tháng cho Content Marketing Agent. Dùng khi user hỏi "Kiểm tra content calendar…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

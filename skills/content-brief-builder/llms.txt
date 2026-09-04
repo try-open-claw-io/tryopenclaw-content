@@ -1,0 +1,8 @@
+# content-brief-builder — skill
+
+> Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Biến 1 idea đã chọn thành content brief đầy đủ trước khi viết draft. Dùng khi user nói "Viết content brief", "làm brief…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

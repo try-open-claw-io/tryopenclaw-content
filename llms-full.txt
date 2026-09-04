@@ -227,6 +227,11 @@
 - en: Google Analytics measures website traffic and user behavior. With this connection, the Agent can view visits, track traffic sources, look up conversions, and summarize reports for you.
 - category: crm-sales
 
+### google_chat — Google Chat
+- vi: Google Chat là ứng dụng chat nhóm trong Google Workspace. Với kết nối này, Agent có thể gửi tin nhắn lên không gian, tìm tin nhắn, tóm tắt hội thoại và trả lời chủ đề cho bạn.
+- en: Google Chat is the team chat app in Google Workspace. With this connection, the Agent can post to spaces, find messages, summarize conversations, and reply to threads for you.
+- category: communication
+
 ### googlecalendar — Google Calendar
 - vi: Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn.
 - en: Google Calendar is Google's online calendar. With this connection, the Agent can check your schedule, set meetings, find free slots, and invite guests for you.
@@ -241,6 +246,11 @@
 - vi: Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn.
 - en: Google Drive is Google's cloud storage. With this connection, the Agent can find files, share links, upload files, and organize folders for you.
 - category: storage
+
+### googleforms — Google Forms
+- vi: Google Forms là công cụ tạo form và khảo sát miễn phí của Google. Với kết nối này, Agent có thể tạo form, xem câu hỏi và tổng hợp câu trả lời đã thu thập giúp bạn.
+- en: Google Forms is Google's free tool for building forms and surveys. With this connection, the Agent can create forms, review questions, and summarize collected responses for you.
+- category: productivity
 
 ### googlesheets — Google Sheets
 - vi: Google Sheets là bảng tính online của Google. Với kết nối này, Agent có thể đọc dữ liệu, thêm dòng, cập nhật ô và lọc theo điều kiện cho bạn.
@@ -292,10 +302,20 @@
 - en: Microsoft Teams is Microsoft's team chat. With this connection, the Agent can post to channels, find messages, and summarize threads.
 - category: communication
 
+### miro — Miro
+- vi: Miro là nền tảng bảng trắng trực tuyến (whiteboard) để brainstorm và cộng tác nhóm. Với kết nối này, Agent có thể tạo board, thêm sticky note, sắp xếp shape và xem thành viên board giúp bạn.
+- en: Miro is an online whiteboard platform for brainstorming and team collaboration. With this connection, the Agent can create boards, add sticky notes and shapes, and check board members for you.
+- category: productivity
+
 ### monday — Monday.com
 - vi: Monday.com là nền tảng quản lý công việc nhiều kiểu xem. Với kết nối này, Agent có thể xem task, tạo item mới và cập nhật trạng thái trên từng board.
 - en: Monday.com is a work management platform with multiple views. With this connection, the Agent can view tasks, create new items, and update statuses on each board.
 - category: productivity
+
+### notebook_lm — NotebookLM
+- vi: NotebookLM là công cụ AI của Google tổng hợp và trả lời dựa trên tài liệu nguồn bạn tải lên. Với kết nối này, Agent có thể tạo notebook, thêm nguồn tài liệu và tạo audio overview giúp bạn.
+- en: NotebookLM is Google's AI research tool that answers from the documents you upload. With this connection, the Agent can create notebooks, add sources, and generate audio overviews for you.
+- category: documents
 
 ### notion — Notion
 - vi: Notion là không gian làm việc all-in-one cho ghi chú, tài liệu và wiki. Với kết nối này, Agent có thể tìm trang, tạo doc và cập nhật mục trong workspace.
@@ -326,6 +346,11 @@
 - vi: Salesforce là nền tảng CRM cho doanh nghiệp. Với kết nối này, Agent có thể xem, thêm, cập nhật opportunity và lead cùng xem báo cáo cho bạn.
 - en: Salesforce is an enterprise CRM platform. With this connection, the Agent can view, add, and update opportunities and leads, and pull up reports for you.
 - category: crm-sales
+
+### sanity — Sanity
+- vi: Sanity là nền tảng CMS headless để quản lý nội dung có cấu trúc theo schema tuỳ chỉnh. Với kết nối này, Agent có thể truy vấn, tạo bản nháp và cập nhật tài liệu nội dung giúp bạn.
+- en: Sanity is a headless CMS platform for managing structured content with custom schemas. With this connection, the Agent can query, draft, and update content documents for you.
+- category: documents
 
 ### sendgrid — SendGrid
 - vi: SendGrid là nền tảng gửi email tự động cho từng giao dịch. Với kết nối này, Agent có thể gửi mail xác nhận đơn, mã OTP và đặt lại mật khẩu cho khách của bạn.
@@ -486,10 +511,76 @@
 
 ## skills
 
+### ad-copy-writer — Viết ad copy
+- vi: Viết text quảng cáo Facebook/Instagram/Google tối ưu chuyển đổi: 3-5 variant theo angle khác nhau, block hook A/B test, headline, primary text và CTA. Không bịa số liệu.
+- en: Write conversion-optimized Facebook/Instagram/Google ad copy: 3-5 angle variants, an A/B-testable hook block, headline, primary text, and CTA. No fabricated numbers.
+- category: content-marketing
+- status: Ready
+
+### blog-outline-generator — Tạo outline blog
+- vi: Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.
+- en: Expand a content brief into a detailed blog outline with title, hook, heading structure, and CTA placements.
+- category: content-marketing
+- status: Ready
+
 ### brainstorm-buddy — Phát triển ý tưởng
 - vi: Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
 - en: Generate plenty of ideas on a topic, group them into themes, and surface fresh angles.
 - category: productivity
+- status: Ready
+
+### brand-voice-editor — Chỉnh theo brand voice
+- vi: Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.
+- en: Edit existing content to match a defined brand voice across tone, length, phrasing, claims, and CTA.
+- category: content-marketing
+- status: Ready
+
+### brief-from-input — Brief nhanh từ input thô
+- vi: Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.
+- en: Turn a link, rough idea, or a few words into a working content brief: infer fast from what you have, flag assumptions clearly, ask only the high-value gaps.
+- category: content-marketing
+- status: Ready
+
+### case-study-writer — Viết case study
+- vi: Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
+- en: Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure.
+- category: content-marketing
+- status: Ready
+
+### content-batch-generator — Sinh loạt content theo lịch
+- vi: Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.
+- en: Plan then generate a whole batch of varied posts for a campaign or calendar — each with a different angle and structure, tied to your goal, never repetitive.
+- category: content-marketing
+- status: Ready
+
+### content-brief-builder — Tạo content brief
+- vi: Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.
+- en: Turn a chosen idea into a complete content brief with objective, audience, angle, key message, and CTA.
+- category: content-marketing
+- status: Ready
+
+### content-calendar-planner — Lịch nội dung
+- vi: Xem, lập và cập nhật lịch xuất bản nội dung theo tuần/tháng từ Google Sheets hoặc Notion.
+- en: View, plan, and update your weekly/monthly content publishing schedule from Google Sheets or Notion.
+- category: content-marketing
+- status: Ready
+
+### content-idea-generator — Sinh ý tưởng nội dung
+- vi: Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.
+- en: Generate grounded new content ideas based on personas, campaigns, and keywords.
+- category: content-marketing
+- status: Ready
+
+### content-quality-review — Review chất lượng nội dung
+- vi: Review chất lượng nội dung - soi hook, clarity, CTA, logic, tone trước khi đăng.
+- en: Review content quality - hook, clarity, CTA, logic, and tone before publishing.
+- category: content-marketing
+- status: Ready
+
+### content-repurposer — Tái sử dụng nội dung
+- vi: Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.
+- en: Turn one source piece into multiple derivative formats like LinkedIn posts, emails, video scripts, and carousels.
+- category: content-marketing
 - status: Ready
 
 ### daily-planner — Lập kế hoạch ngày
@@ -516,10 +607,52 @@
 - category: productivity
 - status: Ready
 
+### humanizer — Làm sạch dấu vết AI
+- vi: Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.
+- en: Mandatory final pass that rewrites every piece of content to read like a real human wrote it: strips em-dashes, cuts AI clichés, breaks robotic rhythm. Style only, never changes facts.
+- category: content-marketing
+- status: Ready
+
+### landing-page-copywriter — Viết copy landing page
+- vi: Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.
+- en: Write conversion-focused landing page copy with headline, benefit bullets, social proof, and a clear CTA.
+- category: content-marketing
+- status: Ready
+
+### long-form-content-writer — Viết bài dài
+- vi: Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.
+- en: Write long-form drafts such as blogs, articles, guides, or thought leadership from an existing brief/outline.
+- category: content-marketing
+- status: Ready
+
+### market-insight-researcher — Market Insight Researcher — research thị trường có nguồn
+- vi: Tìm insight thị trường có nguồn (đối thủ, xu hướng, keyword) để viết content có căn cứ, kèm angle đề xuất. Mọi claim đều dẫn URL, không bịa số liệu.
+- en: Finds sourced market insight (competitors, trends, keywords) so content is grounded, plus suggested angles. Every claim links a source URL, no fabricated stats.
+- category: content-marketing
+- status: Ready
+
 ### meeting-notes — Tóm tắt cuộc họp
 - vi: Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
 - en: Turn rough meeting notes into clean minutes: summary, decisions, and action items with owners.
 - category: productivity
+- status: Ready
+
+### newsletter-writer — Viết newsletter/email
+- vi: Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.
+- en: Write short, scannable newsletter/email content with subject line, preview text, and a clear CTA.
+- category: content-marketing
+- status: Ready
+
+### pdp-analyzer — PDP Analyzer — bóc facts trang sản phẩm
+- vi: Đọc 1 link trang sản phẩm và trích ra bảng facts sạch (tên, giá, tính năng, USP, khách, tone) làm nguyên liệu cho các skill viết. Chỉ lấy thứ có thật trên trang, không đoán.
+- en: Reads one product page URL and extracts a clean facts table (name, price, features, USP, audience, tone) as raw material for the writing skills. Only pulls what the page actually says, never guesses.
+- category: content-marketing
+- status: Ready
+
+### product-description-writer — Viết mô tả sản phẩm
+- vi: Viết mô tả sản phẩm e-commerce bán được: hook mở đầu, tính năng thành lợi ích, dễ lướt, chèn keyword tự nhiên và CTA rõ ràng.
+- en: Write sales-ready e-commerce product descriptions: strong hook, feature-to-benefit copy, scannable layout, natural keywords, and a clear CTA.
+- category: content-marketing
 - status: Ready
 
 ### proofreader — Soát lỗi văn bản
@@ -528,9 +661,27 @@
 - category: productivity
 - status: Ready
 
+### skill-agent-template — Skill mẫu cho Agent Template
+- vi: Skill mẫu đóng gói sẵn trong một agent template — chỉ agent dùng, không hiện trong kho skill công khai.
+- en: Sample skill bundled inside an agent template — agent-only, hidden from the public skill catalog.
+- category: customs
+- status: Preview
+
+### social-post-writer — Viết caption social
+- vi: Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.
+- en: Write channel-specific captions for Facebook, LinkedIn, and Instagram with hashtags, CTA, and a visual brief.
+- category: content-marketing
+- status: Ready
+
+### style-memory-manager — Học giọng viết của bạn
+- vi: Học và lưu giọng viết của chủ shop từ feedback và từ bản bạn tự sửa, để các bài sau viết ngày càng giống chất riêng của bạn.
+- en: Learns and saves your writing voice from feedback and from your own edits, so later drafts sound more like you over time.
+- category: content-marketing
+- status: Ready
+
 ### toc-guidelines — Khám phá năng lực ClawExpert
-- vi: Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, chọn model AI — kèm cách thiết lập từng bước.
-- en: See what ClawExpert can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks, browser extension and AI models — with step-by-step setup.
+- vi: Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, điều khiển máy tính/NAS, chọn model AI — kèm cách thiết lập từng bước.
+- en: See what ClawExpert can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks, browser extension, desktop/NAS device control, and AI models — with step-by-step setup.
 - category: other
 - status: Ready
 

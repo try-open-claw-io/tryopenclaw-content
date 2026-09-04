@@ -1,0 +1,8 @@
+# blog-outline-generator — skill
+
+> Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Tạo outline chi tiết cho bài blog từ content brief đã có. Dùng khi user nói "tạo outline cho bài blog", "lên outline bà…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
