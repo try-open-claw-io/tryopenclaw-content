@@ -6,9 +6,9 @@
 
 ## Catalog
 - [ai-providers/](ai-providers/llms.txt): 29 AI model provider (Config Builder).
-- [connectors/](connectors/llms.txt): 49 tích hợp dịch vụ ngoài.
+- [connectors/](connectors/llms.txt): 54 tích hợp dịch vụ ngoài.
 - [categories/](categories/llms.txt): 17 nhóm phân loại cho connector + skill.
-- [skills/](skills/llms.txt): 10 skill dựng sẵn (ClawHub).
+- [skills/](skills/llms.txt): 31 skill dựng sẵn (ClawHub).
 
 ## How agents use this repo
 1. Fetch `llms.txt` này để biết 4 nhóm nội dung.

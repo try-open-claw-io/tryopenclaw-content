@@ -1,0 +1,8 @@
+# humanizer — skill
+
+> Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Bước cuối bắt buộc, làm sạch dấu vết AI trên mọi text Agent tạo ra trước khi giao cho merchant, viết lại cho đọc như ng…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

@@ -1,0 +1,8 @@
+# content-repurposer — skill
+
+> Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Chuyển 1 nội dung gốc thành nhiều format khác nhau. Dùng khi user nói "Tái sử dụng nội dung", "biến bài blog này thành…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

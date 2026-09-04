@@ -1,0 +1,8 @@
+# newsletter-writer — skill
+
+> Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết nội dung newsletter/email. Dùng khi user nói "Viết newsletter tuần này", "viết email content cho campaign X", "soạ…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

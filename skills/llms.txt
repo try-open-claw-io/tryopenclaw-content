@@ -3,14 +3,35 @@
 > Skill dựng sẵn (ClawHub). Mỗi thư mục = 1 skill gồm `_meta.json` (catalog) + `SKILL.md` (instructions) + `README.md` (hướng dẫn dùng).
 
 ## Skills
+- [ad-copy-writer/](ad-copy-writer/llms.txt): Viết text quảng cáo Facebook/Instagram/Google tối ưu chuyển đổi: 3-5 variant theo angle khác nhau, block hook A/B test, headline, primary text và CTA. Không bị…
+- [blog-outline-generator/](blog-outline-generator/llms.txt): Triển khai content brief thành outline blog chi tiết với tiêu đề, hook, cấu trúc heading và điểm chèn CTA.
 - [brainstorm-buddy/](brainstorm-buddy/llms.txt): Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
+- [brand-voice-editor/](brand-voice-editor/llms.txt): Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.
+- [brief-from-input/](brief-from-input/llms.txt): Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.
+- [case-study-writer/](case-study-writer/llms.txt): Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
+- [content-batch-generator/](content-batch-generator/llms.txt): Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.
+- [content-brief-builder/](content-brief-builder/llms.txt): Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.
+- [content-calendar-planner/](content-calendar-planner/llms.txt): Xem, lập và cập nhật lịch xuất bản nội dung theo tuần/tháng từ Google Sheets hoặc Notion.
+- [content-idea-generator/](content-idea-generator/llms.txt): Sinh ý tưởng nội dung mới có căn cứ, dựa trên persona, campaign và keyword.
+- [content-quality-review/](content-quality-review/llms.txt): Review chất lượng nội dung - soi hook, clarity, CTA, logic, tone trước khi đăng.
+- [content-repurposer/](content-repurposer/llms.txt): Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.
 - [daily-planner/](daily-planner/llms.txt): Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
 - [decision-helper/](decision-helper/llms.txt): So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
 - [doc-summarizer/](doc-summarizer/llms.txt): Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
 - [email-drafter/](email-drafter/llms.txt): Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
+- [humanizer/](humanizer/llms.txt): Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.
+- [landing-page-copywriter/](landing-page-copywriter/llms.txt): Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.
+- [long-form-content-writer/](long-form-content-writer/llms.txt): Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.
+- [market-insight-researcher/](market-insight-researcher/llms.txt): Tìm insight thị trường có nguồn (đối thủ, xu hướng, keyword) để viết content có căn cứ, kèm angle đề xuất. Mọi claim đều dẫn URL, không bịa số liệu.
 - [meeting-notes/](meeting-notes/llms.txt): Chuyển ghi chú họp thành bản tóm tắt rõ ràng: ý chính, quyết định và việc cần làm kèm người phụ trách.
+- [newsletter-writer/](newsletter-writer/llms.txt): Viết nội dung newsletter/email ngắn, dễ đọc lướt, với subject line, preview text và CTA rõ ràng.
+- [pdp-analyzer/](pdp-analyzer/llms.txt): Đọc 1 link trang sản phẩm và trích ra bảng facts sạch (tên, giá, tính năng, USP, khách, tone) làm nguyên liệu cho các skill viết. Chỉ lấy thứ có thật trên tran…
+- [product-description-writer/](product-description-writer/llms.txt): Viết mô tả sản phẩm e-commerce bán được: hook mở đầu, tính năng thành lợi ích, dễ lướt, chèn keyword tự nhiên và CTA rõ ràng.
 - [proofreader/](proofreader/llms.txt): Sửa lỗi chính tả, ngữ pháp và làm câu gọn hơn cho văn bản Việt/Anh, kèm giải thích đã sửa gì.
-- [toc-guidelines/](toc-guidelines/llms.txt): Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, chọn model AI…
+- [skill-agent-template/](skill-agent-template/llms.txt): Skill mẫu đóng gói sẵn trong một agent template — chỉ agent dùng, không hiện trong kho skill công khai.
+- [social-post-writer/](social-post-writer/llms.txt): Viết caption riêng cho từng kênh Facebook, LinkedIn, Instagram kèm hashtag, CTA và visual brief.
+- [style-memory-manager/](style-memory-manager/llms.txt): Học và lưu giọng viết của chủ shop từ feedback và từ bản bạn tự sửa, để các bài sau viết ngày càng giống chất riêng của bạn.
+- [toc-guidelines/](toc-guidelines/llms.txt): Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, điều khiển má…
 - [todo-organizer/](todo-organizer/llms.txt): Sắp xếp danh sách việc thành checklist gọn gàng: chia theo dự án, xếp ưu tiên, lọc việc trùng.
 - [weekly-report/](weekly-report/llms.txt): Tổng hợp việc cả tuần thành báo cáo gọn cho sếp: đã xong, đang làm, đang vướng.
 

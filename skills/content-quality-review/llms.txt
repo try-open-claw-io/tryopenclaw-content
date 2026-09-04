@@ -1,0 +1,8 @@
+# content-quality-review — skill
+
+> Review chất lượng nội dung - soi hook, clarity, CTA, logic, tone trước khi đăng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Review chất lượng draft nội dung trước khi xuất bản (hook, clarity, CTA, logic, tone). Dùng khi user nói "Review chất l…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.
