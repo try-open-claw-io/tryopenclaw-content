@@ -61,12 +61,12 @@ Trên máy đang chạy có sẵn tài liệu gốc của OpenClaw ở thư mụ
 - **Best-effort, IM LẶNG.** Nếu `/app/docs` không tồn tại → bỏ qua, trả lời bình thường bằng references. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc `/app/docs` hay đường dẫn file.
 - **Luôn DỊCH sang ngôn ngữ end-user.** `/app/docs` dùng thuật ngữ dev (gateway, plugin, clawhub…) — lấy sự thật rồi diễn đạt lại thân thiện theo giọng ClawExpert; **không bê nguyên thuật ngữ nội bộ** ra người dùng (giữ nguyên tắc "KHÔNG lộ cơ chế nội bộ" ở cuối skill).
 
-**Cần danh mục đầy đủ / ngoài 10 file references?** Fetch chỉ mục gốc của cả repo content:
+**Cần danh mục đầy đủ / ngoài 11 file references?** Fetch chỉ mục gốc của cả repo content:
 `https://try-open-claw-io.github.io/tryopenclaw-content/llms.txt`
 Nó liệt kê 4 nhóm nội dung, mỗi nhóm có `llms.txt` con (vd `connectors/llms.txt`, `ai-providers/llms.txt`,
-`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi 10 file trên —
+`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi 11 file trên —
 ví dụ danh sách đầy đủ AI provider (`ai-providers/<id>.md`) hay chi tiết 1 connector cụ thể
-(`connectors/<id>.md`). 10 file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
+(`connectors/<id>.md`). 11 file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
 vào để mở rộng.
 
 Muốn **tất cả trong 1 lần fetch** (khỏi lần theo index): `https://try-open-claw-io.github.io/tryopenclaw-content/llms-full.txt`
@@ -84,7 +84,7 @@ Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (t
 | **Channels** — chat với agent qua Telegram/Zalo/Discord/Slack/WhatsApp | [`references/channels-guide.md`](references/channels-guide.md) |
 | **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) |
 | **Scheduled Tasks** — lên lịch cho agent tự chạy định kỳ | [`references/scheduled-tasks-guide.md`](references/scheduled-tasks-guide.md) |
-| **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) |
+| **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab; **khi chính bạn (agent) sắp dùng tool `BROWSER_*` trên một trang** (đọc trang lạ, document viewer, paywall, form nhiều bước), đọc thêm [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md): chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng |
 | **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) |
 | **AI Models** — chọn/đổi model AI, kết nối provider của bạn | [`references/ai-models-guide.md`](references/ai-models-guide.md) |
 

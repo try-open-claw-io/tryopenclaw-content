@@ -55,6 +55,15 @@ Phần này dành cho **chính agent** (không phải nội dung giải thích c
 - Agent chỉ thấy/thao tác trong đúng workspace bạn chọn, không đụng tới tab của workspace khác.
 - Đóng trình duyệt hoặc gỡ chia sẻ thì agent mất quyền truy cập tab đó ngay.
 
+## Khi chính bạn (agent) thao tác trên tab — đọc thêm heuristics
+
+File này chỉ nói **extension là gì và kết nối/chia sẻ tab thế nào**. Trước khi tự tay dùng `BROWSER_*` trên
+một trang lạ, document viewer, trang có paywall hay form nhiều bước, đọc
+[`browser-agent-heuristics.md`](browser-agent-heuristics.md): chọn tool nào trước (snapshot/read rẻ hơn
+screenshot), phân biệt 3 loại nội dung (DOM thật / ảnh-canvas / SPA lazy-load), ranh giới an toàn (không
+đăng nhập, không CAPTCHA, không thanh toán), cách đọc đúng lỗi tool (lỗi nào retry được, lỗi nào phải dừng
+và báo user tắt extension khác đang chặn), và ngưỡng thử lại.
+
 ## Gợi ý cho agent khi hướng dẫn
 
 - **Extension chưa public trên Chrome Web Store** (xem cảnh báo ở đầu file) — dù nằm trong 7 tính năng, khi hướng dẫn LUÔN nhắc trạng thái này trước, đừng để user tưởng có thể tự cài ngay.
