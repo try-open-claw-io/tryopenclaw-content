@@ -9,9 +9,9 @@ Field-tested principles for driving a browser effectively through the `tryopencl
 
 ## Available tools (real names, not illustrative ones)
 
-`BROWSER_LIST_TABS` · `BROWSER_OPEN_TAB` · `BROWSER_CLOSE_TAB` · `BROWSER_NAVIGATE` · `BROWSER_SNAPSHOT` · `BROWSER_READ` · `BROWSER_CLICK` · `BROWSER_FILL` · `BROWSER_SCROLL` · `BROWSER_SCREENSHOT` — plus `openclaw_web_fetch` (fetches page content without opening a tab).
+`BROWSER_LIST_TABS` · `BROWSER_OPEN_TAB` · `BROWSER_CLOSE_TAB` · `BROWSER_NAVIGATE` · `BROWSER_SNAPSHOT` · `BROWSER_READ` · `BROWSER_CLICK` · `BROWSER_FILL` · `BROWSER_SCROLL` · `BROWSER_SCREENSHOT` · `BROWSER_KEY` · `BROWSER_BATCH` (bundles up to 6 of the above into one call — see section 13) — plus `openclaw_web_fetch` (fetches page content without opening a tab).
 
-**Real limits to keep in mind**: `BROWSER_CLICK` / `BROWSER_FILL` accept only a `ref` (from `BROWSER_SNAPSHOT`) or a CSS `selector` — **there is no (x, y) coordinate parameter**. There is no search-in-page tool and no tool for reading network requests. For content that is not real DOM (pure images/canvas), interaction is limited to whatever real DOM controls surround it, if any — see section 3.
+**Real limits to keep in mind**: `BROWSER_CLICK` / `BROWSER_FILL` accept only a `ref` (from `BROWSER_SNAPSHOT`) or a CSS `selector` — **there is no (x, y) coordinate parameter**. There is no search-in-page tool and no tool for reading network requests. `BROWSER_KEY` presses one navigation key (Enter, Escape, Tab, arrows, Backspace, PageUp/PageDown, Home/End) — no modifier combos, and it never types text (`BROWSER_FILL` types text but never presses Enter; to submit a box that has no button, `BROWSER_FILL` then `BROWSER_KEY` Enter with the same `ref`/`selector`). For content that is not real DOM (pure images/canvas), interaction is limited to whatever real DOM controls surround it, if any — see section 3.
 
 ## Quick checklist when landing on an unfamiliar page
 
@@ -38,6 +38,7 @@ Always try the cheap/fast option first and move to a more expensive one only whe
 - `openclaw_web_fetch` (no tab needed) before `BROWSER_OPEN_TAB`.
 - `BROWSER_READ` / `BROWSER_SNAPSHOT` (text/DOM) before `BROWSER_SCREENSHOT` (far more tokens, and the model has to "look" at an image).
 - The target page's own search / jump-to-page features (via refs from `BROWSER_SNAPSHOT`) before sequential `BROWSER_CLICK` / `BROWSER_SCROLL` loops of your own.
+- A pre-planned sequence of actions (see section 13) via `BROWSER_BATCH` before firing the same actions one call at a time.
 
 Each failed step is data that eliminates an option, not wasted effort.
 
@@ -63,11 +64,11 @@ This heuristic only pays off when you genuinely have the right prior for that do
 
 ## 6. Exploit the target page's built-in features
 
-Most viewers and apps ship their own navigation (jump-to-page box, in-app search, breadcrumbs, table of contents). Find its ref via `BROWSER_SNAPSHOT` and use `BROWSER_FILL` / `BROWSER_CLICK` once — always faster and more accurate than automating it with dozens of `BROWSER_CLICK` "next" presses or incremental `BROWSER_SCROLL`s.
+Most viewers and apps ship their own navigation (jump-to-page box, in-app search, breadcrumbs, table of contents). Find its ref via `BROWSER_SNAPSHOT` and use `BROWSER_FILL` / `BROWSER_CLICK` once (or `BROWSER_FILL` + `BROWSER_KEY` Enter when the search box has no button) — always faster and more accurate than automating it with dozens of `BROWSER_CLICK` "next" presses or incremental `BROWSER_SCROLL`s.
 
 ## 7. Clear obstacles before anything else
 
-Cookie/consent banners, ad popups, and login modals almost always appear first on an unfamiliar page and block everything behind them. Deal with them (choosing the most privacy-preserving option for cookie banners) as soon as you land, before attempting the main task. If the modal is a hard login wall (cannot be dismissed to view the content) → see "Safety boundaries".
+Cookie/consent banners, ad popups, and login modals almost always appear first on an unfamiliar page and block everything behind them. Deal with them (choosing the most privacy-preserving option for cookie banners) as soon as you land, before attempting the main task. The cheapest first attempt on a modal/popup is `BROWSER_KEY` Escape; if it survives, find the dismiss button's ref via `BROWSER_SNAPSHOT` and `BROWSER_CLICK` it. If the modal is a hard login wall (cannot be dismissed to view the content) → see "Safety boundaries".
 
 ## 8. Verify important data before committing to it
 
@@ -94,3 +95,20 @@ The browser tools return specific error messages when the underlying debugger co
 - **"Tab … is still attaching…"** → genuinely transient (a freshly opened or navigating tab). Wait a few seconds and retry; give up after 2-3 attempts and report.
 - **"Tab … is no longer shared with this workspace"** → the user un-shared or closed the tab. Ask them to share it again (see the extension guide); do not open a new tab on their behalf unless the task allows it.
 - A plain **"Timeout … exceeded"** with none of the messages above usually means the page really is busy (heavy animation, endless loading). Prefer `BROWSER_READ` over `BROWSER_SNAPSHOT`/`BROWSER_SCREENSHOT` on such pages, wait a beat between actions, and apply the retry threshold from section 11.
+- **"…ran out of its time budget before this step could run"** (only from `BROWSER_BATCH`) → the batch had too many or too slow steps to fit its own internal time budget. Do not retry the same batch as-is — split it into a smaller batch, or run the remaining steps one call at a time.
+
+## 13. Bundle a pre-planned action sequence with `BROWSER_BATCH`
+
+When you already know the exact sequence of 2-6 actions to run against ONE already-open tab, and every `ref`/`selector` those actions need is already known — bundle them into one `BROWSER_BATCH` call instead of firing each one separately. Typical case: you already ran `BROWSER_SNAPSHOT` and know the refs for two form fields and a submit button — `BROWSER_FILL` → `BROWSER_FILL` → `BROWSER_CLICK` → `BROWSER_SCREENSHOT` in one call instead of four.
+
+`BROWSER_BATCH` only accepts the tab-action tools (`BROWSER_NAVIGATE`, `BROWSER_CLICK`, `BROWSER_FILL`, `BROWSER_KEY`, `BROWSER_READ`, `BROWSER_SNAPSHOT`, `BROWSER_SCROLL`, `BROWSER_SCREENSHOT`) against one `tabId` given once at the top level — not `BROWSER_OPEN_TAB`/`BROWSER_CLOSE_TAB`/`BROWSER_LIST_TABS`, and not itself.
+
+What makes it safe, and when NOT to use it:
+
+- **Every `ref` inside the batch must come from a `BROWSER_SNAPSHOT` taken BEFORE the batch — never from a `BROWSER_SNAPSHOT` that is itself one of the batch's steps.** The whole sequence is planned upfront in one shot; a step cannot react to what an earlier step in the same batch discovered. If the next action genuinely depends on a snapshot/read result you don't have yet, run that one step alone first, then batch the rest once the refs are known.
+- If one of the actions is `BROWSER_NAVIGATE`, do not rely on `ref` in any action after it in the same batch — a ref is tied to the page it was captured on, and navigating invalidates it. Use a CSS `selector` for anything after a `BROWSER_NAVIGATE`, or put `BROWSER_NAVIGATE` as the last action in the batch.
+- `BROWSER_BATCH` stops at the first failing action and reports which step failed — check that before assuming later steps ran.
+- **Never bundle a public/irreversible action** (posting, sending, paying, deleting, ...) into the same batch as the steps before it, even when every `ref` for it is already known and batching is technically possible. Run it as its own call AFTER you have verified (screenshot/read) that the preceding steps actually succeeded and the content is correct — a batch has no built-in checkpoint to catch a failed/garbled fill before the irreversible step fires. There is no confirmation step inside a batch: a navigation-policy refusal stops it like any other error, but nothing pauses to ask the user before a send/post/submit fires. Pressing Enter with `BROWSER_KEY` in a chat/comment/post box is exactly such an action — Enter in a search box is harmless, Enter in a message box sends.
+- **At most one `BROWSER_SCREENSHOT` or `BROWSER_SNAPSHOT` per batch, and only as the LAST action** — the tool rejects anything else. Two of them in one result exceed the chat message size cap and the whole batch result is silently dropped from history; and a mid-batch observation is useless anyway, since no later step can react to it. For data you need mid-batch, use `BROWSER_READ` with a `selector`.
+- Between batches, re-observe before planning the next one: the batch's final `SCREENSHOT`/`SNAPSHOT`/`READ` is what tells you the real state. The Observe → Act → Observe loop (section 2) still applies — just at batch granularity.
+- Prefer it for form-fill-then-verify sequences, multi-field reads (`READ` × N → `SCREENSHOT`), and scroll loops (`SCROLL → READ → SCROLL → READ`, or `SCROLL → SCROLL → SCREENSHOT`) — these need few or no `ref`s, so they carry none of the staleness risk above. Don't force unrelated actions into one batch just to save a call — plain sequential `BROWSER_*` calls are fine, and clearer, when the next step genuinely depends on what the previous one returns.
