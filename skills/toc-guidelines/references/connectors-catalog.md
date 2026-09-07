@@ -1,6 +1,6 @@
 # Danh mục Connectors được hỗ trợ
 
-> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 54 connector.
+> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 55 connector.
 > Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).
 > Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).
 
@@ -293,6 +293,13 @@
 - **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @linear xem các task đang giao cho mình."
 - **Gọi nhanh**: gõ `@linear` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn Linear → đăng nhập/cấp quyền.
+
+### Apify  (`apify`)
+
+- **Dùng để làm gì**: Apify là nền tảng web scraping và tự động hoá dữ liệu bằng các Actor dựng sẵn. Với kết nối này, Agent có thể chạy actor, kiểm tra trạng thái và xem log thu thập dữ liệu giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @apify xem các lần chạy actor gần đây của mình."
+- **Gọi nhanh**: gõ `@apify` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Apify → đăng nhập/cấp quyền.
 
 ## Thương mại
 
