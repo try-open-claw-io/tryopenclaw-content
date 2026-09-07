@@ -123,10 +123,17 @@ What makes it safe, and when NOT to use it:
 
 `BROWSER_FILL` sets the whole value in one go and **reads the field back**. Its result tells you what actually landed:
 
-- `{ filled, verified: true, method: "fill" | "type" }` → the field holds exactly your value. Safe to continue (for example `BROWSER_KEY` Enter with the same `ref`, or `BROWSER_CLICK` on the send/submit button).
+- `{ filled, verified: true, method: "fill" | "type" }` → the field holds exactly your value. Safe to continue (for example `BROWSER_KEY` Enter with the same `ref`, or `BROWSER_CLICK` on the send/submit button — but for a **dialog's own** submit/advance button, prefer Enter; see section 15).
 - `{ filled, verified: false, actual: "…" }` → the page kept your characters but **reformatted** them (phone/date/card masks, forced uppercase, trimmed spaces). Compare `actual` with what you meant; usually this is fine and you continue. Do **not** re-fill in a loop hoping for an exact match.
 - An error starting with `[fill_typing_timeout]`, `[fill_needs_typing_too_long]` or `[fill_needs_typing_multiline]` → see section 12. Nothing was submitted; the message says whether the field is now empty. Shorten or split the text — a long message is better sent as two shorter fills into the same box only if the page allows it, otherwise ask the user how to proceed.
 
 How it works underneath, so you can predict it: the tool first inserts the whole text at once (cheap, length-independent). Only if the field ignores bulk input (rare: page-jump boxes, some search-as-you-type widgets) does it fall back to typing key by key — and typing costs time per character over the relay, so long texts may be refused rather than half-typed. Pass `mode:"type"` yourself only when you already know the field is one of those; never as a default.
 
 Enter is a separate action: `BROWSER_FILL` never presses it. After a `verified: true` result, use `BROWSER_KEY` with `key:"Enter"` and the same `ref` when the box has no button, or `BROWSER_CLICK` the button. In a chat/comment/post box that **sends** — treat it as irreversible (section 13) and verify first.
+
+## 15. Submitting inside a dialog — prefer Enter, and never blame the tab
+
+Buttons that advance or submit a **modal/dialog** (Continue, Next, Send, Save, "Tiếp tục") are the one place `BROWSER_CLICK` is least reliable: on a slow relay the dialog can re-render or shift between the click's internal pointer-move and press, so the press lands on the backdrop and **dismisses the dialog instead of submitting**. Avoid it — after a `verified: true` fill, focus the submit button by its `ref` and press `BROWSER_KEY` Enter (Enter activates the focused control with no coordinate, so it is immune to this). Click the button only if it does not respond to Enter.
+
+- **A dialog that closes unexpectedly right after you clicked its button is this same problem — not the tab.** Do **not** conclude the tab is "in the background", and do **not** `BROWSER_CLOSE_TAB` and reopen to fix it: closing the tab throws away all progress, and a just-opened tab is not immediately ready — an immediate `BROWSER_SNAPSHOT` on it often times out. Instead: `BROWSER_SNAPSHOT` to read the real state, reopen the dialog if it closed, re-fill, and submit with `BROWSER_KEY` Enter.
+- After any `BROWSER_OPEN_TAB`, the tab needs a moment to attach before it can be inspected. If the first `BROWSER_SNAPSHOT` there times out, that is a not-ready tab, not a dead one — `BROWSER_NAVIGATE` the same tab (or wait and retry once) before giving up.
