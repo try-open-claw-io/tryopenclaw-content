@@ -9,9 +9,9 @@ Field-tested principles for driving a browser effectively through the `tryopencl
 
 ## Available tools (real names, not illustrative ones)
 
-`BROWSER_LIST_TABS` · `BROWSER_OPEN_TAB` · `BROWSER_CLOSE_TAB` · `BROWSER_NAVIGATE` · `BROWSER_SNAPSHOT` · `BROWSER_READ` · `BROWSER_CLICK` · `BROWSER_FILL` · `BROWSER_SCROLL` · `BROWSER_SCREENSHOT` — plus `openclaw_web_fetch` (fetches page content without opening a tab).
+`BROWSER_LIST_TABS` · `BROWSER_OPEN_TAB` · `BROWSER_CLOSE_TAB` · `BROWSER_NAVIGATE` · `BROWSER_SNAPSHOT` · `BROWSER_READ` · `BROWSER_CLICK` · `BROWSER_FILL` · `BROWSER_SCROLL` · `BROWSER_SCREENSHOT` · `BROWSER_KEY` · `BROWSER_HOVER` · `BROWSER_BATCH` (bundles up to 6 of the above into one call — see section 13) — plus `openclaw_web_fetch` (fetches page content without opening a tab).
 
-**Real limits to keep in mind**: `BROWSER_CLICK` / `BROWSER_FILL` accept only a `ref` (from `BROWSER_SNAPSHOT`) or a CSS `selector` — **there is no (x, y) coordinate parameter**. There is no search-in-page tool and no tool for reading network requests. For content that is not real DOM (pure images/canvas), interaction is limited to whatever real DOM controls surround it, if any — see section 3.
+**Real limits to keep in mind**: `BROWSER_CLICK` / `BROWSER_FILL` accept only a `ref` (from `BROWSER_SNAPSHOT`) or a CSS `selector` — **there is no (x, y) coordinate parameter**. There is no search-in-page tool and no tool for reading network requests. `BROWSER_CLICK` is left-click only (`clickCount:2` for a double-click; there is no right-click). `BROWSER_HOVER` reveals hover-only UI (row action menus, tooltips, dropdowns) — hover the parent, then snapshot or click the revealed element. `BROWSER_KEY` presses one navigation key (Enter, Escape, Tab, arrows, Backspace, PageUp/PageDown, Home/End) — no modifier combos, and it never types text (`BROWSER_FILL` types text but never presses Enter; to submit a box that has no button, `BROWSER_FILL` then `BROWSER_KEY` Enter with the same `ref`/`selector`). For content that is not real DOM (pure images/canvas), interaction is limited to whatever real DOM controls surround it, if any — see section 3.
 
 ## Quick checklist when landing on an unfamiliar page
 
@@ -19,7 +19,7 @@ Field-tested principles for driving a browser effectively through the `tryopencl
 2. Check immediately: does the page demand a login, a CAPTCHA, or a payment step? If so, see "Safety boundaries" below — do not try to work around it with heuristics; stop and ask the user.
 3. Is there a cookie/consent banner or a blocking popup? Clear it first (`BROWSER_SNAPSHOT` to find the decline button's ref, then `BROWSER_CLICK` — pick the most privacy-preserving option, decline non-essential).
 4. Is the content real text/DOM, an image/canvas, or a dynamically loaded SPA? Probe cheaply with `BROWSER_READ` / `BROWSER_SNAPSHOT` (far cheaper than `BROWSER_SCREENSHOT`) — see section 3 for how to tell the three cases apart.
-5. Does the target page have its own navigation (a jump-to-page box, in-app search, a table of contents)? Prefer finding its ref via `BROWSER_SNAPSHOT` and using `BROWSER_FILL` / `BROWSER_CLICK` over repeating `BROWSER_SCROLL` / `BROWSER_CLICK` yourself.
+5. Does the target page have its own navigation (a jump-to-page box, in-app search, a table of contents)? Prefer finding its ref via `BROWSER_SNAPSHOT` and using `BROWSER_FILL` / `BROWSER_CLICK` over repeating `BROWSER_SCROLL` / `BROWSER_CLICK` yourself. For a page-jump or search-as-you-type box, pass `mode:"type"` to `BROWSER_FILL` (see section 14).
 6. Know your stop condition up front (a recognizable landmark) so you do not read past the goal, and know your give-up threshold if you get stuck (see "Retry threshold").
 
 ## Safety boundaries — always stop; no heuristic may cross these
@@ -38,6 +38,7 @@ Always try the cheap/fast option first and move to a more expensive one only whe
 - `openclaw_web_fetch` (no tab needed) before `BROWSER_OPEN_TAB`.
 - `BROWSER_READ` / `BROWSER_SNAPSHOT` (text/DOM) before `BROWSER_SCREENSHOT` (far more tokens, and the model has to "look" at an image).
 - The target page's own search / jump-to-page features (via refs from `BROWSER_SNAPSHOT`) before sequential `BROWSER_CLICK` / `BROWSER_SCROLL` loops of your own.
+- A pre-planned sequence of actions (see section 13) via `BROWSER_BATCH` before firing the same actions one call at a time.
 
 Each failed step is data that eliminates an option, not wasted effort.
 
@@ -63,11 +64,11 @@ This heuristic only pays off when you genuinely have the right prior for that do
 
 ## 6. Exploit the target page's built-in features
 
-Most viewers and apps ship their own navigation (jump-to-page box, in-app search, breadcrumbs, table of contents). Find its ref via `BROWSER_SNAPSHOT` and use `BROWSER_FILL` / `BROWSER_CLICK` once — always faster and more accurate than automating it with dozens of `BROWSER_CLICK` "next" presses or incremental `BROWSER_SCROLL`s.
+Most viewers and apps ship their own navigation (jump-to-page box, in-app search, breadcrumbs, table of contents). Find its ref via `BROWSER_SNAPSHOT` and use `BROWSER_FILL` / `BROWSER_CLICK` once (or `BROWSER_FILL` + `BROWSER_KEY` Enter when the search box has no button) — always faster and more accurate than automating it with dozens of `BROWSER_CLICK` "next" presses or incremental `BROWSER_SCROLL`s.
 
 ## 7. Clear obstacles before anything else
 
-Cookie/consent banners, ad popups, and login modals almost always appear first on an unfamiliar page and block everything behind them. Deal with them (choosing the most privacy-preserving option for cookie banners) as soon as you land, before attempting the main task. If the modal is a hard login wall (cannot be dismissed to view the content) → see "Safety boundaries".
+Cookie/consent banners, ad popups, and login modals almost always appear first on an unfamiliar page and block everything behind them. Deal with them (choosing the most privacy-preserving option for cookie banners) as soon as you land, before attempting the main task. The cheapest first attempt on a modal/popup is `BROWSER_KEY` Escape; if it survives, find the dismiss button's ref via `BROWSER_SNAPSHOT` and `BROWSER_CLICK` it. Buttons that exist only on hover (row ⋮ menus, card actions) are not a blocker either — `BROWSER_HOVER` the row, then `BROWSER_SNAPSHOT`/`BROWSER_CLICK` the revealed button. If the modal is a hard login wall (cannot be dismissed to view the content) → see "Safety boundaries".
 
 ## 8. Verify important data before committing to it
 
@@ -94,3 +95,45 @@ The browser tools return specific error messages when the underlying debugger co
 - **"Tab … is still attaching…"** → genuinely transient (a freshly opened or navigating tab). Wait a few seconds and retry; give up after 2-3 attempts and report.
 - **"Tab … is no longer shared with this workspace"** → the user un-shared or closed the tab. Ask them to share it again (see the extension guide); do not open a new tab on their behalf unless the task allows it.
 - A plain **"Timeout … exceeded"** with none of the messages above usually means the page really is busy (heavy animation, endless loading). Prefer `BROWSER_READ` over `BROWSER_SNAPSHOT`/`BROWSER_SCREENSHOT` on such pages, wait a beat between actions, and apply the retry threshold from section 11.
+- **"…ran out of its time budget before this step could run"** (only from `BROWSER_BATCH`) → the batch had too many or too slow steps to fit its own internal time budget. Do not retry the same batch as-is — split it into a smaller batch, or run the remaining steps one call at a time.
+- **"The selector matched several elements, so nothing was done"** → your CSS selector is ambiguous. Use the `ref` from `BROWSER_SNAPSHOT` for the exact element, or a more specific selector. Nothing was clicked/filled.
+- **"Another element is covering the target …"** → a modal/backdrop, sticky bar or panel sits over the element. **The click may already have landed** (typical: clicking a row opens a dialog whose backdrop then covers the row). `BROWSER_SNAPSHOT` first — if a dialog is now open, continue inside it; do not click the row again. Otherwise close the overlay (`BROWSER_KEY` Escape) or `BROWSER_SCROLL`, then retry once.
+- **"The element exists but never became visible/interactable"** → it is hidden, collapsed, or shown only on hover. `BROWSER_HOVER` its parent row/menu, or `BROWSER_SCROLL` it into view, then `BROWSER_SNAPSHOT` again before retrying — do not repeat the same click.
+- **"No element matched — the ref is stale … or the selector is wrong"** → the page changed since your last snapshot. Run `BROWSER_SNAPSHOT` again and use a fresh `ref`; never reuse refs across a navigation.
+
+- **"[fill_typing_timeout] Typed N of M characters…"**, **"[fill_needs_typing_too_long] …"**, **"[fill_needs_typing_multiline] …"** (from `BROWSER_FILL`) → the field needed key-by-key typing and the text could not be typed in full. Read whether the message says the field **has been cleared** (then nothing is in the box) or **could NOT be cleared** (then run `BROWSER_READ`/`BROWSER_SNAPSHOT` on it first — it may hold half-typed text). Either way: **do not press Enter or click Send**; shorten the text, split it into several `BROWSER_FILL` calls, or remove line breaks. Never retry the identical call. See section 14.
+
+## 13. Bundle a pre-planned action sequence with `BROWSER_BATCH`
+
+When you already know the exact sequence of 2-6 actions to run against ONE already-open tab, and every `ref`/`selector` those actions need is already known — bundle them into one `BROWSER_BATCH` call instead of firing each one separately. Typical case: you already ran `BROWSER_SNAPSHOT` and know the refs for two form fields and a submit button — `BROWSER_FILL` → `BROWSER_FILL` → `BROWSER_CLICK` → `BROWSER_SCREENSHOT` in one call instead of four.
+
+`BROWSER_BATCH` only accepts the tab-action tools (`BROWSER_NAVIGATE`, `BROWSER_CLICK`, `BROWSER_FILL`, `BROWSER_KEY`, `BROWSER_HOVER`, `BROWSER_READ`, `BROWSER_SNAPSHOT`, `BROWSER_SCROLL`, `BROWSER_SCREENSHOT`) against one `tabId` given once at the top level — not `BROWSER_OPEN_TAB`/`BROWSER_CLOSE_TAB`/`BROWSER_LIST_TABS`, and not itself.
+
+What makes it safe, and when NOT to use it:
+
+- **Every `ref` inside the batch must come from a `BROWSER_SNAPSHOT` taken BEFORE the batch — never from a `BROWSER_SNAPSHOT` that is itself one of the batch's steps.** The whole sequence is planned upfront in one shot; a step cannot react to what an earlier step in the same batch discovered. If the next action genuinely depends on a snapshot/read result you don't have yet, run that one step alone first, then batch the rest once the refs are known.
+- If one of the actions is `BROWSER_NAVIGATE`, do not rely on `ref` in any action after it in the same batch — a ref is tied to the page it was captured on, and navigating invalidates it. Use a CSS `selector` for anything after a `BROWSER_NAVIGATE`, or put `BROWSER_NAVIGATE` as the last action in the batch.
+- `BROWSER_BATCH` stops at the first failing action and reports which step failed — check that before assuming later steps ran. A failed `BROWSER_FILL` step stops the batch too and normally leaves its field cleared — so a `BROWSER_KEY` Enter or a submit `BROWSER_CLICK` planned after it never runs; do not "finish" the batch by submitting manually without re-checking the field.
+- **Never bundle a public/irreversible action** (posting, sending, paying, deleting, ...) into the same batch as the steps before it, even when every `ref` for it is already known and batching is technically possible. Run it as its own call AFTER you have verified (screenshot/read) that the preceding steps actually succeeded and the content is correct — a batch has no built-in checkpoint to catch a failed/garbled fill before the irreversible step fires. There is no confirmation step inside a batch: a navigation-policy refusal stops it like any other error, but nothing pauses to ask the user before a send/post/submit fires. Pressing Enter with `BROWSER_KEY` in a chat/comment/post box is exactly such an action — Enter in a search box is harmless, Enter in a message box sends.
+- **At most one `BROWSER_SCREENSHOT` or `BROWSER_SNAPSHOT` per batch, and only as the LAST action** — the tool rejects anything else. Two of them in one result exceed the chat message size cap and the whole batch result is silently dropped from history; and a mid-batch observation is useless anyway, since no later step can react to it. For data you need mid-batch, use `BROWSER_READ` with a `selector`.
+- Between batches, re-observe before planning the next one: the batch's final `SCREENSHOT`/`SNAPSHOT`/`READ` is what tells you the real state. The Observe → Act → Observe loop (section 2) still applies — just at batch granularity.
+- Prefer it for form-fill-then-verify sequences, `HOVER → CLICK` on hover-only menus, multi-field reads (`READ` × N → `SCREENSHOT`), and scroll loops (`SCROLL → READ → SCROLL → READ`, or `SCROLL → SCROLL → SCREENSHOT`) — these need few or no `ref`s, so they carry none of the staleness risk above. Don't force unrelated actions into one batch just to save a call — plain sequential `BROWSER_*` calls are fine, and clearer, when the next step genuinely depends on what the previous one returns.
+
+## 14. Filling fields: trust `verified`, and never submit after a `BROWSER_FILL` error
+
+`BROWSER_FILL` sets the whole value in one go and **reads the field back**. Its result tells you what actually landed:
+
+- `{ filled, verified: true, method: "fill" | "type" }` → the field holds exactly your value. Safe to continue (for example `BROWSER_KEY` Enter with the same `ref`, or `BROWSER_CLICK` on the send/submit button — but for a **dialog's own** submit/advance button, prefer Enter; see section 15).
+- `{ filled, verified: false, actual: "…" }` → the page kept your characters but **reformatted** them (phone/date/card masks, forced uppercase, trimmed spaces). Compare `actual` with what you meant; usually this is fine and you continue. Do **not** re-fill in a loop hoping for an exact match.
+- An error starting with `[fill_typing_timeout]`, `[fill_needs_typing_too_long]` or `[fill_needs_typing_multiline]` → see section 12. Nothing was submitted; the message says whether the field is now empty. Shorten or split the text — a long message is better sent as two shorter fills into the same box only if the page allows it, otherwise ask the user how to proceed.
+
+How it works underneath, so you can predict it: the tool first inserts the whole text at once (cheap, length-independent). Only if the field ignores bulk input (rare: page-jump boxes, some search-as-you-type widgets) does it fall back to typing key by key — and typing costs time per character over the relay, so long texts may be refused rather than half-typed. Pass `mode:"type"` yourself only when you already know the field is one of those; never as a default.
+
+Enter is a separate action: `BROWSER_FILL` never presses it. After a `verified: true` result, use `BROWSER_KEY` with `key:"Enter"` and the same `ref` when the box has no button, or `BROWSER_CLICK` the button. In a chat/comment/post box that **sends** — treat it as irreversible (section 13) and verify first.
+
+## 15. Submitting inside a dialog — prefer Enter, and never blame the tab
+
+Buttons that advance or submit a **modal/dialog** (Continue, Next, Send, Save, "Tiếp tục") are the one place `BROWSER_CLICK` is least reliable: on a slow relay the dialog can re-render or shift between the click's internal pointer-move and press, so the press lands on the backdrop and **dismisses the dialog instead of submitting**. Avoid it — after a `verified: true` fill, focus the submit button by its `ref` and press `BROWSER_KEY` Enter (Enter activates the focused control with no coordinate, so it is immune to this). Click the button only if it does not respond to Enter.
+
+- **A dialog that closes unexpectedly right after you clicked its button is this same problem — not the tab.** Do **not** conclude the tab is "in the background", and do **not** `BROWSER_CLOSE_TAB` and reopen to fix it: closing the tab throws away all progress, and a just-opened tab is not immediately ready — an immediate `BROWSER_SNAPSHOT` on it often times out. Instead: `BROWSER_SNAPSHOT` to read the real state, reopen the dialog if it closed, re-fill, and submit with `BROWSER_KEY` Enter.
+- After any `BROWSER_OPEN_TAB`, the tab needs a moment to attach before it can be inspected. If the first `BROWSER_SNAPSHOT` there times out, that is a not-ready tab, not a dead one — `BROWSER_NAVIGATE` the same tab (or wait and retry once) before giving up.
