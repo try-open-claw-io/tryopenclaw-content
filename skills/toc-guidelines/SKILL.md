@@ -11,13 +11,12 @@ description: >-
   nào?", "kết nối Gmail/Slack thế nào?", "cài skill ở đâu?", "làm sao chat với agent qua Telegram/
   Zalo?", "cài agent từ chợ thế nào?", "làm sao lên lịch cho agent tự chạy?", "đổi model AI ở đâu?",
   "agent điều khiển trình duyệt được không", "cài/kết nối extension ở đâu", "dùng extension thế nào",
-  "cho agent thao tác trên web/trình duyệt của tôi", "chia sẻ tab cho agent", "agent điền form/bấm nút
-  trên trang giúp tôi", "agent đọc/ghi file trên máy tôi
+  "vào web X đọc/thống kê/lấy dữ liệu", "dùng extension để mở trang X làm Y", "điền form/bấm nút
+  trên trang giúp tôi", "làm việc A/B/C bằng extension", "agent đọc/ghi file trên máy tôi
   được không", "sắp xếp thư mục trên desktop giúp mình", "what can you do", "how do I
   connect/install/schedule...". Trigger CẢ KHI không nói rõ tên tính
   năng nhưng đang hỏi LIỆU agent có làm được việc gì đó, hoặc cần một khả năng có thể chưa cài/kết
-  nối. Trigger cả khi người dùng NHẮC TỚI hoặc muốn DÙNG extension trình duyệt (chia sẻ tab, cho
-  agent thao tác/điền form trên trang web) — kể cả khi chỉ nói "extension" mà chưa hỏi cách cài. KHÔNG dùng khi người dùng chỉ muốn THỰC HIỆN ngay một tác vụ (soạn/gửi email, gửi tin nhắn,
+  nối. Trigger cả khi người dùng chỉ NHẮC TỚI "extension" mà chưa hỏi cách cài. KHÔNG dùng khi người dùng chỉ muốn THỰC HIỆN ngay một tác vụ đã có connector/skill phù hợp (soạn/gửi email, gửi tin nhắn,
   tóm tắt file) — khi đó dùng skill/connector phù hợp. Skill này là danh mục + cách dùng qua giao
   diện ClawExpert.
 ---
@@ -87,7 +86,7 @@ Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (t
 | **Channels** — chat với agent qua Telegram/Zalo/Discord/Slack/WhatsApp | [`references/channels-guide.md`](references/channels-guide.md) |
 | **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) |
 | **Scheduled Tasks** — lên lịch cho agent tự chạy định kỳ | [`references/scheduled-tasks-guide.md`](references/scheduled-tasks-guide.md) |
-| **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab. **BẮT BUỘC**: mỗi khi extension đang HOẠT ĐỘNG — tức chính bạn (agent) sắp hoặc đang dùng tool `BROWSER_*` để thao tác trên tab (mở/đọc trang, click, điền form, chọn dropdown, tick checkbox, navigate, screenshot…) — PHẢI đọc và tuân theo [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md) TRƯỚC khi thao tác: chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng. Khi CHỈ hướng dẫn người dùng CÀI ĐẶT / kết nối extension (chưa gọi `BROWSER_*` nào) thì CHƯA cần file heuristics này |
+| **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn (mở web X để làm Y, điền form, cào dữ liệu...). LUÔN gọi khi người dùng yêu cầu dùng extension | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab. **BẮT BUỘC**: mỗi khi extension đang HOẠT ĐỘNG — tức chính bạn (agent) sắp hoặc đang dùng tool `BROWSER_*` để thao tác trên tab (mở/đọc trang, click, điền form, chọn dropdown, tick checkbox, navigate, screenshot…) — PHẢI đọc và tuân theo [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md) TRƯỚC khi thao tác: chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng. Khi CHỈ hướng dẫn người dùng CÀI ĐẶT / kết nối extension (chưa gọi `BROWSER_*` nào) thì CHƯA cần file heuristics này |
 | **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) |
 | **AI Models** — chọn/đổi model AI, kết nối provider của bạn | [`references/ai-models-guide.md`](references/ai-models-guide.md) |
 
