@@ -10,21 +10,22 @@
 - **Connector** = agent dùng **API chính thức** của app (Gmail, Slack, Notion...) — nhanh, ổn định, nhưng chỉ với app đã có connector.
 - **Extension trình duyệt** = agent dùng **chính trình duyệt của bạn** — hoạt động trên mọi trang web, kể cả trang nội bộ hoặc chưa hỗ trợ connector, nhưng cần bạn cài extension và chọn tab muốn chia sẻ.
 
-## ⚠️ Trạng thái hiện tại — chưa public
+## ⚠️ Trạng thái hiện tại — chưa lên Chrome Web Store
 
-Extension **chưa có trên Chrome Web Store** — chỉ cài được thủ công (unpacked, developer mode), do đội
-ngũ ClawExpert hỗ trợ trực tiếp. Trang **Cài đặt → Extension** chỉ có nút **Kết nối extension** (ghép
-nối tài khoản), **không có** hướng dẫn cài đặt trong trang. Nếu người dùng chưa được cấp extension,
-**đừng bịa hướng dẫn cài** — nói rõ tính năng này hiện giới hạn, cần liên hệ đội ngũ ClawExpert để được hỗ trợ cài.
+Extension **chưa có trên Chrome Web Store** — cài thủ công (unpacked, developer mode). Mọi user đều
+tự cài được: trang **Cài đặt → Extension** có sẵn card **Hướng dẫn cài đặt** 5 bước + nút
+**Tải extension (.zip)** tải trực tiếp, kèm nút **Kết nối extension**. Khi hướng dẫn, trỏ user vào
+trang này thay vì tự viết lại các bước cài.
 
 ## Cần gì trước
 
-- Extension đã được cài trên trình duyệt Chrome (qua đội ngũ ClawExpert hỗ trợ, xem lưu ý ở trên).
+- Extension đã được cài trên trình duyệt Chrome — tự cài theo **Hướng dẫn cài đặt** trong trang
+  **Cài đặt → Extension**.
 - Đã kết nối extension với đúng tài khoản ClawExpert của bạn.
 
 ## Cách kết nối (khi đã có extension)
 
-1. Vào **Cài đặt → Extension** trong ClawExpert.
+1. Vào **Cài đặt → Extension** trong ClawExpert (chưa cài extension thì làm theo **Hướng dẫn cài đặt** + nút tải zip ngay trong trang).
 2. Bấm **Kết nối extension** — extension sẽ tự ghép nối với tài khoản đang đăng nhập.
 
 ## Chia sẻ một tab cho agent
@@ -42,7 +43,7 @@ Nếu **chủ workspace** đã cài và kết nối extension, agent có thể *
 
 Phần này dành cho **chính agent** (không phải nội dung giải thích cho user):
 
-- Bộ tool: `BROWSER_LIST_TABS`, `BROWSER_OPEN_TAB`, `BROWSER_NAVIGATE`, `BROWSER_CLICK`, `BROWSER_FILL`, `BROWSER_READ`, `BROWSER_SCREENSHOT`. **Chọn đúng tool đầu tiên theo ý định, đừng luôn bắt đầu bằng `BROWSER_LIST_TABS`:**
+- Bộ tool đầy đủ: `BROWSER_LIST_TABS`, `BROWSER_OPEN_TAB`, `BROWSER_CLOSE_TAB`, `BROWSER_NAVIGATE`, `BROWSER_SNAPSHOT`, `BROWSER_READ`, `BROWSER_CLICK`, `BROWSER_FILL`, `BROWSER_SELECT`, `BROWSER_CHECK`, `BROWSER_SCROLL`, `BROWSER_SCREENSHOT`, `BROWSER_KEY`, `BROWSER_HOVER`, `BROWSER_BATCH` — chi tiết cách chọn và dùng từng cái ở [`browser-agent-heuristics.md`](browser-agent-heuristics.md). **Chọn đúng tool đầu tiên theo ý định, đừng luôn bắt đầu bằng `BROWSER_LIST_TABS`:**
   - Cần **research / mở một trang mới** mà chưa có tab liên quan nào đang mở sẵn (ví dụ "research Google về X") → gọi thẳng `BROWSER_OPEN_TAB` với `url`. Tool này tự bootstrap trên thiết bị đã ghép nối (paired) của **chủ workspace**, **không đòi hỏi** phải có tab nào được chia sẻ từ trước — chỉ cần extension đã **kết nối** (bước "Cách kết nối" ở trên) là đủ, không cần bước "Chia sẻ một tab" trước đó.
   - Cần đọc/thao tác trên **tab người dùng đang xem** (ví dụ "trang tôi vừa mở", "bấm nút trên trang này") → gọi `BROWSER_LIST_TABS` trước để lấy `tabId`, rồi mới `BROWSER_NAVIGATE`/`BROWSER_CLICK`/`BROWSER_FILL`/`BROWSER_READ`/`BROWSER_SCREENSHOT` theo `tabId` đó.
 - Nếu **`BROWSER_OPEN_TAB` báo lỗi** "No browser extension is connected..." → nghĩa là **thật sự chưa kết nối** (chủ workspace chưa bấm Kết nối extension, hoặc đã bị thu hồi) — hướng dẫn user theo phần "Cách kết nối" ở trên.
@@ -66,7 +67,7 @@ và báo user tắt extension khác đang chặn), và ngưỡng thử lại.
 
 ## Gợi ý cho agent khi hướng dẫn
 
-- **Extension chưa public trên Chrome Web Store** (xem cảnh báo ở đầu file) — dù nằm trong 7 tính năng, khi hướng dẫn LUÔN nhắc trạng thái này trước, đừng để user tưởng có thể tự cài ngay.
+- **Extension chưa có trên Chrome Web Store** (xem lưu ý ở đầu file) — khi hướng dẫn cài, LUÔN trỏ user vào **Cài đặt → Extension**: trong trang có sẵn hướng dẫn 5 bước + nút tải zip, đừng để user đi tìm trên Web Store.
 - Nếu người dùng hỏi "agent điều khiển được trình duyệt của tôi không" hoặc "làm sao cho agent tự mở web": hướng dẫn theo các bước trên.
 - Nhắc rõ khác biệt với Connector nếu người dùng đang nhầm hai khái niệm.
 - Sau khi người dùng báo đã kết nối + chia sẻ tab xong, gợi ý thử ngay: nhờ agent đọc hoặc thao tác trên trang vừa chia sẻ.
