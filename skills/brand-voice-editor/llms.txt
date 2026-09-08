@@ -1,0 +1,8 @@
+# brand-voice-editor — skill
+
+> Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Chỉnh sửa nội dung có sẵn theo brand voice đã xác định — tone, độ dài, cách diễn đạt, claim, CTA. Dùng khi user nói "Ch…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

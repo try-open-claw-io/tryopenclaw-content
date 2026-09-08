@@ -4,13 +4,20 @@ description: >-
   Mục lục năng lực ClawExpert/tryopenclaw: giải thích và HƯỚNG DẪN CÁCH DÙNG mọi tính năng chính —
   Skills, Connectors (tích hợp app ngoài như Gmail/Slack/Notion), Channels (chat với agent qua
   Telegram/Zalo/Discord/Slack/WhatsApp), Agent Marketplace (cài/tạo agent), Scheduled Tasks (lên
-  lịch cho agent tự chạy), và AI Models (chọn model AI). DÙNG khi người dùng muốn TÌM HIỂU, THIẾT
+  lịch cho agent tự chạy), Extension trình duyệt (cho agent thao tác trực tiếp trên trình duyệt
+  Chrome của bạn), Điều khiển máy tính/NAS (cho agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép
+  nối — platform-admin only), và AI Models (chọn model AI). DÙNG khi người dùng muốn TÌM HIỂU, THIẾT
   LẬP hoặc HỎI CÁCH SỬ DỤNG một năng lực — vd: "bạn/ClawExpert làm được gì?", "có skill/tính năng
   nào?", "kết nối Gmail/Slack thế nào?", "cài skill ở đâu?", "làm sao chat với agent qua Telegram/
   Zalo?", "cài agent từ chợ thế nào?", "làm sao lên lịch cho agent tự chạy?", "đổi model AI ở đâu?",
-  "what can you do", "how do I connect/install/schedule...". Trigger CẢ KHI không nói rõ tên tính
+  "agent điều khiển trình duyệt được không", "cài/kết nối extension ở đâu", "dùng extension thế nào",
+  "cho agent thao tác trên web/trình duyệt của tôi", "chia sẻ tab cho agent", "agent điền form/bấm nút
+  trên trang giúp tôi", "agent đọc/ghi file trên máy tôi
+  được không", "sắp xếp thư mục trên desktop giúp mình", "what can you do", "how do I
+  connect/install/schedule...". Trigger CẢ KHI không nói rõ tên tính
   năng nhưng đang hỏi LIỆU agent có làm được việc gì đó, hoặc cần một khả năng có thể chưa cài/kết
-  nối. KHÔNG dùng khi người dùng chỉ muốn THỰC HIỆN ngay một tác vụ (soạn/gửi email, gửi tin nhắn,
+  nối. Trigger cả khi người dùng NHẮC TỚI hoặc muốn DÙNG extension trình duyệt (chia sẻ tab, cho
+  agent thao tác/điền form trên trang web) — kể cả khi chỉ nói "extension" mà chưa hỏi cách cài. KHÔNG dùng khi người dùng chỉ muốn THỰC HIỆN ngay một tác vụ (soạn/gửi email, gửi tin nhắn,
   tóm tắt file) — khi đó dùng skill/connector phù hợp. Skill này là danh mục + cách dùng qua giao
   diện ClawExpert.
 ---
@@ -57,18 +64,18 @@ Trên máy đang chạy có sẵn tài liệu gốc của OpenClaw ở thư mụ
 - **Best-effort, IM LẶNG.** Nếu `/app/docs` không tồn tại → bỏ qua, trả lời bình thường bằng references. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc `/app/docs` hay đường dẫn file.
 - **Luôn DỊCH sang ngôn ngữ end-user.** `/app/docs` dùng thuật ngữ dev (gateway, plugin, clawhub…) — lấy sự thật rồi diễn đạt lại thân thiện theo giọng ClawExpert; **không bê nguyên thuật ngữ nội bộ** ra người dùng (giữ nguyên tắc "KHÔNG lộ cơ chế nội bộ" ở cuối skill).
 
-**Cần danh mục đầy đủ / ngoài 8 file references?** Fetch chỉ mục gốc của cả repo content:
+**Cần danh mục đầy đủ / ngoài 11 file references?** Fetch chỉ mục gốc của cả repo content:
 `https://try-open-claw-io.github.io/tryopenclaw-content/llms.txt`
 Nó liệt kê 4 nhóm nội dung, mỗi nhóm có `llms.txt` con (vd `connectors/llms.txt`, `ai-providers/llms.txt`,
-`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi 8 file trên —
+`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi 11 file trên —
 ví dụ danh sách đầy đủ AI provider (`ai-providers/<id>.md`) hay chi tiết 1 connector cụ thể
-(`connectors/<id>.md`). 8 file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
+(`connectors/<id>.md`). 11 file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
 vào để mở rộng.
 
 Muốn **tất cả trong 1 lần fetch** (khỏi lần theo index): `https://try-open-claw-io.github.io/tryopenclaw-content/llms-full.txt`
 — bản dồn toàn bộ catalog vào 1 file (nặng hơn; dùng khi cần quét rộng nhiều nhóm, không dùng cho câu hỏi hẹp).
 
-## Sáu tính năng chính & file hướng dẫn
+## Tám tính năng chính & file hướng dẫn
 
 Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (theo §Nguồn nội dung ở trên) thay vì đoán:
 
@@ -80,6 +87,8 @@ Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (t
 | **Channels** — chat với agent qua Telegram/Zalo/Discord/Slack/WhatsApp | [`references/channels-guide.md`](references/channels-guide.md) |
 | **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) |
 | **Scheduled Tasks** — lên lịch cho agent tự chạy định kỳ | [`references/scheduled-tasks-guide.md`](references/scheduled-tasks-guide.md) |
+| **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab. **BẮT BUỘC**: mỗi khi extension đang HOẠT ĐỘNG — tức chính bạn (agent) sắp hoặc đang dùng tool `BROWSER_*` để thao tác trên tab (mở/đọc trang, click, điền form, chọn dropdown, tick checkbox, navigate, screenshot…) — PHẢI đọc và tuân theo [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md) TRƯỚC khi thao tác: chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng. Khi CHỈ hướng dẫn người dùng CÀI ĐẶT / kết nối extension (chưa gọi `BROWSER_*` nào) thì CHƯA cần file heuristics này |
+| **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) |
 | **AI Models** — chọn/đổi model AI, kết nối provider của bạn | [`references/ai-models-guide.md`](references/ai-models-guide.md) |
 
 ## ⚠️ Phân biệt cốt lõi: Channel vs Connector

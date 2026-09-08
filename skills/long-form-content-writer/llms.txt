@@ -1,0 +1,8 @@
+# long-form-content-writer — skill
+
+> Viết draft nội dung dài như blog, article, guide hay thought leadership theo brief/outline đã có.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết draft nội dung dài — blog post, article, guide, case study, thought leadership — dựa trên brief/outline đã có. Dùn…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

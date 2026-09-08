@@ -1,6 +1,6 @@
 # Danh mục Connectors được hỗ trợ
 
-> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 50 connector.
+> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 55 connector.
 > Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).
 > Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).
 
@@ -134,6 +134,20 @@
 - **Gọi nhanh**: gõ `@notion` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn Notion → đăng nhập/cấp quyền.
 
+### NotebookLM  (`notebook_lm`)
+
+- **Dùng để làm gì**: NotebookLM là công cụ AI của Google tổng hợp và trả lời dựa trên tài liệu nguồn bạn tải lên. Với kết nối này, Agent có thể tạo notebook, thêm nguồn tài liệu và tạo audio overview giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @notebook_lm xem các notebook gần đây của mình."
+- **Gọi nhanh**: gõ `@notebook_lm` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn NotebookLM → đăng nhập/cấp quyền.
+
+### Sanity  (`sanity`)
+
+- **Dùng để làm gì**: Sanity là nền tảng CMS headless để quản lý nội dung có cấu trúc theo schema tuỳ chỉnh. Với kết nối này, Agent có thể truy vấn, tạo bản nháp và cập nhật tài liệu nội dung giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @sanity xem các tài liệu nội dung gần đây của mình."
+- **Gọi nhanh**: gõ `@sanity` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Sanity → đăng nhập/cấp quyền.
+
 ## CRM & Bán hàng
 
 ### Google Analytics ⭐  (`google_analytics`)
@@ -222,12 +236,26 @@
 - **Gọi nhanh**: gõ `@youtube` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn YouTube → đăng nhập/cấp quyền.
 
+### Google Forms  (`googleforms`)
+
+- **Dùng để làm gì**: Google Forms là công cụ tạo form và khảo sát miễn phí của Google. Với kết nối này, Agent có thể tạo form, xem câu hỏi và tổng hợp câu trả lời đã thu thập giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @googleforms xem phản hồi mới từ form của mình."
+- **Gọi nhanh**: gõ `@googleforms` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Google Forms → đăng nhập/cấp quyền.
+
 ### Lark Suite (Tenant)  (`larksuite-tenant`)
 
 - **Dùng để làm gì**: Lark Suite (Tenant) là công cụ quản trị tenant Lark. Với kết nối này, Agent có thể liệt kê, thêm, xoá user và gán role admin theo phòng ban.
 - **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @larksuite-tenant liệt kê người dùng trong tenant."
 - **Gọi nhanh**: gõ `@larksuite-tenant` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn Lark Suite (Tenant) → đăng nhập/cấp quyền.
+
+### Miro  (`miro`)
+
+- **Dùng để làm gì**: Miro là nền tảng bảng trắng trực tuyến (whiteboard) để brainstorm và cộng tác nhóm. Với kết nối này, Agent có thể tạo board, thêm sticky note, sắp xếp shape và xem thành viên board giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @miro xem các board gần đây của mình."
+- **Gọi nhanh**: gõ `@miro` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Miro → đăng nhập/cấp quyền.
 
 ## Kỹ thuật
 
@@ -265,6 +293,13 @@
 - **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @linear xem các task đang giao cho mình."
 - **Gọi nhanh**: gõ `@linear` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn Linear → đăng nhập/cấp quyền.
+
+### Apify  (`apify`)
+
+- **Dùng để làm gì**: Apify là nền tảng web scraping và tự động hoá dữ liệu bằng các Actor dựng sẵn. Với kết nối này, Agent có thể chạy actor, kiểm tra trạng thái và xem log thu thập dữ liệu giúp bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @apify xem các lần chạy actor gần đây của mình."
+- **Gọi nhanh**: gõ `@apify` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Apify → đăng nhập/cấp quyền.
 
 ## Thương mại
 

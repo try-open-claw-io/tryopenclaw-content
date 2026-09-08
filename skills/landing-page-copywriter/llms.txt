@@ -1,0 +1,8 @@
+# landing-page-copywriter — skill
+
+> Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Viết copy cho landing page. Dùng khi user nói "Viết copy landing page cho X", "viết nội dung trang landing", "làm copy…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

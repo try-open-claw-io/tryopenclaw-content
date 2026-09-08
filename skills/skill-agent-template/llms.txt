@@ -1,0 +1,8 @@
+# skill-agent-template — skill
+
+> Skill mẫu đóng gói sẵn trong một agent template — chỉ agent dùng, không hiện trong kho skill công khai.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Example agent-only skill bundled with an agent template. It stays hidden from the public skill catalog. Replace this bo…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

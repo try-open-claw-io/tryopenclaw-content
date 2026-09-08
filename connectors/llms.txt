@@ -4,6 +4,7 @@
 
 ## Connectors
 - [airtable.md](airtable.md): Airtable là cơ sở dữ liệu kết hợp bảng tính. Với kết nối này, Agent có thể xem base, tìm record theo điều kiện, thêm và cập nhật dữ liệu trong bảng của bạn. *(popular)*
+- [apify.md](apify.md): Apify là nền tảng web scraping và tự động hoá dữ liệu bằng các Actor dựng sẵn. Với kết nối này, Agent có thể chạy actor, kiểm tra trạng thái và xem log thu thậ…
 - [asana.md](asana.md): Asana là công cụ quản lý dự án và công việc. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, đặt deadline và theo dõi tiến độ của team. *(popular)*
 - [bitbucket.md](bitbucket.md): Bitbucket là nền tảng quản lý mã nguồn Git của Atlassian. Với kết nối này, Agent có thể xem pull request chờ review, mở PR mới, tra commit và theo dõi repo của… *(popular)*
 - [box.md](box.md): Box là dịch vụ lưu trữ đám mây cho doanh nghiệp. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạ… *(popular)*
@@ -22,6 +23,7 @@
 - [googlecalendar.md](googlecalendar.md): Google Calendar là lịch online của Google. Với kết nối này, Agent có thể xem lịch, đặt cuộc họp, tìm khung giờ trống và mời người tham gia cho bạn. *(popular)*
 - [googledocs.md](googledocs.md): Google Docs là trình soạn thảo tài liệu của Google. Với kết nối này, Agent có thể mở, đọc, soạn nội dung mới và thêm comment vào tài liệu cho bạn. *(popular)*
 - [googledrive.md](googledrive.md): Google Drive là dịch vụ lưu trữ đám mây của Google. Với kết nối này, Agent có thể tìm file, chia sẻ link, tải file lên và sắp xếp thư mục cho bạn. *(popular)*
+- [googleforms.md](googleforms.md): Google Forms là công cụ tạo form và khảo sát miễn phí của Google. Với kết nối này, Agent có thể tạo form, xem câu hỏi và tổng hợp câu trả lời đã thu thập giúp…
 - [googlesheets.md](googlesheets.md): Google Sheets là bảng tính online của Google. Với kết nối này, Agent có thể đọc dữ liệu, thêm dòng, cập nhật ô và lọc theo điều kiện cho bạn. *(popular)*
 - [hubspot.md](hubspot.md): HubSpot là nền tảng CRM cho marketing, bán hàng và chăm sóc khách. Với kết nối này, Agent có thể thêm lead, cập nhật deal, xem pipeline và tra hồ sơ contact ch… *(popular)*
 - [intercom.md](intercom.md): Intercom là nền tảng chat hỗ trợ khách trên web và app. Với kết nối này, Agent có thể xem chat chưa trả lời, trả lời khách, gắn câu mẫu và mở đúng hội thoại ch… *(popular)*
@@ -32,13 +34,16 @@
 - [linkedin.md](linkedin.md): LinkedIn là mạng xã hội nghề nghiệp. Với kết nối này, Agent có thể tìm người, kết nối, tìm ứng viên và đăng bài cho cá nhân hoặc công ty. *(popular)*
 - [mailchimp.md](mailchimp.md): Mailchimp là nền tảng email marketing. Với kết nối này, Agent có thể tạo danh sách, thêm khách vào audience, gửi chiến dịch và xem số liệu mở/click. *(popular)*
 - [microsoftteams.md](microsoftteams.md): Microsoft Teams là ứng dụng chat đội nhóm của Microsoft. Với kết nối này, Agent có thể gửi tin vào kênh, tìm tin nhắn và tóm tắt hội thoại. *(popular)*
+- [miro.md](miro.md): Miro là nền tảng bảng trắng trực tuyến (whiteboard) để brainstorm và cộng tác nhóm. Với kết nối này, Agent có thể tạo board, thêm sticky note, sắp xếp shape và…
 - [monday.md](monday.md): Monday.com là nền tảng quản lý công việc nhiều kiểu xem. Với kết nối này, Agent có thể xem task, tạo item mới và cập nhật trạng thái trên từng board. *(popular)*
+- [notebook_lm.md](notebook_lm.md): NotebookLM là công cụ AI của Google tổng hợp và trả lời dựa trên tài liệu nguồn bạn tải lên. Với kết nối này, Agent có thể tạo notebook, thêm nguồn tài liệu và…
 - [notion.md](notion.md): Notion là không gian làm việc all-in-one cho ghi chú, tài liệu và wiki. Với kết nối này, Agent có thể tìm trang, tạo doc và cập nhật mục trong workspace. *(popular)*
 - [onedrive.md](onedrive.md): OneDrive là dịch vụ lưu trữ đám mây của Microsoft. Với kết nối này, Agent có thể tìm, tải lên, sắp xếp và chia sẻ file trong kho lưu trữ của bạn. *(popular)*
 - [outlook.md](outlook.md): Outlook là dịch vụ email của Microsoft. Với kết nối này, Agent có thể đọc, soạn, gửi và sắp xếp thư trong hộp thư của bạn. *(popular)*
 - [outlookcalendar.md](outlookcalendar.md): Outlook Calendar là lịch của Microsoft. Với kết nối này, Agent có thể đặt cuộc họp, xem lịch, kiểm tra khung giờ trống và mời người tham dự cho bạn. *(popular)*
 - [pipedrive.md](pipedrive.md): Pipedrive là phần mềm CRM bán hàng đơn giản. Với kết nối này, Agent có thể xem, thêm, cập nhật và theo dõi deal trên pipeline của bạn. *(popular)*
 - [salesforce.md](salesforce.md): Salesforce là nền tảng CRM cho doanh nghiệp. Với kết nối này, Agent có thể xem, thêm, cập nhật opportunity và lead cùng xem báo cáo cho bạn. *(popular)*
+- [sanity.md](sanity.md): Sanity là nền tảng CMS headless để quản lý nội dung có cấu trúc theo schema tuỳ chỉnh. Với kết nối này, Agent có thể truy vấn, tạo bản nháp và cập nhật tài liệ…
 - [sendgrid.md](sendgrid.md): SendGrid là nền tảng gửi email tự động cho từng giao dịch. Với kết nối này, Agent có thể gửi mail xác nhận đơn, mã OTP và đặt lại mật khẩu cho khách của bạn. *(popular)*
 - [shopify.md](shopify.md): Shopify là nền tảng bán hàng online. Với kết nối này, Agent có thể xem đơn hàng, quản lý sản phẩm, tra tồn kho và cập nhật giá cho cửa hàng của bạn. *(popular)*
 - [slack.md](slack.md): Slack là ứng dụng chat cho đội nhóm. Với kết nối này, Agent có thể đăng tin lên kênh, tìm tin nhắn, tóm tắt kênh và chia sẻ file cho bạn. *(popular)*
