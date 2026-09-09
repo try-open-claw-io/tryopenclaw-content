@@ -9,6 +9,7 @@
 - [bitbucket.md](bitbucket.md): Bitbucket là nền tảng quản lý mã nguồn Git của Atlassian. Với kết nối này, Agent có thể xem pull request chờ review, mở PR mới, tra commit và theo dõi repo của… *(popular)*
 - [box.md](box.md): Box là dịch vụ lưu trữ đám mây cho doanh nghiệp. Với kết nối này, Agent có thể tìm tài liệu theo tên, chia sẻ link file, tải file lên và sắp xếp thư mục của bạ… *(popular)*
 - [calendly.md](calendly.md): Calendly là công cụ đặt lịch hẹn online. Với kết nối này, Agent có thể xem lịch hẹn sắp tới, tạo link đặt hẹn, dời và huỷ cuộc hẹn của bạn. *(popular)*
+- [canva.md](canva.md): Canva là công cụ thiết kế kéo-thả cho ảnh, bài đăng và bản trình bày. Với kết nối này, Agent có thể xem thiết kế, tạo bản thiết kế mới, sắp xếp thư mục và xuất… *(popular)*
 - [clickup.md](clickup.md): ClickUp là nền tảng quản lý dự án all-in-one. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, cập nhật trạng thái và theo dõi dự án của bạn. *(popular)*
 - [confluence.md](confluence.md): Confluence là wiki tài liệu nội bộ của Atlassian. Với kết nối này, Agent có thể tìm trang theo chủ đề, tạo trang mới, cập nhật nội dung và tra cứu tài liệu của… *(popular)*
 - [discord.md](discord.md): Discord là ứng dụng chat cộng đồng theo kênh. Với kết nối này, Agent có thể xem tin nhắn mới, đăng thông báo lên kênh, tìm tin và tóm tắt kênh trong server của… *(popular)*
