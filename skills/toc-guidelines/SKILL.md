@@ -14,9 +14,12 @@ description: >-
   "cho agent thao tác trên web/trình duyệt của tôi", "chia sẻ tab cho agent", "agent điền form/bấm nút
   trên trang giúp tôi", "agent đọc/ghi file trên máy tôi
   được không", "sắp xếp thư mục trên desktop giúp mình", "what can you do", "how do I
-  connect/install/schedule...". Trigger CẢ KHI không nói rõ tên tính
-  năng nhưng đang hỏi LIỆU agent có làm được việc gì đó, hoặc cần một khả năng có thể chưa cài/kết
-  nối. Trigger cả khi người dùng NHẮC TỚI hoặc muốn DÙNG extension trình duyệt (chia sẻ tab, cho
+  connect/install/schedule...". Trigger CẢ KHI hỏi về AGENT — đã cài hay mới thấy trên
+  chợ — dù tả CÔNG VIỆC ("có gì phù hợp / hỗ trợ cho việc X không", "tôi bán hàng online thì
+  dùng cái nào", "nên cài agent nào"), gọi TÊN agent ("agent bán hàng làm được gì", "agent này
+  hợp shop mình không"), hay hỏi THAO TÁC bên trong ("chốt đơn / duyệt bài / đăng WordPress /
+  tạo ảnh sản phẩm / bộ nhận diện thương hiệu ở đâu"). Trigger CẢ KHI không nói rõ tên tính năng nhưng đang hỏi LIỆU agent
+  có làm được việc gì đó, hoặc cần một khả năng có thể chưa cài/kết nối. Trigger cả khi người dùng NHẮC TỚI hoặc muốn DÙNG extension trình duyệt (chia sẻ tab, cho
   agent thao tác/điền form trên trang web) — kể cả khi chỉ nói "extension" mà chưa hỏi cách cài. KHÔNG dùng khi người dùng chỉ muốn THỰC HIỆN ngay một tác vụ (soạn/gửi email, gửi tin nhắn,
   tóm tắt file) — khi đó dùng skill/connector phù hợp. Skill này là danh mục + cách dùng qua giao
   diện ClawExpert.
@@ -64,12 +67,13 @@ Trên máy đang chạy có sẵn tài liệu gốc của OpenClaw ở thư mụ
 - **Best-effort, IM LẶNG.** Nếu `/app/docs` không tồn tại → bỏ qua, trả lời bình thường bằng references. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc `/app/docs` hay đường dẫn file.
 - **Luôn DỊCH sang ngôn ngữ end-user.** `/app/docs` dùng thuật ngữ dev (gateway, plugin, clawhub…) — lấy sự thật rồi diễn đạt lại thân thiện theo giọng ClawExpert; **không bê nguyên thuật ngữ nội bộ** ra người dùng (giữ nguyên tắc "KHÔNG lộ cơ chế nội bộ" ở cuối skill).
 
-**Cần danh mục đầy đủ / ngoài 11 file references?** Fetch chỉ mục gốc của cả repo content:
+**Cần danh mục đầy đủ / ngoài bộ file references?** Fetch chỉ mục gốc của cả repo content:
 `https://try-open-claw-io.github.io/tryopenclaw-content/llms.txt`
 Nó liệt kê 4 nhóm nội dung, mỗi nhóm có `llms.txt` con (vd `connectors/llms.txt`, `ai-providers/llms.txt`,
-`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi 11 file trên —
+`categories/llms.txt`, `skills/llms.txt`) trỏ tới từng file lẻ. Dùng khi câu hỏi vượt phạm vi các file
+references —
 ví dụ danh sách đầy đủ AI provider (`ai-providers/<id>.md`) hay chi tiết 1 connector cụ thể
-(`connectors/<id>.md`). 11 file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
+(`connectors/<id>.md`). Bộ file references vẫn là nguồn CHÍNH (đã viết cho end-user); `llms.txt` là điểm
 vào để mở rộng.
 
 Muốn **tất cả trong 1 lần fetch** (khỏi lần theo index): `https://try-open-claw-io.github.io/tryopenclaw-content/llms-full.txt`
@@ -85,11 +89,83 @@ Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (t
 | **Skills** — năng lực đính kèm agent (có gì, cài thế nào) | [`references/skills-catalog.md`](references/skills-catalog.md) + [`references/install-guide.md`](references/install-guide.md) |
 | **Connectors** — tích hợp app ngoài để agent thao tác (Gmail, Slack, Notion...) | [`references/connectors-catalog.md`](references/connectors-catalog.md) + [`references/install-guide.md`](references/install-guide.md) |
 | **Channels** — chat với agent qua Telegram/Zalo/Discord/Slack/WhatsApp | [`references/channels-guide.md`](references/channels-guide.md) |
-| **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) |
+| **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) — đây là luồng CÀI/TẠO nói chung. Hỏi về **một agent cụ thể** (nó làm được gì, hợp không, dùng sao) — dù đã cài hay mới thấy trên chợ → xem §Agent dựng sẵn bên dưới |
 | **Scheduled Tasks** — lên lịch cho agent tự chạy định kỳ | [`references/scheduled-tasks-guide.md`](references/scheduled-tasks-guide.md) |
 | **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab. **BẮT BUỘC**: mỗi khi extension đang HOẠT ĐỘNG — tức chính bạn (agent) sắp hoặc đang dùng tool `BROWSER_*` để thao tác trên tab (mở/đọc trang, click, điền form, chọn dropdown, tick checkbox, navigate, screenshot…) — PHẢI đọc và tuân theo [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md) TRƯỚC khi thao tác: chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng. Khi CHỈ hướng dẫn người dùng CÀI ĐẶT / kết nối extension (chưa gọi `BROWSER_*` nào) thì CHƯA cần file heuristics này |
 | **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) |
 | **AI Models** — chọn/đổi model AI, kết nối provider của bạn | [`references/ai-models-guide.md`](references/ai-models-guide.md) |
+
+## Agent dựng sẵn — giới thiệu & hướng dẫn dùng
+
+Bảng trên là **năng lực nền tảng**. Phần này khác tầng: nói về **từng agent cụ thể**.
+
+LẤY đúng **1 file** của agent đang nói tới. **Đừng lấy cả 4** (mỗi file là một cuốn hướng dẫn
+dài; lấy thừa chỉ tốn ngữ cảnh mà không dùng tới).
+
+### ⚠️ HAI TẦNG TRẢ LỜI — phân loại câu hỏi TRƯỚC khi mở miệng
+
+**Đọc file KHÔNG có nghĩa là kể lại cả file.** File rất dài; xác định tầng rồi trả lời đúng tầng.
+
+**TẦNG 1 — "là gì / làm được gì / hợp không"**
+*"Agent Sales là sao?" · "cái này làm được gì?" · "agent này hợp shop mình không?"*
+
+Trả lời đúng khuôn này, không thêm gì khác:
+
+```
+<MỘT câu định vị: agent này làm NGHỀ GÌ cho người dùng>.   ← câu quan trọng nhất
+
+- <việc nó làm — 1 dòng>     (3-5 dòng, mỗi dòng một ý, viết như nói chuyện)
+
+Hợp với: <một câu — ai nên dùng>.
+
+Bạn muốn biết kỹ hơn phần nào?
+```
+
+- ✅ "Trợ lý bán hàng đa kênh là nhân viên bán hàng trực Facebook, Zalo và website cho bạn 24/7."
+- ❌ "Nói ngắn gọn: …" · "Đây là một agent giúp bạn…" · "Có nhé — …" → rào đón, chưa định vị
+- **CẤM** heading, bảng, gạch con, mục kiểu "Ba thứ hay nhất", và mọi thứ thuộc thao tác (tên
+  tab, tên nút, số bước, thời gian chờ, giới hạn kỹ thuật).
+
+**Nếu họ tả CÔNG VIỆC thay vì gọi tên agent** (*"tôi bán hàng online thì dùng cái nào?"*) — họ
+không biết agent nào tên gì, việc của bạn là gán việc của họ vào agent hợp:
+
+- Có agent khớp → trả lời theo khuôn trên, rồi **một dòng** gợi ý agent còn lại dùng kèm được.
+- Không cái nào khớp hẳn → **đừng nói cụt "không có"**; nêu agent gần nhất, nói rõ nó đỡ được
+  phần nào, phần nào không.
+- **Không bịa năng lực cho khớp.** Thà nói "phần này chưa có agent nào làm" còn hơn hứa sai.
+
+**TẦNG 2 — "chi tiết / làm thế nào / ở đâu"**
+*"kể chi tiết đi" · "chốt đơn thế nào?" · "duyệt bài ở đâu?"*
+
+Người dùng đã cài app, giao diện tự chỉ họ bấm gì. Nói **HÀNH VI của agent** — thứ nhìn màn
+hình không đoán ra — chứ không nhả lại chi tiết thao tác trong file.
+
+- ✅ "Khai size cho món nào thì AI hỏi khách chọn trước khi chốt, không tự đoán."
+- ❌ "Nhập ô Phân loại / Tồn kho dạng `27,28,29:còn; 26:hết`"
+- ❌ "Bấm vào sản phẩm → sửa → Lưu. Xoá nhiều thì tick chọn rồi Xoá hàng loạt."
+- **CẤM** bê nguyên cú pháp nhập liệu, bảng trạng thái, thứ tự bấm nút. **CẤM** bảng markdown.
+- **Chỉ** phần họ hỏi, **tối đa ~8 dòng**, thiếu thì hỏi "bạn muốn mình nói kỹ chỗ nào?"
+- **Ngoại lệ:** hỏi thẳng vào thao tác (*"nhập size kiểu gì?"*) → mới đưa cú pháp, đúng cái họ hỏi.
+
+> **Câu hỏi ngắn → câu trả lời ngắn.** Hỏi một câu mà nhận về một bài viết có heading và bullet
+> là đã sai. Họ hỏi tiếp thì mới nói thêm.
+
+| Agent | Người dùng hỏi gì | Đọc file |
+|---|---|---|
+| **Trợ lý bán hàng đa kênh** *(có bảng điều khiển)* | AI chat & chốt đơn với khách trên FB/Zalo/Web; xem hội thoại/đơn hàng; nhập sản phẩm; đào tạo (coaching) AI; bật/tắt giờ trực | [`references/sales-agent-guide.md`](references/sales-agent-guide.md) |
+| **AI Creative Studio** *(có bảng điều khiển)* | Tạo ảnh marketing / e-commerce / văn phòng (19 loại); thư viện ảnh; bộ nhận diện thương hiệu; tỉ lệ khung hình | [`references/creative-agent-guide.md`](references/creative-agent-guide.md) |
+| **SEO Content Agent** *(có bảng điều khiển)* | Kế hoạch từ khoá (bài chính / bài liên quan); viết & duyệt bài; đăng WordPress/Haravan; theo dõi thứ hạng qua Google Search Console | [`references/seo-agent-guide.md`](references/seo-agent-guide.md) |
+| **Merchant Content Agent** *(chat thuần, không có bảng điều khiển)* | Mô tả sản phẩm, caption MXH, ad copy FB/Google, bài blog, lịch nội dung, tái sử dụng nội dung, email, landing page, case study | [`references/merchant-content-agent-guide.md`](references/merchant-content-agent-guide.md) |
+
+**Hỏi về agent KHÁC trên chợ (không có trong 4 file trên)?** Chợ còn nhiều agent khác. **Đừng
+bịa năng lực** cho agent bạn không có tài liệu — mô tả chung theo
+`references/agents-marketplace-guide.md` rồi hướng người dùng mở thẻ agent đó trong chợ để xem
+"Giới thiệu / Khi nào dùng / Cách dùng" của chính nó.
+
+**Link cho nhóm này.** Chỉ đưa link chợ theo đúng path trong `references/sitemap.md`, rồi chỉ
+đường menu tới agent. Bảng điều khiển của từng agent **không có link đưa được** — gọi các tab/nút
+bên trong bằng **tên hiển thị** ("tab Sản phẩm", "tab Bài chờ duyệt", "nút Chat thử"). Vẫn theo
+đúng §Link ở dưới: sitemap là nguồn path duy nhất.
 
 ## ⚠️ Phân biệt cốt lõi: Channel vs Connector
 
