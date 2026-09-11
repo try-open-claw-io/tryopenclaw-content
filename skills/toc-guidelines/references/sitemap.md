@@ -13,10 +13,13 @@
 - **Trên channel** (Telegram/Zalo/Discord…): không có domain trình duyệt → **đừng gửi link**, chỉ chỉ
   đường trong app (mô tả menu).
 
-## Các trang (khớp 7 tính năng toc-guide)
+## Các trang (khớp 8 tính năng toc-guide)
 
 Connectors / Skills / AI Models nằm trong **Cài đặt** → dùng path `/{locale}/settings/<tab>` (tab id **số ít**).
-Channels / Scheduled Tasks / Use-cases / Agents là trang riêng.
+Channels / Scheduled Tasks / Marketplace là trang riêng.
+
+**Agent của người dùng KHÔNG có trang riêng** — chúng nằm ngay ở **sidebar**, mục **AGENT**. Hỏi "Agent của tôi
+đâu / quản lý agent ở đâu" → **chỉ sidebar, đừng đưa link**.
 
 | Người dùng cần | Link (tương đối) |
 |---|---|
@@ -27,9 +30,7 @@ Channels / Scheduled Tasks / Use-cases / Agents là trang riêng.
 | AI Credits (nạp/xem credit) | `/{locale}/settings/credits` |
 | Kênh chat (Telegram/Zalo/Discord…) | `/{locale}/channels` |
 | Lịch tự chạy (Scheduled Tasks) | `/{locale}/scheduled-tasks` |
-| Chợ use-case / cài use-case | `/{locale}/use-cases` |
-| Bảng điều khiển agent của 1 use-case | `/{locale}/use-cases/<id>/operate` |
-| Danh sách / quản lý agent | `/{locale}/agents` |
+| Marketplace — duyệt / cài Agent App, Agent Chat *(sidebar: **Agent Marketplace**)* | `/{locale}/marketplace` |
 | Cài đặt chung | `/{locale}/settings` |
 
 > Tab id số ít: `connector`, `skill`, `aimodel`, `extension`, `channel`, `credits`, `account`, `backup`.
