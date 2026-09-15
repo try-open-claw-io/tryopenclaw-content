@@ -1,6 +1,6 @@
 # Danh mục Connectors được hỗ trợ
 
-> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 55 connector.
+> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 56 connector.
 > Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).
 > Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).
 
@@ -105,6 +105,13 @@
 - **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @airtable liệt kê các base gần đây của mình."
 - **Gọi nhanh**: gõ `@airtable` trong câu nhắn.
 - **Kết nối**: mở ClawExpert → mục Connectors → chọn Airtable → đăng nhập/cấp quyền.
+
+### Canva ⭐  (`canva`)
+
+- **Dùng để làm gì**: Canva là công cụ thiết kế kéo-thả cho ảnh, bài đăng và bản trình bày. Với kết nối này, Agent có thể xem thiết kế, tạo bản thiết kế mới, sắp xếp thư mục và xuất file cho bạn.
+- **Ví dụ người dùng nói**: "Dùng tryopenclaw connectors @canva xem các thiết kế gần đây của mình."
+- **Gọi nhanh**: gõ `@canva` trong câu nhắn.
+- **Kết nối**: mở ClawExpert → mục Connectors → chọn Canva → đăng nhập/cấp quyền.
 
 ### Confluence ⭐  (`confluence`)
 

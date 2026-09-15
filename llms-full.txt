@@ -182,6 +182,11 @@
 - en: Calendly is an online scheduling tool. With this connection, the Agent can view upcoming bookings, create booking links, reschedule and cancel your meetings.
 - category: scheduling
 
+### canva — Canva
+- vi: Canva là công cụ thiết kế kéo-thả cho ảnh, bài đăng và bản trình bày. Với kết nối này, Agent có thể xem thiết kế, tạo bản thiết kế mới, sắp xếp thư mục và xuất file cho bạn.
+- en: Canva is a drag-and-drop design tool for graphics, social posts and presentations. With this connection, the Agent can browse designs, create new ones, organize folders and export files for you.
+- category: documents
+
 ### clickup — ClickUp
 - vi: ClickUp là nền tảng quản lý dự án all-in-one. Với kết nối này, Agent có thể xem task được giao, tạo việc mới, cập nhật trạng thái và theo dõi dự án của bạn.
 - en: ClickUp is an all-in-one project management platform. With this connection, the Agent can view assigned tasks, create new work, update statuses, and track your projects.
