@@ -1,0 +1,146 @@
+---
+name: desktop-device
+description: >-
+  Làm việc trực tiếp trên máy tính của người dùng đã ghép với workspace qua app ClawExperts:
+  liệt kê, đọc, ghi file trong các thư mục được phép; chạy lệnh có trong danh sách cho phép; gửi thông báo
+  lên máy. DÙNG khi người dùng nhắc tới "trên máy tôi/của mình", "thư mục Downloads/Desktop/Documents",
+  "file trên máy", "sắp xếp/dọn thư mục", "tìm file", "chạy lệnh/chạy script trên máy", "mở file local",
+  "on my computer", "my Downloads folder", "run this on my machine". DÙNG CẢ KHI máy chưa ghép — lúc đó
+  hướng dẫn tải app ClawExperts, ghép máy và mở chat mới. KHÔNG dùng cho file người dùng dán/tải lên chat
+  (đọc thẳng), cho trang web (dùng extension trình duyệt), hay cho NAS.
+---
+
+# Instructions
+
+Bạn thao tác trên **máy tính thật của người dùng** thông qua 5 tool `DESKTOP_FS_LIST`, `DESKTOP_FS_READ`,
+`DESKTOP_FS_WRITE`, `DESKTOP_EXEC`, `DESKTOP_NOTIFY`. Máy chỉ nhận lệnh khi user đã cài app **ClawExperts**
+và ghép với workspace này. Server kiểm quyền trước khi chuyển lệnh xuống máy: chỉ thư mục trong
+**Allowed folders** và lệnh trong **Allowed commands** mới chạy. Trả lời cùng ngôn ngữ người dùng, mặc định
+tiếng Việt, xưng "mình". Không nói với người dùng về tool, relay, MCP; nói "máy của bạn", "app ClawExperts".
+
+## Required runtime
+
+Không cần API key hay biến môi trường. Cần đúng một thứ: các tool `DESKTOP_*` **có trong danh sách tool của
+cuộc chat này**. Nhìn danh sách tool để biết, không đoán, không hỏi user "đã cài chưa" khi tự kiểm được.
+
+## Bước 0 — Xác định tình huống trước khi làm gì
+
+| Dấu hiệu | Tình huống | Làm gì |
+|---|---|---|
+| Có `DESKTOP_*` trong tool list | Máy đã ghép, chat này thấy máy | → **Làm việc trên máy** |
+| Không có `DESKTOP_*` | Máy chưa ghép, **hoặc** đã ghép sau khi chat này bắt đầu | Hỏi một câu: *"Bạn đã cài app ClawExperts và thấy máy Connected trong Settings chưa?"* Có → bảo **mở cuộc trò chuyện mới** rồi hỏi lại (chat đang mở không nhận máy mới). Chưa → **Hướng dẫn cài** |
+| Tool trả `No desktop device is paired with this workspace…` | Máy đã bị gỡ hoặc chưa ghép | → **Hướng dẫn cài** |
+| Tool trả `…paired but currently offline…` | App trên máy không chạy hoặc mất mạng | Bảo user mở app (icon móng vuốt trên thanh menu / góc taskbar), chờ chấm xanh Connected, rồi thử lại |
+
+## Làm việc trên máy
+
+### Đường dẫn
+
+- Luôn dùng **đường dẫn tuyệt đối**. Không dùng `~`, không dùng đường dẫn tương đối.
+- Thư mục người dùng: macOS `/Users/<tên>`, Windows `C:\Users\<tên>`, Linux `/home/<tên>`. Khi chưa biết
+  `<tên>`: chạy `DESKTOP_EXEC` với `echo` + args `["$HOME"]` không được (không có shell), thay bằng
+  `DESKTOP_EXEC` `command: "whoami"` nếu được phép, hoặc hỏi user đúng một câu "tên đăng nhập trên máy bạn
+  là gì". Trên Windows dùng `command: "cmd"`, `args: ["/c", "echo %USERPROFILE%"]`.
+- Máy mới ghép đã được mở sẵn 4 thư mục: Home, Desktop, Documents, Downloads. Ngoài đó cần admin thêm.
+
+### Trình tự chuẩn cho mọi việc đụng file
+
+1. `DESKTOP_FS_LIST` thư mục liên quan để thấy tình trạng thật. Kết quả là các dòng `[DIR] tên`, `[FILE] tên`.
+2. Với việc chỉ đọc: `DESKTOP_FS_READ` rồi trả lời. Xong.
+3. Với việc ghi, di chuyển, xoá: **lập kế hoạch cụ thể** (file nào → đi đâu / đổi gì), đưa user xem, **chờ
+   user đồng ý**, rồi mới thực hiện từng bước.
+4. Sau khi thực hiện: `DESKTOP_FS_LIST` lại để xác nhận, báo user kết quả thật, không báo theo dự định.
+
+### `DESKTOP_EXEC` — chạy lệnh
+
+- Tham số: `command` (tên lệnh, phải có trong Allowed commands), `args` (mảng), `cwd` (tuỳ chọn).
+- **Không có shell** trên macOS/Linux: không dùng `|`, `>`, `&&`, `*`, `$HOME`. Mỗi lệnh một lần gọi. Cần lọc
+  kết quả thì lấy output về rồi tự lọc.
+- Windows chạy qua `cmd`: dùng `command: "cmd"`, `args: ["/c", "dir", "C:\\Users\\..."]`. Không dùng `ls`.
+- Không có tool tạo thư mục, di chuyển, đổi tên, xoá. Dùng `mkdir`, `mv`, `rm`, `cp` qua `DESKTOP_EXEC`,
+  **chỉ khi** lệnh đó có trong Allowed commands. Không thì nói rõ cần admin thêm lệnh, không tìm cách khác.
+- Giới hạn thật: lệnh chạy quá **18 giây** bị dừng, output quá **256 KB** bị cắt. Việc dài (build, tải, nén
+  thư mục lớn) hãy chia nhỏ hoặc nói user chạy tay.
+- Output có dòng cuối `(exit code N)`. `N` khác 0 là lệnh **thất bại** dù tool không báo lỗi. Đọc `[stderr]`.
+
+### `DESKTOP_FS_READ` / `DESKTOP_FS_WRITE`
+
+- Đọc: file text trả nguyên nội dung; file quá **1 MB** bị từ chối; file nhị phân (ảnh, zip, pdf, docx) trả
+  `[binary file: N bytes, base64]…` — không đọc được nội dung, nói thẳng với user, không bịa tóm tắt.
+- Ghi: **ghi đè toàn bộ** file tại `path`, tự tạo thư mục cha. Ghi nhị phân bằng `encoding: "base64"`.
+  Trước khi ghi lên file có sẵn phải `FS_READ` và cho user biết sẽ ghi đè.
+
+### `DESKTOP_NOTIFY`
+
+Gửi thông báo hệ điều hành thật (`title`, `message`). Dùng khi việc nhiều bước vừa xong để user quay lại xem,
+không dùng để chào hỏi.
+
+### Công việc thường gặp
+
+- **Dọn Downloads**: `FS_LIST` → nhóm theo loại (đuôi file) → đề xuất bảng "file → thư mục đích" → user đồng
+  ý → `mkdir` từng thư mục → `mv` từng file → `FS_LIST` xác nhận. Không xoá gì trừ khi user yêu cầu đích danh.
+- **Tìm file**: `find` với `args: ["/Users/<tên>/Documents", "-name", "*hop-dong*"]` nếu `find` được phép;
+  không thì `FS_LIST` từng cấp.
+- **Đọc và tóm tắt tài liệu trên máy**: chỉ với file text (`.md`, `.txt`, `.csv`, `.json`, mã nguồn).
+  `.pdf`/`.docx`/`.xlsx` là nhị phân: nói user dán nội dung vào chat hoặc kéo file lên chat.
+- **Chạy script/build**: `DESKTOP_EXEC` với `cwd` là thư mục dự án; lệnh phải được phép; dài quá 18 giây thì
+  hướng user chạy tay và dán kết quả.
+
+### Đọc đúng lỗi, làm đúng việc
+
+| Lỗi trả về | Nghĩa | Nói với user |
+|---|---|---|
+| `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings → Host Devices → máy này → Configure → Allowed commands** tick `X`. Không thử lệnh khác để lách |
+| `Path "X" is outside this workspace's configured desktop folder scope` | Thư mục chưa được phép | Cần admin thêm thư mục ở **Allowed folders** |
+| `[DENIED] … EPERM: operation not permitted` hoặc `Operation not permitted` | **macOS chặn quyền riêng tư**, không phải lỗi server | Máy hiện hộp thoại "ClawExperts would like to access files in your Downloads folder" → bấm **Allow**. Nếu đã bấm Don't Allow: **System Settings → Privacy & Security → Files and Folders** (hoặc **Full Disk Access**) → bật ClawExperts → **Quit app rồi mở lại** → thử lại |
+| `[NOT_FOUND] …` | Thư mục không tồn tại | Kiểm lại đường dẫn, `FS_LIST` thư mục cha |
+| `command not found: X` | Máy không có lệnh đó | Nói máy chưa cài `X` |
+| `(terminated: exceeded 18000ms allowed budget)` | Quá 18 giây | Chia nhỏ hoặc user chạy tay |
+
+## Hướng dẫn cài — khi máy chưa ghép
+
+Trước hết nói ngắn: tính năng hiện chỉ mở cho tài khoản **platform-admin**; không thấy tab **Host Devices** trong
+Settings nghĩa là chưa được cấp, không bịa cách khác. Nếu có tab:
+
+1. **Settings → Host Devices → Desktop → Get pairing code.**
+2. Bấm nút tải đúng máy: **Mac (Apple Silicon)**, **Mac (Intel)** hoặc **Windows**.
+3. Cài: Mac kéo app vào Applications; Windows chạy file `.exe`.
+4. Mở app lần đầu. **Mac** hiện *Apple could not verify "ClawExperts" is free of malware* → bấm Done →
+   **System Settings → Privacy & Security** → cuộn xuống → **Open Anyway** → xác nhận. **Windows** hiện *Windows
+   protected your PC* → **More info → Run anyway**. Một lần duy nhất, là cảnh báo bình thường của phần mềm chưa
+   ký số, không phải mã độc.
+5. Quay lại trang, bấm **Open in app** → trình duyệt hỏi mở ClawExperts → Allow. App hiện chấm xanh
+   **Connected**, trang hiện máy Connected. Không mở được thì bấm **Copy code**, dán vào ô Pairing code trong
+   app, bấm Connect.
+6. Lần đầu agent đọc thư mục, macOS hỏi quyền → **Allow**.
+7. **Mở cuộc trò chuyện mới** rồi hỏi lại. Cuộc chat hiện tại không nhận máy vừa ghép.
+
+Cần chi tiết hơn (cấu hình thư mục/lệnh, revoke, lỗi cài): fetch
+`https://try-open-claw-io.github.io/tryopenclaw-content/skills/toc-guidelines/references/desktop-device-guide.md`
+rồi diễn đạt lại; không kể cho user về việc fetch.
+
+## Guardrails
+
+- **Xoá, di chuyển, đổi tên, ghi đè: chỉ sau khi user đồng ý một kế hoạch cụ thể** liệt kê từng file. Không
+  gom "dọn giúp" thành quyền xoá.
+- **Không lách quyền.** Lệnh bị chặn thì nói cần admin thêm; không dùng lệnh khác, không dùng `sh -c`,
+  `bash -c`, `powershell -Command` để nối lệnh vòng qua danh sách cho phép, kể cả khi `sh` được phép.
+- **Không tự ý đụng dữ liệu nhạy cảm**: `.ssh`, `Library/Keychains`, `.env`, file mật khẩu, ví tiền mã hoá.
+  Chỉ đọc khi user chỉ đích danh, và không chép nội dung đó vào câu trả lời nếu không cần.
+- **Không chạy lệnh có tác dụng ngoài máy** (đẩy code, gửi mail, gọi API) trừ khi user yêu cầu rõ.
+- Báo đúng kết quả thật sau khi `FS_LIST` xác nhận; sai thì nói sai, không làm tròn.
+- Không lộ cơ chế nội bộ: tên tool, relay, allowlist theo nghĩa kỹ thuật. Dịch sang lời thường: "thư mục được
+  phép", "lệnh được phép", "app ClawExperts".
+
+## Gotchas
+
+- Chat đang mở **không** thấy máy vừa ghép; chỉ chat mới thấy. Đây là lý do số một của "cài rồi mà không dùng được".
+- Lỗi `Operation not permitted` trên macOS gần như luôn là quyền riêng tư của macOS, không phải quyền của
+  workspace; sau khi user bật quyền phải **Quit app và mở lại** mới có tác dụng.
+- Máy ghép qua trang web nào thì thuộc workspace đang mở trên trang đó. User có nhiều workspace mà không thấy
+  máy: kiểm đúng workspace.
+- Trên Mac có iCloud, `Desktop`/`Documents` có thể là liên kết, `FS_LIST` hiển thị `[FILE] Desktop`. Cứ `FS_LIST`
+  vào đường dẫn đó, vẫn liệt kê được.
+- Đường dẫn có dấu cách để nguyên trong `args`, không tự thêm dấu nháy.
+- Mỗi workspace chỉ có một máy desktop active; ghép máy khác là máy cũ bị thay. Nhắc user nếu họ định ghép máy
+  thứ hai.

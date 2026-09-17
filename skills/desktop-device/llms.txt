@@ -1,0 +1,8 @@
+# desktop-device — skill
+
+> Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Làm việc trực tiếp trên máy tính của người dùng đã ghép với workspace qua app ClawExperts: liệt kê, đọc, ghi file trong…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

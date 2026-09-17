@@ -17,6 +17,7 @@
 - [content-repurposer/](content-repurposer/llms.txt): Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.
 - [daily-planner/](daily-planner/llms.txt): Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
 - [decision-helper/](decision-helper/llms.txt): So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
+- [desktop-device/](desktop-device/llms.txt): Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
 - [doc-summarizer/](doc-summarizer/llms.txt): Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
 - [email-drafter/](email-drafter/llms.txt): Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
 - [humanizer/](humanizer/llms.txt): Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.
