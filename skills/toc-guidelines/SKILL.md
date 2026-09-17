@@ -91,8 +91,24 @@ Khi cần liệt kê hay hướng dẫn, hãy LẤY đúng file dưới đây (t
 | **Agent Marketplace / tạo Agent** — cài agent dựng sẵn, hoặc tự tạo | [`references/agents-marketplace-guide.md`](references/agents-marketplace-guide.md) — đây là luồng CÀI/TẠO nói chung. Hỏi về **một agent cụ thể** (nó làm được gì, hợp không, dùng sao) — dù đã cài hay mới thấy trên chợ → xem §Agent dựng sẵn bên dưới |
 | **Scheduled Tasks** — lên lịch cho agent tự chạy định kỳ | [`references/scheduled-tasks-guide.md`](references/scheduled-tasks-guide.md) |
 | **Extension trình duyệt** — agent thao tác trực tiếp trên trình duyệt Chrome của bạn (mở web X để làm Y, điền form, cào dữ liệu...). LUÔN gọi khi người dùng yêu cầu dùng extension | [`references/browser-extension-guide.md`](references/browser-extension-guide.md) — cách kết nối/chia sẻ tab. **BẮT BUỘC**: mỗi khi extension đang HOẠT ĐỘNG — tức chính bạn (agent) sắp hoặc đang dùng tool `BROWSER_*` để thao tác trên tab (mở/đọc trang, click, điền form, chọn dropdown, tick checkbox, navigate, screenshot…) — PHẢI đọc và tuân theo [`references/browser-agent-heuristics.md`](references/browser-agent-heuristics.md) TRƯỚC khi thao tác: chọn tool nào trước, leo thang chi phí, ranh giới an toàn, đọc đúng lỗi tool và khi nào dừng. Khi CHỈ hướng dẫn người dùng CÀI ĐẶT / kết nối extension (chưa gọi `BROWSER_*` nào) thì CHƯA cần file heuristics này |
-| **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) |
+| **Điều khiển máy tính/NAS** — agent đọc/ghi file, chạy lệnh trên thiết bị đã ghép nối (platform-admin only) | [`references/desktop-device-guide.md`](references/desktop-device-guide.md) — cách cài app ClawExperts, ghép máy, cấu hình quyền. **Khi người dùng muốn LÀM một việc trên máy** ("dọn Downloads", "chạy lệnh X trên máy tôi", "đọc file Y trên máy"), làm theo §Điều khiển máy tính bên dưới trước khi trả lời |
 | **AI Models** — chọn/đổi model AI, kết nối provider của bạn | [`references/ai-models-guide.md`](references/ai-models-guide.md) |
+
+## Điều khiển máy tính — kiểm tra rồi chuyển việc
+
+Việc làm thật trên máy thuộc skill **`desktop-device`** (tên trong kho: "Điều khiển máy tính"). Skill này không
+cài sẵn, người dùng tự cài. Khi người dùng nhắc tới việc trên máy của họ:
+
+1. Gọi tool `DESKTOP_STATUS` (luôn có, không tham số). Nếu tool này cũng không có → server chưa hỗ trợ, nói tính
+   năng chưa sẵn trên workspace này.
+2. `paired: false` → hướng dẫn cài app và ghép máy theo `desktop-device-guide.md` (tab Host Devices chỉ
+   platform-admin thấy; không thấy tab thì nói tính năng chưa mở cho tài khoản này).
+3. `paired: true` → kiểm skill `desktop-device` **đã cài chưa** (nó có trong danh sách skill của bạn không):
+   - **Chưa cài** → hướng dẫn: vào mục **Kỹ năng (Skills)**, tìm **"Điều khiển máy tính"**, bấm **Cài**, rồi
+     **mở cuộc trò chuyện mới**. Cách cài skill chi tiết ở `install-guide.md`.
+   - **Đã cài** → dùng `/desktop-device` để làm việc; skill này là danh mục, không tự làm thay.
+4. Máy ghép xong hoặc skill cài xong đều phải **mở cuộc trò chuyện mới** thì agent mới thấy — nhắc rõ điều này,
+   đây là nguyên nhân số một của "cài rồi mà không dùng được".
 
 ## Agent dựng sẵn — giới thiệu & hướng dẫn dùng
 

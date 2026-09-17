@@ -39,6 +39,16 @@ Tính năng đang trong giai đoạn thử nghiệm nội bộ:
 - Máy tính muốn điều khiển phải cài được app ClawExperts (Mac chip Apple/Intel, Windows 10/11) — không cần
   tài khoản admin trên máy đó, không cần cài thêm gì khác. NAS/Linux cài bằng một dòng lệnh.
 
+## Hai thứ cần có: app trên máy + skill trong workspace
+
+| | Ở đâu | Ai làm |
+|---|---|---|
+| **App ClawExperts** trên máy tính | Cài đặt → Host Devices → tải, cài, Open in app | platform-admin (tab chỉ admin thấy) |
+| **Skill "Điều khiển máy tính"** (`desktop-device`) trong workspace | Mục **Kỹ năng (Skills)** → tìm "Điều khiển máy tính" → **Cài** | bất kỳ thành viên; skill không cài sẵn |
+
+Không có app thì không có máy để làm. Không có skill thì agent vẫn thấy máy nhưng thiếu quy trình làm việc an toàn
+(kế hoạch → duyệt → làm → kiểm). Cài xong một trong hai đều phải **mở cuộc trò chuyện mới**.
+
 ## Cách kết nối máy tính (app ClawExperts)
 
 1. Vào **Cài đặt → Host Devices** trong ClawExpert, mục **Desktop**, bấm **"Get pairing code"** (mã hết
@@ -84,8 +94,10 @@ Phần này dành cho **chính agent** (không phải nội dung giải thích c
 `tools/list` khi workspace có thiết bị đang **active-paired** đúng loại (desktop hoặc NAS) — không phải
 mọi workspace đều thấy, khác các tool luôn có sẵn.
 
-- Bộ tool desktop: `DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`,
-  `DESKTOP_NOTIFY`. NAS dùng đúng 5 tool song song với tiền tố `NAS_` (`NAS_EXEC`, `NAS_FS_READ`...).
+- **`DESKTOP_STATUS`** (luôn có, không tham số): trả về máy đã ghép chưa, đang online không, hệ điều hành, thư mục
+  nhà, thư mục được phép, lệnh được phép. **Gọi đầu tiên** trước mọi việc; không gửi gì xuống máy.
+- Bộ tool hành động desktop: `DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`,
+  `DESKTOP_NOTIFY` — chỉ xuất hiện khi workspace có máy đang ghép. NAS dùng bộ song song tiền tố `NAS_`.
 - **`DESKTOP_FS_LIST`/`DESKTOP_FS_READ`**: liệt kê/đọc file trong phạm vi `Allowed folders` đã cấu hình.
 - **`DESKTOP_FS_WRITE`**: ghi/tạo mới file ở path chỉ định (`content` + `path`); ghi đè toàn bộ, tự tạo thư
   mục cha. File nhị phân (ảnh, zip) ghi bằng `encoding: "base64"`. **Không di chuyển/đổi tên file có sẵn** — chỉ

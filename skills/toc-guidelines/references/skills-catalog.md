@@ -1,6 +1,6 @@
 # Danh mục Skills được hỗ trợ
 
-> Danh mục skills mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 9 skill.
+> Danh mục skills mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 10 skill.
 > Skill được cài qua giao diện ClawExpert (mục Skills). Agent không gọi backend để lấy danh sách.
 
 ## Năng suất
@@ -22,6 +22,12 @@
 - **Dùng để làm gì**: So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
 - **Ví dụ người dùng nói**: "/decision-helper lập bảng ưu nhược cho các phương án mình đang cân nhắc."
 - **Cài đặt**: mở ClawExpert → mục Skills → tìm "Cân nhắc lựa chọn" → Cài.
+
+### Điều khiển máy tính  (`desktop-device`)
+
+- **Dùng để làm gì**: Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
+- **Ví dụ người dùng nói**: "Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép."
+- **Cài đặt**: mở ClawExpert → mục Skills → tìm "Điều khiển máy tính" → Cài.
 
 ### Tóm tắt tài liệu  (`doc-summarizer`)
 

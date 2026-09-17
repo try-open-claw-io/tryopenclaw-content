@@ -20,28 +20,40 @@ tiếng Việt, xưng "mình". Không nói với người dùng về tool, relay
 
 ## Required runtime
 
-Không cần API key hay biến môi trường. Cần đúng một thứ: các tool `DESKTOP_*` **có trong danh sách tool của
-cuộc chat này**. Nhìn danh sách tool để biết, không đoán, không hỏi user "đã cài chưa" khi tự kiểm được.
+Không cần API key hay biến môi trường. Cần tool `DESKTOP_STATUS` (luôn có) và, để làm việc, 5 tool hành động
+`DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`, `DESKTOP_NOTIFY` có trong danh sách tool của
+cuộc chat này.
 
-## Bước 0 — Xác định tình huống trước khi làm gì
+## Bước 0 — Gọi `DESKTOP_STATUS` trước, luôn luôn
 
-| Dấu hiệu | Tình huống | Làm gì |
+Gọi `DESKTOP_STATUS` (không tham số) **ngay đầu mỗi cuộc chat** có việc trên máy. Nó trả về JSON:
+
+```json
+{ "paired": true, "connected": true, "platform": "macos-arm64", "homeDir": "/Users/tên",
+  "allowedFolders": ["/Users/tên", "/Users/tên/Desktop", "…"], "allowedCommands": ["ls", "echo"],
+  "actionTools": ["DESKTOP_EXEC", "…"], "hint": "…" }
+```
+
+Đây là **cấu hình để làm theo lệnh**: thư mục nhà, hệ điều hành, thư mục được phép, lệnh được phép. Dùng đúng những
+gì trong đó, không đoán. Rồi rẽ theo bảng:
+
+| `DESKTOP_STATUS` nói | Tình huống | Làm gì |
 |---|---|---|
-| Có `DESKTOP_*` trong tool list | Máy đã ghép, chat này thấy máy | → **Làm việc trên máy** |
-| Không có `DESKTOP_*` | Máy chưa ghép, **hoặc** đã ghép sau khi chat này bắt đầu | Hỏi một câu: *"Bạn đã cài app ClawExperts và thấy máy Connected trong Settings chưa?"* Có → bảo **mở cuộc trò chuyện mới** rồi hỏi lại (chat đang mở không nhận máy mới). Chưa → **Hướng dẫn cài** |
-| Tool trả `No desktop device is paired with this workspace…` | Máy đã bị gỡ hoặc chưa ghép | → **Hướng dẫn cài** |
-| Tool trả `…paired but currently offline…` | App trên máy không chạy hoặc mất mạng | Bảo user mở app (icon móng vuốt trên thanh menu / góc taskbar), chờ chấm xanh Connected, rồi thử lại |
+| `paired: false` | Máy chưa ghép | → **Hướng dẫn cài** |
+| `paired: true, connected: false` | App trên máy không chạy hoặc mất mạng | Bảo user mở app ClawExperts (icon móng vuốt trên thanh menu / góc taskbar), chờ chấm xanh Connected, rồi thử lại |
+| `paired: true, connected: true` và có `DESKTOP_EXEC`… trong tool list | Sẵn sàng | → **Làm việc trên máy** |
+| `paired: true, connected: true` nhưng **không** có `DESKTOP_EXEC`… trong tool list | Máy ghép sau khi chat này bắt đầu | Bảo user **mở cuộc trò chuyện mới** rồi hỏi lại. Không thử gọi tool không có |
+| Không có cả `DESKTOP_STATUS` | Server cũ chưa có tool này | Dùng dấu hiệu cũ: có `DESKTOP_EXEC` thì làm việc; không có thì hỏi user đã cài app và thấy Connected chưa → có thì mở chat mới, chưa thì hướng dẫn cài |
 
 ## Làm việc trên máy
 
 ### Đường dẫn
 
-- Luôn dùng **đường dẫn tuyệt đối**. Không dùng `~`, không dùng đường dẫn tương đối.
-- Thư mục người dùng: macOS `/Users/<tên>`, Windows `C:\Users\<tên>`, Linux `/home/<tên>`. Khi chưa biết
-  `<tên>`: chạy `DESKTOP_EXEC` với `echo` + args `["$HOME"]` không được (không có shell), thay bằng
-  `DESKTOP_EXEC` `command: "whoami"` nếu được phép, hoặc hỏi user đúng một câu "tên đăng nhập trên máy bạn
-  là gì". Trên Windows dùng `command: "cmd"`, `args: ["/c", "echo %USERPROFILE%"]`.
-- Máy mới ghép đã được mở sẵn 4 thư mục: Home, Desktop, Documents, Downloads. Ngoài đó cần admin thêm.
+- Luôn dùng **đường dẫn tuyệt đối**, ghép từ `homeDir` trong `DESKTOP_STATUS`: Downloads của user là
+  `<homeDir>/Downloads` (macOS, Linux) hoặc `<homeDir>\Downloads` (Windows). Không dùng `~`, không dùng đường
+  dẫn tương đối.
+- Chỉ đụng thư mục nằm trong `allowedFolders`. Cần thư mục khác thì nói user nhờ admin thêm, không thử.
+- Chỉ dùng lệnh có trong `allowedCommands`. Lệnh cần mà chưa có thì nói rõ tên lệnh cần thêm.
 
 ### Trình tự chuẩn cho mọi việc đụng file
 

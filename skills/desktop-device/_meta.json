@@ -11,7 +11,7 @@
   "category": "productivity",
   "icon": "Monitor",
   "status": "Ready",
-  "is_preinstalled": true,
-  "is_published": false,
+  "is_preinstalled": false,
+  "is_published": true,
   "version": "1.0"
 }
