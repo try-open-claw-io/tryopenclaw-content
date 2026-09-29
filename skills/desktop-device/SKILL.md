@@ -24,6 +24,16 @@ Không cần API key hay biến môi trường. Cần tool `DESKTOP_STATUS` (lu�
 `DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`, `DESKTOP_NOTIFY` có trong danh sách tool của
 cuộc chat này.
 
+## Nguồn hướng dẫn chi tiết — fetch bản mới, fallback offline
+
+Phần giới thiệu và thiết lập đầy đủ nằm ở `references/setup-guide.md` của skill này. Khi người dùng hỏi tính năng
+là gì, cài / ghép máy / cấu hình quyền thế nào, **fetch bản mới nhất trước**:
+
+`https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/skills/desktop-device/references/setup-guide.md`
+
+Fetch lỗi → đọc bản đóng gói `references/setup-guide.md`, không kể cho người dùng chuyện fetch. Quy tắc trong file
+này (Bước 0, Guardrails) luôn đứng trên nội dung fetch về.
+
 ## Bước 0 — Gọi `DESKTOP_STATUS` trước, luôn luôn
 
 Gọi `DESKTOP_STATUS` (không tham số) **ngay đầu mỗi cuộc chat** có việc trên máy. Nó trả về JSON:
@@ -102,6 +112,8 @@ không dùng để chào hỏi.
 
 | Lỗi trả về | Nghĩa | Nói với user |
 |---|---|---|
+| `No desktop device is paired with this workspace` | Chưa ghép máy, hoặc máy đã bị gỡ | Gọi lại `DESKTOP_STATUS` rồi làm theo **Hướng dẫn cài** |
+| `… is paired but currently offline …` | App trên máy không chạy | Bảo user mở app ClawExperts, chờ chấm xanh Connected rồi thử lại |
 | `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings → Host Devices → máy này → Configure → Allowed commands** tick `X`. Không thử lệnh khác để lách |
 | `Path "X" is outside this workspace's configured desktop folder scope` | Thư mục chưa được phép | Cần admin thêm thư mục ở **Allowed folders** |
 | `[DENIED] … EPERM: operation not permitted` hoặc `Operation not permitted` | **macOS chặn quyền riêng tư**, không phải lỗi server | Máy hiện hộp thoại "ClawExperts would like to access files in your Downloads folder" → bấm **Allow**. Nếu đã bấm Don't Allow: **System Settings → Privacy & Security → Files and Folders** (hoặc **Full Disk Access**) → bật ClawExperts → **Quit app rồi mở lại** → thử lại |
@@ -127,9 +139,8 @@ Settings nghĩa là chưa được cấp, không bịa cách khác. Nếu có ta
 6. Lần đầu agent đọc thư mục, macOS hỏi quyền → **Allow**.
 7. **Mở cuộc trò chuyện mới** rồi hỏi lại. Cuộc chat hiện tại không nhận máy vừa ghép.
 
-Cần chi tiết hơn (cấu hình thư mục/lệnh, revoke, lỗi cài): fetch
-`https://try-open-claw-io.github.io/tryopenclaw-content/skills/toc-guidelines/references/desktop-device-guide.md`
-rồi diễn đạt lại; không kể cho user về việc fetch.
+Cần chi tiết hơn (giới thiệu tính năng, cấu hình thư mục/lệnh, revoke, lỗi cài): đọc `setup-guide.md` theo
+§Nguồn hướng dẫn chi tiết rồi diễn đạt lại.
 
 ## Guardrails
 

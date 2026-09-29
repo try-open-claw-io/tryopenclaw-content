@@ -5,8 +5,8 @@
 > Máy tính cài **app ClawExperts** (Mac/Windows) một lần; NAS/Linux cài bằng một dòng lệnh. Khác Extension
 > trình duyệt (chỉ thấy trang web), đây là truy cập ở mức **hệ điều hành** — file thật, lệnh thật trên máy thật.
 >
-> Muốn **làm việc** trên máy đã ghép (dọn thư mục, tìm file, chạy lệnh) thì dùng skill `/desktop-device`;
-> file này là phần **tìm hiểu và thiết lập**.
+> File hướng dẫn của skill `desktop-device`: phần **tìm hiểu và thiết lập** (cài app, ghép máy, cấu hình quyền).
+> Cách **làm việc** trên máy đã ghép nằm trong SKILL.md của skill.
 
 ## Khác gì Connector / Extension trình duyệt
 
@@ -46,8 +46,8 @@ Tính năng đang trong giai đoạn thử nghiệm nội bộ:
 | **App ClawExperts** trên máy tính | Cài đặt → Host Devices → tải, cài, Open in app | platform-admin (tab chỉ admin thấy) |
 | **Skill "Điều khiển máy tính"** (`desktop-device`) trong workspace | Mục **Kỹ năng (Skills)** → tìm "Điều khiển máy tính" → **Cài** | bất kỳ thành viên; skill không cài sẵn |
 
-Không có app thì không có máy để làm. Không có skill thì agent vẫn thấy máy nhưng thiếu quy trình làm việc an toàn
-(kế hoạch → duyệt → làm → kiểm). Cài xong một trong hai đều phải **mở cuộc trò chuyện mới**.
+Không có app thì không có máy để làm. Không có skill thì agent chỉ hướng dẫn được, chưa làm việc trên máy
+(skill mang quy trình an toàn: kế hoạch → duyệt → làm → kiểm). Cài xong một trong hai đều phải **mở cuộc trò chuyện mới**.
 
 ## Cách kết nối máy tính (app ClawExperts)
 
@@ -87,47 +87,6 @@ phải cấu hình:
 
 `NOTIFY` (gửi thông báo) không cần cấu hình gì — luôn dùng được ngay sau khi pair. NAS ghép mới **không** được
 mở sẵn thư mục nào, admin phải thêm.
-
-## Tool kỹ thuật — agent gọi gì để dùng thiết bị đã ghép nối
-
-Phần này dành cho **chính agent** (không phải nội dung giải thích cho user). Tool chỉ xuất hiện trong
-`tools/list` khi workspace có thiết bị đang **active-paired** đúng loại (desktop hoặc NAS) — không phải
-mọi workspace đều thấy, khác các tool luôn có sẵn.
-
-- **`DESKTOP_STATUS`** (luôn có, không tham số): trả về máy đã ghép chưa, đang online không, hệ điều hành, thư mục
-  nhà, thư mục được phép, lệnh được phép. **Gọi đầu tiên** trước mọi việc; không gửi gì xuống máy.
-- Bộ tool hành động desktop: `DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`,
-  `DESKTOP_NOTIFY` — chỉ xuất hiện khi workspace có máy đang ghép. NAS dùng bộ song song tiền tố `NAS_`.
-- **`DESKTOP_FS_LIST`/`DESKTOP_FS_READ`**: liệt kê/đọc file trong phạm vi `Allowed folders` đã cấu hình.
-- **`DESKTOP_FS_WRITE`**: ghi/tạo mới file ở path chỉ định (`content` + `path`); ghi đè toàn bộ, tự tạo thư
-  mục cha. File nhị phân (ảnh, zip) ghi bằng `encoding: "base64"`. **Không di chuyển/đổi tên file có sẵn** — chỉ
-  ghi nội dung mới tại đúng path đưa vào. `DESKTOP_FS_READ` từ chối file trên 1 MB; file nhị phân trả về dạng
-  `[binary file: N bytes, base64]`, không đọc được nội dung.
-- **`DESKTOP_EXEC`**: chạy lệnh (`command` + `args` tuỳ chọn + `cwd` tuỳ chọn) — CHỈ lệnh có trong
-  `Allowed commands`, lệnh khác bị từ chối trước khi chạm tới máy. Không có shell trên macOS/Linux (không
-  `|`, `>`, `&&`); Windows chạy qua `cmd`. Quá 18 giây bị dừng, output quá 256 KB bị cắt; dòng cuối
-  `(exit code N)` — N khác 0 là lệnh thất bại dù tool không báo lỗi.
-  ⚠️ **Không có tool tạo thư mục/di chuyển/xoá file riêng** — muốn tạo folder, di chuyển, đổi tên hay
-  xoá file, dùng `DESKTOP_EXEC` với lệnh tương ứng (`mkdir`, `mv`, `rm`) **nếu đã có trong allowlist**.
-  Đây là hạn chế thật của tool hiện tại, không phải bạn thiếu bước — nếu người dùng cần thao tác này mà
-  lệnh chưa được allow-list, nói rõ cần thêm lệnh đó vào `Allowed commands` (mục Configure) trước.
-- **`DESKTOP_NOTIFY`**: gửi thông báo hệ điều hành thật (`title` + `message`) — không giới hạn allowlist.
-
-**Đọc đúng lỗi trả về, đừng đoán:**
-- `"No {desktop|nas} device is paired with this workspace..."` → chưa ghép nối thiết bị nào, hoặc
-  thiết bị đã ngắt kết nối — hướng dẫn theo phần "Cách kết nối" ở trên.
-- `"Command "X" is not on this workspace's {desktop|nas} exec allowlist..."` → lệnh `X` chưa được cho
-  phép — hướng dẫn admin vào Configure thêm lệnh (phần "Cấu hình quyền truy cập" ở trên), không tự ý
-  thử lệnh khác thay thế nếu người dùng cần đúng lệnh đó.
-- `"Path "X" is outside this workspace's configured {desktop|nas} folder scope..."` → path ngoài phạm
-  vi cho phép — hướng dẫn admin thêm folder vào Allowed folders, hoặc dùng path khác đã có trong scope.
-- `"[DENIED] ... EPERM: operation not permitted"` → **macOS chặn quyền riêng tư** trên máy, không phải
-  server. User bấm **Allow** khi macOS hỏi; nếu đã Don't Allow thì System Settings → Privacy & Security →
-  Files and Folders / Full Disk Access → bật ClawExperts → Quit app mở lại.
-- `"...paired but currently offline..."` → app trên máy không chạy — bảo user mở app, chờ Connected.
-
-**Gợi ý workflow:** trước khi `DESKTOP_FS_WRITE` đè lên 1 file có thể đã tồn tại, nên `DESKTOP_FS_LIST`
-hoặc `DESKTOP_FS_READ` trước để tránh ghi đè nhầm nội dung người dùng đang cần giữ.
 
 ## Lưu ý cần thiết
 

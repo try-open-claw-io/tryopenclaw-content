@@ -8,6 +8,7 @@
 - [brainstorm-buddy/](brainstorm-buddy/llms.txt): Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
 - [brand-voice-editor/](brand-voice-editor/llms.txt): Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.
 - [brief-from-input/](brief-from-input/llms.txt): Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.
+- [browser-extension/](browser-extension/llms.txt): Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
 - [case-study-writer/](case-study-writer/llms.txt): Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
 - [content-batch-generator/](content-batch-generator/llms.txt): Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.
 - [content-brief-builder/](content-brief-builder/llms.txt): Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.

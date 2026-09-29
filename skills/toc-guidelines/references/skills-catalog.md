@@ -1,6 +1,6 @@
 # Danh mục Skills được hỗ trợ
 
-> Danh mục skills mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 10 skill.
+> Danh mục skills mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: 11 skill.
 > Skill được cài qua giao diện ClawExpert (mục Skills). Agent không gọi backend để lấy danh sách.
 
 ## Năng suất
@@ -10,6 +10,12 @@
 - **Dùng để làm gì**: Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
 - **Ví dụ người dùng nói**: "/brainstorm-buddy gợi ý cho mình nhiều ý tưởng về chủ đề này."
 - **Cài đặt**: mở ClawExpert → mục Skills → tìm "Phát triển ý tưởng" → Cài.
+
+### Điều khiển trình duyệt  (`browser-extension`)
+
+- **Dùng để làm gì**: Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
+- **Ví dụ người dùng nói**: "Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ."
+- **Cài đặt**: mở ClawExpert → mục Skills → tìm "Điều khiển trình duyệt" → Cài.
 
 ### Lập kế hoạch ngày  (`daily-planner`)
 
