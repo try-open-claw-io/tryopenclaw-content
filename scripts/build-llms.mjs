@@ -9,7 +9,7 @@
 // WHY generator thay vì sửa tay: nội dung nguồn là source of truth; index/dump phải
 // bám theo nên phải sinh lại, tránh drift âm thầm (CI --check giữ đồng bộ).
 
-import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync, existsSync, unlinkSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
@@ -156,31 +156,80 @@ function skillExample(slug, meta) {
   return descVi(meta);
 }
 
+// web_fetch in OpenClaw caps output at 20,000 chars, so every file agents fetch
+// must stay below FETCH_CHAR_LIMIT; the connectors catalog is split into parts
+// of at most CATALOG_PART_CHARS and indexed by connectors-catalog.md.
+const FETCH_CHAR_LIMIT = 18000;
+const CATALOG_PART_CHARS = 14000;
+const CATALOG_DIR = 'skills/toc-guidelines/references';
+const catalogPartFile = (i) => `connectors-catalog-${i + 1}.md`;
+
 function renderConnectorsCatalog() {
   const cats = loadCategories();
   const items = readMdDir('connectors').map(({ fm }) => fm);
   const groups = {};
   for (const c of items) (groups[c.category] ||= []).push(c);
-  const out = [
-    '# Danh mục Connectors được hỗ trợ',
+
+  const sections = Object.keys(groups)
+    .sort(byCategory(cats))
+    .map((cat) => {
+      const title = cats[cat]?.vi || cat;
+      const list = groups[cat].sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0) || a.id.localeCompare(b.id));
+      const lines = [`## ${title}`, ''];
+      for (const c of list) {
+        lines.push(`### ${nameVi(c)}${c.popular ? ' ⭐' : ''}  (\`${c.id}\`)`, '');
+        lines.push(`- **Dùng để làm gì**: ${descVi(c)}`);
+        lines.push(`- **Ví dụ người dùng nói**: "${oneLine(c.tutorials?.[0]?.prompt?.vi || '')}"`);
+        lines.push(`- **Gọi nhanh**: gõ \`@${c.id}\` trong câu nhắn.`);
+        lines.push(`- **Kết nối**: mở ClawExpert → mục Connectors → chọn ${nameVi(c)} → đăng nhập/cấp quyền.`, '');
+      }
+      return { title, apps: list.map(nameVi), text: lines.join('\n') };
+    });
+
+  // Greedy packing in category order; a category is never split across parts.
+  const parts = [];
+  for (const s of sections) {
+    const last = parts[parts.length - 1];
+    if (last && last.size + s.text.length <= CATALOG_PART_CHARS) {
+      last.sections.push(s);
+      last.size += s.text.length;
+    } else {
+      parts.push({ sections: [s], size: s.text.length });
+    }
+  }
+
+  const index = [
+    '# Danh mục Connectors được hỗ trợ — mục lục',
     '',
     `> Danh mục connectors mà ClawExpert hỗ trợ (nội dung tĩnh, đóng gói sẵn trong skill). Tổng: ${items.length} connector.`,
     '> Connector phơi ra cho agent qua MCP `tryopenclaw-connectors` (tool dạng `<APP>_<ACTION>`).',
     '> Kiểm tra đã kết nối chưa bằng `tools/list` của MCP; kết nối mới qua giao diện ClawExpert (mục Connectors).',
     '',
+    `Danh mục chia ${parts.length} phần theo nhóm. Chỉ lấy phần chứa nhóm/app đang hỏi; hỏi tổng quan thì lấy lần lượt từng phần.`,
+    '',
+    '| Nhóm | App | File |',
+    '|---|---|---|',
   ];
-  for (const cat of Object.keys(groups).sort(byCategory(cats))) {
-    out.push(`## ${cats[cat]?.vi || cat}`, '');
-    const list = groups[cat].sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0) || a.id.localeCompare(b.id));
-    for (const c of list) {
-      out.push(`### ${nameVi(c)}${c.popular ? ' ⭐' : ''}  (\`${c.id}\`)`, '');
-      out.push(`- **Dùng để làm gì**: ${descVi(c)}`);
-      out.push(`- **Ví dụ người dùng nói**: "${oneLine(c.tutorials?.[0]?.prompt?.vi || '')}"`);
-      out.push(`- **Gọi nhanh**: gõ \`@${c.id}\` trong câu nhắn.`);
-      out.push(`- **Kết nối**: mở ClawExpert → mục Connectors → chọn ${nameVi(c)} → đăng nhập/cấp quyền.`, '');
-    }
-  }
-  return out.join('\n');
+  parts.forEach((p, i) => {
+    for (const s of p.sections) index.push(`| ${s.title} | ${s.apps.join(', ')} | \`${catalogPartFile(i)}\` |`);
+  });
+  index.push('');
+
+  const files = [[`${CATALOG_DIR}/connectors-catalog.md`, index.join('\n')]];
+  parts.forEach((p, i) => {
+    const others = parts.map((_, j) => j).filter((j) => j !== i).map((j) => `\`${catalogPartFile(j)}\``);
+    const out = [
+      `# Danh mục Connectors — phần ${i + 1}/${parts.length}`,
+      '',
+      `> Phần này gồm nhóm: ${p.sections.map((s) => s.title).join(', ')}.`,
+      '',
+      ...p.sections.map((s) => s.text),
+      `> Không thấy app cần tìm? Còn ${others.length ? others.join(', ') : 'không phần nào khác'} — xem \`connectors-catalog.md\` để biết app nằm ở phần nào.`,
+      '',
+    ];
+    files.push([`${CATALOG_DIR}/${catalogPartFile(i)}`, out.join('\n')]);
+  });
+  return files;
 }
 
 function renderSkillsCatalog() {
@@ -292,9 +341,16 @@ const targets = [
     renderSkillIndex('skills', slug, meta),
   ]),
   // catalog references cho skill toc-guidelines (sinh từ frontmatter, hết drift)
-  ['skills/toc-guidelines/references/connectors-catalog.md', renderConnectorsCatalog()],
-  ['skills/toc-guidelines/references/skills-catalog.md', renderSkillsCatalog()],
+  ...renderConnectorsCatalog(),
+  [`${CATALOG_DIR}/skills-catalog.md`, renderSkillsCatalog()],
 ];
+
+// Stale catalog parts left behind when the part count shrinks.
+const catalogTargets = new Set(targets.map(([rel]) => rel));
+const staleParts = readdirSync(join(ROOT, CATALOG_DIR))
+  .filter((f) => /^connectors-catalog-\d+\.md$/.test(f))
+  .map((f) => `${CATALOG_DIR}/${f}`)
+  .filter((rel) => !catalogTargets.has(rel));
 
 let drift = 0;
 for (const [rel, content] of targets) {
@@ -314,6 +370,42 @@ for (const [rel, content] of targets) {
     console.log(`✓ wrote ${rel}`);
   }
 }
+
+for (const rel of staleParts) {
+  if (CHECK) {
+    console.error(`✗ stale: ${rel}`);
+    drift++;
+  } else {
+    unlinkSync(join(ROOT, rel));
+    console.log(`✓ removed ${rel}`);
+  }
+}
+
+// Files agents fetch at runtime: every skill's references/*.md, any GUIDE.md,
+// and the SKILL.md of skills toc-guidelines fetches when they are not installed.
+const HANDOFF_SKILLS = ['browser-extension', 'desktop-device'];
+function fetchedFiles() {
+  const files = [];
+  for (const { slug } of readSkillDirs('skills')) {
+    const dir = join('skills', slug);
+    const refs = join(ROOT, dir, 'references');
+    if (existsSync(refs)) {
+      for (const f of readdirSync(refs).filter((f) => f.endsWith('.md')).sort()) files.push(join(dir, 'references', f));
+    }
+    if (existsSync(join(ROOT, dir, 'GUIDE.md'))) files.push(join(dir, 'GUIDE.md'));
+    if (HANDOFF_SKILLS.includes(slug)) files.push(join(dir, 'SKILL.md'));
+  }
+  return files;
+}
+let oversize = 0;
+for (const rel of fetchedFiles()) {
+  const chars = [...readFileSync(join(ROOT, rel), 'utf8')].length;
+  if (chars > FETCH_CHAR_LIMIT) {
+    console.error(`✗ too long for web_fetch: ${rel} (${chars} > ${FETCH_CHAR_LIMIT} chars) — split it`);
+    oversize++;
+  }
+}
+if (oversize) process.exit(1);
 
 if (CHECK) {
   if (drift) {

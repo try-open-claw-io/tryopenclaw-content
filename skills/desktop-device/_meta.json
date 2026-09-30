@@ -1,0 +1,17 @@
+{
+  "slug": "desktop-device",
+  "name": {
+    "vi": "Điều khiển máy tính",
+    "en": "Desktop Control"
+  },
+  "description": {
+    "vi": "Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.",
+    "en": "Let the Agent work directly on your computer through the ClawExperts app: browse, read and organise files and run commands within the limits you allow."
+  },
+  "category": "productivity",
+  "icon": "Monitor",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": true,
+  "version": "1.0"
+}

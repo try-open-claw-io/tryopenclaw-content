@@ -551,6 +551,12 @@
 - category: content-marketing
 - status: Ready
 
+### browser-extension — Điều khiển trình duyệt
+- vi: Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
+- en: Let the Agent work right in your Chrome browser through the ClawExperts Extension: open pages, read content, click buttons and fill forms on tabs you share.
+- category: productivity
+- status: Ready
+
 ### case-study-writer — Viết case study
 - vi: Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
 - en: Write customer case studies from real data and quotes only, no fabrication, in a context-problem-solution-results structure.
@@ -602,6 +608,12 @@
 ### decision-helper — Cân nhắc lựa chọn
 - vi: So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
 - en: Compare options in a weighted pros-and-cons table to help you decide with confidence.
+- category: productivity
+- status: Ready
+
+### desktop-device — Điều khiển máy tính
+- vi: Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
+- en: Let the Agent work directly on your computer through the ClawExperts app: browse, read and organise files and run commands within the limits you allow.
 - category: productivity
 - status: Ready
 
@@ -690,8 +702,8 @@
 - status: Ready
 
 ### toc-guidelines — Khám phá năng lực ClawExpert
-- vi: Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, điều khiển máy tính/NAS, chọn model AI — kèm cách thiết lập từng bước.
-- en: See what ClawExpert can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks, browser extension, desktop/NAS device control, and AI models — with step-by-step setup.
+- vi: Giúp bạn biết ClawExpert làm được gì và dùng thế nào: skill, kết nối app ngoài, chat đa kênh, chợ agent, lên lịch tự chạy, extension trình duyệt, điều khiển máy tính, chọn model AI — kèm cách thiết lập từng bước.
+- en: See what ClawExpert can do and how to use it: skills, app integrations, multi-channel chat, agent marketplace, scheduled tasks, browser extension, desktop control, and AI models — with step-by-step setup.
 - category: other
 - status: Ready
 
