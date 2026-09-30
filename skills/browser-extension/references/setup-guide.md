@@ -16,20 +16,25 @@
 
 ## Cài từ Chrome Web Store
 
-Extension có trên **Chrome Web Store** với tên **ClawExperts Co-Work**. Trang **Cài đặt → Extension** có
+Extension có trên **Chrome Web Store** với tên **ClawExperts Co-Work**. Trang **Settings (Cài đặt) → Extension** có
 sẵn **Hướng dẫn cài đặt** 3 bước, nút **Mở Chrome Web Store** và nút **Kết nối extension**. Khi hướng dẫn,
 trỏ user vào trang này thay vì tự viết lại các bước cài.
 
 ## Cần gì trước
 
 - Extension đã được cài trên trình duyệt Chrome (máy tính) — cài từ Chrome Web Store theo **Hướng dẫn cài
-  đặt** trong trang **Cài đặt → Extension**.
+  đặt** trong trang **Settings (Cài đặt) → Extension**.
 - Đã kết nối extension với đúng tài khoản ClawExpert của bạn.
 
 ## Cách kết nối (khi đã có extension)
 
-1. Vào **Cài đặt → Extension** trong ClawExpert (chưa cài extension thì bấm **Mở Chrome Web Store** → **Add to Chrome**, rồi quay lại trang).
+1. Vào **Settings (Cài đặt) → Extension** trong ClawExpert (chưa cài extension thì bấm **Mở Chrome Web Store** → **Add to Chrome**, rồi quay lại trang).
 2. Bấm **Kết nối extension** — extension sẽ tự ghép nối với tài khoản đang đăng nhập.
+
+## Bước cuối — cài skill
+
+Trang **Settings (Cài đặt) → Extension** có bước cuối **Open Skills (Mở trang Kỹ năng)**: vào Skills, tìm **Browser
+Control (Điều khiển trình duyệt)**, bấm cài, rồi mở cuộc trò chuyện mới.
 
 ## Chia sẻ một tab cho agent
 
@@ -50,7 +55,7 @@ Nếu **chủ workspace** đã cài và kết nối extension, agent có thể *
 
 ## Gợi ý cho agent khi hướng dẫn
 
-- Khi hướng dẫn cài, trỏ user vào **Cài đặt → Extension**: trong trang có sẵn hướng dẫn và nút **Mở Chrome Web Store** dẫn đúng trang của extension, tránh user tìm nhầm extension khác trên store.
+- Khi hướng dẫn cài, trỏ user vào **Settings (Cài đặt) → Extension**: trong trang có sẵn hướng dẫn và nút **Mở Chrome Web Store** dẫn đúng trang của extension, tránh user tìm nhầm extension khác trên store.
 - Nếu người dùng hỏi "agent điều khiển được trình duyệt của tôi không" hoặc "làm sao cho agent tự mở web": hướng dẫn theo các bước trên.
 - Nhắc rõ khác biệt với Connector nếu người dùng đang nhầm hai khái niệm.
 - Sau khi người dùng báo đã kết nối xong: gọi lại `BROWSER_STATUS` để xác nhận, rồi làm tiếp yêu cầu họ đã nêu (theo SKILL.md), hoặc gợi ý vài việc thử ngay như "mở trang X và tóm tắt".
