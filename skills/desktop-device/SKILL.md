@@ -57,6 +57,18 @@ gì trong đó, không đoán. Rồi rẽ theo bảng:
 
 ## Làm việc trên máy
 
+### Chọn đúng thư mục — đọc kỹ trước khi đụng file
+
+- **`DESKTOP_*` là tên của máy tính, KHÔNG phải thư mục Desktop.** `DESKTOP_FS_WRITE` nghĩa là "ghi file trên máy
+  của user", không có nghĩa là ghi vào `<homeDir>/Desktop`.
+- **Dùng đúng thư mục user nói.** User nói Downloads → `<homeDir>/Downloads`; Documents → `<homeDir>/Documents`;
+  một đường dẫn cụ thể → đúng đường dẫn đó. Chỉ dùng `<homeDir>/Desktop` khi user nói rõ **Desktop** / **màn
+  hình**.
+- **User không nói thư mục nào → hỏi lại**, gợi ý các thư mục trong `allowedFolders`. Không tự chọn thư mục
+  đầu tiên trong danh sách, không mặc định Desktop.
+- Trong kế hoạch đưa user duyệt, ghi **đường dẫn tuyệt đối đầy đủ** sẽ tạo/ghi/di chuyển tới (vd
+  `/Users/tên/Downloads/bao-cao.txt`) để user thấy ngay nếu sai chỗ.
+
 ### Đường dẫn
 
 - Luôn dùng **đường dẫn tuyệt đối**, ghép từ `homeDir` trong `DESKTOP_STATUS`: Downloads của user là
@@ -69,9 +81,10 @@ gì trong đó, không đoán. Rồi rẽ theo bảng:
 
 1. `DESKTOP_FS_LIST` thư mục liên quan để thấy tình trạng thật. Kết quả là các dòng `[DIR] tên`, `[FILE] tên`.
 2. Với việc chỉ đọc: `DESKTOP_FS_READ` rồi trả lời. Xong.
-3. Với việc ghi, di chuyển, xoá: **lập kế hoạch cụ thể** (file nào → đi đâu / đổi gì), đưa user xem, **chờ
-   user đồng ý**, rồi mới thực hiện từng bước.
-4. Sau khi thực hiện: `DESKTOP_FS_LIST` lại để xác nhận, báo user kết quả thật, không báo theo dự định.
+3. Với việc ghi, di chuyển, xoá: **lập kế hoạch cụ thể** (file nào → đường dẫn tuyệt đối nào / đổi gì), đưa
+   user xem, **chờ user đồng ý**, rồi mới thực hiện từng bước.
+4. Sau khi thực hiện: `DESKTOP_FS_LIST` lại **đúng thư mục vừa ghi** để xác nhận, báo user kết quả thật (kèm
+   đường dẫn), không báo theo dự định.
 
 ### `DESKTOP_EXEC` — chạy lệnh
 
@@ -114,7 +127,7 @@ không dùng để chào hỏi.
 |---|---|---|
 | `No desktop device is paired with this workspace` | Chưa ghép máy, hoặc máy đã bị gỡ | Gọi lại `DESKTOP_STATUS` rồi làm theo **Hướng dẫn cài** |
 | `… is paired but currently offline …` | App trên máy không chạy | Bảo user mở app ClawExperts, chờ chấm xanh Connected rồi thử lại |
-| `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings → Host Devices → máy này → Configure → Allowed commands** tick `X`. Không thử lệnh khác để lách |
+| `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings → Desktop App → máy này → Configure → Allowed commands** tick `X`. Không thử lệnh khác để lách |
 | `Path "X" is outside this workspace's configured desktop folder scope` | Thư mục chưa được phép | Cần admin thêm thư mục ở **Allowed folders** |
 | `[DENIED] … EPERM: operation not permitted` hoặc `Operation not permitted` | **macOS chặn quyền riêng tư**, không phải lỗi server | Máy hiện hộp thoại "ClawExperts would like to access files in your Downloads folder" → bấm **Allow**. Nếu đã bấm Don't Allow: **System Settings → Privacy & Security → Files and Folders** (hoặc **Full Disk Access**) → bật ClawExperts → **Quit app rồi mở lại** → thử lại |
 | `[NOT_FOUND] …` | Thư mục không tồn tại | Kiểm lại đường dẫn, `FS_LIST` thư mục cha |
@@ -123,21 +136,19 @@ không dùng để chào hỏi.
 
 ## Hướng dẫn cài — khi máy chưa ghép
 
-Trước hết nói ngắn: tính năng hiện chỉ mở cho tài khoản **platform-admin**; không thấy tab **Host Devices** trong
-Settings nghĩa là chưa được cấp, không bịa cách khác. Nếu có tab:
+Trước hết nói ngắn: tính năng hiện chỉ mở cho tài khoản **platform-admin** và **chỉ có bản Mac**; không thấy tab
+**Desktop App** trong Settings nghĩa là chưa được cấp, không bịa cách khác. Nếu có tab:
 
-1. **Settings → Host Devices → Desktop → Get pairing code.**
-2. Bấm nút tải đúng máy: **Mac (Apple Silicon)**, **Mac (Intel)** hoặc **Windows**.
-3. Cài: Mac kéo app vào Applications; Windows chạy file `.exe`.
-4. Mở app lần đầu. **Mac** hiện *Apple could not verify "ClawExperts" is free of malware* → bấm Done →
-   **System Settings → Privacy & Security** → cuộn xuống → **Open Anyway** → xác nhận. **Windows** hiện *Windows
-   protected your PC* → **More info → Run anyway**. Một lần duy nhất, là cảnh báo bình thường của phần mềm chưa
-   ký số, không phải mã độc.
-5. Quay lại trang, bấm **Open in app** → trình duyệt hỏi mở ClawExperts → Allow. App hiện chấm xanh
-   **Connected**, trang hiện máy Connected. Không mở được thì bấm **Copy code**, dán vào ô Pairing code trong
-   app, bấm Connect.
-6. Lần đầu agent đọc thư mục, macOS hỏi quyền → **Allow**.
-7. **Mở cuộc trò chuyện mới** rồi hỏi lại. Cuộc chat hiện tại không nhận máy vừa ghép.
+1. **Settings → Desktop App**, bước 1: bấm **Mac (Apple Silicon)** hoặc **Mac (Intel)** theo chip của máy.
+2. Mở file `.dmg`, kéo app vào Applications.
+3. Mở app lần đầu: hiện *Apple could not verify "ClawExperts" is free of malware* → bấm Done → **System
+   Settings → Privacy & Security** → cuộn xuống → **Open Anyway** → xác nhận. Một lần duy nhất, là cảnh báo
+   bình thường của phần mềm chưa ký số, không phải mã độc.
+4. Quay lại trang, bước 2: **Get pairing code** → **Open in app** → trình duyệt hỏi mở ClawExperts → Allow. App
+   hiện chấm xanh **Connected**. Không mở được thì bấm **Copy code**, dán vào ô Pairing code trong app, bấm
+   Connect. Mã hết hạn thì bấm **New code**.
+5. Lần đầu agent đọc thư mục, macOS hỏi quyền → **Allow**.
+6. **Mở cuộc trò chuyện mới** rồi hỏi lại. Cuộc chat hiện tại không nhận máy vừa ghép.
 
 Cần chi tiết hơn (giới thiệu tính năng, cấu hình thư mục/lệnh, revoke, lỗi cài): đọc `setup-guide.md` theo
 §Nguồn hướng dẫn chi tiết rồi diễn đạt lại.
