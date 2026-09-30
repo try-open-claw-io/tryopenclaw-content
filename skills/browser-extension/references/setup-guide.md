@@ -14,22 +14,21 @@
 - **Connector** = agent dùng **API chính thức** của app (Gmail, Slack, Notion...) — nhanh, ổn định, nhưng chỉ với app đã có connector.
 - **Extension trình duyệt** = agent dùng **chính trình duyệt của bạn** — hoạt động trên mọi trang web, kể cả trang nội bộ hoặc chưa hỗ trợ connector, nhưng cần bạn cài extension và chọn tab muốn chia sẻ.
 
-## ⚠️ Trạng thái hiện tại — chưa lên Chrome Web Store
+## Cài từ Chrome Web Store
 
-Extension **chưa có trên Chrome Web Store** — cài thủ công (unpacked, developer mode). Mọi user đều
-tự cài được: trang **Cài đặt → Extension** có sẵn card **Hướng dẫn cài đặt** 5 bước + nút
-**Tải extension (.zip)** tải trực tiếp, kèm nút **Kết nối extension**. Khi hướng dẫn, trỏ user vào
-trang này thay vì tự viết lại các bước cài.
+Extension có trên **Chrome Web Store** với tên **ClawExperts Co-Work**. Trang **Cài đặt → Extension** có
+sẵn **Hướng dẫn cài đặt** 3 bước, nút **Mở Chrome Web Store** và nút **Kết nối extension**. Khi hướng dẫn,
+trỏ user vào trang này thay vì tự viết lại các bước cài.
 
 ## Cần gì trước
 
-- Extension đã được cài trên trình duyệt Chrome — tự cài theo **Hướng dẫn cài đặt** trong trang
-  **Cài đặt → Extension**.
+- Extension đã được cài trên trình duyệt Chrome (máy tính) — cài từ Chrome Web Store theo **Hướng dẫn cài
+  đặt** trong trang **Cài đặt → Extension**.
 - Đã kết nối extension với đúng tài khoản ClawExpert của bạn.
 
 ## Cách kết nối (khi đã có extension)
 
-1. Vào **Cài đặt → Extension** trong ClawExpert (chưa cài extension thì làm theo **Hướng dẫn cài đặt** + nút tải zip ngay trong trang).
+1. Vào **Cài đặt → Extension** trong ClawExpert (chưa cài extension thì bấm **Mở Chrome Web Store** → **Add to Chrome**, rồi quay lại trang).
 2. Bấm **Kết nối extension** — extension sẽ tự ghép nối với tài khoản đang đăng nhập.
 
 ## Chia sẻ một tab cho agent
@@ -51,7 +50,7 @@ Nếu **chủ workspace** đã cài và kết nối extension, agent có thể *
 
 ## Gợi ý cho agent khi hướng dẫn
 
-- **Extension chưa có trên Chrome Web Store** (xem lưu ý ở đầu file) — khi hướng dẫn cài, LUÔN trỏ user vào **Cài đặt → Extension**: trong trang có sẵn hướng dẫn 5 bước + nút tải zip, đừng để user đi tìm trên Web Store.
+- Khi hướng dẫn cài, trỏ user vào **Cài đặt → Extension**: trong trang có sẵn hướng dẫn và nút **Mở Chrome Web Store** dẫn đúng trang của extension, tránh user tìm nhầm extension khác trên store.
 - Nếu người dùng hỏi "agent điều khiển được trình duyệt của tôi không" hoặc "làm sao cho agent tự mở web": hướng dẫn theo các bước trên.
 - Nhắc rõ khác biệt với Connector nếu người dùng đang nhầm hai khái niệm.
 - Sau khi người dùng báo đã kết nối xong: gọi lại `BROWSER_STATUS` để xác nhận, rồi làm tiếp yêu cầu họ đã nêu (theo SKILL.md), hoặc gợi ý vài việc thử ngay như "mở trang X và tóm tắt".
