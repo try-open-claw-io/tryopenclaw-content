@@ -19,7 +19,7 @@
 
 Tính năng đang trong giai đoạn thử nghiệm nội bộ:
 
-- Tab **Cài đặt → Desktop App** chỉ hiện với tài khoản **platform-admin** — người dùng thường sẽ
+- Tab **Settings (Cài đặt) → Desktop Device** chỉ hiện với tài khoản **platform-admin** — người dùng thường sẽ
   **không thấy** tab này. Nếu người dùng hỏi mà không thấy tab, đừng bịa hướng dẫn — nói tính năng
   đang giới hạn quyền truy cập, chưa mở rộng cho mọi người dùng.
 - App **ClawExperts** chưa ký bằng tài khoản Apple Developer, nên lần mở đầu macOS cảnh báo. Câu chữ thật:
@@ -42,7 +42,7 @@ Tính năng đang trong giai đoạn thử nghiệm nội bộ:
 
 | | Ở đâu | Ai làm |
 |---|---|---|
-| **App ClawExperts** trên máy tính | Cài đặt → Desktop App → tải, cài, Open in app | platform-admin (tab chỉ admin thấy) |
+| **App ClawExperts** trên máy tính | Settings (Cài đặt) → Desktop Device → tải, cài, Open in app | platform-admin (tab chỉ admin thấy) |
 | **Skill "Điều khiển máy tính"** (`desktop-device`) trong workspace | Mục **Kỹ năng (Skills)** → tìm "Điều khiển máy tính" → **Cài** | bất kỳ thành viên; skill không cài sẵn |
 
 Không có app thì không có máy để làm. Không có skill thì agent chỉ hướng dẫn được, chưa làm việc trên máy
@@ -50,7 +50,7 @@ Không có app thì không có máy để làm. Không có skill thì agent ch�
 
 ## Cách kết nối máy tính (app ClawExperts)
 
-Trang **Cài đặt → Desktop App** chia 2 bước:
+Trang **Settings (Cài đặt) → Desktop Device** chia 3 bước (bước 3 là cài skill **Desktop Control (Điều khiển máy tính)** ở trang Skills (Kỹ năng)):
 
 1. **Bước 1 — tải và cài app:** bấm **Mac (Apple Silicon)** hoặc **Mac (Intel)** theo chip của máy (menu Apple →
    About This Mac). Mở file `.dmg`, kéo app vào Applications. Mở app lần đầu, bấm qua cảnh báo như mục
@@ -97,7 +97,7 @@ phải cấu hình:
 
 ## Gợi ý cho agent khi hướng dẫn
 
-- Nếu người dùng không thấy tab **Desktop App**: nói rõ tính năng hiện giới hạn platform-admin, đừng
+- Nếu người dùng không thấy tab **Desktop Device**: nói rõ tính năng hiện giới hạn platform-admin, đừng
   bịa cách khác để truy cập.
 - Nếu `DESKTOP_EXEC`/`FS_*` báo lỗi do allowlist/scope: luôn trỏ đúng người dùng tới **Configure** của
   đúng thiết bị, không tự ý "làm tắt" bằng cách khác.

@@ -18,6 +18,13 @@ và ghép với workspace này. Server kiểm quyền trước khi chuyển lệ
 **Allowed folders** và lệnh trong **Allowed commands** mới chạy. Trả lời cùng ngôn ngữ người dùng, mặc định
 tiếng Việt, xưng "mình". Không nói với người dùng về tool, relay, MCP; nói "máy của bạn", "app ClawExperts".
 
+## Tên nút, menu trong app: English (Tiếng Việt)
+
+Giao diện ClawExpert có thể đang để **tiếng Anh** dù người dùng chat tiếng Việt. Khi chỉ tới nút, menu, tab trong
+app, viết **tên tiếng Anh đúng như trên màn hình, kèm tiếng Việt trong ngoặc**, vd **Settings (Cài đặt) → Desktop Device**,
+**Get pairing code (Lấy mã ghép)**. Người dùng chat tiếng Anh thì chỉ cần tên tiếng Anh. Không dịch riêng tên menu sang tiếng Việt rồi bỏ
+tên tiếng Anh — người dùng sẽ không tìm thấy trên màn hình.
+
 ## Required runtime
 
 Không cần API key hay biến môi trường. Cần tool `DESKTOP_STATUS` (luôn có) và, để làm việc, 5 tool hành động
@@ -127,7 +134,7 @@ không dùng để chào hỏi.
 |---|---|---|
 | `No desktop device is paired with this workspace` | Chưa ghép máy, hoặc máy đã bị gỡ | Gọi lại `DESKTOP_STATUS` rồi làm theo **Hướng dẫn cài** |
 | `… is paired but currently offline …` | App trên máy không chạy | Bảo user mở app ClawExperts, chờ chấm xanh Connected rồi thử lại |
-| `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings → Desktop App → máy này → Configure → Allowed commands** tick `X`. Không thử lệnh khác để lách |
+| `Command "X" is not on this workspace's desktop exec allowlist` | Lệnh chưa được phép | Cần admin vào **Settings (Cài đặt) → Desktop Device → máy này → Configure (Cấu hình) → Allowed commands (Lệnh được phép)** tick `X`. Không thử lệnh khác để lách |
 | `Path "X" is outside this workspace's configured desktop folder scope` | Thư mục chưa được phép | Cần admin thêm thư mục ở **Allowed folders** |
 | `[DENIED] … EPERM: operation not permitted` hoặc `Operation not permitted` | **macOS chặn quyền riêng tư**, không phải lỗi server | Máy hiện hộp thoại "ClawExperts would like to access files in your Downloads folder" → bấm **Allow**. Nếu đã bấm Don't Allow: **System Settings → Privacy & Security → Files and Folders** (hoặc **Full Disk Access**) → bật ClawExperts → **Quit app rồi mở lại** → thử lại |
 | `[NOT_FOUND] …` | Thư mục không tồn tại | Kiểm lại đường dẫn, `FS_LIST` thư mục cha |
@@ -137,16 +144,16 @@ không dùng để chào hỏi.
 ## Hướng dẫn cài — khi máy chưa ghép
 
 Trước hết nói ngắn: tính năng hiện chỉ mở cho tài khoản **platform-admin** và **chỉ có bản Mac**; không thấy tab
-**Desktop App** trong Settings nghĩa là chưa được cấp, không bịa cách khác. Nếu có tab:
+**Desktop Device** trong Settings (Cài đặt) nghĩa là chưa được cấp, không bịa cách khác. Nếu có tab:
 
-1. **Settings → Desktop App**, bước 1: bấm **Mac (Apple Silicon)** hoặc **Mac (Intel)** theo chip của máy.
+1. **Settings (Cài đặt) → Desktop Device**, bước 1: bấm **Mac (Apple Silicon)** hoặc **Mac (Intel)** theo chip của máy.
 2. Mở file `.dmg`, kéo app vào Applications.
 3. Mở app lần đầu: hiện *Apple could not verify "ClawExperts" is free of malware* → bấm Done → **System
    Settings → Privacy & Security** → cuộn xuống → **Open Anyway** → xác nhận. Một lần duy nhất, là cảnh báo
    bình thường của phần mềm chưa ký số, không phải mã độc.
-4. Quay lại trang, bước 2: **Get pairing code** → **Open in app** → trình duyệt hỏi mở ClawExperts → Allow. App
-   hiện chấm xanh **Connected**. Không mở được thì bấm **Copy code**, dán vào ô Pairing code trong app, bấm
-   Connect. Mã hết hạn thì bấm **New code**.
+4. Quay lại trang, bước 2: **Get pairing code (Lấy mã ghép)** → **Open in app (Mở trong app)** → trình duyệt hỏi mở ClawExperts → Allow. App
+   hiện chấm xanh **Connected**. Không mở được thì bấm **Copy code (Sao chép mã)**, dán vào ô Pairing code trong app, bấm
+   Connect. Mã hết hạn thì bấm **New code (Mã mới)**.
 5. Lần đầu agent đọc thư mục, macOS hỏi quyền → **Allow**.
 6. **Mở cuộc trò chuyện mới** rồi hỏi lại. Cuộc chat hiện tại không nhận máy vừa ghép.
 

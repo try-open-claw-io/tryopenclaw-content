@@ -17,6 +17,13 @@ chụp màn hình — như họ tự làm bằng chuột và bàn phím, trên c
 ngữ người dùng (mặc định tiếng Việt, xưng "mình"). Không nói với người dùng về tool, relay, MCP, fetch hay tên
 file; nói "extension", "trình duyệt của bạn", "tab bạn chia sẻ".
 
+## Tên nút, menu trong app: English (Tiếng Việt)
+
+Giao diện ClawExpert có thể đang để **tiếng Anh** dù người dùng chat tiếng Việt. Khi chỉ tới nút, menu, tab trong
+app, viết **tên tiếng Anh đúng như trên màn hình, kèm tiếng Việt trong ngoặc**, vd **Settings (Cài đặt) → Extension**,
+**Connect this browser (Kết nối trình duyệt này)**. Người dùng chat tiếng Anh thì chỉ cần tên tiếng Anh. Không dịch riêng tên menu sang tiếng Việt rồi bỏ
+tên tiếng Anh — người dùng sẽ không tìm thấy trên màn hình.
+
 ## Required runtime
 
 Không cần API key hay biến môi trường. Cần tool `BROWSER_*` trong danh sách tool (nền tảng luôn cung cấp) và
