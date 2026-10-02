@@ -50,7 +50,7 @@ Không có app thì không có máy để làm. Không có skill thì agent ch�
 
 ## Cách kết nối máy tính (app ClawExperts)
 
-Trang **Settings (Cài đặt) → Desktop Device** chia 3 bước (bước 3 là cài skill **Desktop Control (Điều khiển máy tính)** ở trang Skills (Kỹ năng)):
+Trang **Settings (Cài đặt) → Desktop Device** chia 3 bước (bước 3 là cài skill **Desktop Device (Điều khiển máy tính)** ở trang Skills (Kỹ năng)):
 
 1. **Bước 1 — tải và cài app:** bấm **Mac (Apple Silicon)** hoặc **Mac (Intel)** theo chip của máy (menu Apple →
    About This Mac). Mở file `.dmg`, kéo app vào Applications. Mở app lần đầu, bấm qua cảnh báo như mục

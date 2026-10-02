@@ -2,7 +2,7 @@
   "slug": "desktop-device",
   "name": {
     "vi": "Điều khiển máy tính",
-    "en": "Desktop Control"
+    "en": "Desktop Device"
   },
   "description": {
     "vi": "Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.",
