@@ -16,6 +16,8 @@ Mỗi skill = 1 folder `skills/<slug>/` chứa đúng 3 file:
 
 `<slug>` === folder name === `name` (frontmatter SKILL.md) === `slug` (_meta.json). Pattern: `^[a-z0-9_-]+$`.
 
+**Ngoại lệ — skill có nội dung fetch từ GitHub** (`toc-guidelines`, `browser-extension`, `desktop-device`): thêm `references/*.md` (và `GUIDE.md` với `toc-guidelines`). Agent fetch bản mới qua `raw.githubusercontent.com/.../main/skills/<slug>/...`, lỗi thì đọc bản đóng gói. Quy tắc an toàn và luồng chính phải nằm trong `SKILL.md` (bản trên máy), không chỉ trong file fetch. Mỗi file fetch ≤ 18.000 ký tự (`web_fetch` cắt ở 20.000) — `npm run build:llms -- --check` báo lỗi nếu vượt.
+
 ---
 
 ## A. Hard rules (audit ❌ nếu vi phạm)

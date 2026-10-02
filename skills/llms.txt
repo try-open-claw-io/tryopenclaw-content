@@ -8,6 +8,7 @@
 - [brainstorm-buddy/](brainstorm-buddy/llms.txt): Đề xuất nhiều ý tưởng cho một chủ đề, sắp thành nhóm và gợi mở thêm góc nhìn để chọn hướng.
 - [brand-voice-editor/](brand-voice-editor/llms.txt): Chỉnh nội dung có sẵn theo brand voice đã xác định về tone, độ dài, cách diễn đạt, claim và CTA.
 - [brief-from-input/](brief-from-input/llms.txt): Biến một link, ý tưởng thô hay vài chữ thành content brief làm việc: suy nhanh từ dữ liệu đã có, nêu rõ giả định, chỉ hỏi câu còn thiếu giá trị cao.
+- [browser-extension/](browser-extension/llms.txt): Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
 - [case-study-writer/](case-study-writer/llms.txt): Viết case study khách hàng chỉ từ số liệu và quote thật, không bịa, theo cấu trúc bối cảnh - vấn đề - giải pháp - kết quả.
 - [content-batch-generator/](content-batch-generator/llms.txt): Lập kế hoạch rồi sinh cả loạt bài đa dạng cho một đợt/lịch — mỗi bài một góc và cách viết khác nhau, bám mục tiêu, không na ná.
 - [content-brief-builder/](content-brief-builder/llms.txt): Biến một ý tưởng đã chọn thành content brief đầy đủ với mục tiêu, audience, angle, key message và CTA.
@@ -17,6 +18,7 @@
 - [content-repurposer/](content-repurposer/llms.txt): Chuyển một nội dung gốc thành nhiều format phái sinh như LinkedIn post, email, video script và carousel.
 - [daily-planner/](daily-planner/llms.txt): Sắp xếp việc cần làm thành kế hoạch ngày rõ ràng, có ưu tiên và khung giờ thực tế.
 - [decision-helper/](decision-helper/llms.txt): So sánh các lựa chọn bằng bảng ưu nhược có chấm điểm, giúp bạn quyết định dứt khoát.
+- [desktop-device/](desktop-device/llms.txt): Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
 - [doc-summarizer/](doc-summarizer/llms.txt): Rút gọn tài liệu hay văn bản dài thành các ý chính, một câu TL;DR hoặc dàn ý đầy đủ.
 - [email-drafter/](email-drafter/llms.txt): Viết email hoàn chỉnh từ vài ý chính, đúng giọng và có tiêu đề. Chỉ soạn nháp, không gửi.
 - [humanizer/](humanizer/llms.txt): Bước cuối bắt buộc, viết lại mọi content cho đọc như người viết thật: bỏ em-dash, cắt sáo ngữ AI, phá nhịp câu máy móc. Chỉ sửa văn phong, không đổi fact.

@@ -1,0 +1,8 @@
+# browser-extension — skill
+
+> Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
+
+## Files
+- [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
+- [SKILL.md](SKILL.md): Instructions agent chạy — Điều khiển trình duyệt Chrome thật của người dùng qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form…
+- [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

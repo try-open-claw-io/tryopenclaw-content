@@ -1,0 +1,17 @@
+{
+  "slug": "browser-extension",
+  "name": {
+    "vi": "Điều khiển trình duyệt",
+    "en": "Browser Extension"
+  },
+  "description": {
+    "vi": "Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.",
+    "en": "Let the Agent work right in your Chrome browser through the ClawExperts Extension: open pages, read content, click buttons and fill forms on tabs you share."
+  },
+  "category": "productivity",
+  "icon": "Globe",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": true,
+  "version": "1.1"
+}
