@@ -1,3 +1,5 @@
+<!-- vi -->
+
 ## Cách sử dụng
 
 - **Cách kích hoạt:** Gõ `/browser-extension` ở đầu khung chat, rồi nói việc cần làm trên trình duyệt (trang nào, lấy thông tin gì, bấm hay điền gì). Chrome phải đã cài và kết nối Extension ClawExperts (Cài đặt → Extension); chưa có thì Agent sẽ hướng dẫn cài.
@@ -5,7 +7,9 @@
 
 ## Hướng dẫn
 
-- `/browser-extension tóm tắt trang mình đang mở.`
+- /browser-extension tóm tắt trang mình đang mở.
+
+<!-- en -->
 
 ## How to use
 
@@ -14,4 +18,4 @@
 
 ## Tutorials
 
-- `/browser-extension summarize the page I have open.`
+- /browser-extension summarize the page I have open.
