@@ -1,5 +1,3 @@
-<!-- vi -->
-
 ## Cách sử dụng
 
 - **Cách kích hoạt:** Gõ `/desktop-device` ở đầu khung chat, rồi nói việc cần làm trên máy tính của bạn (thư mục nào, file nào, lệnh gì). Máy phải đã cài app ClawExperts và hiện Connected trong Settings → Desktop Device; chưa cài thì Agent sẽ hướng dẫn cài.
@@ -7,9 +5,7 @@
 
 ## Hướng dẫn
 
-- /desktop-device liệt kê các file trong thư mục Downloads của mình.
-
-<!-- en -->
+- `/desktop-device liệt kê các file trong thư mục Downloads của mình.`
 
 ## How to use
 
@@ -18,4 +14,4 @@
 
 ## Tutorials
 
-- /desktop-device list the files in my Downloads folder.
+- `/desktop-device list the files in my Downloads folder.`
