@@ -4,7 +4,7 @@
 > thực tế khi dùng bộ công cụ `BROWSER_*` trên trang lạ, trình xem tài liệu và trang có paywall.
 > Phần 1 (file này): công cụ có sẵn, checklist khi vào trang lạ, ranh giới an toàn, mục 1–11.
 > Phần 2 (`heuristics-actions.md`): đọc lỗi công cụ (mục 12), `BROWSER_BATCH` (13), điền field (14),
-> submit trong dialog (15), SNAPSHOT vs FIND + `depth` (16), overlay & control trùng tên (17).
+> submit trong dialog (15). Phần 3 (`heuristics-snapshot.md`): SNAPSHOT vs FIND + `depth` (16), overlay & control trùng tên (17).
 > Cách cài / kết nối extension: `setup-guide.md`.
 
 Đây không phải một kịch bản cứng: mục tiêu là quyết định bước tiếp theo dựa trên tín hiệu bạn thực sự
@@ -93,4 +93,4 @@ Trước khi bắt đầu khám phá, hãy định nghĩa cái mốc nghĩa là 
 
 Đặt một ngân sách thử hợp lý (ví dụ, sau khoảng 15-20 hành động mà không tiến gần mục tiêu). Nếu vượt ngưỡng mà vẫn kẹt, dừng lại, tóm tắt những gì đã thử, và hỏi người dùng thay vì lặp lại cùng một chiến lược vô tận. Không có ngưỡng này, agent có thể loop thử-và-sai mãi mãi khi lĩnh vực không hành xử như dự đoán (ví dụ khi giả thuyết ở mục 5 trỏ sai chỗ).
 
-> Tiếp theo: gặp lỗi công cụ, cần gộp nhiều bước, điền form, submit dialog, hay chọn giữa `BROWSER_SNAPSHOT` và `BROWSER_FIND` (và scoped snapshot cho overlay) → đọc `heuristics-actions.md`.
+> Tiếp theo: gặp lỗi công cụ, cần gộp nhiều bước, điền form, submit dialog → đọc `heuristics-actions.md`; chọn giữa `BROWSER_SNAPSHOT` và `BROWSER_FIND` (và scoped snapshot cho overlay) → đọc `heuristics-snapshot.md`.

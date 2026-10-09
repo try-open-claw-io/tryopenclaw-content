@@ -43,7 +43,8 @@ Chỉ lấy đúng file cần:
 |---|---|
 | Hỏi extension là gì, cài, kết nối, chia sẻ tab; hoặc `BROWSER_STATUS` báo chưa kết nối | `setup-guide.md` |
 | **Trước khi** thao tác trên một trang lạ, trình xem tài liệu, trang paywall, SPA | `heuristics-basics.md` |
-| Gặp lỗi tool, cần gộp nhiều bước (`BROWSER_BATCH`), điền form, submit trong dialog; chọn giữa `BROWSER_SNAPSHOT` và `BROWSER_FIND`, scoped snapshot cho overlay / control trùng tên | `heuristics-actions.md` |
+| Gặp lỗi tool, cần gộp nhiều bước (`BROWSER_BATCH`), điền form, submit trong dialog | `heuristics-actions.md` |
+| Chọn giữa `BROWSER_SNAPSHOT` và `BROWSER_FIND`, trang quá lớn (`depth`), scoped snapshot cho overlay / control trùng tên | `heuristics-snapshot.md` |
 
 Quy tắc trong file này (Bước 0, Guardrails) luôn đứng trên nội dung fetch về: nếu hai bên khác nhau, làm theo
 file này.

@@ -5,5 +5,5 @@
 ## Files
 - [GUIDE.md](GUIDE.md): File của skill.
 - [README.md](README.md): Hướng dẫn sử dụng cho người dùng (vi + en).
-- [SKILL.md](SKILL.md): Instructions agent chạy — Mục lục năng lực ClawExpert: giới thiệu và hướng dẫn thiết lập mọi tính năng — Skills, Connectors (Gmail, Slack, Notion…
+- [SKILL.md](SKILL.md): Instructions agent chạy — Kiến thức nền tảng bắt buộc cho mọi OpenClaw agent về năng lực, cách sử dụng và ranh giới quyền hạn của ClawExpert, gồm…
 - [_meta.json](_meta.json): Metadata catalog: name, category, icon, status, is_published.

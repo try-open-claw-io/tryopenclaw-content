@@ -14,7 +14,7 @@
 ### Điều khiển trình duyệt  (`browser-extension`)
 
 - **Dùng để làm gì**: Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ.
-- **Ví dụ người dùng nói**: "Để Agent làm việc ngay trên trình duyệt Chrome của bạn qua Extension ClawExperts: mở trang, đọc nội dung, bấm nút, điền form trên tab bạn chia sẻ."
+- **Ví dụ người dùng nói**: "/browser-extension tóm tắt trang mình đang mở."
 - **Cài đặt**: mở ClawExpert → mục Skills → tìm "Điều khiển trình duyệt" → Cài.
 
 ### Lập kế hoạch ngày  (`daily-planner`)
@@ -32,7 +32,7 @@
 ### Điều khiển máy tính  (`desktop-device`)
 
 - **Dùng để làm gì**: Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép.
-- **Ví dụ người dùng nói**: "Để Agent làm việc ngay trên máy tính của bạn qua app ClawExperts: xem, đọc, sắp xếp file và chạy lệnh trong phạm vi bạn cho phép."
+- **Ví dụ người dùng nói**: "/desktop-device liệt kê các file trong thư mục Downloads của mình."
 - **Cài đặt**: mở ClawExpert → mục Skills → tìm "Điều khiển máy tính" → Cài.
 
 ### Tóm tắt tài liệu  (`doc-summarizer`)

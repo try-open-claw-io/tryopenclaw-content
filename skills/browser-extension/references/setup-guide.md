@@ -2,7 +2,7 @@
 
 > File hướng dẫn của skill `browser-extension`. Dùng khi người dùng hỏi extension là gì, cài / kết nối /
 > chia sẻ tab thế nào, hoặc khi `BROWSER_STATUS` báo chưa kết nối. Cách **thao tác** trên tab nằm ở
-> `heuristics-basics.md` và `heuristics-actions.md`.
+> `heuristics-basics.md`, `heuristics-actions.md` và `heuristics-snapshot.md`.
 
 > **Extension trình duyệt** cho agent thấy và thao tác trên **một tab trình duyệt thật** của bạn (Chrome) —
 > mở trang, đọc nội dung, bấm nút, điền form — y như bạn tự làm bằng chuột/bàn phím. Khác Connector

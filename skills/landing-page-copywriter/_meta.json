@@ -1,0 +1,17 @@
+{
+  "slug": "landing-page-copywriter",
+  "name": {
+    "vi": "Viết copy landing page",
+    "en": "Landing Page Copywriter"
+  },
+  "description": {
+    "vi": "Viết copy landing page tối ưu conversion với headline, benefit bullets, social proof và CTA rõ ràng.",
+    "en": "Write conversion-focused landing page copy with headline, benefit bullets, social proof, and a clear CTA."
+  },
+  "category": "content-marketing",
+  "icon": "LayoutTemplate",
+  "status": "Ready",
+  "is_preinstalled": false,
+  "is_published": false,
+  "version": "1.0"
+}
