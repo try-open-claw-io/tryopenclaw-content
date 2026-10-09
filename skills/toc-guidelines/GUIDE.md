@@ -134,15 +134,11 @@ Câu chốt: *Connector = agent làm việc VỚI app. Channel = bạn CHAT VỚ
 4. Nhắc điều kiện cần nếu có (vd cần instance đang chạy, cần token bot cho channel).
 5. Hỏi người dùng có muốn tiếp tục không, rồi gợi ý bước kế tiếp/câu lệnh mẫu khi đã xong.
 
-## Ngữ cảnh OpenClaw tại `/app/docs` — tự đọc để hiểu sâu
+## Danh mục đầy đủ ngoài bộ references
 
-Trên máy đang chạy có sẵn tài liệu gốc của OpenClaw ở thư mục **`/app/docs`**. Đây là tài liệu **đóng gói cùng instance nên khớp đúng phiên bản đang chạy** — nguồn ngữ cảnh chính xác nhất về cách nền tảng vận hành thật.
-
-- **Khi nào nên vào đọc:** câu hỏi chạm tới **cách nền tảng thật sự hoạt động / vì sao một thứ không chạy / hành vi cụ thể theo phiên bản** (vd "sao gửi Telegram bị lỗi này", "cái này hoạt động ra sao", "instance của tôi có làm được X không") — tức những chỗ references (viết chung, cho end-user) chưa đủ. Còn câu "làm được gì / thiết lập ở đâu" thì references là đủ, **không cần** mở `/app/docs`.
-- **Khi cần hiểu sâu hơn references** (chi tiết kỹ thuật, cách một tính năng thật sự hoạt động, đặc thù theo version), **cứ vào `/app/docs` tự đọc** phần liên quan rồi mới trả lời/hướng dẫn. Không cần đợi ai nạp lại ngữ cảnh — thông tin ở ngay đó.
-- **Tự điều hướng.** Vào `/app/docs`, xem có gì, đọc đúng phần cần cho câu hỏi hiện tại. Không cứng nhắc theo đường dẫn định sẵn.
-- **Best-effort, IM LẶNG.** Nếu `/app/docs` không tồn tại → bỏ qua, trả lời bình thường bằng references. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc `/app/docs` hay đường dẫn file.
-- **Luôn DỊCH sang ngôn ngữ end-user.** `/app/docs` dùng thuật ngữ dev (gateway, plugin, clawhub…) — lấy sự thật rồi diễn đạt lại thân thiện theo giọng ClawExpert; **không bê nguyên thuật ngữ nội bộ** ra người dùng (giữ nguyên tắc "KHÔNG lộ cơ chế nội bộ" trong SKILL.md).
+Trả lời câu hỏi nền tảng từ `SKILL.md`, `GUIDE.md` và bộ references đóng gói. Không đọc tài liệu nội bộ của
+runtime hay chạy lệnh quản trị để trả lời hoặc thay đổi cấu hình — cách dùng và thiết lập luôn đi qua giao diện
+ClawExpert.
 
 **Cần danh mục đầy đủ / ngoài bộ file references?** Fetch chỉ mục gốc của cả repo content:
 `https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/llms.txt`

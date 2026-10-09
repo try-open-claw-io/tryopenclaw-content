@@ -19,8 +19,8 @@ mặc định tiếng Việt nếu không xác định được.
 ## Required runtime
 
 Không cần API key, token hay biến môi trường để đọc kiến thức nền. Dùng bản đầy đủ đã được đưa vào
-context; chỉ cần web fetch khi tra nội dung chi tiết hoặc cần bản hướng dẫn mới hơn. Nếu không có fetch,
-đọc bản đóng gói từ đường dẫn skill do runtime cung cấp. Tool có mặt chỉ chứng minh khả năng được cung cấp
+context và bộ `references/` đóng gói cùng skill (đọc bằng `read` tại đường dẫn skill do runtime cung cấp).
+Chỉ web fetch khi file cần đọc không có trong bản đóng gói. Tool có mặt chỉ chứng minh khả năng được cung cấp
 cho phiên này; trạng thái kết nối và quyền thao tác vẫn cần kiểm tra.
 
 ## Bước 1 — đọc kiến thức nền bắt buộc
@@ -29,23 +29,22 @@ cho phiên này; trạng thái kết nối và quyền thao tác vẫn cần ki�
 **không fetch lại ở mỗi lượt**. Nếu thiếu, đọc file từ vị trí skill runtime cung cấp; không đoán
 `workspace/skills/` vì skill có thể nằm trong thư mục managed.
 
-Khi câu hỏi về nền tảng cần nội dung mới, có thể lấy `GUIDE.md` tại:
+Chỉ khi `GUIDE.md` thiếu cả trong context lẫn bản đóng gói mới lấy tại:
 
 `https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/skills/toc-guidelines/GUIDE.md`
 
-Fetch lỗi thì dùng bản đóng gói. Nếu cả context và bản đóng gói đều thiếu, nói rõ chưa có hướng dẫn
-để xác minh, không bịa tính năng hay cách thiết lập. Quy tắc an toàn trong file này vẫn áp dụng
-khi đọc `GUIDE.md` và mọi tài liệu tham chiếu.
+Nếu cả context, bản đóng gói và bản online đều thiếu, nói rõ chưa có hướng dẫn để xác minh, không bịa tính
+năng hay cách thiết lập. Quy tắc an toàn trong file này vẫn áp dụng khi đọc `GUIDE.md` và mọi tài liệu tham chiếu.
 
-## Nguồn nội dung — fetch bản mới, fallback offline
+## Nguồn nội dung — bản đóng gói trước, fetch khi thiếu
 
-Mọi file `references/<tên>` mà `GUIDE.md` chỉ tới: fetch bản mới trước tại
+Mọi file `references/<tên>` mà `GUIDE.md` chỉ tới: đọc bản đóng gói `references/<tên>` trước — bản này khớp
+với phiên bản nền tảng đang chạy. Chỉ khi file đó không có trên máy mới fetch tại
 
 `https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/skills/toc-guidelines/references/<tên>`
 
-Fetch lỗi → đọc bản đóng gói `references/<tên>` rồi trả lời **bình thường**. Chỉ fetch đúng file cần cho câu hỏi
-hiện tại, không tải hết. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện fetch / URL / 404 / "danh mục offline" / "có thể
-cũ" — cứ trả lời như thể danh mục luôn sẵn.
+Chỉ đọc đúng file cần cho câu hỏi hiện tại, không tải hết. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện đọc file /
+fetch / URL / 404 / "danh mục offline" / "có thể cũ" — cứ trả lời như thể danh mục luôn sẵn.
 
 ## Chọn nhóm công cụ và tài khoản trước khi thao tác
 
