@@ -81,13 +81,13 @@ GitHub Pages serves one site per repo, so one site carries both environments:
 | `main` | `https://try-open-claw-io.github.io/tryopenclaw-content/` |
 | `staging` | `https://try-open-claw-io.github.io/tryopenclaw-content/staging/` |
 
-[`.github/workflows/pages.yml`](.github/workflows/pages.yml) runs on every push to either branch. It always checks out **both** branches, assembles them with [`scripts/build-pages.mjs`](scripts/build-pages.mjs) (tooling from `main`), and deploys the complete site. Each deploy replaces the whole site, so runs are serialized and never publish one branch alone. The site has rendered HTML plus the raw `.md`/`.txt` files agents fetch.
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) runs on every push to either branch. It always checks out **both** branches, assembles their committed files with [`scripts/build-pages.mjs`](scripts/build-pages.mjs) (from the branch that triggered the run), and deploys the complete site. Each deploy replaces the whole site, so runs are serialized and never publish one branch alone. It does not regenerate or lint content — `llms.yml` does that per branch, so commit regenerated indexes as usual. The site has rendered HTML plus the raw `.md`/`.txt` files agents fetch.
 
 Content keeps canonical `raw.githubusercontent.com/.../main/` URLs. The published copy rewrites them to the environment it is served from — never hand-edit staging URLs into a branch. Test the assembler with `npm run test:pages`.
 
 One-time setup (repo admin):
 
-1. Merge the workflow and `scripts/build-pages.mjs` into `main`, then into `staging`.
+1. Merge the workflow and `scripts/build-pages.mjs` into the branch you deploy from (`staging` first works; `main` needs them before its own pushes deploy).
 2. **Settings → Pages → Source: GitHub Actions.**
 3. **Settings → Environments → `github-pages`**: allow deployments from `main` and `staging`.
 4. Run the workflow once (Actions → *Publish GitHub Pages* → Run workflow).

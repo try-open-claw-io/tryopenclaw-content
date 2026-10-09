@@ -37,24 +37,20 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 20
-      - name: Generate production indexes
-        working-directory: production
-        run: |
-          npm install --ignore-scripts --no-audit --no-fund
-          npm run build:llms
-          npm run test:pages
-      - name: Generate staging indexes
-        working-directory: staging
-        run: |
-          npm install --ignore-scripts --no-audit --no-fund
-          npm run build:llms
+      # Publish what each branch committed; llms.yml checks content per branch,
+      # so one branch's lint failure never blocks deploying the other.
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      # Use the triggering branch's assembler so a branch can deploy before the
+      # other branch has the tooling.
       - name: Assemble both environments
         env:
           PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
-        run: node production/scripts/build-pages.mjs production staging public
+          TOOLING: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+        run: |
+          node --test "$TOOLING/scripts/build-pages.test.mjs"
+          node "$TOOLING/scripts/build-pages.mjs" production staging public
       - name: Build HTML pages
         uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1
         with:
