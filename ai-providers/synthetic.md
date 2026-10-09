@@ -4,8 +4,8 @@ name:
   vi: "Synthetic"
   en: "Synthetic"
 description:
-  vi: "Synthetic — inference platform for open-source LLMs."
-  en: "Synthetic — inference platform for open-source LLMs."
+  vi: "Model mã nguồn mở theo gói thuê bao hàng tháng."
+  en: "Open-source models on a monthly subscription."
 instructions:
   vi:
     - "Đăng nhập synthetic.new."

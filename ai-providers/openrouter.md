@@ -4,8 +4,8 @@ name:
   vi: "OpenRouter"
   en: "OpenRouter"
 description:
-  vi: "One key for hundreds of models via an OpenAI-compatible API."
-  en: "One key for hundreds of models via an OpenAI-compatible API."
+  vi: "Truy cập model của nhiều nhà cung cấp bằng một API key."
+  en: "Access models from many providers with one API key."
 instructions:
   vi:
     - "Đăng nhập openrouter.ai/keys."

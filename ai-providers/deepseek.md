@@ -4,8 +4,8 @@ name:
   vi: "DeepSeek"
   en: "DeepSeek"
 description:
-  vi: "DeepSeek V3 / R1 reasoning — cheapest in its tier."
-  en: "DeepSeek V3 / R1 reasoning — cheapest in its tier."
+  vi: "Model của DeepSeek với chi phí sử dụng thấp."
+  en: "DeepSeek models with low usage costs."
 instructions:
   vi:
     - "Đăng nhập platform.deepseek.com."

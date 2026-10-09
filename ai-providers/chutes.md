@@ -4,8 +4,8 @@ name:
   vi: "Chutes"
   en: "Chutes"
 description:
-  vi: "Chutes — decentralised inference on the Bittensor network."
-  en: "Chutes — decentralised inference on the Bittensor network."
+  vi: "Nhiều model mã nguồn mở, có gói miễn phí."
+  en: "Open-source models, with a free tier."
 instructions:
   vi:
     - "Đăng nhập chutes.ai/app (qua email hoặc ví)."

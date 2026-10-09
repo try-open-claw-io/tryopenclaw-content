@@ -33,6 +33,10 @@ the `main` branch (BE env `CONTENT_REPO_AGENT_TEMPLATES_BRANCH` /
 4. **Localized text must ship the full `vi` + `en` pair** (rendering falls back
    per field: viewer's locale → vi → any — uneven authoring shows users mixed
    languages).
-5. **Test changes on a branch**, never experiment on `main`: push a branch →
-   point local BE `CONTENT_REPO_AGENT_TEMPLATES_BRANCH=<branch>` → hit the
-   GitHub Sync button.
+5. **Test changes on a branch**, never experiment on `main`. Agents never push
+   or merge without explicit authorization in the current request; the branch
+   sync check (point local BE `CONTENT_REPO_AGENT_TEMPLATES_BRANCH=<branch>` →
+   GitHub Sync button) is done by the user.
+6. `llms.txt` / `llms-full.txt` (root, per-dir, per-skill) are generated — never
+   hand-edit. After changing catalog content run `npm run build:llms`; static
+   check: `npm run check:llms`.

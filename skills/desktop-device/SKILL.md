@@ -27,9 +27,9 @@ tên tiếng Anh — người dùng sẽ không tìm thấy trên màn hình.
 
 ## Required runtime
 
-Không cần API key hay biến môi trường. Cần tool `DESKTOP_STATUS` (luôn có) và, để làm việc, 5 tool hành động
-`DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`, `DESKTOP_NOTIFY` có trong danh sách tool của
-cuộc chat này.
+Không cần API key hay biến môi trường. Cần nhóm Desktop (`toc-desktop`) với tool `DESKTOP_STATUS` và, để
+làm việc, 5 tool hành động `DESKTOP_EXEC`, `DESKTOP_FS_READ`, `DESKTOP_FS_WRITE`, `DESKTOP_FS_LIST`,
+`DESKTOP_NOTIFY` trong danh sách tool của cuộc chat này. NAS dùng nhóm riêng (`toc-nas`), không gọi qua Desktop.
 
 ## Nguồn hướng dẫn chi tiết — fetch bản mới, fallback offline
 

@@ -4,8 +4,8 @@ name:
   vi: "Qianfan (Baidu)"
   en: "Qianfan (Baidu)"
 description:
-  vi: "Baidu Qianfan — ERNIE family of Chinese-first LLMs."
-  en: "Baidu Qianfan — ERNIE family of Chinese-first LLMs."
+  vi: "Nền tảng AI của Baidu. Yêu cầu tài khoản Trung Quốc."
+  en: "Baidu's AI platform. Requires a Chinese account."
 instructions:
   vi:
     - "Đăng nhập console.bce.baidu.com (Baidu AI Cloud) và bật dịch vụ Qianfan ModelBuilder."

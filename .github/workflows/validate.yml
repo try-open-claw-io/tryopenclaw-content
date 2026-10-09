@@ -6,7 +6,7 @@ on:
       - 'ai-providers/**'
       - '.github/workflows/validate.yml'
   push:
-    branches: [main]
+    branches: [main, staging]
     paths:
       - 'ai-providers/**'
       - '.github/workflows/validate.yml'

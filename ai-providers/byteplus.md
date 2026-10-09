@@ -4,8 +4,8 @@ name:
   vi: "BytePlus"
   en: "BytePlus"
 description:
-  vi: "BytePlus (ByteDance) — Doubao / Skylark inference outside China."
-  en: "BytePlus (ByteDance) — Doubao / Skylark inference outside China."
+  vi: "Model của ByteDance, phiên bản quốc tế qua BytePlus."
+  en: "ByteDance models, international edition via BytePlus."
 instructions:
   vi:
     - "Đăng nhập console.byteplus.com và mở ModelArk (Ark)."

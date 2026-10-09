@@ -26,8 +26,9 @@ tên tiếng Anh — người dùng sẽ không tìm thấy trên màn hình.
 
 ## Required runtime
 
-Không cần API key hay biến môi trường. Cần tool `BROWSER_*` trong danh sách tool (nền tảng luôn cung cấp) và
-extension ClawExperts đã cài + kết nối trên Chrome của người dùng (xem `setup-guide.md`).
+Không cần API key hay biến môi trường. Cần tool `BROWSER_*` thuộc nhóm Browser (`toc-browser`) được runtime
+cung cấp và extension ClawExperts đã cài + kết nối trên Chrome của người dùng (xem `setup-guide.md`).
+Nhóm Apps dùng profile account riêng; không dùng browser để thay account hoặc vượt lỗi auth/quota của Apps.
 
 ## Nguồn hướng dẫn chi tiết — fetch bản mới, fallback offline
 

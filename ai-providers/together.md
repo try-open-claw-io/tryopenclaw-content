@@ -4,8 +4,8 @@ name:
   vi: "Together"
   en: "Together"
 description:
-  vi: "Inference for 200+ open-source models."
-  en: "Inference for 200+ open-source models."
+  vi: "Hàng trăm model mã nguồn mở trên một nền tảng."
+  en: "Hundreds of open-source models on one platform."
 instructions:
   vi:
     - "Đăng nhập api.together.ai."

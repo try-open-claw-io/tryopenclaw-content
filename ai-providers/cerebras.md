@@ -4,8 +4,8 @@ name:
   vi: "Cerebras"
   en: "Cerebras"
 description:
-  vi: "Wafer-scale inference, high throughput for Llama 3.1."
-  en: "Wafer-scale inference, high throughput for Llama 3.1."
+  vi: "Tốc độ xử lý cao trên phần cứng chuyên dụng của Cerebras."
+  en: "Fast inference on Cerebras' purpose-built hardware."
 instructions:
   vi:
     - "Đăng nhập cloud.cerebras.ai."

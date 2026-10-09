@@ -4,21 +4,19 @@ name:
   vi: "MiniMax"
   en: "MiniMax"
 description:
-  vi: "MiniMax abab/Hailuo — multimodal models out of China."
-  en: "MiniMax abab/Hailuo — multimodal models out of China."
+  vi: "Model của MiniMax, phù hợp cho agent và lập trình."
+  en: "MiniMax models for agents and coding."
 instructions:
   vi:
     - "Đăng nhập platform.minimax.io (bản quốc tế)."
-    - "Mở User Center → Basic Information, sao chép Group ID hiển thị tại đây."
-    - "Mở tab API Keys → Create new secret key, đặt tên."
-    - "Sao chép key (chỉ hiện một lần) rồi dán vào ô bên dưới."
-    - "Lưu ý: nhiều SDK cần cả Group ID lẫn API key."
+    - "Mở mục API Keys rồi bấm Create new secret key."
+    - "Sao chép key (chỉ hiện một lần) và dán vào ô bên dưới."
+    - "Lưu ý: key tạo trên platform.minimaxi.com (Trung Quốc) không dùng được ở đây."
   en:
-    - "Sign in at platform.minimax.io (the international platform)."
-    - "Open User Center → Basic Information and copy the Group ID shown there."
-    - "Open the API Keys tab → Create new secret key and name it."
+    - "Sign in at platform.minimax.io (international)."
+    - "Open API Keys and click Create new secret key."
     - "Copy the key (shown only once) and paste it below."
-    - "Note: many SDKs require both the Group ID and the API key."
+    - "Note: keys from platform.minimaxi.com (China) don't work here."
 keyUrl: "https://platform.minimax.io/user-center/basic-information/interface-key"
 # videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
 ---

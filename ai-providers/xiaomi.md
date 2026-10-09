@@ -4,8 +4,8 @@ name:
   vi: "Xiaomi MiMo"
   en: "Xiaomi MiMo"
 description:
-  vi: "Xiaomi MiMo — Xiaomi's in-house large language models."
-  en: "Xiaomi MiMo — Xiaomi's in-house large language models."
+  vi: "Model MiMo do Xiaomi phát triển."
+  en: "MiMo models developed by Xiaomi."
 instructions:
   vi:
     - "Đăng nhập platform.xiaomimimo.com bằng tài khoản Xiaomi (đăng ký tại id.mi.com nếu chưa có)."

@@ -4,8 +4,8 @@ name:
   vi: "Anthropic"
   en: "Anthropic"
 description:
-  vi: "Claude Opus / Sonnet / Haiku — frontier reasoning."
-  en: "Claude Opus / Sonnet / Haiku — frontier reasoning."
+  vi: "Model Claude của Anthropic, mạnh về viết và lập trình."
+  en: "Anthropic's Claude models, strong in writing and coding."
 instructions:
   vi:
     - "Đăng nhập console.anthropic.com."

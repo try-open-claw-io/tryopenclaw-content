@@ -4,8 +4,8 @@ name:
   vi: "Venice"
   en: "Venice"
 description:
-  vi: "Privacy-first AI — never logs conversations."
-  en: "Privacy-first AI — never logs conversations."
+  vi: "Không lưu trữ nội dung trò chuyện của bạn."
+  en: "Your conversations are not stored."
 instructions:
   vi:
     - "Đăng nhập venice.ai/settings/api-keys."

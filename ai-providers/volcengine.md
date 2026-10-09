@@ -4,8 +4,8 @@ name:
   vi: "Volcengine (Doubao)"
   en: "Volcengine (Doubao)"
 description:
-  vi: "Volcengine — ByteDance's domestic Doubao / Skylark endpoint."
-  en: "Volcengine — ByteDance's domestic Doubao / Skylark endpoint."
+  vi: "Model Doubao của ByteDance. Yêu cầu tài khoản Trung Quốc."
+  en: "ByteDance's Doubao models. Requires a Chinese account."
 instructions:
   vi:
     - "Đăng nhập console.volcengine.com và hoàn tất xác thực danh tính (real-name)."

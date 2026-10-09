@@ -4,8 +4,8 @@ name:
   vi: "Kilocode"
   en: "Kilocode"
 description:
-  vi: "Kilo Code — agentic coding assistant with hosted inference."
-  en: "Kilo Code — agentic coding assistant with hosted inference."
+  vi: "Tự động chọn model phù hợp cho từng tác vụ."
+  en: "Automatically routes each task to a suitable model."
 instructions:
   vi:
     - "Đăng nhập app.kilo.ai (tài khoản miễn phí)."

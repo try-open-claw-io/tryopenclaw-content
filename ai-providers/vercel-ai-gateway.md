@@ -4,8 +4,8 @@ name:
   vi: "Vercel AI Gateway"
   en: "Vercel AI Gateway"
 description:
-  vi: "Unified gateway across many providers, with caching and observability."
-  en: "Unified gateway across many providers, with caching and observability."
+  vi: "Cổng AI của Vercel, truy cập nhiều nhà cung cấp bằng một key."
+  en: "Vercel's AI gateway to many providers with one key."
 instructions:
   vi:
     - "Đăng nhập Vercel rồi mở Dashboard → AI Gateway → API Keys."

@@ -4,8 +4,8 @@ name:
   vi: "Groq"
   en: "Groq"
 description:
-  vi: "Ultra-fast LPU inference for Llama / Mixtral / Gemma."
-  en: "Ultra-fast LPU inference for Llama / Mixtral / Gemma."
+  vi: "Phản hồi tốc độ cao trên phần cứng riêng của Groq."
+  en: "High-speed responses on Groq's own hardware."
 instructions:
   vi:
     - "Đăng nhập console.groq.com."

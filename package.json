@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build:llms": "node scripts/build-llms.mjs",
-    "check:llms": "node scripts/build-llms.mjs --check"
+    "check:llms": "node scripts/build-llms.mjs --check",
+    "test:pages": "node --test scripts/build-pages.test.mjs"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3"

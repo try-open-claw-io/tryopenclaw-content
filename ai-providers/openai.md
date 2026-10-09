@@ -4,8 +4,8 @@ name:
   vi: "OpenAI"
   en: "OpenAI"
 description:
-  vi: "GPT-5 / GPT-5 mini / o3 reasoning models."
-  en: "GPT-5 / GPT-5 mini / o3 reasoning models."
+  vi: "Model GPT của OpenAI, kết nối bằng API key."
+  en: "OpenAI's GPT models, connected with an API key."
 instructions:
   vi:
     - "Đăng nhập platform.openai.com/api-keys."

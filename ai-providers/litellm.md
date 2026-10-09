@@ -4,8 +4,8 @@ name:
   vi: "LiteLLM"
   en: "LiteLLM"
 description:
-  vi: "Self-hosted proxy that unifies many providers behind one endpoint."
-  en: "Self-hosted proxy that unifies many providers behind one endpoint."
+  vi: "Kết nối LiteLLM proxy do bạn tự triển khai."
+  en: "Connect your self-hosted LiteLLM proxy."
 instructions:
   vi:
     - "Cài đặt proxy: pip install 'litellm[proxy]'."

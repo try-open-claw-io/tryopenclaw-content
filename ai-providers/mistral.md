@@ -4,8 +4,8 @@ name:
   vi: "Mistral"
   en: "Mistral"
 description:
-  vi: "Mistral Large 3 — tool use and function calling."
-  en: "Mistral Large 3 — tool use and function calling."
+  vi: "Model của Mistral AI (Pháp), có nhiều lựa chọn gọn nhẹ."
+  en: "Models from Mistral AI (France), including lightweight options."
 instructions:
   vi:
     - "Đăng nhập console.mistral.ai."

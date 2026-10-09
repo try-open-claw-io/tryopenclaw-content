@@ -14,16 +14,21 @@
 ## Kết nối một connector (mục "Ứng dụng")
 
 1. Mở ClawExpert → mục **Ứng dụng** (Connectors).
-2. Chọn app cần kết nối → bấm **Kết nối**. Có 2 kiểu:
+2. Chọn app cần kết nối → bấm **Kết nối** hoặc **Thêm tài khoản**. Đặt tên profile dễ phân biệt nếu cần. Có 2 kiểu:
    - **Đăng nhập OAuth** (đa số app: Gmail, Slack, Notion, GitHub, Google Calendar/Drive/Sheets, HubSpot, Stripe, Shopify, Zoom...): mở popup đăng nhập của app đó → **cấp quyền**.
    - **Nhập App ID + App Secret** (chỉ vài app tự quản, hiện có Lark Suite self-managed).
-3. Sau khi kết nối, các tool của app **tự xuất hiện** cho agent — agent tự dùng khi cần; không phải khởi động lại.
-4. Trong chat có thể gõ `@<id>` (vd `@gmail`) để tham chiếu nhanh tới app.
+3. Sau khi kết nối, profile xuất hiện trong danh sách account của app. Agent lấy danh sách hiện tại rồi chọn
+   profile theo yêu cầu; có nhiều account mà chưa rõ thì hỏi lại.
+4. Trong chat có thể gõ `@<id>` (vd `@gmail`) để tham chiếu app; chỉ định thêm tên profile khi có nhiều account.
+5. Các profile dùng chung trong workspace. Thêm account không tăng hạn mức Connector và không tạo quyền riêng cho từng agent.
+   Nếu nền tảng báo cần cập nhật instance trước khi thêm account, hoàn tất cập nhật rồi thử lại; không xóa kết nối cũ để lách bước này.
 
 ## Gỡ / tắt / ngắt
 
 - **Skill**: vào Kỹ năng → chọn skill → **Gỡ cài đặt**, hoặc tắt bằng công tắc.
-- **Connector**: vào Ứng dụng → chọn app → **Ngắt kết nối** (ảnh hưởng cả workspace) hoặc **Kết nối lại** khi hết hạn.
+- **Connector**: vào Ứng dụng → chọn app → chọn đúng profile để **Đổi tên**, **Ngắt kết nối** hoặc **Kết nối lại**.
+  Ngắt profile này ảnh hưởng các agent đang dùng nó trong workspace, không ngắt account khác của cùng app.
+  Kết nối lại phải dùng đúng account cũ; nếu muốn đổi account của profile, xác nhận rõ trên giao diện.
 
 ## Connector vs Channel — đừng nhầm
 

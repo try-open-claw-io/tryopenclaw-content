@@ -4,8 +4,8 @@ name:
   vi: "Google"
   en: "Google"
 description:
-  vi: "Gemini 2.5 Pro / Flash with 1M-token long context."
-  en: "Gemini 2.5 Pro / Flash with 1M-token long context."
+  vi: "Model Gemini của Google, xử lý tốt hình ảnh và tài liệu dài."
+  en: "Google's Gemini models for images and long documents."
 instructions:
   vi:
     - "Mở aistudio.google.com/apikey và đăng nhập."

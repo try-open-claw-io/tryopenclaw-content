@@ -4,8 +4,8 @@ name:
   vi: "xAI (Grok)"
   en: "xAI (Grok)"
 description:
-  vi: "Grok 4 — reasoning plus real-time X data."
-  en: "Grok 4 — reasoning plus real-time X data."
+  vi: "Model Grok của xAI cho hỏi đáp và lập trình."
+  en: "xAI's Grok models for chat and coding."
 instructions:
   vi:
     - "Đăng nhập console.x.ai."

@@ -3,35 +3,35 @@
 > Danh mục AI model provider hiển thị ở Config Builder. Mỗi file = 1 provider; frontmatter khớp `_schema.json`. BE poll repo mỗi ~10 phút.
 
 ## Providers
-- [anthropic.md](anthropic.md): Claude Opus / Sonnet / Haiku — frontier reasoning.
-- [arcee.md](arcee.md): Arcee AI — small-language-model platform for tailored deployment.
-- [byteplus.md](byteplus.md): BytePlus (ByteDance) — Doubao / Skylark inference outside China.
-- [cerebras.md](cerebras.md): Wafer-scale inference, high throughput for Llama 3.1.
-- [chutes.md](chutes.md): Chutes — decentralised inference on the Bittensor network.
-- [deepseek.md](deepseek.md): DeepSeek V3 / R1 reasoning — cheapest in its tier.
-- [fireworks.md](fireworks.md): Serverless inference for open-source models.
-- [google.md](google.md): Gemini 2.5 Pro / Flash with 1M-token long context.
-- [groq.md](groq.md): Ultra-fast LPU inference for Llama / Mixtral / Gemma.
-- [huggingface.md](huggingface.md): Inference Endpoints for any open-source model.
-- [kilocode.md](kilocode.md): Kilo Code — agentic coding assistant with hosted inference.
-- [litellm.md](litellm.md): Self-hosted proxy that unifies many providers behind one endpoint.
-- [minimax.md](minimax.md): MiniMax abab/Hailuo — multimodal models out of China.
-- [mistral.md](mistral.md): Mistral Large 3 — tool use and function calling.
-- [moonshot.md](moonshot.md): Kimi K2 — 1M context, strong on Chinese and code.
-- [nvidia.md](nvidia.md): NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
-- [openai.md](openai.md): GPT-5 / GPT-5 mini / o3 reasoning models.
-- [openrouter.md](openrouter.md): One key for hundreds of models via an OpenAI-compatible API.
-- [qianfan.md](qianfan.md): Baidu Qianfan — ERNIE family of Chinese-first LLMs.
-- [qwen.md](qwen.md): Qwen 3 Max / Coder — Alibaba's flagship line.
-- [stepfun.md](stepfun.md): StepFun Step-2 — Chinese multimodal foundation models.
-- [synthetic.md](synthetic.md): Synthetic — inference platform for open-source LLMs.
-- [together.md](together.md): Inference for 200+ open-source models.
-- [venice.md](venice.md): Privacy-first AI — never logs conversations.
-- [vercel-ai-gateway.md](vercel-ai-gateway.md): Unified gateway across many providers, with caching and observability.
-- [volcengine.md](volcengine.md): Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
-- [xai.md](xai.md): Grok 4 — reasoning plus real-time X data.
-- [xiaomi.md](xiaomi.md): Xiaomi MiMo — Xiaomi's in-house large language models.
-- [zai.md](zai.md): GLM-4.6 — Zhipu AI's flagship.
+- [anthropic.md](anthropic.md): Model Claude của Anthropic, mạnh về viết và lập trình.
+- [arcee.md](arcee.md): Model mã nguồn mở gọn nhẹ của Arcee AI.
+- [byteplus.md](byteplus.md): Model của ByteDance, phiên bản quốc tế qua BytePlus.
+- [cerebras.md](cerebras.md): Tốc độ xử lý cao trên phần cứng chuyên dụng của Cerebras.
+- [chutes.md](chutes.md): Nhiều model mã nguồn mở, có gói miễn phí.
+- [deepseek.md](deepseek.md): Model của DeepSeek với chi phí sử dụng thấp.
+- [fireworks.md](fireworks.md): Nền tảng chạy model mã nguồn mở, tính phí theo lượng dùng.
+- [google.md](google.md): Model Gemini của Google, xử lý tốt hình ảnh và tài liệu dài.
+- [groq.md](groq.md): Phản hồi tốc độ cao trên phần cứng riêng của Groq.
+- [huggingface.md](huggingface.md): Sử dụng model trên Hugging Face bằng access token.
+- [kilocode.md](kilocode.md): Tự động chọn model phù hợp cho từng tác vụ.
+- [litellm.md](litellm.md): Kết nối LiteLLM proxy do bạn tự triển khai.
+- [minimax.md](minimax.md): Model của MiniMax, phù hợp cho agent và lập trình.
+- [mistral.md](mistral.md): Model của Mistral AI (Pháp), có nhiều lựa chọn gọn nhẹ.
+- [moonshot.md](moonshot.md): Model Kimi của Moonshot AI, xử lý được tài liệu dài.
+- [nvidia.md](nvidia.md): Model do NVIDIA cung cấp sẵn qua API.
+- [openai.md](openai.md): Model GPT của OpenAI, kết nối bằng API key.
+- [openrouter.md](openrouter.md): Truy cập model của nhiều nhà cung cấp bằng một API key.
+- [qianfan.md](qianfan.md): Nền tảng AI của Baidu. Yêu cầu tài khoản Trung Quốc.
+- [qwen.md](qwen.md): Model Qwen của Alibaba Cloud, nhiều kích thước để lựa chọn.
+- [stepfun.md](stepfun.md): Model Step của StepFun, hỗ trợ xử lý hình ảnh.
+- [synthetic.md](synthetic.md): Model mã nguồn mở theo gói thuê bao hàng tháng.
+- [together.md](together.md): Hàng trăm model mã nguồn mở trên một nền tảng.
+- [venice.md](venice.md): Không lưu trữ nội dung trò chuyện của bạn.
+- [vercel-ai-gateway.md](vercel-ai-gateway.md): Cổng AI của Vercel, truy cập nhiều nhà cung cấp bằng một key.
+- [volcengine.md](volcengine.md): Model Doubao của ByteDance. Yêu cầu tài khoản Trung Quốc.
+- [xai.md](xai.md): Model Grok của xAI cho hỏi đáp và lập trình.
+- [xiaomi.md](xiaomi.md): Model MiMo do Xiaomi phát triển.
+- [zai.md](zai.md): Model GLM của Z.AI, phù hợp cho lập trình.
 
 ## Schema & rules
 - [_schema.json](_schema.json): JSON Schema validate frontmatter (chạy trong CI).

@@ -10,7 +10,7 @@ on:
       - 'scripts/build-llms.mjs'
       - '.github/workflows/llms.yml'
   push:
-    branches: [main]
+    branches: [main, staging]
     paths:
       - 'ai-providers/**'
       - 'connectors/**'

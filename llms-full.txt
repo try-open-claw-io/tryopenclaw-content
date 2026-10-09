@@ -6,148 +6,148 @@
 ## ai-providers
 
 ### anthropic — Anthropic
-- vi: Claude Opus / Sonnet / Haiku — frontier reasoning.
-- en: Claude Opus / Sonnet / Haiku — frontier reasoning.
+- vi: Model Claude của Anthropic, mạnh về viết và lập trình.
+- en: Anthropic's Claude models, strong in writing and coding.
 - keyUrl: https://console.anthropic.com/
 
 ### arcee — Arcee
-- vi: Arcee AI — small-language-model platform for tailored deployment.
-- en: Arcee AI — small-language-model platform for tailored deployment.
+- vi: Model mã nguồn mở gọn nhẹ của Arcee AI.
+- en: Lightweight open-source models from Arcee AI.
 - keyUrl: https://conductor.arcee.ai/
 
 ### byteplus — BytePlus
-- vi: BytePlus (ByteDance) — Doubao / Skylark inference outside China.
-- en: BytePlus (ByteDance) — Doubao / Skylark inference outside China.
+- vi: Model của ByteDance, phiên bản quốc tế qua BytePlus.
+- en: ByteDance models, international edition via BytePlus.
 - keyUrl: https://console.byteplus.com/ark/region:ark+ap-southeast-1/apiKey
 
 ### cerebras — Cerebras
-- vi: Wafer-scale inference, high throughput for Llama 3.1.
-- en: Wafer-scale inference, high throughput for Llama 3.1.
+- vi: Tốc độ xử lý cao trên phần cứng chuyên dụng của Cerebras.
+- en: Fast inference on Cerebras' purpose-built hardware.
 - keyUrl: https://cloud.cerebras.ai/
 
 ### chutes — Chutes
-- vi: Chutes — decentralised inference on the Bittensor network.
-- en: Chutes — decentralised inference on the Bittensor network.
+- vi: Nhiều model mã nguồn mở, có gói miễn phí.
+- en: Open-source models, with a free tier.
 - keyUrl: https://chutes.ai/app/api
 
 ### deepseek — DeepSeek
-- vi: DeepSeek V3 / R1 reasoning — cheapest in its tier.
-- en: DeepSeek V3 / R1 reasoning — cheapest in its tier.
+- vi: Model của DeepSeek với chi phí sử dụng thấp.
+- en: DeepSeek models with low usage costs.
 - keyUrl: https://platform.deepseek.com/api_keys
 
 ### fireworks — Fireworks
-- vi: Serverless inference for open-source models.
-- en: Serverless inference for open-source models.
+- vi: Nền tảng chạy model mã nguồn mở, tính phí theo lượng dùng.
+- en: Hosted open-source models with usage-based pricing.
 - keyUrl: https://fireworks.ai/account/api-keys
 
 ### google — Google
-- vi: Gemini 2.5 Pro / Flash with 1M-token long context.
-- en: Gemini 2.5 Pro / Flash with 1M-token long context.
+- vi: Model Gemini của Google, xử lý tốt hình ảnh và tài liệu dài.
+- en: Google's Gemini models for images and long documents.
 - keyUrl: https://aistudio.google.com/app/apikey
 
 ### groq — Groq
-- vi: Ultra-fast LPU inference for Llama / Mixtral / Gemma.
-- en: Ultra-fast LPU inference for Llama / Mixtral / Gemma.
+- vi: Phản hồi tốc độ cao trên phần cứng riêng của Groq.
+- en: High-speed responses on Groq's own hardware.
 - keyUrl: https://console.groq.com/keys
 
 ### huggingface — Hugging Face
-- vi: Inference Endpoints for any open-source model.
-- en: Inference Endpoints for any open-source model.
+- vi: Sử dụng model trên Hugging Face bằng access token.
+- en: Use models on Hugging Face with an access token.
 - keyUrl: https://huggingface.co/settings/tokens
 
 ### kilocode — Kilocode
-- vi: Kilo Code — agentic coding assistant with hosted inference.
-- en: Kilo Code — agentic coding assistant with hosted inference.
+- vi: Tự động chọn model phù hợp cho từng tác vụ.
+- en: Automatically routes each task to a suitable model.
 - keyUrl: https://app.kilo.ai/
 
 ### litellm — LiteLLM
-- vi: Self-hosted proxy that unifies many providers behind one endpoint.
-- en: Self-hosted proxy that unifies many providers behind one endpoint.
+- vi: Kết nối LiteLLM proxy do bạn tự triển khai.
+- en: Connect your self-hosted LiteLLM proxy.
 - keyUrl: https://docs.openclaw.ai/providers/litellm
 
 ### minimax — MiniMax
-- vi: MiniMax abab/Hailuo — multimodal models out of China.
-- en: MiniMax abab/Hailuo — multimodal models out of China.
+- vi: Model của MiniMax, phù hợp cho agent và lập trình.
+- en: MiniMax models for agents and coding.
 - keyUrl: https://platform.minimax.io/user-center/basic-information/interface-key
 
 ### mistral — Mistral
-- vi: Mistral Large 3 — tool use and function calling.
-- en: Mistral Large 3 — tool use and function calling.
+- vi: Model của Mistral AI (Pháp), có nhiều lựa chọn gọn nhẹ.
+- en: Models from Mistral AI (France), including lightweight options.
 - keyUrl: https://console.mistral.ai/
 
 ### moonshot — Moonshot (Kimi)
-- vi: Kimi K2 — 1M context, strong on Chinese and code.
-- en: Kimi K2 — 1M context, strong on Chinese and code.
+- vi: Model Kimi của Moonshot AI, xử lý được tài liệu dài.
+- en: Moonshot AI's Kimi models for long documents.
 - keyUrl: https://platform.moonshot.ai/console/api-keys
 
 ### nvidia — NVIDIA
-- vi: NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
-- en: NIM serverless inference for Llama, Mistral, NVIDIA NeMo.
+- vi: Model do NVIDIA cung cấp sẵn qua API.
+- en: Models hosted and served by NVIDIA via API.
 - keyUrl: https://build.nvidia.com/settings/api-keys
 
 ### openai — OpenAI
-- vi: GPT-5 / GPT-5 mini / o3 reasoning models.
-- en: GPT-5 / GPT-5 mini / o3 reasoning models.
+- vi: Model GPT của OpenAI, kết nối bằng API key.
+- en: OpenAI's GPT models, connected with an API key.
 - keyUrl: https://platform.openai.com/api-keys
 
 ### openrouter — OpenRouter
-- vi: One key for hundreds of models via an OpenAI-compatible API.
-- en: One key for hundreds of models via an OpenAI-compatible API.
+- vi: Truy cập model của nhiều nhà cung cấp bằng một API key.
+- en: Access models from many providers with one API key.
 - keyUrl: https://openrouter.ai/keys
 
 ### qianfan — Qianfan (Baidu)
-- vi: Baidu Qianfan — ERNIE family of Chinese-first LLMs.
-- en: Baidu Qianfan — ERNIE family of Chinese-first LLMs.
+- vi: Nền tảng AI của Baidu. Yêu cầu tài khoản Trung Quốc.
+- en: Baidu's AI platform. Requires a Chinese account.
 - keyUrl: https://console.bce.baidu.com/iam/#/iam/apikey/list
 
 ### qwen — Qwen
-- vi: Qwen 3 Max / Coder — Alibaba's flagship line.
-- en: Qwen 3 Max / Coder — Alibaba's flagship line.
+- vi: Model Qwen của Alibaba Cloud, nhiều kích thước để lựa chọn.
+- en: Alibaba Cloud's Qwen models in a range of sizes.
 - keyUrl: https://modelstudio.console.alibabacloud.com/
 
 ### stepfun — StepFun
-- vi: StepFun Step-2 — Chinese multimodal foundation models.
-- en: StepFun Step-2 — Chinese multimodal foundation models.
+- vi: Model Step của StepFun, hỗ trợ xử lý hình ảnh.
+- en: StepFun's Step models, with image support.
 - keyUrl: https://platform.stepfun.ai/interface-key
 
 ### synthetic — Synthetic
-- vi: Synthetic — inference platform for open-source LLMs.
-- en: Synthetic — inference platform for open-source LLMs.
+- vi: Model mã nguồn mở theo gói thuê bao hàng tháng.
+- en: Open-source models on a monthly subscription.
 - keyUrl: https://synthetic.new/user-settings/api
 
 ### together — Together
-- vi: Inference for 200+ open-source models.
-- en: Inference for 200+ open-source models.
+- vi: Hàng trăm model mã nguồn mở trên một nền tảng.
+- en: Hundreds of open-source models on one platform.
 - keyUrl: https://api.together.ai/settings/api-keys
 
 ### venice — Venice
-- vi: Privacy-first AI — never logs conversations.
-- en: Privacy-first AI — never logs conversations.
+- vi: Không lưu trữ nội dung trò chuyện của bạn.
+- en: Your conversations are not stored.
 - keyUrl: https://venice.ai/settings/api-keys
 
 ### vercel-ai-gateway — Vercel AI Gateway
-- vi: Unified gateway across many providers, with caching and observability.
-- en: Unified gateway across many providers, with caching and observability.
+- vi: Cổng AI của Vercel, truy cập nhiều nhà cung cấp bằng một key.
+- en: Vercel's AI gateway to many providers with one key.
 - keyUrl: https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys
 
 ### volcengine — Volcengine (Doubao)
-- vi: Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
-- en: Volcengine — ByteDance's domestic Doubao / Skylark endpoint.
+- vi: Model Doubao của ByteDance. Yêu cầu tài khoản Trung Quốc.
+- en: ByteDance's Doubao models. Requires a Chinese account.
 - keyUrl: https://console.volcengine.com/ark
 
 ### xai — xAI (Grok)
-- vi: Grok 4 — reasoning plus real-time X data.
-- en: Grok 4 — reasoning plus real-time X data.
+- vi: Model Grok của xAI cho hỏi đáp và lập trình.
+- en: xAI's Grok models for chat and coding.
 - keyUrl: https://console.x.ai/
 
 ### xiaomi — Xiaomi MiMo
-- vi: Xiaomi MiMo — Xiaomi's in-house large language models.
-- en: Xiaomi MiMo — Xiaomi's in-house large language models.
+- vi: Model MiMo do Xiaomi phát triển.
+- en: MiMo models developed by Xiaomi.
 - keyUrl: https://platform.xiaomimimo.com/
 
 ### zai — Z.AI (GLM)
-- vi: GLM-4.6 — Zhipu AI's flagship.
-- en: GLM-4.6 — Zhipu AI's flagship.
+- vi: Model GLM của Z.AI, phù hợp cho lập trình.
+- en: Z.AI's GLM models, well suited to coding.
 - keyUrl: https://z.ai/manage-apikey/apikey-list
 
 ## connectors

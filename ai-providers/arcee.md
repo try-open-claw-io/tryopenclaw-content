@@ -4,8 +4,8 @@ name:
   vi: "Arcee"
   en: "Arcee"
 description:
-  vi: "Arcee AI — small-language-model platform for tailored deployment."
-  en: "Arcee AI — small-language-model platform for tailored deployment."
+  vi: "Model mã nguồn mở gọn nhẹ của Arcee AI."
+  en: "Lightweight open-source models from Arcee AI."
 instructions:
   vi:
     - "Đăng nhập conductor.arcee.ai (qua email hoặc Google)."

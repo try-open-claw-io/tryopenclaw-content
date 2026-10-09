@@ -4,8 +4,8 @@ name:
   vi: "Fireworks"
   en: "Fireworks"
 description:
-  vi: "Serverless inference for open-source models."
-  en: "Serverless inference for open-source models."
+  vi: "Nền tảng chạy model mã nguồn mở, tính phí theo lượng dùng."
+  en: "Hosted open-source models with usage-based pricing."
 instructions:
   vi:
     - "Đăng nhập app.fireworks.ai."

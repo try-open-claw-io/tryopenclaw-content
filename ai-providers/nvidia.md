@@ -4,8 +4,8 @@ name:
   vi: "NVIDIA"
   en: "NVIDIA"
 description:
-  vi: "NIM serverless inference for Llama, Mistral, NVIDIA NeMo."
-  en: "NIM serverless inference for Llama, Mistral, NVIDIA NeMo."
+  vi: "Model do NVIDIA cung cấp sẵn qua API."
+  en: "Models hosted and served by NVIDIA via API."
 instructions:
   vi:
     - "Đăng nhập build.nvidia.com."

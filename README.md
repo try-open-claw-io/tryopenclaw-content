@@ -70,4 +70,26 @@ After adding/editing a provider/connector/category/skill, run `make llms` and co
 
 ## Schema
 
-See [`ai-providers/_schema.json`](ai-providers/_schema.json). Validated in CI on every PR + push to main.
+See [`ai-providers/_schema.json`](ai-providers/_schema.json). Validated in CI on every PR + push to `main` or `staging`.
+
+## GitHub Pages: production + staging
+
+GitHub Pages serves one site per repo, so one site carries both environments:
+
+| Branch | Published at |
+|---|---|
+| `main` | `https://try-open-claw-io.github.io/tryopenclaw-content/` |
+| `staging` | `https://try-open-claw-io.github.io/tryopenclaw-content/staging/` |
+
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) runs on every push to either branch. It always checks out **both** branches, assembles them with [`scripts/build-pages.mjs`](scripts/build-pages.mjs) (tooling from `main`), and deploys the complete site. Each deploy replaces the whole site, so runs are serialized and never publish one branch alone. The site has rendered HTML plus the raw `.md`/`.txt` files agents fetch.
+
+Content keeps canonical `raw.githubusercontent.com/.../main/` URLs. The published copy rewrites them to the environment it is served from — never hand-edit staging URLs into a branch. Test the assembler with `npm run test:pages`.
+
+One-time setup (repo admin):
+
+1. Merge the workflow and `scripts/build-pages.mjs` into `main`, then into `staging`.
+2. **Settings → Pages → Source: GitHub Actions.**
+3. **Settings → Environments → `github-pages`**: allow deployments from `main` and `staging`.
+4. Run the workflow once (Actions → *Publish GitHub Pages* → Run workflow).
+
+BE side: the staging BE sets `CONTENT_REPO_BRANCH=staging`; installed TOC Guidelines then point at the `/staging/` site (override with `CONTENT_PUBLIC_BASE_URL`, see `be/.env.example`). Sync the catalog, then apply config to instances so they pick up the new links. If staging and production BE share one storage bucket, synced skill archives (`skills/<slug>_<version>.zip`) collide — keep them in separate buckets.

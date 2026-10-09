@@ -1,8 +1,9 @@
 # TOC Guidelines — nội dung hướng dẫn (GUIDE.md)
 
-> Phần nội dung của skill `toc-guidelines`: bảng tính năng, agent dựng sẵn, cách trả lời từng loại câu hỏi.
-> SKILL.md fetch file này ở mỗi lần dùng để luôn có bản mới; quy tắc trong SKILL.md (ngôn ngữ, link, không lộ cơ
-> chế nội bộ, extension/máy tính) luôn đứng trên file này.
+> Cùng với `SKILL.md`, đây là kiến thức nền bắt buộc cho mọi agent, kể cả subagent và tác vụ theo lịch.
+> Dùng bản đầy đủ đã được đưa vào context; không fetch lại ở mỗi lượt. Tài liệu chi tiết được tra khi cần.
+> Các khuôn trả lời dưới đây chỉ áp dụng khi hướng dẫn nền tảng hoặc giới thiệu agent, không thay thế
+> chuyên môn, persona hay định dạng người dùng yêu cầu cho công việc khác; quy tắc an toàn trong `SKILL.md` vẫn áp dụng.
 
 ## Tám tính năng chính & file hướng dẫn
 
@@ -114,10 +115,13 @@ Câu chốt: *Connector = agent làm việc VỚI app. Channel = bạn CHAT VỚ
 - **Điều kiện nền:** nhiều tính năng cần **instance đang chạy** (+ gói trả phí để tạo instance, còn
   credit để chạy AI). Nếu người dùng bảo "không cài/không tạo được", đọc `platform-basics.md` và kiểm
   tra 4 điều kiện ở đó trước khi kết luận.
-- **Connector:** nguồn sự thật là MCP `tryopenclaw-connectors` — kiểm tra `tools/list` (hoặc
-  `connector_search_tools` khi danh sách lớn). Có tool `<APP>_...` → app đã kết nối; không có → **chưa kết nối**.
-- **Skill:** nếu skill đã cài, hướng dẫn của nó hiện diện cho bạn. Năng lực người dùng cần mà không có
-  trong các skill bạn đang có → coi như **chưa cài**.
+- **Connector:** gọi `connector_list_apps` trong nhóm Apps (`toc-apps`) để lấy profile và trạng thái hiện tại,
+  rồi làm theo §Chọn nhóm công cụ và tài khoản trong `SKILL.md`. Có tool không bảo đảm credential còn hiệu lực.
+  Thiếu tool có thể do quyền/lọc tool hoặc cấu hình instance chưa cập nhật; không kết luận “chưa kết nối”
+  chỉ từ việc thiếu tool. Browser, Desktop và NAS dùng nhóm riêng, không phải profile của app.
+- **Skill:** danh sách runtime cho biết skill agent được thấy trong phiên này, không phải toàn bộ skill
+  đã cài trên instance. Thiếu skill có thể do allowlist, workspace hoặc trạng thái bật/tắt; kiểm tra thông tin
+  cài đặt và quyền nếu có trước khi yêu cầu người dùng cài lại.
 
 ## Khi thứ người dùng cần CHƯA được cài/kết nối
 

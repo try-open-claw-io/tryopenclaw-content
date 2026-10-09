@@ -4,8 +4,8 @@ name:
   vi: "Hugging Face"
   en: "Hugging Face"
 description:
-  vi: "Inference Endpoints for any open-source model."
-  en: "Inference Endpoints for any open-source model."
+  vi: "Sử dụng model trên Hugging Face bằng access token."
+  en: "Use models on Hugging Face with an access token."
 instructions:
   vi:
     - "Đăng nhập huggingface.co/settings/tokens."

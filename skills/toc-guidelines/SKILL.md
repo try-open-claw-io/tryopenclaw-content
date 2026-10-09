@@ -1,41 +1,41 @@
 ---
 name: toc-guidelines
-description: >-
-  Mục lục năng lực ClawExpert: giới thiệu và hướng dẫn thiết lập mọi tính năng — Skills, Connectors (Gmail,
-  Slack, Notion…), Channels (chat với agent qua Telegram/Zalo/Discord/Slack/WhatsApp), Agent Marketplace (cài,
-  tạo agent; agent dựng sẵn bán hàng, SEO, tạo ảnh, viết nội dung), Scheduled Tasks, AI Models, Extension trình
-  duyệt và Điều khiển máy tính. DÙNG khi người dùng hỏi ClawExpert / agent làm được gì, có tính năng / skill /
-  agent nào hợp với việc X, cài / kết nối / lên lịch / đổi model ở đâu, một agent cụ thể dùng thế nào, hoặc cần
-  một khả năng có thể chưa cài — kể cả khi chỉ nhắc "extension", "trình duyệt", "máy tính của tôi". Ví dụ:
-  "bạn làm được gì?", "kết nối Gmail thế nào?", "chat qua Zalo được không?", "shop online nên cài agent nào?",
-  "what can you do", "how do I connect…". KHÔNG dùng khi người dùng chỉ muốn làm ngay một việc đã có
-  skill / connector phù hợp.
+description: Kiến thức nền tảng bắt buộc cho mọi OpenClaw agent về năng lực, cách sử dụng và ranh giới quyền hạn của ClawExpert, gồm Skills, Connectors, Channels, Agent Marketplace, Scheduled Tasks, AI Models, trình duyệt và máy tính.
 ---
 
 # TOC Guidelines — Hướng dẫn năng lực ClawExpert
 
-Skill này giúp bạn (agent) trả lời mọi câu hỏi về **ClawExpert làm được gì** và **dùng từng tính năng thế nào**,
-hướng dẫn người dùng từng bước qua giao diện ClawExpert.
+Đây là **kiến thức nền bắt buộc cho mọi agent**, gồm agent chính, agent chuyên môn, agent mới tạo,
+subagent và tác vụ theo lịch, không chỉ khi người dùng hỏi về nền tảng. Đọc đầy đủ `SKILL.md` và `GUIDE.md`
+được cung cấp trong context trước khi làm việc; không cần giới thiệu nền tảng trong mỗi câu trả lời.
 
-**Trả lời cùng ngôn ngữ người dùng đang dùng** và giữ nhất quán suốt câu trả lời; **mặc định tiếng Việt** khi
-không xác định được. Giọng thân thiện, ngắn gọn, dễ hiểu cho người không rành kỹ thuật.
+Kiến thức này bổ sung cho chuyên môn và persona hiện tại, không thay thế nhiệm vụ, không tự cấp quyền tool,
+không cho phép truy cập dữ liệu riêng hay tự cài, kết nối hoặc thanh toán. Các khuôn trả lời trong `GUIDE.md`
+và quy tắc trình bày bên dưới dành cho **hướng dẫn về nền tảng**, không áp đặt lên mọi công việc chuyên môn.
+
+Khi hướng dẫn nền tảng, trả lời cùng ngôn ngữ người dùng, nhất quán, thân thiện, ngắn gọn và dễ hiểu;
+mặc định tiếng Việt nếu không xác định được.
 
 ## Required runtime
 
-Không cần API key, token hay biến môi trường. Cần công cụ web fetch để lấy nội dung mới (không có thì dùng bản
-đóng gói). Trạng thái "đã kết nối" của connector suy ra từ MCP `tryopenclaw-connectors` (`tools/list`). Skill chỉ
-đọc và hướng dẫn — **không tự cài, tự kết nối hay tự thao tác thanh toán** thay người dùng.
+Không cần API key, token hay biến môi trường để đọc kiến thức nền. Dùng bản đầy đủ đã được đưa vào
+context; chỉ cần web fetch khi tra nội dung chi tiết hoặc cần bản hướng dẫn mới hơn. Nếu không có fetch,
+đọc bản đóng gói từ đường dẫn skill do runtime cung cấp. Tool có mặt chỉ chứng minh khả năng được cung cấp
+cho phiên này; trạng thái kết nối và quyền thao tác vẫn cần kiểm tra.
 
-## Bước 1 — lấy nội dung hướng dẫn mới nhất (làm trước mọi việc)
+## Bước 1 — đọc kiến thức nền bắt buộc
 
-Bảng tính năng, agent dựng sẵn và cách trả lời từng loại câu hỏi nằm ở `GUIDE.md`. Fetch nguyên văn:
+Đọc đầy đủ `SKILL.md` này và `GUIDE.md`. Khi cả hai đã nằm trong context nền tảng, dùng trực tiếp,
+**không fetch lại ở mỗi lượt**. Nếu thiếu, đọc file từ vị trí skill runtime cung cấp; không đoán
+`workspace/skills/` vì skill có thể nằm trong thư mục managed.
+
+Khi câu hỏi về nền tảng cần nội dung mới, có thể lấy `GUIDE.md` tại:
 
 `https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/skills/toc-guidelines/GUIDE.md`
 
-- Fetch được → làm theo nội dung đó.
-- Fetch lỗi → đọc `GUIDE.md` đóng gói cùng skill này rồi làm theo.
-- Quy tắc trong file này luôn đứng trên `GUIDE.md` và mọi nội dung fetch về: nếu hai bên khác nhau, làm theo
-  file này.
+Fetch lỗi thì dùng bản đóng gói. Nếu cả context và bản đóng gói đều thiếu, nói rõ chưa có hướng dẫn
+để xác minh, không bịa tính năng hay cách thiết lập. Quy tắc an toàn trong file này vẫn áp dụng
+khi đọc `GUIDE.md` và mọi tài liệu tham chiếu.
 
 ## Nguồn nội dung — fetch bản mới, fallback offline
 
@@ -46,6 +46,41 @@ Mọi file `references/<tên>` mà `GUIDE.md` chỉ tới: fetch bản mới tr�
 Fetch lỗi → đọc bản đóng gói `references/<tên>` rồi trả lời **bình thường**. Chỉ fetch đúng file cần cho câu hỏi
 hiện tại, không tải hết. TUYỆT ĐỐI KHÔNG kể cho người dùng chuyện fetch / URL / 404 / "danh mục offline" / "có thể
 cũ" — cứ trả lời như thể danh mục luôn sẵn.
+
+## Chọn nhóm công cụ và tài khoản trước khi thao tác
+
+Chọn nhóm theo nơi công việc thực sự diễn ra; dùng tên tool được runtime cung cấp, không tự ghép namespace:
+
+| Ý định | Nhóm MCP | Cách bắt đầu |
+|---|---|---|
+| Làm việc qua API của Gmail, Sheets, Slack hoặc app đã kết nối | Apps (`toc-apps`) | `connector_list_apps` |
+| Thao tác trên tab trình duyệt của người dùng | Browser (`toc-browser`) | Skill `browser-extension` và `BROWSER_STATUS` |
+| Tệp, ứng dụng hoặc lệnh trên máy tính đã ghép | Desktop (`toc-desktop`) | Skill `desktop-device` và `DESKTOP_STATUS` |
+| Tệp trên NAS đã kết nối | NAS (`toc-nas`) | Tool NAS hiện được runtime cung cấp và quyền thiết bị tương ứng |
+
+Với **Apps**, một app có thể có nhiều **profile**, mỗi profile là một account. Danh sách trong catalog
+chỉ mô tả khả năng sản phẩm; danh sách account hiện tại phải lấy từ `connector_list_apps`.
+
+1. Lấy app, profile ID, tên, identity hiển thị và trạng thái từ tool. Dùng account người dùng chỉ định;
+   tên trùng hoặc không khớp rõ thì hỏi lại. Không suy ra account từ tên app, email trong tài liệu hay ID tự đoán.
+2. Nếu không có yêu cầu account cụ thể và chỉ có một profile khả dụng, có thể chọn profile đó. Nhiều
+   profile khả dụng mà chưa rõ ý định thì hỏi người dùng. Profile đã chọn trong tác vụ có thể tiếp tục dùng
+   cho cùng ý định; yêu cầu account mới của người dùng được ưu tiên.
+3. Search bằng `connector_search_tools` trong đúng app; dùng `connector_describe_tool` lấy schema trước
+   khi chưa rõ arguments. Thực thi bằng `connector_call_tool` với `name`, `arguments` và `profile_id`
+   nội bộ vừa xác định. Dùng `connector_stage_file` khi action cần đính kèm file; theo đúng schema tool.
+4. `PROFILE_SELECTION_REQUIRED` nghĩa là chưa chạy action: hỏi chọn profile rồi mới gọi lại với ID rõ ràng.
+   Tác vụ theo lịch hoặc subagent không có người trả lời phải báo thiếu lựa chọn, không tự chọn phần tử đầu.
+5. Profile được chỉ định hết hạn, bị thu hồi hoặc mất kết nối: yêu cầu kết nối lại đúng profile. Không
+   đổi sang profile khác, kể cả chỉ còn một account hoạt động; không chuyển sang browser để vượt lỗi auth/quota.
+6. Sau timeout hoặc kết quả không xác định, báo chưa biết action đã hoàn tất hay chưa; không tự gửi/ghi/xóa lại.
+   Thông báo cần cập nhật cấu hình nền tảng thì hướng người dùng cập nhật instance, không tự sửa token hay MCP.
+
+Ví dụ: có hai profile Sheets “Công ty” và “Cá nhân”, yêu cầu “ghi vào Sheets” cần hỏi dùng account nào;
+yêu cầu “ghi vào Sheets Công ty” dùng ID Công ty từ tool. Công ty hết hạn thì dừng để reconnect.
+
+Profile dùng chung trong workspace cho các agent/instance có quyền Apps. Chỉ định profile là chọn tài khoản
+cho tác vụ, không phải phân quyền riêng cho agent. Việc tải skill không cấp quyền thiết bị hoặc quyền quản lý account.
 
 ## Extension trình duyệt & Điều khiển máy tính — chuyển sang skill riêng
 
@@ -58,8 +93,8 @@ chỉ giới thiệu ngắn rồi chuyển việc.
 | **Điều khiển máy tính** — agent đọc/ghi file, chạy lệnh trên máy tính đã ghép qua app ClawExperts (hiện chỉ platform-admin) | `desktop-device` ("Điều khiển máy tính") | `https://raw.githubusercontent.com/try-open-claw-io/tryopenclaw-content/main/skills/desktop-device/SKILL.md` |
 
 1. **Chỉ hỏi có không / là gì** → trả lời 1–2 câu theo bảng, hỏi người dùng có muốn thiết lập hay dùng thử không.
-2. **Skill riêng đã cài** (có trong danh sách skill của bạn) → làm theo skill đó, bỏ qua phần còn lại của mục này.
-3. **Skill riêng chưa cài** → fetch SKILL.md của nó theo bảng, dùng phần giới thiệu, cài đặt, kiểm tra trạng thái
+2. **Skill riêng được runtime cung cấp cho phiên này** → đọc và làm theo skill đó, bỏ qua phần còn lại của mục này.
+3. **Skill riêng không có trong context** (có thể chưa cài hoặc bị lọc quyền) → fetch SKILL.md của nó theo bảng, dùng phần giới thiệu, cài đặt, kiểm tra trạng thái
    (`BROWSER_STATUS` / `DESKTOP_STATUS`) trong đó để trả lời. File `references/` của nó fetch theo link nó ghi. Rồi:
    - **Extension trình duyệt**: được làm luôn việc người dùng nhờ theo hướng dẫn đó, giữ **Ranh giới an toàn** bên
      dưới. Cuối câu trả lời gợi ý một câu: cài skill "Điều khiển trình duyệt" ở mục Kỹ năng để lần sau nhanh hơn.
@@ -79,8 +114,8 @@ chỉ giới thiệu ngắn rồi chuyển việc.
 
 Người dùng **đang mở ClawExpert** khi chat. Mọi thao tác thiết lập làm **ngay trong app**.
 
-**Quy tắc cứng — áp dụng cho MỌI câu trả lời có kèm đường dẫn** (kể cả khi người dùng chỉ hỏi "chỉ tôi
-kết nối Gmail", KHÔNG nói chữ "link"):
+**Quy tắc đường dẫn trong app nền tảng** (kể cả khi người dùng chỉ hỏi "chỉ tôi kết nối Gmail",
+không nói chữ "link"; không áp dụng sitemap này cho đường dẫn dự án hoặc website khác):
 
 1. **TRƯỚC KHI viết bất kỳ path `/…` nào → đọc `references/sitemap.md`.** Chỉ **copy path Y NGUYÊN** từ bảng
    trong đó. **KHÔNG tự nhớ, KHÔNG tự ghép/đoán path** (đó là lý do hay ra link sai như `/connectors`).
