@@ -15,8 +15,7 @@ catalog, users install agents via the marketplace / Create Agent wizard.
 │   ├── USER.md                 ← user info (the agent fills this in over time)
 │   ├── MEMORY.md / BOOTSTRAP.md / HEARTBEAT.md …  (template-specific)
 ├── tones/                      ← one .md per tone (if the template ships custom tones)
-├── images/                     ← icon + marketplace images (paths declared in agent.json)
-└── plugins/                    ← (rare) bundled plugins — see bsv-onboarding
+└── images/                     ← icon + marketplace images (paths declared in agent.json)
 ```
 
 ## agent.json — schema
